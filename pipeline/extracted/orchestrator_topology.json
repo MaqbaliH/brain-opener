@@ -1,0 +1,313 @@
+{
+  "orchestratorName": "Nexus Multi-Agent Mastery DAG",
+  "version": "1.0.0",
+  "collaboratingGlobalAgents": [
+    {
+      "name": "Graphy",
+      "role": "Swiss Modernist Layout, Negative Space & 60-30-10 Color System"
+    },
+    {
+      "name": "Aurelia",
+      "role": "Art Direction & Conceptual Illustration Prompts"
+    },
+    {
+      "name": "Zephyr",
+      "role": "Modular Grid Systems & Spatial Composition"
+    },
+    {
+      "name": "Guten",
+      "role": "Typographic Hierarchy, Scale & Reading Measure"
+    },
+    {
+      "name": "Reviewer",
+      "role": "Anti-AI Voice & Editorial Cadence Validation"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "nexus",
+      "nodeNumber": 0,
+      "name": "Nexus",
+      "role": "Master Orchestrator & DAG Conductor",
+      "skillPath": ".agents/skills/nexus-orchestrator/SKILL.md",
+      "stage": "orchestration",
+      "upstreamNodes": [],
+      "downstreamNodes": [
+        "archon",
+        "axiom",
+        "feynman",
+        "prism",
+        "synapse",
+        "socrates",
+        "veritas",
+        "atlas"
+      ],
+      "inputContract": "BookRequest { epubOrPdfPath, bookSlug }",
+      "outputContract": "OrchestrationExecutionTrace & VerifiedBookBundle",
+      "coreMandate": "Coordinate all 8 specialist nodes, enforce parallel chapter fan-out, and block publication until Veritas certifies 100% concept depth."
+    },
+    {
+      "id": "archon",
+      "nodeNumber": 1,
+      "name": "Archon",
+      "role": "Book Ingestor & Structural Cartographer",
+      "skillPath": ".agents/skills/archon-ingestor/SKILL.md",
+      "stage": "ingestion",
+      "upstreamNodes": [
+        "nexus"
+      ],
+      "downstreamNodes": [
+        "axiom",
+        "prism",
+        "veritas"
+      ],
+      "inputContract": "Raw Book Archive (.epub / .pdf)",
+      "outputContract": "BookManifest { chapters, headings, figures, rawTextFiles }",
+      "coreMandate": "Unpack the book container losslessly, preserving every h1-h4 section heading, table, and original figure asset with its caption."
+    },
+    {
+      "id": "axiom",
+      "nodeNumber": 2,
+      "name": "Axiom",
+      "role": "First-Principles Deconstructor",
+      "skillPath": ".agents/skills/axiom-deconstructor/SKILL.md",
+      "stage": "deconstruction",
+      "upstreamNodes": [
+        "archon"
+      ],
+      "downstreamNodes": [
+        "feynman",
+        "prism",
+        "synapse",
+        "socrates"
+      ],
+      "inputContract": "ChapterRawPayload (Full chapter prose + section tree)",
+      "outputContract": "ChapterDeconstruction { theses, mechanisms, formulas, tradeOffs, visualCandidates }",
+      "coreMandate": "Strip away filler to expose the exact causal mechanisms, mathematical equations, failure modes, and engineering trade-offs in every section."
+    },
+    {
+      "id": "feynman",
+      "nodeNumber": 3,
+      "name": "Feynman",
+      "role": "Deep Concept Pedagogue & Mental Model Architect",
+      "skillPath": ".agents/skills/feynman-pedagogue/SKILL.md",
+      "stage": "synthesis",
+      "upstreamNodes": [
+        "axiom"
+      ],
+      "downstreamNodes": [
+        "veritas"
+      ],
+      "inputContract": "ChapterDeconstruction",
+      "outputContract": "ChapterPedagogy { thesis, paradigmShift, mentalModels, deepSections, tradeOffTables, scenarios }",
+      "coreMandate": "Explain every concept from first principles so the reader achieves deep intuition. Zero shallow summaries; zero AI clichés."
+    },
+    {
+      "id": "prism",
+      "nodeNumber": 4,
+      "name": "Prism",
+      "role": "Visual Mental-Model, SVG & Illustration Architect",
+      "skillPath": ".agents/skills/prism-illustrator/SKILL.md",
+      "stage": "synthesis",
+      "upstreamNodes": [
+        "archon",
+        "axiom"
+      ],
+      "downstreamNodes": [
+        "veritas"
+      ],
+      "inputContract": "VisualBriefPayload + Extracted Book Figures",
+      "outputContract": "ChapterVisuals { customSvgDiagrams, annotatedBookFigures, conceptualIllustrations }",
+      "coreMandate": "Combine custom interactive SVG mental models, annotated original book figures with Bierut captions, and conceptual illustrations."
+    },
+    {
+      "id": "synapse",
+      "nodeNumber": 5,
+      "name": "Synapse",
+      "role": "Knowledge Graph & Ontology Architect",
+      "skillPath": ".agents/skills/synapse-graph/SKILL.md",
+      "stage": "synthesis",
+      "upstreamNodes": [
+        "axiom"
+      ],
+      "downstreamNodes": [
+        "veritas",
+        "atlas"
+      ],
+      "inputContract": "ChapterDeconstruction",
+      "outputContract": "KnowledgeSubgraph { nodes: ConceptNode[], edges: ConceptEdge[] }",
+      "coreMandate": "Wire concepts into a semantic graph across chapters and books using typed edges (prerequisite_for, optimizes, trades_off_with, mitigates)."
+    },
+    {
+      "id": "socrates",
+      "nodeNumber": 6,
+      "name": "Socrates",
+      "role": "Active Recall, Diagnostic Quiz & Feynman Studio Architect",
+      "skillPath": ".agents/skills/socrates-recall/SKILL.md",
+      "stage": "synthesis",
+      "upstreamNodes": [
+        "axiom",
+        "feynman"
+      ],
+      "downstreamNodes": [
+        "veritas"
+      ],
+      "inputContract": "ChapterDeconstruction + ChapterPedagogy",
+      "outputContract": "ActiveRecallModule { diagnosticQuizzes, flashcards, feynmanChallenges }",
+      "coreMandate": "Forge realistic production dilemma quizzes, high-yield flashcards, and 'Explain It Back' Feynman prompts with 4-point rubrics."
+    },
+    {
+      "id": "veritas",
+      "nodeNumber": 7,
+      "name": "Veritas",
+      "role": "Completeness, Depth & Anti-AI Critic",
+      "skillPath": ".agents/skills/veritas-critic/SKILL.md",
+      "stage": "verification",
+      "upstreamNodes": [
+        "archon",
+        "feynman",
+        "prism",
+        "synapse",
+        "socrates"
+      ],
+      "downstreamNodes": [
+        "feynman",
+        "prism",
+        "atlas"
+      ],
+      "inputContract": "MergedChapterCandidate + Archon Heading Manifest",
+      "outputContract": "VeritasAuditReport { passed, sectionCoverageRatio, antiAiClean, revisionRequests }",
+      "coreMandate": "Audit 100% section coverage against Archon's raw TOC, verify mathematical and architectural rigor, and purge any robotic AI tropes."
+    },
+    {
+      "id": "atlas",
+      "nodeNumber": 8,
+      "name": "Atlas",
+      "role": "Swiss-Grid Webapp Publisher & Interactive UI Compiler",
+      "skillPath": ".agents/skills/atlas-publisher/SKILL.md",
+      "stage": "publishing",
+      "upstreamNodes": [
+        "veritas",
+        "synapse"
+      ],
+      "downstreamNodes": [],
+      "inputContract": "VerifiedBookBundle",
+      "outputContract": "Typed React Data Modules & Interactive Swiss-Grid Views",
+      "coreMandate": "Compile verified chapter mastery modules and knowledge graphs into the Brain Opener webapp following Graphy, Zephyr, and Guten design standards."
+    }
+  ],
+  "edges": [
+    {
+      "id": "E01",
+      "source": "nexus",
+      "target": "archon",
+      "label": "1. Dispatch Book Ingestion",
+      "payloadType": "BookRequest",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E12",
+      "source": "archon",
+      "target": "axiom",
+      "label": "2. Raw Text & Section Hierarchy",
+      "payloadType": "ChapterRawPayload",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E14",
+      "source": "archon",
+      "target": "prism",
+      "label": "Extracted EPUB Figures (161 PNGs)",
+      "payloadType": "FigureAssetIndex",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E17",
+      "source": "archon",
+      "target": "veritas",
+      "label": "Ground-Truth Section Checklist",
+      "payloadType": "HeadingManifest",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E23",
+      "source": "axiom",
+      "target": "feynman",
+      "label": "3a. First-Principles Skeleton",
+      "payloadType": "ChapterDeconstruction",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E24",
+      "source": "axiom",
+      "target": "prism",
+      "label": "3b. Visual Mental-Model Briefs",
+      "payloadType": "VisualBriefPayload",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E25",
+      "source": "axiom",
+      "target": "synapse",
+      "label": "3c. Core Entities & Mechanisms",
+      "payloadType": "OntologyCandidates",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E26",
+      "source": "axiom",
+      "target": "socrates",
+      "label": "3d. Failure Modes & Trade-Offs",
+      "payloadType": "MasteryTargets",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E37",
+      "source": "feynman",
+      "target": "veritas",
+      "label": "4a. Deep Explanations & Scenarios",
+      "payloadType": "ChapterPedagogy",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E47",
+      "source": "prism",
+      "target": "veritas",
+      "label": "4b. Custom SVGs & Annotated Figures",
+      "payloadType": "ChapterVisuals",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E57",
+      "source": "synapse",
+      "target": "veritas",
+      "label": "4c. Concept Nodes & Directed Edges",
+      "payloadType": "KnowledgeSubgraph",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E67",
+      "source": "socrates",
+      "target": "veritas",
+      "label": "4d. Quizzes, Flashcards & Feynman Prompts",
+      "payloadType": "ActiveRecallModule",
+      "isFeedbackLoop": false
+    },
+    {
+      "id": "E73_LOOP",
+      "source": "veritas",
+      "target": "feynman",
+      "label": "Revision Loop (If Depth < 100%)",
+      "payloadType": "AuditRejectionDiff",
+      "isFeedbackLoop": true
+    },
+    {
+      "id": "E78",
+      "source": "veritas",
+      "target": "atlas",
+      "label": "5. Certified Mastery Package",
+      "payloadType": "VerifiedBookBundle",
+      "isFeedbackLoop": false
+    }
+  ]
+}

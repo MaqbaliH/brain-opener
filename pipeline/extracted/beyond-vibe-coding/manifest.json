@@ -1,0 +1,1115 @@
+{
+  "bookSlug": "beyond-vibe-coding",
+  "sourcePath": "c:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Beyond Vibe Coding.epub",
+  "totalChapters": 11,
+  "totalFigures": 14,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/ch01.html",
+      "title": "Kapitel 1. Einführung: Was ist Vibe Coding?",
+      "charCount": 113123,
+      "wordCount": 15447,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 1. Einführung: Was ist Vibe Coding?"
+        },
+        {
+          "level": "h1",
+          "title": "Das Spektrum der KI-Codierung: Vom Vibe Coding zur KI-gestützten Entwicklung"
+        },
+        {
+          "level": "h2",
+          "title": "Der Vibe-Coding-Ansatz: Code durch Konversation"
+        },
+        {
+          "level": "h2",
+          "title": "Der KI-gestützte Engineering-Ansatz: Strukturierung mit einem KI-Partner"
+        },
+        {
+          "level": "h2",
+          "title": "Unterschiedliche Denkweisen, unterschiedliche Erwartungshaltungen"
+        },
+        {
+          "level": "h2",
+          "title": "Finde deinen Platz auf der Skala"
+        },
+        {
+          "level": "h1",
+          "title": "Jenseits von Codezeilen: Programmieren mit Intention"
+        },
+        {
+          "level": "h2",
+          "title": "Der Aufstieg der Eingabeaufforderung: Von Anweisungen zu Beschreibungen"
+        },
+        {
+          "level": "h2",
+          "title": "Wie es funktioniert: Der iterative Zyklus und die Rolle der KI bei der Codegenerierung"
+        },
+        {
+          "level": "h1",
+          "title": "Produktivität, Zugänglichkeit und die sich verändernde Natur der Programmierung"
+        },
+        {
+          "level": "h1",
+          "title": "Ein Blick auf die Tools: Das entstehende Ökosystem"
+        },
+        {
+          "level": "h2",
+          "title": "VSCode + Copilot: Microsofts integrierte KI-Entwicklungsplattform"
+        },
+        {
+          "level": "h2",
+          "title": "VSCode + Cline: Der autonome Open Source Coding Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Cursor: Der KI-gesteuerte Code-Editor"
+        },
+        {
+          "level": "h2",
+          "title": "Windsurf: Eine KI-gestützte IDE mit vollständiger Codebase-Indizierung"
+        },
+        {
+          "level": "h1",
+          "title": "KI-Modelle: Die Landschaft für die Codegenerierung"
+        },
+        {
+          "level": "h2",
+          "title": "Verständnis der Modellkategorien"
+        },
+        {
+          "level": "h2",
+          "title": "Die Wahl des richtigen Modells für deine Aufgabe"
+        },
+        {
+          "level": "h2",
+          "title": "Praktische Tipps für jedes Modell"
+        },
+        {
+          "level": "h1",
+          "title": "Wichtige Modelle"
+        },
+        {
+          "level": "h2",
+          "title": "Google Gemini: Das multimodale Coding-Kraftpaket"
+        },
+        {
+          "level": "h2",
+          "title": "Claude: Der Reasoning-Virtuose"
+        },
+        {
+          "level": "h2",
+          "title": "ChatGPT: Der vielseitige Coding-Begleiter"
+        },
+        {
+          "level": "h1",
+          "title": "Die Wahl des richtigen Modells für deine Bedürfnisse"
+        },
+        {
+          "level": "h1",
+          "title": "Die Vorteile und Grenzen von Vibe Coding: Eine nuancierte Sichtweise"
+        },
+        {
+          "level": "h2",
+          "title": "Ideale Anwendungsfälle für Vibe Coding"
+        },
+        {
+          "level": "h3",
+          "title": "Null-zu-Eins-Produktentwicklung"
+        },
+        {
+          "level": "h3",
+          "title": "Feature-Prototyping und CRUD-Anwendungen"
+        },
+        {
+          "level": "h3",
+          "title": "Glue Code und Integration"
+        },
+        {
+          "level": "h3",
+          "title": "Moderne Framework-Nutzung"
+        },
+        {
+          "level": "h3",
+          "title": "Wiederholte Codegenerierung"
+        },
+        {
+          "level": "h3",
+          "title": "Wann KI-gestützte Entwicklung Vorrang haben sollte"
+        },
+        {
+          "level": "h3",
+          "title": "Erkennen der Übergangspunkte"
+        },
+        {
+          "level": "h2",
+          "title": "Wo KI noch Schwierigkeiten hat"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_0101.png",
+          "caption": "Abbildung 1-1. Eine konzeptionelle Illustration der Programmierung mit Absicht. Der Entwickler gibt eine hochrangige Spezifikation (die \"Absicht\") vor, und die KI übersetzt sie in Code. Dies verdeutlicht, dass man nicht mehr Zeile für Zeile Code schreibt, sondern die Codegenerierung auf einer hohen Ebene steuert.",
+          "alt": ""
+        },
+        {
+          "file": "bevc_0102.png",
+          "caption": "Abbildung 1-2. Der planerische KI-gestützte Engineering-Workflow: Entwickler erstellen Spezifikationen, geben KI-Systemen gezielte Eingabeaufforderungen, überprüfen die generierten Codeschnipsel und integrieren die genehmigten Lösungen in ihre Projekte.",
+          "alt": ""
+        },
+        {
+          "file": "bevc_0103.png",
+          "caption": "Abbildung 1-3. Die Benutzeroberfläche von Cursor ist ein Beispiel für die neuere Generation von IDEs mit integrierter KI. Durch die Indizierung deines Projekts und die Wiederholung von Eingabeaufforderungen ermöglichen es Tools wie Cursor, \"den Editor laufen zu lassen, einen Kaffee zu trinken und zu voll funktionsfähigen Funktionen zurückzukehren\", was zu einer exponentiellen Produktivitätssteigerung führt.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/ch02.html",
+      "title": "Kapitel 2. Die Kunst der Eingabeaufforderung: Effektiv mit KI kommunizieren",
+      "charCount": 62350,
+      "wordCount": 8920,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 2. Die Kunst der Eingabeaufforderung: Effektiv mit KI kommunizieren"
+        },
+        {
+          "level": "h1",
+          "title": "Grundlagen des Prompt-Engineerings"
+        },
+        {
+          "level": "h1",
+          "title": "Spezifität und Klarheit: Eingabeaufforderungen schreiben, die etwas bringen"
+        },
+        {
+          "level": "h1",
+          "title": "Iterative Verfeinerung: Die Feedbackschleife mit der KI"
+        },
+        {
+          "level": "h1",
+          "title": "Zwei Eingabeaufforderungen im Vergleich"
+        },
+        {
+          "level": "h2",
+          "title": "Schlechte Eingabeaufforderung"
+        },
+        {
+          "level": "h2",
+          "title": "Verbesserte Eingabeaufforderung"
+        },
+        {
+          "level": "h1",
+          "title": "Eingabeaufforderungstechniken: Ein Werkzeugkasten für effektive Kommunikation"
+        },
+        {
+          "level": "h1",
+          "title": "Ein Hinweis zum Stil"
+        },
+        {
+          "level": "h2",
+          "title": "Zero-Shot Eingabeaufforderung"
+        },
+        {
+          "level": "h2",
+          "title": "One-Shot und Few-Shot Eingabeaufforderung"
+        },
+        {
+          "level": "h1",
+          "title": "Kontextfenster"
+        },
+        {
+          "level": "h2",
+          "title": "Eingabeaufforderung in der Gedankenkette (Chain-of-Thought)"
+        },
+        {
+          "level": "h1",
+          "title": "Kombinatorische Mathematik"
+        },
+        {
+          "level": "h2",
+          "title": "Eingabeaufforderung für die Rolle"
+        },
+        {
+          "level": "h2",
+          "title": "Kontextbezogene Eingabeaufforderung"
+        },
+        {
+          "level": "h2",
+          "title": "Metaprompting"
+        },
+        {
+          "level": "h2",
+          "title": "Selbstkonsistenz (mehrere Ausgaben und Mehrheitsentscheidungen)"
+        },
+        {
+          "level": "h2",
+          "title": "ReAct (Reason + Act) Eingabeaufforderung"
+        },
+        {
+          "level": "h1",
+          "title": "Fortgeschrittene Eingabeaufforderungen: Kombination von Techniken und Umgang mit Komplexität"
+        },
+        {
+          "level": "h2",
+          "title": "Die Grenzen des Modells kennen"
+        },
+        {
+          "level": "h2",
+          "title": "Stateful Conversation versus One-Shot Eingabeaufforderung"
+        },
+        {
+          "level": "h2",
+          "title": "Häufige Eingabeaufforderungen und wie du sie vermeidest"
+        },
+        {
+          "level": "h3",
+          "title": "Die vage Eingabeaufforderung"
+        },
+        {
+          "level": "h3",
+          "title": "Die überladene Eingabeaufforderung"
+        },
+        {
+          "level": "h3",
+          "title": "Die Frage verfehlt"
+        },
+        {
+          "level": "h3",
+          "title": "Vage Erfolgskriterien"
+        },
+        {
+          "level": "h3",
+          "title": "Ignorieren der KI-Klarstellung oder des Outputs"
+        },
+        {
+          "level": "h3",
+          "title": "Inkonsequenz"
+        },
+        {
+          "level": "h3",
+          "title": "Vage Verweise wie \"der obige Code\""
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_0201.png",
+          "caption": "Abbildung 2-1. Illustration eines Chatbots, der beim Programmieren hilft. Der Entwickler und die KI führen einen Dialog: Der Entwickler gibt Anweisungen oder Fragen (Eingabeaufforderungen), und die KI antwortet mit Code oder Antworten. Eine effektive Kommunikation mit der KI durch gut formulierte Eingabeaufforderungen ist der Schlüssel für eine genaue und nützliche Codegenerierung.",
+          "alt": ""
+        },
+        {
+          "file": "bevc_0202.png",
+          "caption": "Abbildung 2-2. Erweiterte Prompt-Engineering-Schleife.",
+          "alt": ""
+        },
+        {
+          "file": "bevc_0203.png",
+          "caption": "Abbildung 2-3. Vergleich der Auswirkungen der Eingabeaufforderung: Unklare Eingabeaufforderungen führen zu allgemeinem oder falschem Code, während spezifische, gut strukturierte Eingabeaufforderungen genaue, kontextgerechte Lösungen hervorbringen.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/ch03.html",
+      "title": "Kapitel 3. Das 70%-Problem: KI-gestützte Workflows, die tatsächlich funktionieren",
+      "charCount": 33788,
+      "wordCount": 4506,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 3. Das 70%-Problem: KI-gestützte Workflows, die tatsächlich funktionieren"
+        },
+        {
+          "level": "h1",
+          "title": "Wie Entwickler/innen KI tatsächlich nutzen"
+        },
+        {
+          "level": "h2",
+          "title": "Häufige Fehlermuster"
+        },
+        {
+          "level": "h3",
+          "title": "Zwei Schritte zurück"
+        },
+        {
+          "level": "h3",
+          "title": "Die Demo-Qualitätsfalle"
+        },
+        {
+          "level": "h2",
+          "title": "Was wirklich funktioniert: Praktische Workflow-Muster"
+        },
+        {
+          "level": "h3",
+          "title": "KI als Erstverfasser"
+        },
+        {
+          "level": "h3",
+          "title": "KI als Paarprogrammierer"
+        },
+        {
+          "level": "h3",
+          "title": "Bewährte Methoden für die KI-Paarprogrammierung"
+        },
+        {
+          "level": "h3",
+          "title": "KI als Validator"
+        },
+        {
+          "level": "h1",
+          "title": "Die goldenen Regeln des Vibe Coding"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_0301.png",
+          "caption": "Abbildung 3-1. Das \"zwei Schritte zurück\"-Muster.",
+          "alt": ""
+        },
+        {
+          "file": "bevc_0302.png",
+          "caption": "Abbildung 3-2. KI-Validierungsworkflow: Entwickler schreiben den ersten Code; KI-Systeme analysieren ihn auf Fehler und Sicherheitsprobleme und schlagen dann Verbesserungen vor; Entwickler überprüfen die empfohlenen Änderungen und wenden sie an.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/ch04.html",
+      "title": "Kapitel 4. Jenseits der 70%: Maximierung des menschlichen Beitrags",
+      "charCount": 47319,
+      "wordCount": 6612,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 4. Jenseits der 70%: Maximierung des menschlichen Beitrags"
+        },
+        {
+          "level": "h1",
+          "title": "Senior Engineers und Entwickler: Nutze deine Erfahrung mit KI"
+        },
+        {
+          "level": "h2",
+          "title": "Sei der Architekt und der Chefredakteur"
+        },
+        {
+          "level": "h2",
+          "title": "Nutze KI als Multiplikator für große Initiativen"
+        },
+        {
+          "level": "h2",
+          "title": "Mentor sein und Standards setzen"
+        },
+        {
+          "level": "h2",
+          "title": "Beherrsche den Bereich und bewahre den Weitblick"
+        },
+        {
+          "level": "h2",
+          "title": "Verbessere deine Soft Skills und deine Führungsqualitäten"
+        },
+        {
+          "level": "h1",
+          "title": "Midlevel-Ingenieure: Anpassen und spezialisieren"
+        },
+        {
+          "level": "h2",
+          "title": "Lerne, mit Systemintegration und Grenzen umzugehen"
+        },
+        {
+          "level": "h2",
+          "title": "Baue dein Fachwissen auf"
+        },
+        {
+          "level": "h2",
+          "title": "Master Performance Optimization und DevOps"
+        },
+        {
+          "level": "h2",
+          "title": "Fokus auf Codeüberprüfung und Qualitätssicherung"
+        },
+        {
+          "level": "h2",
+          "title": "Systemdenken lernen"
+        },
+        {
+          "level": "h2",
+          "title": "Sei anpassungsfähig und höre nie auf zu lernen"
+        },
+        {
+          "level": "h2",
+          "title": "Mach dich gut in funktionsübergreifender Kommunikation"
+        },
+        {
+          "level": "h2",
+          "title": "Systemdesign und Architektur lernen"
+        },
+        {
+          "level": "h2",
+          "title": "Nutze KI!"
+        },
+        {
+          "level": "h2",
+          "title": "Wage dich an das UI- und UX-Design"
+        },
+        {
+          "level": "h1",
+          "title": "Junior-Entwickler/innen: Neben der KI gedeihen"
+        },
+        {
+          "level": "h2",
+          "title": "Lerne die Grundlagen - überspringe nicht das \"Warum\""
+        },
+        {
+          "level": "h2",
+          "title": "Übe das Lösen von Problemen und die Fehlersuche ohne das KI-Sicherheitsnetz"
+        },
+        {
+          "level": "h2",
+          "title": "Konzentriere dich auf das Testen und Prüfen"
+        },
+        {
+          "level": "h2",
+          "title": "Entwickle ein Auge für die Wartbarkeit"
+        },
+        {
+          "level": "h2",
+          "title": "Entwickle deine Fähigkeiten zur Eingabeaufforderung und zum Einsatz von Werkzeugen (mit Bedacht)"
+        },
+        {
+          "level": "h2",
+          "title": "Suche nach Feedback und Mentorenschaft"
+        },
+        {
+          "level": "h2",
+          "title": "Kommunizieren und zusammenarbeiten"
+        },
+        {
+          "level": "h2",
+          "title": "Ändere deine Denkweise: Vom Konsumieren zum Gestalten"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/ch05.html",
+      "title": "Kapitel 5. Generierten Code verstehen: Überprüfen, Verfeinern, Besitzen",
+      "charCount": 24588,
+      "wordCount": 3635,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 5. Generierten Code verstehen: Überprüfen, Verfeinern, Besitzen"
+        },
+        {
+          "level": "h1",
+          "title": "Von der Intention zur Implementierung: Die Interpretation der KI verstehen"
+        },
+        {
+          "level": "h1",
+          "title": "Das \"Mehrheits\"-Problem: Das Häufigste bedeutet nicht das Angemessenste"
+        },
+        {
+          "level": "h1",
+          "title": "Lesbarkeit und Struktur des Codes: Muster und mögliche Probleme"
+        },
+        {
+          "level": "h1",
+          "title": "Debugging-Strategien: Finden und Beheben von Fehlern"
+        },
+        {
+          "level": "h1",
+          "title": "Refactoring für Wartungsfreundlichkeit: KI-Code zu deinem Code machen"
+        },
+        {
+          "level": "h1",
+          "title": "Die Wichtigkeit von Tests: Unit-, Integrations- und End-to-End-Tests"
+        },
+        {
+          "level": "h1",
+          "title": "Ein Hinweis zu KI und Tests"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_0501.png",
+          "caption": "Abbildung 5-1. Der KI-Code-Debugging-Zyklus: Ausführen von KI-generiertem Code, Erfassen von Fehlern, Übermitteln des Fehlerkontextes an die KI zur Analyse, Implementieren von Vorschlägen zur Fehlerbehebung und Wiederholen bis zur Lösung.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/ch06.html",
+      "title": "Kapitel 6. KI-gesteuertes Prototyping: Werkzeuge und Techniken",
+      "charCount": 33509,
+      "wordCount": 4476,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 6. KI-gesteuertes Prototyping: Werkzeuge und Techniken"
+        },
+        {
+          "level": "h1",
+          "title": "Schnelles Prototyping mit KI-Assistenten"
+        },
+        {
+          "level": "h1",
+          "title": "KI-Prototyping-Tools"
+        },
+        {
+          "level": "h1",
+          "title": "Vom Konzept zum Prototyp: Iterative Verfeinerung"
+        },
+        {
+          "level": "h1",
+          "title": "Entwicklung eines Prototyps in Richtung Produktion"
+        },
+        {
+          "level": "h1",
+          "title": "Herausforderungen beim KI-Prototyping meistern"
+        },
+        {
+          "level": "h1",
+          "title": "Bleib fokussiert"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_0601.png",
+          "caption": "Abbildung 6-1. Iterativer Prozess zur Verfeinerung des Prototyps: Erste Eingabeaufforderungen erzeugen einen Basisprototyp, und das Feedback der Entwickler führt zu sukzessiven Verbesserungen, sodass durch die Zusammenarbeit mit der KI immer raffiniertere Lösungen entstehen.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OEBPS/ch07.html",
+      "title": "Kapitel 7. Erstellen von Webanwendungen mit KI",
+      "charCount": 51250,
+      "wordCount": 7114,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 7. Erstellen von Webanwendungen mit KI"
+        },
+        {
+          "level": "h1",
+          "title": "Das Projekt einrichten: Gerüstbau mit KI"
+        },
+        {
+          "level": "h2",
+          "title": "Frontend-Entwicklungsmuster mit AI"
+        },
+        {
+          "level": "h3",
+          "title": "Komponenten aus Beschreibungen implementieren"
+        },
+        {
+          "level": "h3",
+          "title": "Styling und Layout"
+        },
+        {
+          "level": "h3",
+          "title": "Integration von APIs und Zustandsverwaltung"
+        },
+        {
+          "level": "h3",
+          "title": "Umgang mit Komplexität mit KI-Anleitung"
+        },
+        {
+          "level": "h3",
+          "title": "Framework-spezifische Tipps"
+        },
+        {
+          "level": "h2",
+          "title": "Backend/API-Entwicklungsmuster mit KI"
+        },
+        {
+          "level": "h3",
+          "title": "API-Endpunkte implementieren"
+        },
+        {
+          "level": "h3",
+          "title": "Datenbank-Integration"
+        },
+        {
+          "level": "h3",
+          "title": "Geschäftslogik und Validierung"
+        },
+        {
+          "level": "h3",
+          "title": "Verwendung von Frameworks oder Boilerplates"
+        },
+        {
+          "level": "h3",
+          "title": "Orchestrierung von mehrstufigen Operationen"
+        },
+        {
+          "level": "h3",
+          "title": "API-Dokumentation und Tests"
+        },
+        {
+          "level": "h1",
+          "title": "Datenbankdesign und Integration"
+        },
+        {
+          "level": "h2",
+          "title": "Verwendung eines ORM"
+        },
+        {
+          "level": "h2",
+          "title": "Datenbankabfragen"
+        },
+        {
+          "level": "h2",
+          "title": "Überprüfen von KI-generierten Abfragen"
+        },
+        {
+          "level": "h1",
+          "title": "Full Stack Integration: Frontend und Backend zusammenführen"
+        },
+        {
+          "level": "h2",
+          "title": "Frontend- und Backend-Verträge aufeinander abstimmen"
+        },
+        {
+          "level": "h2",
+          "title": "Echtzeit-Zusammenarbeit mit KI"
+        },
+        {
+          "level": "h3",
+          "title": "Statusmanagement und Synchronisierung"
+        },
+        {
+          "level": "h3",
+          "title": "WebSockets und erweiterte Integrationen"
+        },
+        {
+          "level": "h3",
+          "title": "Beispiel: Full Stack Flow mit KI"
+        },
+        {
+          "level": "h3",
+          "title": "Optimierung der Zusammenarbeit zwischen KI und Mensch bei der Full-Stack-Entwicklung"
+        },
+        {
+          "level": "h1",
+          "title": "Testen und Validieren von KI-generierten Webanwendungen"
+        },
+        {
+          "level": "h1",
+          "title": "Beispiele für erfolgreiche KI-gestützte Webprojekte"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OEBPS/ch08.html",
+      "title": "Kapitel 8. Sicherheit, Wartbarkeit und Verlässlichkeit",
+      "charCount": 83850,
+      "wordCount": 11429,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 8. Sicherheit, Wartbarkeit und Verlässlichkeit"
+        },
+        {
+          "level": "h1",
+          "title": "Häufige Sicherheitsschwachstellen in KI-generiertem Code"
+        },
+        {
+          "level": "h2",
+          "title": "Falsche Authentifizierung und Autorisierung"
+        },
+        {
+          "level": "h2",
+          "title": "Probleme bei der Paketverwaltung"
+        },
+        {
+          "level": "h1",
+          "title": "Sicherheitsprüfungen"
+        },
+        {
+          "level": "h2",
+          "title": "Automatisierte Sicherheitsscanner nutzen"
+        },
+        {
+          "level": "h2",
+          "title": "Eine separate KI als Prüfer einsetzen"
+        },
+        {
+          "level": "h2",
+          "title": "Führe eine menschliche Codeüberprüfung mit einer Sicherheitscheckliste durch"
+        },
+        {
+          "level": "h2",
+          "title": "Penetrationstests und Fuzzing"
+        },
+        {
+          "level": "h2",
+          "title": "Füge sicherheitsrelevante Unit-Tests hinzu"
+        },
+        {
+          "level": "h2",
+          "title": "Updates zum Ausgleich von Trainingsabbrüchen bereitstellen"
+        },
+        {
+          "level": "h2",
+          "title": "Optimiere deine Logging-Praktiken"
+        },
+        {
+          "level": "h2",
+          "title": "Verwende aktualisierte Modelle oder Tools mit einem Sicherheitsfokus"
+        },
+        {
+          "level": "h2",
+          "title": "Achte auf Warnungen im Kontext"
+        },
+        {
+          "level": "h2",
+          "title": "Verlangsamen"
+        },
+        {
+          "level": "h1",
+          "title": "Aufbau eines effektiven Testrahmens für KI-Systeme"
+        },
+        {
+          "level": "h1",
+          "title": "Optimierung der Leistung"
+        },
+        {
+          "level": "h1",
+          "title": "Sicherstellung der Wartbarkeit in KI-beschleunigten Codebasen"
+        },
+        {
+          "level": "h2",
+          "title": "Während der Eingabeaufforderung"
+        },
+        {
+          "level": "h2",
+          "title": "Arbeiten mit dem Code-Output"
+        },
+        {
+          "level": "h2",
+          "title": "Follow-Up"
+        },
+        {
+          "level": "h1",
+          "title": "Strategien für die Codeüberprüfung"
+        },
+        {
+          "level": "h1",
+          "title": "Bewährte Methoden für einen zuverlässigen Einsatz"
+        },
+        {
+          "level": "h2",
+          "title": "Vor und während des Einsatzes"
+        },
+        {
+          "level": "h2",
+          "title": "Laufende bewährte Methoden"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_0801.png",
+          "caption": "Abbildung 8-1. KI-bedingte Sicherheitsschwachstellen: KI-generierter Code kann subtile Sicherheitslücken enthalten, die nur durch sorgfältige Überprüfung und automatisierte Sicherheitsscans erkannt und behoben werden können.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "OEBPS/ch09.html",
+      "title": "Kapitel 9. Die ethischen Implikationen von Vibe Coding",
+      "charCount": 46151,
+      "wordCount": 6201,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 9. Die ethischen Implikationen von Vibe Coding"
+        },
+        {
+          "level": "h1",
+          "title": "Rechtlicher Hinweis"
+        },
+        {
+          "level": "h1",
+          "title": "Überlegungen zum geistigen Eigentum"
+        },
+        {
+          "level": "h2",
+          "title": "Was ist zu tun, wenn du verdächtigen Output erhältst?"
+        },
+        {
+          "level": "h2",
+          "title": "Grauzonen"
+        },
+        {
+          "level": "h1",
+          "title": "Transparenz und Namensnennung"
+        },
+        {
+          "level": "h1",
+          "title": "Voreingenommenheit und Fairness"
+        },
+        {
+          "level": "h1",
+          "title": "Goldene Regeln für den verantwortungsvollen Umgang mit KI"
+        },
+        {
+          "level": "h1",
+          "title": "Checkliste für verantwortungsvolle KI"
+        },
+        {
+          "level": "h1",
+          "title": "Wie du diese Checkliste verwendest"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_0901.png",
+          "caption": "Abbildung 9-1. Checkliste für eine verantwortungsvolle KI-Entwicklung: wichtige Validierungsschritte wie die Überprüfung des geistigen Eigentums, die Bewertung von Vorurteilen und Sicherheitsaudits vor der Integration von KI-generiertem Code in Produktionssysteme.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "OEBPS/ch10.html",
+      "title": "Kapitel 10. Autonome Hintergrund-Codier-Agenten",
+      "charCount": 54088,
+      "wordCount": 7310,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 10. Autonome Hintergrund-Codier-Agenten"
+        },
+        {
+          "level": "h1",
+          "title": "Vom Copiloten zum autonomen Agenten: Was sind Background Coding Agents?"
+        },
+        {
+          "level": "h1",
+          "title": "Wie funktionieren autonome Coding Agents?"
+        },
+        {
+          "level": "h2",
+          "title": "Planen Sie"
+        },
+        {
+          "level": "h2",
+          "title": "Ausführen"
+        },
+        {
+          "level": "h2",
+          "title": "Überprüfe"
+        },
+        {
+          "level": "h2",
+          "title": "Bericht"
+        },
+        {
+          "level": "h1",
+          "title": "Wie unterscheiden sich Hintergrund-Agenten von KI-Assistenten?"
+        },
+        {
+          "level": "h1",
+          "title": "Kombiniere mehrere KI-Modelle, um die Stärken zu maximieren"
+        },
+        {
+          "level": "h2",
+          "title": "Unterscheidung der Modelle nach Aufgabentyp"
+        },
+        {
+          "level": "h2",
+          "title": "Verwende ein Orchestrierungssystem"
+        },
+        {
+          "level": "h2",
+          "title": "Hybride Mensch-KI-Teams"
+        },
+        {
+          "level": "h1",
+          "title": "Die wichtigsten Akteure im Bereich der autonomen Kodieragenten"
+        },
+        {
+          "level": "h1",
+          "title": "Herausforderungen und Beschränkungen"
+        },
+        {
+          "level": "h1",
+          "title": "Bewährte Methoden für den effektiven Einsatz von KI-Codieragenten"
+        },
+        {
+          "level": "h2",
+          "title": "Wähle strategisch die Aufgaben aus, die autonome Agenten umsetzen sollen"
+        },
+        {
+          "level": "h2",
+          "title": "Agenten-spezifische Planungs- und Überwachungsfunktionen nutzen"
+        },
+        {
+          "level": "h2",
+          "title": "Gleichzeitige Agentenoperationen verwalten"
+        },
+        {
+          "level": "h2",
+          "title": "Entwickle deine Teampraktiken für die Integration von Agenten weiter"
+        },
+        {
+          "level": "h2",
+          "title": "Feedback-Schleifen mit autonomen Systemen aufbauen"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_1001.png",
+          "caption": "Abbildung 10-1. Autonomer KI-Agenten-Workflow: Selbstgesteuerte Agenten planen Aufgaben, führen Lösungen aus, überprüfen die Ergebnisse und melden die Ergebnisse mit minimalem menschlichem Eingriff.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch10.txt"
+    },
+    {
+      "chapterNumber": 11,
+      "chapterId": "ch11",
+      "sourceFile": "OEBPS/ch11.html",
+      "title": "Kapitel 11. Jenseits der Codegenerierung: Die Zukunft der KI-unterstützten Entwicklung",
+      "charCount": 57957,
+      "wordCount": 7944,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Kapitel 11. Jenseits der Codegenerierung: Die Zukunft der KI-unterstützten Entwicklung"
+        },
+        {
+          "level": "h1",
+          "title": "KI beim Testen, Debuggen und bei der Wartung"
+        },
+        {
+          "level": "h2",
+          "title": "Automatisierte Testerstellung"
+        },
+        {
+          "level": "h2",
+          "title": "Intelligentes Debugging"
+        },
+        {
+          "level": "h2",
+          "title": "Prädiktive Wartung und Refactoring"
+        },
+        {
+          "level": "h1",
+          "title": "KI-gesteuertes Design und Personalisierung der Benutzererfahrung"
+        },
+        {
+          "level": "h2",
+          "title": "Generative Design-Tools"
+        },
+        {
+          "level": "h2",
+          "title": "KI für die UX-Forschung"
+        },
+        {
+          "level": "h2",
+          "title": "Personalisierte Benutzererfahrungen"
+        },
+        {
+          "level": "h1",
+          "title": "Die Entwicklung des Projektmanagements mit KI"
+        },
+        {
+          "level": "h1",
+          "title": "Wie autonome Agenten die Softwareentwicklung verändern könnten"
+        },
+        {
+          "level": "h1",
+          "title": "Die Zukunft der Programmiersprachen: Natural-Language-Driven Development?"
+        },
+        {
+          "level": "h1",
+          "title": "Wie Vibe Coding die Branche umgestaltet"
+        },
+        {
+          "level": "h1",
+          "title": "Zusammenfassung und nächste Schritte"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bevc_1101.png",
+          "caption": "Abbildung 11-1. Multiagentenkollaborationsarchitektur: Entwickler/innen orchestrieren spezialisierte KI-Agenten für Tests, Design, Codierung und Sicherheit, um gemeinsam umfassende Softwarelösungen zu entwickeln.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\beyond-vibe-coding\\ch11.txt"
+    }
+  ]
+}

@@ -1,0 +1,2431 @@
+{
+  "bookSlug": "ai-engineering",
+  "sourcePath": "c:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\AI Engineering.epub",
+  "totalChapters": 10,
+  "totalFigures": 161,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/ch01.html",
+      "title": "Chapter 1. Introduction to Building AI Applications with Foundation Models",
+      "charCount": 99236,
+      "wordCount": 15557,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1. Introduction to Building AI Applications with Foundation Models"
+        },
+        {
+          "level": "h1",
+          "title": "The Rise of AI Engineering"
+        },
+        {
+          "level": "h2",
+          "title": "From Language Models to Large Language Models"
+        },
+        {
+          "level": "h3",
+          "title": "Language models"
+        },
+        {
+          "level": "h3",
+          "title": "Self-supervision"
+        },
+        {
+          "level": "h2",
+          "title": "From Large Language Models to Foundation Models"
+        },
+        {
+          "level": "h2",
+          "title": "From Foundation Models to AI Engineering"
+        },
+        {
+          "level": "h1",
+          "title": "Why the Term “AI Engineering?”"
+        },
+        {
+          "level": "h1",
+          "title": "Foundation Model Use Cases"
+        },
+        {
+          "level": "h2",
+          "title": "Coding"
+        },
+        {
+          "level": "h2",
+          "title": "Image and Video Production"
+        },
+        {
+          "level": "h2",
+          "title": "Writing"
+        },
+        {
+          "level": "h2",
+          "title": "Education"
+        },
+        {
+          "level": "h2",
+          "title": "Conversational Bots"
+        },
+        {
+          "level": "h2",
+          "title": "Information Aggregation"
+        },
+        {
+          "level": "h2",
+          "title": "Data Organization"
+        },
+        {
+          "level": "h2",
+          "title": "Workflow Automation"
+        },
+        {
+          "level": "h1",
+          "title": "Planning AI Applications"
+        },
+        {
+          "level": "h2",
+          "title": "Use Case Evaluation"
+        },
+        {
+          "level": "h3",
+          "title": "The role of AI and humans in the application"
+        },
+        {
+          "level": "h3",
+          "title": "AI product defensibility"
+        },
+        {
+          "level": "h2",
+          "title": "Setting Expectations"
+        },
+        {
+          "level": "h2",
+          "title": "Milestone Planning"
+        },
+        {
+          "level": "h2",
+          "title": "Maintenance"
+        },
+        {
+          "level": "h1",
+          "title": "The AI Engineering Stack"
+        },
+        {
+          "level": "h2",
+          "title": "Three Layers of the AI Stack"
+        },
+        {
+          "level": "h2",
+          "title": "AI Engineering Versus ML Engineering"
+        },
+        {
+          "level": "h3",
+          "title": "Model development"
+        },
+        {
+          "level": "h4",
+          "title": "Modeling and training"
+        },
+        {
+          "level": "h1",
+          "title": "On the Differences Among Training, Pre-Training, Finetuning, and Post-Training"
+        },
+        {
+          "level": "h4",
+          "title": "Dataset engineering"
+        },
+        {
+          "level": "h4",
+          "title": "Inference optimization"
+        },
+        {
+          "level": "h3",
+          "title": "Application development"
+        },
+        {
+          "level": "h4",
+          "title": "Evaluation"
+        },
+        {
+          "level": "h4",
+          "title": "Prompt engineering and context construction"
+        },
+        {
+          "level": "h4",
+          "title": "AI interface"
+        },
+        {
+          "level": "h2",
+          "title": "AI Engineering Versus Full-Stack Engineering"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0101.png",
+          "caption": "Figure 1-1. An example of how GPT-4 tokenizes a phrase.",
+          "alt": "A close up of a sign\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0102.png",
+          "caption": "Figure 1-2. Autoregressive language model and masked language model.",
+          "alt": "A diagram of a chicken crossword\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0103.png",
+          "caption": "Figure 1-3. A multimodal model can generate the next token using information from both text and visual tokens.",
+          "alt": "A diagram of a model\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0104.png",
+          "caption": "Figure 1-4. The range of tasks in the Super-NaturalInstructions benchmark (Wang et al., 2022).",
+          "alt": "A diagram of different colored circles\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0105.png",
+          "caption": "Figure 1-5. The number of S&P 500 companies that mention AI in their earnings calls reached a record high in 2023. Data from FactSet.",
+          "alt": "A graph with numbers and lines\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0106.png",
+          "caption": "Figure 1-6. Open source AI engineering tools are growing faster than any other software engineering tools, according to their GitHub star counts.",
+          "alt": "A graph of a graph with different colored lines\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0107.png",
+          "caption": "Figure 1-7. Distribution of use cases in the 205 open source repositories on GitHub.",
+          "alt": "A pie chart with different colored circles\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0108.png",
+          "caption": "Figure 1-8. Companies are more willing to deploy internal-facing applications",
+          "alt": "A screenshot of a graph\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0109.png",
+          "caption": "Figure 1-9. AI can help developers be significantly more productive, especially for simple tasks, but this applies less for highly complex tasks. Data by McKinsey.",
+          "alt": "A graph of blue and white bars\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0110.png",
+          "caption": "Figure 1-10. AI can be used throughout all four stages of course creation at Duolingo, but it’s the most helpful in the personalization stage. Image from Pajak and Bicknell (Duolingo, 2022).",
+          "alt": "A white paper with blue text\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0111.png",
+          "caption": "Figure 1-11. The cost of AI reasoning rapidly drops over time. Image from Katrina Nguyen (2024).",
+          "alt": "A graph with numbers and a number of points\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0112.png",
+          "caption": "Figure 1-12. Many companies put AI engineering and ML engineering under the same umbrella, as shown in the job headlines on LinkedIn from December 17, 2023.",
+          "alt": "A screenshot of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0113.png",
+          "caption": "Figure 1-13. Some companies have separate job descriptions for AI engineering, as shown in the job headlines on LinkedIn from December 17, 2023.",
+          "alt": "A screenshot of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0114.png",
+          "caption": "Figure 1-14. Three layers of the AI engineering stack.",
+          "alt": "A diagram of a software development\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0115.png",
+          "caption": "Figure 1-15. Cumulative count of repositories by category over time.",
+          "alt": "A graph of a number of people\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0116.png",
+          "caption": "Figure 1-16. The new AI engineering workflow rewards those who can iterate fast. Image recreated from “The Rise of the AI Engineer” (Shawn Wang, 2023).",
+          "alt": "A close-up of arrows\n\nDescription automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/ch02.html",
+      "title": "Chapter 2. Understanding Foundation Models",
+      "charCount": 121801,
+      "wordCount": 19286,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2. Understanding Foundation Models"
+        },
+        {
+          "level": "h1",
+          "title": "Training Data"
+        },
+        {
+          "level": "h2",
+          "title": "Multilingual Models"
+        },
+        {
+          "level": "h2",
+          "title": "Domain-Specific Models"
+        },
+        {
+          "level": "h1",
+          "title": "Modeling"
+        },
+        {
+          "level": "h2",
+          "title": "Model Architecture"
+        },
+        {
+          "level": "h3",
+          "title": "Transformer architecture"
+        },
+        {
+          "level": "h4",
+          "title": "Attention mechanism"
+        },
+        {
+          "level": "h4",
+          "title": "Transformer block"
+        },
+        {
+          "level": "h3",
+          "title": "Other model architectures"
+        },
+        {
+          "level": "h2",
+          "title": "Model Size"
+        },
+        {
+          "level": "h1",
+          "title": "Inverse Scaling"
+        },
+        {
+          "level": "h3",
+          "title": "Scaling law: Building compute-optimal models"
+        },
+        {
+          "level": "h3",
+          "title": "Scaling extrapolation"
+        },
+        {
+          "level": "h1",
+          "title": "Parameter Versus Hyperparameter"
+        },
+        {
+          "level": "h3",
+          "title": "Scaling bottlenecks"
+        },
+        {
+          "level": "h1",
+          "title": "Post-Training"
+        },
+        {
+          "level": "h2",
+          "title": "Supervised Finetuning"
+        },
+        {
+          "level": "h2",
+          "title": "Preference Finetuning"
+        },
+        {
+          "level": "h3",
+          "title": "Reward model"
+        },
+        {
+          "level": "h3",
+          "title": "Finetuning using the reward model"
+        },
+        {
+          "level": "h1",
+          "title": "Sampling"
+        },
+        {
+          "level": "h2",
+          "title": "Sampling Fundamentals"
+        },
+        {
+          "level": "h2",
+          "title": "Sampling Strategies"
+        },
+        {
+          "level": "h3",
+          "title": "Temperature"
+        },
+        {
+          "level": "h3",
+          "title": "Top-k"
+        },
+        {
+          "level": "h3",
+          "title": "Top-p"
+        },
+        {
+          "level": "h3",
+          "title": "Stopping condition"
+        },
+        {
+          "level": "h2",
+          "title": "Test Time Compute"
+        },
+        {
+          "level": "h2",
+          "title": "Structured Outputs"
+        },
+        {
+          "level": "h3",
+          "title": "Prompting"
+        },
+        {
+          "level": "h3",
+          "title": "Post-processing"
+        },
+        {
+          "level": "h3",
+          "title": "Constrained sampling"
+        },
+        {
+          "level": "h3",
+          "title": "Finetuning"
+        },
+        {
+          "level": "h2",
+          "title": "The Probabilistic Nature of AI"
+        },
+        {
+          "level": "h3",
+          "title": "Inconsistency"
+        },
+        {
+          "level": "h3",
+          "title": "Hallucination"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0201.png",
+          "caption": "Figure 2-1. On the MMLU benchmark, GPT-4 performs better in English than in any other language. To obtain MMLU in other languages, OpenAI translated the questions using Azure AI Translator.",
+          "alt": "A graph with green and blue bars  Description automatically generated"
+        },
+        {
+          "file": "aien_0202.png",
+          "caption": "Figure 2-2. GPT-4 is much better at math in English than in other languages.",
+          "alt": "A graph with numbers and a number of pass rate  Description automatically generated"
+        },
+        {
+          "file": "aien_0203.png",
+          "caption": "Figure 2-3. Distribution of domains in the C4 dataset. Reproduced from the statistics from the Washington Post. One caveat of this analysis is that it only shows the categories that are included, not the categories missing.",
+          "alt": ""
+        },
+        {
+          "file": "aien_0204.png",
+          "caption": "Figure 2-4. Seq2seq architecture versus transformer architecture. For the transformer architecture, the arrows show the tokens that the decoder attends to when generating each output token.",
+          "alt": "A diagram of a algorithm  Description automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0205.png",
+          "caption": "Figure 2-5. An example of the attention mechanism in action next to its high-level visualization from the famous transformer paper, “Attention Is All You Need” (Vaswani et al., 2017).",
+          "alt": ""
+        },
+        {
+          "file": "aien_0206.png",
+          "caption": "Figure 2-6. A visualization of the weight composition of a transformer model.",
+          "alt": ""
+        },
+        {
+          "file": "aien_0207.png",
+          "caption": "Figure 2-7. A visualization of the transformer, Mamba, and Jamba layers. Image adapted from “Jamba: A Hybrid Transformer–Mamba Language Model” (Lieber et al., 2024).",
+          "alt": ""
+        },
+        {
+          "file": "aien_0208.png",
+          "caption": "Figure 2-8. Graphs that depict the relationships between training loss, a model’s number of parameters, FLOPs, and number of training tokens. Source: “Training Compute-Optional Large Language Models” (DeepMind, 2022).",
+          "alt": "A graph with dots and lines  Description automatically generated"
+        },
+        {
+          "file": "aien_0209.png",
+          "caption": "Figure 2-9. Projection of historical trend of training dataset sizes and available data stock. Source: Villalobos et al., 2024.",
+          "alt": "A graph of data being measured  Description automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0210.png",
+          "caption": "Figure 2-10. The overall training workflow with pre-training, SFT, and RLHF.",
+          "alt": "A diagram of a data analysis  Description automatically generated"
+        },
+        {
+          "file": "aien_0211.png",
+          "caption": "Figure 2-11. Shoggoth with a smiley face. Adapted from an original image shared by anthrupad.",
+          "alt": "A drawing of a monster  Description automatically generated"
+        },
+        {
+          "file": "aien_0212.png",
+          "caption": "Figure 2-12. The distribution of prompts used to finetune InstructGPT. The graph is created based on the numbers from the OpenAI paper.",
+          "alt": "A colorful circle with text on it  Description automatically generated"
+        },
+        {
+          "file": "aien_0213.png",
+          "caption": "Figure 2-13. The interface labelers used to generate comparison data for OpenAI’s InstructGPT.",
+          "alt": "Screenshot of a screenshot of a computer screen  Description automatically generated"
+        },
+        {
+          "file": "aien_0214.png",
+          "caption": "Figure 2-14. To generate the next token, the language model first computes the probability distribution over all tokens in the vocabulary.",
+          "alt": "A diagram of a color  Description automatically generated"
+        },
+        {
+          "file": "aien_0215.png",
+          "caption": "Figure 2-15. For each input, a language model produces a logit vector. Each logit corresponds to a token in the vocabulary.",
+          "alt": "A diagram of a network  Description automatically generated"
+        },
+        {
+          "file": "aien_0216.png",
+          "caption": "Figure 2-16. The softmax probabilities for tokens A and B at different temperatures, given their logits being [1, 2]. Without setting the temperature value, which is equivalent to using the temperature of 1, the softmax probability of B would be 73%.",
+          "alt": "A graph with a line  Description automatically generated"
+        },
+        {
+          "file": "aien_0217.png",
+          "caption": "Figure 2-17. How logits, probabilities, and logprobs are computed.",
+          "alt": "A diagram of a softmax  Description automatically generated"
+        },
+        {
+          "file": "aien_0218.png",
+          "caption": "Figure 2-18. Example token probabilities.",
+          "alt": "A screenshot of a computer  Description automatically generated"
+        },
+        {
+          "file": "aien_0219.png",
+          "caption": "Figure 2-19. OpenAI (2021) found that sampling more outputs led to better performance, but only up to 400 outputs.",
+          "alt": "A graph with blue lines and numbers  Description automatically generated"
+        },
+        {
+          "file": "aien_0220.png",
+          "caption": "Figure 2-20. Using guidance to generate constrained outputs.",
+          "alt": "A screenshot of a computer  Description automatically generated"
+        },
+        {
+          "file": "aien_0221.png",
+          "caption": "Figure 2-21. Filter out logits that don’t meet the constraints in order to sample only among valid outputs.",
+          "alt": "A diagram of a software model  Description automatically generated"
+        },
+        {
+          "file": "aien_0222.png",
+          "caption": "Figure 2-22. Adding a classifier head to your base model to turn it into a classifier. In this example, the classifier works with three classes.",
+          "alt": "A diagram of a layer  Description automatically generated"
+        },
+        {
+          "file": "aien_0223.png",
+          "caption": "Figure 2-23. The same input can produce different outputs in the same model.",
+          "alt": "A screenshot of a computer  Description automatically generated"
+        },
+        {
+          "file": "aien_0224.png",
+          "caption": "Figure 2-24. An example of self-delusion by LLaVA-v1.5-7B.",
+          "alt": "A bottle of milk with instructions  Description automatically generated"
+        },
+        {
+          "file": "aien_0225.png",
+          "caption": "Figure 2-25. An initial incorrect assumption can cause the model to claim that 9677 is divisible by 13, even if it knows this isn’t true.",
+          "alt": "A screenshot of a computer  Description automatically generated"
+        },
+        {
+          "file": "aien_0226.png",
+          "caption": "Figure 2-26. Hallucination is worse for the model that uses both RLHF and SFT (InstructGPT) compared to the same model that uses only SFT (Ouyang et al., 2022).",
+          "alt": "A screenshot of a computer  Description automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/ch03.html",
+      "title": "Chapter 3. Evaluation Methodology",
+      "charCount": 94280,
+      "wordCount": 15067,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 3. Evaluation Methodology"
+        },
+        {
+          "level": "h1",
+          "title": "Challenges of Evaluating Foundation Models"
+        },
+        {
+          "level": "h1",
+          "title": "Understanding Language Modeling Metrics"
+        },
+        {
+          "level": "h2",
+          "title": "Entropy"
+        },
+        {
+          "level": "h2",
+          "title": "Cross Entropy"
+        },
+        {
+          "level": "h2",
+          "title": "Bits-per-Character and Bits-per-Byte"
+        },
+        {
+          "level": "h2",
+          "title": "Perplexity"
+        },
+        {
+          "level": "h2",
+          "title": "Perplexity Interpretation and Use Cases"
+        },
+        {
+          "level": "h1",
+          "title": "How to Use a Language Model to Compute a Text’s Perplexity"
+        },
+        {
+          "level": "h1",
+          "title": "Exact Evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "Functional Correctness"
+        },
+        {
+          "level": "h2",
+          "title": "Similarity Measurements Against Reference Data"
+        },
+        {
+          "level": "h3",
+          "title": "Exact match"
+        },
+        {
+          "level": "h3",
+          "title": "Lexical similarity"
+        },
+        {
+          "level": "h3",
+          "title": "Semantic similarity"
+        },
+        {
+          "level": "h2",
+          "title": "Introduction to Embedding"
+        },
+        {
+          "level": "h1",
+          "title": "AI as a Judge"
+        },
+        {
+          "level": "h2",
+          "title": "Why AI as a Judge?"
+        },
+        {
+          "level": "h2",
+          "title": "How to Use AI as a Judge"
+        },
+        {
+          "level": "h2",
+          "title": "Limitations of AI as a Judge"
+        },
+        {
+          "level": "h3",
+          "title": "Inconsistency"
+        },
+        {
+          "level": "h3",
+          "title": "Criteria ambiguity"
+        },
+        {
+          "level": "h3",
+          "title": "Increased costs and latency"
+        },
+        {
+          "level": "h3",
+          "title": "Biases of AI as a judge"
+        },
+        {
+          "level": "h2",
+          "title": "What Models Can Act as Judges?"
+        },
+        {
+          "level": "h1",
+          "title": "Ranking Models with Comparative Evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "Challenges of Comparative Evaluation"
+        },
+        {
+          "level": "h3",
+          "title": "Scalability bottlenecks"
+        },
+        {
+          "level": "h3",
+          "title": "Lack of standardization and quality control"
+        },
+        {
+          "level": "h3",
+          "title": "From comparative performance to absolute performance"
+        },
+        {
+          "level": "h2",
+          "title": "The Future of Comparative Evaluation"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0301.png",
+          "caption": "Figure 3-1. The trend of LLMs evaluation papers over time. Image from Chang et al. (2023).",
+          "alt": "A graph with a line going up\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0302.png",
+          "caption": "Figure 3-2. Number of open source evaluation repositories among the 1,000 most popular AI repositories on GitHub.",
+          "alt": "A graph of a graph showing the growth of a number of people\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0303.png",
+          "caption": "Figure 3-3. According to data sourced from my list of the 1,000 most popular AI repositories on GitHub, evaluation lags behind other aspects of AI engineering in terms of open source tools.",
+          "alt": "A bar graph with text\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0304.png",
+          "caption": "Figure 3-4. Two languages describe positions within a square. Compared to the language on the left (a), the tokens on the right (b) carry more information, but they need more bits to represent them.",
+          "alt": "A couple of squares with numbers\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0305.png",
+          "caption": "Figure 3-5. An example where Fuyu generated a correct option but was given a low score because of the limitation of reference captions.",
+          "alt": "A screenshot of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0306.png",
+          "caption": "Figure 3-6. CLIP’s architecture (Radford et al., 2021).",
+          "alt": "A diagram of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0307.png",
+          "caption": "Figure 3-7. Not only can AI judges score, they also can explain their decisions.",
+          "alt": "A screenshot of a paper\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0308.png",
+          "caption": "Figure 3-8. An example of an AI judge that evaluates the quality of an answer given a question.",
+          "alt": "A diagram of a question\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0309.png",
+          "caption": "Figure 3-9. An example output of PandaLM, given a human prompt and two generated responses. Picture from Wang et al. (2023), modified slightly for readability. The original image is available under the Apache License 2.0.",
+          "alt": "A diagram of a diagram\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0310.png",
+          "caption": "Figure 3-10. ChatGPT occasionally asks users to compare two outputs side by side.",
+          "alt": "A screenshot of a dictionary\n\nDescription automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/ch04.html",
+      "title": "Chapter 4. Evaluate AI Systems",
+      "charCount": 117682,
+      "wordCount": 18479,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 4. Evaluate AI Systems"
+        },
+        {
+          "level": "h1",
+          "title": "Evaluation Criteria"
+        },
+        {
+          "level": "h1",
+          "title": "Evaluation-Driven Development"
+        },
+        {
+          "level": "h2",
+          "title": "Domain-Specific Capability"
+        },
+        {
+          "level": "h2",
+          "title": "Generation Capability"
+        },
+        {
+          "level": "h3",
+          "title": "Factual consistency"
+        },
+        {
+          "level": "h3",
+          "title": "Safety"
+        },
+        {
+          "level": "h2",
+          "title": "Instruction-Following Capability"
+        },
+        {
+          "level": "h3",
+          "title": "Instruction-following criteria"
+        },
+        {
+          "level": "h3",
+          "title": "Roleplaying"
+        },
+        {
+          "level": "h2",
+          "title": "Cost and Latency"
+        },
+        {
+          "level": "h1",
+          "title": "Model Selection"
+        },
+        {
+          "level": "h2",
+          "title": "Model Selection Workflow"
+        },
+        {
+          "level": "h2",
+          "title": "Model Build Versus Buy"
+        },
+        {
+          "level": "h3",
+          "title": "Open source, open weight, and model licenses"
+        },
+        {
+          "level": "h3",
+          "title": "Open source models versus model APIs"
+        },
+        {
+          "level": "h4",
+          "title": "Data privacy"
+        },
+        {
+          "level": "h4",
+          "title": "Data lineage and copyright"
+        },
+        {
+          "level": "h4",
+          "title": "Performance"
+        },
+        {
+          "level": "h4",
+          "title": "Functionality"
+        },
+        {
+          "level": "h4",
+          "title": "API cost versus engineering cost"
+        },
+        {
+          "level": "h4",
+          "title": "Control, access, and transparency"
+        },
+        {
+          "level": "h4",
+          "title": "On-device deployment"
+        },
+        {
+          "level": "h2",
+          "title": "Navigate Public Benchmarks"
+        },
+        {
+          "level": "h3",
+          "title": "Benchmark selection and aggregation"
+        },
+        {
+          "level": "h4",
+          "title": "Public leaderboards"
+        },
+        {
+          "level": "h4",
+          "title": "Custom leaderboards with public benchmarks"
+        },
+        {
+          "level": "h1",
+          "title": "Are OpenAI’s Models Getting Worse?"
+        },
+        {
+          "level": "h3",
+          "title": "Data contamination with public benchmarks"
+        },
+        {
+          "level": "h4",
+          "title": "How data contamination happens"
+        },
+        {
+          "level": "h4",
+          "title": "Handling data contamination"
+        },
+        {
+          "level": "h1",
+          "title": "Design Your Evaluation Pipeline"
+        },
+        {
+          "level": "h2",
+          "title": "Step 1. Evaluate All Components in a System"
+        },
+        {
+          "level": "h2",
+          "title": "Step 2. Create an Evaluation Guideline"
+        },
+        {
+          "level": "h3",
+          "title": "Define evaluation criteria"
+        },
+        {
+          "level": "h3",
+          "title": "Create scoring rubrics with examples"
+        },
+        {
+          "level": "h3",
+          "title": "Tie evaluation metrics to business metrics"
+        },
+        {
+          "level": "h2",
+          "title": "Step 3. Define Evaluation Methods and Data"
+        },
+        {
+          "level": "h3",
+          "title": "Select evaluation methods"
+        },
+        {
+          "level": "h3",
+          "title": "Annotate evaluation data"
+        },
+        {
+          "level": "h3",
+          "title": "Evaluate your evaluation pipeline"
+        },
+        {
+          "level": "h3",
+          "title": "Iterate"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0401.png",
+          "caption": "Figure 4-1. SAFE breaks an output into individual facts and then uses a search engine to verify each fact. Image adapted from Wei et al. (2024).",
+          "alt": "A pink chart with green and red check marks\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0402.png",
+          "caption": "Figure 4-2. The performance of different models on TruthfulQA, as shown in GPT-4’s technical report.",
+          "alt": "A graph of multiple colored bars\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0403.png",
+          "caption": "Figure 4-3. Political and economic leanings of different foundation models (Feng et al., 2023). The image is licensed under CC BY 4.0.",
+          "alt": "A diagram of a political system\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0404.png",
+          "caption": "Figure 4-4. Top 10 most common instruction types in LMSYS’s one-million-conversations dataset.",
+          "alt": "A colorful rectangular bars with text\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0405.png",
+          "caption": "Figure 4-5. An overview of the evaluation workflow to evaluate models for your application.",
+          "alt": "A diagram of a diagram\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0406.png",
+          "caption": "Figure 4-6. An inference service runs the model and provides an interface for users to access the model.",
+          "alt": "A diagram of a service\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0407.png",
+          "caption": "Figure 4-7. The gap between open source models and proprietary models is decreasing on the MMLU benchmark. Image by Maxime Labonne.",
+          "alt": "A graph showing a number of sources\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0408.png",
+          "caption": "Figure 4-8. Why enterprises care about open source models. Image from the 2024 study by a16z.",
+          "alt": "A screenshot of a graph\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0409.png",
+          "caption": "Figure 4-9. Changes in the performances of GPT-3.5 and GPT-4 from March 2023 to June 2023 on certain benchmarks (Chen et al., 2023).",
+          "alt": "A screenshot of a graph\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0410.png",
+          "caption": "Figure 4-10. Relative difference in GPT-3’s performance when evaluating using only the clean sample compared to evaluating using the whole benchmark.",
+          "alt": "A table of numbers with text\n\nDescription automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/ch05.html",
+      "title": "Chapter 5. Prompt Engineering",
+      "charCount": 78620,
+      "wordCount": 12414,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 5. Prompt Engineering"
+        },
+        {
+          "level": "h1",
+          "title": "Introduction to Prompting"
+        },
+        {
+          "level": "h2",
+          "title": "In-Context Learning: Zero-Shot and Few-Shot"
+        },
+        {
+          "level": "h1",
+          "title": "Terminology Ambiguity: Prompt Versus Context"
+        },
+        {
+          "level": "h2",
+          "title": "System Prompt and User Prompt"
+        },
+        {
+          "level": "h2",
+          "title": "Context Length and Context Efficiency"
+        },
+        {
+          "level": "h1",
+          "title": "Prompt Engineering Best Practices"
+        },
+        {
+          "level": "h2",
+          "title": "Write Clear and Explicit Instructions"
+        },
+        {
+          "level": "h3",
+          "title": "Explain, without ambiguity, what you want the model to do"
+        },
+        {
+          "level": "h3",
+          "title": "Ask the model to adopt a persona"
+        },
+        {
+          "level": "h3",
+          "title": "Provide examples"
+        },
+        {
+          "level": "h3",
+          "title": "Specify the output format"
+        },
+        {
+          "level": "h2",
+          "title": "Provide Sufficient Context"
+        },
+        {
+          "level": "h1",
+          "title": "How to Restrict a Model’s Knowledge to Only Its Context"
+        },
+        {
+          "level": "h2",
+          "title": "Break Complex Tasks into Simpler Subtasks"
+        },
+        {
+          "level": "h2",
+          "title": "Give the Model Time to Think"
+        },
+        {
+          "level": "h2",
+          "title": "Iterate on Your Prompts"
+        },
+        {
+          "level": "h2",
+          "title": "Evaluate Prompt Engineering Tools"
+        },
+        {
+          "level": "h2",
+          "title": "Organize and Version Prompts"
+        },
+        {
+          "level": "h1",
+          "title": "Defensive Prompt Engineering"
+        },
+        {
+          "level": "h2",
+          "title": "Proprietary Prompts and Reverse Prompt Engineering"
+        },
+        {
+          "level": "h2",
+          "title": "Jailbreaking and Prompt Injection"
+        },
+        {
+          "level": "h3",
+          "title": "Direct manual prompt hacking"
+        },
+        {
+          "level": "h3",
+          "title": "Automated attacks"
+        },
+        {
+          "level": "h3",
+          "title": "Indirect prompt injection"
+        },
+        {
+          "level": "h2",
+          "title": "Information Extraction"
+        },
+        {
+          "level": "h2",
+          "title": "Defenses Against Prompt Attacks"
+        },
+        {
+          "level": "h3",
+          "title": "Model-level defense"
+        },
+        {
+          "level": "h3",
+          "title": "Prompt-level defense"
+        },
+        {
+          "level": "h3",
+          "title": "System-level defense"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0501.png",
+          "caption": "Figure 5-1. A simple prompt for NER.",
+          "alt": "A close-up of a text\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0502.png",
+          "caption": "Figure 5-2. Context length was expanded from 1K to 2M between February 2019 and May 2024.6",
+          "alt": "A graph with blue lines and numbers\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0503.png",
+          "caption": "Figure 5-3. An example of a needle in a haystack prompt used by Liu et al., 2023",
+          "alt": "A screenshot of a computer code\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0504.png",
+          "caption": "Figure 5-4. The effect of changing the position of the inserted information in the prompt on models’ performance. Lower positions are closer to the start of the input context.",
+          "alt": "A graph with lines and dots\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0505.png",
+          "caption": "Figure 5-5. Asking a model to adopt a persona can help the model use the right perspective to answer your queries.",
+          "alt": "A text message with a person's hand\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0506.png",
+          "caption": "Figure 5-6. CoT improved the performance of LaMDA, GPT-3, and PaLM on MAWPS (Math Word Problem Solving), SVAMP (sequence variation analysis, maps, and phylogeny), and GSM-8K benchmarks. Screenshot from Wei et al., 2022. This image is licensed under CC BY 4.0.",
+          "alt": "A graph of different types of data\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0507.png",
+          "caption": "Figure 5-7. AI models can write prompts for you, as shown by this prompt generated by Claude 3.5 Sonnet.",
+          "alt": "A screenshot of a computer screen\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0508.png",
+          "caption": "Figure 5-8. Starting from an initial prompt, Promptbreeder generates mutations to this prompt and selects the most promising ones. The selected ones are again mutated, and so on.",
+          "alt": "A diagram of a question\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0509.png",
+          "caption": "Figure 5-9. Typos in a LangChain default prompt are highlighted.",
+          "alt": ""
+        },
+        {
+          "file": "aien_0510.png",
+          "caption": "Figure 5-10. A model can reveal a user’s location even if it’s been explicitly instructed not to do so. Image from Brex’s Prompt Engineering Guide (2023).",
+          "alt": "A screenshot of a chat\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0511.png",
+          "caption": "Figure 5-11. PAIR uses an attacker AI to generate prompts to bypass the target AI. Image by Chao et al. (2023). This image is licensed under CC BY 4.0.",
+          "alt": "A diagram of a response\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0512.png",
+          "caption": "Figure 5-12. Attackers can inject malicious prompts and code that your model can retrieve and execute. Image adapted from “Not What You’ve Signed Up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection” (Greshake et al., 2023).",
+          "alt": "A diagram of a robot\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0513.png",
+          "caption": "Figure 5-13. A demonstration of the divergence attack, where a seemingly innocuous prompt can cause the model to diverge and divulge training data.",
+          "alt": "A screenshot of a message\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0514.png",
+          "caption": "Figure 5-14. Many of Stable Diffusion’s generated images are near duplicates of real-world images, which is likely because these real-world images were included in the model’s training data. Image from Carlini et al. (2023).",
+          "alt": "A group of people posing for a photo\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0515.png",
+          "caption": "Figure 5-15. Claude mistakenly blocked a request but complied after the user pointed out the mistake.",
+          "alt": "A screenshot of a chat\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0516.png",
+          "caption": "Figure 5-16. tion hierarchy proposed by Wallace et al. (2024).",
+          "alt": "A table with black and white text\n\nDescription automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/ch06.html",
+      "title": "Chapter 6. RAG and Agents",
+      "charCount": 110245,
+      "wordCount": 17647,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 6. RAG and Agents"
+        },
+        {
+          "level": "h1",
+          "title": "RAG"
+        },
+        {
+          "level": "h2",
+          "title": "RAG Architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Retrieval Algorithms"
+        },
+        {
+          "level": "h1",
+          "title": "Sparse Versus Dense Retrieval"
+        },
+        {
+          "level": "h3",
+          "title": "Term-based retrieval"
+        },
+        {
+          "level": "h3",
+          "title": "Embedding-based retrieval"
+        },
+        {
+          "level": "h3",
+          "title": "Comparing retrieval algorithms"
+        },
+        {
+          "level": "h3",
+          "title": "Combining retrieval algorithms"
+        },
+        {
+          "level": "h2",
+          "title": "Retrieval Optimization"
+        },
+        {
+          "level": "h3",
+          "title": "Chunking strategy"
+        },
+        {
+          "level": "h3",
+          "title": "Reranking"
+        },
+        {
+          "level": "h3",
+          "title": "Query rewriting"
+        },
+        {
+          "level": "h3",
+          "title": "Contextual retrieval"
+        },
+        {
+          "level": "h1",
+          "title": "Evaluating Retrieval Solutions"
+        },
+        {
+          "level": "h2",
+          "title": "RAG Beyond Texts"
+        },
+        {
+          "level": "h3",
+          "title": "Multimodal RAG"
+        },
+        {
+          "level": "h3",
+          "title": "RAG with tabular data"
+        },
+        {
+          "level": "h1",
+          "title": "Agents"
+        },
+        {
+          "level": "h2",
+          "title": "Agent Overview"
+        },
+        {
+          "level": "h2",
+          "title": "Tools"
+        },
+        {
+          "level": "h3",
+          "title": "Knowledge augmentation"
+        },
+        {
+          "level": "h3",
+          "title": "Capability extension"
+        },
+        {
+          "level": "h3",
+          "title": "Write actions"
+        },
+        {
+          "level": "h2",
+          "title": "Planning"
+        },
+        {
+          "level": "h3",
+          "title": "Planning overview"
+        },
+        {
+          "level": "h3",
+          "title": "Foundation models as planners"
+        },
+        {
+          "level": "h1",
+          "title": "Foundation Model (FM) Versus Reinforcement Learning (RL) Planners"
+        },
+        {
+          "level": "h3",
+          "title": "Plan generation"
+        },
+        {
+          "level": "h4",
+          "title": "Function calling"
+        },
+        {
+          "level": "h4",
+          "title": "Planning granularity"
+        },
+        {
+          "level": "h4",
+          "title": "Complex plans"
+        },
+        {
+          "level": "h3",
+          "title": "Reflection and error correction"
+        },
+        {
+          "level": "h3",
+          "title": "Tool selection"
+        },
+        {
+          "level": "h2",
+          "title": "Agent Failure Modes and Evaluation"
+        },
+        {
+          "level": "h3",
+          "title": "Planning failures"
+        },
+        {
+          "level": "h3",
+          "title": "Tool failures"
+        },
+        {
+          "level": "h3",
+          "title": "Efficiency"
+        },
+        {
+          "level": "h1",
+          "title": "Memory"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0601.png",
+          "caption": "Figure 6-1. The retrieve-then-generate pattern. The model was referred to as the document reader.",
+          "alt": "A diagram of a document\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0602.png",
+          "caption": "Figure 6-2. A basic RAG architecture.",
+          "alt": "A diagram of a computer program\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0603.png",
+          "caption": "Figure 6-3. A high-level view of how an embedding-based, or semantic, retriever works.",
+          "alt": "A diagram of a model\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0604.png",
+          "caption": "Figure 6-4. You can use other generative models to rewrite queries.",
+          "alt": "A screenshot of a chat\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0605.png",
+          "caption": "Figure 6-5. Anthropic augments each chunk with a short context that situates this chunk within the original document, making it easier for the retriever to find the relevant chunks given a query. Image from “Introducing Contextual Retrieval” (Anthropic, 2024).",
+          "alt": "A diagram of a process\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0606.png",
+          "caption": "Figure 6-6. Multimodal RAG can augment a query with both text and images. (*The real image from Up is not used, for copyright reasons.)",
+          "alt": "A diagram of a diagram\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0607.png",
+          "caption": "Figure 6-7. A RAG system that augments context with tabular data.",
+          "alt": "A diagram of a product\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0608.png",
+          "caption": "Figure 6-8. SWE-agent (Yang et al., 2024) is a coding agent whose environment is the computer and whose actions include navigation, search, and editing. Adapted from an original image licensed under CC BY 4.0.",
+          "alt": "A screenshot of a computer interface\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0609.png",
+          "caption": "Figure 6-9. Decoupling planning and execution so that only validated plans are executed.",
+          "alt": "A diagram of a tool\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0610.png",
+          "caption": "Figure 6-10. An example of a model using two simple tools.",
+          "alt": "A screenshot of a computer program\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0611.png",
+          "caption": "Figure 6-11. Examples of different orders in which a plan can be executed.",
+          "alt": "A diagram of a task\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0612.png",
+          "caption": "Figure 6-12. A ReAct agent in action. Image from the ReAct paper (Yao et al., 2022). The image is licensed under CC BY 4.0.",
+          "alt": "A screenshot of a computer program\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0613.png",
+          "caption": "Figure 6-13. Examples of how Reflexion agents work. Images from the Reflexion GitHub repo.",
+          "alt": "A screenshot of a computer program\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0614.png",
+          "caption": "Figure 6-14. Different models and tasks express different tool use patterns. Image from Lu et al. (2023). Adapted from an original image licensed under CC BY 4.0.",
+          "alt": "A screenshot of a graph\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0615.png",
+          "caption": "Figure 6-15. A tool transition tree by Lu et al. (2023). Adapted from an original image licensed under CC BY 4.0.",
+          "alt": "A diagram of a diagram\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0616.png",
+          "caption": "Figure 6-16. The hierarchy of information for an agent.",
+          "alt": "A diagram of a memory model\n\nDescription automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OEBPS/ch07.html",
+      "title": "Chapter 7. Finetuning",
+      "charCount": 114618,
+      "wordCount": 17966,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 7. Finetuning"
+        },
+        {
+          "level": "h1",
+          "title": "Finetuning Overview"
+        },
+        {
+          "level": "h1",
+          "title": "When to Finetune"
+        },
+        {
+          "level": "h2",
+          "title": "Reasons to Finetune"
+        },
+        {
+          "level": "h2",
+          "title": "Reasons Not to Finetune"
+        },
+        {
+          "level": "h1",
+          "title": "Finetuning Domain-Specific Tasks"
+        },
+        {
+          "level": "h2",
+          "title": "Finetuning and RAG"
+        },
+        {
+          "level": "h1",
+          "title": "Memory Bottlenecks"
+        },
+        {
+          "level": "h1",
+          "title": "Key Takeaways for Understanding Memory Bottlenecks"
+        },
+        {
+          "level": "h2",
+          "title": "Backpropagation and Trainable Parameters"
+        },
+        {
+          "level": "h2",
+          "title": "Memory Math"
+        },
+        {
+          "level": "h3",
+          "title": "Memory needed for inference"
+        },
+        {
+          "level": "h3",
+          "title": "Memory needed for training"
+        },
+        {
+          "level": "h2",
+          "title": "Numerical Representations"
+        },
+        {
+          "level": "h2",
+          "title": "Quantization"
+        },
+        {
+          "level": "h1",
+          "title": "Quantization Versus Reduced Precision"
+        },
+        {
+          "level": "h3",
+          "title": "Inference quantization"
+        },
+        {
+          "level": "h3",
+          "title": "Training quantization"
+        },
+        {
+          "level": "h1",
+          "title": "Finetuning Techniques"
+        },
+        {
+          "level": "h2",
+          "title": "Parameter-Efficient Finetuning"
+        },
+        {
+          "level": "h3",
+          "title": "PEFT techniques"
+        },
+        {
+          "level": "h3",
+          "title": "LoRA"
+        },
+        {
+          "level": "h4",
+          "title": "Why does LoRA work?"
+        },
+        {
+          "level": "h4",
+          "title": "LoRA configurations"
+        },
+        {
+          "level": "h4",
+          "title": "Serving LoRA adapters"
+        },
+        {
+          "level": "h4",
+          "title": "Quantized LoRA"
+        },
+        {
+          "level": "h2",
+          "title": "Model Merging and Multi-Task Finetuning"
+        },
+        {
+          "level": "h3",
+          "title": "Summing"
+        },
+        {
+          "level": "h4",
+          "title": "Linear combination"
+        },
+        {
+          "level": "h4",
+          "title": "Spherical linear interpolation (SLERP)"
+        },
+        {
+          "level": "h4",
+          "title": "Pruning redundant task-specific parameters"
+        },
+        {
+          "level": "h3",
+          "title": "Layer stacking"
+        },
+        {
+          "level": "h3",
+          "title": "Concatenation"
+        },
+        {
+          "level": "h2",
+          "title": "Finetuning Tactics"
+        },
+        {
+          "level": "h3",
+          "title": "Finetuning frameworks and base models"
+        },
+        {
+          "level": "h4",
+          "title": "Base models"
+        },
+        {
+          "level": "h4",
+          "title": "Finetuning methods"
+        },
+        {
+          "level": "h4",
+          "title": "Finetuning frameworks"
+        },
+        {
+          "level": "h3",
+          "title": "Finetuning hyperparameters"
+        },
+        {
+          "level": "h4",
+          "title": "Learning rate"
+        },
+        {
+          "level": "h4",
+          "title": "Batch size"
+        },
+        {
+          "level": "h4",
+          "title": "Number of epochs"
+        },
+        {
+          "level": "h4",
+          "title": "Prompt loss weight"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0701.png",
+          "caption": "Figure 7-1. Different finetuning techniques used to make different Code Llama models. Image from the Rozière et al. (2024). Adapted from an original image licensed under CC BY 4.0.",
+          "alt": "A diagram of a program\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0702.png",
+          "caption": "Figure 7-2. Instead of including examples in each prompt, which increases cost and latency, you finetune a model on these examples.",
+          "alt": "A diagram of a model\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0703.png",
+          "caption": "Figure 7-3. Example application development flows. After simple retrieval (such as term-based retrieval), whether to experiment with more complex retrieval (such as hybrid search) or finetuning depends on each application and its failure modes.",
+          "alt": "A diagram of a process\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0704.png",
+          "caption": "Figure 7-4. The forward and backward pass of a simple neural network.",
+          "alt": "A diagram of a flowchart\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0705.png",
+          "caption": "Figure 7-5. The memory needed for activations can dwarf the memory needed for the model’s weights. Image from Korthikanti et al., 2022.",
+          "alt": "A graph of a graph\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0706.png",
+          "caption": "Figure 7-6. Different numerical formats with their range and precision.",
+          "alt": "A graph with numbers and text\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0707.png",
+          "caption": "Figure 7-7. The blue line shows that partial finetuning requires many trainable parameters to achieve a performance comparable to full finetuning. Image from Houlsby et al. (2019).",
+          "alt": "A graph of a number of objects\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0708.png",
+          "caption": "Figure 7-8. By inserting two adapter modules into each transformer layer for a BERT model and updating only the adapters, Houlsby et al. (2019) were able to achieve strong finetuning performance using a small number of trainable parameters.",
+          "alt": "A diagram of a layer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0709.png",
+          "caption": "Figure 7-9. Hard prompts and soft prompts can be combined to change a model’s behaviors.",
+          "alt": "A diagram of a model\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0710.png",
+          "caption": "Figure 7-10. The number of issues corresponding to different finetuning techniques from the GitHub repository huggingface/peft. This is a proxy to estimate the popularity of each technique.",
+          "alt": "A graph of a graph with different colored bars\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0711.png",
+          "caption": "Figure 7-11. To apply LoRA to a weight matrix W, decompose it into the product of two matrices A and B. During finetuning, only A and B are updated. W is kept intact.",
+          "alt": "A diagram of a diagram\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0712.png",
+          "caption": "Figure 7-12. Keeping LoRA adapters separate allows reuse of the same full-rank matrix W in multi-LoRA serving.",
+          "alt": "A diagram of a flowchart\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0713.png",
+          "caption": "Figure 7-13. How ensembling and model merging work.",
+          "alt": "A diagram of a model\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0714.png",
+          "caption": "Figure 7-14. Three main approaches to model merging: summing, layer stacking, and concatenation.",
+          "alt": "A diagram of different colored bricks\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0715.png",
+          "caption": "Figure 7-15. Merging parameters by averaging them.",
+          "alt": "A diagram of yellow circles with numbers\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0716.png",
+          "caption": "Figure 7-16. How SLERP works for two vectors t1 and t2. The red line is their shortest path on the spherical surface. Depending on the interpolation, the merged vector can be any point along this path. The blue vector is the resulting merged vector when the interpolation factor is 0.5.",
+          "alt": "A circle with arrows and a red circle\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0717.png",
+          "caption": "Figure 7-17. In Yadav et al.’s experiments, keeping the top 20% of the task vector parameters gives comparable performance to keeping 100% of the parameters.",
+          "alt": "A graph with a line and a dotted line\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0718.png",
+          "caption": "Figure 7-18. You can create an MoE model from a pre-trained model. Image adapted from Komatsuzaki et al. (2022).",
+          "alt": "A diagram of a machine\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0719.png",
+          "caption": "Figure 7-19. Use depthwise scaling to create a 48-layer model from a 32-layer model. The image is licensed under CC BY 4.0 and was slightly modified for readability.",
+          "alt": "A screenshot of a computer program\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0720.png",
+          "caption": "Figure 7-20. If you merge two LoRA adapters using concatenation, the rank of the merged adapter will be the sum of both adapters’ ranks.",
+          "alt": "A diagram of a algorithm\n\nDescription automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OEBPS/ch08.html",
+      "title": "Chapter 8. Dataset Engineering",
+      "charCount": 91645,
+      "wordCount": 14303,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 8. Dataset Engineering"
+        },
+        {
+          "level": "h1",
+          "title": "A Data-Centric View of AI"
+        },
+        {
+          "level": "h1",
+          "title": "Data Curation"
+        },
+        {
+          "level": "h2",
+          "title": "Data Quality"
+        },
+        {
+          "level": "h2",
+          "title": "Data Coverage"
+        },
+        {
+          "level": "h2",
+          "title": "Data Quantity"
+        },
+        {
+          "level": "h2",
+          "title": "Data Acquisition and Annotation"
+        },
+        {
+          "level": "h1",
+          "title": "Resources for Publicly Available Datasets"
+        },
+        {
+          "level": "h1",
+          "title": "Data Augmentation and Synthesis"
+        },
+        {
+          "level": "h2",
+          "title": "Why Data Synthesis"
+        },
+        {
+          "level": "h2",
+          "title": "Traditional Data Synthesis Techniques"
+        },
+        {
+          "level": "h3",
+          "title": "Rule-based data synthesis"
+        },
+        {
+          "level": "h3",
+          "title": "Simulation"
+        },
+        {
+          "level": "h2",
+          "title": "AI-Powered Data Synthesis"
+        },
+        {
+          "level": "h3",
+          "title": "Instruction data synthesis"
+        },
+        {
+          "level": "h3",
+          "title": "Data verification"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations to AI-generated data"
+        },
+        {
+          "level": "h4",
+          "title": "Quality control"
+        },
+        {
+          "level": "h4",
+          "title": "Superficial imitation"
+        },
+        {
+          "level": "h4",
+          "title": "Potential model collapse"
+        },
+        {
+          "level": "h4",
+          "title": "Obscure data lineage"
+        },
+        {
+          "level": "h2",
+          "title": "Model Distillation"
+        },
+        {
+          "level": "h1",
+          "title": "Data Processing"
+        },
+        {
+          "level": "h2",
+          "title": "Inspect Data"
+        },
+        {
+          "level": "h2",
+          "title": "Deduplicate Data"
+        },
+        {
+          "level": "h2",
+          "title": "Clean and Filter Data"
+        },
+        {
+          "level": "h2",
+          "title": "Format Data"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0801.png",
+          "caption": "Figure 8-1. A 7B-parameter model, finetuned on a dataset that is both high-quality and diverse, outperforms that same model finetuned on a dataset that is either diverse or high-quality. Image from Zhou et al. (2023). The image is licensed under CC BY 4.0.",
+          "alt": "A graph of different sizes of blue and red bars\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0802.png",
+          "caption": "Figure 8-2. With 100 examples, more advanced models give much better performance after finetuning. With 550,000 examples, all models give similar performance after finetuning. Experiments done by Stanford Natural Language Inference (SNLI) Corpus.",
+          "alt": "A graph of different colored bars\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0803.png",
+          "caption": "Figure 8-3. The performance gain curve with different dataset sizes can help you estimate the impact of additional training examples on your model’s performance.",
+          "alt": "A graph with a line\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0804.png",
+          "caption": "Figure 8-4. Diversity in finetuning number, measured by the number of tasks, can impact model performance. Image from “Scaling Instruction-Finetuned Language Models” (Chung et al., 2022). The image is licensed under CC BY 4.0.",
+          "alt": "A graph of numbers and a number of finetuning tasks\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0805.png",
+          "caption": "Figure 8-5. A seed task and a generated task used to train Alpaca.",
+          "alt": "A close-up of a sign\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0806.png",
+          "caption": "Figure 8-6. One statistic you can use is the distribution of (verb, direct object noun) in your data. Image from “Instruction Tuning with GPT-4” (Peng et al., 2023).",
+          "alt": "A graph with numbers and a bar chart\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0807.png",
+          "caption": "Figure 8-7. The distribution of response length for GPT-4 and GPT-3. Image from “Instruction Tuning with GPT-4” (Peng et al., 2023).",
+          "alt": "A graph showing a line of output sequence\n\nDescription automatically generated with medium confidence"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "OEBPS/ch09.html",
+      "title": "Chapter 9. Inference Optimization",
+      "charCount": 86270,
+      "wordCount": 13457,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 9. Inference Optimization"
+        },
+        {
+          "level": "h1",
+          "title": "Understanding Inference Optimization"
+        },
+        {
+          "level": "h2",
+          "title": "Inference Overview"
+        },
+        {
+          "level": "h3",
+          "title": "Computational bottlenecks"
+        },
+        {
+          "level": "h1",
+          "title": "Terminology Ambiguity: Memory-Bound Versus Bandwidth-Bound"
+        },
+        {
+          "level": "h3",
+          "title": "Online and batch inference APIs"
+        },
+        {
+          "level": "h2",
+          "title": "Inference Performance Metrics"
+        },
+        {
+          "level": "h3",
+          "title": "Latency, TTFT, and TPOT"
+        },
+        {
+          "level": "h3",
+          "title": "Throughput and goodput"
+        },
+        {
+          "level": "h3",
+          "title": "Utilization, MFU, and MBU"
+        },
+        {
+          "level": "h2",
+          "title": "AI Accelerators"
+        },
+        {
+          "level": "h3",
+          "title": "What’s an accelerator?"
+        },
+        {
+          "level": "h3",
+          "title": "Computational capabilities"
+        },
+        {
+          "level": "h3",
+          "title": "Memory size and bandwidth"
+        },
+        {
+          "level": "h3",
+          "title": "Power consumption"
+        },
+        {
+          "level": "h1",
+          "title": "Selecting Accelerators"
+        },
+        {
+          "level": "h1",
+          "title": "Inference Optimization"
+        },
+        {
+          "level": "h2",
+          "title": "Model Optimization"
+        },
+        {
+          "level": "h3",
+          "title": "Model compression"
+        },
+        {
+          "level": "h3",
+          "title": "Overcoming the autoregressive decoding bottleneck"
+        },
+        {
+          "level": "h4",
+          "title": "Speculative decoding"
+        },
+        {
+          "level": "h4",
+          "title": "Inference with reference"
+        },
+        {
+          "level": "h4",
+          "title": "Parallel decoding"
+        },
+        {
+          "level": "h3",
+          "title": "Attention mechanism optimization"
+        },
+        {
+          "level": "h1",
+          "title": "Calculating the KV Cache Size"
+        },
+        {
+          "level": "h4",
+          "title": "Redesigning the attention mechanism"
+        },
+        {
+          "level": "h4",
+          "title": "Optimizing the KV cache size"
+        },
+        {
+          "level": "h4",
+          "title": "Writing kernels for attention computation"
+        },
+        {
+          "level": "h3",
+          "title": "Kernels and compilers"
+        },
+        {
+          "level": "h1",
+          "title": "Inference Optimization Case Study from PyTorch"
+        },
+        {
+          "level": "h2",
+          "title": "Inference Service Optimization"
+        },
+        {
+          "level": "h3",
+          "title": "Batching"
+        },
+        {
+          "level": "h3",
+          "title": "Decoupling prefill and decode"
+        },
+        {
+          "level": "h3",
+          "title": "Prompt caching"
+        },
+        {
+          "level": "h3",
+          "title": "Parallelism"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_0901.png",
+          "caption": "Figure 9-1. A simple inference service.",
+          "alt": "A diagram of a computer hardware system\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0902.png",
+          "caption": "Figure 9-2. The roofline chart can help you visualize whether an operation is compute-bound or memory bandwidth-bound. This graph is on a log scale.",
+          "alt": "A graph with a line and a point\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0903.png",
+          "caption": "Figure 9-3. Autoregressive language models follow two steps for inference: prefill and decode. <eos> denotes the end of the sequence token.",
+          "alt": "A diagram of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0904.png",
+          "caption": "Figure 9-4. If an inference service can complete 10 RPS but only 3 satisfy the SLO, then its goodput is 3 RPS.",
+          "alt": "A graph showing different colored bars\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0905.png",
+          "caption": "Figure 9-5. Bandwidth utilization for Llama 2-70B in FP16 across three different chips shows a decrease in MBU as the number of concurrent users increases. Image from “LLM Training and Inference with Intel Gaudi 2 AI Accelerators” (Databricks, 2024).",
+          "alt": "A graph of a number of users\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0906.png",
+          "caption": "Figure 9-6. Different compute primitives. Image inspired by Chen et al. (2018).",
+          "alt": "A diagram of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0907.png",
+          "caption": "Figure 9-7. The memory hierarchy of an AI accelerator. The numbers are for reference only. The actual numbers vary for each chip.",
+          "alt": "A colorful pyramid with multiple layers\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0908.png",
+          "caption": "Figure 9-8. An inference service provider might use optimization techniques that can alter a model’s behavior, causing different providers to have slight model quality variations. The experiment was conducted by Cerebras (2024).",
+          "alt": "A graph of different types of numbers\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0909.png",
+          "caption": "Figure 9-9. A draft model generates a sequence of K tokens, and the main model accepts the longest subsequence that it agrees with. The image is from “Blockwise Parallel Decoding for Deep Autoregressive Models” (Stern et al., 2018).",
+          "alt": "A diagram of words\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0910.png",
+          "caption": "Figure 9-10. Two examples of inference with reference. The text spans that are successfully copied from the input are in red and green. Image from Yang et al. (2023). The image is licensed under CC BY 4.0.",
+          "alt": "A screenshot of a diagram\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0911.png",
+          "caption": "Figure 9-11. In Medusa (Cai et al., 2024), each head predicts several options for a token position. The most promising sequence from these options is selected. Image adapted from the paper, which is licensed under CC BY 4.0.",
+          "alt": "A diagram of a model\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0912.png",
+          "caption": "Figure 9-12. To avoid recomputing the key and value vectors at each decoding step, use a KV cache to store these vectors to reuse.",
+          "alt": "A diagram of a graph\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0913.png",
+          "caption": "Figure 9-13. FlashAttention is a kernel that fuses together several common operators. Adapted from an original image licensed under BSD 3-Clause.",
+          "alt": "A graph of a graph with text\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0914.png",
+          "caption": "Figure 9-14. Throughput improvement by different optimization techniques in PyTorch. Image from PyTorch (2023).",
+          "alt": "A graph with numbers and a bar\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0915.png",
+          "caption": "Figure 9-15. Dynamic batching keeps the latency manageable but might be less compute-efficient.",
+          "alt": "A screenshot of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0916.png",
+          "caption": "Figure 9-16. With continuous batching, completed responses can be returned immediately to users, and new requests can be processed in their place.",
+          "alt": "A screenshot of a diagram\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0917.png",
+          "caption": "Figure 9-17. With a prompt cache, overlapping segments in different prompts can be cached and reused.",
+          "alt": "A screenshot of a computer\n\nDescription automatically generated"
+        },
+        {
+          "file": "aien_0918.png",
+          "caption": "Figure 9-18. Tensor parallelism for matrix multiplication.",
+          "alt": "A diagram of a grid with squares and a few squares\n\nDescription automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_0919.png",
+          "caption": "Figure 9-19. Pipeline parallelism enables model splits to be executed in parallel.",
+          "alt": "A diagram of a layer\n\nDescription automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "OEBPS/ch10.html",
+      "title": "Chapter 10. AI Engineering Architecture and User Feedback",
+      "charCount": 83348,
+      "wordCount": 13050,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 10. AI Engineering Architecture and User Feedback"
+        },
+        {
+          "level": "h1",
+          "title": "AI Engineering Architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Step 1. Enhance Context"
+        },
+        {
+          "level": "h2",
+          "title": "Step 2. Put in Guardrails"
+        },
+        {
+          "level": "h3",
+          "title": "Input guardrails"
+        },
+        {
+          "level": "h3",
+          "title": "Output guardrails"
+        },
+        {
+          "level": "h3",
+          "title": "Guardrail implementation"
+        },
+        {
+          "level": "h2",
+          "title": "Step 3. Add Model Router and Gateway"
+        },
+        {
+          "level": "h3",
+          "title": "Router"
+        },
+        {
+          "level": "h3",
+          "title": "Gateway"
+        },
+        {
+          "level": "h2",
+          "title": "Step 4. Reduce Latency with Caches"
+        },
+        {
+          "level": "h3",
+          "title": "Exact caching"
+        },
+        {
+          "level": "h3",
+          "title": "Semantic caching"
+        },
+        {
+          "level": "h2",
+          "title": "Step 5. Add Agent Patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Monitoring and Observability"
+        },
+        {
+          "level": "h1",
+          "title": "Monitoring Versus Observability"
+        },
+        {
+          "level": "h3",
+          "title": "Metrics"
+        },
+        {
+          "level": "h3",
+          "title": "Logs and traces"
+        },
+        {
+          "level": "h3",
+          "title": "Drift detection"
+        },
+        {
+          "level": "h2",
+          "title": "AI Pipeline Orchestration"
+        },
+        {
+          "level": "h1",
+          "title": "User Feedback"
+        },
+        {
+          "level": "h2",
+          "title": "Extracting Conversational Feedback"
+        },
+        {
+          "level": "h3",
+          "title": "Natural language feedback"
+        },
+        {
+          "level": "h4",
+          "title": "Early termination"
+        },
+        {
+          "level": "h4",
+          "title": "Error correction"
+        },
+        {
+          "level": "h4",
+          "title": "Complaints"
+        },
+        {
+          "level": "h4",
+          "title": "Sentiment"
+        },
+        {
+          "level": "h3",
+          "title": "Other conversational feedback"
+        },
+        {
+          "level": "h4",
+          "title": "Regeneration"
+        },
+        {
+          "level": "h4",
+          "title": "Conversation organization"
+        },
+        {
+          "level": "h4",
+          "title": "Conversation length"
+        },
+        {
+          "level": "h4",
+          "title": "Dialogue diversity"
+        },
+        {
+          "level": "h2",
+          "title": "Feedback Design"
+        },
+        {
+          "level": "h3",
+          "title": "When to collect feedback"
+        },
+        {
+          "level": "h4",
+          "title": "In the beginning"
+        },
+        {
+          "level": "h4",
+          "title": "When something bad happens"
+        },
+        {
+          "level": "h4",
+          "title": "When the model has low confidence"
+        },
+        {
+          "level": "h3",
+          "title": "How to collect feedback"
+        },
+        {
+          "level": "h2",
+          "title": "Feedback Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Biases"
+        },
+        {
+          "level": "h3",
+          "title": "Degenerate feedback loop"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "aien_1001.png",
+          "caption": "Figure 10-1. The simplest architecture for running an AI application.",
+          "alt": "A diagram of a model  Description automatically generated"
+        },
+        {
+          "file": "aien_1002.png",
+          "caption": "Figure 10-2. A platform architecture with context construction.",
+          "alt": "A diagram of a database  Description automatically generated"
+        },
+        {
+          "file": "aien_1003.png",
+          "caption": "Figure 10-3. An example of masking and unmasking PII information using a reverse PII map to avoid sending it to external APIs.",
+          "alt": "A screenshot of a computer error  Description automatically generated"
+        },
+        {
+          "file": "aien_1004.png",
+          "caption": "Figure 10-4. Application architecture with the addition of input and output guardrails.",
+          "alt": "A diagram of a diagram  Description automatically generated"
+        },
+        {
+          "file": "aien_1005.png",
+          "caption": "Figure 10-5. Routing helps the system use the optimal solution for each query.",
+          "alt": "A diagram of a system  Description automatically generated"
+        },
+        {
+          "file": "aien_1006.png",
+          "caption": "Figure 10-6. A model gateway provides a unified interface to work with different models.",
+          "alt": "A diagram of a model gateway  Description automatically generated"
+        },
+        {
+          "file": "aien_1007.png",
+          "caption": "Figure 10-7. The architecture with the added routing and gateway modules.",
+          "alt": "A diagram of a data flow  Description automatically generated"
+        },
+        {
+          "file": "aien_1008.png",
+          "caption": "Figure 10-8. An AI application architecture with the added caches.",
+          "alt": ""
+        },
+        {
+          "file": "aien_1009.png",
+          "caption": "Figure 10-9. The yellow arrow allows the generated response to be fed back into the system, allowing more complex application patterns.",
+          "alt": "A diagram of a computer system  Description automatically generated"
+        },
+        {
+          "file": "aien_1010.png",
+          "caption": "Figure 10-10. An application architecture that enables the system to perform write actions.",
+          "alt": "A diagram of a system  Description automatically generated"
+        },
+        {
+          "file": "aien_1011.png",
+          "caption": "Figure 10-11. A request trace visualized by LangSmith.",
+          "alt": "Screens screenshot of a chat  Description automatically generated"
+        },
+        {
+          "file": "aien_1012.png",
+          "caption": "Figure 10-12. Because the user both terminates the generation early and rephrases the question, it can be inferred that the model misunderstood the intent of the original request.",
+          "alt": "A screenshot of a computer  Description automatically generated"
+        },
+        {
+          "file": "aien_1013.png",
+          "caption": "Figure 10-13. ChatGPT asks for comparative feedback when a user regenerates another response.",
+          "alt": "A white background with a black circle  Description automatically generated with medium confidence"
+        },
+        {
+          "file": "aien_1014.png",
+          "caption": "Figure 10-14. An example of how inpainting works in DALL-E. Image by OpenAI.",
+          "alt": "A screenshot of a comic book  Description automatically generated"
+        },
+        {
+          "file": "aien_1015.png",
+          "caption": "Figure 10-15. Side-by-side comparison of two ChatGPT responses.",
+          "alt": "A screenshot of a chat  Description automatically generated"
+        },
+        {
+          "file": "aien_1016.png",
+          "caption": "Figure 10-16. Google Gemini shows partial responses side by side for comparative feedback. Users have to click on the response they want to read more about, which gives feedback about which response they find more promising.",
+          "alt": "A screenshot of a computer  Description automatically generated"
+        },
+        {
+          "file": "aien_1017.png",
+          "caption": "Figure 10-17. Google Photos asks for user feedback when unsure. The two cat images were generated by ChatGPT.",
+          "alt": "A screenshot of a cartoon cat  Description automatically generated"
+        },
+        {
+          "file": "aien_1018.png",
+          "caption": "Figure 10-18. Midjourney’s workflow allows the app to collect implicit feedback.",
+          "alt": "A screenshot of a video game  Description automatically generated"
+        },
+        {
+          "file": "aien_1019.png",
+          "caption": "Figure 10-19. GitHub Copilot makes it easy to both suggest and reject a suggestion.",
+          "alt": "A screenshot of a computer program  Description automatically generated"
+        },
+        {
+          "file": "aien_1020.png",
+          "caption": "Figure 10-20. An example of ChatGPT asking a user to select the response the user prefers. However, for mathematical questions like this, the right answer shouldn’t be a matter of preference.",
+          "alt": "A screenshot of a chat  Description automatically generated"
+        },
+        {
+          "file": "aien_1021.png",
+          "caption": "Figure 10-21. Because Luma put the angry emoji, corresponding to a one-star rating, where a five-star rating should’ve been, some users mistakenly picked it for positive reviews.",
+          "alt": "A screenshot of a computer screen  Description automatically generated"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-engineering\\ch10.txt"
+    }
+  ]
+}

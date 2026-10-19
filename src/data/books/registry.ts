@@ -1,0 +1,503 @@
+import { BookMasteryPackage } from '../../types/book';
+import { aiEngineeringBook } from './ai-engineering';
+import { beyondVibeCodingBook } from './beyond-vibe-coding';
+
+export type BookDomainCategory =
+  | 'AI & Agents'
+  | 'Systems & Architecture'
+  | 'Data & ML'
+  | 'Cognitive & Mastery'
+  | 'Product & Design';
+
+export interface VaultBookPreview {
+  bookSlug: string;
+  fileName: string;
+  format: 'EPUB' | 'PDF' | 'AZW3';
+  title: string;
+  author: string;
+  category: BookDomainCategory;
+  status: 'published' | 'queued';
+}
+
+/**
+ * Active Published Books in Brain Opener.
+ * Whenever Nexus finishes synthesizing a new book from /Books, register its BookMasteryPackage here.
+ */
+export const PUBLISHED_BOOKS: Record<string, BookMasteryPackage> = {
+  'beyond-vibe-coding': beyondVibeCodingBook,
+  'ai-engineering': aiEngineeringBook,
+};
+
+export const PUBLISHED_BOOK_LIST: BookMasteryPackage[] = Object.values(PUBLISHED_BOOKS);
+
+/**
+ * Complete Catalog of All 48 Books Detected in the Workspace `/Books` Vault
+ */
+export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
+  // =========================================================================
+  // PUBLISHED & VERITAS-CERTIFIED VOLUMES
+  // =========================================================================
+  {
+    bookSlug: 'beyond-vibe-coding',
+    fileName: 'Beyond Vibe Coding.epub',
+    format: 'EPUB',
+    title: 'Beyond Vibe Coding: From Coder to AI-Era Developer',
+    author: 'Addy Osmani',
+    category: 'AI & Agents',
+    status: 'published',
+  },
+  {
+    bookSlug: 'ai-engineering',
+    fileName: 'AI Engineering.epub',
+    format: 'EPUB',
+    title: 'AI Engineering: Building Applications with Foundation Models',
+    author: 'Chip Huyen',
+    category: 'AI & Agents',
+    status: 'published',
+  },
+
+  // =========================================================================
+  // AI & AGENTS VAULT QUEUE
+  // =========================================================================
+  {
+    bookSlug: 'context-engineering-multi-agent',
+    fileName: 'Context Engineering for Multi-Agent Systems.epub',
+    format: 'EPUB',
+    title: 'Context Engineering for Multi-Agent Systems',
+    author: 'Denis Rothman',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'building-applications-with-ai-agents',
+    fileName: 'Building Applications with AI Agents.epub',
+    format: 'EPUB',
+    title: 'Building Applications with AI Agents',
+    author: 'Michael Albada',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'agentic-graphrag',
+    fileName:
+      'Agentic GraphRAG Integrating Knowledge Graphs, Reasoning, and Agency for Enterprise AI.epub',
+    format: 'EPUB',
+    title: 'Agentic GraphRAG: Integrating Knowledge Graphs, Reasoning, and Agency',
+    author: 'Enterprise AI Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'design-multi-agent-mcp-a2a',
+    fileName: 'Design Multi-Agent AI Systems Using MCP and A2A.pdf',
+    format: 'PDF',
+    title: 'Design Multi-Agent AI Systems Using MCP and A2A',
+    author: 'Multi-Agent Systems Architecture',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'prompt-engineering-for-llms',
+    fileName: 'Prompt Engineering for LLMs.epub',
+    format: 'EPUB',
+    title: 'Prompt Engineering for LLMs',
+    author: 'John Berryman & Albert Ziegler',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'build-with-google-antigravity',
+    fileName: 'Build with Google Antigravity.epub',
+    format: 'EPUB',
+    title: 'Build with Google Antigravity',
+    author: 'Google Antigravity Engineering',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'claude-beyond-the-prompt',
+    fileName: 'Claude Beyond the Prompt.epub',
+    format: 'EPUB',
+    title: 'Claude Beyond the Prompt',
+    author: 'AI Engineering Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'an-illustrated-guide-to-ai-agents',
+    fileName: 'An Illustrated Guide to AI Agents.epub',
+    format: 'EPUB',
+    title: 'An Illustrated Guide to AI Agents',
+    author: 'Visual AI Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'ai-native-software-delivery',
+    fileName: 'AI-Native Software Delivery.epub',
+    format: 'EPUB',
+    title: 'AI-Native Software Delivery',
+    author: 'Modern DevOps & AI Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'building-ai-agents-for-finance',
+    fileName: 'Building AI Agents for Finance.epub',
+    format: 'EPUB',
+    title: 'Building AI Agents for Finance',
+    author: 'Quantitative AI Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'agentforce-harnessing-agency-of-ai',
+    fileName:
+      'Agentforce Harnessing the Agency of AI to Scale, Grow, and Lead Any Industry.epub',
+    format: 'EPUB',
+    title: 'Agentforce: Harnessing the Agency of AI',
+    author: 'Enterprise Agent Systems',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'grokking-ai-applications',
+    fileName: 'Grokking AI Applications.pdf',
+    format: 'PDF',
+    title: 'Grokking AI Applications',
+    author: 'Manning Grokking Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'vibe-coding-future-of-programming',
+    fileName: 'Vibe Coding The Future of Programming.epub',
+    format: 'EPUB',
+    title: 'Vibe Coding: The Future of Programming',
+    author: 'AI Development Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'vibe-coding',
+    fileName: 'Vibe Coding.epub',
+    format: 'EPUB',
+    title: 'Vibe Coding',
+    author: 'AI Coding Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'how-to-build-an-ai-agency',
+    fileName: 'How to Build an AI Agency.pdf',
+    format: 'PDF',
+    title: 'How to Build an AI Agency',
+    author: 'AI Operations Guide',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'art-of-prompt-engineering-multimodel',
+    fileName: 'The Art of Prompt Engineering for Multimodel.azw3',
+    format: 'AZW3',
+    title: 'The Art of Prompt Engineering for Multimodal Systems',
+    author: 'Multimodal AI Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'midjourney-mastery',
+    fileName: 'Midjourney Mastery - The Ultimate Book of Prompts.epub',
+    format: 'EPUB',
+    title: 'Midjourney Mastery: The Ultimate Book of Prompts',
+    author: 'Generative Visual Series',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+  {
+    bookSlug: '1000-ai-image-prompts-stable-diffusion',
+    fileName: '1000 AI Image Prompts Stable Diffusion.epub',
+    format: 'EPUB',
+    title: '1000 AI Image Prompts: Stable Diffusion',
+    author: 'Diffusion Prompt Engineering',
+    category: 'AI & Agents',
+    status: 'queued',
+  },
+
+  // =========================================================================
+  // SYSTEMS & ARCHITECTURE VAULT QUEUE
+  // =========================================================================
+  {
+    bookSlug: 'designing-data-intensive-applications',
+    fileName: 'Designing Data-Intensive Applications.pdf',
+    format: 'PDF',
+    title: 'Designing Data-Intensive Applications',
+    author: 'Martin Kleppmann',
+    category: 'Systems & Architecture',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'fundamentals-of-software-architecture',
+    fileName:
+      'Fundamentals of Software Architecture An Engineering Approach (Mark Richards Neal Ford) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'Fundamentals of Software Architecture: An Engineering Approach',
+    author: 'Mark Richards & Neal Ford',
+    category: 'Systems & Architecture',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'learning-systems-thinking',
+    fileName: 'Learning Systems Thinking Essential.epub',
+    format: 'EPUB',
+    title: 'Learning Systems Thinking: Essential Non-Linear Problem Solving',
+    author: 'Diana Montalion',
+    category: 'Systems & Architecture',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'kubernetes-patterns',
+    fileName:
+      'Kubernetes Patterns Reusable Elements for Designing Cloud-Native Applications (Bilgin Ibryam, Roland Huss).pdf',
+    format: 'PDF',
+    title: 'Kubernetes Patterns: Designing Cloud-Native Applications',
+    author: 'Bilgin Ibryam & Roland Huss',
+    category: 'Systems & Architecture',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'high-performance-python',
+    fileName: 'High Performance Python.epub',
+    format: 'EPUB',
+    title: 'High Performance Python: Practical Performant Programming',
+    author: 'Micha Gorelick & Ian Ozsvald',
+    category: 'Systems & Architecture',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'efficient-nodejs',
+    fileName: 'Efficient Node.js',
+    format: 'EPUB',
+    title: 'Efficient Node.js: Beyond the Basics',
+    author: 'Samer Buna',
+    category: 'Systems & Architecture',
+    status: 'queued',
+  },
+
+  // =========================================================================
+  // DATA & ML VAULT QUEUE
+  // =========================================================================
+  {
+    bookSlug: 'think-stats-3e',
+    fileName:
+      'Think Stats, 3rd Edition Exploratory Data Analysis (Allen B. Downey) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'Think Stats (3rd Edition): Exploratory Data Analysis',
+    author: 'Allen B. Downey',
+    category: 'Data & ML',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'ai-value-creators',
+    fileName: 'AI Value Creators.pdf',
+    format: 'PDF',
+    title: 'AI Value Creators',
+    author: 'Enterprise Data & AI Strategy',
+    category: 'Data & ML',
+    status: 'queued',
+  },
+
+  // =========================================================================
+  // PRODUCT & DESIGN VAULT QUEUE
+  // =========================================================================
+  {
+    bookSlug: 'ux-for-ai',
+    fileName: 'UX for AI A Framework for Designing AI-Driven Products.pdf',
+    format: 'PDF',
+    title: 'UX for AI: A Framework for Designing AI-Driven Products',
+    author: 'Greg Nudelman',
+    category: 'Product & Design',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'building-ai-powered-products',
+    fileName: 'Building AI-Powered Products.epub',
+    format: 'EPUB',
+    title: 'Building AI-Powered Products',
+    author: 'Marily Nika',
+    category: 'Product & Design',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'strategic-writing-for-ux',
+    fileName:
+      'Strategic Writing for UX Drive Engagement, Conversion, and Retention with Every Word - 2nd Edition (Torrey Podmajersky) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'Strategic Writing for UX (2nd Edition)',
+    author: 'Torrey Podmajersky',
+    category: 'Product & Design',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'strategic-storytelling',
+    fileName:
+      'Strategic Storytelling How to Create Persuasive Business Presentations (Dave McKinsey) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'Strategic Storytelling: Persuasive Presentations',
+    author: 'Dave McKinsey',
+    category: 'Product & Design',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'be-the-brand',
+    fileName:
+      'Be The Brand The Ultimate Guide to Building Your Personal Brand (Jules Marcoux) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'Be The Brand: Building Your Personal Brand',
+    author: 'Jules Marcoux',
+    category: 'Product & Design',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'character-limit',
+    fileName: 'Character Limit.epub',
+    format: 'EPUB',
+    title: 'Character Limit: How Elon Musk Destroyed Twitter',
+    author: 'Kate Conger & Ryan Mac',
+    category: 'Product & Design',
+    status: 'queued',
+  },
+
+  // =========================================================================
+  // COGNITIVE & MASTERY VAULT QUEUE
+  // =========================================================================
+  {
+    bookSlug: 'deep-work',
+    fileName: 'Deep Work Rules for Focused Success in a Distracted World.epub',
+    format: 'EPUB',
+    title: 'Deep Work: Rules for Focused Success in a Distracted World',
+    author: 'Cal Newport',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'so-good-they-cant-ignore-you',
+    fileName:
+      'So Good They Cant Ignore You Why Skills Trump Passion in the Quest for Work You Love.epub',
+    format: 'EPUB',
+    title: "So Good They Can't Ignore You",
+    author: 'Cal Newport',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'mastery',
+    fileName: 'Mastery.epub',
+    format: 'EPUB',
+    title: 'Mastery',
+    author: 'Robert Greene',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'mindset',
+    fileName:
+      'Mindset - Changing The Way You Think To Fulfil Your Potential (Updated Edition) (Carol Susan Dweck) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'Mindset: The New Psychology of Success',
+    author: 'Carol S. Dweck',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-power-of-habit',
+    fileName:
+      'The Power of Habit Why We Do What We Do in Life and Business (Charles Duhigg) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'The Power of Habit',
+    author: 'Charles Duhigg',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'thinking-sideways',
+    fileName: 'Thinking Sideways.epub',
+    format: 'EPUB',
+    title: 'Thinking Sideways: Lateral Problem Solving',
+    author: 'Cognitive Strategy Series',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'rewire',
+    fileName: 'Rewire.epub',
+    format: 'EPUB',
+    title: 'Rewire: Break the Cycle, Alter Your Thoughts',
+    author: 'Nicole Vignola',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'how-to-make-your-brain-your-best-friend',
+    fileName: 'How to Make Your Brain Your Best Friend.epub',
+    format: 'EPUB',
+    title: 'How to Make Your Brain Your Best Friend',
+    author: 'Rachel Barr',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-courage-to-be-disliked',
+    fileName: 'The Courage To Be Disliked.epub',
+    format: 'EPUB',
+    title: 'The Courage to Be Disliked',
+    author: 'Ichiro Kishimi & Fumitake Koga',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-courage-to-be-happy',
+    fileName: 'The Courage to Be Happy.epub',
+    format: 'EPUB',
+    title: 'The Courage to Be Happy',
+    author: 'Ichiro Kishimi & Fumitake Koga',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-comfort-crisis',
+    fileName: 'The Comfort Crisis.epub',
+    format: 'EPUB',
+    title: 'The Comfort Crisis: Embrace Discomfort To Reclaim Your Wild, Happy, Healthy Self',
+    author: 'Michael Easter',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-anxious-generation',
+    fileName: 'The Anxious Generation.epub',
+    format: 'EPUB',
+    title: 'The Anxious Generation',
+    author: 'Jonathan Haidt',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'revenge-of-the-tipping-point',
+    fileName: 'Revenge of the Tipping Point.epub',
+    format: 'EPUB',
+    title: 'Revenge of the Tipping Point',
+    author: 'Malcolm Gladwell',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'hemingways-boat',
+    fileName: 'Hemingways Boat.epub',
+    format: 'EPUB',
+    title: "Hemingway's Boat: Everything He Loved in Life, and Lost",
+    author: 'Paul Hendrickson',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+];
