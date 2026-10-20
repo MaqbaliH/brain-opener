@@ -24,7 +24,7 @@ import {
 type StudioView = 'overview' | 'reader' | 'graph' | 'recall' | 'orchestrator';
 
 export const App: React.FC = () => {
-  const [activeBookSlug, setActiveBookSlug] = useState<string>('beyond-vibe-coding');
+  const [activeBookSlug, setActiveBookSlug] = useState<string>('asking-the-right-questions');
   const [activeView, setActiveView] = useState<StudioView>('overview');
   const [activeChapterNumber, setActiveChapterNumber] = useState<number>(1);
   const [recallTargetChapter, setRecallTargetChapter] = useState<number | undefined>(

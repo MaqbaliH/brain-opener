@@ -222,9 +222,78 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
   };
 
   // =========================================================================
-  // BEYOND VIBE CODING SIMULATORS (Ch 1-11)
+  // BEYOND VIBE CODING SIMULATORS (Ch 1-11) & ASKING THE RIGHT QUESTIONS (Ch 1-13)
   // =========================================================================
   const isBvc = bookSlug === 'beyond-vibe-coding';
+  const isArq = bookSlug === 'asking-the-right-questions';
+  const isAie = !isBvc && !isArq;
+
+  // ARQ Lab 1 (Ch 1-5): Structural Argument Soundness, Ambiguity & Assumption Bridge Simulator
+  const [arqReasonSupport, setArqReasonSupport] = useState<number>(82);
+  const [arqTermPrecision, setArqTermPrecision] = useState<number>(75);
+  const [arqAssumptionBridge, setArqAssumptionBridge] = useState<number>(70);
+  const [arqStrongSenseMode, setArqStrongSenseMode] = useState<boolean>(true);
+
+  const arqRawSoundness = Math.round(
+    (arqReasonSupport / 100) *
+      (0.35 + 0.65 * (arqTermPrecision / 100)) *
+      (0.25 + 0.75 * (arqAssumptionBridge / 100)) *
+      100
+  );
+  const arqDisplayedConviction = arqStrongSenseMode
+    ? arqRawSoundness
+    : Math.min(98, arqRawSoundness + 34);
+
+  // ARQ Lab 2 (Ch 6-8): Evidence Hierarchy, Sampling Margin of Error (1/sqrt(N)) & Construct Validity
+  const [arqSampleSize, setArqSampleSize] = useState<number>(400);
+  const [arqSampleBreadth, setArqSampleBreadth] = useState<number>(80);
+  const [arqMeasureValidity, setArqMeasureValidity] = useState<number>(75);
+
+  const arqMarginOfErrorPct = (0.98 / Math.sqrt(Math.max(1, arqSampleSize))) * 100;
+  const arqGeneralizabilityScore = Math.round(
+    Math.min(1, Math.log10(Math.max(2, arqSampleSize)) / 3.4) *
+      (arqSampleBreadth / 100) *
+      (arqMeasureValidity / 100) *
+      100
+  );
+
+  // ARQ Lab 3 (Ch 9-10): Rival Causes Confounder Filter & Skewed Distribution (Mean vs Median)
+  const [arqOutlierSkew, setArqOutlierSkew] = useState<number>(3.2);
+  const [arqConfounderShare, setArqConfounderShare] = useState<number>(45);
+  const [arqShowBaseRate, setArqShowBaseRate] = useState<boolean>(true);
+
+  const arqMedianVal = 52;
+  const arqMeanVal = Math.round(arqMedianVal * (1 + (arqOutlierSkew - 1) * 0.42));
+  const arqApparentEffect = 38;
+  const arqTrueCausalEffect = Math.max(
+    2,
+    Math.round(arqApparentEffect * (1 - arqConfounderShare / 100))
+  );
+
+  // ARQ Lab 4 (Ch 11-13): Omitted Externalities, Conditional If-Clauses & System 1 Cognitive Bias
+  const [arqOmittedCostAudit, setArqOmittedCostAudit] = useState<number>(80);
+  const [arqConditionalIfClauses, setArqConditionalIfClauses] = useState<boolean>(true);
+  const [arqSystem1Salience, setArqSystem1Salience] = useState<number>(1.8);
+
+  const arqClaimedBenefit = 85;
+  const arqHiddenExternality = 36;
+  const arqPerceivedUtility = Math.round(
+    arqClaimedBenefit * (arqSystem1Salience * 0.55) -
+      arqHiddenExternality * (arqOmittedCostAudit / 100)
+  );
+  const arqTrueCalibratedUtility = arqClaimedBenefit - arqHiddenExternality;
+  const arqEpistemicCalibration = Math.min(
+    99,
+    Math.max(
+      12,
+      Math.round(
+        50 +
+          arqOmittedCostAudit * 0.35 +
+          (arqConditionalIfClauses ? 18 : -12) -
+          (arqSystem1Salience - 1) * 14
+      )
+    )
+  );
 
   // BVC Lab 1 (Ch 1-4): The 70% Problem & "Two Steps Back" Regression Simulator
   const [specClarity, setSpecClarity] = useState<number>(80);
@@ -310,7 +379,19 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
             <span>Interactive First-Principles Sandbox • Chapter {chapterNumber} Live Lab</span>
           </div>
           <h2 className="font-display text-2xl md:text-3xl text-slate-900 dark:text-white mt-1">
-            {isBvc ? (
+            {isArq ? (
+              <>
+                {chapterNumber <= 5 &&
+                  'Structural Argument Deconstructor: Reasons, Semantic Precision & Assumption Bridge'}
+                {chapterNumber >= 6 &&
+                  chapterNumber <= 8 &&
+                  'Empirical Evidence Hierarchy, Sampling Margin of Error (1/√N) & Construct Validity'}
+                {(chapterNumber === 9 || chapterNumber === 10) &&
+                  'Rival Causes Confounder Filter & Skewed Distribution (Mean vs. Median) Simulator'}
+                {chapterNumber >= 11 &&
+                  'Omitted Externalities, Conditional If-Clauses & System 1 Cognitive Bias Lab'}
+              </>
+            ) : isBvc ? (
               <>
                 {chapterNumber <= 4 &&
                   'The 70% Problem & "Two Steps Back" Regression Simulator'}
@@ -347,7 +428,7 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
       {/* =====================================================================
           RENDER CHAPTER 1-2 LAB (AI ENGINEERING): LOGIT -> SOFTMAX SAMPLER
          ===================================================================== */}
-      {!isBvc && chapterNumber <= 2 && (
+      {isAie && chapterNumber <= 2 && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Controls */}
           <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
@@ -513,7 +594,7 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
       {/* =====================================================================
           RENDER CHAPTER 3-4 LAB: PERPLEXITY & EVAL SAMPLE SIZING
          ===================================================================== */}
-      {!isBvc && (chapterNumber === 3 || chapterNumber === 4) && (
+      {isAie && (chapterNumber === 3 || chapterNumber === 4) && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-6 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
             <div>
@@ -596,7 +677,7 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
       {/* =====================================================================
           RENDER CHAPTER 5-6 LAB: MULTI-STEP AGENT COMPOUND RELIABILITY
          ===================================================================== */}
-      {!isBvc && (chapterNumber === 5 || chapterNumber === 6) && (
+      {isAie && (chapterNumber === 5 || chapterNumber === 6) && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
             <div>
@@ -707,7 +788,7 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
       {/* =====================================================================
           RENDER CHAPTER 7-8 LAB: GPU HBM VRAM CALCULATOR
          ===================================================================== */}
-      {!isBvc && (chapterNumber === 7 || chapterNumber === 8) && (
+      {isAie && (chapterNumber === 7 || chapterNumber === 8) && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
             <div>
@@ -829,7 +910,7 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
       {/* =====================================================================
           RENDER CHAPTER 9-10 LAB: LIVE TOKEN STREAMER & LATENCY RACE
          ===================================================================== */}
-      {!isBvc && chapterNumber >= 9 && (
+      {isAie && chapterNumber >= 9 && (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
             <div>
@@ -1244,6 +1325,401 @@ export const InteractiveSimulators: React.FC<InteractiveSimulatorsProps> = ({
               </div>
               <p className="text-xs text-slate-600 dark:text-slate-400">
                 Net engineering throughput multiplier when acting as a Multi-Agent Orchestrator with isolated Git worktrees and automated CI verification.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* =====================================================================
+          ASKING THE RIGHT QUESTIONS LAB 1 (Ch 1-5): ARGUMENT SOUNDNESS & ASSUMPTIONS
+         ===================================================================== */}
+      {isArq && chapterNumber <= 5 && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Explicit Reason Support (R):</span>
+                <strong className="text-[#EA580C]">{arqReasonSupport}% Evidentiary Weight</strong>
+              </div>
+              <input
+                type="range"
+                min={10}
+                max={100}
+                step={5}
+                value={arqReasonSupport}
+                onChange={(e) => setArqReasonSupport(parseInt(e.target.value, 10))}
+                className="w-full accent-[#EA580C] cursor-pointer"
+              />
+            </div>
+
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Key Term Semantic Precision (1 - Ambiguity):</span>
+                <strong className="text-[#2563EB]">{arqTermPrecision}% Defined</strong>
+              </div>
+              <input
+                type="range"
+                min={10}
+                max={100}
+                step={5}
+                value={arqTermPrecision}
+                onChange={(e) => setArqTermPrecision(parseInt(e.target.value, 10))}
+                className="w-full accent-[#2563EB] cursor-pointer"
+              />
+            </div>
+
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Unstated Value & Descriptive Assumption Bridge:</span>
+                <strong className="text-emerald-600">{arqAssumptionBridge}% Warranted</strong>
+              </div>
+              <input
+                type="range"
+                min={10}
+                max={100}
+                step={5}
+                value={arqAssumptionBridge}
+                onChange={(e) => setArqAssumptionBridge(parseInt(e.target.value, 10))}
+                className="w-full accent-emerald-600 cursor-pointer"
+              />
+            </div>
+
+            <label className="flex items-center justify-between p-3 bg-white dark:bg-slate-900 border border-[#E5E0D8] dark:border-slate-800 cursor-pointer">
+              <span className="text-xs font-mono-code font-bold">
+                Strong-Sense Critical Thinking (Panning-for-Gold Audit)
+              </span>
+              <input
+                type="checkbox"
+                checked={arqStrongSenseMode}
+                onChange={(e) => setArqStrongSenseMode(e.target.checked)}
+                className="w-4 h-4 accent-emerald-600"
+              />
+            </label>
+          </div>
+
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-5 border border-[#E5E0D8] dark:border-slate-800 bg-[#FAF8F5] dark:bg-slate-950 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-slate-500">
+                Structural Argument Soundness (R ∧ A_V ∧ A_D ⇒ C)
+              </div>
+              <div
+                className={`font-display text-5xl ${
+                  arqRawSoundness >= 65
+                    ? 'text-emerald-600'
+                    : arqRawSoundness >= 40
+                    ? 'text-amber-600'
+                    : 'text-red-600'
+                }`}
+              >
+                {arqRawSoundness}%
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                Even strong explicit reasons collapse if key terms are elastic (Chapter 4) or if the unstated value/descriptive assumption bridging Reason to Conclusion is false (Chapter 5).
+              </p>
+            </div>
+
+            <div className="p-5 border-2 border-[#111827] dark:border-slate-700 bg-white dark:bg-slate-900 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-[#EA580C] font-bold">
+                {arqStrongSenseMode
+                  ? 'Strong-Sense Calibrated Conviction'
+                  : 'Weak-Sense Motivated Conviction (Overconfidence)'}
+              </div>
+              <div className="font-display text-5xl text-slate-900 dark:text-white">
+                {arqDisplayedConviction}%
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                {arqStrongSenseMode
+                  ? 'Strong-sense thinkers proportion their belief strictly to the verified strength of reasons, definitions, and assumptions.'
+                  : 'WARNING: Weak-sense thinking uses critical questions only to destroy opponents while inflating confidence in your own unexamined conclusion by +34%.'}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* =====================================================================
+          ASKING THE RIGHT QUESTIONS LAB 2 (Ch 6-8): EVIDENCE & SAMPLING MARGIN
+         ===================================================================== */}
+      {isArq && chapterNumber >= 6 && chapterNumber <= 8 && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Empirical Sample Size (N):</span>
+                <strong className="text-[#EA580C]">
+                  N = {arqSampleSize} {arqSampleSize <= 5 ? '(Anecdote / Case)' : '(Study Sample)'}
+                </strong>
+              </div>
+              <input
+                type="range"
+                min={1}
+                max={2000}
+                step={25}
+                value={arqSampleSize}
+                onChange={(e) => setArqSampleSize(parseInt(e.target.value, 10))}
+                className="w-full accent-[#EA580C] cursor-pointer"
+              />
+            </div>
+
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Sample Breadth & Stratification (Randomness):</span>
+                <strong className="text-[#2563EB]">{arqSampleBreadth}% Representative</strong>
+              </div>
+              <input
+                type="range"
+                min={10}
+                max={100}
+                step={5}
+                value={arqSampleBreadth}
+                onChange={(e) => setArqSampleBreadth(parseInt(e.target.value, 10))}
+                className="w-full accent-[#2563EB] cursor-pointer"
+              />
+            </div>
+
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Research Measure / Surrogate Construct Validity:</span>
+                <strong className="text-emerald-600">{arqMeasureValidity}% Construct Match</strong>
+              </div>
+              <input
+                type="range"
+                min={20}
+                max={100}
+                step={5}
+                value={arqMeasureValidity}
+                onChange={(e) => setArqMeasureValidity(parseInt(e.target.value, 10))}
+                className="w-full accent-emerald-600 cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-5 border border-[#E5E0D8] dark:border-slate-800 bg-[#FAF8F5] dark:bg-slate-950 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-slate-500">
+                95% Sampling Margin of Error (±0.98 / √N)
+              </div>
+              <div className="font-display text-5xl text-[#EA580C]">
+                ±{Math.min(98, arqMarginOfErrorPct).toFixed(1)}%
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                Personal experiences and testimonials (N ≈ 1–5) carry massive random noise; generalizing from them commits the Hasty Generalization fallacy.
+              </p>
+            </div>
+
+            <div className="p-5 border-2 border-emerald-600 bg-emerald-50/20 dark:bg-emerald-950/20 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-emerald-700 dark:text-emerald-400 font-bold">
+                Generalizability & Evidentiary Dependability
+              </div>
+              <div className="font-display text-5xl text-emerald-600">
+                {arqGeneralizabilityScore}%
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                A large sample size N is worthless if the sample is self-selected (low breadth) or if the surrogate proxy metric fails to measure the real-world target construct.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* =====================================================================
+          ASKING THE RIGHT QUESTIONS LAB 3 (Ch 9-10): RIVAL CAUSES & SKEWED STATS
+         ===================================================================== */}
+      {isArq && (chapterNumber === 9 || chapterNumber === 10) && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Top-Decile Outlier Skew Multiplier:</span>
+                <strong className="text-[#EA580C]">{arqOutlierSkew.toFixed(1)}x Right Skew</strong>
+              </div>
+              <input
+                type="range"
+                min={1.0}
+                max={6.0}
+                step={0.2}
+                value={arqOutlierSkew}
+                onChange={(e) => setArqOutlierSkew(parseFloat(e.target.value))}
+                className="w-full accent-[#EA580C] cursor-pointer"
+              />
+            </div>
+
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Uncontrolled Rival Cause Confounder (Z → X, Y):</span>
+                <strong className="text-[#2563EB]">{arqConfounderShare}% Confounded</strong>
+              </div>
+              <input
+                type="range"
+                min={0}
+                max={85}
+                step={5}
+                value={arqConfounderShare}
+                onChange={(e) => setArqConfounderShare(parseInt(e.target.value, 10))}
+                className="w-full accent-[#2563EB] cursor-pointer"
+              />
+            </div>
+
+            <label className="flex items-center justify-between p-3 bg-white dark:bg-slate-900 border border-[#E5E0D8] dark:border-slate-800 cursor-pointer">
+              <span className="text-xs font-mono-code font-bold">
+                Demand Both Absolute Base Rate & Relative % Change
+              </span>
+              <input
+                type="checkbox"
+                checked={arqShowBaseRate}
+                onChange={(e) => setArqShowBaseRate(e.target.checked)}
+                className="w-4 h-4 accent-emerald-600"
+              />
+            </label>
+          </div>
+
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-5 border border-[#E5E0D8] dark:border-slate-800 bg-[#FAF8F5] dark:bg-slate-950 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-slate-500">
+                Confusing Averages: Mean vs. Median (Ch 10)
+              </div>
+              <div className="flex items-baseline gap-4">
+                <div>
+                  <span className="text-[10px] font-mono-code text-red-600 block">
+                    MEAN (Outlier-Pulled)
+                  </span>
+                  <span className="font-display text-4xl text-red-600">${arqMeanVal}k</span>
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono-code text-emerald-600 block">
+                    MEDIAN (50th Pct)
+                  </span>
+                  <span className="font-display text-4xl text-emerald-600">${arqMedianVal}k</span>
+                </div>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                {arqShowBaseRate
+                  ? 'Reporting the median alongside the mean exposes how extreme outliers inflate the arithmetic average by +' +
+                    Math.round(((arqMeanVal - arqMedianVal) / arqMedianVal) * 100) +
+                    '%.'
+                  : 'WARNING: Omitting the median and base rate lets communicators cherry-pick the inflated mean as a deceptive "average."'}
+              </p>
+            </div>
+
+            <div className="p-5 border-2 border-emerald-600 bg-emerald-50/20 dark:bg-emerald-950/20 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-emerald-700 dark:text-emerald-400 font-bold">
+                De-Confounded Causal Effect vs. Raw Correlation (Ch 9)
+              </div>
+              <div className="flex items-baseline gap-4">
+                <div>
+                  <span className="text-[10px] font-mono-code text-slate-500 block">
+                    CLAIMED (Post Hoc)
+                  </span>
+                  <span className="font-display text-4xl text-slate-500">+{arqApparentEffect}%</span>
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono-code text-emerald-600 block">
+                    TRUE CAUSAL (do(X))
+                  </span>
+                  <span className="font-display text-4xl text-emerald-600">
+                    +{arqTrueCausalEffect}%
+                  </span>
+                </div>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                Filtering out rival causes (selection bias, secular trends, third-variable confounders) reveals the true net causal impact of the intervention.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* =====================================================================
+          ASKING THE RIGHT QUESTIONS LAB 4 (Ch 11-13): OMITTED INFO & SPEED BUMPS
+         ===================================================================== */}
+      {isArq && chapterNumber >= 11 && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-5 space-y-5 bg-[#FAF8F5] dark:bg-slate-950 p-5 border border-[#E5E0D8] dark:border-slate-800">
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>Omitted Negative Externality Audit (Ch 11):</span>
+                <strong className="text-[#EA580C]">{arqOmittedCostAudit}% Uncovered</strong>
+              </div>
+              <input
+                type="range"
+                min={0}
+                max={100}
+                step={5}
+                value={arqOmittedCostAudit}
+                onChange={(e) => setArqOmittedCostAudit(parseInt(e.target.value, 10))}
+                className="w-full accent-[#EA580C] cursor-pointer"
+              />
+            </div>
+
+            <div>
+              <div className="flex justify-between text-xs font-mono-code mb-1">
+                <span>System 1 Availability / Wishful Salience (Ch 13):</span>
+                <strong className="text-[#2563EB]">{arqSystem1Salience.toFixed(1)}x Distortion</strong>
+              </div>
+              <input
+                type="range"
+                min={1.0}
+                max={4.0}
+                step={0.2}
+                value={arqSystem1Salience}
+                onChange={(e) => setArqSystem1Salience(parseFloat(e.target.value))}
+                className="w-full accent-[#2563EB] cursor-pointer"
+              />
+            </div>
+
+            <label className="flex items-center justify-between p-3 bg-white dark:bg-slate-900 border border-[#E5E0D8] dark:border-slate-800 cursor-pointer">
+              <span className="text-xs font-mono-code font-bold">
+                Replace Dichotomous Yes/No with Conditional If-Clauses (Ch 12)
+              </span>
+              <input
+                type="checkbox"
+                checked={arqConditionalIfClauses}
+                onChange={(e) => setArqConditionalIfClauses(e.target.checked)}
+                className="w-4 h-4 accent-emerald-600"
+              />
+            </label>
+          </div>
+
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-5 border border-[#E5E0D8] dark:border-slate-800 bg-[#FAF8F5] dark:bg-slate-950 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-slate-500">
+                Perceived vs. True Expected Net Utility
+              </div>
+              <div className="flex items-baseline gap-4">
+                <div>
+                  <span className="text-[10px] font-mono-code text-amber-600 block">
+                    SYSTEM 1 PERCEIVED
+                  </span>
+                  <span className="font-display text-4xl text-amber-600">
+                    +{arqPerceivedUtility}
+                  </span>
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono-code text-emerald-600 block">
+                    TRUE NET (POST-OMISSION)
+                  </span>
+                  <span className="font-display text-4xl text-emerald-600">
+                    +{arqTrueCalibratedUtility}
+                  </span>
+                </div>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                Advocates highlight upside benefits (+{arqClaimedBenefit}) while omitting negative externalities (-{arqHiddenExternality}). Probing for the negative view restores realistic expectation.
+              </p>
+            </div>
+
+            <div className="p-5 border-2 border-emerald-600 bg-emerald-50/20 dark:bg-emerald-950/20 space-y-2">
+              <div className="text-xs font-mono-code uppercase text-emerald-700 dark:text-emerald-400 font-bold">
+                Epistemic Calibration & Decision Quality Score
+              </div>
+              <div className="font-display text-5xl text-emerald-600">
+                {arqEpistemicCalibration}%
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400">
+                {arqConditionalIfClauses
+                  ? 'Grey thinking with explicit "If-Clauses" prevents false dichotomies and bounds conclusions to the exact conditions where the evidence holds.'
+                  : 'Dichotomous (black-or-white) framing forces premature commitment and blinds the team to contextual alternative conclusions.'}
               </p>
             </div>
           </div>

@@ -158,6 +158,141 @@ def extract_epub(epub_path: str, book_slug: str, workspace_root: str):
     print(f"[Archon] Extracted {len(chapters_manifest)} chapters and {len(all_figures)} figures to {out_extracted_dir}")
 
 
+def extract_pdf(pdf_path: str, book_slug: str, workspace_root: str):
+    import fitz
+
+    pdf_file = Path(pdf_path)
+    out_extracted_dir = Path(workspace_root) / "pipeline" / "extracted" / book_slug
+    out_public_assets = Path(workspace_root) / "public" / "books" / book_slug / "assets"
+    out_extracted_dir.mkdir(parents=True, exist_ok=True)
+    out_public_assets.mkdir(parents=True, exist_ok=True)
+
+    doc = fitz.open(str(pdf_file))
+    toc = doc.get_toc()
+
+    # 1. Extract cover image from Page 1
+    if len(doc) > 0:
+        cover_pix = doc[0].get_pixmap(dpi=150)
+        cover_pix.save(str(out_public_assets / "cover.png"))
+
+    prefix = "arq" if book_slug == "asking-the-right-questions" else book_slug.replace("-", "_")
+
+    # 2. Extract embedded raster figures across the PDF
+    page_embedded_figures = {}
+    for pno in range(len(doc)):
+        imgs = doc.get_page_images(pno)
+        for img_idx, img in enumerate(imgs):
+            xref = img[0]
+            pix = fitz.Pixmap(doc, xref)
+            if pix.width > 120 and pix.height > 120 and pno > 0:
+                if pix.n - pix.alpha > 3:
+                    pix = fitz.Pixmap(fitz.csRGB, pix)
+                fname = f"{prefix}_p{pno+1:03d}_fig{img_idx+1}.png"
+                pix.save(str(out_public_assets / fname))
+                page_embedded_figures.setdefault(pno + 1, []).append({
+                    "file": fname,
+                    "caption": f"Embedded figure from page {pno + 1}",
+                    "alt": f"Book illustration on page {pno + 1}"
+                })
+
+    # 3. Group TOC entries by Chapter (level 1 starting with "Chapter ")
+    chapters_raw = []
+    current_ch = None
+
+    for level, title, page_num in toc:
+        clean_title = title.replace("\ufffd", "'").strip()
+        if level == 1 and clean_title.lower().startswith("chapter "):
+            if current_ch:
+                current_ch["endPage"] = page_num - 1
+                chapters_raw.append(current_ch)
+            m = re.match(r"Chapter\s+(\d+)\s*(.*)", clean_title, re.I)
+            ch_num = int(m.group(1)) if m else len(chapters_raw) + 1
+            ch_title_clean = m.group(2).strip() if (m and m.group(2).strip()) else clean_title
+            current_ch = {
+                "chapterNumber": ch_num,
+                "title": ch_title_clean,
+                "fullHeading": clean_title,
+                "startPage": page_num,
+                "endPage": len(doc),
+                "headings": [{"level": "h1", "title": ch_title_clean, "page": page_num}],
+            }
+        elif level == 1 and current_ch is not None:
+            # Reached Index or backmatter after last chapter
+            current_ch["endPage"] = page_num - 1
+            chapters_raw.append(current_ch)
+            current_ch = None
+        elif current_ch is not None and level >= 2:
+            current_ch["headings"].append({
+                "level": f"h{min(level, 4)}",
+                "title": clean_title,
+                "page": page_num
+            })
+
+    if current_ch is not None:
+        chapters_raw.append(current_ch)
+
+    chapters_manifest = []
+    all_figures = []
+
+    for ch in chapters_raw:
+        idx = ch["chapterNumber"]
+        ch_id = f"ch{idx:02d}"
+        start_p = ch["startPage"]
+        end_p = max(start_p, ch["endPage"])
+
+        pages_text = []
+        ch_figures = []
+
+        # Render chapter opening page plate as a visual artifact for Prism
+        opener_fname = f"{prefix}_{ch_id}_plate.png"
+        opener_pix = doc[start_p - 1].get_pixmap(dpi=130)
+        opener_pix.save(str(out_public_assets / opener_fname))
+        ch_figures.append({
+            "file": opener_fname,
+            "caption": f"Chapter {idx} Opening Blueprint: {ch['title']} (Page {start_p})",
+            "alt": f"Chapter {idx} opening page ({ch['title']})"
+        })
+
+        for pno in range(start_p, end_p + 1):
+            page_txt = doc[pno - 1].get_text()
+            pages_text.append(f"\n--- [PAGE {pno}] ---\n{page_txt}")
+            if pno in page_embedded_figures:
+                ch_figures.extend(page_embedded_figures[pno])
+
+        full_text = "\n".join(pages_text).strip()
+        ch_text_path = out_extracted_dir / f"{ch_id}.txt"
+        ch_text_path.write_text(full_text, encoding="utf-8")
+
+        ch_entry = {
+            "chapterNumber": idx,
+            "chapterId": ch_id,
+            "sourceFile": f"pages_{start_p}_{end_p}.pdf",
+            "title": ch["title"],
+            "startPage": start_p,
+            "endPage": end_p,
+            "charCount": len(full_text),
+            "wordCount": len(full_text.split()),
+            "headings": [{"level": h["level"], "title": h["title"]} for h in ch["headings"]],
+            "figures": ch_figures,
+            "textFile": str(ch_text_path.relative_to(workspace_root)),
+        }
+        chapters_manifest.append(ch_entry)
+        for fig in ch_figures:
+            all_figures.append({**fig, "chapterId": ch_id, "chapterNumber": idx})
+
+    manifest = {
+        "bookSlug": book_slug,
+        "sourcePath": str(pdf_file),
+        "totalChapters": len(chapters_manifest),
+        "totalFigures": len(all_figures),
+        "chapters": chapters_manifest,
+    }
+
+    manifest_path = out_extracted_dir / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"[Archon] Extracted {len(chapters_manifest)} PDF chapters and {len(all_figures)} figures to {out_extracted_dir}")
+
+
 def slugify(name: str) -> str:
     base = Path(name).stem.lower()
     base = re.sub(r"\(.*?\)", "", base)
@@ -165,15 +300,18 @@ def slugify(name: str) -> str:
 
 
 if __name__ == "__main__":
-    workspace = r"c:\Users\hassa\Local Sites\Brain Opener"
+    workspace = str(Path(__file__).resolve().parent.parent)
     if len(sys.argv) >= 2:
         book_path = sys.argv[1]
         if not os.path.isabs(book_path):
             book_path = str(Path(workspace) / book_path)
         book_slug = sys.argv[2] if len(sys.argv) >= 3 else slugify(book_path)
     else:
-        book_path = r"c:\Users\hassa\Local Sites\Brain Opener\Books\AI Engineering.epub"
+        book_path = str(Path(workspace) / "Books" / "AI Engineering.epub")
         book_slug = "ai-engineering"
 
-    extract_epub(book_path, book_slug, workspace)
+    if book_path.lower().endswith(".pdf"):
+        extract_pdf(book_path, book_slug, workspace)
+    else:
+        extract_epub(book_path, book_slug, workspace)
 

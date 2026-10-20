@@ -1,5 +1,6 @@
 import { BookMasteryPackage } from '../../types/book';
 import { aiEngineeringBook } from './ai-engineering';
+import { askingTheRightQuestionsBook } from './asking-the-right-questions';
 import { beyondVibeCodingBook } from './beyond-vibe-coding';
 
 export type BookDomainCategory =
@@ -24,6 +25,7 @@ export interface VaultBookPreview {
  * Whenever Nexus finishes synthesizing a new book from /Books, register its BookMasteryPackage here.
  */
 export const PUBLISHED_BOOKS: Record<string, BookMasteryPackage> = {
+  'asking-the-right-questions': askingTheRightQuestionsBook,
   'beyond-vibe-coding': beyondVibeCodingBook,
   'ai-engineering': aiEngineeringBook,
 };
@@ -31,12 +33,22 @@ export const PUBLISHED_BOOKS: Record<string, BookMasteryPackage> = {
 export const PUBLISHED_BOOK_LIST: BookMasteryPackage[] = Object.values(PUBLISHED_BOOKS);
 
 /**
- * Complete Catalog of All 48 Books Detected in the Workspace `/Books` Vault
+ * Complete Catalog of All Books Detected in the Workspace `/Books` Vault
  */
 export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
   // =========================================================================
   // PUBLISHED & VERITAS-CERTIFIED VOLUMES
   // =========================================================================
+  {
+    bookSlug: 'asking-the-right-questions',
+    fileName:
+      '20 oct 26/Asking the Right Questions A Guide to Critical Thinking (M. Neil Browne, Stuart M. Keeley) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'Asking the Right Questions: A Guide to Critical Thinking (12th Edition)',
+    author: 'M. Neil Browne & Stuart M. Keeley',
+    category: 'Cognitive & Mastery',
+    status: 'published',
+  },
   {
     bookSlug: 'beyond-vibe-coding',
     fileName: 'Beyond Vibe Coding.epub',
@@ -498,6 +510,96 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: "Hemingway's Boat: Everything He Loved in Life, and Lost",
     author: 'Paul Hendrickson',
     category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'bulletproof-problem-solving',
+    fileName:
+      '20 oct 26\\Bulletproof Problem Solving The One Skill That Changes Everything (Charles Conn, Robert McLean) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'Bulletproof Problem Solving: The One Skill That Changes Everything',
+    author: 'Charles Conn & Robert McLean',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'critical-thinking-haber',
+    fileName:
+      '20 oct 26\\Critical Thinking (Jonathan Haber) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'Critical Thinking (MIT Press Essential Knowledge)',
+    author: 'Jonathan Haber',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'critical-thinking-powerful-strategies',
+    fileName:
+      '20 oct 26\\Critical Thinking Powerful Strategies That Will Make You Improve Decisions And Think Smarter (Critical Thinking - Think. (Harvey Segler Critical Thinking) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'Critical Thinking: Powerful Strategies to Improve Decisions',
+    author: 'Harvey Segler',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'minto-pyramid-principle',
+    fileName:
+      '20 oct 26\\The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving (Barbara Minto) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'The Minto Pyramid Principle: Logic in Writing, Thinking, and Problem Solving',
+    author: 'Barbara Minto',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-mckinsey-mind',
+    fileName:
+      '20 oct 26\\The McKinsey Mind Understanding and Implementing the Problem-Solving Tools and Management Techniques of the Worlds Top. (Ethan Rasiel, Paul Friga) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'The McKinsey Mind: Problem-Solving Tools and Management Techniques',
+    author: 'Ethan M. Rasiel & Paul N. Friga',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-mckinsey-way',
+    fileName:
+      '20 oct 26\\The McKinsey Way (Ethan M. Rasiel) (z-library.sk, 1lib.sk, z-lib.sk).epub',
+    format: 'EPUB',
+    title: 'The McKinsey Way',
+    author: 'Ethan M. Rasiel',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'leadership-secrets-top-ceos',
+    fileName:
+      '20 oct 26\\Leadership Secrets of the Worlds Most Successful CEOs 100 Top Executives Reveal the Management Strategies That Made Their. (Eric Yaverbaum) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: "Leadership Secrets of the World's Most Successful CEOs",
+    author: 'Eric Yaverbaum',
+    category: 'Cognitive & Mastery',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'software-engineering-at-google',
+    fileName:
+      '20 oct 26\\Software Engineering at Google (Hyrum Wright, Tom Manshreck, Titus Winters) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'Software Engineering at Google: Lessons Learned from Programming Over Time',
+    author: 'Titus Winters, Tom Manshreck & Hyrum Wright',
+    category: 'Systems & Architecture',
+    status: 'queued',
+  },
+  {
+    bookSlug: 'the-brand-mapping-strategy',
+    fileName:
+      '20 oct 26\\The Brand Mapping Strategy Design, Build, and Accelerate Your Brand (Karen Leland) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
+    title: 'The Brand Mapping Strategy: Design, Build, and Accelerate Your Brand',
+    author: 'Karen Leland',
+    category: 'Product & Design',
     status: 'queued',
   },
 ];

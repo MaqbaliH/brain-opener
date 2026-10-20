@@ -1,0 +1,852 @@
+{
+  "bookSlug": "asking-the-right-questions",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\20 oct 26\\Asking the Right Questions A Guide to Critical Thinking (M. Neil Browne, Stuart M. Keeley) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "totalChapters": 13,
+  "totalFigures": 17,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_16_30.pdf",
+      "title": "The Benefit and Manner of Asking the Right Questions",
+      "startPage": 16,
+      "endPage": 30,
+      "charCount": 37446,
+      "wordCount": 6302,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The Benefit and Manner of Asking the Right Questions"
+        },
+        {
+          "level": "h2",
+          "title": "The Noisy, Confused World We Live In"
+        },
+        {
+          "level": "h2",
+          "title": "Experts Cannot Rescue Us, Despite What They Say"
+        },
+        {
+          "level": "h2",
+          "title": "The Necessity of Relying on Our Mind"
+        },
+        {
+          "level": "h2",
+          "title": "Critical Thinking to the Rescue"
+        },
+        {
+          "level": "h2",
+          "title": "The Sponge and Panning for Gold: Alternative Thinking Styles"
+        },
+        {
+          "level": "h2",
+          "title": "Weak-Sense and Strong-Sense Critical Thinking"
+        },
+        {
+          "level": "h3",
+          "title": "The Importance of Practice"
+        },
+        {
+          "level": "h2",
+          "title": "Critical Thinking and Other People"
+        },
+        {
+          "level": "h3",
+          "title": "Primary Values of a Critical Thinker"
+        },
+        {
+          "level": "h2",
+          "title": "Keeping the Conversation Going"
+        },
+        {
+          "level": "h3",
+          "title": "Creating a Friendly Environment for Communication"
+        },
+        {
+          "level": "h2",
+          "title": "Writing and Speaking as Critical Thinkers"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: The Benefit and Manner of Asking the Right Questions (Page 16)",
+          "alt": "Chapter 1 opening page from Asking the Right Questions"
+        },
+        {
+          "file": "arq_p027_fig1.png",
+          "caption": "Embedded figure from page 27",
+          "alt": "Book illustration on page 27"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_31_39.pdf",
+      "title": "What Are the Issue and the Conclusion?",
+      "startPage": 31,
+      "endPage": 39,
+      "charCount": 21063,
+      "wordCount": 3501,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "What Are the Issue and the Conclusion?"
+        },
+        {
+          "level": "h2",
+          "title": "Kinds of Issues"
+        },
+        {
+          "level": "h2",
+          "title": "Searching for the Issue"
+        },
+        {
+          "level": "h2",
+          "title": "Searching for the Author’s or Speaker’s Conclusion"
+        },
+        {
+          "level": "h2",
+          "title": "Clues to Discovery: How to Find the Conclusion"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: What Are the Issue and the Conclusion? (Page 31)",
+          "alt": "Chapter 2 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_40_51.pdf",
+      "title": "What Are the Reasons?",
+      "startPage": 40,
+      "endPage": 51,
+      "charCount": 26017,
+      "wordCount": 4416,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "What Are the Reasons?"
+        },
+        {
+          "level": "h2",
+          "title": "Initiating the Questioning Process"
+        },
+        {
+          "level": "h2",
+          "title": "Words That Identify Reasons"
+        },
+        {
+          "level": "h2",
+          "title": "Keeping the Reasons and Conclusions Straight"
+        },
+        {
+          "level": "h3",
+          "title": "Reasons First, Then Conclusions"
+        },
+        {
+          "level": "h2",
+          "title": "Writing and Speaking as Critical Thinkers"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: What Are the Reasons? (Page 40)",
+          "alt": "Chapter 3 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_52_66.pdf",
+      "title": "What Words or Phrases Are Ambiguous?",
+      "startPage": 52,
+      "endPage": 66,
+      "charCount": 37605,
+      "wordCount": 6300,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "What Words or Phrases Are Ambiguous?"
+        },
+        {
+          "level": "h2",
+          "title": "The Confusing Flexibility of Words"
+        },
+        {
+          "level": "h2",
+          "title": "Locating Key Terms and Phrases"
+        },
+        {
+          "level": "h2",
+          "title": "Checking for Ambiguity"
+        },
+        {
+          "level": "h2",
+          "title": "Determining Ambiguity"
+        },
+        {
+          "level": "h2",
+          "title": "Context and Ambiguity"
+        },
+        {
+          "level": "h2",
+          "title": "Ambiguity, Definitions, and the Dictionary"
+        },
+        {
+          "level": "h2",
+          "title": "Limits of Your Responsibility to Clarify Ambiguity"
+        },
+        {
+          "level": "h2",
+          "title": "Writing and Speaking as Critical Thinkers"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: What Words or Phrases Are Ambiguous? (Page 52)",
+          "alt": "Chapter 4 opening page from Asking the Right Questions"
+        },
+        {
+          "file": "arq_p055_fig1.png",
+          "caption": "Embedded figure from page 55",
+          "alt": "Book illustration on page 55"
+        },
+        {
+          "file": "arq_p055_fig2.png",
+          "caption": "Embedded figure from page 55",
+          "alt": "Book illustration on page 55"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "pages_67_85.pdf",
+      "title": "What Are the Value and Descriptive Assumptions?",
+      "startPage": 67,
+      "endPage": 85,
+      "charCount": 47615,
+      "wordCount": 7723,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "What Are the Value and Descriptive Assumptions?"
+        },
+        {
+          "level": "h2",
+          "title": "General Guide for Identifying Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "Value Conflicts and Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "From Values to Value Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "Typical Value Conflicts"
+        },
+        {
+          "level": "h2",
+          "title": "The Communicator’s Background as a Clue to Value Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "Consequences as Clues to Value Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "More Hints for Finding Value Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "The Value of Knowing the Value Priorities of Others"
+        },
+        {
+          "level": "h2",
+          "title": "Values and Relativism"
+        },
+        {
+          "level": "h2",
+          "title": "Identifying and Evaluating Descriptive Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "Illustrating Descriptive Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "Common Descriptive Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "Clues for Locating Assumptions"
+        },
+        {
+          "level": "h2",
+          "title": "Writing and Speaking as Critical Thinkers"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch05_plate.png",
+          "caption": "Chapter 5 Opening Blueprint: What Are the Value and Descriptive Assumptions? (Page 67)",
+          "alt": "Chapter 5 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "pages_86_102.pdf",
+      "title": "Are There Any Fallacies in the Reasoning?",
+      "startPage": 86,
+      "endPage": 102,
+      "charCount": 38669,
+      "wordCount": 6352,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Are There Any Fallacies in the Reasoning?"
+        },
+        {
+          "level": "h2",
+          "title": "A Questioning Approach to Finding Reasoning Fallacies"
+        },
+        {
+          "level": "h2",
+          "title": "Evaluating Assumptions as a Starting Point"
+        },
+        {
+          "level": "h2",
+          "title": "Discovering Other Common Reasoning Fallacies"
+        },
+        {
+          "level": "h2",
+          "title": "Looking for Diversions"
+        },
+        {
+          "level": "h2",
+          "title": "Sleight of Hand: Begging the Question"
+        },
+        {
+          "level": "h2",
+          "title": "Summary of Reasoning Errors"
+        },
+        {
+          "level": "h2",
+          "title": "Expanding Your Knowledge of Fallacies"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch06_plate.png",
+          "caption": "Chapter 6 Opening Blueprint: Are There Any Fallacies in the Reasoning? (Page 86)",
+          "alt": "Chapter 6 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "pages_103_114.pdf",
+      "title": "The Worth of Personal Experience, Case Examples, Testimonials, and Statements of Authority as Evidence",
+      "startPage": 103,
+      "endPage": 114,
+      "charCount": 29098,
+      "wordCount": 4757,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The Worth of Personal Experience, Case Examples, Testimonials, and Statements of Authority as Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Fact or Opinion?"
+        },
+        {
+          "level": "h2",
+          "title": "The Need for Dependable Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Sources of Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Personal Experience as Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Case Examples as Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Testimonials as Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Appeals to Authority as Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch07_plate.png",
+          "caption": "Chapter 7 Opening Blueprint: The Worth of Personal Experience, Case Examples, Testimonials, and Statements of Authority as Evidence (Page 103)",
+          "alt": "Chapter 7 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "pages_115_133.pdf",
+      "title": "How Good Is the Evidence: Personal Observation and Research Studies?",
+      "startPage": 115,
+      "endPage": 133,
+      "charCount": 50840,
+      "wordCount": 8253,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "How Good Is the Evidence: Personal Observation and Research Studies?"
+        },
+        {
+          "level": "h2",
+          "title": "Personal Observation as Evidence"
+        },
+        {
+          "level": "h2",
+          "title": "Biased Surveys and Questionnaires"
+        },
+        {
+          "level": "h2",
+          "title": "Research Studies as Evidence"
+        },
+        {
+          "level": "h3",
+          "title": "General Problems with Research Findings"
+        },
+        {
+          "level": "h2",
+          "title": "Generalizing From the Research Sample"
+        },
+        {
+          "level": "h2",
+          "title": "Generalizing From the Research Measures"
+        },
+        {
+          "level": "h2",
+          "title": "When You Can Most Trust Expert Opinion"
+        },
+        {
+          "level": "h3",
+          "title": "Research and the Internet"
+        },
+        {
+          "level": "h2",
+          "title": "Writing and Speaking as Critical Thinkers"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch08_plate.png",
+          "caption": "Chapter 8 Opening Blueprint: How Good Is the Evidence: Personal Observation and Research Studies? (Page 115)",
+          "alt": "Chapter 8 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "pages_134_147.pdf",
+      "title": "Are There Rival Causes?",
+      "startPage": 134,
+      "endPage": 147,
+      "charCount": 30682,
+      "wordCount": 5094,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Are There Rival Causes?"
+        },
+        {
+          "level": "h2",
+          "title": "When to Look for Rival Causes"
+        },
+        {
+          "level": "h2",
+          "title": "The Pervasiveness of Rival Causes"
+        },
+        {
+          "level": "h2",
+          "title": "Detecting Rival Causes"
+        },
+        {
+          "level": "h2",
+          "title": "The Cause or a Cause"
+        },
+        {
+          "level": "h2",
+          "title": "Multiple Perspectives as a Guide to Rival Causes"
+        },
+        {
+          "level": "h2",
+          "title": "Confusing Causation with Association"
+        },
+        {
+          "level": "h2",
+          "title": "Confusing “After This” with “Because of This”"
+        },
+        {
+          "level": "h2",
+          "title": "Explaining Individual Events or Acts"
+        },
+        {
+          "level": "h2",
+          "title": "Evaluating Rival Causes"
+        },
+        {
+          "level": "h2",
+          "title": "Rival Causes and Your Own Communication"
+        },
+        {
+          "level": "h3",
+          "title": "Exploring Potential Causes"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch09_plate.png",
+          "caption": "Chapter 9 Opening Blueprint: Are There Rival Causes? (Page 134)",
+          "alt": "Chapter 9 opening page from Asking the Right Questions"
+        },
+        {
+          "file": "arq_p142_fig1.png",
+          "caption": "Embedded figure from page 142",
+          "alt": "Book illustration on page 142"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "pages_148_157.pdf",
+      "title": "Are Any Statistics Deceptive?",
+      "startPage": 148,
+      "endPage": 157,
+      "charCount": 23897,
+      "wordCount": 3945,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Are Any Statistics Deceptive?"
+        },
+        {
+          "level": "h2",
+          "title": "Unknowable and Biased Statistics"
+        },
+        {
+          "level": "h2",
+          "title": "Confusing Averages"
+        },
+        {
+          "level": "h2",
+          "title": "Measurement Errors"
+        },
+        {
+          "level": "h2",
+          "title": "Concluding One Thing, Proving Another"
+        },
+        {
+          "level": "h2",
+          "title": "Deceiving by Omitting Information"
+        },
+        {
+          "level": "h2",
+          "title": "Using Statistics in Your Writing"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch10_plate.png",
+          "caption": "Chapter 10 Opening Blueprint: Are Any Statistics Deceptive? (Page 148)",
+          "alt": "Chapter 10 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch10.txt"
+    },
+    {
+      "chapterNumber": 11,
+      "chapterId": "ch11",
+      "sourceFile": "pages_158_169.pdf",
+      "title": "What Significant Information Is Omitted?",
+      "startPage": 158,
+      "endPage": 169,
+      "charCount": 31140,
+      "wordCount": 5089,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "What Significant Information Is Omitted?"
+        },
+        {
+          "level": "h2",
+          "title": "The Benefits of Detecting Omitted Information"
+        },
+        {
+          "level": "h2",
+          "title": "The Certainty of Incomplete Reasoning"
+        },
+        {
+          "level": "h2",
+          "title": "Questions That Identify Omitted Information"
+        },
+        {
+          "level": "h2",
+          "title": "But We Need to Know the Numbers"
+        },
+        {
+          "level": "h2",
+          "title": "The Importance of the Negative View"
+        },
+        {
+          "level": "h2",
+          "title": "Omitted Information That Remains Missing"
+        },
+        {
+          "level": "h2",
+          "title": "Writing and Speaking as Critical Thinkers"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch11_plate.png",
+          "caption": "Chapter 11 Opening Blueprint: What Significant Information Is Omitted? (Page 158)",
+          "alt": "Chapter 11 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch11.txt"
+    },
+    {
+      "chapterNumber": 12,
+      "chapterId": "ch12",
+      "sourceFile": "pages_170_177.pdf",
+      "title": "What Reasonable Conclusions Are Possible?",
+      "startPage": 170,
+      "endPage": 177,
+      "charCount": 17159,
+      "wordCount": 2776,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "What Reasonable Conclusions Are Possible?"
+        },
+        {
+          "level": "h2",
+          "title": "Dichotomous Thinking: Impediment to Considering Multiple Conclusions"
+        },
+        {
+          "level": "h2",
+          "title": "Grey Thinking: Two Sides or Many?"
+        },
+        {
+          "level": "h2",
+          "title": "Productivity of If-Clauses"
+        },
+        {
+          "level": "h2",
+          "title": "The Liberating Effect of Recognizing Alternative Conclusions"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Exercises"
+        },
+        {
+          "level": "h2",
+          "title": "Sample Responses"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch12_plate.png",
+          "caption": "Chapter 12 Opening Blueprint: What Reasonable Conclusions Are Possible? (Page 170)",
+          "alt": "Chapter 12 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch12.txt"
+    },
+    {
+      "chapterNumber": 13,
+      "chapterId": "ch13",
+      "sourceFile": "pages_178_187.pdf",
+      "title": "Speed Bumps Interfering with Your Critical Thinking",
+      "startPage": 178,
+      "endPage": 187,
+      "charCount": 23680,
+      "wordCount": 4061,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Speed Bumps Interfering with Your Critical Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "The Discomfort of Asking the Right Questions"
+        },
+        {
+          "level": "h2",
+          "title": "Thinking Too Quickly"
+        },
+        {
+          "level": "h2",
+          "title": "Stereotypes"
+        },
+        {
+          "level": "h2",
+          "title": "Mental Habits That Betray Us"
+        },
+        {
+          "level": "h3",
+          "title": "Halo Effect"
+        },
+        {
+          "level": "h3",
+          "title": "Belief Perseverance"
+        },
+        {
+          "level": "h3",
+          "title": "Availability Heuristic"
+        },
+        {
+          "level": "h3",
+          "title": "Answering the Wrong Question"
+        },
+        {
+          "level": "h2",
+          "title": "Egocentrism"
+        },
+        {
+          "level": "h2",
+          "title": "Wishful Thinking: Perhaps the Biggest Single Speed Bump on the Road to Critical Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Final Words"
+        }
+      ],
+      "figures": [
+        {
+          "file": "arq_ch13_plate.png",
+          "caption": "Chapter 13 Opening Blueprint: Speed Bumps Interfering with Your Critical Thinking (Page 178)",
+          "alt": "Chapter 13 opening page from Asking the Right Questions"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\asking-the-right-questions\\ch13.txt"
+    }
+  ]
+}
