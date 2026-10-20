@@ -1,0 +1,1220 @@
+{
+  "bookSlug": "ai-native-software-delivery",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\AI-Native Software Delivery.epub",
+  "totalChapters": 10,
+  "totalFigures": 18,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/ch01.html",
+      "title": "Chapter 1. The Road to AI-Native DevOps",
+      "charCount": 27825,
+      "wordCount": 3946,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1. The Road to AI-Native DevOps"
+        },
+        {
+          "level": "h1",
+          "title": "Development + Operations = DevOps"
+        },
+        {
+          "level": "h1",
+          "title": "A Short History of DevOps"
+        },
+        {
+          "level": "h2",
+          "title": "Agile in the Aughts"
+        },
+        {
+          "level": "h2",
+          "title": "Continuous Integration and Continuous Delivery"
+        },
+        {
+          "level": "h2",
+          "title": "Milestones in Early DevOps"
+        },
+        {
+          "level": "h2",
+          "title": "DevOps 1.0"
+        },
+        {
+          "level": "h3",
+          "title": "Challenges to DevOps 1.0"
+        },
+        {
+          "level": "h4",
+          "title": "The adoption of cloud-native and microservices architectures"
+        },
+        {
+          "level": "h4",
+          "title": "The rise of open source software"
+        },
+        {
+          "level": "h4",
+          "title": "The importance of the digital experience and consumerization of enterprise"
+        },
+        {
+          "level": "h3",
+          "title": "Outgrowing DevOps 1.0 toolsets"
+        },
+        {
+          "level": "h4",
+          "title": "Widely used open source tools are often suboptimal"
+        },
+        {
+          "level": "h4",
+          "title": "DIY pipelines result in redundant and wasteful efforts"
+        },
+        {
+          "level": "h4",
+          "title": "Automation is often incomplete, requiring manual steps"
+        },
+        {
+          "level": "h4",
+          "title": "Governance is an afterthought"
+        },
+        {
+          "level": "h2",
+          "title": "DevOps 2.0"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/ch02.html",
+      "title": "Chapter 2. Source Control Management",
+      "charCount": 33298,
+      "wordCount": 4857,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2. Source Control Management"
+        },
+        {
+          "level": "h1",
+          "title": "Introducing Source Control Management"
+        },
+        {
+          "level": "h2",
+          "title": "A Short History of Source Control Management"
+        },
+        {
+          "level": "h3",
+          "title": "Distributed version control and Git"
+        },
+        {
+          "level": "h3",
+          "title": "Branching out with Git"
+        },
+        {
+          "level": "h2",
+          "title": "GitOps and Source Control Management"
+        },
+        {
+          "level": "h2",
+          "title": "Monorepos and Remote Caching"
+        },
+        {
+          "level": "h2",
+          "title": "AI in Source Control Management"
+        },
+        {
+          "level": "h1",
+          "title": "Source Control Management in the Delivery Pipeline"
+        },
+        {
+          "level": "h1",
+          "title": "Code Repository Considerations"
+        },
+        {
+          "level": "h2",
+          "title": "Comprehensive Integrations"
+        },
+        {
+          "level": "h2",
+          "title": "AI-Powered Features"
+        },
+        {
+          "level": "h2",
+          "title": "Efficiency and Transparency Through Open Source"
+        },
+        {
+          "level": "h2",
+          "title": "A Platform Approach"
+        },
+        {
+          "level": "h2",
+          "title": "Access Control, an Example"
+        },
+        {
+          "level": "h2",
+          "title": "Defining Roles, a Platform Approach"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ansd_0201.png",
+          "caption": "Figure 2-1. Centralized version control",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0202.png",
+          "caption": "Figure 2-2. Distributed version control with Git",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0203.png",
+          "caption": "Figure 2-3. Gitflow workflow",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0204.png",
+          "caption": "Figure 2-4. Trunk-based development",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0205.png",
+          "caption": "Figure 2-5. Developer actions against the code repository instigate the CI/CD pipeline",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0206.png",
+          "caption": "Figure 2-6. Users are assigned to roles; permissions are associated with roles",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/ch03.html",
+      "title": "Chapter 3. The Build and Pre-Deployment Testing Steps of Continuous Integration",
+      "charCount": 45974,
+      "wordCount": 6630,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 3. The Build and Pre-Deployment Testing Steps of Continuous Integration"
+        },
+        {
+          "level": "h1",
+          "title": "A Short History of Building and Testing Software"
+        },
+        {
+          "level": "h2",
+          "title": "Structured Software Development and Waterfall Methodologies"
+        },
+        {
+          "level": "h2",
+          "title": "Agile and Test-Driven Development"
+        },
+        {
+          "level": "h2",
+          "title": "Enter Continuous Integration"
+        },
+        {
+          "level": "h2",
+          "title": "Continuous Integration Today"
+        },
+        {
+          "level": "h1",
+          "title": "Continuous Integration in the CI/CD Pipeline"
+        },
+        {
+          "level": "h2",
+          "title": "The Essential Build Step"
+        },
+        {
+          "level": "h2",
+          "title": "Prioritizing Quality and Security with Static Analysis"
+        },
+        {
+          "level": "h2",
+          "title": "Automated Testing: Test Early, Test Often"
+        },
+        {
+          "level": "h2",
+          "title": "The Test Pyramid"
+        },
+        {
+          "level": "h1",
+          "title": "Continuous Integration Tools"
+        },
+        {
+          "level": "h2",
+          "title": "Jenkins Considered"
+        },
+        {
+          "level": "h3",
+          "title": "Plug-in complexity"
+        },
+        {
+          "level": "h3",
+          "title": "Scalability challenges"
+        },
+        {
+          "level": "h3",
+          "title": "Security concerns"
+        },
+        {
+          "level": "h3",
+          "title": "Resource usage and efficiency concerns"
+        },
+        {
+          "level": "h2",
+          "title": "Beyond Jenkins"
+        },
+        {
+          "level": "h3",
+          "title": "Hosting options"
+        },
+        {
+          "level": "h3",
+          "title": "Mobile app development–specific challenges"
+        },
+        {
+          "level": "h2",
+          "title": "Modern Features to Accelerate Software Builds"
+        },
+        {
+          "level": "h3",
+          "title": "Accelerate builds with caching"
+        },
+        {
+          "level": "h3",
+          "title": "Streamline building, caching, and testing with AI"
+        },
+        {
+          "level": "h4",
+          "title": "Build phase enhancements"
+        },
+        {
+          "level": "h4",
+          "title": "Cache phase enhancements"
+        },
+        {
+          "level": "h4",
+          "title": "Test phase enhancements"
+        },
+        {
+          "level": "h3",
+          "title": "AI-powered build and test insights"
+        },
+        {
+          "level": "h3",
+          "title": "Unify CI/CD metrics with enterprise observability"
+        },
+        {
+          "level": "h3",
+          "title": "Modern CI/CD support for monorepos"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ansd_0301.png",
+          "caption": "Figure 3-1. A CI/CD pipeline",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0302.png",
+          "caption": "Figure 3-2. CI pipeline triggered by opening a Git PR",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0303.png",
+          "caption": "Figure 3-3. Large sets of fast tests make up the base of the Test Pyramid; smaller sets of slower tests form the higher layers",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/ch04.html",
+      "title": "Chapter 4. Deploying to Test Environments",
+      "charCount": 39930,
+      "wordCount": 5833,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 4. Deploying to Test Environments"
+        },
+        {
+          "level": "h1",
+          "title": "Establishing a Unified Deployment Process"
+        },
+        {
+          "level": "h2",
+          "title": "Deploy Consistently to Every Environment"
+        },
+        {
+          "level": "h3",
+          "title": "Use consistent tooling"
+        },
+        {
+          "level": "h3",
+          "title": "Use consistent pipeline steps and deployment strategies"
+        },
+        {
+          "level": "h3",
+          "title": "Use parameterization for differences"
+        },
+        {
+          "level": "h3",
+          "title": "Accelerate pipeline creation with AI"
+        },
+        {
+          "level": "h3",
+          "title": "Leverage Infrastructure as Code for deployment consistency"
+        },
+        {
+          "level": "h2",
+          "title": "Leverage Git Workflows with GitOps"
+        },
+        {
+          "level": "h1",
+          "title": "Continuous Delivery, Deployment, and Test in the CI/CD Pipeline"
+        },
+        {
+          "level": "h1",
+          "title": "Continuous Delivery Versus Continuous Deployment"
+        },
+        {
+          "level": "h2",
+          "title": "Types of Testing"
+        },
+        {
+          "level": "h2",
+          "title": "Intent-Based Functional and End-to-End Testing"
+        },
+        {
+          "level": "h2",
+          "title": "Traditional Testing Versus a Hollowing-Out-the-Middle Approach"
+        },
+        {
+          "level": "h1",
+          "title": "Promotion Between Environments"
+        },
+        {
+          "level": "h2",
+          "title": "From Decisions by Committee to Automated Decisions"
+        },
+        {
+          "level": "h2",
+          "title": "From Manual to Automated Promotion"
+        },
+        {
+          "level": "h2",
+          "title": "Break the Environment Bottleneck"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ansd_0401.png",
+          "caption": "Figure 4-1. A CI pipeline",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0402.png",
+          "caption": "Figure 4-2. High-level delivery process",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0403.png",
+          "caption": "Figure 4-3. Testing our code in pre-production environments",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0404.png",
+          "caption": "Figure 4-4. Traditional testing through several pre-production environments",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0405.png",
+          "caption": "Figure 4-5. A “hollow-out-the-middle” approach to testing",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/ch05.html",
+      "title": "Chapter 5. Securing Applications and the Software Supply Chain",
+      "charCount": 56243,
+      "wordCount": 7865,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 5. Securing Applications and the Software Supply Chain"
+        },
+        {
+          "level": "h1",
+          "title": "Modern Applications and the Cyberthreat Landscape"
+        },
+        {
+          "level": "h2",
+          "title": "The Growing Threat of Software Supply Chain Attacks"
+        },
+        {
+          "level": "h3",
+          "title": "Applications risks in the software supply chain"
+        },
+        {
+          "level": "h3",
+          "title": "DevOps risks in the software supply chain"
+        },
+        {
+          "level": "h3",
+          "title": "A threat that is growing"
+        },
+        {
+          "level": "h2",
+          "title": "Regulatory Compliance Frameworks That Apply to Software Supply Chains"
+        },
+        {
+          "level": "h1",
+          "title": "Securing Modern Applications with Shift Left"
+        },
+        {
+          "level": "h2",
+          "title": "The Need for Developer-Friendly Shift-Left Security"
+        },
+        {
+          "level": "h2",
+          "title": "Application Security Scanners"
+        },
+        {
+          "level": "h1",
+          "title": "Securing the Software Supply Chain"
+        },
+        {
+          "level": "h2",
+          "title": "Identifying Top CI/CD Security Risks"
+        },
+        {
+          "level": "h2",
+          "title": "Identifying Top OSS Risks"
+        },
+        {
+          "level": "h1",
+          "title": "Ensuring Integrity with Supply Chain Levels for Software Artifacts"
+        },
+        {
+          "level": "h2",
+          "title": "SLSA Overview"
+        },
+        {
+          "level": "h2",
+          "title": "Using SLSA to Ensure Integrity"
+        },
+        {
+          "level": "h3",
+          "title": "Enhancing supply chain security beyond SLSA"
+        },
+        {
+          "level": "h3",
+          "title": "Addressing AI-generated dependency risks"
+        },
+        {
+          "level": "h1",
+          "title": "Addressing Zero-Day Vulnerabilities with Software Bill of Materials"
+        },
+        {
+          "level": "h1",
+          "title": "Using SBOMs to Remediate Dependency Issues"
+        },
+        {
+          "level": "h1",
+          "title": "Adopting DevSecOps Principles"
+        },
+        {
+          "level": "h2",
+          "title": "Establish a Collaborative Culture and Break Down Functional Silos"
+        },
+        {
+          "level": "h2",
+          "title": "Adopt and Enforce Secure Coding Methodologies and Shift-Left"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ansd_0501.png",
+          "caption": "Figure 5-1. The software supply chain",
+          "alt": ""
+        },
+        {
+          "file": "ansd_0502.png",
+          "caption": "Figure 5-2. Shift-left approach contrasted with a traditional testing approach",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/ch06.html",
+      "title": "Chapter 6. Chaos Engineering and Service Reliability",
+      "charCount": 43202,
+      "wordCount": 6336,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 6. Chaos Engineering and Service Reliability"
+        },
+        {
+          "level": "h1",
+          "title": "Service Reliability and Service Resiliency"
+        },
+        {
+          "level": "h1",
+          "title": "Getting Started with Chaos Engineering"
+        },
+        {
+          "level": "h2",
+          "title": "Principles of Chaos Engineering"
+        },
+        {
+          "level": "h2",
+          "title": "Starting Small and Scaling"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: Conduct a simple latency experiment"
+        },
+        {
+          "level": "h3",
+          "title": "Step 2: Test resilience against a more significant network issue"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3: Validate that the circuit breaker fails over to an alternative"
+        },
+        {
+          "level": "h2",
+          "title": "Starting in Production-Like Environments"
+        },
+        {
+          "level": "h2",
+          "title": "Leveraging Modern Tools"
+        },
+        {
+          "level": "h2",
+          "title": "Learning from Others"
+        },
+        {
+          "level": "h3",
+          "title": "Experiment 1: Control plane overload simulation"
+        },
+        {
+          "level": "h3",
+          "title": "Experiment 2: DNS failure testing"
+        },
+        {
+          "level": "h3",
+          "title": "Example 3: Break-glass access drills"
+        },
+        {
+          "level": "h1",
+          "title": "Service-Level Objectives and Service Resiliency"
+        },
+        {
+          "level": "h2",
+          "title": "Establishing Reliability Targets"
+        },
+        {
+          "level": "h2",
+          "title": "Shared Ownership of System Reliability"
+        },
+        {
+          "level": "h1",
+          "title": "Error Budgets and Their Role in Reliability and Innovation"
+        },
+        {
+          "level": "h2",
+          "title": "Monitoring to Inform Chaos Testing Experiments"
+        },
+        {
+          "level": "h2",
+          "title": "Strategic Use of Error Budgets for Chaos Testing Experiments"
+        },
+        {
+          "level": "h3",
+          "title": "Prioritizing chaos experiments in alignment with your available error budget"
+        },
+        {
+          "level": "h3",
+          "title": "Protect your error budget by utilizing AI-augmented dry runs and simulations"
+        },
+        {
+          "level": "h1",
+          "title": "Integrating Chaos Engineering and SLOs into CI/CD Pipelines"
+        },
+        {
+          "level": "h2",
+          "title": "Scaling Your Chaos Engineering Practices"
+        },
+        {
+          "level": "h2",
+          "title": "Adding Chaos Engineering Experiments and SLOs to Your CI/CD Pipeline"
+        },
+        {
+          "level": "h2",
+          "title": "Security and Governance for Chaos Engineering"
+        },
+        {
+          "level": "h1",
+          "title": "The Future of AI-Native Chaos Engineering in Service Reliability"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OEBPS/ch07.html",
+      "title": "Chapter 7. Deploying to Production",
+      "charCount": 45319,
+      "wordCount": 6544,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 7. Deploying to Production"
+        },
+        {
+          "level": "h1",
+          "title": "Governing Production Deployments"
+        },
+        {
+          "level": "h2",
+          "title": "Traditional Approaches to Deployment Governance"
+        },
+        {
+          "level": "h2",
+          "title": "Modern Approaches to Deployment Governance"
+        },
+        {
+          "level": "h3",
+          "title": "Automating decision making"
+        },
+        {
+          "level": "h3",
+          "title": "Building strong audit trails to automate compliance"
+        },
+        {
+          "level": "h3",
+          "title": "Managing enforcement with Policy as Code"
+        },
+        {
+          "level": "h2",
+          "title": "Safeguarding the Deployment Process"
+        },
+        {
+          "level": "h2",
+          "title": "Future Trends in Deployment Governance"
+        },
+        {
+          "level": "h2",
+          "title": "Reconciling Traditional and Modern Approaches"
+        },
+        {
+          "level": "h1",
+          "title": "Production Deployment Strategies"
+        },
+        {
+          "level": "h2",
+          "title": "The Traditional Big-Bang Deployment"
+        },
+        {
+          "level": "h2",
+          "title": "Using a Progressive Delivery Strategy"
+        },
+        {
+          "level": "h3",
+          "title": "Deploying rolling updates"
+        },
+        {
+          "level": "h3",
+          "title": "Using blue-green deployments"
+        },
+        {
+          "level": "h3",
+          "title": "Using canary releases"
+        },
+        {
+          "level": "h3",
+          "title": "Using feature flags"
+        },
+        {
+          "level": "h3",
+          "title": "Rolling back"
+        },
+        {
+          "level": "h3",
+          "title": "Special considerations for specific architectures"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing the Right Tools"
+        },
+        {
+          "level": "h1",
+          "title": "Verifying Production Deployments"
+        },
+        {
+          "level": "h2",
+          "title": "Observability in Deployments"
+        },
+        {
+          "level": "h2",
+          "title": "Modernizing the War Room"
+        },
+        {
+          "level": "h2",
+          "title": "Testing Production Deployments"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ansd_0701.png",
+          "caption": "Figure 7-1. Blue-green deployments involve running two identical environments for seamless updates and rollback options (in the print book, blue appears in dark gray and green appears in light gray)",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OEBPS/ch08.html",
+      "title": "Chapter 8. Feature Management and Experimentation",
+      "charCount": 40669,
+      "wordCount": 5797,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 8. Feature Management and Experimentation"
+        },
+        {
+          "level": "h1",
+          "title": "Benefits of Feature Management in Modern Software Development"
+        },
+        {
+          "level": "h2",
+          "title": "Speeding Up Development Cycles with Feature Flags"
+        },
+        {
+          "level": "h2",
+          "title": "Decoupling Teams to Reduce Coordination Overhead"
+        },
+        {
+          "level": "h2",
+          "title": "Supporting Progressive Delivery with Phased Rollouts"
+        },
+        {
+          "level": "h2",
+          "title": "Manage Tech Debt with Feature Flags"
+        },
+        {
+          "level": "h1",
+          "title": "Optimizing Results Through Experimentation"
+        },
+        {
+          "level": "h2",
+          "title": "Building Well-Structured Experiments"
+        },
+        {
+          "level": "h3",
+          "title": "Strong, clear metrics"
+        },
+        {
+          "level": "h3",
+          "title": "Targeted and randomized audience"
+        },
+        {
+          "level": "h3",
+          "title": "A statistically significant sample size and experiment duration"
+        },
+        {
+          "level": "h3",
+          "title": "Experiment separation"
+        },
+        {
+          "level": "h3",
+          "title": "AI-powered interpretation"
+        },
+        {
+          "level": "h2",
+          "title": "Integrating Experimentation with Progressive Delivery"
+        },
+        {
+          "level": "h2",
+          "title": "Establishing Guardrails"
+        },
+        {
+          "level": "h1",
+          "title": "Life Without Mature Feature Management Tools"
+        },
+        {
+          "level": "h2",
+          "title": "Low-Quality Tools Impede Effective Feature Flag Management"
+        },
+        {
+          "level": "h2",
+          "title": "Minimal Support for Experimentation Limits Your Learning"
+        },
+        {
+          "level": "h2",
+          "title": "Lack of Integrations Slows You Down"
+        },
+        {
+          "level": "h2",
+          "title": "Fragile Implementations Distract Your Team"
+        },
+        {
+          "level": "h1",
+          "title": "Scaling Feature Management and Experimentation"
+        },
+        {
+          "level": "h2",
+          "title": "Unify with a Single Feature Management Implementation"
+        },
+        {
+          "level": "h2",
+          "title": "Reduce Manual Steps with Smart Integrations"
+        },
+        {
+          "level": "h2",
+          "title": "Simplify Governance with Automated Audit Trails and Enforcement"
+        },
+        {
+          "level": "h2",
+          "title": "Leverage Your Existing Identity Management Infrastructure"
+        },
+        {
+          "level": "h2",
+          "title": "Choose a Platform Built to Scale"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "OEBPS/ch09.html",
+      "title": "Chapter 9. AI and Automation for Cloud Cost Management",
+      "charCount": 40752,
+      "wordCount": 5747,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 9. AI and Automation for Cloud Cost Management"
+        },
+        {
+          "level": "h1",
+          "title": "The Evolution of Cloud Cost Management"
+        },
+        {
+          "level": "h2",
+          "title": "Early Cloud Adoption and Initial Challenges"
+        },
+        {
+          "level": "h2",
+          "title": "The Rise of FinOps"
+        },
+        {
+          "level": "h3",
+          "title": "Core principles of FinOps"
+        },
+        {
+          "level": "h3",
+          "title": "Phases of FinOps"
+        },
+        {
+          "level": "h4",
+          "title": "Inform"
+        },
+        {
+          "level": "h4",
+          "title": "Optimize"
+        },
+        {
+          "level": "h4",
+          "title": "Operate"
+        },
+        {
+          "level": "h2",
+          "title": "Modern Cloud Cost Management Challenges"
+        },
+        {
+          "level": "h1",
+          "title": "AI-Driven Cloud Cost Optimization Strategies"
+        },
+        {
+          "level": "h2",
+          "title": "Right-Sizing Cloud Resources"
+        },
+        {
+          "level": "h3",
+          "title": "Cloud cost visibility required for the FinOps Inform phase"
+        },
+        {
+          "level": "h3",
+          "title": "Moving from Inform to Optimize"
+        },
+        {
+          "level": "h2",
+          "title": "Leveraging Commitment-Based Pricing and Spot Instances"
+        },
+        {
+          "level": "h3",
+          "title": "Key considerations"
+        },
+        {
+          "level": "h3",
+          "title": "How AI can help"
+        },
+        {
+          "level": "h2",
+          "title": "Using AI to Manage Container Costs"
+        },
+        {
+          "level": "h2",
+          "title": "Aligning Cost Savings Goals with Business Objectives"
+        },
+        {
+          "level": "h1",
+          "title": "Automating Cloud Governance and Compliance"
+        },
+        {
+          "level": "h2",
+          "title": "Implementing Cloud Governance Policies"
+        },
+        {
+          "level": "h2",
+          "title": "Enforcing Budget Guardrails with Automation"
+        },
+        {
+          "level": "h2",
+          "title": "Ensuring Tag Compliance Through Automation"
+        },
+        {
+          "level": "h2",
+          "title": "Allocating the Costs of Shared Platforms and Services"
+        },
+        {
+          "level": "h1",
+          "title": "Cloud Cost Management to Meet Environmental Sustainability Goals"
+        },
+        {
+          "level": "h1",
+          "title": "The Future of AI in Cloud Cost Management"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "OEBPS/ch10.html",
+      "title": "Chapter 10. A Platform Engineering Approach to Modern DevOps",
+      "charCount": 53332,
+      "wordCount": 7305,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 10. A Platform Engineering Approach to Modern DevOps"
+        },
+        {
+          "level": "h1",
+          "title": "Why Platform Engineering?"
+        },
+        {
+          "level": "h2",
+          "title": "The Developer Cognitive Load Crisis"
+        },
+        {
+          "level": "h2",
+          "title": "From Toolchains to Platform as a Product"
+        },
+        {
+          "level": "h2",
+          "title": "The Business Case for Platform Engineering"
+        },
+        {
+          "level": "h2",
+          "title": "Supporting a Collaborative DevOps Culture"
+        },
+        {
+          "level": "h1",
+          "title": "Creating and Operating Platform Teams"
+        },
+        {
+          "level": "h2",
+          "title": "Critical Characteristics of a Platform Team"
+        },
+        {
+          "level": "h2",
+          "title": "Engagement Models That Work"
+        },
+        {
+          "level": "h2",
+          "title": "Effective Operating Models"
+        },
+        {
+          "level": "h1",
+          "title": "Defining Your Platform Strategy"
+        },
+        {
+          "level": "h2",
+          "title": "Setting Platform Principles"
+        },
+        {
+          "level": "h2",
+          "title": "Platform Antiprinciples and Resolving Conflicts"
+        },
+        {
+          "level": "h2",
+          "title": "Understanding Your Platform Audience"
+        },
+        {
+          "level": "h2",
+          "title": "Selecting Platform Scope"
+        },
+        {
+          "level": "h2",
+          "title": "A Practical Road Map Example"
+        },
+        {
+          "level": "h2",
+          "title": "Balancing Standardization and Flexibility"
+        },
+        {
+          "level": "h1",
+          "title": "Platform Measurement and Evolution"
+        },
+        {
+          "level": "h2",
+          "title": "Measuring Platform Success"
+        },
+        {
+          "level": "h2",
+          "title": "Driving Platform Adoption"
+        },
+        {
+          "level": "h2",
+          "title": "Leveraging Internal Developer Portals for Platform Success"
+        },
+        {
+          "level": "h3",
+          "title": "Core portal components"
+        },
+        {
+          "level": "h3",
+          "title": "AI-enhanced developer experience"
+        },
+        {
+          "level": "h3",
+          "title": "Building an effective portal"
+        },
+        {
+          "level": "h2",
+          "title": "Sustainable Platform Evolution"
+        },
+        {
+          "level": "h2",
+          "title": "A Practical Example: Platform Engineering in Action"
+        },
+        {
+          "level": "h3",
+          "title": "Discovery and strategy development"
+        },
+        {
+          "level": "h3",
+          "title": "Building the minimum viable platform"
+        },
+        {
+          "level": "h3",
+          "title": "Expanding platform capabilities"
+        },
+        {
+          "level": "h3",
+          "title": "Enterprise-wide adoption and business impact"
+        },
+        {
+          "level": "h3",
+          "title": "Ongoing improvements"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        },
+        {
+          "level": "h2",
+          "title": "Looking Forward"
+        },
+        {
+          "level": "h2",
+          "title": "Getting Started"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ansd_1001.png",
+          "caption": "Figure 10-1. Developer platform capabilities",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-native-software-delivery\\ch10.txt"
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+{
+  "bookSlug": "agentforce-harnessing-agency-of-ai",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Agentforce Harnessing the Agency of AI to Scale, Grow, and Lead Any Industry.epub",
+  "totalChapters": 22,
+  "totalFigures": 19,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OPS/c01.xhtml",
+      "title": "Chapter 1Call My Agent!",
+      "charCount": 6294,
+      "wordCount": 1065,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1Call My Agent!"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OPS/c02.xhtml",
+      "title": "Chapter 2What Is Agentforce, Anyway?",
+      "charCount": 12678,
+      "wordCount": 2017,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2What Is Agentforce, Anyway?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OPS/c03.xhtml",
+      "title": "Chapter 3How Does Agentforce Actually Work?",
+      "charCount": 21891,
+      "wordCount": 3564,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 3How Does Agentforce Actually Work?"
+        },
+        {
+          "level": "h2",
+          "title": "Giving a Customer-Service Agent More Skills"
+        },
+        {
+          "level": "h2",
+          "title": "Customer's POV"
+        },
+        {
+          "level": "h2",
+          "title": "Building a Custom Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c03f001.png",
+          "caption": "Figure 3.1 Agentforce topic screen",
+          "alt": "A screenshot displays the Create a Topic window. It includes fields like topic label, classification description, scope of the topic, and specific instructions for the agent."
+        },
+        {
+          "file": "c03f002.png",
+          "caption": "Figure 3.2 Adding actions to Agentforce",
+          "alt": "A screenshot displays a table of agent actions within a Salesforce interface. It outlines various tasks agents can perform, such as adding case comments, answering questions with knowledge, canceling orders, and creating cases. Each action includes details like its label, specific instructions, source, action type, last modified date, and creator."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OPS/c04.xhtml",
+      "title": "Chapter 4What Are Some Useful Things You Can Do with Agents?",
+      "charCount": 12304,
+      "wordCount": 1791,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 4What Are Some Useful Things You Can Do with Agents?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OPS/c05.xhtml",
+      "title": "Chapter 5Do You Need a Platform to Do Agents (and What's a Platform, Anyway)?",
+      "charCount": 14168,
+      "wordCount": 2313,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 5Do You Need a Platform to Do Agents (and What's a Platform, Anyway)?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c05f001.png",
+          "caption": "Figure 5.1 Agentforce and the Salesforce platform Source: Salesforce",
+          "alt": "A diagram illustrates the Agentforce Customer 360 platform built on the Salesforce Platform. It shows how data from various Salesforce clouds like Sales, Service, Marketing, Commerce, Revenue and Orders, and Industries, along with integrations like Tableau and Slack, flows into the Data Cloud."
+        },
+        {
+          "file": "c05f002.png",
+          "caption": "Figure 5.2 Vivek's whiteboard of the Salesforce Platform Source: Vivek Mahapatra",
+          "alt": "A handwritten note includes Agentforce, Einstein AI, RAG, Data Cloud, and Platform, ensuring seamless workflows, intelligent automation, and robust security measures. This setup drives efficiency, productivity, and improved customer satisfaction."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OPS/c06.xhtml",
+      "title": "Chapter 6Are Agents Really Different from Chatbots and Co-pilots?",
+      "charCount": 16089,
+      "wordCount": 2588,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 6Are Agents Really Different from Chatbots and Co-pilots?"
+        },
+        {
+          "level": "h2",
+          "title": "Note"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c06f001.png",
+          "caption": "Figure 6.1 Bots versus autonomous agents Source: Salesforce",
+          "alt": "A screenshot compares Bots and Autonomous Agents in customer service scenarios. Bots provide repetitive, scripted responses and struggle to handle complex interactions effectively, often requiring repeated input from the customer. In contrast, Autonomous Agents offer dynamic and conversational interactions, combining information with action. They quickly identify issues, confirm details, and proactively provide solutions, ensuring a smoother and more customer-friendly experience."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OPS/c07.xhtml",
+      "title": "Chapter 7What Are the Different Parts of Agentforce?",
+      "charCount": 13999,
+      "wordCount": 2179,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 7What Are the Different Parts of Agentforce?"
+        },
+        {
+          "level": "h2",
+          "title": "Note"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c07f001.png",
+          "caption": "Figure 7.1 Agentforce agentic loop",
+          "alt": "A diagram illustrates the Agentforce agentic loop within the Salesforce Platform. Data from the Data Cloud is retrieved and fed into the Agentic Loop, where it undergoes a cycle of planning, evaluation, and refinement. Based on this process, actions are taken across Customer 360 apps and channels."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OPS/c08.xhtml",
+      "title": "Chapter 8What Is the Einstein Trust Layer, and Why Do You Need It?",
+      "charCount": 10592,
+      "wordCount": 1699,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 8What Is the Einstein Trust Layer, and Why Do You Need It?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c08f001.png",
+          "caption": "Figure 8.1 Einstein Trust Layer",
+          "alt": "A diagram depicts the Einstein Trust Layer, which acts as a secure intermediary between CRM Apps and various AI Models. When a prompt originates from CRM Apps, it undergoes Secure Data Retrieval, Dynamic Grounding, Data Masking, and Prompt Defense within the Trust Layer before reaching the Models. The response from the models then passes through Zero Retention, Data Demasking, Toxicity Detection, and a Feedback Framework, with an Audit Trail recording the process."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "OPS/c09.xhtml",
+      "title": "Chapter 9Why Do You Need Data Cloud for Agentforce?",
+      "charCount": 21216,
+      "wordCount": 3359,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 9Why Do You Need Data Cloud for Agentforce?"
+        },
+        {
+          "level": "h2",
+          "title": "Note"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c09f001.png",
+          "caption": "Figure 9.1 How Data Cloud works",
+          "alt": "A diagram begins by connecting various data sources, such as Salesforce, external apps, data lakes, unstructured data, and APIs, without data duplication. These diverse data profiles are then harmonized through preparation, transformation, mapping to a unified model, and identity resolution. The harmonized data is governed by AI by tagging, classifying, defining, and enforcing policies. Finally, the data is activated anywhere, providing real-time data, insights, actions, and search capabilities, including RAG."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "OPS/c10.xhtml",
+      "title": "Chapter 10What Is RAG, and Why Should I Care?",
+      "charCount": 14821,
+      "wordCount": 2470,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 10What Is RAG, and Why Should I Care?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch10.txt"
+    },
+    {
+      "chapterNumber": 11,
+      "chapterId": "ch11",
+      "sourceFile": "OPS/c11.xhtml",
+      "title": "Chapter 11What Is the Atlas Reasoning Engine?",
+      "charCount": 16671,
+      "wordCount": 2723,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 11What Is the Atlas Reasoning Engine?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c11f001.png",
+          "caption": "Figure 11.1 Agentic AI Planner and Data Cloud",
+          "alt": "A diagram depicts the Agentic AI Planner and Data Cloud, where user queries are refined through a Trust Layer, AI Governance, and evaluators to ensure actionable outcomes. It integrates structured and unstructured data, context refinement, and human escalation to deliver reliable responses."
+        },
+        {
+          "file": "c11f002.png",
+          "caption": "Figure 11.2 Atlas Reasoning Engine",
+          "alt": "A diagram illustrates the Atlas Reasoning Engine, part of a system connecting structured and unstructured data from the Data Cloud. It uses AI to retrieve, plan, evaluate, refine data, and execute actions through tools like Flow, MuleSoft, and Apex."
+        },
+        {
+          "file": "c11f003.png",
+          "caption": "Figure 11.3 Atlas Cognitive Map example Source: Phil Mui",
+          "alt": "A flow diagram illustrates a cognitive map that includes a start event, start, GCalendarEvent, SalesforceEvent, GeneralSearchEvent, general search, orchestrator, OrchestratorEvent, gcalendar, FinanceAgentSwarmEvent, Atlas21Event, Atlas21Event, ResponseEvent, and so on."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch11.txt"
+    },
+    {
+      "chapterNumber": 12,
+      "chapterId": "ch12",
+      "sourceFile": "OPS/c12.xhtml",
+      "title": "Chapter 12How Do You Control an Agent and Give It Orders?",
+      "charCount": 17924,
+      "wordCount": 2964,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 12How Do You Control an Agent and Give It Orders?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c12f001.png",
+          "caption": "Figure 12.1 Five components of an AI agent",
+          "alt": "A diagram outlines five essential components of an AI agent labeled Role with agent topics and instructions, Data with knowledge accessible, Actions with capabilities available, Guardrails with prohibited actions, and Channel with work environment."
+        },
+        {
+          "file": "c12f002.png",
+          "caption": "Figure 12.2 Creating prompts with Prompt Builder",
+          "alt": "A flowchart depicts four steps for building and deploying effective AI prompts, labeled as grounding them with data, creating reusable templates, testing and iterating, and deploying templates through systems like Flow or Apex."
+        },
+        {
+          "file": "c12f003.png",
+          "caption": "Figure 12.3 Prompt Builder home screen",
+          "alt": "A screenshot displays the Prompt Builder home screen, likely within a Salesforce environment. It displays a Prompt Template Workspace, where users can define instructions for an AI model, referencing Salesforce data fields like Case Subject and Priority. A Preview section allows users to test the prompt with specific records and view the AI's generated Response, while a Configuration sidebar enables setting template properties like the model used."
+        },
+        {
+          "file": "c12f004.png",
+          "caption": "Figure 12.4 Agent Builder: description",
+          "alt": "A screenshot displays the Topics section within an Agentforce or similar agent configuration interface. It shows a list of predefined topics, such as Account Management, Case Management, and Delivery Issues, that the agent is trained to handle. On the right, a \"Conversation Preview\" allows users to test."
+        },
+        {
+          "file": "c12f005.png",
+          "caption": "Figure 12.5 Agent Builder: topics",
+          "alt": "A screenshot displays the Create a Topic window. It includes fields like topic label, classification description, scope of the topic, and specific instructions for the agent."
+        },
+        {
+          "file": "c12f006.png",
+          "caption": "Figure 12.6 Adding Agentforce: actions",
+          "alt": "A screenshot includes sections for configuring inputs and outputs, such as specifying instructions, data collection settings, and defining filters and data types. These configurations allow customization of agent actions, enabling streamlined automation and more efficient customer service interactions."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch12.txt"
+    },
+    {
+      "chapterNumber": 13,
+      "chapterId": "ch13",
+      "sourceFile": "OPS/c13.xhtml",
+      "title": "Chapter 13How Do You Test an Agent in a Sandbox?",
+      "charCount": 13244,
+      "wordCount": 2118,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 13How Do You Test an Agent in a Sandbox?"
+        },
+        {
+          "level": "h2",
+          "title": "Note"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c13f001.png",
+          "caption": "Figure 13.1 Testing agents in Agent Builder",
+          "alt": "A screenshot displays the Topic Details for Experience Management, where a user asked about the full moon beach party experience. The system identifies this topic and provides context about its scope, which includes booking and modifying experiences at Coral Cloud Resorts. The Conversation Preview simulates the AI agent's initial response, asking for the user's email or membership number to proceed."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch13.txt"
+    },
+    {
+      "chapterNumber": 14,
+      "chapterId": "ch14",
+      "sourceFile": "OPS/c14.xhtml",
+      "title": "Chapter 14What Are Some of the Prebuilt Agentforce Agents?",
+      "charCount": 27228,
+      "wordCount": 4193,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 14What Are Some of the Prebuilt Agentforce Agents?"
+        },
+        {
+          "level": "h2",
+          "title": "AI for Service"
+        },
+        {
+          "level": "h2",
+          "title": "Agentforce for Sales"
+        },
+        {
+          "level": "h2",
+          "title": "Agentforce for Marketing"
+        },
+        {
+          "level": "h2",
+          "title": "Agentforce for Commerce"
+        },
+        {
+          "level": "h2",
+          "title": "Agentforce for Employee Service"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch14.txt"
+    },
+    {
+      "chapterNumber": 15,
+      "chapterId": "ch15",
+      "sourceFile": "OPS/c15.xhtml",
+      "title": "Chapter 15How Do You Build a Custom Agent from Scratch?",
+      "charCount": 15547,
+      "wordCount": 2560,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 15How Do You Build a Custom Agent from Scratch?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c15f001.png",
+          "caption": "Figure 15.1 AI agent lifecycle",
+          "alt": "A flow diagram illustrates the lifecycle of building and managing AI agents on the Agentforce low-code platform. It outlines six key stages labeled Ideate using Agent Creator, Setup and Configure both using Agent Builder, Test using Testing Center, Deploy using Agent Builder, and Monitor using Testing Center."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch15.txt"
+    },
+    {
+      "chapterNumber": 16,
+      "chapterId": "ch16",
+      "sourceFile": "OPS/c16.xhtml",
+      "title": "Chapter 16What Is the Best Way to Come Up with Ideas for Agents?",
+      "charCount": 23390,
+      "wordCount": 3736,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 16What Is the Best Way to Come Up with Ideas for Agents?"
+        },
+        {
+          "level": "h2",
+          "title": "Brainstorming AI Agent Ideas"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch16.txt"
+    },
+    {
+      "chapterNumber": 17,
+      "chapterId": "ch17",
+      "sourceFile": "OPS/c17.xhtml",
+      "title": "Chapter 17How “Human” Should Your AI Agent Be?",
+      "charCount": 4778,
+      "wordCount": 762,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 17How “Human” Should Your AI Agent Be?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch17.txt"
+    },
+    {
+      "chapterNumber": 18,
+      "chapterId": "ch18",
+      "sourceFile": "OPS/c18.xhtml",
+      "title": "Chapter 18How Do You Make Sure AI Is Governed?",
+      "charCount": 14730,
+      "wordCount": 2275,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 18How Do You Make Sure AI Is Governed?"
+        },
+        {
+          "level": "h2",
+          "title": "Pillars of Effective Governance"
+        },
+        {
+          "level": "h3",
+          "title": "Tighten Data Access"
+        },
+        {
+          "level": "h3",
+          "title": "Improve Data Accuracy"
+        },
+        {
+          "level": "h3",
+          "title": "Implement Data Privacy"
+        },
+        {
+          "level": "h3",
+          "title": "Increase Data Security"
+        },
+        {
+          "level": "h3",
+          "title": "Ensure Data Retention"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch18.txt"
+    },
+    {
+      "chapterNumber": 19,
+      "chapterId": "ch19",
+      "sourceFile": "OPS/c19.xhtml",
+      "title": "Chapter 19How Do You Build a Business Case for Agentforce?",
+      "charCount": 10654,
+      "wordCount": 1662,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 19How Do You Build a Business Case for Agentforce?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch19.txt"
+    },
+    {
+      "chapterNumber": 20,
+      "chapterId": "ch20",
+      "sourceFile": "OPS/c20.xhtml",
+      "title": "Chapter 20So What Are We Humans Going to Do Now?",
+      "charCount": 10620,
+      "wordCount": 1640,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 20So What Are We Humans Going to Do Now?"
+        },
+        {
+          "level": "h2",
+          "title": "Notes"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch20.txt"
+    },
+    {
+      "chapterNumber": 21,
+      "chapterId": "ch21",
+      "sourceFile": "OPS/c21.xhtml",
+      "title": "Chapter 21How Can I Get Started with Agentforce and Learn More?",
+      "charCount": 4906,
+      "wordCount": 690,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 21How Can I Get Started with Agentforce and Learn More?"
+        },
+        {
+          "level": "h2",
+          "title": "Note"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch21.txt"
+    },
+    {
+      "chapterNumber": 22,
+      "chapterId": "ch22",
+      "sourceFile": "OPS/c22.xhtml",
+      "title": "Chapter 22So What Was This Book All About, Anyway?",
+      "charCount": 10820,
+      "wordCount": 1790,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 22So What Was This Book All About, Anyway?"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\agentforce-harnessing-agency-of-ai\\ch22.txt"
+    }
+  ]
+}

@@ -6,17 +6,17 @@ export const bvcCh05Mastery: ChapterMastery = {
   title: 'Understanding Generated Code: Reviewing, Refining, Owning',
   subtitle:
     'Auditing intent-to-implementation gaps, overcoming the statistical "Majority Solution" trap, systematic debugging, refactoring for maintainability, and building a non-tautological testing pyramid.',
-  readingTimeMinutes: 36,
+  readingTimeMinutes: 8,
   sourceWordCount: 4120,
   executiveThesis:
-    'Generating code with an LLM takes seconds, but unreviewed AI output is an unverified liability rather than a software asset. Because language models sample the most statistically common completion across public repositories—the "Majority Solution" effect—they routinely emit naive O(N^2) loops, tutorial-grade global state, outdated library APIs, and happy-path-only error handling. Transforming raw AI output into production-grade software requires a disciplined ownership loop: line-by-line intent auditing, six-step root-cause debugging, six-step structural refactoring, and human-specified unit, integration, and end-to-end testing that prevents tautological assertions.',
+    'Generating code with an LLM takes seconds, but unreviewed AI output is an unverified liability rather than a software asset. Because language models sample the most statistically common completion across public repositories—the "Majority Solution" effect—they routinely emit naive O(N^2) loops, tutorial-grade global state, outdated library APIs, and happy-path-only error handling.',
   paradigmShift: {
     oldWay:
       'Blind Vibe Acceptance: Prompt the model -> Copy-paste the generated snippet if it compiles -> Ask the same model to "write unit tests for this code" -> Merge without reading line-by-line or understanding hidden assumptions.',
     newWay:
       'Engineering Ownership Loop: Audit generated code against original intent and edge cases -> Replace statistical "Majority Solutions" with architecture-specific algorithms -> Execute a 6-step refactoring pass -> Lock behavior with human-specified tests until the code is indistinguishable from expert human craftsmanship.',
     whyItChanged:
-      'An AI assistant cannot be paged at 3:00 AM during a production outage or held legally accountable for security flaws and copyright infringement. Once code enters version control, the human engineer owns 100% of its runtime behavior, failure modes, and maintenance burden.',
+      'An AI assistant cannot be paged at 3:00 AM during a production outage or held legally accountable for security flaws and copyright infringement.',
   },
   heroIllustrationUrl: '/books/beyond-vibe-coding/assets/bevc_0501.png',
   customDiagrams: [
@@ -101,7 +101,7 @@ export const bvcCh05Mastery: ChapterMastery = {
           step: '1',
           label: 'The Statistical Mode Peak',
           explanation:
-            'Public training corpora contain thousands of beginner tutorials, homework solutions, and quick snippets for every one hardened production system. Generic prompts ("write a search function") inevitably sample this modal peak.',
+            'Public training corpora contain thousands of beginner tutorials, homework solutions, and quick snippets for every one hardened production system.',
         },
         {
           step: '2',
@@ -216,7 +216,7 @@ export const bvcCh05Mastery: ChapterMastery = {
           step: '3',
           label: 'Breaking Tautological Confirmation Bias',
           explanation:
-            'When asked to test existing code, LLMs infer expected outputs from the code structure itself. Always specify expected input-output pairs and boundary conditions (0, 1, negatives, empty inputs) explicitly.',
+            'When asked to test existing code, LLMs infer expected outputs from the code structure itself.',
         },
       ],
     },
@@ -230,9 +230,9 @@ export const bvcCh05Mastery: ChapterMastery = {
       naiveIntuition:
         'When you ask an AI coding assistant for an algorithm or module, it evaluates your engineering trade-offs and synthesizes a solution tailored to your scale and architecture.',
       firstPrinciplesReality:
-        'Code-generating LLMs are trained via next-token prediction over billions of lines of public code dominated by introductory tutorials, coding bootcamps, and generic examples. When a prompt leaves performance or architectural constraints unspecified, the model samples the statistical mode—such as an O(N) linear scan instead of an O(log N) binary search, global mutable variables, or 32-bit arithmetic vulnerable to integer overflow. The output is an educated statistical guess optimized for an average tutorial scenario.',
+        'Code-generating LLMs are trained via next-token prediction over billions of lines of public code dominated by introductory tutorials, coding bootcamps, and generic examples.',
       howToApply:
-        'Audit every AI snippet for hidden modal assumptions: Does it assume the input list is already sorted? Does it use a list where a hash set is required? Either constrain complexity upfront in the prompt or refactor the modal default immediately after generation.',
+        'Audit every AI snippet for hidden modal assumptions: Does it assume the input list is already sorted?',
     },
     {
       id: 'bvc-ch05-mm-intern',
@@ -242,9 +242,9 @@ export const bvcCh05Mastery: ChapterMastery = {
       naiveIntuition:
         'Because AI code is syntactically clean and accompanied by confident docstrings, it requires less scrutiny than code written by a junior teammate.',
       firstPrinciplesReality:
-        'AI code exhibits classic "eager intern" artifacts: redundant tutorial comments above self-explanatory if-statements, mismatched docstrings left behind after logic edits, unnecessary heavyweight imports (like importing NumPy to sum a ten-element list), deprecated library APIs, and happy-path bias that ignores unclosed files or null inputs. Once you commit that code, the "intern" is gone and your name is on `git blame`.',
+        'AI code exhibits classic "eager intern" artifacts: redundant tutorial comments above self-explanatory if-statements, mismatched docstrings left behind after logic edits, unnecessary heavyweight imports (like importing NumPy to sum a ten-element list), deprecated library APIs, and happy-path bias that ignores unclosed files or null inputs.',
       howToApply:
-        'Never merge a line of AI code you cannot explain from first principles. Strip tutorial clutter, verify every unfamiliar library call against current documentation, and check large or unusually specific snippets for verbatim open-source license or copyright reproduction.',
+        'Never merge a line of AI code you cannot explain from first principles.',
     },
     {
       id: 'bvc-ch05-mm-tautology',
@@ -254,9 +254,9 @@ export const bvcCh05Mastery: ChapterMastery = {
       naiveIntuition:
         'If you prompt the AI to generate a function and immediately prompt it to generate a PyTest or Jest suite that passes 100%, the function is verified as correct.',
       firstPrinciplesReality:
-        'When an LLM generates tests conditioned on an existing implementation, it traces the implementation paths to calculate what the code outputs rather than consulting an independent specification of what the code should output. If the implementation mishandles an edge case (e.g., treating 1 or negative numbers as prime, or off-by-one loop bounds), the generated test will dutifully assert that buggy output as the expected result.',
+        'When an LLM generates tests conditioned on an existing implementation, it traces the implementation paths to calculate what the code outputs rather than consulting an independent specification of what the code should output.',
       howToApply:
-        'Supply the test oracle yourself. Either write tests before generating the implementation (Test-Driven Debugging) or explicitly instruct the AI which boundary inputs (empty collections, None, 0, 1, negative values, max-int) must map to which expected outputs.',
+        'Supply the test oracle yourself.',
     },
   ],
   deepSections: [
@@ -267,7 +267,7 @@ export const bvcCh05Mastery: ChapterMastery = {
       subtitle:
         'How to trace execution mentally, catch partial fulfillment, strip hallucinated features, and surface silent prompt ambiguities.',
       coreMechanism:
-        'The first phase of code ownership begins the moment the model emits a response: comparing the generated implementation against your original intent. Even when a prompt feels explicit to a human author, natural language contains inherent ambiguities that force the LLM to make silent architectural choices. Sometimes the model misinterprets a requirement entirely; more frequently, it fulfills the first clause of a multi-part request ("do X and Y") while quietly dropping the second clause.\n\nTo catch these discrepancies before running the code, perform a deliberate mental or paper walkthrough using a representative input. Trace every state mutation line by line. Look specifically for two opposite failure modes: omission and unrequested invention. In omission, boundary cases—such as `None` references, empty lists, or negative numbers—are left unguarded. In unrequested invention, the model injects features you never asked for because those patterns frequently co-occur in training tutorials: for instance, asking for a prime-number checker and receiving a function that prints `"Checking 7..."` on every iteration, or adds extra logging parameters and file-writing side effects.\n\nAmbiguity resolution is equally critical. If your prompt did not specify an output contract, the AI may choose to `print()` results to standard output instead of returning a data structure, breaking downstream callers. Reading the code line by line is not optional even if you plan to run automated tests later: reading catches structural misalignments, side effects, and dead code faster than test harnesses, and test suites rarely cover every unexpected side effect an LLM might introduce.',
+        'The first phase of code ownership begins the moment the model emits a response: comparing the generated implementation against your original intent. Even when a prompt feels explicit to a human author, natural language contains inherent ambiguities that force the LLM to make silent architectural choices.\n\nTo catch these discrepancies before running the code, perform a deliberate mental or paper walkthrough using a representative input. Trace every state mutation line by line.',
       stepByStepFlow: [
         {
           step: '1',
@@ -295,14 +295,13 @@ export const bvcCh05Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'Never skip static human reading in favor of "just running the tests"—tests only check what you thought to assert, not unrequested side effects.',
-        'AI models routinely inject tutorial artifacts (like printing loop progress) that pollute production logs and degrade performance.',
-        'Every ambiguity in your prompt forces the model to guess an output contract (e.g., printing vs. returning, mutating in-place vs. returning a copy).',
-      ],
+          'Never skip static human reading in favor of "just running the tests".',
+          'AI models routinely inject tutorial artifacts (like printing loop progress) that pollute production logs and degrade performance.',
+        ],
       commonPitfalls: [
-        'Assuming a multi-part prompt was completely implemented because the first 80% of the function looks clean.',
-        'Leaving "harmless" unrequested parameters or logging statements in the code because "the AI probably put them there for a good reason."',
-      ],
+          'Assuming a multi-part prompt was completely implemented because the first 80% of the function looks clean.',
+          'Leaving "harmless" unrequested parameters or logging statements in the code because "the AI probably put them there for a good reason."',
+        ],
     },
     {
       id: 'bvc-ch05-sec-5-2',
@@ -311,41 +310,15 @@ export const bvcCh05Mastery: ChapterMastery = {
       subtitle:
         'Deconstructing why autoregressive models default to linear scans, global state, and integer-overflow traps.',
       coreMechanism:
-        'Why does AI-generated code so often look generic, naive, or slightly mismatched to professional software architecture? Addy Osmani terms this the "Majority Solution" phenomenon. Because LLMs are trained to maximize likelihood over massive public code corpora, an underspecified prompt causes the model to emit the implementation that appears most frequently in training data—or the simplest textbook solution that satisfies the surface wording of the prompt.\n\nConsider asking an AI for a search routine without providing dataset context. The model will almost certainly emit an $O(N)$ linear search because linear loops are simple and ubiquitous across millions of beginner repositories. If your system operates on a sorted 10-million-record array inside a latency-critical path, you needed an $O(\\log N)$ binary search—but the AI lacks runtime context unless you supply it. Similarly, the model may reach for global variables because single-file scripts and classroom examples rely on globals, even though global mutable state violates thread safety and modularity in your codebase.\n\nThe Majority Solution also blinds the model to domain-specific edge cases. In a numerical or financial calculation, the vast majority of training examples ignore 32-bit or 64-bit integer overflow; the model reproduces that naive arithmetic verbatim. Recognizing that AI output is a statistical modal average—not a bespoke engineering design—shifts your review posture: you stop expecting magic and start auditing every environmental assumption baked into the generated snippet.',
-      formulas: [
-        {
-          name: 'Modal Token Selection vs. Constrained Architectural Conditioning',
-          expression:
-            'y^*_{\\text{naive}} = \\arg\\max_y P(y \\mid x_{\\text{generic}}) \\neq \\arg\\max_y P(y \\mid x_{\\text{generic}}, C_{\\text{scale}}, C_{\\text{arch}})',
-          intuition:
-            'Conditioning only on a generic functional description selects the global mode of public code (tutorial patterns). Adding explicit scale constraints (C_scale) and architectural invariants (C_arch) restricts the probability distribution to production-grade implementations.',
-          variables: [
-            {
-              symbol: 'x_{\\text{generic}}',
-              meaning: 'Underspecified functional prompt (e.g., "Write a search function").',
-            },
-            {
-              symbol: 'C_{\\text{scale}}',
-              meaning: 'Complexity and scale bounds (e.g., "O(log N) time, 10M sorted records, overflow-safe").',
-            },
-            {
-              symbol: 'C_{\\text{arch}}',
-              meaning: 'Project architecture rules (e.g., "Pure function, no globals, zero external dependencies").',
-            },
-          ],
-          workedExample:
-            'For membership testing across N = 100,000 items called M = 50,000 times, the Majority Solution uses a list lookup (O(N * M) = 5 * 10^9 operations, ~12 seconds in Python). Shifting to a Set lookup reduces complexity to O(N + M) = 1.5 * 10^5 operations (~4 milliseconds)—a 3,000x speedup.',
-        },
-      ],
+        'Why does AI-generated code so often look generic, naive, or slightly mismatched to professional software architecture? Addy Osmani terms this the "Majority Solution" phenomenon.\n\nConsider asking an AI for a search routine without providing dataset context. The model will almost certainly emit an $O(N)$ linear search because linear loops are simple and ubiquitous across millions of beginner repositories.',
       keyTakeaways: [
-        'The Majority Solution is generally syntactically valid for toy inputs but suboptimal or dangerous under production load.',
-        'Always catalog the implicit assumptions in AI code: Does it assume sorted data? Validated inputs? Small memory footprints? Fits-in-register integers?',
-        'When multiple algorithms exist for a problem, explicitly verify which one the AI selected and whether an alternative better fits your latency and memory budget.',
-      ],
+          'The Majority Solution is generally syntactically valid for toy inputs but suboptimal or dangerous under production load.',
+          'Always catalog the implicit assumptions in AI code: Does it assume sorted data?',
+        ],
       commonPitfalls: [
-        'Accepting an O(N^2) nested list lookup because it passes unit tests on a 5-element fixture.',
-        'Allowing global state or singleton side effects into a modular codebase because the AI snippet worked out-of-the-box.',
-      ],
+          'Accepting an O(N^2) nested list lookup because it passes unit tests on a 5-element fixture.',
+          'Allowing global state or singleton side effects into a modular codebase because the AI snippet worked out-of-the-box.',
+        ],
     },
     {
       id: 'bvc-ch05-sec-5-3',
@@ -354,17 +327,15 @@ export const bvcCh05Mastery: ChapterMastery = {
       subtitle:
         'Spotting tutorial comments, stale docstrings, heavy library bloat, deprecated APIs, and off-by-one hazards.',
       coreMechanism:
-        'AI-generated code carries distinct stylistic fingerprints derived from its training mixture of tutorials, documentation, and Q&A forums. During code review, an engineer must systematically scan for these structural patterns and bring them into alignment with team standards.\n\nFirst, examine comments and naming. LLMs over-comment trivial operations (placing `# check if number is prime` directly above `if is_prime(n):`) because tutorial code is heavily annotated for beginners, yet they also create docstring drift—modifying a function’s internal logic during a follow-up prompt while leaving the original docstring untouched and factually wrong. Variable names often default to generic loop counters (`i, j, k`) or opaque helpers (`_helper1`, `_helper2`). Structurally, models swing between two extremes: splitting a simple task into four unnecessary helper classes/functions because a training example used an over-engineered template, or cramming everything into a dense, overly clever one-liner.\n\nSecond, audit eight specific defect categories that recur in generated code: (1) Off-by-one loop boundary errors (`len(arr) - 1` vs. `len(arr)`); (2) Unhandled exceptions around file I/O, network calls, or malformed inputs; (3) Performance traps such as inner-loop list membership checks instead of hash sets; (4) Heavyweight dependency bloat, such as importing `numpy` solely to compute a basic array sum; (5) Docstring-to-code inconsistencies; (6) Minor syntax confusion across language dialects; (7) Deprecated library APIs from older training cutoffs; and (8) Residual template placeholders like `# Your code here` or `TODO`. Treat the code as if an intern wrote it and walked out the door.',
+        'AI-generated code carries distinct stylistic fingerprints derived from its training mixture of tutorials, documentation, and Q&A forums. During code review, an engineer must systematically scan for these structural patterns and bring them into alignment with team standards.\n\nFirst, examine comments and naming. LLMs over-comment trivial operations (placing `# check if number is prime` directly above `if is_prime(n):`) because tutorial code is heavily annotated for beginners, yet they also create docstring drift—modifying a function’s internal logic during a follow-up prompt while leaving the original docstring untouched and factually wrong.',
       keyTakeaways: [
-        'Delete redundant "tutorial comments" on self-explanatory lines, but preserve and verify comments explaining complex business invariants.',
-        'Check every unfamiliar library method against current official documentation to catch hallucinated or deprecated v1/v2 API calls.',
-        'Reject unnecessary third-party dependencies (e.g., pulling in NumPy or Lodash for a one-line native operation).',
-        'Run automated linters and formatters (Black, Prettier, gofmt, ESLint) immediately so formatting matches repository norms.',
-      ],
+          'Delete redundant "tutorial comments" on self-explanatory lines, but preserve and verify comments explaining complex business invariants.',
+          'Check every unfamiliar library method against current official documentation to catch hallucinated or deprecated v1/v2 API calls.',
+        ],
       commonPitfalls: [
-        'Trusting an AI-generated docstring to describe what the function actually returns after two rounds of iterative prompting.',
-        'Overlooking off-by-one loop bounds because the surrounding syntax and type annotations look authoritative.',
-      ],
+          'Trusting an AI-generated docstring to describe what the function actually returns after two rounds of iterative prompting.',
+          'Overlooking off-by-one loop bounds because the surrounding syntax and type annotations look authoritative.',
+        ],
     },
     {
       id: 'bvc-ch05-sec-5-4',
@@ -373,7 +344,7 @@ export const bvcCh05Mastery: ChapterMastery = {
       subtitle:
         'Combining classical root-cause isolation with collaborative AI error analysis and prompt post-mortems.',
       coreMechanism:
-        'When AI-generated code fails at runtime or produces wrong outputs, debugging follows the same foundational engineering discipline as debugging human code—with one critical caveat: because you did not author the code from scratch, your mental model of its control flow starts weaker. Having performed the initial reading audit in Section 5.1 gives you the baseline familiarity required to execute Osmani’s six-step debugging cycle.\n\nFirst, reproduce the failure deterministically with a concrete failing input and capture the exact stack trace or incorrect return value. Second, isolate the root cause using debuggers, breakpoints, or strategic trace logging to pinpoint the exact line where actual state diverges from expected state. Third, cross-check the original prompt against the failing code: did the failure stem from an unimplemented requirement or an unstated edge case (like an empty array)? Fourth, leverage the AI itself as a diagnostic pair partner by feeding the code, the failing input, the expected output, and the actual error back into the context window—models often spot off-by-one bounds (`len(arr)` vs. `len(arr)-1`) rapidly during review passes. Fifth, apply the fix either manually (when the correction is obvious) or via a targeted repair prompt. Sixth, re-test both the failing case and existing passing cases to ensure no regressions were introduced.\n\nCrucially, Osmani emphasizes Test-Driven Debugging—writing executable unit tests for critical functions before or during debugging so failures surface automatically—and always asking "Why did the AI make this mistake?" Performing a prompt post-mortem reveals whether your instructions omitted edge-case rules, permanently upgrading how you prompt and review future generations.',
+        'When AI-generated code fails at runtime or produces wrong outputs, debugging follows the same foundational engineering discipline as debugging human code—with one critical caveat: because you did not author the code from scratch, your mental model of its control flow starts weaker. Having performed the initial reading audit in Section 5.1 gives you the baseline familiarity required to execute Osmani’s six-step debugging cycle.\n\nFirst, reproduce the failure deterministically with a concrete failing input and capture the exact stack trace or incorrect return value. Second, isolate the root cause using debuggers, breakpoints, or strategic trace logging to pinpoint the exact line where actual state diverges from expected state.',
       stepByStepFlow: [
         {
           step: '1',
@@ -413,14 +384,13 @@ export const bvcCh05Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'Feeding exact failure telemetry (Input X -> Expected Y -> Got Z + stack trace) turns the LLM into an effective code-review rubber duck.',
-        'Test-Driven Debugging replaces slow manual REPL checks with repeatable assertions that stay in the repo afterward.',
-        'Asking "Why did the AI make this error?" builds a personal checklist of model blind spots (such as empty-input handling).',
-      ],
+          'Feeding exact failure telemetry (Input X -> Expected Y -> Got Z + stack trace) turns the LLM into an effective code-review rubber duck.',
+          'Test-Driven Debugging replaces slow manual REPL checks with repeatable assertions that stay in the repo afterward.',
+        ],
       commonPitfalls: [
-        'Blindly pasting "It doesn’t work, fix it" without providing the failing input, expected output, or stack trace.',
-        'Accepting an AI bug fix without running regression tests on previously working inputs.',
-      ],
+          'Blindly pasting "It doesn’t work, fix it" without providing the failing input, expected output, or stack trace.',
+          'Accepting an AI bug fix without running regression tests on previously working inputs.',
+        ],
       figures: [
         {
           file: 'bevc_0501.png',
@@ -428,11 +398,11 @@ export const bvcCh05Mastery: ChapterMastery = {
             'Figure 5-1. The AI code debugging cycle: running AI-generated code, capturing errors, feeding error context back to the AI for analysis, implementing suggested fixes, and repeating until resolved.',
           bierutTitle: 'Closing the Telemetry Loop Between Runtime Execution and Model Context',
           editorialAnalysis:
-            'Figure 5-1 illustrates the closed-loop diagnostic workflow between human runtime execution and AI analysis. Rather than treating code generation as a one-way vending machine, the developer executes the generated artifact ("Run AI code"), captures the concrete runtime failure ("Error occurs"), packages both the source snippet and the exact failure telemetry ("Feed error and code to AI"), evaluates the model’s proposed patch ("AI suggests fix"), and verifies it in the local test harness ("Apply and test"), looping only with enriched empirical context.',
+            'Figure 5-1 illustrates the closed-loop diagnostic workflow between human runtime execution and AI analysis.',
           keyTakeaways: [
-            'The developer controls the execution environment and verification gate ("Apply and test"); the AI operates strictly as an analytical advisor.',
-            'Each iteration of the loop must carry concrete failure evidence rather than vague complaints.',
-          ],
+          'The developer controls the execution environment and verification gate ("Apply and test"); the AI operates strictly as an analytical advisor.',
+          'Each iteration of the loop must carry concrete failure evidence rather than vague complaints.',
+        ],
         },
       ],
     },
@@ -443,7 +413,7 @@ export const bvcCh05Mastery: ChapterMastery = {
       subtitle:
         'The six-step refactoring pass, unit/integration/E2E verification, copyright provenance checks, and total developer accountability.',
       coreMechanism:
-        'Once AI-generated code is functionally correct, it must undergo a six-step refactoring pass so that any teammate reading the file six months later cannot tell whether a human or an AI wrote it—it simply reads as clean, idiomatic project code. The six refactoring steps are: (1) Enforce style guidelines via automated formatters/linters; (2) Upgrade naming and structure (renaming `_helper1` to domain verbs and inlining single-use micro-functions or splitting monolithic functions); (3) Prune dead artifacts (removing unrequested `__main__` blocks or inline test prints); (4) Standardize documentation to match repository docstring schemas; (5) Optimize algorithmic hot paths (replacing $O(N)$ list scans with $O(1)$ `set` lookups); and (6) Simplify verbose constructs (collapsing redundant `if/else return True/False` branches into direct boolean expressions).\n\nEvery refactoring step must be backed by the Testing Pyramid: Unit Tests for isolated functions and adversarial boundary cases (e.g., testing a prime checker with a prime, a composite, `1`, `0`, negative numbers, and a large prime); Integration Tests that verify real interactions with databases or downstream module chains; and End-to-End (E2E) Tests that exercise full workflows such as HTTP web routes in a staging environment. While tools like CodeWhisperer, Copilot, or PyTest prompts can draft test scaffolding, humans must audit every assertion and contribute creative edge cases.\n\nFinally, professional code ownership requires provenance and licensing vigilance. Because LLMs occasionally reproduce verbatim passages from copyrighted books, articles, or restrictively licensed repositories when generating long or highly specific blocks, engineers should search unique code strings online whenever an output looks unusually specific beyond standard algorithms like Quicksort. Once verified, tested, and committed to version control (optionally noting AI assistance in the commit log), the code belongs 100% to you: maintain it by hand or with AI, because accountability never transfers to a tool.',
+        'Once AI-generated code is functionally correct, it must undergo a six-step refactoring pass so that any teammate reading the file six months later cannot tell whether a human or an AI wrote it.\n\nEvery refactoring step must be backed by the Testing Pyramid: Unit Tests for isolated functions and adversarial boundary cases (e.g., testing a prime checker with a prime, a composite, `1`, `0`, negative numbers, and a large prime).',
       stepByStepFlow: [
         {
           step: '1',
@@ -483,15 +453,13 @@ export const bvcCh05Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'The benchmark of successful refactoring is invisibility: no reviewer should be able to guess that an AI drafted the initial code.',
-        'Tests serve a dual purpose for AI code: uncovering initial hidden bugs and preventing regressions during subsequent AI or human edits.',
-        'Check large, non-trivial AI outputs for verbatim training-data reproduction to mitigate open-source license and copyright compliance risks.',
-        'Never hesitate to edit AI-generated code by hand later; once committed, it is your code, not "the AI’s code."',
-      ],
+          'The benchmark of successful refactoring is invisibility: no reviewer should be able to guess that an AI drafted the initial code.',
+          'Tests serve a dual purpose for AI code: uncovering initial hidden bugs and preventing regressions during subsequent AI or human edits.',
+        ],
       commonPitfalls: [
-        'Relying 100% on inline AI test completions (like CodeWhisperer/Copilot `assert` suggestions) without adding adversarial boundary cases (`0`, `1`, `-1`, `None`).',
-        'Pasting large, domain-specific generated modules into proprietary repos without checking whether they were reproduced verbatim from a restrictive GPL or copyrighted source.',
-      ],
+          'Relying 100% on inline AI test completions (like CodeWhisperer/Copilot `assert` suggestions) without adding adversarial boundary cases (`0`, `1`, `-1`, `None`).',
+          'Pasting large, domain-specific generated modules into proprietary repos without checking whether they were reproduced verbatim from a restrictive GPL or copyrighted source.',
+        ],
     },
   ],
   tradeOffMatrices: [
@@ -581,7 +549,7 @@ export const bvcCh05Mastery: ChapterMastery = {
         ],
       ],
       verdictRule:
-        'Never treat AI-generated files as "belonging to the AI"—edit directly by hand whenever a manual change is faster and more surgical than writing a prompt.',
+        'Never treat AI-generated files as "belonging to the AI".',
     },
   ],
   engineeringScenarios: [
@@ -593,7 +561,7 @@ export const bvcCh05Mastery: ChapterMastery = {
       symptomOrFailure:
         'You prompted an AI assistant to "write a Python function that finds all webhook IDs missing from the ledger list and logs unmatched records." The code passed all unit tests on a 10-item fixture, but in staging the worker timed out at 100% CPU for over 8 minutes and filled disk space with millions of `"Checking webhook_id..."` stdout lines.',
       naiveFixAndWhyItFails:
-        'Asking the AI to "make the function run in parallel with multiprocessing" without inspecting the algorithm. This keeps the $O(N \\times M)$ nested list membership scan (`if item not in ledger_list:`) and tutorial `print()` statements intact, merely burning all CPU cores simultaneously.',
+        'Asking the AI to "make the function run in parallel with multiprocessing" without inspecting the algorithm.',
       firstPrinciplesSolution:
         'Apply Gate 1 (Intent Audit) and Gate 3 (6-Step Refactoring): strip the unrequested tutorial progress print statement inside the loop, and replace the Majority-Solution $O(N)$ list scan with an $O(1)$ Python `set` difference (`missing = set(webhook_ids) - set(ledger_ids)`).',
       measurableOutcome:
@@ -609,7 +577,7 @@ export const bvcCh05Mastery: ChapterMastery = {
       naiveFixAndWhyItFails:
         'Prompting the AI to "add more tests to increase coverage." Because line coverage was already 100% and the AI inferred expected values from its own faulty `if n < 2:` omission, additional AI-generated tests continued asserting the broken behavior.',
       firstPrinciplesSolution:
-        'Decouple test specification from implementation. Define the human boundary oracle explicitly (`is_prime(1) -> False`, `is_prime(0) -> False`, `is_prime(-7) -> False`, `is_prime(2) -> True`, `is_prime(7919) -> True`) before running the test suite, exposing the missing `if n <= 1: return False` guard.',
+        'Decouple test specification from implementation.',
       measurableOutcome:
         '100% boundary defect detection prior to merge, establishing a permanent regression harness across positive, zero, negative, and unit-value inputs.',
     },
@@ -626,7 +594,7 @@ export const bvcCh05Mastery: ChapterMastery = {
             text: 'The "Majority Solution" phenomenon: without explicit performance constraints in the prompt, the model samples the most statistically frequent pattern in its training data rather than the most appropriate algorithm for your scale.',
             isCorrect: true,
             explanation:
-              'Correct. LLMs trained on massive code corpora default to the modal solution (simple linear search across millions of beginner scripts) unless guided by human context.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -661,7 +629,7 @@ export const bvcCh05Mastery: ChapterMastery = {
             text: 'Iterative revision drift: during follow-up prompts, the AI updated the executable logic to match new instructions but failed to update the original docstring.',
             isCorrect: true,
             explanation:
-              'Correct. Osmani highlights that AI models frequently revise implementation code during iterative prompting while leaving stale docstrings or comments behind.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -703,7 +671,7 @@ export const bvcCh05Mastery: ChapterMastery = {
             text: 'To make the code conform so thoroughly to project style, naming, structure, and efficiency standards that another developer reading it later cannot tell an AI wrote the first draft.',
             isCorrect: true,
             explanation:
-              'Correct. Once refactored and tested, AI-generated code should simply look like clean, idiomatic project code owned by the developer.',
+              'Correct.',
           },
           {
             label: 'C',
@@ -731,7 +699,7 @@ export const bvcCh05Mastery: ChapterMastery = {
             text: 'To check for verbatim reproduction of copyrighted material or restrictively licensed open-source code from the model’s training corpus.',
             isCorrect: true,
             explanation:
-              'Correct. While short common algorithms (like 20-line Quicksort) are generic, large or highly specific outputs can statistically reproduce copyrighted articles or licensed repositories.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -769,35 +737,35 @@ export const bvcCh05Mastery: ChapterMastery = {
         id: 'bvc-ch05-fc2',
         category: 'evaluation',
         front: 'What are the 8 recurring defect categories to audit when reviewing AI-generated code for readability and structure?',
-        back: '1. Off-by-one loop bounds\n2. Unhandled exceptions (I/O, bad inputs)\n3. Performance traps (list vs. set lookups)\n4. Unnecessary library bloat (e.g., NumPy for simple sum)\n5. Docstring/code inconsistencies\n6. Minor syntax dialect issues\n7. Deprecated APIs\n8. Unfilled template placeholders.',
+        back: '1.',
         mentalHook: 'The "Departed Intern" 8-point inspection checklist.',
       },
       {
         id: 'bvc-ch05-fc3',
         category: 'evaluation',
         front: 'What are the 6 steps of the AI Code Debugging Cycle?',
-        back: '1. Reproduce the problem with failing inputs\n2. Find the root cause (debugger/traces)\n3. Cross-check the prompt against the code\n4. Use the AI for diagnostic analysis (feed error + code)\n5. Repair the code (manually or via prompt)\n6. Re-test (and ask WHY the AI made the error).',
+        back: '1.',
         mentalHook: 'Reproduce -> Isolate -> Audit Prompt -> Ask AI -> Fix -> Re-test & Learn.',
       },
       {
         id: 'bvc-ch05-fc4',
         category: 'architecture',
         front: 'What are the 6 steps of Refactoring AI Code for Maintainability?',
-        back: '1. Align with style guidelines (linters/formatters)\n2. Improve naming & structure (rename _helper1, inline/split)\n3. Remove unnecessary parts (dead main blocks/prints)\n4. Add/align documentation\n5. Optimize hot paths (e.g., Set vs. List)\n6. Simplify verbose constructs.',
+        back: '1.',
         mentalHook: 'Polish until no one can tell an AI wrote the first draft.',
       },
       {
         id: 'bvc-ch05-fc5',
         category: 'evaluation',
         front: 'Why must human intuition remain in the loop when using AI to generate Unit, Integration, and E2E tests?',
-        back: 'Because AI-generated tests can be trivial or tautological (assuming the existing AI implementation is right). Humans must supply creative boundary cases (0, 1, negatives, None, empty inputs) and verify real integration behavior.',
+        back: 'Because AI-generated tests can be trivial or tautological (assuming the existing AI implementation is right).',
         mentalHook: 'Never let the suspect write the jury instructions unreviewed.',
       },
       {
         id: 'bvc-ch05-fc6',
         category: 'security',
         front: 'When does AI-generated code pose a copyright or license provenance risk, and how should you mitigate it?',
-        back: 'When the output is long, unusually clean, or addresses an obscure/highly specific problem beyond standard textbook algorithms (like Quicksort). Mitigate by searching unique strings from the snippet online to verify it was not copied verbatim.',
+        back: 'When the output is long, unusually clean, or addresses an obscure/highly specific problem beyond standard textbook algorithms (like Quicksort).',
         mentalHook: 'Generic 20-line Quicksort = safe; obscure 150-line verbatim module = verify provenance.',
       },
     ],
@@ -814,7 +782,7 @@ export const bvcCh05Mastery: ChapterMastery = {
           'Explains post-generation mitigation: auditing hidden assumptions and executing the 6-step refactoring pass.',
         ],
         modelExplanation:
-          'An LLM does not reason about your production traffic; it predicts the most statistically likely tokens based on public code repositories. Because public code contains far more beginner tutorials than high-throughput systems, a generic prompt pulls from the "Majority Solution"—the modal average. That is why you get an O(N) linear scan instead of a binary search, a list lookup inside a loop instead of an O(1) hash set, or global variables without overflow protection. A senior engineer beats this in two ways: upfront, by specifying data scale, time complexity, and architectural constraints in the prompt; and afterward, by reading the code to expose hidden assumptions (like assuming sorted or non-empty input) and refactoring hot paths before merging.',
+          'An LLM does not reason about your production traffic.',
       },
       {
         id: 'bvc-ch05-feyn-2',
@@ -828,7 +796,7 @@ export const bvcCh05Mastery: ChapterMastery = {
           'Describes the 6-step refactoring standard (linter alignment, semantic naming, dead-code removal, docstring accuracy, complexity optimization) so the code becomes indistinguishable from clean human code.',
         ],
         modelExplanation:
-          'You cannot assign `git blame` or pager duty to an LLM. When you open a pull request, every line is your responsibility as if an intern wrote it and left the company. Letting the same AI write both the function and the unit tests without human review creates a circular trap: the model reads its own buggy code and writes assertions that pass on the bug while skipping edge cases like empty lists, zero, or negative inputs. To truly own the code, you must first trace it line-by-line against your prompt intent to strip unrequested bloat; second, refactor it (run formatters, rename generic helpers, optimize list-to-set lookups, fix stale docstrings) until no one can tell an AI drafted it; and third, lock its behavior across unit, integration, and E2E tests using human-verified boundary expectations.',
+          'You cannot assign `git blame` or pager duty to an LLM. When you open a pull request, every line is your responsibility as if an intern wrote it and left the company.',
       },
     ],
   },
@@ -990,7 +958,7 @@ export const bvcCh05Mastery: ChapterMastery = {
     figuresIncluded: 1,
     antiAiVerified: true,
     auditNotes:
-      '100% coverage verified across all 8 sections of Chapter 5 (Intent to Implementation, The Majority Problem, Readability & Structure, 6-Step Debugging Cycle with Figure 5-1 bevc_0501.png, 6-Step Refactoring, Testing Pyramid, Note on AI & Tests, and Summary/IP Provenance). Zero AI clichés.',
+      '100% coverage verified across all 8 sections of Chapter 5 (Intent to Implementation, The Majority Problem, Readability & Structure, 6-Step Debugging Cycle with Figure 5-1 bevc_0501.png, 6-Step Refactoring, Testing Pyramid, Note on AI & Tests, and Summary/IP Provenance).',
   },
 };
 
@@ -1000,17 +968,17 @@ export const bvcCh06Mastery: ChapterMastery = {
   title: 'AI-Driven Prototyping: Tools and Techniques',
   subtitle:
     'Accelerating concept-to-demo velocity via Programming by Intent, navigating the Fidelity-vs-Control toolchain matrix (v0, Lovable, Bolt.new, Cursor/Cline), iterative refinement loops, and hardening throwaway 80% prototypes for production.',
-  readingTimeMinutes: 38,
+  readingTimeMinutes: 7,
   sourceWordCount: 5480,
   executiveThesis:
-    'AI-driven prototyping collapses the concept-to-working-model cycle from weeks to hours by shifting the developer’s role from manual boilerplate typing to "Programming by Intent." Across the specialized toolchain—spanning Screenshot-to-Code UI generators (Vercel v0), conversational full-stack builders (Lovable, Bolt.new), and AI-native IDEs (Cursor, Windsurf, Cline)—every tool trades off visual/intent Fidelity against architectural Control, producing an "80% Prototype" where AI writes ~70–80% of the scaffolding. However, because roughly 40% of unreviewed AI code harbors security vulnerabilities and happy-path shortcuts, evolving a prototype into production requires a deliberate discipline shift: hardening authentication, streaming memory-bound I/O, replacing mock arrays with real databases, and resisting AI-induced scope creep.',
+    'AI-driven prototyping collapses the concept-to-working-model cycle from weeks to hours by shifting the developer’s role from manual boilerplate typing to "Programming by Intent." Across the specialized toolchain.',
   paradigmShift: {
     oldWay:
       'Hand-Crafted Mockup & Boilerplate Grind: Spend days wiring HTML/CSS layouts, form state, and mock endpoints by hand before testing a single user hypothesis -> High sunk cost makes teams reluctant to discard flawed product concepts.',
     newWay:
       'Intent-Driven Rapid Prototyping & Deliberate Hardening: Generate a functional 80% prototype in hours via natural language or sketch-to-code -> Iterate live in 12+ conversational turns per hour -> Validate with users -> Either discard cleanly as throwaway code or execute a structured 4-pillar production hardening pass.',
     whyItChanged:
-      'Generative AI reduced the marginal cost of UI scaffolding, state wiring, and sample data generation to near zero. The engineering bottleneck is no longer building the first draft; it is maintaining focus against scope creep and bridging the last-mile 20% gap (security, streaming scale, architecture, and real integrations).',
+      'Generative AI reduced the marginal cost of UI scaffolding, state wiring, and sample data generation to near zero.',
   },
   heroIllustrationUrl: '/books/beyond-vibe-coding/assets/bevc_0601.png',
   customDiagrams: [
@@ -1091,7 +1059,7 @@ export const bvcCh06Mastery: ChapterMastery = {
   <text x="578" y="326" fill="#fda4af" font-size="9" font-weight="600">~40% of raw AI code has security flaws!</text>
 </svg>`,
       bierutCaption:
-        'Mapping the AI prototyping ecosystem along its two governing axes—Fidelity (how closely output matches visual or natural-language intent) and Control (how granularly the engineer can steer code structure)—alongside the 80/20 production gap.',
+        'Mapping the AI prototyping ecosystem along its two governing axes.',
       annotations: [
         {
           step: '1',
@@ -1210,7 +1178,7 @@ export const bvcCh06Mastery: ChapterMastery = {
           step: '2',
           label: 'Switching Mental Modes',
           explanation:
-            'Once users validate the concept, the developer switches from "Rapid Prototyping Mode" to disciplined engineering—using AI to scaffold JWT auth, React components, and stream parsers while auditing every line.',
+            'Once users validate the concept, the developer switches from "Rapid Prototyping Mode" to disciplined engineering.',
         },
         {
           step: '3',
@@ -1230,9 +1198,9 @@ export const bvcCh06Mastery: ChapterMastery = {
       naiveIntuition:
         'Because tools like Lovable, Bolt.new, or v0 produce a slick, clickable application in an afternoon, the project is 80% done and can be deployed to production after minor cosmetic tweaks.',
       firstPrinciplesReality:
-        'Prototyping tools optimize for immediate visual and happy-path feedback. They routinely omit authentication, load entire datasets into memory, concatenate unparameterized SQL strings (roughly 40% of AI-generated code in empirical studies contains security flaws), and cram state into monolithic files. Prototype code should be treated as disposable learning scaffolding—either discarded after validating the product hypothesis or systematically re-architected.',
+        'Prototyping tools optimize for immediate visual and happy-path feedback.',
       howToApply:
-        'Never confuse a stakeholder demo with a production candidate. Even during rapid prototyping, perform a quick hygiene scan for exposed API keys, and budget dedicated engineering sprints to rebuild or harden the final 20%.',
+        'Never confuse a stakeholder demo with a production candidate.',
     },
     {
       id: 'bvc-ch06-mm-fidelity-control',
@@ -1242,9 +1210,9 @@ export const bvcCh06Mastery: ChapterMastery = {
       naiveIntuition:
         'There is a single "best" AI coding tool that every designer, product manager, and backend systems engineer should use for all prototyping tasks.',
       firstPrinciplesReality:
-        'The AI prototyping ecosystem spans three distinct categories along a Fidelity-vs-Control spectrum: (1) Visual Design-to-Code translators (Vercel v0, screenshot-to-code) maximize visual fidelity from sketches or Figma frames but surrender code structure control; (2) Conversational full-stack builders (Lovable, Bolt.new) generate complete apps from high-level prompts for rapid UX validation but act as architectural black boxes; and (3) AI-augmented IDEs (Cursor, Windsurf, Cline) preserve full developer control over diffs and architecture at the cost of more manual steering.',
+        'The AI prototyping ecosystem spans three distinct categories along a Fidelity-vs-Control spectrum: (1) Visual Design-to-Code translators (Vercel v0, screenshot-to-code) maximize visual fidelity from sketches or Figma frames but surrender code structure control.',
       howToApply:
-        'Match the tool to the validation goal: use v0 or Lovable when a designer or PM needs to test an interaction flow in two hours; use Cursor or Cline when an engineer is prototyping technical feasibility inside an existing architecture.',
+        'Match the tool to the validation goal: use v0 or Lovable when a designer or PM needs to test an interaction flow in two hours.',
     },
     {
       id: 'bvc-ch06-mm-north-star',
@@ -1254,9 +1222,9 @@ export const bvcCh06Mastery: ChapterMastery = {
       naiveIntuition:
         'Because AI makes adding user accounts, Stripe billing, dark mode, and role-based permissions effortless, adding them to a prototype increases its value.',
       firstPrinciplesReality:
-        'A prototype exists solely to answer a core product or technical question. Zero-friction code generation triggers severe scope creep: developers keep saying "let’s add just one more thing," turning a lean experiment into a bloated, tangled pseudo-product that is too complex to throw away yet too fragile to run in production.',
+        'A prototype exists solely to answer a core product or technical question.',
       howToApply:
-        'Write a single-sentence North Star objective before prompting (e.g., "Prove users can upload a CSV and view an accurate chart"). Stub non-essential flows (like login) with fake UI states, and maintain a separate "Production TODO Ledger" for deferred real integrations.',
+        'Write a single-sentence North Star objective before prompting (e.g., "Prove users can upload a CSV and view an accurate chart").',
     },
   ],
   deepSections: [
@@ -1267,16 +1235,15 @@ export const bvcCh06Mastery: ChapterMastery = {
       subtitle:
         'Compressing days of UI and boilerplate work into hours while embracing throwaway code economics.',
       coreMechanism:
-        'The objective of software prototyping is not polished, infinitely scalable code; it is constructing a working Proof of Concept (PoC) fast enough to evaluate ideas and gather real user feedback. AI coding assistants transform this phase by operationalizing "Programming by Intent" (introduced in Chapter 1): the human developer declares high-level intent—what the interface should accomplish and how it should look—while delegating the mechanical HTML, CSS, React state wiring, form validation, and mock data generation to the model.\n\nConsider a developer prototyping a service sign-up flow. Instead of hand-writing boilerplate DOM elements and flexbox rules, a single prompt to an assistant like Cline ("Create a simple HTML page for a sign-up form with Name, Email, and Password fields and a submit button with clean styling") yields a complete, self-contained HTML5/CSS document in seconds. UX engineers report compressing multi-day prototyping cycles into a few hours because the AI absorbs repetitive layout and data-mocking chores, freeing human cognitive bandwidth for high-level interaction design and core value propositions.\n\nCrucially, effective AI prototyping requires emotional detachment from the generated code. AI handles roughly 70% of prototype scaffolding while the developer steers high-level structure and patches critical blockers. Because prototype code prioritizes speed and experimentation over maintainability, engineers must treat it as throwaway code—ready to be either discarded once the product hypothesis is tested or heavily refactored before production.',
+        'The objective of software prototyping is not polished, infinitely scalable code.\n\nConsider a developer prototyping a service sign-up flow. Instead of hand-writing boilerplate DOM elements and flexbox rules, a single prompt to an assistant like Cline ("Create a simple HTML page for a sign-up form with Name, Email, and Password fields and a submit button with clean styling") yields a complete, self-contained HTML5/CSS document in seconds.',
       keyTakeaways: [
-        'Programming by Intent separates the "what" (human product vision and UX goals) from the "how" (AI-generated HTML/CSS/JS boilerplate).',
-        'Zero-cost boilerplate generation allows teams to explore multiple competing design concepts in the time previously required to code one.',
-        'Treat prototype code as disposable scaffolding (~70% AI-generated) rather than permanent foundation code.',
-      ],
+          'Programming by Intent separates the "what" (human product vision and UX goals) from the "how" (AI-generated HTML/CSS/JS boilerplate).',
+          'Zero-cost boilerplate generation allows teams to explore multiple competing design concepts in the time previously required to code one.',
+        ],
       commonPitfalls: [
-        'Spending hours manually tweaking CSS pixel margins during an early concept test instead of iterating via high-level intent prompts.',
-        'Becoming emotionally attached to a weekend AI prototype and shipping its unrefactored single-file structure directly to production.',
-      ],
+          'Spending hours manually tweaking CSS pixel margins during an early concept test instead of iterating via high-level intent prompts.',
+          'Becoming emotionally attached to a weekend AI prototype and shipping its unrefactored single-file structure directly to production.',
+        ],
     },
     {
       id: 'bvc-ch06-sec-6-2',
@@ -1285,17 +1252,15 @@ export const bvcCh06Mastery: ChapterMastery = {
       subtitle:
         'Comparing Screenshot-to-Code (Vercel v0), Conversational Builders (Lovable, Bolt.new), and AI IDEs (Cursor, Windsurf, Cline).',
       coreMechanism:
-        'While general-purpose chat models (ChatGPT, Claude, Gemini) can generate prototype snippets, specialized AI prototyping platforms have evolved into three distinct architectural tiers, each striking a different balance between two fundamental dimensions: Fidelity (how closely the output matches your visual design or natural-language intent) and Control (your ability to inspect, steer, and modify the underlying code structure).\n\nTier 1 comprises Visual & Screenshot-to-Code tools such as Vercel v0. Designers upload hand-drawn wireframes, screenshots, or Figma exports and receive functional HTML, Tailwind CSS, or React components in seconds. These tools deliver exceptionally high visual fidelity but surrender control over internal component decomposition and architectural conventions.\n\nTier 2 comprises Conversational Full-Stack Application Builders such as Lovable and Bolt.new. Users describe complete application features in natural language and receive end-to-end runnable apps without touching code. While transformative for non-coders and rapid functional demos, conversational platforms interpret requirements loosely and operate largely as black boxes.\n\nTier 3 comprises AI-Augmented IDEs such as Cursor, Windsurf, and Cline. Embedded directly inside the developer’s editor, these tools act as an intelligent pair programmer with full repository awareness. They vary in workflow philosophy—some emphasize auto-applying multi-file edits for rapid experimentation, while others require explicit diff acceptance for disciplined iteration—giving engineers maximum architectural control.\n\nAcross all three tiers, no tool outputs production-ready software unsupervised. They produce an "80% Prototype"—sufficient for stakeholder demos and user testing, but missing the final 20% of security hardening, performance optimization, error handling, and architectural integration. Even during rapid prototyping, engineers must run a quick security scan to ensure API keys are not hardcoded in client bundles.',
+        'While general-purpose chat models (ChatGPT, Claude, Gemini) can generate prototype snippets, specialized AI prototyping platforms have evolved into three distinct architectural tiers, each striking a different balance between two fundamental dimensions: Fidelity (how closely the output matches your visual design or natural-language intent) and Control (your ability to inspect, steer, and modify the underlying code structure).\n\nTier 1 comprises Visual & Screenshot-to-Code tools such as Vercel v0. Designers upload hand-drawn wireframes, screenshots, or Figma exports and receive functional HTML, Tailwind CSS, or React components in seconds.',
       keyTakeaways: [
-        'Evaluate every prototyping tool along two invariant axes: Fidelity (visual/intent match) and Control (architectural transparency and editability).',
-        'Designers validating UI flows benefit most from high-fidelity visual tools (v0, Lovable); engineers validating technical feasibility need high-control AI IDEs (Cursor, Windsurf, Cline).',
-        'All prototyping tools produce an "80% Prototype"—the remaining 20% (security, error handling, scale) requires human engineering.',
-        'Never skip a rapid hygiene check for exposed API keys or unsafe data handling, even in a prototype.',
-      ],
+          'Evaluate every prototyping tool along two invariant axes: Fidelity (visual/intent match) and Control (architectural transparency and editability).',
+          'Designers validating UI flows benefit most from high-fidelity visual tools (v0, Lovable).',
+        ],
       commonPitfalls: [
-        'Using a black-box conversational builder when the prototype must integrate tightly with an existing enterprise monorepo.',
-        'Committing hardcoded OpenAI or Stripe secret keys generated inside a frontend prototype file to a public repository.',
-      ],
+          'Using a black-box conversational builder when the prototype must integrate tightly with an existing enterprise monorepo.',
+          'Committing hardcoded OpenAI or Stripe secret keys generated inside a frontend prototype file to a public repository.',
+        ],
     },
     {
       id: 'bvc-ch06-sec-6-3',
@@ -1304,7 +1269,7 @@ export const bvcCh06Mastery: ChapterMastery = {
       subtitle:
         'Running 12+ conversational refinement cycles per hour using stateful chat history as an evolving development log.',
       coreMechanism:
-        'The defining workflow of AI-driven prototyping is the iterative refinement loop (Figure 6-1). Instead of attempting to specify an entire application in a single monolithic prompt—or manually editing DOM nodes after generation—the developer generates a minimal baseline prototype and sculpts it through rapid conversational turns.\n\nModern vibe-coding environments maintain persistent context across the session: the tool remembers the application’s purpose, prior instructions, and current file state, turning the conversation history into an executable development log. Osmani outlines a four-step loop: Step 1 (Initial Creation)—prompt a minimal working baseline, such as an expense tracker with an input form and an HTML table; Step 2 (Review & Execute)—run the code in a browser to observe visual and functional gaps; Step 3 (Refine via Targeted Prompts)—issue specific follow-up instructions ("Make the expense table sortable by amount or date," "Add Tailwind/Bootstrap styling," "Validate the form so name and amount are required"); Step 4 (Rinse & Repeat)—verify each change and issue course corrections ("Sorting is reversed—make ascending the default; change the header from black to dark blue").\n\nBecause each turn executes in seconds, a developer can complete a dozen refinement cycles in a single hour—evolving a basic React To-Do list into a styled CRUD component with inline editing, completion checkboxes, and deletion buttons entirely through natural language. Success in this loop depends on prompt specificity: vague aesthetic feedback ("Make it look nicer") yields unpredictable churn, whereas concrete visual and behavioral directives ("Use a light theme with a blue header and increase list font size and padding") produce surgical updates.',
+        'The defining workflow of AI-driven prototyping is the iterative refinement loop (Figure 6-1). Instead of attempting to specify an entire application in a single monolithic prompt—or manually editing DOM nodes after generation—the developer generates a minimal baseline prototype and sculpts it through rapid conversational turns.\n\nModern vibe-coding environments maintain persistent context across the session: the tool remembers the application’s purpose, prior instructions, and current file state, turning the conversation history into an executable development log. Osmani outlines a four-step loop: Step 1 (Initial Creation).',
       stepByStepFlow: [
         {
           step: '1',
@@ -1332,14 +1297,13 @@ export const bvcCh06Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'Context persistence allows incremental refinement without re-explaining the application architecture on every turn.',
-        'Completing 10–15 micro-iterations per hour outperforms writing a massive upfront specification for exploratory UI work.',
-        'Replace subjective aesthetic prompts ("make it prettier") with explicit visual constraints ("light theme, navy header, 16px font, 12px row gap").',
-      ],
+          'Context persistence allows incremental refinement without re-explaining the application architecture on every turn.',
+          'Completing 10–15 micro-iterations per hour outperforms writing a massive upfront specification for exploratory UI work.',
+        ],
       commonPitfalls: [
-        'Stacking five unrelated feature requests into a single refinement turn, making it impossible to isolate which change broke the layout.',
-        'Passively accepting an AI UI pattern that conflicts with your product goals instead of instructing the assistant to switch approaches.',
-      ],
+          'Stacking five unrelated feature requests into a single refinement turn, making it impossible to isolate which change broke the layout.',
+          'Passively accepting an AI UI pattern that conflicts with your product goals instead of instructing the assistant to switch approaches.',
+        ],
       figures: [
         {
           file: 'bevc_0601.png',
@@ -1347,11 +1311,11 @@ export const bvcCh06Mastery: ChapterMastery = {
             'Figure 6-1. Iterative prototype refinement process: initial prompts generate a base prototype, and developer feedback drives successive improvements, creating increasingly refined solutions through AI collaboration.',
           bierutTitle: 'Conversational Sculpting: Turning Stateful Dialogue into Incremental Software Versions',
           editorialAnalysis:
-            'Figure 6-1 maps the progression from an "Initial prompt" through successive prototype states ("AI prototype v1" -> "AI prototype v2" -> "AI prototype v3"). At each transition, the human developer inspects the running artifact and injects a delta instruction ("Change X", "Add Y") followed by an empirical verification gate ("Apply and test"). Because the AI retains conversational and codebase state across versions, each prompt acts as a state-transition operator rather than a cold restart.',
+            'Figure 6-1 maps the progression from an "Initial prompt" through successive prototype states ("AI prototype v1" -> "AI prototype v2" -> "AI prototype v3").',
           keyTakeaways: [
-            'Each version increment (v1 -> v2 -> v3) is triggered by a focused, single-concern developer directive ("Change X", "Add Y").',
-            'The "Apply and test" loop anchors conversational speed in empirical runtime verification.',
-          ],
+          'Each version increment (v1 -> v2 -> v3) is triggered by a focused, single-concern developer directive ("Change X", "Add Y").',
+          'The "Apply and test" loop anchors conversational speed in empirical runtime verification.',
+        ],
         },
       ],
     },
@@ -1362,7 +1326,7 @@ export const bvcCh06Mastery: ChapterMastery = {
       subtitle:
         'Architectural decomposition, patching the 40% vulnerability rate, streaming I/O, and Jane’s CSV-to-Chart production journey.',
       coreMechanism:
-        'Once a prototype validates user demand or technical feasibility, transitioning it to production is the most hazardous juncture in AI-assisted development. Developers must deliberately exit "Rapid Prototyping Mode" and enter disciplined engineering mode—deciding whether to treat the prototype as throwaway reference code while starting a clean repository, or incrementally refactoring the prototype under test protection.\n\nTransitioning requires six systematic upgrades: (1) Architectural Modularization—splitting monolithic single-file scripts into multi-module packages, structured React component hierarchies, or backend MVC layers; (2) Error Handling & Edge Cases—using the AI to brainstorm failure modes ("What are possible failure cases for this function and how should we handle them?") across network timeouts, empty inputs, and concurrency; (3) Performance & Security Hardening—profiling bottlenecks and auditing authentication and SQL queries, recognizing that a landmark 2021 study found roughly 40% of AI-generated code contained security vulnerabilities such as SQL injection; (4) Documentation—generating human-reviewed READMEs and Markdown API docs; (5) Automated Testing—writing Jest/PyTest suites to lock behavior before refactoring; and (6) Subsystem Replacement—swapping in-memory arrays for persistent databases like SQLite or PostgreSQL.\n\nOsmani illustrates this through Jane, a solo developer who built a weekend CSV-to-Chart web prototype (a simple Node.js script + single HTML file with CDN script tags). After positive user feedback, Jane spent a couple of weeks hardening it across four pillars: (1) Backend Hardening—adding user accounts, JWT authentication with verified password hashing, and upload input validation; (2) Frontend Overhaul—migrating from CDN script tags to an `npm` build pipeline and modular React `<Chart>` components with clean state management; (3) Performance & Edge Testing—discovering the prototype loaded entire CSVs into RAM (risking out-of-memory crashes on large files), refactoring to Node.js streams, and adding unit tests for empty fields and jagged CSV columns; and (4) UI Polish—integrating Bootstrap for responsive layout, navigation bars, and loading spinners.',
+        'Once a prototype validates user demand or technical feasibility, transitioning it to production is the most hazardous juncture in AI-assisted development. Developers must deliberately exit "Rapid Prototyping Mode" and enter disciplined engineering mode—deciding whether to treat the prototype as throwaway reference code while starting a clean repository, or incrementally refactoring the prototype under test protection.\n\nTransitioning requires six systematic upgrades: (1) Architectural Modularization.',
       stepByStepFlow: [
         {
           step: '1',
@@ -1390,15 +1354,13 @@ export const bvcCh06Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'Approximately 40% of unreviewed AI-generated code contains potential security flaws (like unparameterized SQL or missing auth).',
-        'Use the AI as an adversarial brainstorming partner during hardening by asking: "What are the failure cases and edge cases for this function?"',
-        'Prototypes routinely load full files or datasets into RAM; production hardening must convert these to bounded-memory streams.',
-        'With AI assistance plus human architectural oversight, a solo developer can complete a prototype-to-production transition in weeks rather than months.',
-      ],
+          'Approximately 40% of unreviewed AI-generated code contains potential security flaws (like unparameterized SQL or missing auth).',
+          'Use the AI as an adversarial brainstorming partner during hardening by asking: "What are the failure cases and edge cases for this function?"',
+        ],
       commonPitfalls: [
-        'Remaining in casual "Rapid Prototyping Mode" when writing authentication, password hashing, or payment/upload endpoints.',
-        'Forgetting to replace in-memory arrays or CDN script tags before launching to concurrent multi-user traffic.',
-      ],
+          'Remaining in casual "Rapid Prototyping Mode" when writing authentication, password hashing, or payment/upload endpoints.',
+          'Forgetting to replace in-memory arrays or CDN script tags before launching to concurrent multi-user traffic.',
+        ],
     },
     {
       id: 'bvc-ch06-sec-6-5',
@@ -1407,16 +1369,15 @@ export const bvcCh06Mastery: ChapterMastery = {
       subtitle:
         'Defeating AI-induced scope creep with a North-Star statement and tracking mock-to-real integration debt.',
       coreMechanism:
-        'AI-driven prototyping introduces two systemic project risks that can derail teams even when code generation is fast: Scope Creep and Real-System Integration Debt.\n\nScope creep occurs because AI lowers the friction of adding features to near zero. When adding a login screen, a payment form, or a settings dashboard takes a single prompt, developers are tempted to keep adding "just one more feature," inflating a focused experiment into an unwieldy pseudo-product. To defeat this, Osmani prescribes writing down a single-sentence North Star objective before writing any code (for example: "Demonstrate that users can upload a CSV file and receive a rendered chart to test product viability"). Every prompt is measured against that North Star. If a feature like authentication is needed only to simulate a user flow during a demo, instruct the AI to generate a fake, non-functional login stub rather than building real auth infrastructure during the prototype phase.\n\nThe second challenge is Integration Debt. Prototypes rely on mock data, local JSON files, or console-logged stubs (e.g., logging `"Email sent to user"` to the console instead of calling an SMTP/SendGrid service). When transitioning to production, forgotten stubs cause silent production failures. Engineers must maintain an explicit ledger—both in a project checklist and via inline `// TODO: integrate real email service here` comments (which many AI tools also emit when taking shortcuts)—so the team has full visibility into every temporary mock that requires real engineering before launch.',
+        'AI-driven prototyping introduces two systemic project risks that can derail teams even when code generation is fast: Scope Creep and Real-System Integration Debt.\n\nScope creep occurs because AI lowers the friction of adding features to near zero. When adding a login screen, a payment form, or a settings dashboard takes a single prompt, developers are tempted to keep adding "just one more feature," inflating a focused experiment into an unwieldy pseudo-product.',
       keyTakeaways: [
-        'Ease of generation is a trap: just because the AI can generate a payment or auth flow in 60 seconds does not mean it belongs in your prototype.',
-        'Write an explicit North Star goal statement and use simulated UI stubs for peripheral flows during concept validation.',
-        'Maintain a strict "Production Integration Ledger" (`// TODO:` tags + team checklist) tracking every mock dataset and console-logged service stub.',
-      ],
+          'Ease of generation is a trap: just because the AI can generate a payment or auth flow in 60 seconds does not mean it belongs in your prototype.',
+          'Write an explicit North Star goal statement and use simulated UI stubs for peripheral flows during concept validation.',
+        ],
       commonPitfalls: [
-        'Gold-plating a prototype with real authentication and billing before validating whether users even want the core feature.',
-        'Losing track of which backend routes return hardcoded mock arrays vs. real database queries during team handoffs.',
-      ],
+          'Gold-plating a prototype with real authentication and billing before validating whether users even want the core feature.',
+          'Losing track of which backend routes return hardcoded mock arrays vs. real database queries during team handoffs.',
+        ],
     },
   ],
   tradeOffMatrices: [
@@ -1462,7 +1423,7 @@ export const bvcCh06Mastery: ChapterMastery = {
         ],
       ],
       verdictRule:
-        'Optimize for Fidelity (v0, Lovable) when testing user experience hypotheses you plan to throw away; optimize for Control (Cursor, Cline) when prototyping inside a codebase you plan to keep.',
+        'Optimize for Fidelity (v0, Lovable) when testing user experience hypotheses you plan to throw away.',
     },
     {
       title: 'Prototype Shortcut vs. Production Hardening Requirements',
@@ -1501,7 +1462,7 @@ export const bvcCh06Mastery: ChapterMastery = {
         ],
       ],
       verdictRule:
-        'Every shortcut in column 2 is a valid time-saver on Saturday afternoon and a critical incident if still present on launch day—log every shortcut in your TODO ledger.',
+        'Every shortcut in column 2 is a valid time-saver on Saturday afternoon and a critical incident if still present on launch day.',
     },
   ],
   engineeringScenarios: [
@@ -1515,7 +1476,7 @@ export const bvcCh06Mastery: ChapterMastery = {
       naiveFixAndWhyItFails:
         'Upgrading the cloud server RAM from 2GB to 16GB and asking the AI to "hide the upload button unless loggedIn is true in localStorage." Larger RAM still crashes under concurrent uploads, and client-side localStorage flags provide zero backend security.',
       firstPrinciplesSolution:
-        'Execute Jane’s four-pillar production transition: (1) Replace `fs.readFileSync` full-buffer CSV parsing with a Node.js readable stream pipeline; (2) Add backend JWT authentication middleware with bcrypt password hashing and strict file-schema validation; (3) Decompose the single-file CDN frontend into an npm-built React application with isolated `<Chart>` state; and (4) Write Jest unit tests covering jagged CSV columns and empty cells.',
+        'Execute Jane’s four-pillar production transition: (1) Replace `fs.readFileSync` full-buffer CSV parsing with a Node.js readable stream pipeline.',
       measurableOutcome:
         'Memory footprint per CSV upload drops from O(FileSize) (>1.2GB) to O(ChunkSize) (<15MB constant RAM), while eliminating unauthenticated endpoint exposure.',
     },
@@ -1525,11 +1486,11 @@ export const bvcCh06Mastery: ChapterMastery = {
       roleAndContext:
         'Product Engineer tasked with validating whether enterprise procurement managers will use an AI-assisted invoice discrepancy highlighter.',
       symptomOrFailure:
-        'Using a conversational builder (Bolt.new / Lovable), the engineer spent 3 days prompting for OAuth social login, dark/light theme toggles, PDF export watermarks, and RBAC admin tables. By Friday’s stakeholder demo, the authentication state was tangled and broken, and the core invoice discrepancy view still used broken placeholder logic.',
+        'Using a conversational builder (Bolt.new / Lovable), the engineer spent 3 days prompting for OAuth social login, dark/light theme toggles, PDF export watermarks, and RBAC admin tables.',
       naiveFixAndWhyItFails:
-        'Spending the weekend prompting the AI to debug the OAuth callback loop. Even if fixed, login mechanics test zero product risk regarding whether procurement managers find the discrepancy highlighter useful.',
+        'Spending the weekend prompting the AI to debug the OAuth callback loop.',
       firstPrinciplesSolution:
-        'Apply the North Star focus rule: define the single validation goal ("Show a procurement manager uploading two sample invoices and viewing highlighted line-item discrepancies"). Strip OAuth and RBAC entirely, replace login with a 1-click simulated stub (`// TODO: integrate real auth in prod`), and dedicate 100% of iterative refinement prompts to the discrepancy comparison UI.',
+        'Apply the North Star focus rule: define the single validation goal ("Show a procurement manager uploading two sample invoices and viewing highlighted line-item discrepancies").',
       measurableOutcome:
         'Core interactive prototype delivered in 3.5 hours across 14 focused refinement turns, enabling immediate stakeholder validation with zero wasted auth debugging.',
     },
@@ -1546,14 +1507,14 @@ export const bvcCh06Mastery: ChapterMastery = {
             text: 'Fidelity (how accurately the output matches visual/intent inputs) and Control (the ability to steer, inspect, and modify the underlying code and architecture).',
             isCorrect: true,
             explanation:
-              'Correct. Screenshot-to-code tools (v0) maximize visual fidelity with lower code control; conversational builders (Lovable, Bolt.new) trade control for end-to-end speed; AI IDEs (Cursor, Windsurf, Cline) maximize developer control.',
+              'Correct.',
           },
           {
             label: 'B',
             text: 'Parameter count and GPU training cluster size.',
             isCorrect: false,
             explanation:
-              'Many of these tools use the same underlying frontier models; their differentiation lies in workflow Fidelity vs. Control.',
+              'Many of these tools use the same underlying frontier models; their differentiation lies in workflow Fidelity vs.',
           },
           {
             label: 'C',
@@ -1588,7 +1549,7 @@ export const bvcCh06Mastery: ChapterMastery = {
             text: 'The prototype is functional enough to test concepts and demonstrate to stakeholders (80%), while the remaining 20% requires human-led security hardening, performance optimization, error handling, and architectural refinement for production.',
             isCorrect: true,
             explanation:
-              'Correct. AI rapidly delivers the 80% functional demo, but the final 20% bridges the gap from happy-path demo to secure, scalable production software.',
+              'Correct.',
           },
           {
             label: 'C',
@@ -1616,7 +1577,7 @@ export const bvcCh06Mastery: ChapterMastery = {
             text: 'The prototype loaded entire uploaded CSV files into memory at once (risking server crashes on large files), requiring her to refactor the backend to use stream processing.',
             isCorrect: true,
             explanation:
-              'Correct. Naive AI prototype code loaded whole CSV files into RAM; Jane refactored the parser to use streaming I/O and asked the AI to double-check her stream logic.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -1651,7 +1612,7 @@ export const bvcCh06Mastery: ChapterMastery = {
             text: 'Because AI makes adding features effortless, developers are tempted to keep adding peripheral features (like real auth or billing) until the prototype becomes bloated; prevent this by writing down a North Star goal statement and using simulated stubs for non-core flows.',
             isCorrect: true,
             explanation:
-              'Correct. Zero-friction generation tempts developers to gold-plate prototypes. Writing a clear North Star goal and faking peripheral flows (like login) keeps the prototype focused and disposable.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -1689,14 +1650,14 @@ export const bvcCh06Mastery: ChapterMastery = {
         id: 'bvc-ch06-fc2',
         category: 'architecture',
         front: 'What are the 3 main categories of specialized AI prototyping tools and their flagship examples?',
-        back: '1. Visual / Screenshot-to-Code (e.g., Vercel v0)\n2. Conversational Full-Stack Builders (e.g., Lovable, Bolt.new)\n3. AI-Augmented IDEs (e.g., Cursor, Windsurf, Cline).',
-        mentalHook: 'Visual Translators (v0) vs. Conversational Builders (Lovable/Bolt) vs. AI IDEs (Cursor/Cline).',
+        back: '1.',
+        mentalHook: 'Visual Translators (v0) vs.',
       },
       {
         id: 'bvc-ch06-fc3',
         category: 'optimization',
         front: 'What are the 4 steps of the Iterative Prototype Refinement loop?',
-        back: '1. Initial Creation (baseline prompt)\n2. Review & Execute (run in browser, spot gaps)\n3. Refine Prompts (add sorting, styling, validation one by one)\n4. Rinse & Repeat (course-correct direction/colors across 12+ cycles/hour).',
+        back: '1.',
         mentalHook: 'Generate v1 -> Run -> Prompt Delta -> Verify & Course-Correct.',
       },
       {
@@ -1710,7 +1671,7 @@ export const bvcCh06Mastery: ChapterMastery = {
         id: 'bvc-ch06-fc5',
         category: 'architecture',
         front: 'What 4 workstreams did Jane execute to evolve her weekend CSV-to-Chart prototype into a production web application?',
-        back: '1. Backend Hardening (JWT auth, password hashing, upload validation)\n2. Frontend Overhaul (single HTML/CDN -> npm build + modular React <Chart> components)\n3. Testing & Streaming Performance (Jest edge tests + streaming CSVs instead of full RAM load)\n4. UI Polish (Bootstrap responsive layout + spinners).',
+        back: '1.',
         mentalHook: 'Harden Backend -> Modularize Frontend -> Stream & Test -> Polish UI.',
       },
       {
@@ -1734,7 +1695,7 @@ export const bvcCh06Mastery: ChapterMastery = {
           'Explains AI-Augmented IDEs (Cursor, Windsurf, Cline): highest architectural control and repo integration, plus the "80% Prototype" rule applying to all three.',
         ],
         modelExplanation:
-          'Every AI prototyping tool trades off Fidelity against Control. Fidelity measures how accurately the tool turns a sketch or prompt into a working interface out-of-the-box; Control measures your power to govern file structure, state architecture, and incremental code diffs. If you have Figma frames or hand-drawn sketches and want pixel-accurate React/Tailwind components in seconds, use a Screenshot-to-Code tool like Vercel v0—you get high visual fidelity but give up structural control. If a designer or PM wants to test a full-stack interactive workflow without touching code, use a conversational builder like Lovable or Bolt.new. If an engineer is prototyping technical feasibility or building a foundation that must integrate with an existing codebase, use an AI IDE like Cursor, Windsurf, or Cline. Regardless of the tool, remember that all of them produce an "80% Prototype"—a human engineer still has to supply the final 20% of security, error handling, and production architecture.',
+          'Every AI prototyping tool trades off Fidelity against Control. Fidelity measures how accurately the tool turns a sketch or prompt into a working interface out-of-the-box.',
       },
       {
         id: 'bvc-ch06-feyn-2',
@@ -1748,7 +1709,7 @@ export const bvcCh06Mastery: ChapterMastery = {
           'Outlines the transition roadmap: modularizing single-file HTML/CDN code into a build pipeline, replacing mock stubs (`// TODO` ledger), and locking edge cases with automated tests.',
         ],
         modelExplanation:
-          'A weekend AI prototype is designed to answer one question—"Do users want this?"—by taking every possible engineering shortcut on the happy path. If we point production traffic at it tomorrow, four things break immediately. First, security: empirical studies show ~40% of raw AI code has vulnerabilities like SQL injection, unvalidated uploads, or missing authentication. Second, memory scale: prototypes routinely load entire uploaded files into RAM or store data in in-memory arrays, meaning one large file crashes the server and every restart wipes user data. Third, maintainability: a single HTML file with CDN scripts cannot scale across a team without being modularized into components and a proper build pipeline. Fourth, hidden stubs: features like email notifications are often just `console.log` statements. We saved weeks by using AI to validate the concept in 48 hours; now we use AI in disciplined engineering mode to harden auth, stream I/O, connect a real database, and write edge-case tests.',
+          'A weekend AI prototype is designed to answer one question.',
       },
     ],
   },
@@ -1909,7 +1870,7 @@ export const bvcCh06Mastery: ChapterMastery = {
     figuresIncluded: 1,
     antiAiVerified: true,
     auditNotes:
-      '100% coverage verified across all 7 sections of Chapter 6 (Rapid Prototyping with AI Assistants, AI Prototyping Tools: Fidelity vs Control, Iterative Refinement with Figure 6-1 bevc_0601.png, Evolving Prototype to Production + Jane CSV-to-Chart Case Study, Overcoming Prototyping Challenges, Stay Focused, and Summary). Zero AI clichés.',
+      '100% coverage verified across all 7 sections of Chapter 6 (Rapid Prototyping with AI Assistants, AI Prototyping Tools: Fidelity vs Control, Iterative Refinement with Figure 6-1 bevc_0601.png, Evolving Prototype to Production + Jane CSV-to-Chart Case Study, Overcoming Prototyping Challenges, Stay Focused, and Summary).',
   },
 };
 
@@ -1919,17 +1880,17 @@ export const bvcCh07Mastery: ChapterMastery = {
   title: 'Building Web Applications with AI',
   subtitle:
     'End-to-end full-stack engineering with an AI pair programmer: project scaffolding, frontend component and state patterns, backend REST/GraphQL and ACID transactions, ORM schema and query auditing, contract synchronization, and multi-tier validation.',
-  readingTimeMinutes: 44,
+  readingTimeMinutes: 8,
   sourceWordCount: 8340,
   executiveThesis:
-    'Moving from rapid prototyping to full-stack web application development requires shifting from ad-hoc conversational prompting to systematic architectural orchestration across four layers: Project Scaffolding, Frontend UI/State, Backend API/Transactions, and Database/ORM Persistence. While an AI pair programmer can generate roughly 70% of repetitive full-stack glue code—React/Vue components, Tailwind layouts, Express/Django/NestJS routes, Mongoose/Prisma/Sequelize schemas, and Socket.io real-time plumbing—the human engineer must enforce high-level architectural invariants: preventing frontend-backend JSON contract drift, auditing ORM queries for N+1 traps and missing indexes, specifying explicit foreign-key cascade rules, and counteracting the "overconfidence trap" where AI-assisted developers overestimate the security of vulnerable code.',
+    'Moving from rapid prototyping to full-stack web application development requires shifting from ad-hoc conversational prompting to systematic architectural orchestration across four layers: Project Scaffolding, Frontend UI/State, Backend API/Transactions, and Database/ORM Persistence. While an AI pair programmer can generate roughly 70% of repetitive full-stack glue code.',
   paradigmShift: {
     oldWay:
       'Sequential Siloed Boilerplate: Manually run CLI generators -> Spend days wiring CORS, proxies, and boilerplate CRUD routes -> Hand-code repetitive form state and CSS -> Wait weeks for cross-team frontend/backend integration.',
     newWay:
       'Parallel Full-Stack AI Orchestration: Scaffold Vite/React + Express/Prisma + proxy in minutes via intent prompts -> Develop Frontend and Backend in parallel locked by explicit JSON contracts -> Delegate 70% boilerplate to AI while human architects proprietary business logic, ACID transactions, and Supertest/Cypress/SAST verification.',
     whyItChanged:
-      'Full-stack web development is dominated by structural wiring and interface glue across well-documented frameworks (React, Express, Python/Django). Because these frameworks are heavily represented in LLM training corpora, a single developer can now operate as a high-velocity full-stack engineer—provided they supply explicit schema context and rigorous validation.',
+      'Full-stack web development is dominated by structural wiring and interface glue across well-documented frameworks (React, Express, Python/Django).',
   },
   customDiagrams: [
     {
@@ -2046,7 +2007,7 @@ export const bvcCh07Mastery: ChapterMastery = {
           step: '1',
           label: 'Preventing Isolated Contract Drift',
           explanation:
-            'When Frontend and Backend are prompted in isolation, the backend may return `{ success: true, data: [...] }` while the frontend expects a bare array, or one side uses `tasks` while the other uses `taskList`. Opening both files side-by-side in an AI IDE harmonizes the contract.',
+            'When Frontend and Backend are prompted in isolation, the backend may return `{ success: true, data: [...] }` while the frontend expects a bare array, or one side uses `tasks` while the other uses `taskList`.',
         },
         {
           step: '2',
@@ -2058,7 +2019,7 @@ export const bvcCh07Mastery: ChapterMastery = {
           step: '3',
           label: 'Explicit Schema Context & Index Auditing',
           explanation:
-            'LLMs cannot guess whether your column is `user_id`, `userId`, or `customer_ref`, nor do they automatically propose composite indexes for high-cardinality joins—humans must inject schema definitions into every DB prompt.',
+            'LLMs cannot guess whether your column is `user_id`, `userId`, or `customer_ref`, nor do they automatically propose composite indexes for high-cardinality joins.',
         },
       ],
     },
@@ -2160,7 +2121,7 @@ export const bvcCh07Mastery: ChapterMastery = {
           step: '3',
           label: 'Choosing Cascade vs. Guard Deletion',
           explanation:
-            'Never let an LLM silently choose what happens to child records on parent deletion; explicitly command either `ON DELETE CASCADE` or an application-level existence check.',
+            'Never let an LLM silently choose what happens to child records on parent deletion.',
         },
       ],
     },
@@ -2174,9 +2135,9 @@ export const bvcCh07Mastery: ChapterMastery = {
       naiveIntuition:
         'You can prompt an AI in one window to build a React frontend and in another window to build an Express backend, and they will seamlessly talk to each other.',
       firstPrinciplesReality:
-        'When prompted in isolation, LLMs invent slightly incompatible interface contracts: the backend returns `{ success: true, taskList: [...] }` while the frontend calls `response.data.map()` expecting a bare array or a key named `tasks`; or the frontend submits URL-encoded form data while the backend expects `express.json()`. Without an explicit shared contract, parallel speed collapses into integration debugging.',
+        'When prompted in isolation, LLMs invent slightly incompatible interface contracts: the backend returns `{ success: true, taskList: [...] }` while the frontend calls `response.data.map()` expecting a bare array or a key named `tasks`.',
       howToApply:
-        'Define the exact endpoint path, HTTP method, request Content-Type, and JSON response shape upfront—or open the frontend component and backend route side-by-side in an AI IDE (Cursor/Cline) and prompt it to reconcile all contract mismatches.',
+        'Define the exact endpoint path, HTTP method, request Content-Type, and JSON response shape upfront.',
     },
     {
       id: 'bvc-ch07-mm-training-density',
@@ -2186,9 +2147,9 @@ export const bvcCh07Mastery: ChapterMastery = {
       naiveIntuition:
         'A frontier LLM writes equally idiomatic, bug-free code across every programming language, web framework, and ORM version.',
       firstPrinciplesReality:
-        'Model effectiveness varies sharply based on training corpus representation. Mainstream stacks (JavaScript/TypeScript, React, Express, Python/Django, Java) enjoy deep idiomatic support because millions of open-source repositories exist in training data. Newer frameworks, niche languages, or opinionated ecosystems (like Vue 2 Options API vs. Vue 3 Composition API, or complex Angular CLI dependency injection) yield generic, mixed-version, or outdated patterns unless guided.',
+        'Model effectiveness varies sharply based on training corpus representation.',
       howToApply:
-        'Run small calibration experiments on your chosen stack before starting a project—test whether the model writes idiomatic ActiveRecord/RSpec for Rails or Vue 3 Composition API—and supply extra documentation context whenever using newer libraries.',
+        'Run small calibration experiments on your chosen stack before starting a project.',
     },
     {
       id: 'bvc-ch07-mm-security-overconfidence',
@@ -2198,9 +2159,9 @@ export const bvcCh07Mastery: ChapterMastery = {
       naiveIntuition:
         'Because AI models have read thousands of security guides, AI-generated Express routes and SQL queries are naturally safer than hand-written code.',
       firstPrinciplesReality:
-        'Empirical studies cited by Osmani show that developers using AI assistance frequently introduce security vulnerabilities (such as SQL injection in unparameterized queries, missing input sanitization, or permissive CORS) while rating their confidence in the code’s security higher than manual coders. Clean syntax creates a halo effect that masks missing security controls.',
+        'Empirical studies cited by Osmani show that developers using AI assistance frequently introduce security vulnerabilities (such as SQL injection in unparameterized queries, missing input sanitization, or permissive CORS) while rating their confidence in the code’s security higher than manual coders.',
       howToApply:
-        'Never delegate security accountability. Explicitly prompt for bcrypt password hashing, parameterized ORM queries, and input validation—and run dedicated SAST tools plus an adversarial security review prompt ("Audit this Express app for vulnerabilities") before deployment.',
+        'Never delegate security accountability.',
     },
   ],
   deepSections: [
@@ -2211,13 +2172,13 @@ export const bvcCh07Mastery: ChapterMastery = {
       subtitle:
         'Automating multi-directory Vite/React + Express setups, dev proxies, CORS, and Prisma/GraphQL initialization while human engineers own stack decisions.',
       coreMechanism:
-        'Every full-stack web application begins with project scaffolding: directory topology, build toolchains, package manifests, and cross-origin development wiring. Historically, setting up a React frontend and an Express backend required running separate CLI generators, manually configuring `package.json` start scripts, hunting through documentation to wire a Vite development proxy or CORS middleware, and initializing a database driver.\n\nWith an AI-augmented IDE (Cursor, Cline) or conversational assistant, you can specify the entire multi-tier scaffold in a single intent prompt: "Set up a new project with a React frontend (using Vite) and an Express backend. The backend should expose a REST API for a To-Do list using an in-memory array initially. Configure the frontend to proxy API requests to the backend during development." An agentic IDE with shell access can create the `frontend/` and `backend/` directories, execute `npm create vite@latest`, generate the Express server with `/api/to-dos`, populate scripts in both `package.json` files, and configure the Vite dev proxy in minutes.\n\nCrucially, the human developer must enforce architectural decisions before scaffolding begins. The AI will happily follow your lead, but it cannot decide whether your organization needs a monorepo or polyrepo, REST or GraphQL, or SQLite/Prisma versus MongoDB. Unlike rigid static boilerplate generators, AI scaffolding is dynamically customizable via natural language—allowing you to ask for a three-service topology or pre-configured Tailwind CSS and Prisma schemas on the fly.',
+        'Every full-stack web application begins with project scaffolding: directory topology, build toolchains, package manifests, and cross-origin development wiring. Historically, setting up a React frontend and an Express backend required running separate CLI generators, manually configuring `package.json` start scripts, hunting through documentation to wire a Vite development proxy or CORS middleware, and initializing a database driver.\n\nWith an AI-augmented IDE (Cursor, Cline) or conversational assistant, you can specify the entire multi-tier scaffold in a single intent prompt: "Set up a new project with a React frontend (using Vite) and an Express backend. The backend should expose a REST API for a To-Do list using an in-memory array initially.',
       stepByStepFlow: [
         {
           step: '1',
           title: 'Human Architectural Decision Gate',
           detail:
-            'Decide repo topology (monorepo vs. split), API protocol (REST vs. GraphQL), frontend framework (React/Vue/Next.js), and database/ORM (Prisma/SQLite/Postgres).',
+            'Decide repo topology (monorepo vs. split), API protocol (REST vs.',
         },
         {
           step: '2',
@@ -2239,14 +2200,13 @@ export const bvcCh07Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'AI turns project setup from a documentation scavenger hunt into a 5-minute conversational workflow.',
-        'Natural-language scaffolding is more flexible than static boilerplate templates when your project needs custom service topologies or specific library combinations.',
-        'Humans must make the foundational stack choices (monorepo vs. split, REST vs. GraphQL, DB engine) before prompting.',
-      ],
+          'AI turns project setup from a documentation scavenger hunt into a 5-minute conversational workflow.',
+          'Natural-language scaffolding is more flexible than static boilerplate templates when your project needs custom service topologies or specific library combinations.',
+        ],
       commonPitfalls: [
-        'Letting the AI pick arbitrary framework versions or directory structures without specifying your team’s architectural standards upfront.',
-        'Forgetting to configure the development proxy or CORS headers during scaffolding, leading to blocked browser `fetch` calls.',
-      ],
+          'Letting the AI pick arbitrary framework versions or directory structures without specifying your team’s architectural standards upfront.',
+          'Forgetting to configure the development proxy or CORS headers during scaffolding, leading to blocked browser `fetch` calls.',
+        ],
     },
     {
       id: 'bvc-ch07-sec-7-2',
@@ -2255,16 +2215,15 @@ export const bvcCh07Mastery: ChapterMastery = {
       subtitle:
         'Component generation from descriptions, CSS/Tailwind styling, API state hooks, complex UX transitions, and framework-specific idioms.',
       coreMechanism:
-        'Once the scaffold is running, an AI pair programmer accelerates four core frontend workflows: Component Implementation, Styling/Layout, API & State Integration, and Interactive UX Complexity.\n\nFirst, developers generate functional components directly from behavioral descriptions—such as prompting for a React `TodoList` component with title props and completion checkboxes, or a Vue `<template>/<script>/<style>` login form that emits submit payloads. When generating multiple components across separate prompts, you must audit prop-shape consistency so parent and child components agree on data structures.\n\nSecond, AI removes the friction of manual CSS tweaking. By describing visual intent ("Use a flex column with spacing, and style completed tasks in gray with strikethrough," or requesting Tailwind CSS utility classes), you stay at a higher level of design abstraction. Third, the AI wires lifecycle hooks (`useEffect` in React, `mounted()` in Vue) and `fetch`/Axios calls to hydrate state from `/api/to-dos` and post mutations to `/api/to-dos/{id}/complete`. Fourth, complex UI interactions—such as fading out a completed item over a 1-second CSS transition before removing it from state via `setTimeout`, or conditionally rendering a "Notes" textarea—are built incrementally one prompt at a time.\n\nFinally, apply framework-specific vigilance: in React, audit `useEffect` dependency arrays to prevent infinite re-render loops or stale closures; in Vue, explicitly specify `"Use Vue 3 Composition API"` so the model does not default to legacy Vue 2 Options API training examples; in Angular, use the Angular CLI for structural scaffolding and use AI to fill in service logic and form validators.',
+        'Once the scaffold is running, an AI pair programmer accelerates four core frontend workflows: Component Implementation, Styling/Layout, API & State Integration, and Interactive UX Complexity.\n\nFirst, developers generate functional components directly from behavioral descriptions—such as prompting for a React `TodoList` component with title props and completion checkboxes, or a Vue `<template>/<script>/<style>` login form that emits submit payloads. When generating multiple components across separate prompts, you must audit prop-shape consistency so parent and child components agree on data structures.',
       keyTakeaways: [
-        'When generating sibling components in separate prompts, verify that prop interfaces and event payloads match.',
-        'Break complex UI interactions (like animated list removal + state cleanup) into sequential single-behavior prompts and test after each step.',
-        'Always specify framework version idioms explicitly (e.g., React functional hooks with strict `useEffect` deps; Vue 3 Composition API).',
-      ],
+          'When generating sibling components in separate prompts, verify that prop interfaces and event payloads match.',
+          'Break complex UI interactions (like animated list removal + state cleanup) into sequential single-behavior prompts and test after each step.',
+        ],
       commonPitfalls: [
-        'Missing or malformed `useEffect` dependency arrays in AI-generated React components causing infinite `/api/to-dos` network polling.',
-        'Receiving legacy Vue 2 Options API code in a Vue 3 project because the prompt omitted the API style constraint.',
-      ],
+          'Missing or malformed `useEffect` dependency arrays in AI-generated React components causing infinite `/api/to-dos` network polling.',
+          'Receiving legacy Vue 2 Options API code in a Vue 3 project because the prompt omitted the API style constraint.',
+        ],
     },
     {
       id: 'bvc-ch07-sec-7-3',
@@ -2273,17 +2232,15 @@ export const bvcCh07Mastery: ChapterMastery = {
       subtitle:
         'REST/GraphQL routing, input validation, framework fluency calibration, and atomic multi-step ACID transactions.',
       coreMechanism:
-        'Backend development with AI follows an intent-driven progression from routes to persistence, business validation, and multi-step orchestration. You can build REST endpoints incrementally (`GET /api/to-dos`, `POST /api/to-dos`, `PUT /api/to-dos/:id`, `DELETE /api/to-dos/:id`), verify that `app.use(express.json())` middleware is registered, and prompt the AI to refactor growing route handlers into modular Express `Router` files.\n\nAs you layer in business rules—such as rejecting empty titles or titles exceeding 100 characters with HTTP `400 Bad Request`, or checking whether all tasks are complete on `PUT`—the AI translates natural-language specifications directly into conditional guards. When working with higher-level backend frameworks like Python’s Django/DRF, Node’s NestJS, or Ruby on Rails, remember that LLM fluency depends heavily on training data density. While JavaScript, Python, and Java enjoy deep idiomatic support, you should run small calibration experiments on your target stack (e.g., verifying whether the model generates idiomatic Rails ActiveRecord associations and RSpec tests) and supply extra context for newer or less common frameworks.\n\nWhere backend AI assistance shines—and requires the sharpest human review—is orchestrating multi-step operations and ACID transactions. Whether creating a user record in a database and calling the SendGrid API to send a welcome email, or executing an atomic money transfer (`POST /api/transfer`), the AI can scaffold full database session transactions (`session.startTransaction()`, deducting from `fromAccountId`, checking `if (sourceAccount.balance < 0) throw new Error("Insufficient funds")`, crediting `toAccountId`, `session.commitTransaction()`, `session.abortTransaction()` in `catch`, and `session.endSession()` in `finally`). Finally, use the AI to generate concise API endpoint documentation and Jest/Mocha/PyTest test suites covering list, create, and validation-error paths.',
+        'Backend development with AI follows an intent-driven progression from routes to persistence, business validation, and multi-step orchestration. You can build REST endpoints incrementally (`GET /api/to-dos`, `POST /api/to-dos`, `PUT /api/to-dos/:id`, `DELETE /api/to-dos/:id`), verify that `app.use(express.json())` middleware is registered, and prompt the AI to refactor growing route handlers into modular Express `Router` files.\n\nAs you layer in business rules—such as rejecting empty titles or titles exceeding 100 characters with HTTP `400 Bad Request`, or checking whether all tasks are complete on `PUT`—the AI translates natural-language specifications directly into conditional guards. When working with higher-level backend frameworks like Python’s Django/DRF, Node’s NestJS, or Ruby on Rails, remember that LLM fluency depends heavily on training data density.',
       keyTakeaways: [
-        'Start routes with simple in-memory arrays to verify routing and JSON middleware, then prompt the AI to swap in Mongoose/Prisma/Sequelize models.',
-        'Calibrate your LLM’s fluency on your specific backend stack with small experiments before trusting it on complex framework conventions.',
-        'For multi-step mutations (like financial transfers), explicitly prompt for atomic database transactions and verify rollback and `finally` session cleanup.',
-        'Use the AI to auto-generate endpoint documentation and API tests immediately after implementing routes.',
-      ],
+          'Start routes with simple in-memory arrays to verify routing and JSON middleware, then prompt the AI to swap in Mongoose/Prisma/Sequelize models.',
+          'Calibrate your LLM’s fluency on your specific backend stack with small experiments before trusting it on complex framework conventions.',
+        ],
       commonPitfalls: [
-        'Accepting multi-step database writes without wrapping them in an atomic transaction session, leaving partial state on mid-flight errors.',
-        'Assuming an LLM has equal idiomatic mastery of niche or brand-new backend frameworks as it does of Express, Django, or Spring.',
-      ],
+          'Accepting multi-step database writes without wrapping them in an atomic transaction session, leaving partial state on mid-flight errors.',
+          'Assuming an LLM has equal idiomatic mastery of niche or brand-new backend frameworks as it does of Express, Django, or Spring.',
+        ],
     },
     {
       id: 'bvc-ch07-sec-7-4',
@@ -2292,7 +2249,7 @@ export const bvcCh07Mastery: ChapterMastery = {
       subtitle:
         'Brainstorming relational schemas, generating Sequelize/Prisma models and DDL migrations, eager joins, and enforcing cascade rules.',
       coreMechanism:
-        'While human domain expertise is irreplaceable for modeling business entities, AI accelerates translating domain requirements into relational schemas, ORM models, and complex SQL joins. If you are expanding a To-Do app into a full Project Management system, you can brainstorm entity relationships with the AI (`User` 1:N `Project` 1:N `Task`, plus many-to-one `assigned_to` referencing `User`) and immediately generate Sequelize, Prisma, Entity Framework, or SQLAlchemy model definitions—or raw SQL DDL migration scripts with foreign keys.\n\nFor multi-table retrieval—such as fetching all projects along with their tasks and each task’s assigned username—the AI can generate either raw SQL `JOIN` queries or ORM eager-loading directives (such as Sequelize’s `include: [Task, { model: User, as: "assignedUser" }]`).\n\nHowever, Osmani emphasizes three mandatory human audit gates for all AI-generated database code:\n1. **Explicit Schema Context Injection**: Even in stateful chat tools, LLMs cannot guess your exact table or column names unless you provide them in the prompt. Omitting schema context causes the AI to hallucinate generic names like `user_id` when your database actually uses `userId` or `customer_ref`.\n2. **Index & Execution Plan Optimization**: Models understand primary keys and basic joins, but they do not automatically recommend database indexes on frequently queried foreign keys or filter columns, nor do they inspect query execution plans for large datasets.\n3. **Explicit Referential Integrity & Cascade Rules**: When deleting a parent record (like a `Project`), the AI cannot infer your business rule for child `Task` records. You must explicitly instruct it either to configure database-level cascading deletes (`ON DELETE CASCADE`) or to implement an application-level guard that checks for existing tasks and blocks deletion.',
+        'While human domain expertise is irreplaceable for modeling business entities, AI accelerates translating domain requirements into relational schemas, ORM models, and complex SQL joins. If you are expanding a To-Do app into a full Project Management system, you can brainstorm entity relationships with the AI (`User` 1:N `Project` 1:N `Task`, plus many-to-one `assigned_to` referencing `User`) and immediately generate Sequelize, Prisma, Entity Framework, or SQLAlchemy model definitions.\n\nFor multi-table retrieval—such as fetching all projects along with their tasks and each task’s assigned username—the AI can generate either raw SQL `JOIN` queries or ORM eager-loading directives (such as Sequelize’s `include: [Task, { model: User, as: "assignedUser" }]`). However, Osmani emphasizes three mandatory human audit gates for all AI-generated database code:\n1. **Explicit Schema Context Injection**: Even in stateful chat tools, LLMs cannot guess your exact table or column names unless you provide them in the prompt.',
       stepByStepFlow: [
         {
           step: '1',
@@ -2320,14 +2277,13 @@ export const bvcCh07Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'Always include your exact table and column schema in complex database prompts to prevent generic field-name hallucinations (`user_id` vs `userId`).',
-        'AI models rarely add database indexes unprompted—human engineers must audit query frequency and index foreign keys and search columns.',
-        'Specify deletion integrity rules explicitly: choose between database-level `ON DELETE CASCADE` and application-level pre-delete existence checks.',
-      ],
+          'Always include your exact table and column schema in complex database prompts to prevent generic field-name hallucinations (`user_id` vs `userId`).',
+          'AI models rarely add database indexes unprompted—human engineers must audit query frequency and index foreign keys and search columns.',
+        ],
       commonPitfalls: [
-        'Running AI-generated SQL queries in production without checking whether foreign keys and filter columns are indexed.',
-        'Leaving parent-record deletion behavior unspecified, resulting in either orphaned child rows or unexpected foreign-key constraint crashes.',
-      ],
+          'Running AI-generated SQL queries in production without checking whether foreign keys and filter columns are indexed.',
+          'Leaving parent-record deletion behavior unspecified, resulting in either orphaned child rows or unexpected foreign-key constraint crashes.',
+        ],
     },
     {
       id: 'bvc-ch07-sec-7-5',
@@ -2336,17 +2292,15 @@ export const bvcCh07Mastery: ChapterMastery = {
       subtitle:
         'Contract alignment, Socket.io real-time broadcasts, the 5-part collaboration rhythm, Supertest/Cypress/SAST testing, and real-world MVP case studies.',
       coreMechanism:
-        'Integrating an AI-generated frontend and backend into a cohesive product requires aligning contracts, polishing asynchronous UX states, wiring real-time channels, and executing multi-tier verification. When frontend and backend code are generated separately, subtle contract mismatches emerge: one side sends form-encoded payloads while the other expects JSON, or the backend returns `{ tasks: [...] }` while the frontend reads `taskList`. Opening both files side-by-side in an AI IDE (Cursor, Cline) allows a single prompt ("Ensure the frontend fetch to `/api/to-dos` matches the Express route request/response and fix any discrepancies") to harmonize keys, `JSON.stringify` headers, and `await response.json()` parsing. In this phase, also prompt for `isLoading` indicators, non-200 error banners, optimistic state updates (appending a newly created contact from the `POST /api/contacts` response without a page reload), and even Socket.io WebSockets (`io.on("connection")` broadcasting new tasks in real time to connected clients).\n\nTo maximize human-AI synergy across the stack, Osmani codifies five collaboration practices: (1) Use AI for boilerplate CRUD scaffolding while writing proprietary core algorithms yourself; (2) Work through your task checklist item-by-item via targeted prompts (e.g., adding `bcrypt` password hashing to `POST /api/register`); (3) Prompt for continuous readability/performance refactoring under test protection; (4) Use the AI as an architectural sounding board (e.g., comparing in-memory arrays vs. databases across multi-instance server scaling); and (5) Align with your team via AI-generated docs and transparent PR notes (backed by a 2024 GitHub survey showing 97% of developers use AI tools at work, and Snyk findings emphasizing human-in-the-loop validation).\n\nVerification spans six layers: Backend Unit Tests (with explicit edge cases for password strength), API Integration Tests (`Supertest` + `Jest`), Frontend UI E2E Tests (`Cypress` / `Playwright`), Manual Exploratory UX Testing (catching browser back-button bugs and subjective UX friction AI cannot feel), Peer Code Review, and SAST / AI Security Audits (counteracting the empirical trap where AI-assisted developers overestimate their code’s security). Chapter 7 closes with three real-world proofs: a solo developer building a React/Node/Stripe e-commerce T-shirt store in two weeks of evenings (~70% AI code); a Product Manager building an internal Flask/SQL + Vue.js analytics dashboard in weeks ("unbundling of the programmer"); and a two-founder startup shipping a Next.js SSR + OAuth + Cloud Storage + NLP MVP in a few months instead of 4–6 team-months before hiring engineers to scale it.',
+        'Integrating an AI-generated frontend and backend into a cohesive product requires aligning contracts, polishing asynchronous UX states, wiring real-time channels, and executing multi-tier verification. When frontend and backend code are generated separately, subtle contract mismatches emerge: one side sends form-encoded payloads while the other expects JSON, or the backend returns `{ tasks: [...] }` while the frontend reads `taskList`.\n\nTo maximize human-AI synergy across the stack, Osmani codifies five collaboration practices: (1) Use AI for boilerplate CRUD scaffolding while writing proprietary core algorithms yourself.',
       keyTakeaways: [
-        'Use side-by-side IDE context (Cursor/Cline) to automatically reconcile Frontend `fetch` calls with Backend route payloads.',
-        'Reinvest the time saved on boilerplate coding directly into automated testing (`Supertest` API integration tests + `Cypress`/`Playwright` E2E scripts).',
-        'Never skip manual exploratory UX testing (like browser back-button navigation) or SAST security scanning—AI-assisted developers empirically overestimate their code’s security.',
-        'Across solo e-commerce stores, internal PM dashboards, and startup MVPs, AI reliably handles ~70% of repetitive full-stack glue while humans own architecture, Stripe/OAuth configuration, and scaling.',
-      ],
+          'Use side-by-side IDE context (Cursor/Cline) to automatically reconcile Frontend `fetch` calls with Backend route payloads.',
+          'Reinvest the time saved on boilerplate coding directly into automated testing (`Supertest` API integration tests + `Cypress`/`Playwright` E2E scripts).',
+        ],
       commonPitfalls: [
-        'Falling into the AI Security Overconfidence Trap: assuming generated Express routes sanitize inputs or configure CORS safely without checking.',
-        'Skipping manual exploratory browser testing because automated happy-path Cypress tests passed.',
-      ],
+          'Falling into the AI Security Overconfidence Trap: assuming generated Express routes sanitize inputs or configure CORS safely without checking.',
+          'Skipping manual exploratory browser testing because automated happy-path Cypress tests passed.',
+        ],
     },
   ],
   tradeOffMatrices: [
@@ -2441,11 +2395,11 @@ export const bvcCh07Mastery: ChapterMastery = {
       roleAndContext:
         'Full-Stack Engineer building a React + Node/Express Contact Manager using separate AI prompts for the `ContactForm`/`ContactList` components and the `/api/contacts` routes.',
       symptomOrFailure:
-        'When submitting a new contact in the browser, the `POST /api/contacts` request returns HTTP 200, but the new contact never appears in `ContactList` until the user manually refreshes the browser—and occasionally the backend logs `undefined` for the contact’s fields.',
+        'When submitting a new contact in the browser, the `POST /api/contacts` request returns HTTP 200, but the new contact never appears in `ContactList` until the user manually refreshes the browser.',
       naiveFixAndWhyItFails:
-        'Adding `window.location.reload()` after every form submission. This destroys single-page application state, flashes the screen, and fails to fix the underlying Content-Type and response payload mismatch.',
+        'Adding `window.location.reload()` after every form submission.',
       firstPrinciplesSolution:
-        'Open the React components and Express route handler side-by-side in an AI IDE (Cursor/Cline) to align the contract: (1) Ensure the frontend sends `Content-Type: application/json` with `JSON.stringify` and the backend registers `app.use(express.json())`; (2) Update `POST /api/contacts` to return the newly created contact object (with its generated `id`) in the JSON response; and (3) Update `ContactForm`’s success handler to append the returned contact object directly into the React contacts state array.',
+        'Open the React components and Express route handler side-by-side in an AI IDE (Cursor/Cline) to align the contract: (1) Ensure the frontend sends `Content-Type: application/json` with `JSON.stringify` and the backend registers `app.use(express.json())`.',
       measurableOutcome:
         'Zero-reload instant UI state updates on contact creation with 100% payload key alignment verified by a Cypress E2E test.',
     },
@@ -2455,11 +2409,11 @@ export const bvcCh07Mastery: ChapterMastery = {
       roleAndContext:
         'Backend Architect scaling an AI-scaffolded Node/Sequelize Project Management & Billing app (`User` -> `Project` -> `Task` + `Account` balance transfers).',
       symptomOrFailure:
-        'Two production bugs surface simultaneously: (1) When an account transfer fails due to insufficient funds, the sender’s balance is still deducted even though the receiver is never credited; and (2) Deleting a `Project` leaves thousands of orphaned `Task` rows pointing to a non-existent `project_id`, while a project dashboard endpoint times out due to hallucinated `user_id` column errors and unindexed joins.',
+        'Two production bugs surface simultaneously: (1) When an account transfer fails due to insufficient funds, the sender’s balance is still deducted even though the receiver is never credited.',
       naiveFixAndWhyItFails:
-        'Writing a nightly cleanup script to delete orphaned tasks and manually refunding failed transfers. This treats data corruption after the fact rather than enforcing database atomicity and referential integrity.',
+        'Writing a nightly cleanup script to delete orphaned tasks and manually refunding failed transfers.',
       firstPrinciplesSolution:
-        'Apply Chapter 7’s Backend and Database Audit gates: (1) Wrap both `Account.findByIdAndUpdate` calls inside a single database session transaction (`startTransaction` -> check `balance < 0` -> `commitTransaction` / `abortTransaction` in `catch` -> `endSession` in `finally`); (2) Explicitly define referential deletion policy (`ON DELETE CASCADE` on `Task.project_id` or an app-level guard blocking project deletion when tasks exist); and (3) Paste the exact Sequelize schema into query prompts to use `include: [Task, { model: User, as: "assignedUser" }]` with composite indexes on `project_id` and `assigned_to`.',
+        'Apply Chapter 7’s Backend and Database Audit gates: (1) Wrap both `Account.findByIdAndUpdate` calls inside a single database session transaction (`startTransaction` -> check `balance < 0` -> `commitTransaction` / `abortTransaction` in `catch` -> `endSession` in `finally`).',
       measurableOutcome:
         '100% atomic all-or-nothing fund transfers, zero orphaned task records, and dashboard join query latency reduced from >3.5s to <25ms.',
     },
@@ -2476,14 +2430,14 @@ export const bvcCh07Mastery: ChapterMastery = {
             text: 'To prevent the AI from hallucinating generic field names (like `user_id`) when your actual schema uses different naming conventions (like `userId` or `customer_ref`).',
             isCorrect: true,
             explanation:
-              'Correct. Without explicit schema details in the prompt, LLMs fall back on statistical modal column names like `user_id`, breaking queries against your actual schema.',
+              'Correct.',
           },
           {
             label: 'B',
             text: 'Because SQL databases require the schema to be sent inside every SELECT query header.',
             isCorrect: false,
             explanation:
-              'SQL engines already know their own schema; it is the LLM generating the code that needs the exact field names in its prompt context.',
+              'SQL engines already know their own schema.',
           },
           {
             label: 'C',
@@ -2511,7 +2465,7 @@ export const bvcCh07Mastery: ChapterMastery = {
             text: 'It wraps both account updates in a session transaction (`startTransaction`), throws an `Insufficient funds` error if `sourceAccount.balance < 0`, triggers `await session.abortTransaction()` in the `catch` block, and closes the session in `finally`.',
             isCorrect: true,
             explanation:
-              'Correct. By passing `{ session }` to the updates and calling `abortTransaction()` when the balance check throws, the deduction is cleanly rolled back.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -2546,7 +2500,7 @@ export const bvcCh07Mastery: ChapterMastery = {
             text: 'Developers using AI assistance tend to overestimate the security of their code, feeling more confident even when the AI-generated code contains more vulnerabilities (such as SQL injection or missing input sanitization) than manually written code.',
             isCorrect: true,
             explanation:
-              'Correct. Clean-looking AI output creates a dangerous false sense of security unless paired with SAST tools, explicit security prompts, and human review.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -2560,7 +2514,7 @@ export const bvcCh07Mastery: ChapterMastery = {
             text: '97% of developers disabled HTTPS after adopting AI tools in 2024.',
             isCorrect: false,
             explanation:
-              'The 2024 GitHub survey showed 97% of developers used AI coding tools at work; the security study showed overconfidence in vulnerable code.',
+              'The 2024 GitHub survey showed 97% of developers used AI coding tools at work.',
           },
           {
             label: 'D',
@@ -2581,7 +2535,7 @@ export const bvcCh07Mastery: ChapterMastery = {
             text: 'By bridging knowledge gaps in SQL and charting libraries, AI enabled a non-specialist with basic coding familiarity to build a functional internal web tool in weeks without waiting in the core engineering team’s backlog queue.',
             isCorrect: true,
             explanation:
-              'Correct. Even though the code was not enterprise-grade, for an internal read-only dashboard it delivered immediate team value and demonstrated how AI democratizes custom software creation.',
+              'Correct.',
           },
           {
             label: 'B',
@@ -2612,7 +2566,7 @@ export const bvcCh07Mastery: ChapterMastery = {
         id: 'bvc-ch07-fc1',
         category: 'architecture',
         front: 'What 5 setup tasks can an AI-augmented IDE (like Cursor or Cline) automate when scaffolding a full-stack React + Express app?',
-        back: '1. Create `frontend` and `backend` directories\n2. Run `npm create vite@latest` or scaffold React template\n3. Initialize Express server with initial `/api/to-dos` route\n4. Configure `package.json` start scripts in both folders\n5. Wire Vite dev proxy or CORS headers for cross-origin communication.',
+        back: '1.',
         mentalHook: 'Directories -> Vite UI -> Express API -> Scripts -> Proxy/CORS.',
       },
       {
@@ -2626,21 +2580,21 @@ export const bvcCh07Mastery: ChapterMastery = {
         id: 'bvc-ch07-fc3',
         category: 'foundation',
         front: 'Why does an LLM’s coding effectiveness vary across different backend languages and frameworks, and how should you test it?',
-        back: 'Competence depends on how heavily a technology is represented in public training corpora (JS, Python, and Java have the deepest support). Calibrate by running small experiments on your target stack (e.g., testing Rails ActiveRecord + RSpec) and progressively increasing complexity.',
+        back: 'Competence depends on how heavily a technology is represented in public training corpora (JS, Python, and Java have the deepest support).',
         mentalHook: 'Training corpus density dictates idiomatic fluency—test small first.',
       },
       {
         id: 'bvc-ch07-fc4',
         category: 'data',
         front: 'What are the 3 mandatory human audit areas when reviewing AI-generated database queries and ORM schemas?',
-        back: '1. Schema Alignment: Provide exact table/field names (`userId` vs `user_id`) in prompts.\n2. Performance & Indexes: Manually add indexes for frequent queries/joins and check execution plans.\n3. Referential Cascade Rules: Explicitly specify `ON DELETE CASCADE` vs. application-level pre-delete checks.',
+        back: '1.',
         mentalHook: 'Exact Column Names + Missing Indexes + Explicit Cascade Policy.',
       },
       {
         id: 'bvc-ch07-fc5',
         category: 'architecture',
         front: 'What are the 5 strategies for optimizing Human-AI collaboration during full-stack development?',
-        back: '1. Use AI for boilerplate CRUD; write proprietary core logic yourself.\n2. Work through your task list item-by-item via targeted prompts.\n3. Prompt AI to refactor/optimize code quality continuously.\n4. Use AI as an architectural sounding board (e.g., in-memory vs. DB across multiple server instances).\n5. Use AI to generate docs and communicate openly with your team during code reviews.',
+        back: '1.',
         mentalHook: 'Scaffold CRUD -> Tick Tasks 1-by-1 -> Refactor -> Sounding Board -> Team Docs.',
       },
       {
@@ -2664,7 +2618,7 @@ export const bvcCh07Mastery: ChapterMastery = {
           'Walks through atomic multi-step transaction handling (`startSession`, `startTransaction`, balance invariant check, `commitTransaction`, `abortTransaction`, `endSession`).',
         ],
         modelExplanation:
-          'Database operations require domain invariants that an LLM cannot infer from generic prompts. First, unless you paste your exact schema into the prompt, the model defaults to statistical guesses like `user_id` even if your table uses `userId`, breaking runtime queries. Second, while the AI can write a 3-table SQL JOIN or a Sequelize `include` block, it cannot see your production data volume—it will rarely suggest indexes on foreign keys or filter columns unless asked. Third, when deleting a parent record like a Project, the AI cannot guess your business rule: you must explicitly command either database-level `ON DELETE CASCADE` or an application guard that blocks deletion if child Tasks exist. Finally, for multi-step operations like transferring money between accounts, you must ensure the AI wraps both updates in an atomic session transaction that checks for negative balances, rolls back via `abortTransaction()` on error, and closes the session in `finally`.',
+          'Database operations require domain invariants that an LLM cannot infer from generic prompts. First, unless you paste your exact schema into the prompt, the model defaults to statistical guesses like `user_id` even if your table uses `userId`, breaking runtime queries.',
       },
       {
         id: 'bvc-ch07-feyn-2',
@@ -2678,7 +2632,7 @@ export const bvcCh07Mastery: ChapterMastery = {
           'Details reinvesting coding time savings into the 6-part verification strategy: Unit tests, Supertest API integration tests, Cypress/Playwright E2E tests, manual exploratory UX testing (back-button), peer review, and SAST security audits.',
         ],
         modelExplanation:
-          'An AI pair programmer lets one developer work across Frontend and Backend in parallel—generating React components, CSS layouts, and `fetch` hooks on one side, and Express routes, validation, and ORM queries on the other. However, when the AI generates both sides in separate turns, subtle contract drift occurs: the backend might return `{ success: true, taskList: [...] }` while the frontend expects a bare array or a key called `tasks`, or the frontend forgets `JSON.stringify` and `Content-Type: application/json`. The fastest fix is opening both the frontend component and backend route side-by-side in a context-aware IDE like Cursor or Cline and prompting it to reconcile the request/response contract and append newly created items directly to React state. Once integrated, you must reinvest the hours saved on boilerplate into verification: Jest unit tests for edge cases, Supertest integration tests for HTTP routes, Cypress or Playwright E2E scripts for browser flows, manual exploratory testing for subjective UX and back-button state bugs, and SAST security audits to counter the AI security overconfidence trap.',
+          'An AI pair programmer lets one developer work across Frontend and Backend in parallel.',
       },
     ],
   },
@@ -2839,6 +2793,6 @@ export const bvcCh07Mastery: ChapterMastery = {
     figuresIncluded: 0,
     antiAiVerified: true,
     auditNotes:
-      '100% coverage verified across all 7 major sections and all subsections of Chapter 7 (Project Scaffolding, Frontend Patterns, Backend/API Patterns + ACID Transactions + Language Fluency, Database Design & ORM Integration + Query Auditing, Full-Stack Integration + WebSockets + 5 Collaboration Strategies, Testing & Validating AI Web Apps, and Real-World Case Studies: Solo E-Commerce, PM Dashboard, Startup MVP). Zero AI clichés.',
+      '100% coverage verified across all 7 major sections and all subsections of Chapter 7 (Project Scaffolding, Frontend Patterns, Backend/API Patterns + ACID Transactions + Language Fluency, Database Design & ORM Integration + Query Auditing, Full-Stack Integration + WebSockets + 5 Collaboration Strategies, Testing & Validating AI Web Apps, and Real-World Case Studies: Solo E-Commerce, PM Dashboard, Startup MVP).',
   },
 };

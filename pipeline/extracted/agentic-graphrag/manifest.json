@@ -1,0 +1,1829 @@
+{
+  "bookSlug": "agentic-graphrag",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Agentic GraphRAG Integrating Knowledge Graphs, Reasoning, and Agency for Enterprise AI.epub",
+  "totalChapters": 8,
+  "totalFigures": 25,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/ch01.html",
+      "title": "Chapter 1. The Crisis of Enterprise Agentic AI",
+      "charCount": 54728,
+      "wordCount": 7668,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1. The Crisis of Enterprise Agentic AI"
+        },
+        {
+          "level": "h1",
+          "title": "Defining Agentic AI"
+        },
+        {
+          "level": "h2",
+          "title": "What Is an Agent, Anyway?"
+        },
+        {
+          "level": "h2",
+          "title": "Classifying Agentic Systems: The Workflow-Agent Spectrum"
+        },
+        {
+          "level": "h2",
+          "title": "The Agent Constraint Triangle"
+        },
+        {
+          "level": "h2",
+          "title": "Agent Architecture"
+        },
+        {
+          "level": "h1",
+          "title": "The Limitations of Vector-Based Retrieval"
+        },
+        {
+          "level": "h2",
+          "title": "A Brief Overview of Vector Retrieval"
+        },
+        {
+          "level": "h2",
+          "title": "Where Vector RAG Succeeds and Fails"
+        },
+        {
+          "level": "h3",
+          "title": "Won’t a larger context window solve this?"
+        },
+        {
+          "level": "h3",
+          "title": "Consequences for vector-based agents"
+        },
+        {
+          "level": "h1",
+          "title": "GraphRAG: The Evolution of Contextual Retrieval Systems"
+        },
+        {
+          "level": "h2",
+          "title": "A Brief Overview of GraphRAG Architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Where GraphRAG Succeeds and Struggles"
+        },
+        {
+          "level": "h3",
+          "title": "Context control"
+        },
+        {
+          "level": "h3",
+          "title": "Flexibility"
+        },
+        {
+          "level": "h3",
+          "title": "Better reasoning"
+        },
+        {
+          "level": "h3",
+          "title": "Explainability and traceability"
+        },
+        {
+          "level": "h3",
+          "title": "Self-evolution data flywheel"
+        },
+        {
+          "level": "h3",
+          "title": "Where GraphRAG struggles"
+        },
+        {
+          "level": "h2",
+          "title": "Hybrid GraphRAG"
+        },
+        {
+          "level": "h2",
+          "title": "Learned Graph Reasoning Models"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0101.png",
+          "caption": "Figure 1-1. Workflow-agent spectrum",
+          "alt": "Diagram illustrating a spectrum from workflows to agents, highlighting characteristics like predictability and fixed paths for workflows, versus flexibility and complex reasoning for agents."
+        },
+        {
+          "file": "agrg_0102.png",
+          "caption": "Figure 1-2. AI agent architecture: a component-based framework for agent design",
+          "alt": "Diagram showing an AI agent architecture with interconnected components: Capabilities, Agent Core, Resources, and Environment."
+        },
+        {
+          "file": "agrg_0103.png",
+          "caption": "Figure 1-3. Local and global query scopes and sources in BenchmarkQED",
+          "alt": "Diagram illustrating local and global query scopes with vector RAG accuracy: Local queries perform better with high accuracy, while global queries show lower accuracy."
+        },
+        {
+          "file": "agrg_0104.png",
+          "caption": "Figure 1-4. Standard graph traversal",
+          "alt": "Diagram illustrating the process of user query handling, from query interpretation and graph traversal to subgraph integration and response generation."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/ch02.html",
+      "title": "Chapter 2. Agentic Graph Architecture Foundations",
+      "charCount": 64151,
+      "wordCount": 9511,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2. Agentic Graph Architecture Foundations"
+        },
+        {
+          "level": "h1",
+          "title": "From Strings to Things"
+        },
+        {
+          "level": "h1",
+          "title": "The Dual-Graph Architecture"
+        },
+        {
+          "level": "h2",
+          "title": "The Vertical Knowledge Graph"
+        },
+        {
+          "level": "h2",
+          "title": "The Horizontal Workflow Graph"
+        },
+        {
+          "level": "h3",
+          "title": "Defining the harness"
+        },
+        {
+          "level": "h3",
+          "title": "Splitting a workflow into nodes"
+        },
+        {
+          "level": "h2",
+          "title": "Where the Two Graphs Meet"
+        },
+        {
+          "level": "h2",
+          "title": "A Note on Context Graphs"
+        },
+        {
+          "level": "h1",
+          "title": "The Eight Pillars of Agentic Graph Architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Setup: Building the Digital Twin of a Tech Stack (Part II)"
+        },
+        {
+          "level": "h3",
+          "title": "Knowledge representation (Chapter 3)"
+        },
+        {
+          "level": "h3",
+          "title": "Memory systems (Chapter 4)"
+        },
+        {
+          "level": "h2",
+          "title": "Action: From Firefighting to Foresight (Part III)"
+        },
+        {
+          "level": "h3",
+          "title": "Reasoning with graphs (Chapter 5)"
+        },
+        {
+          "level": "h3",
+          "title": "Planning systems (Chapter 5)"
+        },
+        {
+          "level": "h3",
+          "title": "Tool orchestration (Chapter 6)"
+        },
+        {
+          "level": "h3",
+          "title": "Structured output engineering (Chapters 5 and 6)"
+        },
+        {
+          "level": "h2",
+          "title": "Production: Creating a Self-Healing System (Part IV)"
+        },
+        {
+          "level": "h3",
+          "title": "Self-evolution and evaluation (Chapter 7)"
+        },
+        {
+          "level": "h3",
+          "title": "Optimization (Chapter 8)"
+        },
+        {
+          "level": "h1",
+          "title": "The Autonomous DevOps Agent"
+        },
+        {
+          "level": "h2",
+          "title": "The Initial State"
+        },
+        {
+          "level": "h2",
+          "title": "The Transformation Arc"
+        },
+        {
+          "level": "h3",
+          "title": "Part II: Building the digital twin"
+        },
+        {
+          "level": "h3",
+          "title": "Part III: From firefighting to foresight"
+        },
+        {
+          "level": "h3",
+          "title": "Part IV: Creating a self-healing system"
+        },
+        {
+          "level": "h2",
+          "title": "A Real-World Parallel"
+        },
+        {
+          "level": "h2",
+          "title": "What the Completed Agent Looks Like"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0201.png",
+          "caption": "Figure 2-1. The dual-graph architecture in which workflow nodes query the knowledge graph for context and results update it",
+          "alt": "Diagram illustrating a dual-graph architecture with a vertical knowledge graph depicting entities and relationships, and a horizontal workflow graph showing reasoning and execution processes, highlighting their interaction."
+        },
+        {
+          "file": "agrg_0202.png",
+          "caption": "Figure 2-2. The eight pillars of agentic graph architecture mapped to the parts of the book",
+          "alt": "Diagram showing the eight pillars of agentic graph architecture, organized into parts: Setup (knowledge representation and memory systems), Action (reasoning, planning, tool orchestration, structured output), and Production (self-evolution, optimization)."
+        },
+        {
+          "file": "agrg_0203.png",
+          "caption": "Figure 2-3. The DevOps agent’s progression from disconnected tools to autonomous, self-healing system",
+          "alt": "Diagram illustrating the progression of a DevOps agent from initial state with disconnected tools to an autonomous, self-healing system, highlighting key chapters that contribute to its development."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/ch03.html",
+      "title": "Chapter 3. Graph-Based Knowledge Modeling for Agentic Systems",
+      "charCount": 125792,
+      "wordCount": 15999,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 3. Graph-Based Knowledge Modeling for Agentic Systems"
+        },
+        {
+          "level": "h1",
+          "title": "Knowledge Graph Foundations"
+        },
+        {
+          "level": "h2",
+          "title": "Components of GraphRAG Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Building Versus Buying a GraphRAG System"
+        },
+        {
+          "level": "h3",
+          "title": "Factors to consider"
+        },
+        {
+          "level": "h3",
+          "title": "What remains"
+        },
+        {
+          "level": "h1",
+          "title": "Graph Data Models"
+        },
+        {
+          "level": "h2",
+          "title": "Types of Graph Data Models"
+        },
+        {
+          "level": "h2",
+          "title": "Evaluating Graph Models"
+        },
+        {
+          "level": "h3",
+          "title": "Formal reasoning"
+        },
+        {
+          "level": "h3",
+          "title": "N-ary relations"
+        },
+        {
+          "level": "h3",
+          "title": "Performance"
+        },
+        {
+          "level": "h3",
+          "title": "Tool ecosystem"
+        },
+        {
+          "level": "h3",
+          "title": "Constraint expressiveness"
+        },
+        {
+          "level": "h3",
+          "title": "Putting it all together"
+        },
+        {
+          "level": "h3",
+          "title": "Open world, closed world, and agent safety"
+        },
+        {
+          "level": "h3",
+          "title": "Graph structures"
+        },
+        {
+          "level": "h1",
+          "title": "Graph Design Principles for Agentic Systems"
+        },
+        {
+          "level": "h2",
+          "title": "The Three-Graph Architecture for Agent Knowledge"
+        },
+        {
+          "level": "h3",
+          "title": "Domain graph"
+        },
+        {
+          "level": "h3",
+          "title": "Lexical graph"
+        },
+        {
+          "level": "h3",
+          "title": "Subject graph"
+        },
+        {
+          "level": "h3",
+          "title": "Why this architecture works"
+        },
+        {
+          "level": "h3",
+          "title": "Why this architecture matters for agents"
+        },
+        {
+          "level": "h3",
+          "title": "Multimodal knowledge graphs"
+        },
+        {
+          "level": "h2",
+          "title": "Schema Design Patterns"
+        },
+        {
+          "level": "h3",
+          "title": "Event-centric pattern"
+        },
+        {
+          "level": "h3",
+          "title": "Contextual boundary pattern"
+        },
+        {
+          "level": "h3",
+          "title": "Multiperspective pattern"
+        },
+        {
+          "level": "h3",
+          "title": "Capability model pattern"
+        },
+        {
+          "level": "h2",
+          "title": "Homoiconic Knowledge Representation"
+        },
+        {
+          "level": "h3",
+          "title": "Metaknowledge structures"
+        },
+        {
+          "level": "h3",
+          "title": "Executable knowledge patterns"
+        },
+        {
+          "level": "h1",
+          "title": "Integrating with Existing Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Knowledge Organization and Ontology Fundamentals"
+        },
+        {
+          "level": "h3",
+          "title": "The knowledge organization spectrum"
+        },
+        {
+          "level": "h3",
+          "title": "Ontology core components"
+        },
+        {
+          "level": "h3",
+          "title": "From access to context"
+        },
+        {
+          "level": "h2",
+          "title": "Creating a Unified Semantic Foundation"
+        },
+        {
+          "level": "h3",
+          "title": "Enterprise ontology challenges and practical solutions"
+        },
+        {
+          "level": "h3",
+          "title": "Merging multiple ontologies"
+        },
+        {
+          "level": "h3",
+          "title": "Annotating ontologies to control agent behavior"
+        },
+        {
+          "level": "h3",
+          "title": "Upper ontologies"
+        },
+        {
+          "level": "h3",
+          "title": "Iterative ontology creation with AI assistance"
+        },
+        {
+          "level": "h2",
+          "title": "Entity Resolution: The Foundation of Agent Knowledge"
+        },
+        {
+          "level": "h3",
+          "title": "Why traditional approaches fail"
+        },
+        {
+          "level": "h3",
+          "title": "Evidence-based resolution versus generalization-based AI"
+        },
+        {
+          "level": "h3",
+          "title": "Entity resolution as graph building blocks"
+        },
+        {
+          "level": "h3",
+          "title": "Edge cases"
+        },
+        {
+          "level": "h1",
+          "title": "Building the Knowledge Graph"
+        },
+        {
+          "level": "h2",
+          "title": "Extraction Approaches for Heterogeneous Sources"
+        },
+        {
+          "level": "h3",
+          "title": "Structured database integration"
+        },
+        {
+          "level": "h3",
+          "title": "LLM-based extraction from unstructured text"
+        },
+        {
+          "level": "h3",
+          "title": "LLM-based knowledge graph construction frameworks"
+        },
+        {
+          "level": "h4",
+          "title": "The incremental approach: iText2KG"
+        },
+        {
+          "level": "h4",
+          "title": "Document-level extraction: RAKG"
+        },
+        {
+          "level": "h4",
+          "title": "Temporal dynamics: ATOM"
+        },
+        {
+          "level": "h2",
+          "title": "Automating Knowledge Graph Construction with Multi-Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Entity Resolution and Linking Across Graphs"
+        },
+        {
+          "level": "h3",
+          "title": "The entity linking challenge"
+        },
+        {
+          "level": "h3",
+          "title": "Three-stage linking pipeline"
+        },
+        {
+          "level": "h3",
+          "title": "Quality metrics and edge cases"
+        },
+        {
+          "level": "h1",
+          "title": "Knowledge Representation in Practice: DevOps Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Context Engineering for DevOps Automation"
+        },
+        {
+          "level": "h2",
+          "title": "The DevOps Knowledge Representation Challenge"
+        },
+        {
+          "level": "h2",
+          "title": "Designing the DevOps Ontology"
+        },
+        {
+          "level": "h3",
+          "title": "Multi-cloud abstraction through canonical types"
+        },
+        {
+          "level": "h3",
+          "title": "Applying schema patterns to infrastructure"
+        },
+        {
+          "level": "h2",
+          "title": "Populating the Knowledge Graph: Building the Digital Twin"
+        },
+        {
+          "level": "h3",
+          "title": "Structured data integration from cloud providers"
+        },
+        {
+          "level": "h3",
+          "title": "Code and configuration integration"
+        },
+        {
+          "level": "h3",
+          "title": "Observability platform integration"
+        },
+        {
+          "level": "h3",
+          "title": "Operational metadata for business context"
+        },
+        {
+          "level": "h3",
+          "title": "Integrating organizational ontologies and controlled vocabularies"
+        },
+        {
+          "level": "h2",
+          "title": "Homoiconic Knowledge Representation for Agent Adaptability"
+        },
+        {
+          "level": "h2",
+          "title": "Querying the Knowledge Graph: Making the Digital Twin Useful"
+        },
+        {
+          "level": "h3",
+          "title": "Understanding service dependencies"
+        },
+        {
+          "level": "h3",
+          "title": "Configuration drift detection"
+        },
+        {
+          "level": "h3",
+          "title": "Impact analysis for infrastructure changes"
+        },
+        {
+          "level": "h2",
+          "title": "Entity Resolution for Infrastructure Identity"
+        },
+        {
+          "level": "h2",
+          "title": "Measuring Context Quality: Ensuring the Digital Twin Stays Accurate"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0301.png",
+          "caption": "Figure 3-1. Graph-based RAG systems (adapted from Zhou et al., 2026)",
+          "alt": "Diagram illustrating the process of graph-based RAG systems, highlighting stages of graph building, index construction, retrieval, generation, and operator configuration."
+        },
+        {
+          "file": "agrg_0302.png",
+          "caption": "Figure 3-2. The three-graph architecture for agent knowledge",
+          "alt": "Diagram illustrating the three-graph architecture for agent knowledge, displaying the separation into domain, lexical, and subject graphs for organizing data and extracting interpretations."
+        },
+        {
+          "file": "agrg_0303.png",
+          "caption": "Figure 3-3. Merging multiple ontologies into a unified agent knowledge graph",
+          "alt": "Diagram illustrating the process of merging ontologies into a unified agent knowledge graph, highlighting schema mapping, entity resolution, and vocabulary alignment through an integration layer."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/ch04.html",
+      "title": "Chapter 4. Agentic Graph Memory Systems",
+      "charCount": 102743,
+      "wordCount": 14375,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 4. Agentic Graph Memory Systems"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting Graph Memory Systems"
+        },
+        {
+          "level": "h2",
+          "title": "The Problem: Why Your Current Memory Approach Fails"
+        },
+        {
+          "level": "h3",
+          "title": "Sources of failure"
+        },
+        {
+          "level": "h3",
+          "title": "Cache sharing in multi-agent systems"
+        },
+        {
+          "level": "h2",
+          "title": "The Solution: Graph Memory"
+        },
+        {
+          "level": "h3",
+          "title": "Graph memory in production"
+        },
+        {
+          "level": "h3",
+          "title": "What graph memory gives you"
+        },
+        {
+          "level": "h3",
+          "title": "Memory consistency models for agent coordination"
+        },
+        {
+          "level": "h1",
+          "title": "Representing Memory as Graphs"
+        },
+        {
+          "level": "h2",
+          "title": "Understanding the Architecture Evolution"
+        },
+        {
+          "level": "h3",
+          "title": "The hierarchy of memory architecture"
+        },
+        {
+          "level": "h3",
+          "title": "The computer architecture of agent memory"
+        },
+        {
+          "level": "h2",
+          "title": "Essential Graph Components"
+        },
+        {
+          "level": "h3",
+          "title": "Nodes: Your knowledge units"
+        },
+        {
+          "level": "h3",
+          "title": "Edges: Your relationships"
+        },
+        {
+          "level": "h3",
+          "title": "Subgraphs: Your contexts"
+        },
+        {
+          "level": "h2",
+          "title": "Temporal Awareness: Making Memory Evolve"
+        },
+        {
+          "level": "h2",
+          "title": "Implementation: Building Your First Graph Memory System"
+        },
+        {
+          "level": "h3",
+          "title": "Initial integration"
+        },
+        {
+          "level": "h3",
+          "title": "Handling complex relationships"
+        },
+        {
+          "level": "h1",
+          "title": "Four Essential Memory Operations"
+        },
+        {
+          "level": "h2",
+          "title": "Consolidation: From Experience to Knowledge"
+        },
+        {
+          "level": "h2",
+          "title": "Indexing: Organizing for Speed"
+        },
+        {
+          "level": "h2",
+          "title": "Updating: Handling Change Gracefully"
+        },
+        {
+          "level": "h2",
+          "title": "Retrieval: Finding What Matters"
+        },
+        {
+          "level": "h1",
+          "title": "Production Patterns and Architectures"
+        },
+        {
+          "level": "h2",
+          "title": "The Letta (MemGPT) Approach: Hierarchical Memory"
+        },
+        {
+          "level": "h2",
+          "title": "The A-Mem Pattern: Evolving Knowledge Networks"
+        },
+        {
+          "level": "h2",
+          "title": "The Graphiti Pattern: Real-Time Performance"
+        },
+        {
+          "level": "h1",
+          "title": "Comparing Production Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Cognee"
+        },
+        {
+          "level": "h2",
+          "title": "Mem0"
+        },
+        {
+          "level": "h2",
+          "title": "Zep"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing Your Approach"
+        },
+        {
+          "level": "h1",
+          "title": "Production-Ready Features and Operations"
+        },
+        {
+          "level": "h2",
+          "title": "Reasoning and Recommendations"
+        },
+        {
+          "level": "h3",
+          "title": "Multi-hop reasoning"
+        },
+        {
+          "level": "h3",
+          "title": "Intelligent recommendations"
+        },
+        {
+          "level": "h3",
+          "title": "Debugging and maintenance"
+        },
+        {
+          "level": "h3",
+          "title": "Health monitoring"
+        },
+        {
+          "level": "h3",
+          "title": "Visualization and debugging tools"
+        },
+        {
+          "level": "h3",
+          "title": "Conflict resolution"
+        },
+        {
+          "level": "h3",
+          "title": "Performance optimization"
+        },
+        {
+          "level": "h2",
+          "title": "Use Case Optimizations"
+        },
+        {
+          "level": "h1",
+          "title": "Training Your Agents to Use Memory"
+        },
+        {
+          "level": "h2",
+          "title": "The MEM1 Revelation: Let Them Learn, Not Follow Rules"
+        },
+        {
+          "level": "h2",
+          "title": "From Static Rules to Learned Strategies"
+        },
+        {
+          "level": "h2",
+          "title": "The Three Phases of Training"
+        },
+        {
+          "level": "h3",
+          "title": "Phase 1: Task-oriented learning"
+        },
+        {
+          "level": "h3",
+          "title": "Phase 2: Consolidation through constraints"
+        },
+        {
+          "level": "h3",
+          "title": "Phase 3: Multi-objective mastery"
+        },
+        {
+          "level": "h2",
+          "title": "Dynamic Memory Without Dynamic Schemas"
+        },
+        {
+          "level": "h2",
+          "title": "Practical Training Strategies"
+        },
+        {
+          "level": "h3",
+          "title": "Reward task success, not memory perfection"
+        },
+        {
+          "level": "h3",
+          "title": "Use masked training for specialized behaviors"
+        },
+        {
+          "level": "h3",
+          "title": "Implement curriculum learning"
+        },
+        {
+          "level": "h2",
+          "title": "Evolving Your Memory System"
+        },
+        {
+          "level": "h3",
+          "title": "Learned contextual updates"
+        },
+        {
+          "level": "h3",
+          "title": "Discovered relationship patterns"
+        },
+        {
+          "level": "h3",
+          "title": "Emergent consolidation"
+        },
+        {
+          "level": "h2",
+          "title": "Moving Beyond Traditional Training"
+        },
+        {
+          "level": "h1",
+          "title": "Adding Memory to the DevOps Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Designing the DevOps Memory Schema"
+        },
+        {
+          "level": "h2",
+          "title": "Implementing Memory for Operational Context"
+        },
+        {
+          "level": "h2",
+          "title": "Temporal Queries for Root Cause Analysis"
+        },
+        {
+          "level": "h2",
+          "title": "Consolidation: Learning Patterns from Incidents"
+        },
+        {
+          "level": "h2",
+          "title": "Training Memory Behavior with Reinforcement Learning"
+        },
+        {
+          "level": "h3",
+          "title": "Defining the memory training environment"
+        },
+        {
+          "level": "h3",
+          "title": "Configuring Nova Forge for memory training"
+        },
+        {
+          "level": "h3",
+          "title": "What the agent learns"
+        },
+        {
+          "level": "h2",
+          "title": "Production Considerations"
+        },
+        {
+          "level": "h1",
+          "title": "Future-Proofing Your Implementation"
+        },
+        {
+          "level": "h2",
+          "title": "Neurosymbolic Integration"
+        },
+        {
+          "level": "h2",
+          "title": "Distributed Scaling"
+        },
+        {
+          "level": "h2",
+          "title": "Continual Learning"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0401.png",
+          "caption": "Figure 4-1. The multidimensional tensions of agentic memory systems",
+          "alt": "Diagram illustrating the challenges and trade-offs in AI memory systems, highlighting issues like unnecessary searches, scale degradation, and concurrency conflicts while balancing factors such as storage versus reasoning and performance versus completeness."
+        },
+        {
+          "file": "agrg_0402.png",
+          "caption": "Figure 4-2. Essential graph components for agentic memory",
+          "alt": "Diagram illustrating the core components of a graph-based memory system, including nodes as units of knowledge, edges representing relationships, and subgraphs as context bundles for coherent reasoning."
+        },
+        {
+          "file": "agrg_0403.png",
+          "caption": "Figure 4-3. Memory operations cycle",
+          "alt": "Diagram illustrating the memory operations cycle with processes of consolidating, indexing, updating, and retrieving, centered around an agent handling tasks."
+        },
+        {
+          "file": "agrg_0404.png",
+          "caption": "Figure 4-4. MEM1 training phases",
+          "alt": "Diagram illustrating the three phases of MEM1 training: task-oriented learning, constrained memory, and multi-objective mastery, highlighting progression from real tasks to complexity scaling."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/ch05.html",
+      "title": "Chapter 5. Reasoning and Planning",
+      "charCount": 114378,
+      "wordCount": 14802,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 5. Reasoning and Planning"
+        },
+        {
+          "level": "h1",
+          "title": "Foundations: Why Graph-Based Reasoning Matters for Agent Development"
+        },
+        {
+          "level": "h2",
+          "title": "The Two Graph Types: Horizontal and Vertical"
+        },
+        {
+          "level": "h3",
+          "title": "Horizontal workflow graphs"
+        },
+        {
+          "level": "h3",
+          "title": "Vertical knowledge graphs"
+        },
+        {
+          "level": "h3",
+          "title": "The imaginary space"
+        },
+        {
+          "level": "h3",
+          "title": "The pattern in the wild: Coding agents as dual-graph systems"
+        },
+        {
+          "level": "h2",
+          "title": "Ontological Grounding: Keeping Your Agent in Reality"
+        },
+        {
+          "level": "h1",
+          "title": "Retrieval Mechanisms"
+        },
+        {
+          "level": "h2",
+          "title": "The Distracting Effect: Why Your Agents Get Misled"
+        },
+        {
+          "level": "h2",
+          "title": "PathRAG: Structural Protection Against Distractions"
+        },
+        {
+          "level": "h2",
+          "title": "R3-RAG: Teaching Your Agents When and How to Retrieve"
+        },
+        {
+          "level": "h2",
+          "title": "GraphRAG Pattern Taxonomy"
+        },
+        {
+          "level": "h1",
+          "title": "Reasoning and Generation"
+        },
+        {
+          "level": "h2",
+          "title": "Interleaved Thinking: Real-Time Adaptive Reasoning"
+        },
+        {
+          "level": "h3",
+          "title": "Where interleaved thinking helps and hurts"
+        },
+        {
+          "level": "h3",
+          "title": "Implementation of interleaved thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Structured Generation: The Keystone of Reliable Communication"
+        },
+        {
+          "level": "h3",
+          "title": "Why structured output changes everything"
+        },
+        {
+          "level": "h3",
+          "title": "The compound power of structure and graphs"
+        },
+        {
+          "level": "h3",
+          "title": "How Outlines transforms each component"
+        },
+        {
+          "level": "h3",
+          "title": "Real-world impact"
+        },
+        {
+          "level": "h1",
+          "title": "Pipeline Architectures"
+        },
+        {
+          "level": "h2",
+          "title": "Sequential Pipeline: Linear Execution"
+        },
+        {
+          "level": "h2",
+          "title": "Loop Pipeline: Iterative Refinement"
+        },
+        {
+          "level": "h2",
+          "title": "Tree Pipeline: Parallel Exploration"
+        },
+        {
+          "level": "h2",
+          "title": "Production Implementation Patterns"
+        },
+        {
+          "level": "h3",
+          "title": "State management across pipelines"
+        },
+        {
+          "level": "h3",
+          "title": "Error-handling strategies"
+        },
+        {
+          "level": "h3",
+          "title": "Observability and debugging"
+        },
+        {
+          "level": "h2",
+          "title": "Hybrid Architectures"
+        },
+        {
+          "level": "h3",
+          "title": "Dynamic architecture selection"
+        },
+        {
+          "level": "h3",
+          "title": "Nested pipeline composition"
+        },
+        {
+          "level": "h3",
+          "title": "Graceful degradation"
+        },
+        {
+          "level": "h2",
+          "title": "Event-Driven Orchestration: The Production Scaling Layer"
+        },
+        {
+          "level": "h1",
+          "title": "Planning and Coordination"
+        },
+        {
+          "level": "h2",
+          "title": "Why Planning Deserves Architectural Separation"
+        },
+        {
+          "level": "h2",
+          "title": "Hierarchical Planning"
+        },
+        {
+          "level": "h2",
+          "title": "Constraint-Guided Planning"
+        },
+        {
+          "level": "h2",
+          "title": "Dynamic DAG Construction"
+        },
+        {
+          "level": "h2",
+          "title": "Empirical Evidence: Graph Planning at Repository Scale"
+        },
+        {
+          "level": "h2",
+          "title": "From Architecture to Daily Practice: Task Graphs at Developer Scale"
+        },
+        {
+          "level": "h2",
+          "title": "The Multi-Agent Debate: Reconciling Parallel Execution"
+        },
+        {
+          "level": "h3",
+          "title": "The real problem: Uncoordinated parallelism"
+        },
+        {
+          "level": "h3",
+          "title": "When parallel execution makes sense"
+        },
+        {
+          "level": "h3",
+          "title": "The architecture of controlled parallelism"
+        },
+        {
+          "level": "h1",
+          "title": "DevOps Diagnostic Agent: Pulling It All Together"
+        },
+        {
+          "level": "h2",
+          "title": "Building the Horizontal Workflow Graph"
+        },
+        {
+          "level": "h3",
+          "title": "Workflow graph design"
+        },
+        {
+          "level": "h3",
+          "title": "State-specific nodes and constrained context"
+        },
+        {
+          "level": "h2",
+          "title": "Integrating the Knowledge Graph for Grounded Hypotheses"
+        },
+        {
+          "level": "h2",
+          "title": "Constructing the Investigation DAG"
+        },
+        {
+          "level": "h2",
+          "title": "A Production Incident Walkthrough"
+        },
+        {
+          "level": "h2",
+          "title": "Why the Architecture Matters"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0501.png",
+          "caption": "Figure 5-1. Dual-graph architecture with two independent axes, not a single autonomy spectrum",
+          "alt": "Diagram illustrating a dual-graph architecture with independent axes for context control and workflow autonomy, highlighting the balance needed for precise, flexible agent systems."
+        },
+        {
+          "file": "agrg_0502.png",
+          "caption": "Figure 5-2. Event-driven agent orchestration where the workflow graph plans, the event backbone executes, and results reshape the plan",
+          "alt": "Diagram illustrating event-driven orchestration, where a workflow graph plans tasks, an event backbone executes them, and a knowledge graph updates state, enabling dynamic adjustments based on outcomes."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/ch06.html",
+      "title": "Chapter 6. Agentic Graph-Based Tool Orchestration",
+      "charCount": 92583,
+      "wordCount": 11757,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 6. Agentic Graph-Based Tool Orchestration"
+        },
+        {
+          "level": "h1",
+          "title": "MCP: The Protocol That Changes the Game"
+        },
+        {
+          "level": "h2",
+          "title": "Securing the Foundation: MCP Authentication"
+        },
+        {
+          "level": "h2",
+          "title": "Agents as Tools: A Powerful Pattern"
+        },
+        {
+          "level": "h1",
+          "title": "The Prompt Bloat Crisis: When More Tools Mean Less Intelligence"
+        },
+        {
+          "level": "h2",
+          "title": "From Listing to Finding: The RAG Way"
+        },
+        {
+          "level": "h2",
+          "title": "The Gateway Pattern"
+        },
+        {
+          "level": "h3",
+          "title": "Enhanced tool representations: The Toolshed approach"
+        },
+        {
+          "level": "h3",
+          "title": "Collaborative tool retrieval: COLT"
+        },
+        {
+          "level": "h2",
+          "title": "Skills: The Judgment Layer"
+        },
+        {
+          "level": "h3",
+          "title": "Skill quality evaluation"
+        },
+        {
+          "level": "h3",
+          "title": "Integrating quality ratings into graph-based retrieval"
+        },
+        {
+          "level": "h3",
+          "title": "Scale and retrieval"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing the Right Primitive: CLIs, MCPs, and Skills"
+        },
+        {
+          "level": "h3",
+          "title": "The “wrap-everything” argument"
+        },
+        {
+          "level": "h3",
+          "title": "Three primitives, three audiences"
+        },
+        {
+          "level": "h3",
+          "title": "The personal-to-enterprise gradient"
+        },
+        {
+          "level": "h3",
+          "title": "Per-agent access control"
+        },
+        {
+          "level": "h3",
+          "title": "Convergence, not competition"
+        },
+        {
+          "level": "h1",
+          "title": "The Knowledge Graph Necessity: Tools That Understand Each Other"
+        },
+        {
+          "level": "h2",
+          "title": "Tools as Graph Nodes"
+        },
+        {
+          "level": "h2",
+          "title": "Tool Dependencies and Type Matching"
+        },
+        {
+          "level": "h2",
+          "title": "Securing Data Flow with Information Flow Control"
+        },
+        {
+          "level": "h1",
+          "title": "Evolving Tool Ecosystems"
+        },
+        {
+          "level": "h2",
+          "title": "Ontology-Driven Evolution: When Tools Define Themselves"
+        },
+        {
+          "level": "h3",
+          "title": "Usage analytics"
+        },
+        {
+          "level": "h3",
+          "title": "Pattern recognition"
+        },
+        {
+          "level": "h3",
+          "title": "Automated improvement"
+        },
+        {
+          "level": "h2",
+          "title": "The Trust Problem: When Tools Game the System"
+        },
+        {
+          "level": "h3",
+          "title": "The solution: Verification-based trust"
+        },
+        {
+          "level": "h3",
+          "title": "DRAFT: Learning what tools actually do"
+        },
+        {
+          "level": "h2",
+          "title": "Metatooling: When Tools Create Tools"
+        },
+        {
+          "level": "h1",
+          "title": "Orchestration at Scale"
+        },
+        {
+          "level": "h2",
+          "title": "The Intelligent Orchestrator: Modernizing Classical SaaS"
+        },
+        {
+          "level": "h2",
+          "title": "Hierarchical Orchestration: When Scale Demands Structure"
+        },
+        {
+          "level": "h2",
+          "title": "Functional Clustering: Resilience Through Redundancy"
+        },
+        {
+          "level": "h2",
+          "title": "The Enterprise AI OS Layer: Infrastructure for the Synthetic Workforce"
+        },
+        {
+          "level": "h1",
+          "title": "Learning and Advanced Patterns"
+        },
+        {
+          "level": "h2",
+          "title": "The Memory Layer: Learning from Every Interaction"
+        },
+        {
+          "level": "h2",
+          "title": "Advanced Patterns: The Nested Execution Challenge"
+        },
+        {
+          "level": "h2",
+          "title": "Performance at Scale: Making It Real"
+        },
+        {
+          "level": "h2",
+          "title": "Context Governance: The Missing Layer in Tool Orchestration"
+        },
+        {
+          "level": "h3",
+          "title": "The problem: Configuration drift at scale"
+        },
+        {
+          "level": "h3",
+          "title": "Three solution architectures"
+        },
+        {
+          "level": "h3",
+          "title": "Federated context architecture"
+        },
+        {
+          "level": "h3",
+          "title": "Implications for tool orchestration"
+        },
+        {
+          "level": "h1",
+          "title": "Tool Orchestration in Practice: The DevOps Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Registering Tools in the Knowledge Graph"
+        },
+        {
+          "level": "h2",
+          "title": "Structured Output for API Integration"
+        },
+        {
+          "level": "h2",
+          "title": "The Latency Investigation, Continued"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0601.png",
+          "caption": "Figure 6-1. COLT’s three-graph retrieval architecture",
+          "alt": "Diagram illustrating COLT’s three interconnected graphs, showing how user queries like \"plan a trip\" are mapped to tools such as flight booking and weather-checking within the Query-Scene, Scene-Tool, and Query-Tool graphs for collaborative tool retrieval."
+        },
+        {
+          "file": "agrg_0602.png",
+          "caption": "Figure 6-2. Tool dependency graph",
+          "alt": "Diagram illustrating a tool dependency graph where the country_api produces an ISO_3166_1_alpha_2 country code used as input by the covid_api to retrieve COVID statistics, showcasing the execution flow for obtaining data for \"India.\""
+        },
+        {
+          "file": "agrg_0603.png",
+          "caption": "Figure 6-3. Enterprise AI OS layered security",
+          "alt": "Diagram showing a six-layered security framework for Enterprise AI OS, detailing processes from authentication to execution with audit, highlighting human-in-the-loop action governance."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OEBPS/ch07.html",
+      "title": "Chapter 7. Self-Evolution and Evaluation",
+      "charCount": 107896,
+      "wordCount": 14213,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 7. Self-Evolution and Evaluation"
+        },
+        {
+          "level": "h1",
+          "title": "The Foundation of Self-Awareness"
+        },
+        {
+          "level": "h2",
+          "title": "The Execution Graph: The Agent’s Autobiography"
+        },
+        {
+          "level": "h2",
+          "title": "The Multi-Layered Evaluation Framework: A Cognitive Autopsy"
+        },
+        {
+          "level": "h3",
+          "title": "Layer 0: The zero-shot hallucination gate"
+        },
+        {
+          "level": "h3",
+          "title": "Layer 1: The context evaluator"
+        },
+        {
+          "level": "h3",
+          "title": "Layer 2: The cognitive fault isolator"
+        },
+        {
+          "level": "h3",
+          "title": "Layer 3: The tool-integrated reasoning judge"
+        },
+        {
+          "level": "h3",
+          "title": "Nontraditional signals: What correctness metrics miss"
+        },
+        {
+          "level": "h3",
+          "title": "A note on mechanistic interpretability"
+        },
+        {
+          "level": "h3",
+          "title": "Proactive truthfulness detection: The dual-pathway model"
+        },
+        {
+          "level": "h2",
+          "title": "A Taxonomy for Self-Evolution"
+        },
+        {
+          "level": "h3",
+          "title": "What evolves"
+        },
+        {
+          "level": "h3",
+          "title": "When evolution fires"
+        },
+        {
+          "level": "h3",
+          "title": "How the agent learns"
+        },
+        {
+          "level": "h3",
+          "title": "Where evolution applies"
+        },
+        {
+          "level": "h3",
+          "title": "Connecting the axes"
+        },
+        {
+          "level": "h1",
+          "title": "Targeted Self-Improvement"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing the Right Intervention: Prompt, Fine-Tune, or Constrain?"
+        },
+        {
+          "level": "h2",
+          "title": "Semantic Backpropagation: Coherent Evolution Across the Graph"
+        },
+        {
+          "level": "h2",
+          "title": "A Suite of Self-Improvement Frameworks"
+        },
+        {
+          "level": "h3",
+          "title": "SEAL: Targeted data generation"
+        },
+        {
+          "level": "h3",
+          "title": "Self-directed improvement: Moving from passive to active learning"
+        },
+        {
+          "level": "h3",
+          "title": "Beyond prompts and weights: Code-level self-modification"
+        },
+        {
+          "level": "h3",
+          "title": "TPT: Reinforcing what works"
+        },
+        {
+          "level": "h3",
+          "title": "Reflect, retry, reward: Building metacognitive debugging skills"
+        },
+        {
+          "level": "h1",
+          "title": "Safe Evolution in Production"
+        },
+        {
+          "level": "h2",
+          "title": "The Full Evolutionary Loop"
+        },
+        {
+          "level": "h2",
+          "title": "The RPO and Graduated Validation Protocol"
+        },
+        {
+          "level": "h2",
+          "title": "Persistent Self-Learning Without Entropy Collapse"
+        },
+        {
+          "level": "h1",
+          "title": "A Note on Loop Engineering"
+        },
+        {
+          "level": "h1",
+          "title": "The DevOps Agent: Predictive Outage Detection in Practice"
+        },
+        {
+          "level": "h2",
+          "title": "The Scenario: A Library Update Triggers a Prediction"
+        },
+        {
+          "level": "h2",
+          "title": "Generating the Execution Graph"
+        },
+        {
+          "level": "h2",
+          "title": "The Cognitive Autopsy"
+        },
+        {
+          "level": "h2",
+          "title": "Semantic Backpropagation to the Causal Attribution Node"
+        },
+        {
+          "level": "h2",
+          "title": "The Improvement and Its Effect"
+        },
+        {
+          "level": "h2",
+          "title": "Inference-Time Knowledge Augmentation: Learning Without Retraining"
+        },
+        {
+          "level": "h2",
+          "title": "Skills as Self-Improving Graph Objects"
+        },
+        {
+          "level": "h3",
+          "title": "The add-cognify-search-learn pipeline"
+        },
+        {
+          "level": "h3",
+          "title": "The five-stage self-improvement loop"
+        },
+        {
+          "level": "h3",
+          "title": "Combined effect with XSkill"
+        },
+        {
+          "level": "h1",
+          "title": "Common Pitfalls"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0701.png",
+          "caption": "Figure 7-1. The multi-layered evaluation framework",
+          "alt": "Diagram of a multi-layered evaluation framework illustrating sequential diagnostic stages from execution graph through various layers, leading to a diagnostic report."
+        },
+        {
+          "file": "agrg_0702.png",
+          "caption": "Figure 7-2. Neighbor-aware semantic backpropagation",
+          "alt": "Diagram illustrating neighbor-aware semantic backpropagation, showing error assignment and feedback flow through the Extractor, DateChecker, CurrencyConverter, and Validator nodes."
+        },
+        {
+          "file": "agrg_0703.png",
+          "caption": "Figure 7-3. The graduated validation protocol",
+          "alt": "Diagram illustrating the three tiers of the graduated validation protocol, highlighting the increasing risk and scrutiny associated with each tier: Canary Release, Staging Gauntlet, and Airlock Protocol."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OEBPS/ch08.html",
+      "title": "Chapter 8. Optimization",
+      "charCount": 72957,
+      "wordCount": 9483,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 8. Optimization"
+        },
+        {
+          "level": "h1",
+          "title": "Selective Intelligence"
+        },
+        {
+          "level": "h2",
+          "title": "The Case for Model Specialization"
+        },
+        {
+          "level": "h2",
+          "title": "Routing Strategies"
+        },
+        {
+          "level": "h3",
+          "title": "Static routing by node type"
+        },
+        {
+          "level": "h3",
+          "title": "Threshold-based cascading"
+        },
+        {
+          "level": "h3",
+          "title": "Learned routing"
+        },
+        {
+          "level": "h2",
+          "title": "Measuring Cost-Performance Trade-Offs"
+        },
+        {
+          "level": "h1",
+          "title": "Data Governance and Access Control"
+        },
+        {
+          "level": "h2",
+          "title": "Subgraph-Level Access Control"
+        },
+        {
+          "level": "h2",
+          "title": "PII and Data Retention"
+        },
+        {
+          "level": "h2",
+          "title": "The Execution Graph as a Compliance Artifact"
+        },
+        {
+          "level": "h1",
+          "title": "Production Systems and Maintenance"
+        },
+        {
+          "level": "h2",
+          "title": "Schema Evolution"
+        },
+        {
+          "level": "h2",
+          "title": "Node and Edge Lifecycle Management"
+        },
+        {
+          "level": "h2",
+          "title": "Incremental Updates"
+        },
+        {
+          "level": "h2",
+          "title": "Deployment Patterns"
+        },
+        {
+          "level": "h1",
+          "title": "Hardware Acceleration"
+        },
+        {
+          "level": "h2",
+          "title": "GPU-Accelerated Graph Operations"
+        },
+        {
+          "level": "h2",
+          "title": "Inference Acceleration for Specialist Model Fleets"
+        },
+        {
+          "level": "h3",
+          "title": "Parallelization"
+        },
+        {
+          "level": "h3",
+          "title": "Optimized serving"
+        },
+        {
+          "level": "h3",
+          "title": "Specialized hardware"
+        },
+        {
+          "level": "h3",
+          "title": "Key-value cache as the binding concurrency constraint"
+        },
+        {
+          "level": "h2",
+          "title": "Latency Budgets"
+        },
+        {
+          "level": "h1",
+          "title": "The DevOps Agent: From Prototype to Production"
+        },
+        {
+          "level": "h2",
+          "title": "Applying Selective Intelligence"
+        },
+        {
+          "level": "h2",
+          "title": "Hardware Acceleration for Dependency Analysis"
+        },
+        {
+          "level": "h2",
+          "title": "Governance for Infrastructure Data"
+        },
+        {
+          "level": "h2",
+          "title": "The Completed Agent"
+        },
+        {
+          "level": "h1",
+          "title": "Common Pitfalls"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        },
+        {
+          "level": "h2",
+          "title": "Where the Field Is Heading"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing the Right Architecture for Your System"
+        },
+        {
+          "level": "h2",
+          "title": "Building What Comes Next"
+        }
+      ],
+      "figures": [
+        {
+          "file": "agrg_0801.png",
+          "caption": "Figure 8-1. Selective intelligence applied to the DevOps agent’s horizontal workflow graph",
+          "alt": "Diagram of the DevOps agent's horizontal workflow graph, showing nodes from deployment event to SRE report, illustrating the use of cost-effective models based on quality thresholds."
+        },
+        {
+          "file": "agrg_0802.png",
+          "caption": "Figure 8-2. Staged rollout for a graph-backed agentic system",
+          "alt": "Diagram illustrating the staged rollout process for a graph-backed agentic system, showing the coordination timeline of schema migration, data backfill, agent code deployment, and cleanup phases."
+        },
+        {
+          "file": "agrg_0803.png",
+          "caption": "Figure 8-3. A single deployment event flowing through the optimized DevOps agent pipeline",
+          "alt": "Diagram illustrating a deployment event flowing through a DevOps pipeline, with annotations showing how each step exercises different pillars and model tiers."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\agentic-graphrag\\ch08.txt"
+    }
+  ]
+}

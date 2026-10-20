@@ -6,15 +6,15 @@ export const arqCh06Mastery: ChapterMastery = {
   title: 'Are There Any Fallacies in the Reasoning?',
   subtitle:
     'Transitioning from structural mapping to evaluative auditing: uncovering faulty assumptions, personal attacks, narrative illusions, structural distortions, emotional diversions, and circular sleight of hand.',
-  readingTimeMinutes: 42,
+  readingTimeMinutes: 10,
   sourceWordCount: 6352,
   executiveThesis:
-    'Mapping an argument’s issue, conclusion, reasons, ambiguous terms, and hidden assumptions (Questions 1 through 4) completes the anatomical blueprint of a persuasive message; Chapter 6 initiates the evaluative phase by asking how acceptable the conclusion is in light of the reasons provided. Reasoning fallacies are not arcane Latin vocabulary items to be memorized in isolation—they are recurring, predictable species of defective assumptions and diversionary tricks that counterfeit logical support. Whether a communicator attacks the messenger (Ad Hominem), mistakes a coherent story for causal proof (Narrative Fallacy), invents a runaway catastrophe (Slippery Slope), rejects incremental progress because a problem is not 100% eradicated (Searching for Perfect Solutions), substitutes crowd popularity or non-expert status for evidence (Ad Populum, Questionable Authority), hijacks System 1 emotions (Appeal to Emotion, Glittering Generalities), distorts the decision space (Straw Person, False Dilemma, Explaining by Naming, Planning Fallacy), or smuggles the conclusion into the premise (Begging the Question), every fallacy collapses when you interrogate the warrant required to link the reason to the conclusion.',
+    'Mapping an argument’s issue, conclusion, reasons, ambiguous terms, and hidden assumptions (Questions 1 through 4) completes the anatomical blueprint of a persuasive message.',
   paradigmShift: {
     oldWay:
       'Taxonomic Fallacy Memorization: Treat logical fallacies as an intimidating glossary of Latin terms to recite on exams, while still falling prey to slick rhetoric whenever a persuasive pitch uses unfamiliar phrasing or emotionally resonant stories.',
     newWay:
-      'Assumption-First Diagnostic Interrogation: Treat every fallacy as a defective hidden warrant or attentional diversion; expose reasoning tricks without needing a label by asking what assumption must hold for the reason to prove the conclusion—and whether the speaker has shifted focus away from the real issue.',
+      'Assumption-First Diagnostic Interrogation: Treat every fallacy as a defective hidden warrant or attentional diversion.',
     whyItChanged:
       'Communicators rarely announce their logical shortcuts; by anchoring fallacy detection in the evaluation of descriptive and value assumptions established in Chapter 5, critical thinkers gain a universal detector that catches both named classic fallacies and novel rhetorical manipulations.',
   },
@@ -200,7 +200,7 @@ export const arqCh06Mastery: ChapterMastery = {
           step: '1',
           label: 'The Three-Step Red Herring Derailment',
           explanation:
-            'In Exercise D, Topic A asks whether pharmaceutical firms falsified safety data; introducing Topic B (that patients experience pain relief) lures the reader onto a new track so Topic A is forgotten.',
+            'In Exercise D, Topic A asks whether pharmaceutical firms falsified safety data.',
         },
         {
           step: '2',
@@ -212,7 +212,7 @@ export const arqCh06Mastery: ChapterMastery = {
           step: '3',
           label: 'Tautological Synonym Recycling',
           explanation:
-            'Begging the question creates the optical illusion of a "because" clause while offering zero independent evidence—claiming print textbooks aid learning because "textbook format" is advantageous.',
+            'Begging the question creates the optical illusion of a "because" clause while offering zero independent evidence.',
         },
       ],
     },
@@ -226,9 +226,9 @@ export const arqCh06Mastery: ChapterMastery = {
       naiveIntuition:
         'If a speaker follows a claim with the word "because" and cites an emotionally vivid story, a public poll, or an opponent’s character flaw, they have provided a reason that weighs against the conclusion.',
       firstPrinciplesReality:
-        'Chapters 1 through 5 assembled the raw gravel in the pan; Chapter 6 begins the evaluation phase where we separate genuine gold from fool’s gold. Every logical fallacy is simply a commonplace, pre-named species of a false or highly doubtful assumption. A reason flanked by a fallacious warrant contributes zero logical weight to the conclusion.',
+        'Chapters 1 through 5 assembled the raw gravel in the pan; Chapter 6 begins the evaluation phase where we separate genuine gold from fool’s gold.',
       howToApply:
-        'Before grading the truth of a reason, reconstruct the hidden assumption required to connect that reason to the conclusion. If the assumption is absurd (e.g., "Any policy proposed by a liberal senator is automatically bad for highways"), discard the reason immediately.',
+        'Before grading the truth of a reason, reconstruct the hidden assumption required to connect that reason to the conclusion.',
     },
     {
       id: 'arq-ch06-mm-make-sense-story',
@@ -238,9 +238,9 @@ export const arqCh06Mastery: ChapterMastery = {
       naiveIntuition:
         'When a sequence of observed facts fits neatly into a familiar causal storyline we have seen on television or in past cases, that storyline explains why the event happened.',
       firstPrinciplesReality:
-        'Coherence is a property of fiction, not a proof of causation. A single set of sparse facts (e.g., a video of a police car chasing a speeding vehicle and shooting the driver) is compatible with multiple competing causal histories. Assuming that the first "make-sense" narrative that springs to mind represents the true interaction of the facts is the Narrative Fallacy.',
+        'Coherence is a property of fiction, not a proof of causation.',
       howToApply:
-        'Whenever a commentator weaves a seamless story around an incident, list the missing variables (What happened before the camera started? What did the actor see? What is the local base rate?) and generate at least two rival narratives that fit the exact same visible facts.',
+        'Whenever a commentator weaves a seamless story around an incident, list the missing variables (What happened before the camera started?',
     },
     {
       id: 'arq-ch06-mm-tautological-label',
@@ -250,7 +250,7 @@ export const arqCh06Mastery: ChapterMastery = {
       naiveIntuition:
         'If we explain a roommate’s rude behavior by saying "he is a jerk," a father’s heavy drinking as a "midlife crisis," or a friend’s suspicion as "paranoia," we have identified the internal cause of their actions.',
       firstPrinciplesReality:
-        'A descriptive label merely summarizes the observed behavior; treating the label as the underlying cause creates a circular pseudo-explanation ("How do you know he has a bad temper? Because he acts angrily. Why does he act angrily? Because he has a bad temper."). Genuine explanation requires isolating independent biological, environmental, relational, and reinforcement factors.',
+        'A descriptive label merely summarizes the observed behavior; treating the label as the underlying cause creates a circular pseudo-explanation ("How do you know he has a bad temper?',
       howToApply:
         'Whenever someone answers a "Why did X happen?" question with a trait noun or diagnostic buzzword, ask: "What specific genetic, situational, or institutional mechanisms produced the behavior you just labeled?"',
     },
@@ -262,9 +262,9 @@ export const arqCh06Mastery: ChapterMastery = {
       naiveIntuition:
         'If we allow a regulator or legislature to restrict one harmful product (like television alcohol ads), nothing will stop them from banning ads for candy, milk, eggs, and butter.',
       firstPrinciplesReality:
-        'The Slippery Slope fallacy assumes an automatic, frictionless domino chain while ignoring the statutory boundaries, judicial review, voter pushback, and evidentiary hearings that govern every subsequent step. Complementarily, the Searching for Perfect Solutions fallacy rejects Step A because it reduces rather than 100% eliminates the problem.',
+        'The Slippery Slope fallacy assumes an automatic, frictionless domino chain while ignoring the statutory boundaries, judicial review, voter pushback, and evidentiary hearings that govern every subsequent step.',
       howToApply:
-        'Audit every catastrophe prediction by identifying the specific procedural, legal, or economic brakes that stand between Step 1 and Step 2; evaluate every policy proposal against the baseline of inaction rather than an imaginary 100% cure.',
+        'Audit every catastrophe prediction by identifying the specific procedural, legal, or economic brakes that stand between Step 1 and Step 2.',
     },
   ],
   deepSections: [
@@ -275,13 +275,13 @@ export const arqCh06Mastery: ChapterMastery = {
       subtitle:
         'Moving from argument anatomy (Questions 1–4) to evaluative judgment: how interrogating hidden assumptions exposes Ad Hominem, Narrative, Slippery Slope, and Perfect Solution fallacies.',
       coreMechanism:
-        'Chapters 1 through 5 equipped you to assemble the raw materials of a communication into a coherent structure: isolating the issue and conclusion (Question 1), identifying the reasons (Question 2), clarifying ambiguous words (Question 3), and uncovering the value and descriptive assumptions that act as the "invisible glue" holding the argument together (Question 4). Chapter 6 marks the transition from structural comprehension to explicit evaluation. The central question now becomes: "How acceptable is the conclusion in light of the reasons provided?" Like a prospector panning for gold, our task is to separate fool’s gold from genuine ore by testing whether the communicator’s reasoning relies on false assumptions or deceptive logical tricks called fallacies.\n\nLogical fallacies are simply shorthand names assigned to recurring, sloppy assumptions that appear so frequently in human discourse that critical thinkers benefit from having a shared vocabulary for them. However, Browne and Keeley emphasize a self-questioning strategy over rote memorization of lengthy fallacy glossaries: if you ask the right questions about an argument’s assumptions, you will detect the fallacy even if you forget its formal name. Consider the letter to the editor attacking Senator Spendall’s proposal for a state highway tax hike: "Of course the Senator favors such a hike. What else would you expect from a tax-and-spend liberal?" Or Julie dismissing Sandy’s arguments against sororities by saying, "Of course you would say that, you didn’t get accepted by any sorority... You’re just a sore loser." Both commit the Ad Hominem ("against the person") fallacy—attacking the messenger’s character, label, or motive instead of addressing the message’s reasons.\n\nEvaluating hidden assumptions directly exposes three additional foundational errors. First, in the Narrative Fallacy, humans observe a sequence of dots—such as a video of a police car chasing a speeding car, pulling over, and an officer shooting an African American driver—and immediately weave a "make-sense" story that the officer is one more violator of basic humanity, ignoring how little we know about whether the driver was fleeing an armed robbery, what the officer saw at the window, or the jurisdiction’s track record. Second, in the FCC alcohol advertising passage, opponents argue that letting the FCC ban radio/TV alcohol ads will inevitably lead to banning ads for candy, milk, eggs, butter, and ice cream (the Slippery Slope fallacy, which falsely assumes that taking action on one case makes it impossible to stop unjustified actions on other cases despite legal safeguards). Third, the same passage argues that no federal action can eliminate alcohol consumption completely—just as a homeowner might claim a home security system is a waste of money because determined thieves will break in anyway. This commits the Searching for Perfect Solutions fallacy: falsely assuming that because part of a problem remains after an intervention is tried, the partial solution should be rejected.',
+        'Chapters 1 through 5 equipped you to assemble the raw materials of a communication into a coherent structure: isolating the issue and conclusion (Question 1), identifying the reasons (Question 2), clarifying ambiguous words (Question 3), and uncovering the value and descriptive assumptions that act as the "invisible glue" holding the argument together (Question 4). Chapter 6 marks the transition from structural comprehension to explicit evaluation.\n\nLogical fallacies are simply shorthand names assigned to recurring, sloppy assumptions that appear so frequently in human discourse that critical thinkers benefit from having a shared vocabulary for them. However, Browne and Keeley emphasize a self-questioning strategy over rote memorization of lengthy fallacy glossaries: if you ask the right questions about an argument’s assumptions, you will detect the fallacy even if you forget its formal name.',
       stepByStepFlow: [
         {
           step: '1',
           title: 'Outline the Issue, Conclusion, and Reasons',
           detail:
-            'Write down the exact conclusion and the stated reasons before judging quality (e.g., Conclusion: The FCC should not prohibit alcohol ads; Reasons: 1. It will lead to banning milk/egg ads; 2. It will not eliminate drinking completely).',
+            'Write down the exact conclusion and the stated reasons before judging quality (e.g., Conclusion: The FCC should not prohibit alcohol ads; Reasons: 1.',
         },
         {
           step: '2',
@@ -302,32 +302,14 @@ export const arqCh06Mastery: ChapterMastery = {
             'Verify that the reason addresses the policy merits rather than the speaker’s identity (Ad Hominem) and does not mistake a plausible story for verified causal links (Narrative Fallacy).',
         },
       ],
-      formulas: [
-        {
-          name: 'Fallacy-as-Defective-Warrant Diagnostic Identity',
-          expression:
-            '\\text{Acceptability}(C \\mid R) = P(R) \\times P(W_{\\text{link}} \\mid \\text{Evidence}) \\quad ; \\quad \\text{Fallacy} \\iff P(W_{\\text{link}}) \\approx 0',
-          intuition:
-            'Even when a stated premise R is factually true (e.g., Senator Spendall is a liberal, or a security system cannot stop 100% of burglars), the support it transfers to conclusion C collapses to zero when the linking assumption W_link is false or absurd.',
-          variables: [
-            { symbol: 'R', meaning: 'Stated reason offered by the communicator' },
-            { symbol: 'C', meaning: 'Target conclusion the communicator wants you to accept' },
-            { symbol: 'W_{link}', meaning: 'Hidden descriptive or value assumption required to make R relevant to C' },
-          ],
-          workedExample:
-            'In the FCC alcohol ad argument, Reason 2 ("No federal action will eliminate alcohol consumption completely") is factually true, so P(R) = 1.0. However, the linking warrant W_link ("A policy should only be adopted if it eliminates 100% of the problem") is false (P(W_link) = 0), rendering the reason a Searching for Perfect Solutions fallacy.',
-        },
-      ],
       keyTakeaways: [
-        'A logical fallacy is a reasoning "trick" resting on a sloppy, commonplace assumption or diversion; you can expose it by questioning assumptions even without knowing its Latin name.',
-        'Ad Hominem attacks the arguer’s reputation, group affiliation, or personal motives ("tax-and-spend liberal", "sore loser") rather than refuting their reasons.',
-        'The Narrative Fallacy confuses the psychological comfort of a coherent "make-sense" story with empirical proof of how facts are causally linked.',
-        'Slippery Slope ignores institutional brakes capable of stopping an undesirable chain of events, while Searching for Perfect Solutions paralyzes action by demanding a 100% cure.',
-      ],
+          'A logical fallacy is a reasoning "trick" resting on a sloppy, commonplace assumption or diversion.',
+          'Ad Hominem attacks the arguer’s reputation, group affiliation, or personal motives ("tax-and-spend liberal", "sore loser") rather than refuting their reasons.',
+        ],
       commonPitfalls: [
-        'Dismissing a partial policy improvement (such as seat belts, vaccines, or ad restrictions) because some residual risk or problem remains after adoption.',
-        'Filling in unrecorded facts in a viral video clip with a pre-existing mental script and treating the resulting story as established reality.',
-      ],
+          'Dismissing a partial policy improvement (such as seat belts, vaccines, or ad restrictions) because some residual risk or problem remains after adoption.',
+          'Filling in unrecorded facts in a viral video clip with a pre-existing mental script and treating the resulting story as established reality.',
+        ],
     },
     {
       id: 'arq-ch06-sec-6-2',
@@ -336,7 +318,7 @@ export const arqCh06Mastery: ChapterMastery = {
       subtitle:
         'Deconstructing Equivocation, Ad Populum, Appeal to Questionable Authority, and Appeal to Emotion across shifting definitions, public polls, associations, and charged rhetoric.',
       coreMechanism:
-        'When communicators lack rigorous empirical evidence for a controversial claim, they frequently exploit semantic ambiguity (Equivocation—shifting the meaning of a key term mid-argument after leaving it ambiguous under Question 3) or substitute social consensus, impressive-sounding titles, and raw emotional arousal in place of warranted reasons. Consider Exercise A from the text, which argues that smoking marijuana should be a medical option for chronic pain because (1) society approves drugs when consensus is reached and a recent public opinion survey shows 73 percent favor allowing medical marijuana, and (2) the California Association for the Treatment of AIDS Victims supports it. Outlining this structure immediately reveals how ambiguity and faulty warrants interlock: first, the word "consensus" equivocates between regulatory consensus among clinical pharmacologists (the standard for approving drugs) and a casual opinion poll of the general public.\n\nSecond, citing the 73 percent poll relies on the hidden assumption that whenever a belief is favored by a large majority, it must be scientifically sound or desirable. Because the general public rarely studies clinical pharmacology or controlled trial data in depth before answering a poll, appealing to popular sentiment commits the Appeal to Popularity (Ad Populum) fallacy. Third, citing "the California Association for the Treatment of AIDS Victims" assumes that an organization’s name guarantees specialized medical evidence. Unless we know what specific clinical evidence the association used and whether its members possess relevant medical expertise, citing them commits the Appeal to Questionable Authority fallacy—supporting a conclusion by invoking an authority who lacks special expertise or verified evidence on the issue at hand.\n\nA fourth pervasive substitution occurs in Exercise B, where a speaker opposes a federally funded child development day-care program by claiming children "need to be protected from social planners and self-righteous ideologues who would disrupt the normal course of children’s lives and tear them from their mothers and families to make them pawns in a universal scheme." Searching this passage for specific facts about the day-care legislation yields nothing; instead, the prose is saturated with emotionally loaded phrases designed to trigger fear and outrage. Crucially, Browne and Keeley note that human emotion itself is not a fallacy: feeling moral outrage when hospitals are bombed or when thousands of women are subjected to sexual slavery is essential to our humanity, and persuading others toward an emotional reaction using solid reasons and evidence is entirely legitimate. The Appeal to Emotion fallacy occurs specifically when a communicator stimulates emotions (fear, hope, patriotism, pity, sympathy) through charged language and relies on that emotional surge—rather than warrants and evidence—to win agreement with a conclusion, a tactic rampant in advertising, political debates, and courtrooms.',
+        'When communicators lack rigorous empirical evidence for a controversial claim, they frequently exploit semantic ambiguity (Equivocation—shifting the meaning of a key term mid-argument after leaving it ambiguous under Question 3) or substitute social consensus, impressive-sounding titles, and raw emotional arousal in place of warranted reasons. Consider Exercise A from the text, which argues that smoking marijuana should be a medical option for chronic pain because (1) society approves drugs when consensus is reached and a recent public opinion survey shows 73 percent favor allowing medical marijuana, and (2) the California Association for the Treatment of AIDS Victims supports it.\n\nSecond, citing the 73 percent poll relies on the hidden assumption that whenever a belief is favored by a large majority, it must be scientifically sound or desirable. Because the general public rarely studies clinical pharmacology or controlled trial data in depth before answering a poll, appealing to popular sentiment commits the Appeal to Popularity (Ad Populum) fallacy.',
       stepByStepFlow: [
         {
           step: '1',
@@ -357,31 +339,14 @@ export const arqCh06Mastery: ChapterMastery = {
             'Rewrite the passage without emotionally charged labels ("self-righteous ideologues", "pawns in a universal scheme") and inspect whether any concrete facts or policy mechanisms remain.',
         },
       ],
-      formulas: [
-        {
-          name: 'Warrant Substitution vs. Evidentiary Support Ratio',
-          expression:
-            '\\text{Emotional/Social Noise Ratio} = \\frac{\\text{Charged Terms} + \\text{Unverified Authority/Poll Citations}}{\\text{Verifiable Empirical Mechanisms} + 1}',
-          intuition:
-            'As the density of emotionally loaded triggers, popularity polls, and unvetted authority labels rises without accompanying empirical facts, the argument’s rational warrant approaches zero.',
-          variables: [
-            { symbol: 'Charged Terms', meaning: 'Fear, pity, patriotism, or outrage triggers ("tear from mothers", "ideologues")' },
-            { symbol: 'Unverified Citations', meaning: 'Polls of laypeople on technical issues or authorities outside their domain' },
-            { symbol: 'Empirical Mechanisms', meaning: 'Specific statutory provisions, clinical data, or verified causal links' },
-          ],
-          workedExample:
-            'In Exercise B (child development program), the passage contains 6+ emotionally charged phrases ("social planners", "self-righteous ideologues", "tear them from their mothers", "pawns in a universal scheme") and 0 statutory facts about how the day-care centers actually operate.',
-        },
-      ],
       keyTakeaways: [
-        'Appeal to Popularity (Ad Populum) falsely equates majority public sentiment or polling numbers with truth or policy wisdom.',
-        'Appeal to Questionable Authority invokes individuals, politicians, or associations lacking specialized expertise or transparent evidence on the topic.',
-        'Emotional reactions to atrocities (bombed hospitals, human trafficking) are healthy and humane; the Appeal to Emotion fallacy occurs only when charged language substitutes for reasons and evidence.',
-      ],
+          'Appeal to Popularity (Ad Populum) falsely equates majority public sentiment or polling numbers with truth or policy wisdom.',
+          'Appeal to Questionable Authority invokes individuals, politicians, or associations lacking specialized expertise or transparent evidence on the topic.',
+        ],
       commonPitfalls: [
-        'Assuming that an organization with a scientific- or medical-sounding name automatically bases its political positions on peer-reviewed data.',
-        'Dismissing an entire argument just because the speaker uses passionate language, without checking whether solid evidence is also present alongside the emotion.',
-      ],
+          'Assuming that an organization with a scientific- or medical-sounding name automatically bases its political positions on peer-reviewed data.',
+          'Dismissing an entire argument just because the speaker uses passionate language, without checking whether solid evidence is also present alongside the emotion.',
+        ],
     },
     {
       id: 'arq-ch06-sec-6-3',
@@ -390,7 +355,7 @@ export const arqCh06Mastery: ChapterMastery = {
       subtitle:
         'How caricaturing opponents, collapsing multi-option choices into binary traps, tautological naming, and optimism bias short-circuit critical analysis.',
       coreMechanism:
-        'Beyond emotional language, Exercise B illustrates two structural distortions that falsify the decision space itself. First, by claiming the federal child development program will "tear children from their mothers... to make them pawns in a universal scheme," the writer fabricates an extreme, non-existent version of the legislation that is effortless to knock down. Assuming that this caricatured target is identical to the actual legislative proposal commits the Straw Person fallacy. The only reliable defense against a straw person is to obtain the primary facts about what the opposing position actually proposes.\n\nSecond, the writer asserts that the issue is "whether parents shall continue to have the right to form the characters of their children, or whether the state with all its power should be given the tools and techniques for forming the young." Like Britney Spears declaring in Circus that "There are only two types of people in the world: the ones that entertain and the ones that observe," or a politician replying "Why do you hate America?" to a citizen who criticizes the decision to invade Iraq, this commits the Either-Or (False Dilemma) fallacy. It assumes only two mutually exclusive choices exist when hybrid possibilities—such as voluntary day-care programs coexisting with strong family character formation—are readily available. Caution phrases such as "either... or," "the only alternative is," "the two choices are," and "because A has not worked, only B will" serve as diagnostic tripwires prompting you to ask: "Are there more than two options here?"\n\nTwo further fallacies corrupt our causal and predictive judgments about human behavior. When Dan asks why his roommate Chuck has been rude and making messes in the residence hall, Kevin replies, "He is just a jerk." When an adult daughter asks why her father is drinking heavily, her mother replies, "He’s having a midlife crisis." When a psychologist explains a friend’s constant worry that others are talking about him by saying, "Because he is paranoid," each respondent commits the Explaining by Naming fallacy. Explaining behavior requires analyzing a complex sequence of internal and external causes—genes, job pressures, marital strife, parental reinforcement, or feelings of helplessness. Merely attaching a label ("jerkhood", "bad temper", "hostile", "midlife crisis", "paranoid") tricks us into believing we have discovered an internal cause when we have only renamed the symptom. Finally, while past behavior is usually the best predictor of future behavior, humans routinely fall prey to an optimism bias called the Planning Fallacy—postponing a required report until right before the deadline or underestimating organizational project timelines despite repeated prior experiences of missing deadlines.',
+        'Beyond emotional language, Exercise B illustrates two structural distortions that falsify the decision space itself. First, by claiming the federal child development program will "tear children from their mothers... to make them pawns in a universal scheme," the writer fabricates an extreme, non-existent version of the legislation that is effortless to knock down.\n\nSecond, the writer asserts that the issue is "whether parents shall continue to have the right to form the characters of their children, or whether the state with all its power should be given the tools and techniques for forming the young." Like Britney Spears declaring in Circus that "There are only two types of people in the world: the ones that entertain and the ones that observe," or a politician replying "Why do you hate America?" to a citizen who criticizes the decision to invade Iraq, this commits the Either-Or (False Dilemma) fallacy. It assumes only two mutually exclusive choices exist when hybrid possibilities.',
       stepByStepFlow: [
         {
           step: '1',
@@ -417,32 +382,14 @@ export const arqCh06Mastery: ChapterMastery = {
             'Override wishful thinking in personal deadlines and organizational schedules by consulting historical completion times for similar tasks (Planning Fallacy check).',
         },
       ],
-      formulas: [
-        {
-          name: 'Option-Space Compression & Planning Optimism Bias',
-          expression:
-            '|\\Omega_{\\text{false dilemma}}| = 2 \\ll |\\Omega_{\\text{actual}}| \\quad ; \\quad T_{\\text{predicted}} = T_{\\text{optimistic}} \\ll \\mathbb{E}[T_{\\text{historical base rate}}]',
-          intuition:
-            'An Either-Or fallacy artificially compresses a rich N-dimensional set of policy choices Omega_actual into a binary set of size 2; the Planning Fallacy ignores historical completion distributions E[T_historical] in favor of an unrealistic best-case scenario.',
-          variables: [
-            { symbol: '\\Omega_{actual}', meaning: 'Full spectrum of feasible policy or behavioral combinations' },
-            { symbol: 'T_{predicted}', meaning: 'Subjective time estimate clouded by wishful thinking' },
-            { symbol: 'E[T_{historical}]', meaning: 'Empirical average time required across prior similar tasks' },
-          ],
-          workedExample:
-            'In the child development debate, |Omega_false dilemma| = 2 (100% parental exclusivity vs. 100% state indoctrination), whereas |Omega_actual| includes part-time voluntary child care, tax credits, and parental oversight boards.',
-        },
-      ],
       keyTakeaways: [
-        'Straw Person replaces a nuanced opposing argument with a fabricated, easy-to-defeat caricature.',
-        'Either-Or (False Dilemma) forces a binary choice where multiple hybrid or intermediate alternatives exist.',
-        'Explaining by Naming mistakes a descriptive label ("hostile", "paranoid", "midlife crisis") for a causal analysis of genetic, social, and situational factors.',
-        'The Planning Fallacy is a systematic optimism bias where individuals and organizations underestimate task duration despite repeated historical overruns.',
-      ],
+          'Straw Person replaces a nuanced opposing argument with a fabricated, easy-to-defeat caricature.',
+          'Either-Or (False Dilemma) forces a binary choice where multiple hybrid or intermediate alternatives exist.',
+        ],
       commonPitfalls: [
-        'Treating every appearance of the words "either... or" as a fallacy without checking whether the specific domain genuinely has only two states.',
-        'Accepting a clinical or colloquial label as the end of an inquiry rather than the starting point for investigating root causes.',
-      ],
+          'Treating every appearance of the words "either... or" as a fallacy without checking whether the specific domain genuinely has only two states.',
+          'Accepting a clinical or colloquial label as the end of an inquiry rather than the starting point for investigating root causes.',
+        ],
     },
     {
       id: 'arq-ch06-sec-6-4',
@@ -451,7 +398,7 @@ export const arqCh06Mastery: ChapterMastery = {
       subtitle:
         'How virtue-word fog, topic switching, and circular restatements evade scrutiny—and how to use fallacy detection constructively.',
       coreMechanism:
-        'Communicators who cannot defend their claims on the merits frequently succeed by preventing the audience from looking closely at the relevant reasons. One major diversionary tactic appears in Exercise C, a political speech urging voters to support Senator Goodheart because she "represents the future of this great nation, who has fought for democracy and defended our flag... pursuing the American Dream... peace, prosperity, and freedom. A vote for Goodheart is a vote for truth, vision, and common sense." The speech provides zero specifics about her voting record or policy positions; instead, it deploys "virtue words" that carry deep-seated positive associations and are so vague they mean whatever the listener wants them to mean. This is the Glittering Generality fallacy—the mirror image ("name-calling in reverse") of negative emotional labeling, designed to win approval without examining specific policy trade-offs that might trigger disagreement.\n\nA second diversionary maneuver is the Red Herring fallacy, illustrated in Exercise D: "I don’t understand why everyone is so upset about drug companies’ distorting research data in order to make their painkiller drugs seem to be less dangerous... Taking those drugs can’t be that bad. After all, there are still thousands of people using these drugs and getting pain relief from them." Here, the original issue (Topic A) is whether drug companies misled the public by distorting safety data. By pointing out that patients get pain relief (Topic B), the speaker draws a "red herring" across the trail of the original issue. The same sequence occurs when a mother asks, "Why did you lie to me about where you were going with your boyfriend?" and the daughter replies, "You’re always picking on me." Every Red Herring follows a three-step sequence: (a) Topic A is under discussion; (b) Topic B is introduced as though relevant to Topic A, when it is not; and (c) Topic A is abandoned.\n\nOur final deceptive maneuver is Sleight of Hand: Begging the Question, in which a conclusion is supported by itself with only the words changed to fool the innocent. Arguing that "dropping out of school is undesirable because it is bad" offers no argument at all. A subtler version states: "Reading traditional textbooks is superior to reading E-texts in learning effectiveness because it is highly advantageous for learning to have materials made available in a textbook format." Because traditional textbooks are, by definition, in a textbook format, the reason merely repeats the conclusion in different words rather than offering an independent advantage like higher material retention. When you spot any fallacy, you have a legitimate basis for rejecting that faulty reason; in constructive oral conversation, your best move is to politely ask the speaker whether they have stronger, relevant reasons or ask them to return to the original issue.',
+        'Communicators who cannot defend their claims on the merits frequently succeed by preventing the audience from looking closely at the relevant reasons. One major diversionary tactic appears in Exercise C, a political speech urging voters to support Senator Goodheart because she "represents the future of this great nation, who has fought for democracy and defended our flag... pursuing the American Dream... peace, prosperity, and freedom.\n\nA second diversionary maneuver is the Red Herring fallacy, illustrated in Exercise D: "I don’t understand why everyone is so upset about drug companies’ distorting research data in order to make their painkiller drugs seem to be less dangerous... Taking those drugs can’t be that bad.',
       stepByStepFlow: [
         {
           step: '1',
@@ -463,13 +410,13 @@ export const arqCh06Mastery: ChapterMastery = {
           step: '2',
           title: 'Pin Topic A to Catch Red Herring Topic Shifts',
           detail:
-            'Write the exact original question at the top of your page; if the speaker shifts to an adjacent tangent (Topic B), explicitly redirect the conversation back to Topic A.',
+            'Write the exact original question at the top of your page.',
         },
         {
           step: '3',
           title: 'Test for Independence Between Reason and Conclusion',
           detail:
-            'Place the stated reason and conclusion side by side; if the reason is a definitional synonym or restatement of the conclusion, reject it as Begging the Question.',
+            'Place the stated reason and conclusion side by side.',
         },
         {
           step: '4',
@@ -478,32 +425,14 @@ export const arqCh06Mastery: ChapterMastery = {
             'Instead of ending the conversation when a fallacy appears, ask the speaker if they can offer better, non-fallacious reasons supporting their conclusion.',
         },
       ],
-      formulas: [
-        {
-          name: 'Red Herring Topic Drift & Begging-the-Question Zero-Distance Identity',
-          expression:
-            '\\text{Red Herring}: \\text{Topic } A \\xrightarrow{\\text{inject } B \\perp A} \\text{Abandon } A \\quad ; \\quad \\text{Begging the Question}: D_{\\text{semantic}}(R, C) = 0',
-          intuition:
-            'A Red Herring rotates the discussion vector to an orthogonal topic B (B perpendicular to A) so A is dropped; Begging the Question has zero semantic distance between the premise R and conclusion C.',
-          variables: [
-            { symbol: 'Topic A', meaning: 'The actual controversy under audit (e.g., research fraud or lying to a parent)' },
-            { symbol: 'Topic B', meaning: 'Irrelevant tangent introduced to hijack attention (e.g., painkiller efficacy or parental nagging)' },
-            { symbol: 'D_{semantic}(R, C)', meaning: 'Informational independence between the supporting reason and the target claim' },
-          ],
-          workedExample:
-            'In the textbook argument, C = "Traditional print textbooks produce better learning than E-texts" and R = "Having materials in a textbook format is advantageous for learning." Because "traditional print textbook" == "textbook format", D_semantic(R, C) = 0.',
-        },
-      ],
       keyTakeaways: [
-        'Glittering Generalities operate as name-calling in reverse, using vague virtue words ("democracy", "American Dream", "common sense") to bypass policy scrutiny.',
-        'Red Herring follows a strict (a) Topic A -> (b) Irrelevant Topic B -> (c) Abandon Topic A sequence; keeping the real issue in mind makes it easy to spot.',
-        'Begging the Question assumes the conclusion inside the reasoning, either by restating the claim in synonyms or using the conclusion to prove the premises.',
-        'Constructive critical thinkers do not merely score points by naming fallacies; in live dialogue, they invite the speaker to return to the issue and supply stronger reasons.',
-      ],
+          'Glittering Generalities operate as name-calling in reverse, using vague virtue words ("democracy", "American Dream", "common sense") to bypass policy scrutiny.',
+          'Red Herring follows a strict (a) Topic A -> (b) Irrelevant Topic B -> (c) Abandon Topic A sequence.',
+        ],
       commonPitfalls: [
-        'Allowing an opponent in a meeting or debate to shift the argument onto your tone or past grievances (Topic B) instead of answering the original question (Topic A).',
-        'Being fooled by multi-syllable restatements where a technical-sounding "because" clause simply defines the subject of the conclusion.',
-      ],
+          'Allowing an opponent in a meeting or debate to shift the argument onto your tone or past grievances (Topic B) instead of answering the original question (Topic A).',
+          'Being fooled by multi-syllable restatements where a technical-sounding "because" clause simply defines the subject of the conclusion.',
+        ],
     },
     {
       id: 'arq-ch06-sec-6-5',
@@ -512,7 +441,7 @@ export const arqCh06Mastery: ChapterMastery = {
       subtitle:
         'Mastering the 14-point rejection checklist, consulting Damer’s Attacking Faulty Reasoning, and deconstructing the three chapter practice passages.',
       coreMechanism:
-        'Browne and Keeley consolidate Chapter 6 into a fourteen-point diagnostic checklist specifying when you should reject a communicator’s reasoning: whenever the communicator (1) attacks the person rather than ideas (Ad Hominem), (2) confuses a make-sense story with reality (Narrative Fallacy), (3) uses slippery slope reasoning, (4) reflects a search for perfect solutions, (5) inappropriately appeals to common opinion (Ad Populum), (6) appeals to questionable authority, (7) appeals to emotions, (8) attacks a straw person, (9) presents a faulty dilemma (Either-Or), (10) explains by naming, (11) underestimates project completion time via optimism bias (Planning Fallacy), (12) distracts with glittering generalities, (13) introduces a red herring to divert attention from the issue, or (14) begs the question. Additional fallacies connected to evidence, causation, and statistics are reserved for Chapters 7 through 10, and readers seeking an exhaustive encyclopedia of logical errors are directed to T. Edward Damer’s classic text Attacking Faulty Reasoning.\n\nApplying this checklist to the chapter’s three Practice Passages demonstrates how multiple fallacies interlock inside real-world polemics. In Passage 1 (opposing state legalization of gay marriage), the conclusion is that gay marriage is wrong and should not be legalized, supported by five flawed reasons: (1) claiming state legislatures were infiltrated by "the gay agenda" and "the liberal media" commits an Ad Hominem attack on the character and independence of lawmakers instead of addressing their legal reasoning; (2) claiming these laws "destroy the traditional morals of this great nation" relies on an Appeal to Emotion; (3) noting that "several politicians still agree" commits an Appeal to Questionable Authority without citing their evidence; (4) warning that legalizing gay marriage makes it "only a matter of time" before polygamy or incest are legalized commits the Slippery Slope fallacy; and (5) asserting that marriage must remain between a man and a woman or else "it’s inevitable that the morals of the American people will fall by the wayside" creates an Either-Or (False Dilemma), ignoring how families, schools, and communities shape morality regardless of marriage statutes.\n\nIn Passage 2 (opposing a campus ban on fraternity parties), the writer begins with Ad Hominem and name-calling ("Only an idiot would ban fraternity parties... Most of the complaints come from antisocial loners, people who hate parties"), relies on wishful thinking and personal anecdote ("I’ve held several fraternity parties... and nothing has ever gone wrong"), commits Searching for Perfect Solutions ("I have seen other parties off campus... where assaults happened," assuming a campus ban is pointless unless it stops all assaults everywhere), and finishes with a Slippery Slope ("Once administrators ban fraternity parties, their next step will be to ban any sort of social event on campus where alcohol is permitted"). Similarly, in Passage 3, Bill uses Either-Or and emotional name-calling ("Any country that does not relinquish terrorists to the American justice system is clearly on the side of the terrorists... hiding murderers, rapists, thieves"), while Taylor retaliates with an Ad Hominem attack on Bill’s family ("someone who has relatives who have worked for the CIA") followed by a Slippery Slope ("eventually almost all countries will be considered our enemies, and we will be left with no allies").',
+        'Browne and Keeley consolidate Chapter 6 into a fourteen-point diagnostic checklist specifying when you should reject a communicator’s reasoning: whenever the communicator (1) attacks the person rather than ideas (Ad Hominem), (2) confuses a make-sense story with reality (Narrative Fallacy), (3) uses slippery slope reasoning, (4) reflects a search for perfect solutions, (5) inappropriately appeals to common opinion (Ad Populum), (6) appeals to questionable authority, (7) appeals to emotions, (8) attacks a straw person, (9) presents a faulty dilemma (Either-Or), (10) explains by naming, (11) underestimates project completion time via optimism bias (Planning Fallacy), (12) distracts with glittering generalities, (13) introduces a red herring to divert attention from the issue, or (14) begs the question. Additional fallacies connected to evidence, causation, and statistics are reserved for Chapters 7 through 10, and readers seeking an exhaustive encyclopedia of logical errors are directed to T.\n\nApplying this checklist to the chapter’s three Practice Passages demonstrates how multiple fallacies interlock inside real-world polemics. In Passage 1 (opposing state legalization of gay marriage), the conclusion is that gay marriage is wrong and should not be legalized, supported by five flawed reasons: (1) claiming state legislatures were infiltrated by "the gay agenda" and "the liberal media" commits an Ad Hominem attack on the character and independence of lawmakers instead of addressing their legal reasoning.',
       stepByStepFlow: [
         {
           step: '1',
@@ -530,18 +459,17 @@ export const arqCh06Mastery: ChapterMastery = {
           step: '3',
           title: 'Articulate Why the Hidden Assumption Fails',
           detail:
-            'Do not stop at naming the fallacy; write one clear sentence explaining what reality the fallacy ignores (e.g., why banning fraternity parties does not force administrators to ban all campus events).',
+            'Do not stop at naming the fallacy.',
         },
       ],
       keyTakeaways: [
-        'Real-world persuasive passages rarely commit just one fallacy; they typically stack Ad Hominem, Appeal to Emotion, Slippery Slope, and False Dilemma in a single paragraph.',
-        'Outlining the Conclusion and numbered Reasons first prevents you from getting swept away by rhetorical heat during fallacy diagnosis.',
-        'Even if an opponent commits a fallacy (like Bill in Passage 3), responding with a counter-fallacy (like Taylor’s CIA Ad Hominem and Slippery Slope) weakens your own credibility.',
-      ],
+          'Real-world persuasive passages rarely commit just one fallacy.',
+          'Outlining the Conclusion and numbered Reasons first prevents you from getting swept away by rhetorical heat during fallacy diagnosis.',
+        ],
       commonPitfalls: [
-        'Slapping a fallacy label on an argument without explaining which specific assumption is false or how attention was diverted.',
-        'Missing the Searching for Perfect Solutions fallacy when a speaker argues that a campus or local regulation is "pointless" because the problem also occurs off-campus.',
-      ],
+          'Slapping a fallacy label on an argument without explaining which specific assumption is false or how attention was diverted.',
+          'Missing the Searching for Perfect Solutions fallacy when a speaker argues that a campus or local regulation is "pointless" because the problem also occurs off-campus.',
+        ],
       figures: [
         {
           file: 'arq_ch06_plate.png',
@@ -549,11 +477,11 @@ export const arqCh06Mastery: ChapterMastery = {
             'Chapter 6 Opening Blueprint: Are There Any Fallacies in the Reasoning? (Page 86)',
           bierutTitle: 'Transitioning from Structural Panning to Evaluative Fallacy Auditing',
           editorialAnalysis:
-            'The Chapter 6 opening blueprint positions Critical Question 5 ("Are there any fallacies in the reasoning?") as the bridge between structural comprehension (Questions 1–4: Issue/Conclusion, Reasons, Ambiguity, and Assumptions) and central focus evaluation ("How acceptable is the conclusion in light of the reasons provided?"). By framing fallacies as named varieties of defective assumptions, the blueprint integrates fallacy detection directly into the critical thinking workflow.',
+            'The Chapter 6 opening blueprint positions Critical Question 5 ("Are there any fallacies in the reasoning?") as the bridge between structural comprehension (Questions 1–4: Issue/Conclusion, Reasons, Ambiguity, and Assumptions) and central focus evaluation ("How acceptable is the conclusion in light of the reasons provided?").',
           keyTakeaways: [
-            'Questions 1–4 assemble the argument’s structure; Question 5 begins the explicit judgment of reasoning worth.',
-            'Every fallacy represents either a false/doubtful linking assumption or a diversion away from the real issue.',
-          ],
+          'Questions 1–4 assemble the argument’s structure; Question 5 begins the explicit judgment of reasoning worth.',
+          'Every fallacy represents either a false/doubtful linking assumption or a diversion away from the real issue.',
+        ],
         },
       ],
     },
@@ -696,9 +624,9 @@ export const arqCh06Mastery: ChapterMastery = {
       naiveFixAndWhyItFails:
         'Arguing defensively that FIDO2 is virtually unbreakable or promising verbally that the security team "has good intentions" fails because it concedes the VP’s faulty linking assumptions and lets the debate stall in speculative hypotheticals.',
       firstPrinciplesSolution:
-        'Apply Chapter 6 assumption auditing directly to both objections. First, expose Objection 1 as the Searching for Perfect Solutions fallacy: explicitly state the hidden assumption ("A security control should only be adopted if it eliminates 100% of all cyberattack vectors") and replace it with a risk-reduction metric (eliminating credential phishing, which accounts for 78% of initial breaches). Second, expose Objection 2 as the Slippery Slope fallacy: point out the institutional brakes (CI/CD blocking rules require sign-off from the joint Engineering-Security Governance Council and are strictly scoped to high-entropy cryptographic keys).',
+        'Apply Chapter 6 assumption auditing directly to both objections.',
       measurableOutcome:
-        'The review board approves the FIDO2 and secret-scanning rollout within one meeting; phishing-related account takeovers drop to zero over the next 12 months while CI/CD false-positive build blocks remain below 0.3%.',
+        'The review board approves the FIDO2 and secret-scanning rollout within one meeting.',
     },
     {
       id: 'arq-ch06-scen-incident-postmortem',
@@ -710,7 +638,7 @@ export const arqCh06Mastery: ChapterMastery = {
       naiveFixAndWhyItFails:
         'Accepting "systemic fragility" and "carelessness" as root causes or pivoting the meeting to celebrate Black Friday uptime leaves the actual deployment pipeline defects untouched, guaranteeing a repeat outage.',
       firstPrinciplesSolution:
-        'Audit the postmortem using three Chapter 6 diagnostics: (1) Reject "systemic fragility" and "carelessness" as Explaining by Naming—demand the concrete mechanical sequence (an unindexed foreign-key lock acquired inside a synchronous transaction without a lock_timeout guard); (2) Flag the Black Friday boast as a textbook Red Herring (Topic A: why the migration locked the table; Topic B: historical Black Friday revenue) and bring the room back to Topic A; (3) Prevent the Planning Fallacy on remediation action items by anchoring migration-tooling estimates in historical sprint velocity.',
+        'Audit the postmortem using three Chapter 6 diagnostics: (1) Reject "systemic fragility" and "carelessness" as Explaining by Naming.',
       measurableOutcome:
         'The team replaces vague label-blaming with an automated DDL lock-timeout linter in CI, cutting migration-induced lock incidents by 100% across the next four quarters.',
     },
@@ -727,7 +655,7 @@ export const arqCh06Mastery: ChapterMastery = {
             text: 'Searching for Perfect Solutions and Slippery Slope',
             isCorrect: true,
             explanation:
-              'Rejecting protected bike lanes because they do not eliminate 100% of all cycling injuries commits Searching for Perfect Solutions; assuming that converting one lane will inevitably force a total ban on downtown cars despite voter and statutory brakes commits the Slippery Slope fallacy.',
+              'Rejecting protected bike lanes because they do not eliminate 100% of all cycling injuries commits Searching for Perfect Solutions.',
           },
           {
             label: 'B',
@@ -762,7 +690,7 @@ export const arqCh06Mastery: ChapterMastery = {
             text: 'It commits the Red Herring fallacy by shifting attention from code reviews to sprint deadlines.',
             isCorrect: false,
             explanation:
-              'Both missed deadlines and code-review friction were part of the original question; the flaw lies in how the manager "explained" them.',
+              'Both missed deadlines and code-review friction were part of the original question.',
           },
           {
             label: 'B',
@@ -797,7 +725,7 @@ export const arqCh06Mastery: ChapterMastery = {
             text: 'Either-Or (False Dilemma), because it ignores hybrid 3-days-in-office schedules.',
             isCorrect: false,
             explanation:
-              'While hybrid schedules exist, the specific sentence structure does not frame a binary choice; it restates the conclusion as its own premise.',
+              'While hybrid schedules exist, the specific sentence structure does not frame a binary choice.',
           },
           {
             label: 'B',
@@ -870,21 +798,21 @@ export const arqCh06Mastery: ChapterMastery = {
         id: 'arq-ch06-fc2',
         category: 'evaluation',
         front: 'What is the Narrative Fallacy, and why do humans fall for it so easily?',
-        back: 'Assuming incorrectly that because we can tell a coherent "make-sense" story that seems to explain a series of facts, we now understand the true causal links relating those facts. Humans are natural storytellers who rush to connect dots without checking missing context.',
+        back: 'Assuming incorrectly that because we can tell a coherent "make-sense" story that seems to explain a series of facts, we now understand the true causal links relating those facts.',
         mentalHook: 'Coherent Story != Causal Proof.',
       },
       {
         id: 'arq-ch06-fc3',
         category: 'evaluation',
         front: 'When is an emotional reaction or emotional language NOT an Appeal to Emotion fallacy?',
-        back: 'Emotional reactions to real tragedies (e.g., bombed hospitals, sexual slavery) are natural and humane, and persuading people to feel emotion using solid reasons and evidence is legitimate. It becomes a fallacy only when emotionally charged language is used in place of warrants and evidence to distract the audience.',
+        back: 'Emotional reactions to real tragedies (e.g., bombed hospitals, sexual slavery) are natural and humane, and persuading people to feel emotion using solid reasons and evidence is legitimate.',
         mentalHook: 'Emotion + Evidence = Valid; Emotion Replacing Warrant = Fallacy.',
       },
       {
         id: 'arq-ch06-fc4',
         category: 'evaluation',
         front: 'What is the Explaining by Naming fallacy? Give two textbook examples.',
-        back: 'Falsely assuming that because you have provided a name or label for a behavior or event, you have adequately explained its causes. Examples: explaining a roommate’s rude behavior by calling him "a jerk," dad’s heavy drinking as a "midlife crisis," or a friend’s suspicion as "paranoid."',
+        back: 'Falsely assuming that because you have provided a name or label for a behavior or event, you have adequately explained its causes.',
         mentalHook: 'Naming the Symptom != Explaining the Cause.',
       },
       {
@@ -898,8 +826,8 @@ export const arqCh06Mastery: ChapterMastery = {
         id: 'arq-ch06-fc6',
         category: 'evaluation',
         front: 'What is the three-step sequence of a Red Herring fallacy, and how does Begging the Question differ?',
-        back: 'Red Herring sequence: (a) Topic A is being discussed; (b) irrelevant Topic B is introduced as though relevant to A; (c) Topic A is abandoned. Begging the Question stays on Topic A but assumes the conclusion inside the reasoning (typically by restating the conclusion in different words).',
-        mentalHook: 'Red Herring = Track Switch (A -> B); Begging the Question = Circular Loop (C -> C).',
+        back: 'Red Herring sequence: (a) Topic A is being discussed.',
+        mentalHook: 'Red Herring = Track Switch (A -> B).',
       },
     ],
     feynmanChallenges: [
@@ -915,7 +843,7 @@ export const arqCh06Mastery: ChapterMastery = {
           'Exposes the false assumption behind Reason 2 (that the goal of an ad ban is 100% eradication of drinking rather than partial reduction -> Searching for Perfect Solutions).',
         ],
         modelExplanation:
-          'You do not need a glossary of Latin labels to catch a reasoning fallacy because every fallacy is simply a defective hidden assumption or a topic diversion. Once you map an argument’s conclusion and reasons, you just ask: "What assumption must be true for this reason to prove this conclusion?" When a letter writer dismisses Senator Spendall’s highway tax hike because he is a "tax-and-spend liberal," the hidden assumption is that a person’s political label determines the worth of a highway proposal—an absurd assumption we call Ad Hominem.\n\nConsider the textbook passage arguing that the FCC should not ban alcohol ads on TV because (1) next they will ban ads for candy, milk, eggs, and butter, and (2) government bans can never eliminate alcohol consumption 100%. You don’t need pre-memorized labels to see that Reason 1 assumes our legal system is incapable of acting partially or stopping unjustified bans (Slippery Slope), while Reason 2 assumes a policy is worthless unless it eradicates 100% of a problem rather than reducing harm (Searching for Perfect Solutions). Interrogating the assumption exposes the trick automatically.',
+          'You do not need a glossary of Latin labels to catch a reasoning fallacy because every fallacy is simply a defective hidden assumption or a topic diversion. Once you map an argument’s conclusion and reasons, you just ask: "What assumption must be true for this reason to prove this conclusion?" When a letter writer dismisses Senator Spendall’s highway tax hike because he is a "tax-and-spend liberal," the hidden assumption is that a person’s political label determines the worth of a highway proposal.',
       },
       {
         id: 'arq-ch06-feyn-2',
@@ -929,7 +857,7 @@ export const arqCh06Mastery: ChapterMastery = {
           'Exposes the synonym loop in the textbook passage ("traditional textbooks are superior... because it is advantageous to have materials in a textbook format") as Begging the Question.',
         ],
         modelExplanation:
-          'When a speaker cannot win on the facts, they either distort the options on the table or hijack your attention. In the child-development day-care passage, the critic replaces a voluntary federal day-care subsidy with a terrifying caricature of "social planners tearing children from their mothers to make them pawns" (Straw Person), and then claims either parents form children’s character or the state takes total control (Either-Or / False Dilemma), erasing the obvious reality that families and day-care centers coexist every day.\n\nIn the painkiller passage, the real issue (Topic A) is whether drug companies falsified safety research. The speaker introduces Topic B—that thousands of patients get pain relief from the drugs—so the audience abandons Topic A (Red Herring). Finally, in Begging the Question, the speaker argues that traditional textbooks beat E-texts "because it is advantageous to have materials made available in a textbook format." Since "traditional textbook" and "textbook format" mean the exact same thing, the conclusion is smuggled directly into the reason with zero independent proof.',
+          'When a speaker cannot win on the facts, they either distort the options on the table or hijack your attention. In the child-development day-care passage, the critic replaces a voluntary federal day-care subsidy with a terrifying caricature of "social planners tearing children from their mothers to make them pawns" (Straw Person), and then claims either parents form children’s character or the state takes total control (Either-Or / False Dilemma), erasing the obvious reality that families and day-care centers coexist every day.\n\nIn the painkiller passage, the real issue (Topic A) is whether drug companies falsified safety research.',
       },
     ],
   },
@@ -1038,7 +966,7 @@ export const arqCh06Mastery: ChapterMastery = {
     figuresIncluded: 1,
     antiAiVerified: true,
     auditNotes:
-      'Verified 100% coverage of all 10 H1/H2 sections of Chapter 6 (Are There Any Fallacies in the Reasoning?, A Questioning Approach, Evaluating Assumptions as a Starting Point, Discovering Other Common Reasoning Fallacies [Exercises A & B], Looking for Diversions [Exercises C & D], Sleight of Hand: Begging the Question, Summary of Reasoning Errors, Expanding Your Knowledge of Fallacies [Damer], Practice Exercises [Passages 1, 2, 3], and Sample Responses) plus arq_ch06_plate.png. All 14 named fallacies (including Narrative and Planning Fallacy) and all textbook examples are explicitly analyzed with zero prohibited AI clichés.',
+      'Verified 100% coverage of all 10 H1/H2 sections of Chapter 6 (Are There Any Fallacies in the Reasoning?, A Questioning Approach, Evaluating Assumptions as a Starting Point, Discovering Other Common Reasoning Fallacies [Exercises A & B], Looking for Diversions [Exercises C & D], Sleight of Hand: Begging the Question, Summary of Reasoning Errors, Expanding Your Knowledge of Fallacies [Damer], Practice Exercises [Passages 1, 2, 3], and Sample Responses) plus arq_ch06_plate.png.',
   },
 };
 
@@ -1048,15 +976,15 @@ export const arqCh07Mastery: ChapterMastery = {
   title: 'The Worth of Personal Experience, Case Examples, Testimonials, and Statements of Authority as Evidence',
   subtitle:
     'Evaluating the probabilistic spectrum from mere opinion to dependable fact, exposing Hasty Generalizations from N=1 anecdotes, and auditing case examples, testimonials, and expert authorities.',
-  readingTimeMinutes: 38,
+  readingTimeMinutes: 9,
   sourceWordCount: 4757,
   executiveThesis:
-    'Once an argument’s reasons pass the initial fallacy filter of Chapter 6, the critical thinker must audit the explicit information offered to back up those reasons: the evidence. Contrary to naive binary thinking, "facts" are not absolute, context-free certainties—as Mary Poovey’s history of the modern fact and the baseball umpire’s strike zone illustrate, factual claims occupy a continuous probability spectrum governed by the quality and quantity of supporting evidence. Chapter 7 dissects four ubiquitous narrative and authority-based evidence sources: personal experience, case examples, testimonials, and appeals to authority. While vivid personal experiences (staying up all night before an exam, surviving a crash without a seat belt) and dramatic case examples (a single graduate thriving at Harvard Law) demonstrate that an outcome is possible and put a human face on an issue, treating them as proof of what is typical commits the Hasty Generalization fallacy. Similarly, personal testimonials are systematically corrupted by selectivity ("believing is seeing"), financial self-interest, omitted evaluation standards, and charismatic enthusiasm, while appeals to authority—from doctors to online review platforms where one-third of reviews are fabricated—require rigorous auditing of domain training, primary versus secondary fact access, financial conflicts, and cross-expert consensus.',
+    'Once an argument’s reasons pass the initial fallacy filter of Chapter 6, the critical thinker must audit the explicit information offered to back up those reasons: the evidence. Contrary to naive binary thinking, "facts" are not absolute, context-free certainties.',
   paradigmShift: {
     oldWay:
       'Binary Fact Worship & Anecdotal Credulity: Treat "facts" as 100% objective certainties, accept vivid personal stories or emotional case studies as representative proof, and defer uncritically to celebrity endorsements, 5-star online reviews, and credentialed titles.',
     newWay:
-      'Probabilistic Dependability & Source Auditing: Grade factual claims along a continuum of evidentiary preponderance; quarantine N=1 experiences and case examples as illustrations of possibility rather than probability; subject every testimonial and expert authority to bias, sample, and primary-access audits.',
+      'Probabilistic Dependability & Source Auditing: Grade factual claims along a continuum of evidentiary preponderance.',
     whyItChanged:
       'Cognitive availability bias makes a single vivid story or charismatic spokesperson feel more convincing than abstract base rates, while the modern Internet and commercial sponsorship ecosystems manufacture counterfeit testimonials and conflicted expert endorsements at industrial scale.',
   },
@@ -1159,7 +1087,7 @@ export const arqCh07Mastery: ChapterMastery = {
           step: '1',
           label: 'The Baseball Umpire Contextual Fact Model',
           explanation:
-            'Even a seemingly objective "fact" like a called strike depends on ballpark shadows, recent manager arguments, and evolving strike-zone definitions—proving that facts exist along a continuum of probability.',
+            'Even a seemingly objective "fact" like a called strike depends on ballpark shadows, recent manager arguments, and evolving strike-zone definitions.',
         },
         {
           step: '2',
@@ -1286,7 +1214,7 @@ export const arqCh07Mastery: ChapterMastery = {
           step: '2',
           label: 'Gates 3 & 4: Auditing Primary Access and Financial Quid Pro Quo',
           explanation:
-            'A primary research journal like JAMA outranks secondary summaries in Rolling Stone or Wired; meanwhile, MegaVapor’s CEO and a cardiologist recommending MegaVapor fail Gate 4 due to direct financial and observational bias.',
+            'A primary research journal like JAMA outranks secondary summaries in Rolling Stone or Wired.',
         },
         {
           step: '3',
@@ -1306,7 +1234,7 @@ export const arqCh07Mastery: ChapterMastery = {
       naiveIntuition:
         'Every statement in the world is either a 100% objective Fact or a 0% subjective Opinion, and once someone labels a statement a "fact," questioning it is pointless.',
       firstPrinciplesReality:
-        'As Mary Poovey’s A History of the Modern Fact demonstrates, "facts" are human constructions shaped by context. Even a baseball umpire’s call of "ball" or "strike" is influenced by ballpark shadows, a manager’s recent uproar over a prior call, and shifting definitions of the strike zone. What distinguishes a dependable fact ("George Washington was the first U.S. president") from a contested claim ("bottled water is safer than tap water") or mere opinion ("Macaroni tastes better than Raisin Bran") is the probability that independent observers examining the evidence will experience the same reality.',
+        'As Mary Poovey’s A History of the Modern Fact demonstrates, "facts" are human constructions shaped by context.',
       howToApply:
         'Replace the binary question "Is this claim true or false?" with the probabilistic audit: "How dependable is the present preponderance of evidence supporting this claim?"',
     },
@@ -1318,7 +1246,7 @@ export const arqCh07Mastery: ChapterMastery = {
       naiveIntuition:
         'If my friend Judy aced her exam after staying up all night, or my uncle survived a car crash because he was thrown clear without a seat belt, then pulling all-nighters works and seat belts are unnecessary.',
       firstPrinciplesReality:
-        'A single striking personal experience or dramatic case example (like Mary Nice finishing in the top 5% at Harvard Law) is an existence proof: it shows $P(\\text{Outcome}) > 0$. However, treating a sample of $N=1$ or a handful of personal acquaintances as representative of the entire population commits the Hasty Generalization fallacy. Worse, our memory selectively retains dramatic exceptions while ignoring base-rate failures.',
+        'A single striking personal experience or dramatic case example (like Mary Nice finishing in the top 5% at Harvard Law) is an existence proof: it shows $P(\\text{Outcome}) > 0$.',
       howToApply:
         'Whenever you hear "In my experience..." or a moving case story, acknowledge that it humanizes the issue and proves possibility, then immediately ask for the denominator: "Out of 1,000 people who tried this, how many succeeded?"',
     },
@@ -1330,9 +1258,9 @@ export const arqCh07Mastery: ChapterMastery = {
       naiveIntuition:
         'Seeing is believing: if an honest, enthusiastic friend or celebrity testifies that a supplement or treatment transformed their health, their sensory report is an unvarnished record of what happened.',
       firstPrinciplesReality:
-        'In human psychology, believing is often seeing. People who expect an intervention to work (or who believe aliens walk among us or the moon landing was faked) selectively attend to confirming sensations and ignore disconfirming evidence. Combined with publisher cherry-picking (printing only rave blurbs), financial conflicts (pharma grants tied to prescriptions), omitted standards, and charismatic warmth ("the human factor"), raw testimonials are among the weakest forms of evidence.',
+        'In human psychology, believing is often seeing.',
       howToApply:
-        'Treat every testimonial as a trigger for four mandatory questions: Who was left out of the sample? What does the testifier gain? What evaluation standards did they use? Could prior expectations explain their perception?',
+        'Treat every testimonial as a trigger for four mandatory questions: Who was left out of the sample?',
     },
     {
       id: 'arq-ch07-mm-primary-access-consensus',
@@ -1342,7 +1270,7 @@ export const arqCh07Mastery: ChapterMastery = {
       naiveIntuition:
         'An expert is an expert: quoting a famous CEO, a medical doctor in an ad, or a popular magazine article settles a factual dispute.',
       firstPrinciplesReality:
-        'History is littered with catastrophic expert blunders (IBM’s Thomas Watson predicting a world market for five computers; Fox’s Darryl Zanuck dismissing television as a six-month fad). Additionally, secondary sources (Rolling Stone, Wired) filter and distort primary findings (JAMA), and institutional roles create predictable biases (a public university president opposing state education cuts).',
+        'History is littered with catastrophic expert blunders (IBM’s Thomas Watson predicting a world market for five computers; Fox’s Darryl Zanuck dismissing television as a six-month fad).',
       howToApply:
         'Weight an authority by (1) domain-specific training, (2) primary firsthand involvement with the facts, (3) absence of direct financial stakes, and (4) whether experts with opposing political or theoretical priors have converged on the same conclusion.',
     },
@@ -1355,7 +1283,7 @@ export const arqCh07Mastery: ChapterMastery = {
       subtitle:
         'Why facts exist along a probabilistic continuum (Mary Poovey & the baseball umpire analogy) and how the six dependability questions separate evidence-backed claims from mere opinion.',
       coreMechanism:
-        'Persuasive conclusions gain strength as they move away from whimsical personal opinion and lean on systematic collections of facts. Opinions are effortless to utter: "Macaroni tastes better than Raisin Bran," or "American presidents have more common sense than do the leaders of Scotland." When someone offers a mere opinion without supporting reasons or evidence, they are essentially saying, "Don’t ask me why I say such things; they are simply my opinions." Yet "facts" are also far more nuanced and context-dependent than they appear from afar. As Mary Poovey demonstrates in A History of the Modern Fact, what human societies count as a "fact" has changed forms repeatedly across historical contexts.\n\nConsider a baseball umpire calling a pitch a ball or a strike. The umpire is the official voice determining the "fact" of the pitch, yet numerous contextual variables shape the probability that the pitch was actually what the umpire claimed: Would a different umpire have made the same call? Did ballpark shadows obscure the ball’s path? Did a manager’s heated uproar over a previous call subtly nudge the umpire’s judgment? Did changing rulebook definitions of the strike zone alter the verdict? Geopolitical claims like "Iran has weapons of mass destruction" are at least as questionable as a borderline strike call. Therefore, rather than treating facts as binary absolutes (true vs. false), critical thinkers treat facts as probabilistic: the probability that all observers under fair conditions would experience the same thing measures how certain and dependable a fact is.\n\nBecause absolute certainty is rarely attainable, Browne and Keeley reframe the evaluation of factual claims around dependability: "Can we count on such beliefs?" Claims with abundant, convergent evidence—such as "most U.S. senators are men" or "George Washington was the first president of the United States"—sit near the top of the dependability scale and earn the title of "fact." Claims with conflicting evidence—such as "bottled water is safer to drink than tap water" or "practicing yoga reduces the risk of cancer"—cannot be treated as established facts. When substantial evidence supports a claim like "taking an aspirin every other day reduces the risk of heart attack" while some studies dispute it, we must weigh where the preponderance of reliable evidence lies. Developing the habit of asking six core questions—"What is your proof?", "How do you know that’s true?", "Where’s the evidence?", "Why do you believe that?", "Are you sure that’s true?", and "Can you prove it?"—forces communicators to reveal their evidentiary foundation. Those with strong support welcome these questions; those who react with anger or withdrawal usually do so out of embarrassment upon realizing they asserted a belief without evidence.',
+        'Persuasive conclusions gain strength as they move away from whimsical personal opinion and lean on systematic collections of facts. Opinions are effortless to utter: "Macaroni tastes better than Raisin Bran," or "American presidents have more common sense than do the leaders of Scotland." When someone offers a mere opinion without supporting reasons or evidence, they are essentially saying, "Don’t ask me why I say such things; they are simply my opinions." Yet "facts" are also far more nuanced and context-dependent than they appear from afar.\n\nConsider a baseball umpire calling a pitch a ball or a strike. The umpire is the official voice determining the "fact" of the pitch, yet numerous contextual variables shape the probability that the pitch was actually what the umpire claimed: Would a different umpire have made the same call?',
       stepByStepFlow: [
         {
           step: '1',
@@ -1382,32 +1310,14 @@ export const arqCh07Mastery: ChapterMastery = {
             'Instead of demanding a 100% "slam dunk," weigh the quality and quantity of convergent vs. conflicting evidence to assign a probabilistic dependability grade.',
         },
       ],
-      formulas: [
-        {
-          name: 'Probabilistic Fact Dependability Index',
-          expression:
-            'D(\\text{Claim } F) = P(\\text{Inter-Observer Convergence} \\mid E_{\\text{quality}}, E_{\\text{quantity}}, \\text{Context}_{\\text{unbiased}}) \\in [0, 1]',
-          intuition:
-            'A claim transitions from mere opinion (D near 0) toward dependable fact (D near 1) as the quality and quantity of systematic, context-controlled evidence increase the probability that independent observers would verify the same phenomenon.',
-          variables: [
-            { symbol: 'D(Claim F)', meaning: 'Dependability score of factual assertion F along a [0, 1] continuum' },
-            { symbol: 'E_{quality}', meaning: 'Methodological rigor and bias control of the supporting evidence' },
-            { symbol: 'E_{quantity}', meaning: 'Volume and independent replication of supporting observations' },
-          ],
-          workedExample:
-            'For F_1 = "George Washington was the first U.S. president," historical archives yield D(F_1) -> 1.0 (Dependable Fact). For F_2 = "Bottled water is safer than tap water," conflicting municipal vs. plastic-leaching data yield D(F_2) ~ 0.45 (Contested Belief, not Fact).',
-        },
-      ],
       keyTakeaways: [
-        'Evidence consists of explicit information shared by a communicator to justify the dependability of a factual claim (supporting factual reasons in prescriptive arguments or conclusions directly in descriptive arguments).',
-        'Facts are not binary true/false absolutes; they represent claims backed by a high probability of inter-observer agreement.',
-        'Asking "Where’s the evidence?" is a constructive filter: prepared thinkers gladly share their proof, whereas defensive anger signals an unexamined opinion.',
-        'No evidence is an absolute slam dunk; critical thinkers look for the preponderance of better evidence rather than impossible perfection.',
-      ],
+          'Evidence consists of explicit information shared by a communicator to justify the dependability of a factual claim (supporting factual reasons in prescriptive arguments or conclusions directly in descriptive arguments).',
+          'Facts are not binary true/false absolutes; they represent claims backed by a high probability of inter-observer agreement.',
+        ],
       commonPitfalls: [
-        'Giving up on factual evaluation altogether ("everything is just perspective") after realizing that facts involve contextual nuances like the baseball umpire’s strike zone.',
-        'Treating a widely repeated assertion ("bottled water is safer than tap water") as a settled fact without checking whether the empirical evidence is conflicting.',
-      ],
+          'Giving up on factual evaluation altogether ("everything is just perspective") after realizing that facts involve contextual nuances like the baseball umpire’s strike zone.',
+          'Treating a widely repeated assertion ("bottled water is safer than tap water") as a settled fact without checking whether the empirical evidence is conflicting.',
+        ],
     },
     {
       id: 'arq-ch07-sec-7-2',
@@ -1416,7 +1326,7 @@ export const arqCh07Mastery: ChapterMastery = {
       subtitle:
         'When to accept factual claims, the seven major evidence categories (Exhibit 7-1), and why vivid N=1 personal experiences trigger the Hasty Generalization fallacy.',
       coreMechanism:
-        'When should a critical thinker accept a factual claim as dependable? Browne and Keeley identify three legitimate instances: (1) when the claim is undisputed common knowledge (such as "weight lifting increases muscular body mass"), (2) when the claim is the conclusion of a well-reasoned argument, and (3) when the claim is adequately supported by solid evidence. To evaluate this third category, Exhibit 7-1 catalogs the seven major kinds of evidence used in persuasive communication: personal experiences, case examples, testimonials, appeals to authorities or experts, personal observations, research studies, and analogies. Chapter 7 examines the first four sources, while Chapters 8 and 9 examine the remaining three.\n\nConsider two everyday arguments built on personal experience: (1) "My friend Judy does really well on her tests when she stays up all night to study for them, so I don’t see the need for getting sleep before taking tomorrow’s test," and (2) "I always feel better after having a big slice of chocolate cake, so I think that anyone who is depressed just needs to eat more chocolate cake." Linguistic cues like "I know someone who..." or "In my experience, I’ve found..." signal that the speaker is relying on personal experience as evidence. Because personal experiences—such as being overcharged by a car mechanic—are emotionally vivid in our memory, we naturally treat them as general truths ("most car mechanics overcharge").\n\nRelying on a single personal experience, or even an unsystematic accumulation of personal experiences, to support a broad generalization is a fundamental error because personal life never provides a representative sample of the whole population. Drawing a conclusion about a large group based on experiences with only one or a few members commits the Hasty Generalization fallacy. Even meeting several people who claim their lives were saved because they were thrown clear of a wreck while not wearing seat belts only demonstrates that survival without a seat belt is possible; it cannot demonstrate that such an outcome is typical or probable.',
+        'When should a critical thinker accept a factual claim as dependable? Browne and Keeley identify three legitimate instances: (1) when the claim is undisputed common knowledge (such as "weight lifting increases muscular body mass"), (2) when the claim is the conclusion of a well-reasoned argument, and (3) when the claim is adequately supported by solid evidence.\n\nConsider two everyday arguments built on personal experience: (1) "My friend Judy does really well on her tests when she stays up all night to study for them, so I don’t see the need for getting sleep before taking tomorrow’s test," and (2) "I always feel better after having a big slice of chocolate cake, so I think that anyone who is depressed just needs to eat more chocolate cake." Linguistic cues like "I know someone who..." or "In my experience, I’ve found..." signal that the speaker is relying on personal experience as evidence. Because personal experiences.',
       stepByStepFlow: [
         {
           step: '1',
@@ -1437,32 +1347,14 @@ export const arqCh07Mastery: ChapterMastery = {
             'Grant that the anecdote proves the outcome can occur ($P > 0$), but reject any leap to general typicality as a Hasty Generalization.',
         },
       ],
-      formulas: [
-        {
-          name: 'The Hasty Generalization Sample-Size Gap',
-          expression:
-            'n_{\\text{personal}} \\in \\{1, 2, \\dots, k\\} \\ll N_{\\text{population}} \\implies \\text{Var}(\\hat{p}_{\\text{anecdote}}) \\text{ is maximal; } P(X > 0) \\neq \\mathbb{E}[X]',
-          intuition:
-            'A personal sample of size n = 1 (Judy’s all-nighter or one dishonest mechanic) carries maximum sampling variance and zero randomization; it proves existence P(X > 0) but tells you nothing about the population expectation E[X].',
-          variables: [
-            { symbol: 'n_{personal}', meaning: 'Number of personal or acquaintance experiences recalled by the speaker' },
-            { symbol: 'N_{population}', meaning: 'Total population about which the general claim is made (all students, all mechanics)' },
-            { symbol: 'P(X > 0)', meaning: 'Possibility that outcome X can occur at least once' },
-          ],
-          workedExample:
-            'If 3 acquaintances survived crashes without seat belts (n = 3), that proves P(Survive | No Belt) > 0, but across N = 40,000 annual highway crashes, epidemiological data show seat belts reduce fatal injury risk by ~45–50%.',
-        },
-      ],
       keyTakeaways: [
-        'Exhibit 7-1’s seven evidence sources span Personal Experience, Case Examples, Testimonials, Appeals to Authority, Personal Observations, Research Studies, and Analogies.',
-        'Personal experiences are disproportionately persuasive because vivid personal memories dominate human recall.',
-        'A single experience or small cluster of experiences can prove that an outcome is possible, never that it is typical or probable.',
-        'Generalizing about an entire group (all mechanics, all depressed patients, all test-takers) from personal experience commits the Hasty Generalization fallacy.',
-      ],
+          'Exhibit 7-1’s seven evidence sources span Personal Experience, Case Examples, Testimonials, Appeals to Authority, Personal Observations, Research Studies, and Analogies.',
+          'Personal experiences are disproportionately persuasive because vivid personal memories dominate human recall.',
+        ],
       commonPitfalls: [
-        'Dismissing other people’s anecdotes as Hasty Generalizations while treating your own personal experiences as uniquely representative.',
-        'Confusing an exception that proves an outcome is physically possible (surviving without a seat belt) with a policy rule about what is safest on average.',
-      ],
+          'Dismissing other people’s anecdotes as Hasty Generalizations while treating your own personal experiences as uniquely representative.',
+          'Confusing an exception that proves an outcome is physically possible (surviving without a seat belt) with a policy rule about what is safest on average.',
+        ],
     },
     {
       id: 'arq-ch07-sec-7-3',
@@ -1471,7 +1363,7 @@ export const arqCh07Mastery: ChapterMastery = {
       subtitle:
         'Why dramatic case stories (Mary Nice at Harvard Law) and personal/celebrity testimonials fail as standalone proof across four structural bias dimensions.',
       coreMechanism:
-        'Communicators frequently open speeches and articles with Case Examples—detailed, catchy descriptions or stories about one or several individuals based on observations or interviews. Consider a university president boasting: "Of course our students can move on to high-paying jobs and further study at large universities. Why, just this past year we sent one of our students, Mary Nice, off to law school at Harvard. In her first year, Mary remained in the top 5 percent of her class. Therefore, our students can certainly achieve remarkable success at elite universities." Or consider advocates for banning cell-phone use in cars who tell heart-wrenching stories of teenagers dying in crashes while talking on a phone. Case examples are compelling because their rich, visualizable details trigger strong emotional engagement. While they are legitimately useful for demonstrating possibilities and putting a relatable human face on dry statistics, treating a dramatic case example as proof of a general conclusion commits the exact same sampling error as personal experience.\n\nClosely related are Testimonials—quoted statements from individuals or celebrities endorsing the value of a product, service, or extraordinary event based on personal experience, such as a note on a service station wall ("Jane did a wonderful job fixing the oil leak my car had. I strongly recommend that you take your car to Jane to fix any engine problem you have") or rave blurbs on the back of a book jacket ("I could not put this book down"). Unless we know the expertise, interests, values, and biases behind a testimonial, it provides almost zero evidentiary worth.\n\nBrowne and Keeley isolate four structural defects that corrupt testimonials:\n1. Selectivity: Persuaders cherry-pick the most glowing praise for book jackets and commercials, hiding the typical reaction ("What was the experience like for those whom we have not heard from?"). At the same time, testifiers themselves exhibit selective attention—paying attention to confirming results and ignoring failures because "believing is seeing" (just as believers in aliens or moon-landing conspiracies interpret ambiguous photos as confirmation).\n2. Personal Interest: Endorsers frequently have financial or career stakes in their testimony—for instance, pharmaceutical companies awarding research grants to doctors who prescribe the company’s medication brands.\n3. Omitted Information: Testimonials rarely disclose the criteria behind the judgment; a friend calling a film the "best movie ever" may rely on standards completely different from yours, and fixing a simple oil leak does not prove Jane can rebuild a complex transmission.\n4. The Human Factor: Testimonials come from enthusiastic, trustworthy-seeming people whose warmth makes us want to believe them regardless of the facts.',
+        'Communicators frequently open speeches and articles with Case Examples—detailed, catchy descriptions or stories about one or several individuals based on observations or interviews. Consider a university president boasting: "Of course our students can move on to high-paying jobs and further study at large universities.\n\nClosely related are Testimonials—quoted statements from individuals or celebrities endorsing the value of a product, service, or extraordinary event based on personal experience, such as a note on a service station wall ("Jane did a wonderful job fixing the oil leak my car had. I strongly recommend that you take your car to Jane to fix any engine problem you have") or rave blurbs on the back of a book jacket ("I could not put this book down").',
       stepByStepFlow: [
         {
           step: '1',
@@ -1498,32 +1390,14 @@ export const arqCh07Mastery: ChapterMastery = {
             'Consciously separate the speaker’s enthusiasm and likability from the empirical generalizability of their claim.',
         },
       ],
-      formulas: [
-        {
-          name: 'Testimonial Selection & Expectation Distortion Model',
-          expression:
-            'P(\\text{Published Praise} \\mid \\text{Outcome}) \\propto \\mathbb{I}(\\text{Outcome} \\in \\text{Top } 5\\%) \\times (1 + \\beta_{\\text{financial}} + \\gamma_{\\text{expectation}})',
-          intuition:
-            'Published testimonials represent the extreme upper tail of outcomes cherry-picked by marketers, further inflated by financial incentives (beta_financial) and confirmation bias ("believing is seeing", gamma_expectation).',
-          variables: [
-            { symbol: 'I(Outcome in Top 5%)', meaning: 'Marketer selectivity filter discarding average or negative experiences' },
-            { symbol: '\\beta_{financial}', meaning: 'Personal interest bias from sponsorships, grants, or commissions' },
-            { symbol: '\\gamma_{expectation}', meaning: 'Selective attention driven by prior beliefs ("believing is seeing")' },
-          ],
-          workedExample:
-            'When a book jacket prints 4 rave blurbs ("I could not put this book down"), I(Top 5%) hides the 96 readers who stopped at Chapter 2, while Omitted Information hides that the blurb writers were close colleagues of the author.',
-        },
-      ],
       keyTakeaways: [
-        'Case examples put a personal face on abstract statistics and spark audience interest, but cannot establish population-wide probability.',
-        'Testimonials fail as dependable evidence due to four pervasive flaws: Selectivity, Personal Interest, Omitted Information, and the Human Factor.',
-        '"Believing is seeing": human expectations actively filter ambiguous experiences to confirm pre-existing beliefs.',
-        'Success on a narrow task (Jane fixing an oil leak) does not generalize to comprehensive competence (fixing any engine problem).',
-      ],
+          'Case examples put a personal face on abstract statistics and spark audience interest, but cannot establish population-wide probability.',
+          'Testimonials fail as dependable evidence due to four pervasive flaws: Selectivity, Personal Interest, Omitted Information, and the Human Factor.',
+        ],
       commonPitfalls: [
-        'Letting an emotionally wrenching opening case study substitute for statistical proof that a proposed regulation will work.',
-        'Trusting an enthusiastic recommendation from a friend or celebrity without asking what specific standards and comparison baselines they used.',
-      ],
+          'Letting an emotionally wrenching opening case study substitute for statistical proof that a proposed regulation will work.',
+          'Trusting an enthusiastic recommendation from a friend or celebrity without asking what specific standards and comparison baselines they used.',
+        ],
     },
     {
       id: 'arq-ch07-sec-7-4',
@@ -1532,7 +1406,7 @@ export const arqCh07Mastery: ChapterMastery = {
       subtitle:
         'Auditing expert fallibility (Watson & Zanuck), primary vs. secondary sources, financial bias, faked Internet reviews, and the three chapter practice passages.',
       coreMechanism:
-        'Because none of us has the time or training to master every complex domain of modern life, we rely daily on Appeals to Authority—movie reviewers (Valerie Viewer in the Toledo Gazette), talk show pundits, organizations (the American Medical Association), researchers, relatives, religious texts, and magazines (Newsweek). An appeal to authority carries more potential weight than a lay testimonial because experts are supposed to possess special access to pertinent facts and specialized qualifications for drawing conclusions. Yet history proves that authorities frequently disagree and are often spectacularly wrong. In Christopher Cerf and Victor Navasky’s The Experts Speak (1998), IBM Chairman Thomas Watson predicted in 1943: "I think there is a world market for maybe five computers," and Twentieth Century Fox head Darryl F. Zanuck declared around 1946: "Video won’t be able to hold onto any market it captures after the first six months. People will soon get tired of staring at a plywood box every night."\n\nTo decide how much weight an authority deserves, critical thinkers ask five targeted questions: (1) How much expertise, training, or long-term study does the authority have on this exact subject? (2) Was the authority in a position to have primary, firsthand access to the facts? Primary sources (such as peer-reviewed studies in the Journal of the American Medical Association) are far more dependable than secondary sources (such as articles in Rolling Stone or Wired). (3) Is the authority relatively free of distorting influences—personal needs, prior expectations, ideologies, or financial stakes? For instance, a public university president asked whether state education funding cuts hurt the university has an obvious institutional bias, and an expert who profits financially from the advocated action warrants intense skepticism. (4) Do authorities with diverse attitudes, values, and prior expectations agree, and does this authority have a track record of dependable claims? (5) On the Internet—where anyone can pose as an authority—studies reveal that up to one-third of online reviews for books, hotels, and restaurants are faked, bought, or sold, and 60 percent of Amazon reviews are 5 stars. Unreliable websites betray themselves through missing dates, unprofessional design, sweeping emotional claims ("always", "never"), one-sided views, hearsay, and a lack of primary sources.\n\nApplying these standards to Chapter 7’s Practice Passages exposes their evidentiary bankruptcy. In Passage 1 (Proactiv® acne treatment), the conclusion that Proactiv effectively treats acne rests on company marketing ("clearer skin in as few as three days") and celebrity testimonials from Julianne Hough and Naya Rivera—selective, financially incented anecdotes lacking systematic clinical data. In Passage 2 (claiming e-cigarettes are safe), the writer cites cardiologist Dr. Bob R. Roberts ("I’ve never seen a patient become ill... MegaVapor brand e-cigarettes are the ones my patients love the most") and MegaVapor president H.V. Smoker. Both authorities are heavily compromised: Dr. Roberts relies on unsystematic personal experience without actively searching for long-term failures (and may receive payments from MegaVapor), while MegaVapor’s president has a direct financial stake in selling e-cigarettes. In Passage 3 (claiming vegetarianism is healthier than eating meat), vague references to unnamed "studies," biased testimonials from committed vegetarians, and the commercial opening of vegetarian restaurants provide zero rigorous comparative evidence.',
+        'Because none of us has the time or training to master every complex domain of modern life, we rely daily on Appeals to Authority.\n\nTo decide how much weight an authority deserves, critical thinkers ask five targeted questions: (1) How much expertise, training, or long-term study does the authority have on this exact subject? (2) Was the authority in a position to have primary, firsthand access to the facts?',
       stepByStepFlow: [
         {
           step: '1',
@@ -1550,7 +1424,7 @@ export const arqCh07Mastery: ChapterMastery = {
           step: '3',
           title: 'Cross-Check Diverse Expert Consensus & Track Record',
           detail:
-            'Do not reject a claim solely because of suspected bias; instead, verify whether independent experts with different ideological priors agree.',
+            'Do not reject a claim solely because of suspected bias.',
         },
         {
           step: '4',
@@ -1559,33 +1433,14 @@ export const arqCh07Mastery: ChapterMastery = {
             'Discount unverified 5-star review clusters (remembering the 33% fake review rate) and audit websites for timestamps, qualifications, primary links, and balanced analysis.',
         },
       ],
-      formulas: [
-        {
-          name: 'Authority Credibility Composite Score',
-          expression:
-            'C_{\\text{authority}} = \\text{Expertise}_{\\text{domain}} \\times \\text{Access}_{\\text{primary}} \\times (1 - \\text{Bias}_{\\text{financial/role}}) \\times \\text{Consensus}_{\\text{diverse peers}}',
-          intuition:
-            'An authority’s evidentiary weight is multiplicative: high credentials collapse toward zero if the source lacks primary data access, harbors an undisclosed financial conflict, or contradicts diverse peer consensus.',
-          variables: [
-            { symbol: 'Expertise_{domain}', meaning: 'Depth of formal training and study in the specific topic area' },
-            { symbol: 'Access_{primary}', meaning: 'Firsthand empirical involvement (primary journal vs. secondary magazine)' },
-            { symbol: 'Bias_{financial/role}', meaning: 'Distorting financial incentives or institutional role pressures' },
-            { symbol: 'Consensus_{diverse}', meaning: 'Agreement among experts holding differing prior values and expectations' },
-          ],
-          workedExample:
-            'In Passage 2, MegaVapor president H.V. Smoker has Bias_financial -> 1.0, driving C_authority -> 0. Cardiologist Dr. Bob R. Roberts relies on passive N=1 clinic impressions rather than controlled pulmonology trials and endorses a specific brand, yielding near-zero dependability.',
-        },
-      ],
       keyTakeaways: [
-        'Even top industry authorities make famous blunders (Thomas Watson’s 5 computers; Darryl Zanuck’s 6-month video fad).',
-        'Primary sources with firsthand access to facts (e.g., JAMA) outrank secondary reporting (e.g., Rolling Stone, Wired).',
-        'Because no human authority is 100% unbiased, checking whether experts with diverse values and expectations agree is essential.',
-        'Online product reviews suffer from severe distortion (~33% faked/bought reviews and a 60% 5-star skew on Amazon), requiring strict source verification.',
-      ],
+          'Even top industry authorities make famous blunders (Thomas Watson’s 5 computers; Darryl Zanuck’s 6-month video fad).',
+          'Primary sources with firsthand access to facts (e.g., JAMA) outrank secondary reporting (e.g., Rolling Stone, Wired).',
+        ],
       commonPitfalls: [
-        'Accepting a physician’s anecdote ("I’ve never seen a patient get sick from X") as systematic evidence when the doctor has not conducted controlled follow-up to track failures.',
-        'Treating commercial popularity (more vegetarian restaurants opening, or 60% five-star Amazon reviews) as scientific proof of health or product efficacy.',
-      ],
+          'Accepting a physician’s anecdote ("I’ve never seen a patient get sick from X") as systematic evidence when the doctor has not conducted controlled follow-up to track failures.',
+          'Treating commercial popularity (more vegetarian restaurants opening, or 60% five-star Amazon reviews) as scientific proof of health or product efficacy.',
+        ],
       figures: [
         {
           file: 'arq_ch07_plate.png',
@@ -1595,9 +1450,9 @@ export const arqCh07Mastery: ChapterMastery = {
           editorialAnalysis:
             'The Chapter 7 opening plate establishes the two core learning objectives of the chapter: (1) appreciating the probabilistic fact/opinion distinction as the foundation for evaluating evidence, and (2) auditing the real-world worth and structural vulnerabilities of personal experience, case examples, testimonials, and statements of authority.',
           keyTakeaways: [
-            'Moves critical thinking from structural fallacy detection (Chapter 6) to empirical evidence auditing (Chapters 7 and 8).',
-            'Establishes the core critical question: "How good is the evidence originating from personal experience, case examples, testimonials, and appeals to authority?"',
-          ],
+          'Moves critical thinking from structural fallacy detection (Chapter 6) to empirical evidence auditing (Chapters 7 and 8).',
+          'Establishes the core critical question: "How good is the evidence originating from personal experience, case examples, testimonials, and appeals to authority?"',
+        ],
         },
       ],
     },
@@ -1645,7 +1500,7 @@ export const arqCh07Mastery: ChapterMastery = {
         ],
       ],
       verdictRule:
-        'Use personal experiences and case examples only to illustrate possibilities alongside systematic data; never accept testimonials or single authorities without auditing selectivity, financial incentives, and primary source access.',
+        'Use personal experiences and case examples only to illustrate possibilities alongside systematic data.',
     },
     {
       title: 'Primary vs. Secondary & Online Source Credibility Matrix',
@@ -1701,9 +1556,9 @@ export const arqCh07Mastery: ChapterMastery = {
       symptomOrFailure:
         'The vendor’s sales deck features: (1) a dramatic Case Example of a Fortune 500 fintech that cut latency by 80% after migrating, (2) glowing video Testimonials from three CTOs praising the database’s "effortless zero-downtime scaling," and (3) a whitepaper authored by a "Distinguished Database Analyst" claiming the engine outperforms PostgreSQL by 10x.',
       naiveFixAndWhyItFails:
-        'Accepting the Fortune 500 case study and CTO testimonials at face value—or rejecting them cynically without running a structured audit—either locks the company into an unverified $1.2M contract or misses a potentially valid technology.',
+        'Accepting the Fortune 500 case study and CTO testimonials at face value.',
       firstPrinciplesSolution:
-        'Apply Chapter 7’s four-part testimonial and authority audit: (1) Quarantine the Fortune 500 Case Example as an existence proof ($P > 0$) and request the full distribution of customer migration timelines (Selectivity check); (2) Discover via Omitted Information questioning that the CTO testimonials measured read-only key-value lookups rather than the multi-shard ACID transactions our workload requires, and received 40% license discounts as "reference customers" (Personal Interest); (3) Audit the "Distinguished Analyst" whitepaper and find it was commissioned by the vendor (Gate 4 Financial Bias) and used secondary synthetic benchmarks rather than primary production traces.',
+        'Apply Chapter 7’s four-part testimonial and authority audit: (1) Quarantine the Fortune 500 Case Example as an existence proof ($P > 0$) and request the full distribution of customer migration timelines (Selectivity check).',
       measurableOutcome:
         'The team bypasses the marketing testimonials, runs an independent 2-week primary benchmark using production write-heavy replay traces, discovers a 3.4x tail-latency regression under lock contention, and saves $1.2M by scaling their existing partitioned PostgreSQL cluster.',
     },
@@ -1713,11 +1568,11 @@ export const arqCh07Mastery: ChapterMastery = {
       roleAndContext:
         'Director of Platform Engineering enforcing incremental canary rollouts (1% -> 10% -> 50% -> 100%) after several high-severity production incidents.',
       symptomOrFailure:
-        'A senior product engineer resists the canary requirement, arguing in the engineering all-hands: "Canary rollouts just slow us down. In my experience, I pushed our last four billing updates straight to 100% of users on Friday afternoon and nothing went wrong—plus, even companies with canary pipelines still have outages sometimes."',
+        'A senior product engineer resists the canary requirement, arguing in the engineering all-hands: "Canary rollouts just slow us down.',
       naiveFixAndWhyItFails:
         'Pulling rank without explaining the statistical flaw leaves the engineering org convinced that canary guardrails are bureaucratic red tape.',
       firstPrinciplesSolution:
-        'Deconstruct the engineer’s argument using Chapter 7 and Chapter 6 principles: (1) Show that citing four successful 100% Friday pushes ($n=4$) is identical to the textbook’s "Judy stayed up all night and aced her test" or "surviving a car crash without a seat belt" argument—it proves a safe 100% push is possible, but commits the Hasty Generalization fallacy when used to claim it is safe on average; (2) Present the organization’s primary denominator data across 1,400 deployments showing that un-canaried deploys caused 82% of customer-impacting outages; (3) Flag the final clause ("companies with canaries still have outages") as Chapter 6’s Searching for Perfect Solutions fallacy.',
+        'Deconstruct the engineer’s argument using Chapter 7 and Chapter 6 principles: (1) Show that citing four successful 100% Friday pushes ($n=4$) is identical to the textbook’s "Judy stayed up all night and aced her test" or "surviving a car crash without a seat belt" argument.',
       measurableOutcome:
         'Engineering teams adopt automated progressive canary delivery with 98% compliance, reducing deployment-induced severity-1 customer impact minutes by 74% over two quarters.',
     },
@@ -1734,7 +1589,7 @@ export const arqCh07Mastery: ChapterMastery = {
             text: 'To prove that facts are completely indistinguishable from personal opinions like "Macaroni tastes better than Raisin Bran."',
             isCorrect: false,
             explanation:
-              'Browne and Keeley explicitly reject the idea that facts and opinions are equal; they emphasize that strong arguments depend on strong facts.',
+              'Browne and Keeley explicitly reject the idea that facts and opinions are equal.',
           },
           {
             label: 'B',
@@ -1804,7 +1659,7 @@ export const arqCh07Mastery: ChapterMastery = {
             text: 'Selectivity (both publisher cherry-picking and "believing is seeing" confirmation bias) and Omitted Information',
             isCorrect: true,
             explanation:
-              'Printing only the top praise while hiding the silent majority who lost money is publisher Selectivity; attributing market-wide gains to the newsletter reflects testifier Selectivity ("believing is seeing") and Omitted Information about benchmark criteria.',
+              'Printing only the top praise while hiding the silent majority who lost money is publisher Selectivity.',
           },
           {
             label: 'B',
@@ -1832,7 +1687,7 @@ export const arqCh07Mastery: ChapterMastery = {
       {
         id: 'arq-ch07-q4',
         scenarioPrompt:
-          'In Chapter 7’s Practice Passage 2, an author argues that e-cigarettes are completely safe by quoting cardiologist Dr. Bob R. Roberts ("I’ve been recommending e-cigarettes to my patients for years... and I’ve never seen a patient become ill... MegaVapor brand are the ones my patients love the most") and MegaVapor president H.V. Smoker. Why does this appeal to authority fail Browne and Keeley’s audit?',
+          'In Chapter 7’s Practice Passage 2, an author argues that e-cigarettes are completely safe by quoting cardiologist Dr. Bob R.',
         options: [
           {
             label: 'A',
@@ -1846,7 +1701,7 @@ export const arqCh07Mastery: ChapterMastery = {
             text: 'Because both authorities suffer from severe personal/financial interest bias (MegaVapor sells the product; Dr. Roberts specifically plugs MegaVapor), and Dr. Roberts relies on unsystematic personal experience without actively seeking out evidence of failures.',
             isCorrect: true,
             explanation:
-              'As the textbook Sample Response explains, MegaVapor profits directly from sales, Dr. Roberts may be paid to promote MegaVapor, and Dr. Roberts relies solely on his clinic impressions without systematic follow-up research.',
+              'As the textbook Sample Response explains, MegaVapor profits directly from sales, Dr.',
           },
           {
             label: 'C',
@@ -1870,42 +1725,42 @@ export const arqCh07Mastery: ChapterMastery = {
         id: 'arq-ch07-fc1',
         category: 'evaluation',
         front: 'How do Browne & Keeley define "Evidence" and how does its role differ between prescriptive and descriptive arguments?',
-        back: 'Evidence is explicit information shared by the communicator to back up or justify the dependability of a factual claim. In prescriptive arguments, evidence is needed to support reasons that are factual claims; in descriptive arguments, evidence is needed to directly support a descriptive conclusion.',
+        back: 'Evidence is explicit information shared by the communicator to back up or justify the dependability of a factual claim.',
         mentalHook: 'Evidence = Explicit Proof Backing Factual Claims.',
       },
       {
         id: 'arq-ch07-fc2',
         category: 'foundation',
         front: 'What are the 7 Major Kinds of Evidence listed in Exhibit 7-1?',
-        back: '1. Personal experiences\n2. Case examples\n3. Testimonials\n4. Appeals to authorities or experts\n5. Personal observations\n6. Research studies\n7. Analogies',
+        back: '1.',
         mentalHook: '4 Narrative/Authority Sources (Ch 7) + 3 Empirical/Comparative Sources (Ch 8-9).',
       },
       {
         id: 'arq-ch07-fc3',
         category: 'evaluation',
         front: 'What is the Hasty Generalization fallacy, and why do personal experiences and case examples trigger it?',
-        back: 'Drawing a conclusion about a large group based on experiences with only one or a few members of the group. Personal experiences and vivid case examples (like Mary Nice at Harvard Law) prove an outcome is possible, not that it is typical or representative.',
+        back: 'Drawing a conclusion about a large group based on experiences with only one or a few members of the group.',
         mentalHook: 'N=1 Proves Possibility, Never Probability.',
       },
       {
         id: 'arq-ch07-fc4',
         category: 'evaluation',
         front: 'What are the 4 major problems that weaken Testimonials as evidence?',
-        back: '1. Selectivity (cherry-picking best praise + "believing is seeing" confirmation bias)\n2. Personal interest (financial grants, sponsorships, commissions)\n3. Omitted information (missing evaluation standards/criteria)\n4. The human factor (charismatic enthusiasm making us want to believe).',
+        back: '1.',
         mentalHook: 'SPOH: Selectivity, Personal Interest, Omitted Info, Human Factor.',
       },
       {
         id: 'arq-ch07-fc5',
         category: 'evaluation',
         front: 'What two historical quotes from Cerf & Navasky’s The Experts Speak illustrate the fallibility of expert authorities?',
-        back: '1. Thomas Watson (Chairman of IBM, 1943): "I think there is a world market for maybe five computers."\n2. Darryl F. Zanuck (Head of 20th Century Fox, ca. 1946): "Video won’t be able to hold onto any market it captures after the first six months. People will soon get tired of staring at a plywood box every night."',
+        back: '1.',
         mentalHook: 'Even IBM and Fox Titans Bomb When Guessing the Future.',
       },
       {
         id: 'arq-ch07-fc6',
         category: 'security',
         front: 'What empirical statistics and red flags should make you skeptical of online reviews and website authorities?',
-        back: 'Studies show up to one-third (33%) of online reviews are faked/bought, and 60% of Amazon reviews are 5 stars. Website red flags: missing dates, unprofessional design, vague/sweeping emotional claims ("always", "never"), one-sided views, absence of primary sources, hearsay, and fallacies.',
+        back: 'Studies show up to one-third (33%) of online reviews are faked/bought, and 60% of Amazon reviews are 5 stars.',
         mentalHook: '1/3 Fake Reviews + 60% 5-Star Skew = Buyer Beware Online.',
       },
     ],
@@ -1922,7 +1777,7 @@ export const arqCh07Mastery: ChapterMastery = {
           'Lists the core dependability questions ("What is your proof?", "Where’s the evidence?") and explains why defensive anger signals a lack of evidence.',
         ],
         modelExplanation:
-          'Many people think every statement is either a 100% hard "Fact" or a pure "Opinion." In reality, opinions like "Macaroni tastes better than Raisin Bran" require zero effort or proof, whereas factual claims attempt to describe the real world based on evidence. However, as historian Mary Poovey showed, even facts depend on context. Think of a baseball umpire calling a pitch a strike: was it an objective fact, or was the call nudged by ballpark shadows, a manager’s recent screaming match over an earlier call, or a changed strike-zone definition?\n\nBecause context always plays a role, critical thinkers treat facts as probabilities: how likely is it that all careful observers would experience the same thing? Abundant evidence makes "George Washington was the first U.S. president" a highly dependable fact; conflicting evidence means "bottled water is safer than tap water" is not a fact; and when most evidence supports daily aspirin for heart attacks despite some counter-studies, we judge by the preponderance of reliable evidence. Asking "Where’s the evidence?" moves us along this spectrum from mere opinion to dependable fact.',
+          'Many people think every statement is either a 100% hard "Fact" or a pure "Opinion." In reality, opinions like "Macaroni tastes better than Raisin Bran" require zero effort or proof, whereas factual claims attempt to describe the real world based on evidence. However, as historian Mary Poovey showed, even facts depend on context.',
       },
       {
         id: 'arq-ch07-feyn-2',
@@ -1936,7 +1791,7 @@ export const arqCh07Mastery: ChapterMastery = {
           'Applies these criteria to deconstruct the Proactiv celebrity ads and the MegaVapor e-cigarette passage.',
         ],
         modelExplanation:
-          'Vivid stories about individuals—whether your friend Judy acing a test after an all-nighter, a crash survivor who wasn’t wearing a seat belt, or a university president bragging about one graduate, Mary Nice, ranking in the top 5% at Harvard Law—only prove that an outcome is possible. Treating a tiny, non-random sample as proof of what happens on average commits the Hasty Generalization fallacy.\n\nTestimonials—like Julianne Hough and Naya Rivera praising Proactiv acne cream—are even weaker because of four built-in distortions: Selectivity (marketers print only rave reviews, and users exhibit "believing is seeing" confirmation bias), Personal Interest (paid endorsements or pharma grants), Omitted Information (unstated evaluation criteria), and the Human Factor (warm, likable speakers). Finally, when someone appeals to an expert authority—like cardiologist Dr. Bob R. Roberts and MegaVapor’s CEO claiming e-cigarettes are harmless—we must ask: Do they have domain training? Do they have primary, firsthand data access (like a peer-reviewed JAMA study rather than secondary magazines like Wired)? Are they free of financial conflicts? And do diverse experts agree? Because Dr. Roberts relies on passive clinic anecdotes while plugging MegaVapor and the CEO profits directly from sales, their authority claims fail the audit.',
+          'Vivid stories about individuals—whether your friend Judy acing a test after an all-nighter, a crash survivor who wasn’t wearing a seat belt, or a university president bragging about one graduate, Mary Nice, ranking in the top 5% at Harvard Law—only prove that an outcome is possible. Treating a tiny, non-random sample as proof of what happens on average commits the Hasty Generalization fallacy.\n\nTestimonials—like Julianne Hough and Naya Rivera praising Proactiv acne cream—are even weaker because of four built-in distortions: Selectivity (marketers print only rave reviews, and users exhibit "believing is seeing" confirmation bias), Personal Interest (paid endorsements or pharma grants), Omitted Information (unstated evaluation criteria), and the Human Factor (warm, likable speakers).',
       },
     ],
   },
@@ -1995,7 +1850,7 @@ export const arqCh07Mastery: ChapterMastery = {
         chapterNumber: 7,
         importance: 1,
         definition:
-          'The five-part interrogation of expert claims: verifying domain training, primary vs. secondary fact access (JAMA vs. Wired), financial/institutional independence, track record, and consensus across diverse experts.',
+          'The five-part interrogation of expert claims: verifying domain training, primary vs. secondary fact access (JAMA vs.',
         whyItMatters:
           'Protects decision-makers from expert blunders (Watson, Zanuck) and conflicted corporate spokespeople (MegaVapor).',
       },
@@ -2044,7 +1899,7 @@ export const arqCh07Mastery: ChapterMastery = {
     figuresIncluded: 1,
     antiAiVerified: true,
     auditNotes:
-      'Verified 100% coverage of all 10 H1/H2 sections of Chapter 7 (The Worth of Personal Experience..., Fact or Opinion? [Mary Poovey, baseball umpire], The Need for Dependable Evidence [6 questions, Washington vs. bottled water vs. aspirin], Sources of Evidence [Exhibit 7-1], Personal Experience as Evidence [Judy, chocolate cake, mechanic, seat belts, Hasty Generalization], Case Examples as Evidence [Mary Nice at Harvard Law, cell phone crashes], Testimonials as Evidence [Jane oil leak, 4 flaws: Selectivity/"believing is seeing", Personal interest, Omitted information, Human factor], Appeals to Authority as Evidence [Watson, Zanuck, JAMA vs. Rolling Stone/Wired, university president, 1/3 fake online reviews & 60% Amazon 5-star skew], Practice Exercises [Passages 1, 2, 3], and Sample Responses) plus arq_ch07_plate.png. Zero prohibited AI clichés.',
+      'Verified 100% coverage of all 10 H1/H2 sections of Chapter 7 (The Worth of Personal Experience..., Fact or Opinion?',
   },
 };
 
@@ -2054,15 +1909,15 @@ export const arqCh08Mastery: ChapterMastery = {
   title: 'How Good Is the Evidence: Personal Observation and Research Studies?',
   subtitle:
     'Auditing cognitive filters in eyewitness observation, exposing survey wording and context biases, evaluating the scientific method’s replication and control limits, and testing sample and measurement generalizability.',
-  readingTimeMinutes: 46,
+  readingTimeMinutes: 9,
   sourceWordCount: 8253,
   executiveThesis:
-    'Chapter 8 completes the evidentiary audit begun in Chapter 7 by interrogating the two sources most widely revered as objective: personal observation and scientific research studies. First, human observers are not passive mirrors; eyewitness reports (such as onlookers at a police shooting or a bank robbery) pass through cognitive filters of prior expectations, values, rapid motion, and stress, while surveys and questionnaires suffer from social desirability shading, ambiguous terms ("quality programming"), leading wording ("impose Obamacare socialism"), and question-order context priming. Second, while the scientific method represents humanity’s highest-leverage tool for generating dependable evidence through public verifiability (replication), experimental control, and linguistic precision, citing "studies show" is never a conversation-stopper. Research studies vary wildly in quality, frequently fail to replicate (41% of top medical interventions failed retesting), require human interpretation rather than "proving" truths, lose real-world ecological validity in artificial computer-lab tasks, and remain vulnerable to funding bias (such as sugar-industry or pharma grants). To evaluate any study—and to write or speak as a strong-sense critical thinker—you must audit its 10 methodological clues, verify that its sample possesses sufficient size ($N$), breadth, and randomness, confirm that its operational measures (like the marshmallow test or a one-time happiness survey) validly capture the underlying construct, and remain willing to abandon your own cherished conclusion when the evidence fails to hold up.',
+    'Chapter 8 completes the evidentiary audit begun in Chapter 7 by interrogating the two sources most widely revered as objective: personal observation and scientific research studies. First, human observers are not passive mirrors.',
   paradigmShift: {
     oldWay:
       'Naive Empiricism & "Studies Show" Deference: Treat eyewitness testimony as a camera recording, accept poll percentages without reading the exact questionnaire wording, and treat any single peer-reviewed study as permanent, universal proof.',
     newWay:
-      'Methodological, Sample & Construct Auditing: Translate "research findings show..." into "researchers interpret their findings as showing..."; audit sample size, breadth, and randomness; restrict conclusions to the exact operational measure used; and demand multi-study replication.',
+      'Methodological, Sample & Construct Auditing: Translate "research findings show..." into "researchers interpret their findings as showing...".',
     whyItChanged:
       'The modern replication crisis (where 41% of landmark medical studies failed retesting), pervasive commercial grant bias, and the Wild West of unvetted Internet citations demonstrated that scientific literacy requires interrogating how data were sampled, measured, and interpreted.',
   },
@@ -2177,7 +2032,7 @@ export const arqCh08Mastery: ChapterMastery = {
           step: '2',
           label: 'Replication Crisis & Impossible Certainty (Stage 2)',
           explanation:
-            'While replication, control, and precision make science our best evidence source, 41% of retested top medical studies failed to replicate—requiring us to demand multi-study convergence without falling into the Impossible Certainty fallacy.',
+            'While replication, control, and precision make science our best evidence source, 41% of retested top medical studies failed to replicate.',
         },
         {
           step: '3',
@@ -2284,7 +2139,7 @@ export const arqCh08Mastery: ChapterMastery = {
           step: '2',
           label: 'Surrogate Proxy vs. Real-World Construct',
           explanation:
-            'Waiting 15 minutes for two marshmallows in a lab is only one narrow operationalization of "delayed gratification"; changing the measure to parental ratings can yield completely different results.',
+            'Waiting 15 minutes for two marshmallows in a lab is only one narrow operationalization of "delayed gratification".',
         },
         {
           step: '3',
@@ -2304,9 +2159,9 @@ export const arqCh08Mastery: ChapterMastery = {
       naiveIntuition:
         'Eyewitness observation ("I saw it with my own eyes") and public opinion polls ("56% of respondents said...") provide raw, unvarnished reflections of physical events and public beliefs.',
       firstPrinciplesReality:
-        'Sensory observation passes through a dense filter of prior values, biases, training, expectations, rapid movement, and high stress (such as onlookers at a police shooting or a bank robbery). Similarly, survey responses are warped by social desirability (giving the "ought" answer), ambiguous terms ("quality programming"), leading wording ("president’s misguided efforts to impose Obamacare socialism"), and question-order priming.',
+        'Sensory observation passes through a dense filter of prior values, biases, training, expectations, rapid movement, and high stress (such as onlookers at a police shooting or a bank robbery).',
       howToApply:
-        'Trust eyewitness reports only when multiple independent observers record events recently under low-stress, optimal conditions without strong prior expectations; never accept a poll percentage until you inspect the exact wording and sequence of the questionnaire.',
+        'Trust eyewitness reports only when multiple independent observers record events recently under low-stress, optimal conditions without strong prior expectations.',
     },
     {
       id: 'arq-ch08-mm-interpretive-translation',
@@ -2314,9 +2169,9 @@ export const arqCh08Mastery: ChapterMastery = {
       tagline:
         'Data never speak for themselves; research findings support rather than prove conclusions.',
       naiveIntuition:
-        'When a peer-reviewed journal article states that "research findings show X," X is a proven, permanent scientific truth—and if a study has any uncertainty, we should reject it entirely.',
+        'When a peer-reviewed journal article states that "research findings show X," X is a proven, permanent scientific truth.',
       firstPrinciplesReality:
-        'While the scientific method excels through public verifiability (replication), control, and precision, single studies frequently contradict one another and fail to replicate (41% of retested landmark medical interventions failed in a major audit). In addition, findings must always be interpreted by human researchers who have funding incentives (e.g., an American Sugar Institute grant) and theoretical priors. Conversely, rejecting solid research just because it isn’t 100% certain commits the Impossible Certainty fallacy.',
+        'While the scientific method excels through public verifiability (replication), control, and precision, single studies frequently contradict one another and fail to replicate (41% of retested landmark medical interventions failed in a major audit).',
       howToApply:
         'Mentally translate every instance of "research findings show..." into "researchers interpret their research findings as showing...", check whether independent labs have replicated the result, and weigh probabilistic support without demanding impossible certainty.',
     },
@@ -2330,7 +2185,7 @@ export const arqCh08Mastery: ChapterMastery = {
       firstPrinciplesReality:
         'A sample’s generalizability is governed by three jointly necessary pillars: (1) Size ($N$ large enough to shrink random error, e.g., 1,000 students beating 100), (2) Breadth (diversity matching the target population across settings), and (3) Randomness (every member of the target population having an equal chance of selection, avoiding volunteer self-selection, landline-only, Intro Psych, or partisan TV biases).',
       howToApply:
-        'Audit every study by comparing the Sampled Frame against the Target Population in the headline; if the sample relied on volunteers (like the 229 daters or 451 AA attendees), quarantine the conclusion against self-selection bias.',
+        'Audit every study by comparing the Sampled Frame against the Target Population in the headline.',
     },
     {
       id: 'arq-ch08-mm-marshmallow-proxy-gap',
@@ -2340,7 +2195,7 @@ export const arqCh08Mastery: ChapterMastery = {
       naiveIntuition:
         'If a study measures "critical thinking," "delayed gratification," or "happiness," its conclusions apply to those concepts in every real-world setting.',
       firstPrinciplesReality:
-        'Abstract constructs can be measured in dozens of ways: critical thinking via a multiple-choice test versus a critical essay; delayed gratification via choosing 1 marshmallow now or 2 in 15 minutes versus longitudinal parental ratings; marital happiness via a one-time self-report item versus multi-time daily experience sampling. Results generalize only to the specific measure chosen.',
+        'Abstract constructs can be measured in dozens of ways: critical thinking via a multiple-choice test versus a critical essay.',
       howToApply:
         'Always append the operational measure to the conclusion ("Married people are happier than single people, given that happiness is defined as a one-time self-report questionnaire response") and ask whether an alternative measure would flip the finding.',
     },
@@ -2353,7 +2208,7 @@ export const arqCh08Mastery: ChapterMastery = {
       subtitle:
         'Why human eyewitnesses are not passive mirrors, and how dishonesty, ambiguity, leading wording ("Obamacare socialism"), and question context corrupt polls.',
       coreMechanism:
-        'Personal observation forms the bedrock of everyday reasoning and scientific inquiry, leading people to place immense faith in eyewitness testimony ("I saw it with my own eyes"). Consider an argument stating that a policeman who shot and killed an unarmed man should be charged with a crime because, although the officer claimed he thought the victim was reaching for a gun, onlookers reported that the victim made no threatening movement. How dependable are those onlooker observations? Unlike polished mirrors, human observers never deliver "pure" observations. Everything we see and report is filtered through our values, biases, attitudes, prior experiences, training, and expectations—we selectively notice and remember details that fit our prior beliefs. Compounding this cognitive filter are situational impediments: poor attention, rapid movement of unfolding events, and high-stress environments (such as standing near someone waving a gun at a bank teller). Personal observation is most dependable only when recorded recently by multiple independent observers under optimal, low-stress conditions who hold no strong prior expectations about the event.\n\nA second ubiquitous observational tool is the Survey or Questionnaire ("according to recent polls..."). For survey data to serve as dependable evidence, verbal reports must honestly mirror respondents’ true beliefs. In practice, survey responses are degraded by four major distortions:\n1. Shading the Truth & Social Desirability: Respondents frequently give answers they think they ought to give (the socially acceptable answer) rather than their true beliefs, react with hostility toward intrusive questions, or answer carelessly without reflection.\n2. Ambiguous Wording: When a question asks, "Do you think there is quality programming on television?", the phrase "quality programming" is so ambiguous that different respondents are effectively answering completely different questions.\n3. Biased / Leading Wording: Small wording shifts dramatically skew poll outcomes. When a college professor reported that 56 percent of university respondents believed the Obama health care program was a major mistake, inspection of the actual prompt revealed: "What do you think about the president’s misguided efforts to impose Obamacare socialism on the nation?" Had the prompt asked about "the president’s attempt to provide expanded coverage and lower costs," the percentages would have inverted.\n4. Biased Context & Length Fatigue: Answers to identical questions shift depending on how the question is embedded. When the question "Do you think we should lower the drinking age from 21?" was preceded by "Do you think the right to vote should be given to children at the age of 18 as it currently is?", results differed significantly from a poll without the preceding question. In overly long surveys, respondent fatigue also alters answers to later items.',
+        'Personal observation forms the bedrock of everyday reasoning and scientific inquiry, leading people to place immense faith in eyewitness testimony ("I saw it with my own eyes"). Consider an argument stating that a policeman who shot and killed an unarmed man should be charged with a crime because, although the officer claimed he thought the victim was reaching for a gun, onlookers reported that the victim made no threatening movement.\n\nA second ubiquitous observational tool is the Survey or Questionnaire ("according to recent polls..."). For survey data to serve as dependable evidence, verbal reports must honestly mirror respondents’ true beliefs.',
       stepByStepFlow: [
         {
           step: '1',
@@ -2380,32 +2235,14 @@ export const arqCh08Mastery: ChapterMastery = {
             'Verify whether earlier framing questions primed respondents (like the 18-year-old voting question preceding the 21-year-old drinking-age question) or whether survey length caused fatigue.',
         },
       ],
-      formulas: [
-        {
-          name: 'Survey Response Distortion Decomposition',
-          expression:
-            'R_{\\text{poll}} = \\theta_{\\text{true attitude}} + \\delta_{\\text{social desirability}} + \\lambda_{\\text{leading wording}} + \\kappa_{\\text{context order}} + \\epsilon_{\\text{ambiguity/fatigue}}',
-          intuition:
-            'A reported poll percentage R_poll is never a pure readout of true public attitude theta_true; it is the sum of the true attitude plus systematic shifts from social desirability shading, leading adjectives, prior-question priming, and ambiguity noise.',
-          variables: [
-            { symbol: '\\theta_{true}', meaning: 'Underlying unvarnished belief or behavior of the respondent' },
-            { symbol: '\\delta_{social}', meaning: 'Bias toward giving the socially respectable or polite answer' },
-            { symbol: '\\lambda_{leading}', meaning: 'Directional skew injected by loaded terms ("impose Obamacare socialism")' },
-            { symbol: '\\kappa_{context}', meaning: 'Priming effect from preceding survey items or questionnaire length' },
-          ],
-          workedExample:
-            'In the university health-care poll, injecting the leading phrases "misguided efforts" and "impose Obamacare socialism" creates a massive positive lambda_leading shift, inflating opposition to 56% regardless of theta_true.',
-        },
-      ],
       keyTakeaways: [
-        'Eyewitness observers are not mirrors; values, expectations, rapid action, and stress distort what people see and remember.',
-        'You cannot assume survey responses reflect true attitudes until you audit honesty incentives, wording specificity, leading bias, and question context.',
-        'Even biased surveys can be informative if you identify the specific biases and formulate a carefully qualified generalization.',
-      ],
+          'Eyewitness observers are not mirrors; values, expectations, rapid action, and stress distort what people see and remember.',
+          'You cannot assume survey responses reflect true attitudes until you audit honesty incentives, wording specificity, leading bias, and question context.',
+        ],
       commonPitfalls: [
-        'Citing a poll headline ("56% oppose policy X") without reading the exact verbatim question and the questions that preceded it.',
-        'Treating a single stressed eyewitness account during a chaotic confrontation as indisputable objective fact.',
-      ],
+          'Citing a poll headline ("56% oppose policy X") without reading the exact verbatim question and the questions that preceded it.',
+          'Treating a single stressed eyewitness account during a chaotic confrontation as indisputable objective fact.',
+        ],
     },
     {
       id: 'arq-ch08-sec-8-2',
@@ -2414,7 +2251,7 @@ export const arqCh08Mastery: ChapterMastery = {
       subtitle:
         'The three pillars of the scientific method (replication, control, precision) versus the eight real-world research vulnerabilities, the Impossible Certainty fallacy, and the 10-point audit checklist.',
       coreMechanism:
-        'Scientific research studies conducted by trained investigators represent a specialized, high-authority source of observational evidence. Society relies on the scientific method to overcome human observational fallibility through three defining characteristics: (1) Publicly Verifiable Data (Replication)—obtaining data under transparent conditions so independent researchers can repeat the experiment (for instance, verifying whether a claimed lab achievement of cold fusion can be replicated by other labs); (2) Control—deploying procedures like multiple independent observers or laboratory isolation to minimize extraneous variables (though control is vastly harder to achieve for complex human social behavior than in physical science labs); and (3) Precision in Language—replacing vague, ambiguous everyday terms with consistent operational definitions.\n\nDespite these strengths, publication in a scientific journal is no guarantee of dependability. Browne and Keeley detail eight general problems with research findings:\n1. Quality Variance: Even well-trained researchers publish studies with serious methodological flaws.\n2. Contradictory Findings & Replication Failure: Single studies ripped from the broader "family of research studies" frequently mislead. A landmark report ("Lies, Damned Lies, and Medical Science," The Atlantic, November 2010) revealed that 41 percent of efforts to retest highly regarded medical intervention claims showed the original claims to be wrong or greatly exaggerated.\n3. Findings Support Rather Than Prove: Data never speak for themselves; researchers must interpret them. Always translate "research findings show..." into "researchers interpret their research findings as showing..."\n4. Researcher Expectations & Funding Bias: Scientists are human beings whose hypotheses and funding sources shape their questions and interpretations (if the American Sugar Institute funds your summer grant, finding that teen sugar intake is excessive becomes difficult).\n5. Speaker Distortion: Secondary writers strip away the careful qualifications placed in original research reports.\n6. Research "Facts" Change Over Time: Major scientific claims—such as Prozac, Zoloft, and Paxil outperforming placebos for most depression cases, fish oil and puzzles fending off Alzheimer’s disease, or the thoroughly refuted claim that the measles vaccine causes autism—have been overturned by subsequent research.\n7. Artificiality (Loss of Ecological Validity): Maximizing lab control—such as having subjects sit at a computer playing hypothetical dilemma games—often makes conditions too artificial to generalize to real-world moral decisions.\n8. Financial, Status & Publication Bias: Pressures for tenure and grants skew published outcomes; pharmaceutical-funded studies report positive findings for the sponsor’s drug at much higher rates than federally funded studies of the exact same drugs.\n\nWhile we must avoid premature embrace of single studies, rejecting a scientific conclusion simply because some uncertainty remains commits the Impossible Certainty fallacy. Instead, critical thinkers apply the textbook’s 10 Clues for Evaluating Research Studies (Page 107): auditing (1) peer-reviewed source reputation, (2) methodological strength details, (3) recency and temporal stability (1980 vs. 2014), (4) independent replication (like the smoking-and-cancer link), (5) communicator selectivity across contradictory studies, (6) strong-sense qualification of limitations, (7) financial/personal distortion incentives, (8) lab artificiality, (9) sample generalizability, and (10) measurement bias.',
+        'Scientific research studies conducted by trained investigators represent a specialized, high-authority source of observational evidence. Society relies on the scientific method to overcome human observational fallibility through three defining characteristics: (1) Publicly Verifiable Data (Replication).\n\nDespite these strengths, publication in a scientific journal is no guarantee of dependability. Browne and Keeley detail eight general problems with research findings:\n1.',
       stepByStepFlow: [
         {
           step: '1',
@@ -2438,19 +2275,17 @@ export const arqCh08Mastery: ChapterMastery = {
           step: '4',
           title: 'Guard Against the Impossible Certainty Fallacy',
           detail:
-            'Do not demand 100% certainty where probabilistic uncertainty is inherent; embrace conclusions backed by a replicated preponderance of well-designed studies.',
+            'Do not demand 100% certainty where probabilistic uncertainty is inherent.',
         },
       ],
       keyTakeaways: [
-        'Well-conducted scientific research is our strongest evidence source because it prioritizes public verifiability (replication), control, and linguistic precision.',
-        'Single, un-replicated studies are highly suspect: 41% of retested top medical intervention claims failed to hold up.',
-        'Research findings never "prove" a conclusion; they support conclusions through human interpretation.',
-        'The Impossible Certainty fallacy occurs when a critic rejects solid scientific evidence merely because it is not 100% certain.',
-      ],
+          'Well-conducted scientific research is our strongest evidence source because it prioritizes public verifiability (replication), control, and linguistic precision.',
+          'Single, un-replicated studies are highly suspect: 41% of retested top medical intervention claims failed to hold up.',
+        ],
       commonPitfalls: [
-        'Citing a single attention-grabbing study out of context while ignoring the broader family of studies that contradict it.',
-        'Assuming that a study conducted in an artificial computer-game laboratory automatically generalizes to high-stakes human behavior in the wild.',
-      ],
+          'Citing a single attention-grabbing study out of context while ignoring the broader family of studies that contradict it.',
+          'Assuming that a study conducted in an artificial computer-game laboratory automatically generalizes to high-stakes human behavior in the wild.',
+        ],
     },
     {
       id: 'arq-ch08-sec-8-3',
@@ -2459,7 +2294,7 @@ export const arqCh08Mastery: ChapterMastery = {
       subtitle:
         'Auditing Sample Size (N), Breadth/Diversity, and Randomness across Gallup polls, four classic biased samples, and the 229-person online dating study.',
       coreMechanism:
-        'Communicators routinely use research studies to justify broad generalizations—claims about events or populations in general. Reporting that "the medication was effective in treating cancer for 75 percent of the patients in the study" is a descriptive statement about a sample; claiming "the medication cures pancreatic cancer" is a sweeping generalization. Because researchers can never observe every person or event in a target population, they must select a subset through sampling. How far we can generalize from a study depends on three sampling criteria:\n\n1. Sample Size ($N$): The sample must be large enough to justify the generalization. Observing 1,000 college students regarding term-paper assistance yields a far more dependable conclusion than observing 100 students.\n2. Sample Breadth (Diversity): The sample must possess as much diversity as the target population about which conclusions are drawn. Generalizing about "college students’ drinking habits in general" requires sampling diverse student demographics across diverse types of institutions (commuter schools, state universities, small liberal arts colleges).\n3. Randomness: In a random sample (such as major Gallup Polls), every member or event in the target population has an equal chance of being selected. Random sampling prevents the systematic distortions seen in four textbook examples of biased samples: (a) people who volunteer to be interviewed about frequency of sexual activity, (b) people who have landline phones only, (c) students in an introductory psychology class, and (d) viewers of partisan television networks like Fox or MSNBC.\n\nIgnoring these three constraints produces research overgeneralization—a scientific form of the Hasty Generalization fallacy. Consider the textbook’s online dating passage: "People who join online dating services tend to succeed in finding a good match. Researchers conducted an online survey of 229 people, aged 18 to 65, who had all used an Internet dating site... 94 percent of those surveyed saw their e-partners again... and the relationships lasted for an average of at least seven months." Here, the sample studied only one website and only 229 people, with zero disclosure of how respondents were selected. Because satisfied users who found a match are far more likely to volunteer for a relationship survey than frustrated users who quit, generalizing from 229 single-site volunteers to all online daters is a textbook overgeneralization. We can generalize only to people and events that match those studied in the research.',
+        'Communicators routinely use research studies to justify broad generalizations—claims about events or populations in general. Reporting that "the medication was effective in treating cancer for 75 percent of the patients in the study" is a descriptive statement about a sample; claiming "the medication cures pancreatic cancer" is a sweeping generalization.\n\n1. Sample Size ($N$): The sample must be large enough to justify the generalization.',
       stepByStepFlow: [
         {
           step: '1',
@@ -2486,33 +2321,14 @@ export const arqCh08Mastery: ChapterMastery = {
             'Ask whether subjects volunteered (like the 229 daters or 451 AA respondents in Passage 1) or were filtered by a biased channel (landlines, Intro Psych, partisan media).',
         },
       ],
-      formulas: [
-        {
-          name: 'Sampling Margin of Error & Selection Bias Decomposition',
-          expression:
-            '\\text{ME}_{95\\%} \\approx \\frac{0.98}{\\sqrt{N}} \\quad \\text{(under pure random sampling)} \\quad ; \\quad \\text{Total Sample Error} = \\text{ME}(N) + \\Delta_{\\text{non-random}} + \\Delta_{\\text{narrow breadth}}',
-          intuition:
-            'While increasing sample size N shrinks random sampling noise at a 1/sqrt(N) rate, a large N cannot rescue a study if non-random volunteer selection (Delta_non-random) or narrow single-site breadth (Delta_narrow breadth) is present.',
-          variables: [
-            { symbol: 'N', meaning: 'Number of independent individuals or events sampled' },
-            { symbol: 'ME_{95%}', meaning: '95% confidence margin of error assuming truly random selection' },
-            { symbol: '\\Delta_{non-random}', meaning: 'Systematic bias from volunteer self-selection or channel filtering (e.g., landline-only)' },
-            { symbol: '\\Delta_{narrow breadth}', meaning: 'Generalization gap from studying only one website, state cluster, or classroom' },
-          ],
-          workedExample:
-            'For N = 100 random students, ME ~ 9.8%; increasing N to 1,000 cuts ME to ~3.1%. However, in the N = 229 online dating study (and N = 451 AA volunteer study in Passage 1), volunteer self-selection injects a massive Delta_non-random that invalidates broad generalization regardless of N.',
-        },
-      ],
       keyTakeaways: [
-        'Generalizability rests on three pillars: Sample Size ($N$), Breadth (diversity matching the target population), and Randomness (equal probability of selection).',
-        'Volunteers, landline-only owners, Intro Psych students, and Fox/MSNBC viewers are canonical biased samples.',
-        'Overgeneralizing from a narrow or self-selected research sample commits the Hasty Generalization fallacy.',
-        'Rule of thumb: You can generalize only to people and events that are like those actually studied in the research.',
-      ],
+          'Generalizability rests on three pillars: Sample Size ($N$), Breadth (diversity matching the target population), and Randomness (equal probability of selection).',
+          'Volunteers, landline-only owners, Intro Psych students, and Fox/MSNBC viewers are canonical biased samples.',
+        ],
       commonPitfalls: [
-        'Being impressed by a sample size of several hundred ($N=229$ or $N=451$) while ignoring that the participants were self-selected volunteers.',
-        'Treating a single-site or three-state convenience sample as representative of an entire national population.',
-      ],
+          'Being impressed by a sample size of several hundred ($N=229$ or $N=451$) while ignoring that the participants were self-selected volunteers.',
+          'Treating a single-site or three-state convenience sample as representative of an entire national population.',
+        ],
     },
     {
       id: 'arq-ch08-sec-8-4',
@@ -2521,7 +2337,7 @@ export const arqCh08Mastery: ChapterMastery = {
       subtitle:
         'Why operational proxy metrics (multiple-choice tests, the 1-vs-2 marshmallow test, and one-time happiness surveys) bound the scope of every research conclusion.',
       coreMechanism:
-        'Every empirical study requires researchers to decide how to measure the abstract concepts or behaviors of interest—a process known as operationalization. Suppose an educational researcher wants to test whether a new teaching technique improves "critical thinking." Because complex concepts like critical thinking, delayed gratification, or happiness can be defined and measured in many different ways via questionnaires, checklists, or behavioral tasks, the conclusions of any research study apply strictly to the particular measure chosen.\n\nConsider three concrete examples from the text:\n1. Measuring Critical Thinking: A researcher might measure critical-thinking skill using a written critical essay or using a multiple-choice test. A critical essay is a far richer indicator of real-world critical thinking than a multiple-choice test, and a teaching method that boosts multiple-choice scores may fail to improve essay reasoning.\n2. Measuring Delay of Gratification (The Marshmallow Test): Researchers famously measured children’s ability to delay gratification by observing whether a child chose one marshmallow immediately versus waiting 15 minutes to receive two marshmallows. A critical thinker must ask: "Is marshmallow choice in a lab room a satisfactory measure of general delayed gratification, and would the findings differ if researchers had used longitudinal parental judgments of their child’s ability to delay gratification?"\n3. Measuring Marital Happiness: When a study concludes that "married people are happier than single people" based on a survey asking a single question ("How happy are you?"), the conclusion must be restated with its definitional boundary attached: "Married people are happier than single people, given that happiness is defined as a one-time response on a self-report questionnaire." Other researchers measure happiness by having individuals rate their mood at multiple times daily across weeks, which can yield very different patterns.\n\nEven without advanced statistical training, you can audit research measures effectively by (1) identifying the exact measurement device used, (2) imagining yourself in the shoes of a study participant taking that measure, and (3) asking whether alternative ways of measuring the concept would produce different results.',
+        'Every empirical study requires researchers to decide how to measure the abstract concepts or behaviors of interest.\n\nConsider three concrete examples from the text:\n1. Measuring Critical Thinking: A researcher might measure critical-thinking skill using a written critical essay or using a multiple-choice test.',
       stepByStepFlow: [
         {
           step: '1',
@@ -2548,32 +2364,14 @@ export const arqCh08Mastery: ChapterMastery = {
             'Explicitly attach a "given that [Construct] is defined as [Measure]" clause to prevent construct overgeneralization.',
         },
       ],
-      formulas: [
-        {
-          name: 'Construct-to-Proxy Measurement Error Equation',
-          expression:
-            'M_{\\text{observed}} = \\theta_{\\text{true construct}} + \\beta_{\\text{method bias}} + \\epsilon_{\\text{random noise}} \\quad ; \\quad \\text{Validity} = \\text{Corr}(M_{\\text{observed}}, \\theta_{\\text{true}})',
-          intuition:
-            'Every operational measurement M_observed captures only a fraction of the true latent construct theta_true, contaminated by systematic method bias beta_bias (such as social desirability on a one-time self-report) and random noise epsilon_noise.',
-          variables: [
-            { symbol: 'M_{observed}', meaning: 'Recorded score on the surrogate proxy (e.g., marshmallow wait time or 1-shot survey)' },
-            { symbol: '\\theta_{true}', meaning: 'True underlying behavioral trait or construct across real-world contexts' },
-            { symbol: '\\beta_{method}', meaning: 'Systematic distortion specific to the measurement instrument (e.g., multiple-choice guessing or self-report impression management)' },
-            { symbol: '\\epsilon_{noise}', meaning: 'Transient situational fluctuations (hunger, mood, test fatigue)' },
-          ],
-          workedExample:
-            'In Passage 1 (AA study), parental alcoholism (M_observed) was measured via unstandardized retrospective ratings by adult children without objective clinical criteria, while the control group’s "non-heavy drinker" status relied on unverified self-assessment—inflating beta_method via social desirability bias.',
-        },
-      ],
       keyTakeaways: [
-        'Because abstract concepts can be operationalized in many ways, research conclusions generalize only to the specific measure used.',
-        'A critical essay vs. a multiple-choice test (for critical thinking), 1-vs-2 marshmallows vs. parental ratings (for delayed gratification), and one-time vs. daily ratings (for happiness) can yield divergent conclusions.',
-        'Putting yourself in the shoes of a study participant helps expose measurement artificiality and self-report bias.',
-      ],
+          'Because abstract concepts can be operationalized in many ways, research conclusions generalize only to the specific measure used.',
+          'A critical essay vs. a multiple-choice test (for critical thinking), 1-vs-2 marshmallows vs. parental ratings (for delayed gratification), and one-time vs. daily ratings (for happiness) can yield divergent conclusions.',
+        ],
       commonPitfalls: [
-        'Accepting a headline claim ("Method X boosts critical thinking") without checking whether the researchers only measured multiple-choice recall.',
-        'Treating unstandardized self-assessments or retrospective family labels (like "alcoholic parent" in Passage 1) as objective clinical measurements.',
-      ],
+          'Accepting a headline claim ("Method X boosts critical thinking") without checking whether the researchers only measured multiple-choice recall.',
+          'Treating unstandardized self-assessments or retrospective family labels (like "alcoholic parent" in Passage 1) as objective clinical measurements.',
+        ],
     },
     {
       id: 'arq-ch08-sec-8-5',
@@ -2582,7 +2380,7 @@ export const arqCh08Mastery: ChapterMastery = {
       subtitle:
         'System 2 expert auditing (Freedman’s Wrong), Internet hoax defenses (The Onion & Colbert’s Wikipedia edits), the 7 rules for critical writers, and deconstructing Passages 1–3.',
       coreMechanism:
-        'Given how frequently experts err (as documented in David H. Freedman’s 2010 book Wrong: Why Experts Keep Failing Us and How to Know When Not to Trust Them), when can you most trust expert opinion? Browne and Keeley establish eight benchmarks: (1) you have overridden System 1 thinking—treating an immediate impulse to share a novel or tribe-confirming claim on Facebook or Twitter as a red-alert warning to WAIT and engage System 2; (2) thinking leads and emotion follows; (3) the advice survives the critical questions (well-designed studies free of conflicts of interest); (4) it includes qualifying statements; (5) it recognizes scope limits rather than claiming universal application; (6) it is situated within a broad family of studies over time rather than a single attention-grabbing study; (7) it has withstood peer scrutiny; and (8) you have consulted in-depth analytical venues.\n\nWhen gathering evidence on the Internet—a digital "Wild West" with no sheriff—skepticism must double. As satirized by The Onion’s "Local Idiot to Post Comment on Internet" (2008) and "Factual Error Found on Internet" (2002), anyone can publish a slick-looking website with a hidden agenda. On The Colbert Report, Stephen Colbert demonstrated Wikipedia’s vulnerability by editing entries so that for five hours Wikipedia stated George Washington did not own slaves and the African elephant population had tripled in six months. Critical thinkers never cite uncredited snippets; they trace claims back to primary sources, start with university library portals rather than raw search engines, and verify whether an author has published six or seven peer-reviewed papers on a single focused topic rather than blogging across prescription drugs, sports, literature, and technology.\n\nIn "Writing and Speaking as Critical Thinkers," Browne and Keeley synthesize seven operational rules: (1) provide explicit evidence for claims, (2) ensure evidence is relevant, sufficient, and representative, (3) back up assumptions with evidence, (4) seek better evidence rather than impossible perfection, (5) supplement individual anecdotes with systematic support, (6) prioritize well-done scientific evidence, and (7) carefully combine high-quality scientific evidence with engaging emotional appeals, case stories, and metaphors so the reader stays invested. Writers must guard against four internal traps: believing our own personal experiences are higher quality than other people’s anecdotes; deferring to rigid experts (noting that changing one’s mind when new evidence emerges is intellectually responsible rather than being a "flip-flopper" or "hypocrite"); seeking only confirming experts; and refusing to let go of an unsupported thesis. Addressing counterarguments head-on strengthens an essay, and if you reach the evidence stage and find insufficient dependable evidence for your cherished claim, the only critical-thinking response is to chalk it up to a learning experience and start over.\n\nFinally, the three Practice Passages integrate every Chapter 8 audit skill:\n- Passage 1 (451 AA volunteers in OH/MI/IN reporting 77% alcoholic parents vs. 451 random non-heavy drinkers reporting 23%): Single un-replicated study; unknown peer-review venue; limited breadth (3 states, AA attendees only vs. non-AA alcoholics); severe non-random volunteer bias in the AA group; undefined measurement criteria for rating a parent as "alcoholic"; and social desirability bias in the control group’s self-assessment as "non-heavy drinkers."\n- Passage 2 (18-year-olds should drink alcohol because they can vote, join the military, drive, and live alone): Relies on an analogy that ignores a pivotal psychological and developmental maturity difference between 18- and 21-year-olds affecting responsible alcohol use.\n- Passage 3 (75 Detroit residents polled where 93% believe medical marijuana won’t increase recreational use -> pass national law): Tiny sample ($N=75$), zero national breadth (one city), unknown selection randomness, and measures lay public opinion rather than empirical epidemiological behavior.',
+        'Given how frequently experts err (as documented in David H. Freedman’s 2010 book Wrong: Why Experts Keep Failing Us and How to Know When Not to Trust Them), when can you most trust expert opinion?\n\nWhen gathering evidence on the Internet—a digital "Wild West" with no sheriff—skepticism must double. As satirized by The Onion’s "Local Idiot to Post Comment on Internet" (2008) and "Factual Error Found on Internet" (2002), anyone can publish a slick-looking website with a hidden agenda.',
       stepByStepFlow: [
         {
           step: '1',
@@ -2606,19 +2404,17 @@ export const arqCh08Mastery: ChapterMastery = {
           step: '4',
           title: 'Practice Thesis Abandonment When Evidence Fails',
           detail:
-            'If thorough research reveals that your initial conclusion lacks dependable support, resist substituting personal anecdotes—revise or abandon the thesis.',
+            'If thorough research reveals that your initial conclusion lacks dependable support, resist substituting personal anecdotes.',
         },
       ],
       keyTakeaways: [
-        'An immediate urge to share an expert opinion on Facebook or Twitter is a classic System 1 warning sign to slow down and audit the evidence.',
-        'The most reliable conclusions never emerge from single, headline-grabbing studies; they emerge from a family of studies by diverse experts over time.',
-        'Effective critical writers combine rigorous scientific data with engaging human narratives and proactive counterargument sections.',
-        'Changing your mind when new evidence demands it is the hallmark of a responsible critical thinker, not "flip-flopping."',
-      ],
+          'An immediate urge to share an expert opinion on Facebook or Twitter is a classic System 1 warning sign to slow down and audit the evidence.',
+          'The most reliable conclusions never emerge from single, headline-grabbing studies.',
+        ],
       commonPitfalls: [
-        'Dismissing other people’s personal experiences as Hasty Generalizations while treating your own or your close friends’ experiences as high-quality proof.',
-        'Continuing to defend an unsupported essay conclusion by piling up personal anecdotes because of sunk-cost attachment to your early draft.',
-      ],
+          'Dismissing other people’s personal experiences as Hasty Generalizations while treating your own or your close friends’ experiences as high-quality proof.',
+          'Continuing to defend an unsupported essay conclusion by piling up personal anecdotes because of sunk-cost attachment to your early draft.',
+        ],
       figures: [
         {
           file: 'arq_ch08_plate.png',
@@ -2628,9 +2424,9 @@ export const arqCh08Mastery: ChapterMastery = {
           editorialAnalysis:
             'The Chapter 8 opening blueprint frames the evaluation of empirical evidence around two primary pillars: (1) recognizing the cognitive and situational dangers of personal observation and survey instruments, and (2) mastering the methodological, sampling, and measurement audits required to judge scientific research studies.',
           keyTakeaways: [
-            'Completes the two-chapter evidence audit (Chapters 7 and 8) by moving from narrative/authority claims to observational and scientific studies.',
-            'Centers on the critical question: "How good is the evidence: personal observation and research studies?"',
-          ],
+          'Completes the two-chapter evidence audit (Chapters 7 and 8) by moving from narrative/authority claims to observational and scientific studies.',
+          'Centers on the critical question: "How good is the evidence: personal observation and research studies?"',
+        ],
         },
       ],
     },
@@ -2734,13 +2530,13 @@ export const arqCh08Mastery: ChapterMastery = {
       roleAndContext:
         'VP of Developer Experience evaluating an internal study claiming that a new proprietary AI code-review bot "increased engineering productivity by 88% across the company."',
       symptomOrFailure:
-        'The tool vendor and internal champion present a slide showing: (1) an internal survey of 140 engineers where 88% agreed with the prompt: "Has the innovative AI Review Assistant helped streamline your daily workflow?", and (2) a telemetry chart showing that "average pull-request comments per engineer" rose by 45%. Based on this, leadership wants to mandate the bot across all 1,200 engineers and cut manual peer review requirements.',
+        'The tool vendor and internal champion present a slide showing: (1) an internal survey of 140 engineers where 88% agreed with the prompt: "Has the innovative AI Review Assistant helped streamline your daily workflow?", and (2) a telemetry chart showing that "average pull-request comments per engineer" rose by 45%.',
       naiveFixAndWhyItFails:
         'Accepting the 88% survey figure and the 45% comment-volume spike as proof of "engineering productivity" mistakes a biased volunteer survey and a noisy proxy measure for real software quality.',
       firstPrinciplesSolution:
-        'Apply Chapter 8’s three-part audit: (1) Survey Wording & Sample Audit: Point out that the 140 respondents were self-selected early adopters from a single frontend org (failing Sample Breadth and Randomness, just like the 229 online daters) and that the prompt used leading wording ("innovative... streamline"); (2) Construct-to-Measure Audit: Expose the proxy gap ($M_{\\text{observed}} \\neq \\theta_{\\text{true}}$)—defining "engineering productivity" as "number of PR comments generated" is like measuring critical thinking with a multiple-choice test, because noisy bot nitpicks inflate comment counts while slowing down merges; (3) Redesign the evaluation as a randomized controlled trial across 400 stratified engineers measuring production change-failure rate and lead time to deploy.',
+        'Apply Chapter 8’s three-part audit: (1) Survey Wording & Sample Audit: Point out that the 140 respondents were self-selected early adopters from a single frontend org (failing Sample Breadth and Randomness, just like the 229 online daters) and that the prompt used leading wording ("innovative... streamline").',
       measurableOutcome:
-        'The randomized trial reveals that the bot’s default configuration increased PR review turnaround time by 18% due to false-positive style nitpicks; tuning the bot to high-confidence bug patterns restores a verified 14% reduction in production defects.',
+        'The randomized trial reveals that the bot’s default configuration increased PR review turnaround time by 18% due to false-positive style nitpicks.',
     },
     {
       id: 'arq-ch08-scen-ml-benchmark-artificiality',
@@ -2748,13 +2544,13 @@ export const arqCh08Mastery: ChapterMastery = {
       roleAndContext:
         'Lead Machine Learning Engineer presenting a new graph-neural-network (GNN) payment fraud detector to the Risk & Compliance Committee.',
       symptomOrFailure:
-        'Two opposite failures occur in the meeting: First, a data scientist claims the model "proves 99.4% fraud elimination" based on an offline static benchmark dataset from 2019. Second, a compliance officer argues that because the model still has a 2% false-negative rate on novel synthetic attacks, "the model is uncertain and must be rejected completely in favor of manual rules."',
+        'Two opposite failures occur in the meeting: First, a data scientist claims the model "proves 99.4% fraud elimination" based on an offline static benchmark dataset from 2019.',
       naiveFixAndWhyItFails:
         'Deploying directly from the 2019 static benchmark ignores temporal drift and lab artificiality, while yielding to the compliance officer’s demand for 0% uncertainty paralyzes deployment via the Impossible Certainty fallacy.',
       firstPrinciplesSolution:
         'Apply Chapter 8’s scientific research audit to both extremes: (1) Correct the data scientist using Clue 3 (Recency/Temporal Drift—fraud patterns in 2026 differ radically from 2019) and Clue 8 (Artificiality—offline static CSV evaluation ignores adversarial real-time adaptation), translating the claim into a qualified shadow-mode hypothesis; (2) Counter the compliance officer by naming the Impossible Certainty fallacy (rejecting a scientifically supported improvement because it is not 100% certain) and comparing the GNN’s shadow-mode precision/recall against the existing manual rule baseline.',
       measurableOutcome:
-        'The committee approves a 30-day live shadow-mode replication test; the GNN demonstrates a 31% reduction in live fraudulent chargebacks over manual rules at identical false-positive rates and moves safely into production.',
+        'The committee approves a 30-day live shadow-mode replication test.',
     },
   ],
   activeRecall: {
@@ -2905,42 +2701,42 @@ export const arqCh08Mastery: ChapterMastery = {
         id: 'arq-ch08-fc1',
         category: 'evaluation',
         front: 'Why are personal observations and eyewitness reports often untrustworthy evidence, and when are they most reliable?',
-        back: 'Observers are not pure mirrors: what we see is filtered by values, biases, expectations, rapid motion, and stress (e.g., a gun confrontation). Observations are most reliable when made recently by several independent people under optimal, low-stress conditions with no strong prior expectations.',
+        back: 'Observers are not pure mirrors: what we see is filtered by values, biases, expectations, rapid motion, and stress (e.g., a gun confrontation).',
         mentalHook: 'Human Eyes = Cognitive Lenses, Not Mirrors.',
       },
       {
         id: 'arq-ch08-fc2',
         category: 'evaluation',
         front: 'What are the 4 major biases that distort Surveys and Questionnaires in Chapter 8?',
-        back: '1. Dishonesty / Shading the truth (giving socially desirable "ought" answers)\n2. Ambiguous wording ("quality programming on TV")\n3. Biased / leading wording ("president’s misguided efforts to impose Obamacare socialism")\n4. Biased context & length (preceding priming questions—like 18yo voting before 21yo drinking age—and survey fatigue).',
+        back: '1.',
         mentalHook: 'SALC: Shading Truth, Ambiguity, Leading Wording, Context Order.',
       },
       {
         id: 'arq-ch08-fc3',
         category: 'foundation',
         front: 'What are the 3 defining strengths of the Scientific Method, and what is the Impossible Certainty fallacy?',
-        back: 'Three strengths: (1) Publicly verifiable data / Replication, (2) Control of extraneous variables, (3) Precision in language. The Impossible Certainty fallacy is assuming that a scientifically based research conclusion should be rejected if it is not 100% absolutely certain.',
+        back: 'Three strengths: (1) Publicly verifiable data / Replication, (2) Control of extraneous variables, (3) Precision in language.',
         mentalHook: 'Science = Replication + Control + Precision; Don’t Demand 100% Certainty.',
       },
       {
         id: 'arq-ch08-fc4',
         category: 'evaluation',
         front: 'What statistic from The Atlantic ("Lies, Damned Lies, and Medical Science") illustrates the replication crisis, and how should you translate "research findings show..."?',
-        back: '41% of efforts to retest highly regarded medical intervention claims showed the original claims were wrong or greatly exaggerated. Always translate "research findings show..." into "researchers interpret their research findings as showing..."',
+        back: '41% of efforts to retest highly regarded medical intervention claims showed the original claims were wrong or greatly exaggerated.',
         mentalHook: '41% Retest Failure; Data Require Human Interpretation.',
       },
       {
         id: 'arq-ch08-fc5',
         category: 'data',
         front: 'What are the 3 pillars of Generalizing from a Research Sample, and what are the 4 textbook examples of biased samples?',
-        back: 'Three pillars: Sample Size (N), Breadth (diversity), and Randomness (equal chance of selection). Four biased samples: (a) volunteers interviewed on sexual frequency, (b) landline-only phone owners, (c) Intro Psych students, (d) Fox or MSNBC viewers.',
+        back: 'Three pillars: Sample Size (N), Breadth (diversity), and Randomness (equal chance of selection).',
         mentalHook: 'Size + Breadth + Randomness; Beware Volunteers & Landlines.',
       },
       {
         id: 'arq-ch08-fc6',
         category: 'adaptation',
         front: 'What warning signal should trigger System 2 when evaluating expert opinion, and what should a critical writer do when their thesis lacks dependable evidence?',
-        back: 'An immediate emotional urge to share an opinion on Facebook or Twitter is a warning sign to WAIT and shift into System 2 mode. When a writer discovers their thesis lacks dependable evidence, they must resist piling up personal anecdotes, discard the unsupported belief, and start over.',
+        back: 'An immediate emotional urge to share an opinion on Facebook or Twitter is a warning sign to WAIT and shift into System 2 mode.',
         mentalHook: 'Urge to Retweet = Pause for System 2; No Evidence = Start Over.',
       },
     ],
@@ -2957,7 +2753,7 @@ export const arqCh08Mastery: ChapterMastery = {
           'Explains why conclusions generalize only to the operational measure used (1-vs-2 marshmallows for delayed gratification; 1-time self-report survey vs. daily mood logs for marital happiness).',
         ],
         modelExplanation:
-          'Scientific research is our most dependable evidence source because it aims for publicly verifiable data (replication), control over extraneous variables, and precision in language. However, "published in a journal" never means "proven beyond question." First, single studies frequently fail to replicate—an audit in The Atlantic found that 41% of retested top medical intervention studies were wrong or exaggerated. Second, data never speak for themselves: researchers interpret data through their own theoretical expectations and funding incentives (like a summer grant from the American Sugar Institute), so we must always translate "studies show X" into "researchers interpret their findings as showing X."\n\nThird, we must audit the sample’s Size, Breadth, and Randomness: when a study of 229 users on a single dating site claims 94% of online daters succeed, it commits a massive overgeneralization because satisfied daters self-selected to volunteer on one site. Fourth, conclusions apply only to the exact operational measure chosen: waiting 15 minutes for two marshmallows is only one lab proxy for "delayed gratification," and a one-time questionnaire is only one definition of "marital happiness." We accept solid replicated science without committing the Impossible Certainty fallacy, but we always bind claims to their sample and ruler.',
+          'Scientific research is our most dependable evidence source because it aims for publicly verifiable data (replication), control over extraneous variables, and precision in language. However, "published in a journal" never means "proven beyond question." First, single studies frequently fail to replicate.',
       },
       {
         id: 'arq-ch08-feyn-2',
@@ -2971,7 +2767,7 @@ export const arqCh08Mastery: ChapterMastery = {
           'Explains why addressing counterarguments strengthens an essay and why discarding an unsupported thesis (or changing one’s mind when new evidence emerges) is responsible critical thinking rather than "flip-flopping."',
         ],
         modelExplanation:
-          'The Internet gives us instant access to millions of claims with zero built-in quality control—as Stephen Colbert proved when he edited Wikipedia so it claimed for five hours that George Washington owned no slaves and African elephant populations had tripled. To protect your writing, trace every snippet back to its primary source, start in university library portals rather than raw search engines, and look for specialists who have published six or seven rigorous papers on one focused topic rather than generalists blogging about everything.\n\nWhen writing your own argument, anchor your logical proof in replicated scientific studies, include a dedicated section addressing counterarguments and contradictory research, and pair your scientific data with vivid case stories or metaphors to keep the reader emotionally engaged. Watch out for the trap of thinking your own personal experiences are more reliable than other people’s anecdotes. Finally, remember that culture wrongly mocks people who update their views as "flip-floppers"—if you reach the evidence stage of an essay and discover there isn’t dependable evidence to support your conclusion, don’t prop it up with weak testimonials; treat it as a learning victory, change your mind, and start over.',
+          'The Internet gives us instant access to millions of claims with zero built-in quality control.',
       },
     ],
   },
@@ -2984,7 +2780,7 @@ export const arqCh08Mastery: ChapterMastery = {
         chapterNumber: 8,
         importance: 2,
         definition:
-          'The perceptual and linguistic filters that corrupt raw human reports: expectations, stress, and rapid motion in eyewitness accounts; social desirability shading, ambiguity, leading wording ("Obamacare socialism"), and question-order priming in polls.',
+          'The perceptual and linguistic filters that corrupt raw human reports: expectations, stress, and rapid motion in eyewitness accounts.',
         formulaOrRule: 'R_poll = theta_true + delta_social + lambda_leading + kappa_context + epsilon',
         whyItMatters:
           'Stops critical thinkers from treating eyewitness stories or poll headlines as unvarnished mirrors of reality.',
@@ -3081,6 +2877,6 @@ export const arqCh08Mastery: ChapterMastery = {
     figuresIncluded: 1,
     antiAiVerified: true,
     auditNotes:
-      'Verified 100% coverage of all 12 H1/H2/H3 sections of Chapter 8 (How Good Is the Evidence: Personal Observation and Research Studies?, Personal Observation as Evidence, Biased Surveys and Questionnaires, Research Studies as Evidence, General Problems with Research Findings [8 problems + Impossible Certainty + 10 Clues], Generalizing From the Research Sample [Size, Breadth, Randomness, 4 biased samples, 229 online daters], Generalizing From the Research Measures [critical thinking, marshmallow test, marital happiness], When You Can Most Trust Expert Opinion [Freedman, System 1/2 social sharing], Research and the Internet [The Onion, hoax sites, Stephen Colbert Wikipedia], Writing and Speaking as Critical Thinkers [7 rules, counterarguments, abandoning unsupported theses], Practice Exercises [Passages 1, 2, 3], and Sample Responses) plus arq_ch08_plate.png. Zero prohibited AI clichés.',
+      'Verified 100% coverage of all 12 H1/H2/H3 sections of Chapter 8 (How Good Is the Evidence: Personal Observation and Research Studies?, Personal Observation as Evidence, Biased Surveys and Questionnaires, Research Studies as Evidence, General Problems with Research Findings [8 problems + Impossible Certainty + 10 Clues], Generalizing From the Research Sample [Size, Breadth, Randomness, 4 biased samples, 229 online daters], Generalizing From the Research Measures [critical thinking, marshmallow test, marital happiness], When You Can Most Trust Expert Opinion [Freedman, System 1/2 social sharing], Research and the Internet [The Onion, hoax sites, Stephen Colbert Wikipedia], Writing and Speaking as Critical Thinkers [7 rules, counterarguments, abandoning unsupported theses], Practice Exercises [Passages 1, 2, 3], and Sample Responses) plus arq_ch08_plate.png.',
   },
 };

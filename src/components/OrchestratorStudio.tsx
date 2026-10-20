@@ -83,7 +83,7 @@ export const OrchestratorStudio: React.FC = () => {
               Nexus Multi-Agent Orchestrator & Live Node Telemetry
             </h1>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
-              Every book in Brain Opener flows through a deterministic 9-node Directed Acyclic Graph (DAG).{' '}
+              Every book in PRISM flows through a deterministic 9-node Directed Acyclic Graph (DAG).{' '}
               <strong>Nexus</strong> coordinates ingestion (<strong>Archon</strong>), first-principles deconstruction (
               <strong>Axiom</strong>), 4-way parallel synthesis (<strong>Feynman, Prism, Synapse, Socrates</strong>),
               completeness gatekeeping (<strong>Veritas</strong>), and Swiss-grid UI compilation (<strong>Atlas</strong>).

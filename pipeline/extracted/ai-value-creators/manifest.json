@@ -1,0 +1,1018 @@
+{
+  "bookSlug": "ai-value-creators",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\AI Value Creators.pdf",
+  "totalChapters": 9,
+  "totalFigures": 63,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_30_89.pdf",
+      "title": "+AI to AI+: Generative AI and the “Netscape Moment”",
+      "startPage": 30,
+      "endPage": 89,
+      "charCount": 72823,
+      "wordCount": 12606,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "+AI to AI+: Generative AI and the “Netscape Moment”"
+        },
+        {
+          "level": "h2",
+          "title": "What Is a “Netscape Moment”?"
+        },
+        {
+          "level": "h2",
+          "title": "AI and the Magical Moment"
+        },
+        {
+          "level": "h3",
+          "title": "But...AI Is Not Magic"
+        },
+        {
+          "level": "h2",
+          "title": "Moving Your Business from +AI to AI+"
+        },
+        {
+          "level": "h2",
+          "title": "Before You Do Anything, Change Your Mental Model from +AI to AI+"
+        },
+        {
+          "level": "h3",
+          "title": "The AI Ladder, Rebooted for GenAI"
+        },
+        {
+          "level": "h2",
+          "title": "Before You Start Your Journey, Classify the Budget and Identify How AI Is Going to Help"
+        },
+        {
+          "level": "h3",
+          "title": "Dimension One: Spend Money to Save Money, or Spend Money to Make Money? How Will AI Help Your Business?"
+        },
+        {
+          "level": "h3",
+          "title": "Dimension Two: Categorize How the AI Helps Your Business"
+        },
+        {
+          "level": "h3",
+          "title": "Use an Acumen Curve to Visualize How AI Helps Your Business"
+        },
+        {
+          "level": "h3",
+          "title": "Where to Start? Here’s Our Helpful Advice"
+        },
+        {
+          "level": "h2",
+          "title": "Become a Shifty Business: Shift Left, and Then, You Can Shift Right!"
+        },
+        {
+          "level": "h3",
+          "title": "Every Day, We Walk by Problems That Can Be Solved or Made Better with Technology"
+        },
+        {
+          "level": "h2",
+          "title": "Tips for Harnessing Foundation Models and GenAI for Your Business"
+        },
+        {
+          "level": "h3",
+          "title": "Tip 1: Act with Urgency"
+        },
+        {
+          "level": "h3",
+          "title": "Tip 2: Be an AI Value Creator, Not Just an Occasional AI User"
+        },
+        {
+          "level": "h3",
+          "title": "Tip 3: One Model Will Not Rule Them All, So Make a Bet on Community"
+        },
+        {
+          "level": "h3",
+          "title": "Tip 4: Run Everywhere, Efficiently"
+        },
+        {
+          "level": "h3",
+          "title": "Tip 5: Be Responsible Because Trust Is the Ultimate License to Operate"
+        },
+        {
+          "level": "h2",
+          "title": "And with That, Let’s Focus on the AI Part"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: +AI to AI+: Generative AI and the “Netscape Moment” (Page 30)",
+          "alt": "Chapter 1 opening page (+AI to AI+: Generative AI and the “Netscape Moment”)"
+        },
+        {
+          "file": "ai_value_creators_p044_fig1.png",
+          "caption": "Embedded figure from page 44",
+          "alt": "Book illustration on page 44"
+        },
+        {
+          "file": "ai_value_creators_p045_fig1.png",
+          "caption": "Embedded figure from page 45",
+          "alt": "Book illustration on page 45"
+        },
+        {
+          "file": "ai_value_creators_p047_fig1.png",
+          "caption": "Embedded figure from page 47",
+          "alt": "Book illustration on page 47"
+        },
+        {
+          "file": "ai_value_creators_p048_fig1.png",
+          "caption": "Embedded figure from page 48",
+          "alt": "Book illustration on page 48"
+        },
+        {
+          "file": "ai_value_creators_p049_fig1.png",
+          "caption": "Embedded figure from page 49",
+          "alt": "Book illustration on page 49"
+        },
+        {
+          "file": "ai_value_creators_p050_fig1.png",
+          "caption": "Embedded figure from page 50",
+          "alt": "Book illustration on page 50"
+        },
+        {
+          "file": "ai_value_creators_p058_fig1.png",
+          "caption": "Embedded figure from page 58",
+          "alt": "Book illustration on page 58"
+        },
+        {
+          "file": "ai_value_creators_p060_fig1.png",
+          "caption": "Embedded figure from page 60",
+          "alt": "Book illustration on page 60"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_90_149.pdf",
+      "title": "Oh, to Be an AI Value Creator",
+      "startPage": 90,
+      "endPage": 149,
+      "charCount": 72052,
+      "wordCount": 12429,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Oh, to Be an AI Value Creator"
+        },
+        {
+          "level": "h2",
+          "title": "AI Through the Years: The AI “Time Lapse” Section"
+        },
+        {
+          "level": "h3",
+          "title": "A Quick Bit on Foundation Models"
+        },
+        {
+          "level": "h3",
+          "title": "Going a Little Deeper: The Evolution of Large Language Models and Comparing Supervised Learning with Self-Supervised Learning"
+        },
+        {
+          "level": "h2",
+          "title": "AI Value Creation Should Be Your Destination"
+        },
+        {
+          "level": "h3",
+          "title": "How Do You Consume AI: Be Ye a Value Creator or a Value User?"
+        },
+        {
+          "level": "h2",
+          "title": "Planning Your AI Future: A Future with Many GenAI Models"
+        },
+        {
+          "level": "h3",
+          "title": "It’s Time to Demystify and Apply AI"
+        },
+        {
+          "level": "h2",
+          "title": "The Future of AI"
+        },
+        {
+          "level": "h2",
+          "title": "Let’s Get into It"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Oh, to Be an AI Value Creator (Page 90)",
+          "alt": "Chapter 2 opening page (Oh, to Be an AI Value Creator)"
+        },
+        {
+          "file": "ai_value_creators_p103_fig1.png",
+          "caption": "Embedded figure from page 103",
+          "alt": "Book illustration on page 103"
+        },
+        {
+          "file": "ai_value_creators_p111_fig1.png",
+          "caption": "Embedded figure from page 111",
+          "alt": "Book illustration on page 111"
+        },
+        {
+          "file": "ai_value_creators_p113_fig1.png",
+          "caption": "Embedded figure from page 113",
+          "alt": "Book illustration on page 113"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_150_192.pdf",
+      "title": "Equations for AI Persuasion",
+      "startPage": 150,
+      "endPage": 192,
+      "charCount": 51057,
+      "wordCount": 8661,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Equations for AI Persuasion"
+        },
+        {
+          "level": "h2",
+          "title": "Some Things Are Timeless"
+        },
+        {
+          "level": "h3",
+          "title": "Tension Has Always Existed with Technology—Always"
+        },
+        {
+          "level": "h3",
+          "title": "No Calculators Needed! Our Three Persuasion Equations"
+        },
+        {
+          "level": "h3",
+          "title": "Equation 1: How to Grow GDP"
+        },
+        {
+          "level": "h3",
+          "title": "Equation 2: What Makes for AI Success?"
+        },
+        {
+          "level": "h3",
+          "title": "Equation 3: Find Your Balance—Navigate the Paradox"
+        },
+        {
+          "level": "h2",
+          "title": "One Last Piece of Advice: See AI as a Value Generator, Not a Cost Center"
+        },
+        {
+          "level": "h2",
+          "title": "Wrapping Up"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Equations for AI Persuasion (Page 150)",
+          "alt": "Chapter 3 opening page (Equations for AI Persuasion)"
+        },
+        {
+          "file": "ai_value_creators_p156_fig1.png",
+          "caption": "Embedded figure from page 156",
+          "alt": "Book illustration on page 156"
+        },
+        {
+          "file": "ai_value_creators_p167_fig1.png",
+          "caption": "Embedded figure from page 167",
+          "alt": "Book illustration on page 167"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_193_273.pdf",
+      "title": "The Use Case Chapter",
+      "startPage": 193,
+      "endPage": 273,
+      "charCount": 103788,
+      "wordCount": 16979,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The Use Case Chapter"
+        },
+        {
+          "level": "h2",
+          "title": "The Use Case Value Creation Curve"
+        },
+        {
+          "level": "h2",
+          "title": "Going Horizontal Gets You the Most Vertical"
+        },
+        {
+          "level": "h3",
+          "title": "Experimentation"
+        },
+        {
+          "level": "h3",
+          "title": "Putting Your Data to Work"
+        },
+        {
+          "level": "h3",
+          "title": "IT Automation"
+        },
+        {
+          "level": "h3",
+          "title": "Code—The Language of Computers"
+        },
+        {
+          "level": "h3",
+          "title": "Digital Labor and AI Assistants"
+        },
+        {
+          "level": "h3",
+          "title": "Agents"
+        },
+        {
+          "level": "h3",
+          "title": "The Business Lens: Use Cases—Horizontally Speaking"
+        },
+        {
+          "level": "h3",
+          "title": "The Bonus (Horizontal) Use Case—Synthetic Data"
+        },
+        {
+          "level": "h2",
+          "title": "A Smattering of Use Cases—Vertically Speaking"
+        },
+        {
+          "level": "h3",
+          "title": "Agriculture"
+        },
+        {
+          "level": "h3",
+          "title": "Accounting"
+        },
+        {
+          "level": "h3",
+          "title": "Education"
+        },
+        {
+          "level": "h3",
+          "title": "Healthcare"
+        },
+        {
+          "level": "h3",
+          "title": "Insurance"
+        },
+        {
+          "level": "h3",
+          "title": "Legal"
+        },
+        {
+          "level": "h3",
+          "title": "Manufacturing and Production"
+        },
+        {
+          "level": "h3",
+          "title": "Pharma"
+        },
+        {
+          "level": "h2",
+          "title": "Endless Possibilities: More Industries Where GenAI Shines"
+        },
+        {
+          "level": "h2",
+          "title": "The Building Blocks of AI"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: The Use Case Chapter (Page 193)",
+          "alt": "Chapter 4 opening page (The Use Case Chapter)"
+        },
+        {
+          "file": "ai_value_creators_p197_fig1.png",
+          "caption": "Embedded figure from page 197",
+          "alt": "Book illustration on page 197"
+        },
+        {
+          "file": "ai_value_creators_p218_fig1.png",
+          "caption": "Embedded figure from page 218",
+          "alt": "Book illustration on page 218"
+        },
+        {
+          "file": "ai_value_creators_p267_fig1.png",
+          "caption": "Embedded figure from page 267",
+          "alt": "Book illustration on page 267"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "pages_274_344.pdf",
+      "title": "Live, Die, Buy, or Try—Much Will Be Decided by AI",
+      "startPage": 274,
+      "endPage": 344,
+      "charCount": 83251,
+      "wordCount": 13987,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Live, Die, Buy, or Try—Much Will Be Decided by AI"
+        },
+        {
+          "level": "h2",
+          "title": "LLMs—The Stuff People Forget to Tell You"
+        },
+        {
+          "level": "h3",
+          "title": "The Knowledge Cut-Off Date"
+        },
+        {
+          "level": "h3",
+          "title": "LLMs Can Be Masters of Making It Up as They Go"
+        },
+        {
+          "level": "h3",
+          "title": "Footprints in the Carbon: The Climate Cost of Your AI BFF"
+        },
+        {
+          "level": "h3",
+          "title": "Copyright and Lawsuits"
+        },
+        {
+          "level": "h3",
+          "title": "What About Digital Essence?"
+        },
+        {
+          "level": "h3",
+          "title": "Your Expanding Surface Area of Attack"
+        },
+        {
+          "level": "h3",
+          "title": "Data Privacy"
+        },
+        {
+          "level": "h3",
+          "title": "Steal Now, Crack Later"
+        },
+        {
+          "level": "h2",
+          "title": "Good Actor Levers for All Things AI"
+        },
+        {
+          "level": "h3",
+          "title": "Fairness—Playing Fair in the Age of AI"
+        },
+        {
+          "level": "h3",
+          "title": "Bias Here, Bias There, Data Bias Is Everywhere"
+        },
+        {
+          "level": "h3",
+          "title": "Robustness—Ensuring Artificial Intelligence Is Unbreakable Intelligence"
+        },
+        {
+          "level": "h3",
+          "title": "Explainability—Explain the Almost Unexplainable"
+        },
+        {
+          "level": "h3",
+          "title": "Lineage—Tracing the Trail: Let Good Data Prevail"
+        },
+        {
+          "level": "h2",
+          "title": "Regulations—The Section That Wasn’t Supposed to Be"
+        },
+        {
+          "level": "h3",
+          "title": "What to Regulate—Our Point of View"
+        },
+        {
+          "level": "h3",
+          "title": "Managing the AI Lifecycle"
+        },
+        {
+          "level": "h2",
+          "title": "Wrapping It Up"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch05_plate.png",
+          "caption": "Chapter 5 Opening Blueprint: Live, Die, Buy, or Try—Much Will Be Decided by AI (Page 274)",
+          "alt": "Chapter 5 opening page (Live, Die, Buy, or Try—Much Will Be Decided by AI)"
+        },
+        {
+          "file": "ai_value_creators_p300_fig1.png",
+          "caption": "Embedded figure from page 300",
+          "alt": "Book illustration on page 300"
+        },
+        {
+          "file": "ai_value_creators_p307_fig1.png",
+          "caption": "Embedded figure from page 307",
+          "alt": "Book illustration on page 307"
+        },
+        {
+          "file": "ai_value_creators_p311_fig1.png",
+          "caption": "Embedded figure from page 311",
+          "alt": "Book illustration on page 311"
+        },
+        {
+          "file": "ai_value_creators_p312_fig1.png",
+          "caption": "Embedded figure from page 312",
+          "alt": "Book illustration on page 312"
+        },
+        {
+          "file": "ai_value_creators_p316_fig1.png",
+          "caption": "Embedded figure from page 316",
+          "alt": "Book illustration on page 316"
+        },
+        {
+          "file": "ai_value_creators_p318_fig1.png",
+          "caption": "Embedded figure from page 318",
+          "alt": "Book illustration on page 318"
+        },
+        {
+          "file": "ai_value_creators_p319_fig1.png",
+          "caption": "Embedded figure from page 319",
+          "alt": "Book illustration on page 319"
+        },
+        {
+          "file": "ai_value_creators_p321_fig1.png",
+          "caption": "Embedded figure from page 321",
+          "alt": "Book illustration on page 321"
+        },
+        {
+          "file": "ai_value_creators_p323_fig1.png",
+          "caption": "Embedded figure from page 323",
+          "alt": "Book illustration on page 323"
+        },
+        {
+          "file": "ai_value_creators_p325_fig1.png",
+          "caption": "Embedded figure from page 325",
+          "alt": "Book illustration on page 325"
+        },
+        {
+          "file": "ai_value_creators_p329_fig1.png",
+          "caption": "Embedded figure from page 329",
+          "alt": "Book illustration on page 329"
+        },
+        {
+          "file": "ai_value_creators_p338_fig1.png",
+          "caption": "Embedded figure from page 338",
+          "alt": "Book illustration on page 338"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "pages_345_413.pdf",
+      "title": "Skills That Thrill",
+      "startPage": 345,
+      "endPage": 413,
+      "charCount": 85806,
+      "wordCount": 14576,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Skills That Thrill"
+        },
+        {
+          "level": "h2",
+          "title": "Let the Skilling Begin"
+        },
+        {
+          "level": "h2",
+          "title": "The Path to AI+ Requires Scaling Skills Across a Broad Spectrum of Roles"
+        },
+        {
+          "level": "h2",
+          "title": "AI—Job Destroyer or Job Creator?"
+        },
+        {
+          "level": "h3",
+          "title": "You’re Only Going to Get Checkmated if You Don’t Up Your Skills"
+        },
+        {
+          "level": "h3",
+          "title": "Democratized Technology: The Job Creator"
+        },
+        {
+          "level": "h2",
+          "title": "Levers of Clever: Unlocking a Skills Program That Lasts Forever"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 1: Start at the Beginning—Hire Employees Who Want to Know the “Why”"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 2: Recruit Digitally Minded Talent"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 3: Take Count—Inventory Your Skills"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 4: Plan for Everyone—A Plan Without Action Is a Speech"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 5: Embrace the Learning (and Forgetting) Curves"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 6: Combine Instruction + Imitation + Collaboration"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 7: Culture Matters—Be a Skills Verb, Not a Noun"
+        },
+        {
+          "level": "h3",
+          "title": "Lever 8: Set the Organizational Tone for AI"
+        },
+        {
+          "level": "h2",
+          "title": "Case Study: IBM’s Skills Challenge—the CEO Asked; We All Responded"
+        },
+        {
+          "level": "h2",
+          "title": "The Final Word"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch06_plate.png",
+          "caption": "Chapter 6 Opening Blueprint: Skills That Thrill (Page 345)",
+          "alt": "Chapter 6 opening page (Skills That Thrill)"
+        },
+        {
+          "file": "ai_value_creators_p349_fig1.png",
+          "caption": "Embedded figure from page 349",
+          "alt": "Book illustration on page 349"
+        },
+        {
+          "file": "ai_value_creators_p353_fig1.png",
+          "caption": "Embedded figure from page 353",
+          "alt": "Book illustration on page 353"
+        },
+        {
+          "file": "ai_value_creators_p360_fig1.png",
+          "caption": "Embedded figure from page 360",
+          "alt": "Book illustration on page 360"
+        },
+        {
+          "file": "ai_value_creators_p375_fig1.png",
+          "caption": "Embedded figure from page 375",
+          "alt": "Book illustration on page 375"
+        },
+        {
+          "file": "ai_value_creators_p388_fig1.png",
+          "caption": "Embedded figure from page 388",
+          "alt": "Book illustration on page 388"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "pages_414_499.pdf",
+      "title": "Where This Technology Is Headed—One Model Will Not Rule Them All!",
+      "startPage": 414,
+      "endPage": 499,
+      "charCount": 99380,
+      "wordCount": 16422,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Where This Technology Is Headed—One Model Will Not Rule Them All!"
+        },
+        {
+          "level": "h2",
+          "title": "The Bigger the Better, Right? Perhaps at the Start, But That Was a Long Time Ago"
+        },
+        {
+          "level": "h2",
+          "title": "The Rise of the Small Language Model"
+        },
+        {
+          "level": "h3",
+          "title": "Data Curation Results in AI Salvation"
+        },
+        {
+          "level": "h3",
+          "title": "Think About This When It Comes to Data Curation"
+        },
+        {
+          "level": "h3",
+          "title": "Model Distillation—Using AI to Improve AI"
+        },
+        {
+          "level": "h3",
+          "title": "Think About This When It Comes to Model Distillation"
+        },
+        {
+          "level": "h2",
+          "title": "Where Are We Going Next? Small Language Models...Assemble!"
+        },
+        {
+          "level": "h3",
+          "title": "Model Routing"
+        },
+        {
+          "level": "h3",
+          "title": "Think About This When It Comes to Model Routing"
+        },
+        {
+          "level": "h3",
+          "title": "Mixture of Experts (MoE) Architecture"
+        },
+        {
+          "level": "h3",
+          "title": "Think About This When It Comes to MoEs"
+        },
+        {
+          "level": "h2",
+          "title": "Agentic Systems"
+        },
+        {
+          "level": "h3",
+          "title": "What’s Your Reaction to This Agent in Action?"
+        },
+        {
+          "level": "h3",
+          "title": "A Little More on Agents"
+        },
+        {
+          "level": "h3",
+          "title": "How Agents Are Built"
+        },
+        {
+          "level": "h3",
+          "title": "Risks and Limitations of Agentic Systems"
+        },
+        {
+          "level": "h3",
+          "title": "Three Tips to Get You Started: Our Agentic Best Practices"
+        },
+        {
+          "level": "h3",
+          "title": "Think About This When It Comes to AI Agents"
+        },
+        {
+          "level": "h2",
+          "title": "Wrapping It Up"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch07_plate.png",
+          "caption": "Chapter 7 Opening Blueprint: Where This Technology Is Headed—One Model Will Not Rule Them All! (Page 414)",
+          "alt": "Chapter 7 opening page (Where This Technology Is Headed—One Model Will Not Rule Them All!)"
+        },
+        {
+          "file": "ai_value_creators_p423_fig1.png",
+          "caption": "Embedded figure from page 423",
+          "alt": "Book illustration on page 423"
+        },
+        {
+          "file": "ai_value_creators_p457_fig1.png",
+          "caption": "Embedded figure from page 457",
+          "alt": "Book illustration on page 457"
+        },
+        {
+          "file": "ai_value_creators_p460_fig1.png",
+          "caption": "Embedded figure from page 460",
+          "alt": "Book illustration on page 460"
+        },
+        {
+          "file": "ai_value_creators_p462_fig1.png",
+          "caption": "Embedded figure from page 462",
+          "alt": "Book illustration on page 462"
+        },
+        {
+          "file": "ai_value_creators_p463_fig1.png",
+          "caption": "Embedded figure from page 463",
+          "alt": "Book illustration on page 463"
+        },
+        {
+          "file": "ai_value_creators_p479_fig1.png",
+          "caption": "Embedded figure from page 479",
+          "alt": "Book illustration on page 479"
+        },
+        {
+          "file": "ai_value_creators_p480_fig1.png",
+          "caption": "Embedded figure from page 480",
+          "alt": "Book illustration on page 480"
+        },
+        {
+          "file": "ai_value_creators_p480_fig2.png",
+          "caption": "Embedded figure from page 480",
+          "alt": "Book illustration on page 480"
+        },
+        {
+          "file": "ai_value_creators_p481_fig1.png",
+          "caption": "Embedded figure from page 481",
+          "alt": "Book illustration on page 481"
+        },
+        {
+          "file": "ai_value_creators_p482_fig1.png",
+          "caption": "Embedded figure from page 482",
+          "alt": "Book illustration on page 482"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "pages_500_544.pdf",
+      "title": "Using Your Data as a Differentiator",
+      "startPage": 500,
+      "endPage": 544,
+      "charCount": 51620,
+      "wordCount": 8561,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Using Your Data as a Differentiator"
+        },
+        {
+          "level": "h2",
+          "title": "Customizing Open Source for the Enterprise: A New Way of Looking at Enterprise Data"
+        },
+        {
+          "level": "h3",
+          "title": "The Original Eras Tour: Looking Back a Few Decades on Data Representations"
+        },
+        {
+          "level": "h2",
+          "title": "Stand Up and Represent!...Your Data"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: It All Starts with Trust"
+        },
+        {
+          "level": "h3",
+          "title": "Step 2: Representing your Enterprise Data within an LLM"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3: The Grand Finale: Deployment and Experimentation"
+        },
+        {
+          "level": "h2",
+          "title": "The Future Is Open, Collaborative, and Customizable"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch08_plate.png",
+          "caption": "Chapter 8 Opening Blueprint: Using Your Data as a Differentiator (Page 500)",
+          "alt": "Chapter 8 opening page (Using Your Data as a Differentiator)"
+        },
+        {
+          "file": "ai_value_creators_p518_fig1.png",
+          "caption": "Embedded figure from page 518",
+          "alt": "Book illustration on page 518"
+        },
+        {
+          "file": "ai_value_creators_p527_fig1.png",
+          "caption": "Embedded figure from page 527",
+          "alt": "Book illustration on page 527"
+        },
+        {
+          "file": "ai_value_creators_p533_fig1.png",
+          "caption": "Embedded figure from page 533",
+          "alt": "Book illustration on page 533"
+        },
+        {
+          "file": "ai_value_creators_p534_fig1.png",
+          "caption": "Embedded figure from page 534",
+          "alt": "Book illustration on page 534"
+        },
+        {
+          "file": "ai_value_creators_p536_fig1.png",
+          "caption": "Embedded figure from page 536",
+          "alt": "Book illustration on page 536"
+        },
+        {
+          "file": "ai_value_creators_p540_fig1.png",
+          "caption": "Embedded figure from page 540",
+          "alt": "Book illustration on page 540"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "pages_545_601.pdf",
+      "title": "Generative Computing—A New Style of Computing",
+      "startPage": 545,
+      "endPage": 601,
+      "charCount": 70252,
+      "wordCount": 11623,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Generative Computing—A New Style of Computing"
+        },
+        {
+          "level": "h2",
+          "title": "The Building Blocks of Computing"
+        },
+        {
+          "level": "h3",
+          "title": "Transformers—More Than Meets the AI"
+        },
+        {
+          "level": "h2",
+          "title": "Not Back to the Future; Back to Computer Science"
+        },
+        {
+          "level": "h3",
+          "title": "Doors Wide Open—Reimagining the Possible"
+        },
+        {
+          "level": "h2",
+          "title": "How Models Are Built in Generative Computing"
+        },
+        {
+          "level": "h3",
+          "title": "“Libraries” for Adding Capabilities to a Generative Computing System"
+        },
+        {
+          "level": "h3",
+          "title": "The Quick Compare Summary—How You Use LLMs Today Versus Generative Computing"
+        },
+        {
+          "level": "h3",
+          "title": "A Generative Computing Runtime—What Can We Program It to Do?"
+        },
+        {
+          "level": "h3",
+          "title": "OpenAI’s Strawberry—A Berry Sweet Innovation"
+        },
+        {
+          "level": "h2",
+          "title": "From Generative Computing to a Generative Computer—What Does All of This Mean for Hardware?"
+        },
+        {
+          "level": "h3",
+          "title": "Experimenting with the Acceleration of AI at the IBM NorthPole"
+        },
+        {
+          "level": "h2",
+          "title": "The Final Prompt: Wrapping It All Up"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ai_value_creators_ch09_plate.png",
+          "caption": "Chapter 9 Opening Blueprint: Generative Computing—A New Style of Computing (Page 545)",
+          "alt": "Chapter 9 opening page (Generative Computing—A New Style of Computing)"
+        },
+        {
+          "file": "ai_value_creators_p550_fig1.png",
+          "caption": "Embedded figure from page 550",
+          "alt": "Book illustration on page 550"
+        },
+        {
+          "file": "ai_value_creators_p553_fig1.png",
+          "caption": "Embedded figure from page 553",
+          "alt": "Book illustration on page 553"
+        },
+        {
+          "file": "ai_value_creators_p560_fig1.png",
+          "caption": "Embedded figure from page 560",
+          "alt": "Book illustration on page 560"
+        },
+        {
+          "file": "ai_value_creators_p565_fig1.png",
+          "caption": "Embedded figure from page 565",
+          "alt": "Book illustration on page 565"
+        },
+        {
+          "file": "ai_value_creators_p594_fig1.png",
+          "caption": "Embedded figure from page 594",
+          "alt": "Book illustration on page 594"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\ai-value-creators\\ch09.txt"
+    }
+  ]
+}

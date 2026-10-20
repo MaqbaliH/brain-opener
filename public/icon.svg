@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" fill="#111827"/>
   <rect x="28" y="28" width="456" height="456" fill="none" stroke="#EA580C" stroke-width="12"/>
-  <text x="256" y="305" font-family="monospace, sans-serif" font-size="210" font-weight="800" fill="#FAF8F5" text-anchor="middle">BO</text>
-  <rect x="96" y="368" width="320" height="20" fill="#EA580C"/>
+  <polygon points="256,74 330,188 182,188" fill="none" stroke="#EA580C" stroke-width="10"/>
+  <text x="256" y="340" font-family="monospace, sans-serif" font-size="184" font-weight="800" fill="#FAF8F5" text-anchor="middle">PR</text>
+  <rect x="96" y="396" width="320" height="20" fill="#EA580C"/>
 </svg>

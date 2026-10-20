@@ -5,18 +5,18 @@ export const arqCh01Mastery: ChapterMastery = {
   chapterId: 'ch01',
   title: 'The Benefit and Manner of Asking the Right Questions',
   subtitle:
-    'Navigating a noisy persuasive world, why experts cannot rescue us, the Three Dimensions of Critical Thinking, Sponge vs. Panning-for-Gold styles, Weak-Sense vs. Strong-Sense evaluation, the four primary epistemic values, and sustaining constructive dialogue.',
-  readingTimeMinutes: 32,
+    'Navigating a noisy persuasive world, why experts cannot rescue us, the Three Dimensions of Critical Thinking, Sponge vs.',
+  readingTimeMinutes: 10,
   sourceWordCount: 6302,
   executiveThesis:
-    'We inhabit an adversarial information environment where persuaders selectively omit counter-evidence, human cognition defaults to emotional System 1 shortcuts, and credentialed experts routinely contradict one another. Relying passively on authorities or absorbing information like a sponge turns you into the mental captive of the last persuasive speaker you encountered. Genuine intellectual autonomy requires Panning for Gold: actively interrogating claims through an interrelated system of critical questions. Yet critical thinking skills become a destructive partisan weapon when practiced in the weak sense—defending pre-existing beliefs and annihilating opponents. Mastery requires Strong-Sense Critical Thinking: applying the same rigorous questions to our own cherished convictions, anchored by the values of autonomy, curiosity, humility, and respect for sound reasoning, while managing conversational tone so questioning serves as collaborative inquiry rather than verbal warfare.',
+    'We inhabit an adversarial information environment where persuaders selectively omit counter-evidence, human cognition defaults to emotional System 1 shortcuts, and credentialed experts routinely contradict one another. Relying passively on authorities or absorbing information like a sponge turns you into the mental captive of the last persuasive speaker you encountered.',
   paradigmShift: {
     oldWay:
       'The Sponge & Partisan Defender Model: Passively absorb facts and expert pronouncements to minimize mental effort, then deploy selective counter-arguments ("managed reasoning") solely to protect initial opinions and defeat people who disagree.',
     newWay:
       'Strong-Sense Panning for Gold: Pair foundational knowledge acquisition with an interactive questioning dialogue that filters intellectual gold from gravel, turning the same evaluative criteria inward onto one’s own beliefs while keeping social discourse constructive.',
     whyItChanged:
-      'Modern media saturation and conflicting scientific advisories expose the myth of a consensus "Never-Never Land" where wise authorities hand down settled truth; without an internal questioning protocol and epistemic humility, individuals oscillate between gullibility and polarized dogmatism.',
+      'Modern media saturation and conflicting scientific advisories expose the myth of a consensus "Never-Never Land" where wise authorities hand down settled truth.',
   },
   heroIllustrationUrl: '/books/asking-the-right-questions/assets/arq_ch01_plate.png',
   customDiagrams: [
@@ -103,13 +103,13 @@ export const arqCh01Mastery: ChapterMastery = {
   <line x1="376" y1="295" x2="420" y2="295" stroke="#34d399" stroke-width="2" marker-end="url(#arrEmerald1)" />
 </svg>`,
       bierutCaption:
-        'A two-stage cognitive schematic separating how information enters the mind (Sponge absorption vs. Panning-for-Gold filtering) from how evaluative tools are aimed (Weak-Sense partisan defense vs. Strong-Sense self-correcting inquiry).',
+        'A two-stage cognitive schematic separating how information enters the mind (Sponge absorption vs.',
       annotations: [
         {
           step: '1',
           label: 'Complementarity of the Sponge and the Pan',
           explanation:
-            'Panning for gold does not replace reading and absorbing facts; you cannot pan an empty stream. The Sponge phase supplies baseline domain facts, while the Panning phase subjects incoming arguments to active questioning.',
+            'Panning for gold does not replace reading and absorbing facts; you cannot pan an empty stream.',
         },
         {
           step: '2',
@@ -213,13 +213,13 @@ export const arqCh01Mastery: ChapterMastery = {
           step: '1',
           label: 'Fighting Value Homophily',
           explanation:
-            'Human beings naturally gravitate toward peers who share their abstract value priorities (e.g., individual responsibility vs. collective welfare). The four primary values provide the mental discipline needed to seek out and learn from value-divergent perspectives.',
+            'Human beings naturally gravitate toward peers who share their abstract value priorities (e.g., individual responsibility vs. collective welfare).',
         },
         {
           step: '2',
           label: 'Redefining "Argument" as Pruning and Fertilizing',
           explanation:
-            'In everyday language, an argument is an angry shouting match. In critical thinking, an argument is simply a structural pairing of a Conclusion and its supporting Reasons—a gift offered to help refine shared understanding.',
+            'In everyday language, an argument is an angry shouting match.',
         },
         {
           step: '3',
@@ -238,7 +238,7 @@ export const arqCh01Mastery: ChapterMastery = {
       naiveIntuition:
         'When faced with a complex life or policy question, the safest strategy is to locate a credentialed expert and adopt their recommendation wholesale.',
       firstPrinciplesReality:
-        'Experts frequently disagree with one another (e.g., CDC vs. WHO on sun exposure, AHA vs. Finnish epidemiologists on pet ownership) and often project exaggerated certainty because audiences reward confidence. Experts provide raw materials—data points, hypotheses, and conditional claims—but they cannot weigh your context or resolve inter-expert contradictions for you.',
+        'Experts frequently disagree with one another (e.g., CDC vs.',
       howToApply:
         'Consult multiple experts across competing schools of thought, strip away their tone of certainty, inspect the evidence behind each assertion, and construct your own conclusion rather than acting like a puppet on an expert’s string.',
     },
@@ -249,9 +249,9 @@ export const arqCh01Mastery: ChapterMastery = {
       naiveIntuition:
         'Human beings form beliefs by calmly surveying evidence and then feeling emotional commitment proportional to the strength of that evidence.',
       firstPrinciplesReality:
-        'As Daniel Kahneman’s System 1 ("fast thinking") and Jonathan Haidt’s elephant-and-rider metaphor demonstrate, automatic emotional impulses and gut loyalties fire first. Left untrained, our rational "rider" merely fabricates post-hoc excuses ("managed reasoning") to justify wherever the emotional elephant has already bolted.',
+        'As Daniel Kahneman’s System 1 ("fast thinking") and Jonathan Haidt’s elephant-and-rider metaphor demonstrate, automatic emotional impulses and gut loyalties fire first.',
       howToApply:
-        'Treat immediate emotional certainty or indignation toward an opposing claim as a warning alarm. Pause automatic agreement or outrage, and force the rational rider to run a structured checklist of critical questions before committing.',
+        'Treat immediate emotional certainty or indignation toward an opposing claim as a warning alarm.',
     },
     {
       id: 'arq-ch01-mm-panning-gold',
@@ -260,7 +260,7 @@ export const arqCh01Mastery: ChapterMastery = {
       naiveIntuition:
         'Diligent students read with a highlighter and memorize key quotes so they can accurately repeat what authoritative texts say.',
       firstPrinciplesReality:
-        'Pure "Sponge" reading builds foundational knowledge with minimal mental strain, but it contains zero discrimination mechanism—leaving you believing whatever you read last. "Panning for Gold" turns reading into an active, two-way conversation where every claim is weighed against its supporting reasons.',
+        'Pure "Sponge" reading builds foundational knowledge with minimal mental strain, but it contains zero discrimination mechanism—leaving you believing whatever you read last.',
       howToApply:
         'Use Sponge reading briefly to gather context, then immediately switch to Panning mode: annotate margins with "Why?", check whether reasons actually justify the author’s conclusion, and synthesize your own verdict before quoting anyone.',
     },
@@ -271,7 +271,7 @@ export const arqCh01Mastery: ChapterMastery = {
       naiveIntuition:
         'A skilled critical thinker is someone who can spot logical flaws in an opponent’s argument in seconds and win any debate.',
       firstPrinciplesReality:
-        'Using critical questions exclusively to destroy opposing views while shielding your initial beliefs is Weak-Sense Critical Thinking—a sophisticated form of closed-mindedness. Strong-Sense Critical Thinking demands epistemic symmetry: subjecting your own starting opinions and political loyalties to the exact same skepticism you apply to strangers.',
+        'Using critical questions exclusively to destroy opposing views while shielding your initial beliefs is Weak-Sense Critical Thinking—a sophisticated form of closed-mindedness.',
       howToApply:
         'Before critiquing an adversary or drafting a persuasive essay, apply Richard Feynman’s rule: list every conceivable way your own hypothesis might be wrong, construct the strongest possible counterargument, and hold your conclusion with the provisional humility of "Might I be wrong?"',
     },
@@ -284,13 +284,13 @@ export const arqCh01Mastery: ChapterMastery = {
       subtitle:
         'Contrasting the imaginary Never-Never Land of settled consensus with partisan half-truths, System 1 emotional hijacking, and empirical expert contradictions',
       coreMechanism:
-        'Browne and Keeley begin by inviting us to imagine a fictional "Never-Never Land" where critical thinking would be completely unnecessary. In that imaginary world, three conditions would hold: (1) every persuader would voluntarily explain all the disadvantages of the product, policy, or belief they want us to adopt; (2) whenever we faced a difficult life question, we could immediately consult dependable experts who all agreed with one another; and (3) our minds would remain calm, reflective, and curious during every high-stakes decision. The real world violates all three conditions simultaneously. We are surrounded by aggressive persuaders who insist they know what we should wear, eat, buy, and believe, yet they systematically present half-truths. A five-minute internet search on the downsides of yoga yields apocalyptic claims of "pseudo psychosis," "homicidal urges," and "terrifying archetypal formations from the unconscious." Across public life, advocates omit inconvenient realities: socialists rarely highlight the bureaucratic dangers of large government; conservatives rarely highlight structural inequalities that prevent people from pulling themselves up by their bootstraps; clothing brands advertising bargain jeans omit the exploitation of Asian sweatshop labor; and pharmaceutical commercials omit the fact that the clinical trials proving their yellow or blue pill works were funded by the manufacturer selling it.\n\nThis persuasive noise is compounded by the internal architecture of the human brain. Drawing on nobel laureate Daniel Kahneman’s distinction in cognitive psychology, our minds frequently default to "fast thinking" (System 1)—an automatic, immediate mode of cognition driven by emotion, habit, and unconscious associations rather than deliberate calculation. Social psychologist Jonathan Haidt captures this dynamic by comparing human emotion to a raging elephant tearing through the countryside, while our rational capacity sits atop its back like a tiny rider struggling to steer. When noisy persuaders trigger our fears, tribal loyalties, or desires, the emotional elephant bolts long before rational evaluation begins.\n\nNor can we escape this predicament by outsourcing our judgment to credentialed experts. Authorities often project absolute certainty because they recognize that audiences gravitate toward confident voices. Yet as science journalist David Freedman documents in Wrong: Why Experts Keep Failing Us (2010), respected experts routinely issue contradictory edicts on fundamental questions. First, should you stay out of the sun? The U.S. Centers for Disease Control and Prevention (CDC) warns that ultraviolet exposure is the primary driver of skin cancer, advising strict avoidance, whereas the World Health Organization (WHO) reports that UV light is a minor global disease contributor and that insufficient sun exposure may cause more disease worldwide than excess sun. Second, does owning a pet improve your health? The American Heart Association cites numerous studies linking pet ownership to better cardiovascular health, yet a rigorous Finnish study found pet ownership correlated with poorer health. Third, do cell phones emit dangerous radiation? The director of the International Epidemiology Institute states there is zero basis for believing cell phones produce harmful emissions, while a specialist affiliated with a South Carolina hospital argues the evidence warrants an official health advisory linking cell phones to cancer. Experts are indispensable sources of raw information, but they hand us lumber, not a finished house; we are the carpenters who must measure, discard flawed boards, and build our own conclusions.',
+        'Browne and Keeley begin by inviting us to imagine a fictional "Never-Never Land" where critical thinking would be completely unnecessary. In that imaginary world, three conditions would hold: (1) every persuader would voluntarily explain all the disadvantages of the product, policy, or belief they want us to adopt.\n\nThis persuasive noise is compounded by the internal architecture of the human brain. Drawing on nobel laureate Daniel Kahneman’s distinction in cognitive psychology, our minds frequently default to "fast thinking" (System 1)—an automatic, immediate mode of cognition driven by emotion, habit, and unconscious associations rather than deliberate calculation.',
       stepByStepFlow: [
         {
           step: '1',
           title: 'Audit the Persuasive Incentive & Omission Asymmetry',
           detail:
-            'Recognize that commercial, political, and ideological communicators operate as advocates, not neutral referees; assume every pitch omits its own negative externalities and funding conflicts.',
+            'Recognize that commercial, political, and ideological communicators operate as advocates, not neutral referees.',
         },
         {
           step: '2',
@@ -302,46 +302,28 @@ export const arqCh01Mastery: ChapterMastery = {
           step: '3',
           title: 'Cross-Examine Competing Expert Assertions',
           detail:
-            'Instead of surrendering to a single expert’s confident tone, sample rival authorities (e.g., CDC vs. WHO) and inspect the underlying evidence so you act as the carpenter of your own belief.',
-        },
-      ],
-      formulas: [
-        {
-          name: 'Persuasive Omission Bias & Net Claim Distortion',
-          expression: 'D_{\\text{persuader}} = \\sum_{i} w_i B_i - \\sum_{j} (1 - \\alpha_{\\text{omit}}) c_j H_j \\quad \\text{where } \\alpha_{\\text{omit}} \\to 1',
-          intuition:
-            'Advocates maximize perceived appeal by amplifying claimed benefits B_i while setting the disclosure weight (1 - alpha_omit) of harms, costs, and funding conflicts H_j near zero.',
-          variables: [
-            { symbol: 'D_{\\text{persuader}}', meaning: 'Distorted net value presented by the persuader' },
-            { symbol: 'B_i', meaning: 'Claimed benefits or upside arguments' },
-            { symbol: 'H_j', meaning: 'Unstated disadvantages, labor exploitation, or conflicted funding' },
-            { symbol: '\\alpha_{\\text{omit}} \\in [0,1]', meaning: 'Coefficient of strategic omission (approaches 1 in partisan/commercial pitches)' },
-          ],
-          workedExample:
-            'When a pharmaceutical ad highlights symptom relief (sum w_i B_i = +8) but omits both side effects and manufacturer-sponsored trial bias (alpha_omit = 1 on H_j = 6), the audience perceives +8 instead of the true net +2 unless they actively ask for the missing counter-ledger.',
+            'Instead of surrendering to a single expert’s confident tone, sample rival authorities (e.g., CDC vs.',
         },
       ],
       keyTakeaways: [
-        'We do not live in a Never-Never Land where persuaders disclose drawbacks or where experts speak with a single, infallible voice.',
-        'System 1 fast thinking and emotional impulses (Haidt’s elephant) routinely hijack human judgment unless checked by deliberate critical habits.',
-        'Experts provide indispensable raw assertions, but because they frequently disagree (on UV exposure, pet health, cell radiation), you must act as the carpenter who evaluates and assembles their claims.',
-      ],
+          'We do not live in a Never-Never Land where persuaders disclose drawbacks or where experts speak with a single, infallible voice.',
+          'System 1 fast thinking and emotional impulses (Haidt’s elephant) routinely hijack human judgment unless checked by deliberate critical habits.',
+        ],
       commonPitfalls: [
-        'Confusing an expert’s confident tone with empirical settledness.',
-        'Dismissing all experts cynically instead of listening to multiple experts selectively and critically.',
-        'Accepting a political or commercial argument at face value without asking what disadvantages the speaker left out.',
-      ],
+          'Confusing an expert’s confident tone with empirical settledness.',
+          'Dismissing all experts cynically instead of listening to multiple experts selectively and critically.',
+        ],
       figures: [
         {
           file: 'arq_ch01_plate.png',
           originalLabel: 'Chapter 1 Opening Blueprint: The Benefit and Manner of Asking the Right Questions (Page 16)',
           bierutTitle: 'Establish the Six Learning Pillars That Separate Rational Autonomy from Persuasive Captivity',
           editorialAnalysis:
-            'The opening blueprint of Chapter 1 frames critical thinking not as an abstract academic exercise, but as an urgent survival protocol in a noisy world. By sequencing the six learning objectives—from contrasting Never-Never Land with reality and bounding the role of experts, to distinguishing weak-sense from strong-sense thinking and integrating human values into conversation—the chapter architecture demonstrates that logical skill and interpersonal manner are inseparable.',
+            'The opening blueprint of Chapter 1 frames critical thinking not as an abstract academic exercise, but as an urgent survival protocol in a noisy world.',
           keyTakeaways: [
-            'Critical thinking requires both an internal cognitive toolkit (evaluating experts and arguments) and an external social posture (values and conversational manner).',
-            'Understanding why we need critical thinking begins by diagnosing the failure of passive reliance on authorities.',
-          ],
+          'Critical thinking requires both an internal cognitive toolkit (evaluating experts and arguments) and an external social posture (values and conversational manner).',
+          'Understanding why we need critical thinking begins by diagnosing the failure of passive reliance on authorities.',
+        ],
         },
       ],
     },
@@ -352,7 +334,7 @@ export const arqCh01Mastery: ChapterMastery = {
       subtitle:
         'Escaping mental slavery to the last speaker encountered through the Three Dimensions of Critical Thinking: Awareness, Ability, and Desire',
       coreMechanism:
-        'Once we recognize that persuaders are self-interested and experts are fallible, we confront an inescapable personal responsibility: we must assert rational control over our own beliefs and conclusions, or else become the mental slave of the last person we encountered. Asserting rational control does not mean isolating ourselves in solitary arrogance. On the contrary, critical thinking teaches us to listen closely and learn continuously from others while weighing the quality of their reasoning. It replaces blind submission with selective, earned dependence—liberating us to supervise who we are becoming and to feel genuine pride in conclusions we have rationally chosen.\n\nBrowne and Keeley define critical thinking precisely as systematic evaluation activated by three interlocking dimensions: (1) awareness of a set of interrelated critical questions; (2) the ability to ask and answer those critical questions in an appropriate manner; and (3) the desire and willingness to actively use those critical questions at the right time. If any one of these three dimensions is missing, critical thinking collapses. A student who memorizes the list of questions (awareness) and knows how to dissect a textbook exercise (ability), but lacks the internal drive (desire) to deploy those questions when reading a flattering political article or listening to a charismatic leader, remains functionally uncritical.\n\nAsking a critical question is fundamentally an act of social engagement and respect. When we ask someone a probing question about their reasoning, we are signaling: "I am curious; I want to know more; help me understand why you believe this." Beyond evaluating incoming claims, this interrelated unit of critical questions directly upgrades our own expressive power across five practical domains: reacting critically to essays, textbooks, periodicals, and websites; judging the quality of a lecture or speech; forming our own persuasive arguments; writing analytical essays based on assigned readings; and participating substantively in seminar or team discussions.',
+        'Once we recognize that persuaders are self-interested and experts are fallible, we confront an inescapable personal responsibility: we must assert rational control over our own beliefs and conclusions, or else become the mental slave of the last person we encountered. Asserting rational control does not mean isolating ourselves in solitary arrogance.\n\nBrowne and Keeley define critical thinking precisely as systematic evaluation activated by three interlocking dimensions: (1) awareness of a set of interrelated critical questions.',
       stepByStepFlow: [
         {
           step: '1',
@@ -370,34 +352,17 @@ export const arqCh01Mastery: ChapterMastery = {
           step: '3',
           title: 'Cultivate Dispositional Activation (Desire)',
           detail:
-            'Commit to triggering the questions in live, emotionally charged environments—both when evaluating others and when drafting your own speeches or essays.',
-        },
-      ],
-      formulas: [
-        {
-          name: 'Multiplicative Three-Dimension Critical Activation Model',
-          expression: 'E_{\\text{CT}} = A_{\\text{aware}} \\times S_{\\text{ability}} \\times W_{\\text{desire}}',
-          intuition:
-            'Because the three dimensions of critical thinking combine multiplicatively rather than additively, zero willingness (W_desire = 0) yields zero effective critical thinking even when technical skill is high.',
-          variables: [
-            { symbol: 'E_{\\text{CT}}', meaning: 'Effective real-world critical thinking output' },
-            { symbol: 'A_{\\text{aware}}', meaning: 'Awareness of the interrelated critical questions' },
-            { symbol: 'S_{\\text{ability}}', meaning: 'Skill in asking and answering the questions appropriately' },
-            { symbol: 'W_{\\text{desire}}', meaning: 'Active willingness/desire to deploy the questions in real time' },
-          ],
-          workedExample:
-            'An analyst with high question awareness (0.9) and high analytical skill (0.9) who turns off their curiosity during a partisan debate (W_desire = 0.05) achieves an effective critical output of only 0.04, behaving almost identically to an untrained thinker.',
+            'Commit to triggering the questions in live, emotionally charged environments.',
         },
       ],
       keyTakeaways: [
-        'Without rational control over your beliefs, your mind belongs to whoever spoke to you most recently.',
-        'Critical thinking is the conjunction of three dimensions: Awareness of interrelated questions, Ability to ask and answer them, and Desire to actively use them.',
-        'The same critical questions that audit what you read and hear serve as the structural blueprint for your own writing and speaking.',
-      ],
+          'Without rational control over your beliefs, your mind belongs to whoever spoke to you most recently.',
+          'Critical thinking is the conjunction of three dimensions: Awareness of interrelated questions, Ability to ask and answer them, and Desire to actively use them.',
+        ],
       commonPitfalls: [
-        'Treating critical questions as a mechanical checklist for school assignments while reverting to passive acceptance in daily life.',
-        'Viewing questioning as a hostile "gotcha" game rather than a respectful expression of curiosity ("help me understand").',
-      ],
+          'Treating critical questions as a mechanical checklist for school assignments while reverting to passive acceptance in daily life.',
+          'Viewing questioning as a hostile "gotcha" game rather than a respectful expression of curiosity ("help me understand").',
+        ],
     },
     {
       id: 'arq-ch01-sec-1-3',
@@ -406,7 +371,7 @@ export const arqCh01Mastery: ChapterMastery = {
       subtitle:
         'Why passive knowledge absorption must be paired with interactive questioning, margin dialogue, and the four-step mental checklist',
       coreMechanism:
-        'Browne and Keeley contrast two fundamental metaphors for how human beings process information: the Sponge and Panning for Gold. The Sponge approach reacts to information the way a household sponge reacts to water—by soaking everything up. This style enjoys two genuine advantages. First, the more information you absorb about the world, the richer your factual baseline becomes for understanding complex problems later. Second, sponging is relatively passive, quick, and comfortable, especially when material is presented clearly and entertainingly. However, relying exclusively on the Sponge approach carries a fatal defect: it provides zero method for deciding which claims to believe and which to reject. A lifelong sponge believes whatever book, podcast, or editorial they absorbed last.\n\nTo choose for yourself what to accept and what to discard, you must adopt the Panning-for-Gold style of thinking. Just as a prospector swirls gravel and water in a pan to separate dense flecks of gold from worthless sediment, an active reader or listener continuously interacts with incoming claims to determine their epistemic worth. While the author is speaking to you through the page, you talk back to the author—even when they are not physically present. A panning-for-gold reader asks why the author makes specific assertions, writes critical notes in the margins flagging questionable leaps in reasoning, and refuses to grant agreement until the text supplies convincing answers.\n\nCrucially, the Sponge and Panning-for-Gold approaches are complementary rather than mutually exclusive. To pan for intellectual gold, there must first be something in your pan to evaluate; and evaluating complex arguments requires possessing a storehouse of dependable background knowledge. The authors distill the Panning-for-Gold habit into a four-part Mental Checklist: (1) Did I ask "why" someone wants me to believe something? (2) Did I take notes as I thought about potential problems with what was being said? (3) Did I evaluate what was being said? (4) Did I form my own conclusion about the topic based on the reasonableness of what was said? A major operational advantage of this critical-questioning strategy is that it empowers you to ask probing, diagnostic questions even when you possess very little domain expertise—for example, evaluating an argument about the adequacy of day-care centers without being a credentialed child-care specialist.',
+        'Browne and Keeley contrast two fundamental metaphors for how human beings process information: the Sponge and Panning for Gold. The Sponge approach reacts to information the way a household sponge reacts to water—by soaking everything up.\n\nTo choose for yourself what to accept and what to discard, you must adopt the Panning-for-Gold style of thinking. Just as a prospector swirls gravel and water in a pan to separate dense flecks of gold from worthless sediment, an active reader or listener continuously interacts with incoming claims to determine their epistemic worth.',
       stepByStepFlow: [
         {
           step: '1',
@@ -427,31 +392,14 @@ export const arqCh01Mastery: ChapterMastery = {
             'Audit the linkage between reasons and conclusions, discard unsupported assertions, and synthesize an independent personal judgment.',
         },
       ],
-      formulas: [
-        {
-          name: 'Epistemic Signal-to-Noise Filtering Ratio',
-          expression: '\\text{SNR}_{\\text{pan}} = \\frac{\\int K_{\\text{sponge}}(t) \\cdot Q_{\\text{filter}}(t)\\,dt}{\\int N_{\\text{gravel}}(t) \\cdot (1 - Q_{\\text{filter}}(t))\\,dt}',
-          intuition:
-            'Sponge absorption K_sponge provides the necessary raw volume in the numerator, while the active questioning filter Q_filter (ranging from 0 to 1) suppresses unverified gravel N_gravel in the denominator.',
-          variables: [
-            { symbol: '\\text{SNR}_{\\text{pan}}', meaning: 'Quality of retained beliefs (intellectual gold vs. gravel)' },
-            { symbol: 'K_{\\text{sponge}}', meaning: 'Volume of raw domain information absorbed' },
-            { symbol: 'Q_{\\text{filter}} \\in [0,1]', meaning: 'Intensity of Panning-for-Gold questioning checklist execution' },
-            { symbol: 'N_{\\text{gravel}}', meaning: 'Flawed reasoning, half-truths, and unsupported assertions in the source' },
-          ],
-          workedExample:
-            'In pure Sponge mode (Q_filter = 0), retained signal collapses to zero because all gravel passes straight into belief. Combining solid reading intake with active margin questioning (Q_filter = 0.85) isolates high-grade conclusions while washing away 85% of flawed claims.',
-        },
-      ],
       keyTakeaways: [
-        'The Sponge approach builds foundational knowledge effortlessly but leaves you defenseless against falsehoods.',
-        'The Panning-for-Gold approach demands active interaction—questioning claims, writing margin notes, and testing reasons before agreeing.',
-        'Critical questions are domain-portable: they allow you to audit the structural soundness of arguments even in fields where you are not an expert.',
-      ],
+          'The Sponge approach builds foundational knowledge effortlessly but leaves you defenseless against falsehoods.',
+          'The Panning-for-Gold approach demands active interaction—questioning claims, writing margin notes, and testing reasons before agreeing.',
+        ],
       commonPitfalls: [
-        'Mistaking neat, color-coded summary notes of an author’s chapters for critical thinking (that is still 100% Sponge behavior).',
-        'Assuming you have no right to question an article because you lack an advanced degree in the author’s specialty.',
-      ],
+          'Mistaking neat, color-coded summary notes of an author’s chapters for critical thinking (that is still 100% Sponge behavior).',
+          'Assuming you have no right to question an article because you lack an advanced degree in the author’s specialty.',
+        ],
     },
     {
       id: 'arq-ch01-sec-1-4',
@@ -460,7 +408,7 @@ export const arqCh01Mastery: ChapterMastery = {
       subtitle:
         'Professor Richard Paul’s distinction between partisan belief defense and symmetric self-scrutiny, plus why deliberate practice requires struggling without answer keys',
       coreMechanism:
-        'None of us enters a conversation or opens a book as a blank slate. We already hold emotionally invested initial opinions on controversial public and personal questions: Should prostitution be legalized? Is alcoholism a disease or willful misconduct? Was Barack Obama a successful president? Because we bring these prior convictions to everything we read and hear, critical-thinking skills can be deployed in two diametrically opposed ways—a distinction formalized by philosopher Richard Paul as Weak-Sense versus Strong-Sense Critical Thinking.\n\nWeak-sense critical thinking is the use of critical-thinking skills exclusively to defend your current beliefs and destroy the arguments of people who disagree with you. Why is this mode called "weak"? Because a thinker who deploys questions solely as a partisan shield is unconcerned with moving toward truth or ethical virtue. When the objective of critical thinking is reduced to domination and rhetorical victory over opponents, it ruins the progressive, humane potential of rational inquiry and locks the thinker inside closed-minded dogmatism.\n\nStrong-sense critical thinking, by contrast, requires applying the exact same critical questions to all claims—especially our own initial beliefs. By forcing ourselves to audit our own cherished positions, we protect ourselves against self-deception and unthinking conformity to our social tribe. Crucially, strong-sense critical thinking does not demand that we reflexively abandon our starting convictions. Often, subjecting an initial belief to rigorous critical examination and comparing it fairly against rival alternatives will deepen and strengthen our original commitment—now grounded in tested reasons rather than habit. Only when an opinion has been consciously selected from understood and evaluated alternatives can we feel genuine intellectual pride in holding it.\n\nTransitioning from weak-sense reactivity to strong-sense mastery is not automatic; it requires sustained, deliberate practice. For that reason, every subsequent chapter of Asking the Right Questions concludes with three practice passages. Browne and Keeley provide detailed sample responses for the first two passages to model the self-talk and diagnostic application of each critical question, but they intentionally omit the sample response for the third passage—ensuring readers experience the productive cognitive struggle required to turn question-asking into a permanent habit.',
+        'None of us enters a conversation or opens a book as a blank slate. We already hold emotionally invested initial opinions on controversial public and personal questions: Should prostitution be legalized?\n\nWeak-sense critical thinking is the use of critical-thinking skills exclusively to defend your current beliefs and destroy the arguments of people who disagree with you. Why is this mode called "weak"?',
       stepByStepFlow: [
         {
           step: '1',
@@ -481,30 +429,14 @@ export const arqCh01Mastery: ChapterMastery = {
             'Work through unguided arguments (like the third passage in each chapter) without peeking at templates so your brain builds autonomous evaluative pathways.',
         },
       ],
-      formulas: [
-        {
-          name: 'Symmetric vs. Managed Belief Updating Rule',
-          expression: 'P(B \\mid E) = \\begin{cases} P(B) & \\text{if Weak-Sense (Managed Reasoning ignores disconfirming } E\\text{)} \\\\ \\frac{P(E \\mid B)P(B)}{P(E)} & \\text{if Strong-Sense (Symmetric evaluation of all } E\\text{)} \\end{cases}',
-          intuition:
-            'Weak-sense critical thinking freezes prior belief P(B) by selectively filtering out hostile evidence and attacking only opposing arguments, whereas strong-sense thinking updates or validates belief strength proportional to honest evidentiary testing.',
-          variables: [
-            { symbol: 'P(B)', meaning: 'Initial commitment to a prior belief before inquiry' },
-            { symbol: 'E', meaning: 'New arguments, counter-evidence, and critical question results' },
-            { symbol: 'P(B \\mid E)', meaning: 'Revised or rationally strengthened belief after critical audit' },
-          ],
-          workedExample:
-            'When confronted with strong counter-evidence E against a favored policy, a weak-sense thinker invents ad-hoc excuses so P(B|E) remains 100%, whereas a strong-sense thinker audits both sides and adjusts confidence or refines the thesis.',
-        },
-      ],
       keyTakeaways: [
-        'Weak-sense critical thinking weaponizes logic to defend current beliefs and annihilate opponents, betraying the pursuit of truth.',
-        'Strong-sense critical thinking applies critical questions symmetrically to one’s own beliefs to guard against self-deception and conformity.',
-        'Strong-sense inquiry does not force you to surrender valid beliefs; surviving an honest audit makes a conviction sturdier and truly yours.',
-      ],
+          'Weak-sense critical thinking weaponizes logic to defend current beliefs and annihilate opponents, betraying the pursuit of truth.',
+          'Strong-sense critical thinking applies critical questions symmetrically to one’s own beliefs to guard against self-deception and conformity.',
+        ],
       commonPitfalls: [
-        'Assuming that because you can spot five fallacies in a rival party’s speech, you are practicing strong-sense critical thinking.',
-        'Equating open-mindedness with wishy-washy relativism rather than rigorous testing of all candidate conclusions.',
-      ],
+          'Assuming that because you can spot five fallacies in a rival party’s speech, you are practicing strong-sense critical thinking.',
+          'Equating open-mindedness with wishy-washy relativism rather than rigorous testing of all candidate conclusions.',
+        ],
     },
     {
       id: 'arq-ch01-sec-1-5',
@@ -513,7 +445,7 @@ export const arqCh01Mastery: ChapterMastery = {
       subtitle:
         'Understanding abstract values as standards of conduct, resisting value homophily, and embodying Autonomy, Curiosity, Humility, and Respect for Good Reasoning',
       coreMechanism:
-        'Critical thinking is not a hermit’s activity; other people are our most valuable epistemic resource—an extended family that nurtures, challenges, and supplies the raw facts and perspectives from which our conclusions grow. Yet every human interaction is shaped by values. Browne and Keeley define values precisely as abstract ideas (often unstated) that a person considers worthwhile and that serve as standards of conduct for measuring human behavior. Concrete objects or actions are desired because of the underlying abstract value they serve: we may seek contacts with "important people" (concrete) because we value "status" (abstract); we argue for or against assisted suicide based on the weight we assign to the "sanctity of human life" (abstract); we demand that politicians tell the truth because we cherish "honesty" (abstract).\n\nBecause values establish social comfort zones, human beings naturally gravitate toward people who share their value priorities—a phenomenon known as value homophily. Someone who prizes "individual responsibility" above all else naturally seeks out peers who agree that better personal choices solve most social problems. While values like adventure, ambition, autonomy, comfort, excellence, justice, rationality, tolerance, and spontaneity are all reasonable, other thoughtful people rank them differently. Our greatest social challenge as critical thinkers is actively resisting our tendency to listen only to our own value tribe.\n\nTo provide the "mental muscle" necessary to engage across value divides, Browne and Keeley establish four Primary Values of a Critical Thinker:\n1. Autonomy: Paradoxically, forming truly independent conclusions requires actively listening to views that are not our own. If a Democrat listens only to other Democrats, they shrink the array of possibilities from which they can choose and risk missing the best option.\n2. Curiosity: Panning for gold requires genuine listening and reading so other people’s insights can liberate us from our current state of partial knowledge.\n3. Humility: Recognizing that even the smartest person on earth makes mistakes every week—and echoing Socrates’ insight that wisdom begins in knowing what we do not know—opens us to learning from others and cures the toxic illusion that "those who disagree with me are biased, but I am not."\n4. Respect for Good Reasoning Wherever You Find It: All opinions are not equally worthwhile, but whenever strong reasoning meets the standards of critical evaluation, we must rely on it regardless of the speaker’s race, age, political party, wealth, or citizenship—holding our conclusions firmly while still asking ourselves, "Might I be wrong?" This stands in sharp contrast to "managed reasoning," which political satirist Stephen Colbert mocked when he quipped: "I’m not a fan of facts. You see, the facts can change, but my opinion will never change, no matter what the facts are."',
+        'Critical thinking is not a hermit’s activity; other people are our most valuable epistemic resource—an extended family that nurtures, challenges, and supplies the raw facts and perspectives from which our conclusions grow. Yet every human interaction is shaped by values.\n\nBecause values establish social comfort zones, human beings naturally gravitate toward people who share their value priorities—a phenomenon known as value homophily. Someone who prizes "individual responsibility" above all else naturally seeks out peers who agree that better personal choices solve most social problems.',
       stepByStepFlow: [
         {
           step: '1',
@@ -534,30 +466,14 @@ export const arqCh01Mastery: ChapterMastery = {
             'Combine Socratic humility with respect for good reasoning so facts and sound arguments govern your conclusion rather than pre-selected partisan loyalty.',
         },
       ],
-      formulas: [
-        {
-          name: 'Autonomy Option-Space Expansion via Value Diversity',
-          expression: '\\Omega_{\\text{autonomous}} = \\bigcup_{v \\in V_{\\text{diverse}}} \\{ C(v) \\mid \\text{ReasoningQuality}(C(v)) \\ge \\tau \\}',
-          intuition:
-            'True intellectual autonomy is proportional to the diversity of value perspectives V_diverse you seriously audit; restricting intake to your own tribe shrinks the set of high-quality candidate conclusions.',
-          variables: [
-            { symbol: '\\Omega_{\\text{autonomous}}', meaning: 'Set of vetted conclusions available for autonomous choice' },
-            { symbol: 'V_{\\text{diverse}}', meaning: 'Range of distinct value hierarchies consulted' },
-            { symbol: '\\tau', meaning: 'Minimum threshold of good reasoning required by critical questions' },
-          ],
-          workedExample:
-            'An engineer or policymaker who consults only efficiency-first peers evaluates a single branch of solutions; consulting privacy-first and equity-first thinkers expands Omega_autonomous, often revealing a superior synthesis.',
-        },
-      ],
       keyTakeaways: [
-        'Values are unstated abstract ideas representing standards of conduct (like honesty, status, sanctity of life, or individual responsibility) that drive concrete choices.',
-        'The four primary values of a critical thinker are Autonomy, Curiosity, Humility, and Respect for Good Reasoning wherever it is found.',
-        'Managed reasoning selects reasons backward to protect a fixed opinion ("the facts can change, but my opinion will never change").',
-      ],
+          'Values are unstated abstract ideas representing standards of conduct (like honesty, status, sanctity of life, or individual responsibility) that drive concrete choices.',
+          'The four primary values of a critical thinker are Autonomy, Curiosity, Humility, and Respect for Good Reasoning wherever it is found.',
+        ],
       commonPitfalls: [
-        'Listing concrete nouns (like pizza, tennis, or money) when asked to identify core values instead of abstract standards of conduct.',
-        'Falling into the bias blind spot: believing that people who disagree with you are driven by ideology while your own view is pure objective fact.',
-      ],
+          'Listing concrete nouns (like pizza, tennis, or money) when asked to identify core values instead of abstract standards of conduct.',
+          'Falling into the bias blind spot: believing that people who disagree with you are driven by ideology while your own view is pure objective fact.',
+        ],
     },
     {
       id: 'arq-ch01-sec-1-6',
@@ -566,7 +482,7 @@ export const arqCh01Mastery: ChapterMastery = {
       subtitle:
         'Redefining argument from verbal bloodbath to collaborative pruning, deploying the 8 conversation-sustaining strategies, managing tone, and refusing to sponge off experts',
       coreMechanism:
-        'Because critical thinking is a social activity, how we ask questions determines whether our counterparts engage with us or shut down. Many people are unaccustomed to having their beliefs examined and interpret probing questions as hostile, mean-spirited attacks ("Why doesn’t she just agree with me?"). In popular culture, an "argument" is pictured as an angry shouting match between two people trying to bludgeon each other into submission. In critical thinking, an argument means something completely different: it is simply the structural combination of a Conclusion and the Reasons allegedly supporting it. Offering and evaluating arguments is how we fertilize and prune our conclusions because we care about the quality of each other’s lives and beliefs.\n\nTo prevent disagreements from degenerating into a verbal bloodbath, Browne and Keeley provide eight concrete verbal and non-verbal strategies to keep the conversation moving:\n1. Clarify intent first by asking, "Did I hear you say...?"\n2. Ask the other person whether there is any conceivable evidence that would cause them to change their mind.\n3. Suggest a collaborative time-out in which both of you try to find the very best evidence for your respective positions.\n4. Ask why the other person thinks the evidence you are relying on is weak.\n5. Search for synthesis: if you combine their best reasons with your best reasons, is there a conclusion both of you could embrace?\n6. Trace back to common values or shared conclusions to pinpoint exactly where the divergence began.\n7. Model calm, caring curiosity—as soon as verbal heat rises, remind each other that you are learners, not warriors.\n8. Ensure your facial expression and body language project humility rather than a know-it-all demeanor.\n\nWhen we transition from listener/reader to speaker/writer, we must consciously construct a friendly environment for communication—in the spirit of Jon Stewart’s quip, "I disagree with you, but I am pretty sure you’re not Hitler." Writing in an aggressive, contemptuous tone is tempting because shooting down hard questions is easy, sounds authoritative, and entertains partisan fans. Film critic Roger Ebert famously reviewed Transformers: Revenge of the Fallen (2009) by advising readers to stay home, "cue up a male choir singing the music of hell, and get a kid to start banging pots and pans together." While vivid, such ridicule alienates anyone who disagrees, just as calling opponents "stupid and uninformed" reduces discourse to a schoolyard shouting match.\n\nTo speak and write as strong-sense critical thinkers, we must master two habits: (1) using balanced, respectful tone—applying physicist Richard Feynman’s rule of bending over backwards to develop the counterarguments against our own claim fully before stating our thesis; and (2) avoiding "sponging off the experts." Out of laziness or insecurity, writers often string together eloquent quotes from authorities and claim those opinions as their own. Instead of parroting Ebert’s "choir from hell" line to say Transformers is terrible, ask yourself, "What do I think and why?"—identifying your own concrete reasons (such as one-dimensional acting, relentless pacing, or clichéd dialogue) and using expert quotes strictly as secondary support for your own voice.',
+        'Because critical thinking is a social activity, how we ask questions determines whether our counterparts engage with us or shut down. Many people are unaccustomed to having their beliefs examined and interpret probing questions as hostile, mean-spirited attacks ("Why doesn’t she just agree with me?").\n\nTo prevent disagreements from degenerating into a verbal bloodbath, Browne and Keeley provide eight concrete verbal and non-verbal strategies to keep the conversation moving:\n1. Clarify intent first by asking, "Did I hear you say...?"\n2.',
       stepByStepFlow: [
         {
           step: '1',
@@ -587,42 +503,25 @@ export const arqCh01Mastery: ChapterMastery = {
             'Step back from memorized quotes, answer "What do I think and why?" in your own words, and deploy expert citations only as supporting evidence for your independently reasoned claims.',
         },
       ],
-      formulas: [
-        {
-          name: 'Audience Receptivity & Persuasive Reach Function',
-          expression: 'R_{\\text{audience}} = \\frac{\\text{CounterargumentFairness} \\times \\text{OwnVoiceAuthenticity}}{1 + \\lambda \\cdot \\text{HostileTone}_{\\text{ridicule}}}',
-          intuition:
-            'Even when underlying reasons are strong, ramping up hostile ridicule or name-calling inflates the denominator and drives audience receptivity among undecided or opposing thinkers toward zero.',
-          variables: [
-            { symbol: 'R_{\\text{audience}}', meaning: 'Probability that an undecided or disagreeing audience genuinely hears your argument' },
-            { symbol: '\\text{CounterargumentFairness}', meaning: 'Degree to which opposing views are steel-manned (Feynman rule)' },
-            { symbol: '\\text{OwnVoiceAuthenticity}', meaning: 'Original reasoning ("What do I think and why?") vs. sponged expert quotes' },
-            { symbol: '\\text{HostileTone}_{\\text{ridicule}}', meaning: 'Intensity of sarcasm, insult, or intolerant language' },
-          ],
-          workedExample:
-            'Replacing "Anyone who likes this film or policy is an idiot" (HostileTone = 9) with a fair acknowledgement of its appeal followed by specific structural critiques (HostileTone = 0, Fairness = 0.9) multiplies persuasive reach across skeptical readers.',
-        },
-      ],
       keyTakeaways: [
-        'In critical thinking, an argument is not a fight; it is a Conclusion paired with supporting Reasons offered to prune and fertilize our understanding.',
-        'Eight specific verbal and body-language strategies—starting with "Did I hear you say?" and "What evidence would change your mind?"—keep conversations from turning into battlegrounds.',
-        'Effective critical writers avoid alienating tone, build full counterarguments before stating their thesis (Feynman’s principle), and refuse to sponge off experts by asking "What do I think and why?" first.',
-      ],
+          'In critical thinking, an argument is not a fight.',
+          'Eight specific verbal and body-language strategies—starting with "Did I hear you say?" and "What evidence would change your mind?"—keep conversations from turning into battlegrounds.',
+        ],
       commonPitfalls: [
-        'Using dazzling, sarcastic put-downs (like Ebert’s "choir of hell") in serious arguments where the goal is to persuade skeptical minds rather than entertain existing allies.',
-        'Stitching together a patchwork of expert quotes and mistaking borrowed eloquence for your own critical reasoning.',
-      ],
+          'Using dazzling, sarcastic put-downs (like Ebert’s "choir of hell") in serious arguments where the goal is to persuade skeptical minds rather than entertain existing allies.',
+          'Stitching together a patchwork of expert quotes and mistaking borrowed eloquence for your own critical reasoning.',
+        ],
       figures: [
         {
           file: 'arq_p027_fig1.png',
           originalLabel: 'Common Understanding of an Argument (Page 27)',
           bierutTitle: 'Replace the Popular Caricature of Argument-as-Combat with Collaborative Reason-Giving',
           editorialAnalysis:
-            'The photograph on page 27 depicts the everyday cultural meaning of "argument": mutual rage, shouting, and emotional combat. Browne and Keeley use this visual foil to execute a foundational conceptual pivot—redefining an argument as a calm, structural partnership between a conclusion and the reasons supporting it, offered out of care for shared truth.',
+            'The photograph on page 27 depicts the everyday cultural meaning of "argument": mutual rage, shouting, and emotional combat.',
           keyTakeaways: [
-            'When people equate argument with personal war, any critical question feels like an act of aggression.',
-            'Signaling warmth, curiosity, and physical humility prevents listeners from mistaking analytical inquiry for hostility.',
-          ],
+          'When people equate argument with personal war, any critical question feels like an act of aggression.',
+          'Signaling warmth, curiosity, and physical humility prevents listeners from mistaking analytical inquiry for hostility.',
+        ],
         },
       ],
     },
@@ -728,7 +627,7 @@ export const arqCh01Mastery: ChapterMastery = {
       roleAndContext:
         'Staff Engineer reviewing a junior team’s Request for Comments (RFC) proposing a microservice split.',
       symptomOrFailure:
-        'The Staff Engineer writes a blistering, sarcastic review comparing the RFC’s event bus to "a choir in hell banging pots and pans" and quoting famous distributed-systems experts to prove the authors are uninformed. The junior team shuts down defensively, stops asking questions, and quietly routes around architectural reviews.',
+        'The Staff Engineer writes a blistering, sarcastic review comparing the RFC’s event bus to "a choir in hell banging pots and pans" and quoting famous distributed-systems experts to prove the authors are uninformed.',
       naiveFixAndWhyItFails:
         'Telling the junior engineers to "grow thicker skin" fails because hostile tone triggers System 1 emotional defensiveness and destroys the collaborative communication environment required to surface actual domain constraints.',
       firstPrinciplesSolution:
@@ -756,7 +655,7 @@ export const arqCh01Mastery: ChapterMastery = {
             text: 'Ignore all scientific experts since their contradictions prove they know no more than laypeople.',
             isCorrect: false,
             explanation:
-              'Browne and Keeley explicitly warn against dismissing experts; we cannot function without their knowledge, and we should actually pay more attention to a wider variety of them.',
+              'Browne and Keeley explicitly warn against dismissing experts.',
           },
           {
             label: 'C',
@@ -920,42 +819,42 @@ export const arqCh01Mastery: ChapterMastery = {
         id: 'arq-ch01-fc1',
         category: 'foundation',
         front: 'What are the Three Dimensions of Critical Thinking defined by Browne and Keeley?',
-        back: '1. Awareness of a set of interrelated critical questions.\n2. Ability to ask and answer those critical questions in an appropriate manner.\n3. Desire (willingness) to actively use the critical questions.',
+        back: '1.',
         mentalHook: 'Awareness + Ability + Desire = Active Critical Evaluation.',
       },
       {
         id: 'arq-ch01-fc2',
         category: 'evaluation',
         front: 'What is the four-item Mental Checklist for Panning for Gold?',
-        back: '1. Did I ask "why" someone wants me to believe something?\n2. Did I take notes as I thought about potential problems with what was being said?\n3. Did I evaluate what was being said?\n4. Did I form my own conclusion about the topic based on the reasonableness of what was said?',
+        back: '1.',
         mentalHook: 'Ask Why -> Note Flaws -> Evaluate -> Form Own Conclusion.',
       },
       {
         id: 'arq-ch01-fc3',
         category: 'foundation',
         front: 'How does Richard Paul distinguish Weak-Sense from Strong-Sense Critical Thinking?',
-        back: 'Weak-sense critical thinking uses evaluative skills solely to defend current beliefs and defeat opponents. Strong-sense critical thinking applies the same critical questions to all claims—especially one’s own initial beliefs—to guard against self-deception and conformity.',
+        back: 'Weak-sense critical thinking uses evaluative skills solely to defend current beliefs and defeat opponents.',
         mentalHook: 'Weak-Sense = Partisan Shield; Strong-Sense = Symmetric Mirror.',
       },
       {
         id: 'arq-ch01-fc4',
         category: 'foundation',
         front: 'How do Browne and Keeley define "Values" and what are the Four Primary Values of a Critical Thinker?',
-        back: 'Values are unstated abstract ideas that people see as worthwhile and that provide standards of conduct (e.g., honesty, status, sanctity of life). The 4 Primary Values of a Critical Thinker are: (1) Autonomy, (2) Curiosity, (3) Humility, and (4) Respect for good reasoning wherever you find it.',
+        back: 'Values are unstated abstract ideas that people see as worthwhile and that provide standards of conduct (e.g., honesty, status, sanctity of life).',
         mentalHook: 'Abstract Standards: Autonomy, Curiosity, Humility, Respect for Good Reasoning.',
       },
       {
         id: 'arq-ch01-fc5',
         category: 'architecture',
         front: 'How does the critical-thinking definition of an "Argument" differ from its everyday meaning?',
-        back: 'In everyday speech, an argument is an angry verbal fight. In critical thinking, an argument is a structural combination of two forms of statements: a Conclusion and the Reasons allegedly supporting it—offered to fertilize and prune our beliefs.',
+        back: 'In everyday speech, an argument is an angry verbal fight.',
         mentalHook: 'Argument = Conclusion + Supporting Reasons (Not a Shouting Match).',
       },
       {
         id: 'arq-ch01-fc6',
         category: 'adaptation',
         front: 'What is "Managed Reasoning" and how does Richard Feynman’s scientific rule counteract it in writing and speaking?',
-        back: 'Managed reasoning is selecting reasons backward to justify a fixed conclusion you refuse to change. Feynman’s rule counteracts it by requiring us to consider every conceivable way we might be wrong and to develop counterarguments fully before advancing our thesis.',
+        back: 'Managed reasoning is selecting reasons backward to justify a fixed conclusion you refuse to change.',
         mentalHook: 'Managed Reasoning = Backward Rationalization; Feynman Rule = Steel-Man Counterarguments First.',
       },
     ],
@@ -972,7 +871,7 @@ export const arqCh01Mastery: ChapterMastery = {
           'Explains why the two styles complement each other (you need absorbed knowledge in the pan before you can pan for intellectual gold) and states the 4-item mental checklist.',
         ],
         modelExplanation:
-          'Think of your brain during a lecture or reading session as operating in two gears. The first gear is the Sponge: just as a sponge soaks up water, you absorb definitions, historical facts, and the author’s claims. That is a useful start because you cannot think deeply about a complex world without a baseline storehouse of facts, and sponging is fast and relatively effortless. However, if you stop at Sponge mode, you have a fatal vulnerability: a sponge absorbs dirty water just as eagerly as clean water. With no filtering mechanism, you end up believing whichever speaker or article you encountered last.\n\nTo take rational control of your mind, you must shift into the second gear: Panning for Gold. Like a prospector swirling gravel in a pan to isolate heavy flecks of gold, you treat reading and listening as an active, two-way conversation. While the author speaks to you, you talk back in the margins. You run a four-step mental checklist: (1) Ask why the author wants you to believe a claim; (2) Jot down notes about potential flaws or missing evidence; (3) Evaluate the soundness of the reasoning; and (4) Form your own independent conclusion. The two styles work together: the Sponge puts raw material into your pan, and Panning for Gold separates dependable conclusions from persuasive gravel.',
+          'Think of your brain during a lecture or reading session as operating in two gears. The first gear is the Sponge: just as a sponge soaks up water, you absorb definitions, historical facts, and the author’s claims.',
       },
       {
         id: 'arq-ch01-feyn-2',
@@ -986,7 +885,7 @@ export const arqCh01Mastery: ChapterMastery = {
           'Lists concrete verbal strategies for keeping conversation moving (e.g., "Did I hear you say?", asking what evidence would change their mind, time-out for best evidence, calm learner demeanor) and avoiding alienating tone.',
         ],
         modelExplanation:
-          'When people first learn how to spot logical flaws, they often face a subtle trap that philosopher Richard Paul called Weak-Sense Critical Thinking. Because we all start with cherished opinions on politics, ethics, and work, it is tempting to use critical questions as a one-way weapon—firing skeptical questions at anyone who disagrees with us while practicing "managed reasoning" to shield our own beliefs. That makes us more stubbornly closed-minded, just armed with better debating tricks.\n\nStrong-Sense Critical Thinking flips the mirror inward: we apply the exact same critical questions to our own initial beliefs first. That does not mean surrendering our convictions lightly; when a belief survives an honest audit against rival views, our commitment to it becomes rationally earned. Practicing strong-sense thinking with other people requires four primary values: Autonomy (sampling diverse viewpoints so our choice is truly ours), Curiosity (genuinely listening to learn), Humility (remembering Socrates’ insight that we all make mistakes and rejecting the "you are biased, I am objective" illusion), and Respect for Good Reasoning regardless of who offers it. Finally, because people easily mistake questions for hostility, we keep conversations alive by treating an argument as a cooperative partnership of Reasons + Conclusion—using calm protocols like asking "Did I hear you say...?", asking what evidence would change our minds, developing counterarguments fairly before stating our thesis, and modeling the posture of fellow learners rather than warriors.',
+          'When people first learn how to spot logical flaws, they often face a subtle trap that philosopher Richard Paul called Weak-Sense Critical Thinking. Because we all start with cherished opinions on politics, ethics, and work, it is tempting to use critical questions as a one-way weapon.',
       },
     ],
   },
@@ -1096,7 +995,7 @@ export const arqCh01Mastery: ChapterMastery = {
     figuresIncluded: 2,
     antiAiVerified: true,
     auditNotes:
-      'Verified 100% coverage of all Chapter 1 headings (Noisy World, Experts Cannot Rescue Us, Necessity of Relying on Our Mind, Critical Thinking to the Rescue, Sponge vs. Panning for Gold, Weak-Sense vs. Strong-Sense, Importance of Practice, Critical Thinking and Other People, Primary Values, Keeping the Conversation Going, Creating a Friendly Environment, Writing and Speaking as Critical Thinkers) plus both extracted figure assets (arq_ch01_plate.png and arq_p027_fig1.png). Zero banned AI prose patterns.',
+      'Verified 100% coverage of all Chapter 1 headings (Noisy World, Experts Cannot Rescue Us, Necessity of Relying on Our Mind, Critical Thinking to the Rescue, Sponge vs.',
   },
 };
 
@@ -1106,15 +1005,15 @@ export const arqCh02Mastery: ChapterMastery = {
   title: 'What Are the Issue and the Conclusion?',
   subtitle:
     'Distinguishing Descriptive ("is") from Prescriptive ("ought") issues, isolating the controversy, defining the anatomical structure of Conclusions vs. mere opinions, the 6 Clues to Discovery, and worked deconstructions of real-world arguments.',
-  readingTimeMinutes: 28,
+  readingTimeMinutes: 9,
   sourceWordCount: 3501,
   executiveThesis:
-    'You cannot evaluate the quality of someone’s reasoning until you first locate what they are trying to prove. Every persuasive communication is anchored by two structural coordinates: the Issue (the underlying question or controversy stimulating the discussion) and the Conclusion (the specific position or message the communicator wants you to accept in response to that issue). Issues bifurcate into Descriptive questions—which ask how the world was, is, or will be—and Prescriptive questions—which ask what ought to be done or what is morally desirable. A true Conclusion is never a standalone assertion; it is the inferred destination of an argument ("this, because of that") supported by reasons, whereas an unsupported claim is merely an opinion. Mastering the first critical question requires deploying six systematic Clues to Discovery—including indicator words, strategic locations, negative filtering of evidence/background, contextual priors, and backward "Why? Because..." inference testing—and translating that structural clarity into your own critical writing.',
+    'You cannot evaluate the quality of someone’s reasoning until you first locate what they are trying to prove. Every persuasive communication is anchored by two structural coordinates: the Issue (the underlying question or controversy stimulating the discussion) and the Conclusion (the specific position or message the communicator wants you to accept in response to that issue).',
   paradigmShift: {
     oldWay:
       'Reactive Line-by-Line Skimming: Jump immediately into arguing with isolated statistics, background statements, or examples in an essay without first pinning down the author’s exact thesis or the type of question being answered.',
     newWay:
-      'Structural Coordinate Isolation (Issue + Conclusion First): Classify whether the controversy is Descriptive or Prescriptive, isolate the exact Conclusion using the 6 Clues to Discovery and the "Why? Because..." test, and reconstruct the Issue before judging a single piece of evidence.',
+      'Structural Coordinate Isolation (Issue + Conclusion First): Classify whether the controversy is Descriptive or Prescriptive, isolate the exact Conclusion using the 6 Clues to Discovery and the "Why?',
     whyItChanged:
       'Without isolating the author’s actual conclusion first, readers inevitably attack straw men, confuse supporting facts with main points, or apply empirical verification standards to ethical policy claims (and vice versa).',
   },
@@ -1124,7 +1023,7 @@ export const arqCh02Mastery: ChapterMastery = {
       id: 'arq-ch02-svg-issue-conclusion-anatomy',
       title: 'Structural Anatomy of Persuasive Communication: Issues, Reasons & Conclusions',
       subtitle:
-        'Mapping Descriptive vs. Prescriptive issues through inferential support ("this, because of that") and separating valid conclusions from mere opinions',
+        'Mapping Descriptive vs.',
       svgCode: `<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
   <defs>
     <linearGradient id="arqCh2Bg1" x1="0" y1="0" x2="1" y2="1">
@@ -1231,13 +1130,13 @@ export const arqCh02Mastery: ChapterMastery = {
           step: '2',
           label: 'The "This, Because of That" Inference Law',
           explanation:
-            'A statement is only a Conclusion if other statements are offered as reasons to believe it. Supporting statements (like unknown health effects of GMOs) are the "that" used to prove the "this" ("GMOs should not be legal").',
+            'A statement is only a Conclusion if other statements are offered as reasons to believe it.',
         },
         {
           step: '3',
           label: 'Backward Issue Reconstruction',
           explanation:
-            'Communicators frequently omit an explicit question at the top of an article. Finding the Conclusion first gives you a deterministic key to invert that statement into the stimulating Issue.',
+            'Communicators frequently omit an explicit question at the top of an article.',
         },
       ],
     },
@@ -1342,13 +1241,13 @@ export const arqCh02Mastery: ChapterMastery = {
           step: '2',
           label: 'Negative Filtering of Non-Conclusions (Clue 4)',
           explanation:
-            'Readers frequently mistake a vivid statistic, definition, or opening historical fact for the main point. Clue 4 strips away examples, statistics, definitions, background information, and supporting evidence to leave only candidate conclusions.',
+            'Readers frequently mistake a vivid statistic, definition, or opening historical fact for the main point.',
         },
         {
           step: '3',
           label: 'The Bidirectional "Why? Because..." Verification Test (Clue 6)',
           explanation:
-            'When a passage lacks indicator words (like Passage 2 on social media), test both the opening sentence and closing sentence by asking "Why? Because [rest of passage]." If the evidence does not logically explain why the opening sentence is true, that sentence is mere background.',
+            'When a passage lacks indicator words (like Passage 2 on social media), test both the opening sentence and closing sentence by asking "Why?',
         },
       ],
     },
@@ -1361,9 +1260,9 @@ export const arqCh02Mastery: ChapterMastery = {
       naiveIntuition:
         'All controversial questions in textbooks, news articles, and policy meetings can be settled the same way: by looking up the facts.',
       firstPrinciplesReality:
-        'Issues split into two distinct epistemic species. Descriptive issues ask about the accuracy of descriptions of the past, present, or future ("Does musical training improve math ability?"). Prescriptive issues ask ethical, moral, or policy questions about what is right, good, or desirable ("Should intelligent design be taught in public schools?"). Empirical facts alone never settle a prescriptive issue without an accompanying value priority.',
+        'Issues split into two distinct epistemic species.',
       howToApply:
-        'Before evaluating any discussion, inspect the interrogative verb: "Does / Is / What causes" signals a Descriptive issue requiring empirical verification; "Should / Ought / Must" signals a Prescriptive issue requiring both factual consequences and explicit value weighing.',
+        'Before evaluating any discussion, inspect the interrogative verb: "Does / Is / What causes" signals a Descriptive issue requiring empirical verification.',
     },
     {
       id: 'arq-ch02-mm-this-because-that',
@@ -1372,7 +1271,7 @@ export const arqCh02Mastery: ChapterMastery = {
       naiveIntuition:
         'Any strong, passionate, or controversial assertion an author makes in an article is their conclusion.',
       firstPrinciplesReality:
-        'Conclusions are inferred outcomes of reasoning; they exist only inside a structural dependency where supporting statements ("that") are offered as reasons to believe the main claim ("this"). If a speaker declares a bold position but offers zero supporting statements, they have not stated a conclusion—they have only stated a "mere opinion."',
+        'Conclusions are inferred outcomes of reasoning; they exist only inside a structural dependency where supporting statements ("that") are offered as reasons to believe the main claim ("this").',
       howToApply:
         'For every candidate conclusion you spot, immediately ask: "What statements in this text are serving as the \'that\' to prove this claim?" If a statement is instead being used to prove a further downstream point, it is a supporting reason, not the final conclusion.',
     },
@@ -1383,7 +1282,7 @@ export const arqCh02Mastery: ChapterMastery = {
       naiveIntuition:
         'You must always find the issue in the first sentence of an essay before you can look for the conclusion.',
       firstPrinciplesReality:
-        'Writers frequently plunge straight into complaints, anecdotes, or policy demands without ever stating the question that sparked their essay. In such cases, hunting for an explicit issue statement fails; the surest path is to isolate the Conclusion first and then work backward to ask what question that conclusion answers.',
+        'Writers frequently plunge straight into complaints, anecdotes, or policy demands without ever stating the question that sparked their essay.',
       howToApply:
         'When an essay lacks an explicit title or opening question, apply the 6 Clues to lock onto the Conclusion (e.g., "It is usually a mistake for parents to homeschool their child"), then convert that declarative thesis into an interrogative issue ("Is it desirable for parents to homeschool their child?").',
     },
@@ -1394,9 +1293,9 @@ export const arqCh02Mastery: ChapterMastery = {
       naiveIntuition:
         'Good writing should be subtle and literary, leaving the reader to infer your main point at the end.',
       firstPrinciplesReality:
-        'When readers have to guess which sentence is your thesis, they react to a distorted version of your communication. Indicator phrases ("consequently," "therefore," "thus," "shows that," "the truth of the matter is," "the point I’m trying to make is") act as structural neon signs that eliminate ambiguity for both reader and writer.',
+        'When readers have to guess which sentence is your thesis, they react to a distorted version of your communication.',
       howToApply:
-        'When reading, circle indicator words immediately as high-probability conclusion markers. When writing or speaking, place an explicit indicator phrase directly in front of your thesis so your audience cannot miss the destination of your argument.',
+        'When reading, circle indicator words immediately as high-probability conclusion markers.',
     },
   ],
   deepSections: [
@@ -1407,7 +1306,7 @@ export const arqCh02Mastery: ChapterMastery = {
       subtitle:
         'Why critical evaluation begins with Critical Question #1 and how to classify empirical "is" questions versus ethical/policy "ought" questions',
       coreMechanism:
-        'Before we can evaluate the quality of someone’s reasoning, we must first find it. Browne and Keeley open Chapter 2 with a deceptively simple paragraph about cell phones: "Even though cell phones have multiple benefits, there are horrible drawbacks in using them. Some states have found it necessary to try to reduce accidents caused by texting while driving by imposing large fines for violating their law against the use of a cell phone. We need stronger penalties associated with abuse of the growing population of cell phones." To react reasonably to any such blog post, editorial, speech, or book, we must answer the first critical question: What are the issue and the conclusion? If we fail to identify the author’s conclusion accurately, we end up arguing against a distorted phantom of their communication.\n\nAn issue is the question or controversy responsible for the conversation or discussion—the stimulus for what is being said. Browne and Keeley divide issues into two foundational categories: Descriptive issues and Prescriptive issues. Descriptive issues raise questions about the accuracy of descriptions of the past, present, or future. They reflect our curiosity about empirical patterns, causal links, and factual order in the world. Consider three textbook examples: (1) "Does musical training improve a person’s ability to learn math?" (2) "What is the most common cause of domestic abuse?" (3) "Is Paxil an effective way to treat depression?" Notice the interrogative words that launch descriptive questions—Does, What, Is—and notice how their answers ("Children who are musically trained learn math more easily," or "Chronic alcohol use is the most common cause of domestic abuse") attempt to describe how the world actually operates.\n\nPrescriptive issues, by contrast, raise ethical, moral, or policy questions about what we should do, or what is right or wrong, desirable or undesirable, good or bad. They demand answers suggesting the way the world ought to be. Consider the chapter’s three canonical examples: (1) "Should intelligent design be taught in the public schools?" (2) "What ought to be done about Medicaid fraud?" (3) "Must we outlaw SUVs to reduce increasing rates of asthma?" Their characteristic cue words—Should, What ought, Must—signal social controversies that require prescriptive answers ("Intelligent design should be taught in public schools," or "We ought to impose more severe penalties for Medicaid fraud"). While some complex debates blend both dimensions, distinguishing descriptive from prescriptive issues at the start of an analysis is indispensable because the downstream critical evaluation standards you apply will differ depending on which type of issue you are answering.',
+        'Before we can evaluate the quality of someone’s reasoning, we must first find it. Browne and Keeley open Chapter 2 with a deceptively simple paragraph about cell phones: "Even though cell phones have multiple benefits, there are horrible drawbacks in using them.\n\nAn issue is the question or controversy responsible for the conversation or discussion—the stimulus for what is being said. Browne and Keeley divide issues into two foundational categories: Descriptive issues and Prescriptive issues.',
       stepByStepFlow: [
         {
           step: '1',
@@ -1425,44 +1324,28 @@ export const arqCh02Mastery: ChapterMastery = {
           step: '3',
           title: 'Test for Prescriptive ("Should/Ought/Must") Structure',
           detail:
-            'Check whether the question demands a judgment about right/wrong, good/bad, or what policy action ought to be taken—and prepare to audit both factual claims and value priorities.',
-        },
-      ],
-      formulas: [
-        {
-          name: 'Hume-Inspired Descriptive-to-Prescriptive Evaluation Split',
-          expression: '\\text{IssueType}(Q) = \\begin{cases} \\text{Descriptive: } \\text{Verify}(F_{\\text{past, present, future}}) & \\text{if } Q \\in \\{\\text{Does, Is, What causes}\\} \\\\ \\text{Prescriptive: } \\text{Verify}(F) \\land \\text{Weigh}(V_{\\text{ethics, policy}}) & \\text{if } Q \\in \\{\\text{Should, Ought, Must}\\} \\end{cases}',
-          intuition:
-            'Descriptive issues are evaluated strictly on the empirical accuracy of factual/causal descriptions F, whereas Prescriptive issues require both empirical projections F and normative value judgments V.',
-          variables: [
-            { symbol: 'Q', meaning: 'The issue or question stimulating the communication' },
-            { symbol: 'F', meaning: 'Descriptive accuracy of past, present, or future states of the world' },
-            { symbol: 'V_{\\text{ethics, policy}}', meaning: 'Ethical standards of conduct and value trade-offs (right/wrong, desirable/undesirable)' },
-          ],
-          workedExample:
-            'In the opening cell phone paragraph, the claim that states impose fines for texting while driving is descriptive (F), but the author’s conclusion—"We need stronger penalties associated with abuse of the growing population of cell phones"—answers a prescriptive issue ("Should we impose stronger penalties on cell phone abuse?").',
+            'Check whether the question demands a judgment about right/wrong, good/bad, or what policy action ought to be taken.',
         },
       ],
       keyTakeaways: [
-        'An issue is the question or controversy that stimulates a discussion; a conclusion is the writer’s position on that question.',
-        'Descriptive issues ask about the accuracy of descriptions of the past, present, or future (Does, What, Is).',
-        'Prescriptive issues ask ethical or policy questions about what we should do or what is right/wrong, good/bad (Should, What ought, Must).',
-      ],
+          'An issue is the question or controversy that stimulates a discussion; a conclusion is the writer’s position on that question.',
+          'Descriptive issues ask about the accuracy of descriptions of the past, present, or future (Does, What, Is).',
+        ],
       commonPitfalls: [
-        'Attempting to settle a prescriptive policy question ("Must we outlaw SUVs to reduce asthma?") solely by citing a descriptive statistic without addressing the competing value trade-offs (freedom of choice vs. public health).',
-        'Reacting emotionally to a secondary remark in a paragraph before identifying the central issue and conclusion.',
-      ],
+          'Attempting to settle a prescriptive policy question ("Must we outlaw SUVs to reduce asthma?") solely by citing a descriptive statistic without addressing the competing value trade-offs (freedom of choice vs. public health).',
+          'Reacting emotionally to a secondary remark in a paragraph before identifying the central issue and conclusion.',
+        ],
       figures: [
         {
           file: 'arq_ch02_plate.png',
           originalLabel: 'Chapter 2 Opening Blueprint: What Are the Issue and the Conclusion? (Page 31)',
           bierutTitle: 'Anchor Every Critical Evaluation by Isolating the Stimulus Issue and Target Conclusion First',
           editorialAnalysis:
-            'Page 31 launches the operational sequence of the 12-chapter critical questioning system. Using the cell-phone penalty paragraph as an immediate diagnostic test, the layout establishes the three core learning objectives of Chapter 2: distinguishing descriptive from prescriptive issues, discovering the issue and conclusion in wild text, and integrating explicit thesis formulation into the reader’s own writing.',
+            'Page 31 launches the operational sequence of the 12-chapter critical questioning system.',
           keyTakeaways: [
-            'Finding someone’s reasoning sounds simple in theory, but in real prose it requires disciplined structural parsing.',
-            'Identifying the issue and conclusion is Critical Question #1 because every subsequent critical question evaluates the bridge between reasons and this specific conclusion.',
-          ],
+          'Finding someone’s reasoning sounds simple in theory, but in real prose it requires disciplined structural parsing.',
+          'Identifying the issue and conclusion is Critical Question #1 because every subsequent critical question evaluates the bridge between reasons and this specific conclusion.',
+        ],
         },
       ],
     },
@@ -1473,7 +1356,7 @@ export const arqCh02Mastery: ChapterMastery = {
       subtitle:
         'Locating explicit issue statements, inferring unstated questions from historical triggers and author background, and working backward from the conclusion',
       coreMechanism:
-        'How does a critical reader locate the basic question or issue driving a text? In the most straightforward cases, the communicator states the issue explicitly in the title or opening lines using unmistakable question markers: "The question I am raising is: Why must we have laws regulating tobacco products?" or "Lowering the legal drinking age: Is it the right thing to do?" or "Should sex education be taught in the schools?" When an author hands you the issue on a silver platter, your only task is to verify that the rest of the essay actually addresses that stated question.\n\nFrequently, however, the issue is never explicitly stated and must be inferred from contextual clues inside and around the communication. Browne and Keeley highlight two powerful contextual clues for inferring an unstated issue. First, ask: "What current event or real-world problem is this individual reacting to?" For example, an op-ed written immediately after a series of violent acts in schools is almost certainly addressing an issue about school safety or gun regulation. Second, inspect the author’s background and institutional affiliations—knowing which advocacy organizations, think tanks, or industry groups a writer belongs to often illuminates the exact controversy they are entering.\n\nWhen formulating an inferred issue in your own words, resist the perfectionist trap of thinking there is one and only one exact phrasing of the issue. As long as you identify a question that the entire essay or speech addresses—and your phrasing satisfies the definitional criteria of an issue—you have succeeded. Above all, Browne and Keeley emphasize a decisive operational rule: when an issue is not explicitly stated, the surest way to detect it is to locate the Conclusion first. Because every conclusion is an answer to an issue, finding the conclusion lets you immediately reconstruct the question. Hence their foundational maxim: WE CANNOT CRITICALLY EVALUATE UNTIL WE FIND THE CONCLUSION!',
+        'How does a critical reader locate the basic question or issue driving a text? In the most straightforward cases, the communicator states the issue explicitly in the title or opening lines using unmistakable question markers: "The question I am raising is: Why must we have laws regulating tobacco products?" or "Lowering the legal drinking age: Is it the right thing to do?" or "Should sex education be taught in the schools?" When an author hands you the issue on a silver platter, your only task is to verify that the rest of the essay actually addresses that stated question.\n\nFrequently, however, the issue is never explicitly stated and must be inferred from contextual clues inside and around the communication. Browne and Keeley highlight two powerful contextual clues for inferring an unstated issue.',
       stepByStepFlow: [
         {
           step: '1',
@@ -1494,31 +1377,14 @@ export const arqCh02Mastery: ChapterMastery = {
             'Isolate the author’s main conclusion first, then turn that thesis statement into the overarching question the entire passage answers.',
         },
       ],
-      formulas: [
-        {
-          name: 'Backward Issue Inversion Operator',
-          expression: 'I^* = \\mathcal{Q}(C) \\quad \\text{such that } \\forall R_k \\in \\text{Text}, \\; R_k \\vdash (I^* \\xrightarrow{\\text{answered by}} C)',
-          intuition:
-            'Given an isolated conclusion C, the reconstructed issue I* is the interrogative transformation Q(C) that unifies all supporting paragraphs R_k in the text.',
-          variables: [
-            { symbol: 'C', meaning: 'The author’s identified conclusion' },
-            { symbol: '\\mathcal{Q}(C)', meaning: 'Interrogative inversion of C (turning a declarative position into a question)' },
-            { symbol: 'I^*', meaning: 'The inferred issue stimulating the entire communication' },
-            { symbol: 'R_k', meaning: 'Supporting reasons and paragraphs across the essay' },
-          ],
-          workedExample:
-            'If an essay’s conclusion C is "It is usually a mistake for parents to homeschool their child," applying Q(C) yields the inferred prescriptive issue I* = "Is it desirable for parents to homeschool their child?"',
-        },
-      ],
       keyTakeaways: [
-        'Issues may be explicitly announced in titles/openings or left implicit for the reader to infer.',
-        'There is no single magic wording for an inferred issue, provided your phrasing captures the question addressed by the entire passage.',
-        'When the issue is unstated, finding the conclusion first is the most reliable method for discovering the issue.',
-      ],
+          'Issues may be explicitly announced in titles/openings or left implicit for the reader to infer.',
+          'There is no single magic wording for an inferred issue, provided your phrasing captures the question addressed by the entire passage.',
+        ],
       commonPitfalls: [
-        'Stating the issue so broadly ("What about education?") or so narrowly ("Should Texas fine a driver $200 on Tuesdays?") that it fails to match the actual scope of the author’s conclusion.',
-        'Trying to critique the author’s evidence before locking down the conclusion and the issue.',
-      ],
+          'Stating the issue so broadly ("What about education?") or so narrowly ("Should Texas fine a driver $200 on Tuesdays?") that it fails to match the actual scope of the author’s conclusion.',
+          'Trying to critique the author’s evidence before locking down the conclusion and the issue.',
+        ],
     },
     {
       id: 'arq-ch02-sec-2-3',
@@ -1527,7 +1393,7 @@ export const arqCh02Mastery: ChapterMastery = {
       subtitle:
         'Defining the conclusion as the destination of inference ("this, because of that") and distinguishing reasoned conclusions from unsupported mere opinions',
       coreMechanism:
-        'A conclusion is the message or destination that the speaker or writer wishes you to accept. To locate it, a critical thinker asks two equivalent diagnostic questions: "What is the writer or speaker trying to prove?" or "What is the communicator’s main point?" The answer to either question—or the author’s direct answer to the issue—is the conclusion.\n\nAt a first-principles structural level, searching for a conclusion means searching for a statement (or set of statements) that the communicator wants you to believe on the basis of other statements in the text. Browne and Keeley distill the entire anatomy of persuasive communication into a four-word formula: this, because of that. "This" refers to the conclusion; "that" refers to the supporting reasons offered for the conclusion. Together, this relationship represents the process of inference. Because conclusions are inferred—derived from reasoning—they are ideas that require other ideas to support them. Consequently, whenever someone asserts that something is true or ought to be done but provides zero statements to support that claim, their assertion is not a conclusion at all; unsupported claims are what critical thinkers classify as mere opinions.\n\nTo illustrate how supporting statements differ from conclusions, Browne and Keeley dissect a concise two-sentence argument on biotechnology: "Genetically modified foods should not be legal. We have no way of knowing what the effects on our health will be from consuming food that is created in part by chemists." Here, the first sentence ("Genetically modified foods should not be legal") is the author’s answer to the prescriptive issue "Should genetically modified foods be legal?"—making it the conclusion ("this"). The second sentence warns of unknown health dangers from chemist-created food ("that"). Why is the second sentence not the conclusion? Because it is being used as a stepping-stone to prove something else. When an author leaves their conclusion unstated, the critical reader must infer the implied "this" that the author’s collection of "that" statements is designed to prove. Once found, the conclusion becomes the bull’s-eye of all subsequent evaluation: Should I accept this conclusion on the basis of what is supporting it?',
+        'A conclusion is the message or destination that the speaker or writer wishes you to accept. To locate it, a critical thinker asks two equivalent diagnostic questions: "What is the writer or speaker trying to prove?" or "What is the communicator’s main point?" The answer to either question—or the author’s direct answer to the issue—is the conclusion.\n\nAt a first-principles structural level, searching for a conclusion means searching for a statement (or set of statements) that the communicator wants you to believe on the basis of other statements in the text. Browne and Keeley distill the entire anatomy of persuasive communication into a four-word formula: this, because of that.',
       stepByStepFlow: [
         {
           step: '1',
@@ -1548,39 +1414,23 @@ export const arqCh02Mastery: ChapterMastery = {
             'If a claim has zero supporting statements attached to it, classify it as an unsupported mere opinion rather than a reasoned conclusion.',
         },
       ],
-      formulas: [
-        {
-          name: 'Inferential Conclusion vs. Mere Opinion Classifier',
-          expression: '\\text{Status}(S) = \\begin{cases} \\text{Conclusion (\"This\")} & \\text{if } \\exists \\{R_1, \\dots, R_n\\} \\neq \\emptyset \\text{ s.t. } \\{R_i\\} \\xrightarrow{\\text{supports}} S \\text{ and } S \\not\\xrightarrow{\\text{supports}} S\' \\\\ \\text{Supporting Reason (\"That\")} & \\text{if } S \\xrightarrow{\\text{supports}} S\' \\\\ \\text{Mere Opinion} & \\text{if } \\{R_i\\} = \\emptyset \\end{cases}',
-          intuition:
-            'A statement S qualifies as the main Conclusion only when it receives support from at least one reason R_i and is not itself merely a stepping-stone to a higher claim S\'; if no reasons support S, it is a mere opinion.',
-          variables: [
-            { symbol: 'S', meaning: 'Candidate statement in a communication' },
-            { symbol: '\\{R_1, \\dots, R_n\\}', meaning: 'Set of supporting statements offered as reasons ("that")' },
-            { symbol: 'S\'', meaning: 'Downstream statement supported by S' },
-          ],
-          workedExample:
-            'In the GMO passage, S_2 ("We have no way of knowing health effects...") supports S_1 ("GM foods should not be legal"). Therefore S_2 is a Supporting Reason ("that") and S_1 is the Conclusion ("this"). If someone simply tweeted S_1 alone with no S_2, S_1 would be a Mere Opinion.',
-        },
-      ],
       keyTakeaways: [
-        'The basic structure of every argument is "this, because of that"—where "this" is the conclusion and "that" is the support.',
-        'Conclusions are inferred outcomes of reasoning; unsupported assertions are mere opinions, not conclusions.',
-        'A statement that is used to prove another statement is a supporting reason, not the ultimate conclusion.',
-      ],
+          'The basic structure of every argument is "this, because of that"—where "this" is the conclusion and "that" is the support.',
+          'Conclusions are inferred outcomes of reasoning; unsupported assertions are mere opinions, not conclusions.',
+        ],
       commonPitfalls: [
-        'Calling every strong opinion a "conclusion" even when the speaker offers zero reasons to back it up.',
-        'Confusing an intermediate supporting belief (like the health warning about chemists in the GMO paragraph) with the final policy conclusion.',
-      ],
+          'Calling every strong opinion a "conclusion" even when the speaker offers zero reasons to back it up.',
+          'Confusing an intermediate supporting belief (like the health warning about chemists in the GMO paragraph) with the final policy conclusion.',
+        ],
     },
     {
       id: 'arq-ch02-sec-2-4',
       sectionNumber: '2.4',
       title: 'Clues to Discovery: How to Find the Conclusion',
       subtitle:
-        'Mastering the six systematic heuristics—Issue check, Indicator words, Strategic locations, Negative filtering, Context/Author priors, and the "Why? Because..." test',
+        'Mastering the six systematic heuristics—Issue check, Indicator words, Strategic locations, Negative filtering, Context/Author priors, and the "Why?',
       coreMechanism:
-        'When a passage is dense, circuitous, or lacks obvious thesis formatting, Browne and Keeley equip the critical thinker with six systematic Clues to Discovery for isolating the conclusion:\n\nClue No. 1: Ask what the issue is. Because a conclusion is always a direct response to an issue, knowing the controversy immediately narrows what the conclusion can look like. Inspect the title and opening paragraphs first, or skim ahead if the opening is anecdotal.\n\nClue No. 2: Look for indicator words. Conclusions are frequently preceded by linguistic transition phrases—indicator words—that announce a conclusion is arriving. The chapter’s core lexicon of conclusion indicators includes: consequently, suggests that, therefore, thus, it follows that, the point I’m trying to make is, shows that, proves that, indicates that, and the truth of the matter is. When you spot one of these phrases, treat it as a neon sign pointing to the author’s conclusion.\n\nClue No. 3: Look in likely locations. Conclusions cluster heavily in two structural zones: right at the beginning (where writers state their purpose or thesis upfront) and right at the end (where writers summarize their takeaway). When lost in a long, complex reading, skip directly to the final paragraph and opening paragraph first.\n\nClue No. 4: Remember what a conclusion is NOT. Eliminate five categories of text that can never be the main conclusion: (1) examples, (2) statistics, (3) definitions, (4) background information, and (5) supporting evidence.\n\nClue No. 5: Check the context of the communication and the author’s background. Writers, publications, and websites affiliated with specific organizations often take predictable positions on public controversies. Knowing the institutional source or probable bias of the author provides a strong directional clue when a conclusion is phrased subtly or left implicit.\n\nClue No. 6 (from the chapter’s sample-response strategy): Ask "Which statement does this evidence seek to support?" by applying the "Why? Because..." test. When a passage contains no indicator words, take your top candidate sentences (typically from the opening and closing) and link them to the body of evidence using the word "Why?" followed by "Because [summary of evidence]." The sentence that makes logical sense at the head of "Why? Because..." is the true conclusion.',
+        'When a passage is dense, circuitous, or lacks obvious thesis formatting, Browne and Keeley equip the critical thinker with six systematic Clues to Discovery for isolating the conclusion:\n\nClue No. 1: Ask what the issue is.',
       stepByStepFlow: [
         {
           step: '1',
@@ -1598,33 +1448,17 @@ export const arqCh02Mastery: ChapterMastery = {
           step: '3',
           title: 'Verify with Context & the "Why? Because..." Test (Clues 5 & 6)',
           detail:
-            'Check author/source affiliations (Clue 5) and test remaining candidates by asking "[Candidate Conclusion] — Why? Because [Passage Evidence]" (Clue 6).',
-        },
-      ],
-      formulas: [
-        {
-          name: 'The "Why? Because..." Directional Coherence Test',
-          expression: 'C^* = \\arg\\max_{S_i \\in \\{\\text{Open}, \\text{Close}\\}} \\text{Coherence}\\!\\left(S_i \\xleftarrow{\\text{Why? Because...}} \\{E_1, E_2, \\dots, E_m\\}\\right)',
-          intuition:
-            'When choosing between an opening statement and a closing statement in an indicator-free passage, the true conclusion C* is the one where asking "Why is S_i true?" is directly answered by "Because of the passage’s evidence {E_1, ..., E_m}."',
-          variables: [
-            { symbol: 'S_i', meaning: 'Candidate conclusion sentence (e.g., opening claim vs. closing claim)' },
-            { symbol: '\\{E_1, \\dots, E_m\\}', meaning: 'Body of examples, studies, and reasons in the passage' },
-            { symbol: 'C^*', meaning: 'Verified main conclusion of the argument' },
-          ],
-          workedExample:
-            'In Passage 2, testing the opening sentence ("Social media has grown popular — Why? Because social media harms children") fails coherence, proving the opening is background info (Clue 4). Testing the final sentence ("Parents should restrict children’s social media — Why? Because social media harms children") succeeds, isolating C*.',
+            'Check author/source affiliations (Clue 5) and test remaining candidates by asking "[Candidate Conclusion] — Why?',
         },
       ],
       keyTakeaways: [
-        'Ten core indicator phrases—consequently, suggests that, therefore, thus, it follows that, the point I’m trying to make is, shows that, proves that, indicates that, the truth of the matter is—act as neon signs for conclusions.',
-        'Conclusions are never examples, statistics, definitions, background information, or evidence.',
-        'When indicator words are missing, the "Why? Because..." test reliably separates opening background statements from closing conclusions.',
-      ],
+          'Ten core indicator phrases—consequently, suggests that, therefore, thus, it follows that, the point I’m trying to make is, shows that, proves that, indicates that, the truth of the matter is—act as neon signs for conclusions.',
+          'Conclusions are never examples, statistics, definitions, background information, or evidence.',
+        ],
       commonPitfalls: [
-        'Assuming that a passage has no conclusion simply because the author did not use the word "therefore" or "thus."',
-        'Mistaking an opening historical truism ("Social media has been growing in popularity since the early 2000s") for the thesis of the essay.',
-      ],
+          'Assuming that a passage has no conclusion simply because the author did not use the word "therefore" or "thus."',
+          'Mistaking an opening historical truism ("Social media has been growing in popularity since the early 2000s") for the thesis of the essay.',
+        ],
     },
     {
       id: 'arq-ch02-sec-2-5',
@@ -1633,7 +1467,7 @@ export const arqCh02Mastery: ChapterMastery = {
       subtitle:
         'Using indicator neon signs in your own prose and walking step-by-step through the Homeschooling, Social Media, and Violent Video Games passages',
       coreMechanism:
-        'Identifying issues and conclusions is not merely a defensive reading skill; it directly governs how you should write and speak as a critical thinker. Many communicators bury their conclusions in ambiguous prose, forcing readers to guess their main point. When your goal is to communicate clearly and persuasively, Browne and Keeley advise drawing unmistakable attention to your thesis by placing explicit indicator words ("therefore," "the point I’m trying to make is," "consequently") right in front of your conclusion and locating it prominently at the beginning or end of your essay. Those indicator words function as a neon sign guiding your reader’s attention.\n\nTo cement these discovery skills, Chapter 2 concludes with three graded Practice Passages and models the exact internal "self-talk" of a skilled critical thinker:\n\nPassage 1 (Homeschooling): The author writes that while homeschooling is valid if a parent makes teaching a full-time job with patience and insight, "However, the truth of the matter is that it is usually a mistake for parents to homeschool their child." The second paragraph cites parents pulling children out of school to dodge discipline rules and the risk that child abuse will go unnoticed without other adults monitoring. Deconstruction: The issue is not stated explicitly, so we look for the conclusion first. Clue 2 immediately flags the indicator phrase "the truth of the matter is" in the second sentence (also matching Clue 3: opening location). Clue 4 confirms that "It is usually a mistake for parents to homeschool their child" is not a statistic, example, definition, or background fact. Working backward from this conclusion yields the inferred Issue: "Is it desirable for parents to homeschool their child?" Because the passage evaluates whether homeschooling is desirable or undesirable ("the education and treatment they deserve"), the issue is Prescriptive.\n\nPassage 2 (Social Media Restrictions): The passage opens by noting that social media has grown in popularity since the early 2000s among children and teenagers, then lists studies linking heavy use to lower grades, ADHD, depression, eating disorders, stunted interpersonal skills, cyberbullying, and predators, ending with: "These problems could be mostly avoided if children had less access to social media. Parents should take the initiative to restrict their children’s use of social media sites." Deconstruction: There are zero indicator words. Using Clue 3 (beginning vs. end locations), we apply Clue 6’s "Why? Because..." test. Does the evidence of harm explain why social media has become popular? No—the opening sentences are Background Information (Clue 4). Does the evidence of harm—plus the penultimate sentence that reducing access avoids harm—support the final sentence? Yes: "Parents should restrict their children’s use of social media" is the Conclusion, and working backward yields the Prescriptive Issue: "Should parents restrict their children’s use of social media?"\n\nPassage 3 (Violent Video Games — the unguided challenge): The passage begins with an explicit question: "Should children be allowed to play violent video games?" Immediately following, the second sentence states: "It seems as though playing violent video games could increase a child’s tendency to be violent in real life." Every remaining sentence explains how points and rewards condition virtual violence, associate happiness with violence, filter into real-life behavior, and desensitize child players according to studies. Deconstruction: While the opening sentence poses a prescriptive policy question as a hook, look closely at what the entire body of evidence actually proves ("this, because of that"). Every reason in the paragraph (operant conditioning via rewards and desensitization studies) is marshaled to prove the second sentence: "It seems as though playing violent video games could increase a child’s tendency to be violent in real life." Thus, the stated conclusion proved by the reasoning is the descriptive causal claim in sentence 2 (answering the descriptive issue "Does playing violent video games increase a child’s tendency to be violent in real life?"), which in turn serves as an implied warrant toward the opening prescriptive question ("Should children be allowed to play violent video games?").',
+        'Identifying issues and conclusions is not merely a defensive reading skill; it directly governs how you should write and speak as a critical thinker. Many communicators bury their conclusions in ambiguous prose, forcing readers to guess their main point.\n\nTo cement these discovery skills, Chapter 2 concludes with three graded Practice Passages and models the exact internal "self-talk" of a skilled critical thinker: Passage 3 (Violent Video Games — the unguided challenge): The passage begins with an explicit question: "Should children be allowed to play violent video games?" Immediately following, the second sentence states: "It seems as though playing violent video games could increase a child’s tendency to be violent in real life." Every remaining sentence explains how points and rewards condition virtual violence, associate happiness with violence, filter into real-life behavior, and desensitize child players according to studies. Deconstruction: While the opening sentence poses a prescriptive policy question as a hook, look closely at what the entire body of evidence actually proves ("this, because of that").',
       stepByStepFlow: [
         {
           step: '1',
@@ -1654,31 +1488,14 @@ export const arqCh02Mastery: ChapterMastery = {
             'Notice how all conditioning and desensitization reasons directly prove sentence 2 ("playing violent video games could increase a child’s tendency to be violent in real life"), demonstrating why you must always verify what the reasons actually support.',
         },
       ],
-      formulas: [
-        {
-          name: 'Chained Sub-Conclusion to Final Conclusion Inference (Passage 2 Pattern)',
-          expression: '\\{E_{\\text{harms}}\\} \\xrightarrow{\\text{supports}} C_{\\text{sub}}(\\text{Less access avoids harm}) \\xrightarrow{\\text{supports}} C_{\\text{final}}(\\text{Parents should restrict access})',
-          intuition:
-            'In multi-step arguments like Passage 2, empirical evidence E_harms first supports an intermediate descriptive/instrumental sub-conclusion C_sub, which in turn supports the final prescriptive conclusion C_final.',
-          variables: [
-            { symbol: 'E_{\\text{harms}}', meaning: 'Studies on grades, ADHD, depression, cyberbullying, and predators' },
-            { symbol: 'C_{\\text{sub}}', meaning: 'Second-to-last sentence: "These problems could be mostly avoided if children had less access"' },
-            { symbol: 'C_{\\text{final}}', meaning: 'Final sentence: "Parents should take the initiative to restrict their children’s use of social media sites"' },
-          ],
-          workedExample:
-            'Because C_sub is used to support the final sentence C_final, C_sub is a supporting step ("that") while C_final is the ultimate destination ("this") of the passage.',
-        },
-      ],
       keyTakeaways: [
-        'When writing, place explicit indicator words ("therefore," "the point I’m trying to make is") as neon signs in front of your thesis.',
-        'In Passage 1 (Homeschooling), the indicator phrase "the truth of the matter is" and opening location pinpoint the prescriptive conclusion.',
-        'In Passage 2 (Social Media), the "Why? Because..." test proves the opening sentences are background info and the closing sentence is the prescriptive conclusion.',
-        'In Passage 3 (Violent Video Games), auditing what the conditioning and desensitization reasons actually prove isolates sentence 2 ("playing violent video games could increase a child’s tendency to be violent in real life") as the supported conclusion.',
-      ],
+          'When writing, place explicit indicator words ("therefore," "the point I’m trying to make is") as neon signs in front of your thesis.',
+          'In Passage 1 (Homeschooling), the indicator phrase "the truth of the matter is" and opening location pinpoint the prescriptive conclusion.',
+        ],
       commonPitfalls: [
-        'Stopping at an intermediate sub-conclusion (like the second-to-last sentence in Passage 2) instead of tracing the chain to the final conclusion.',
-        'Assuming an opening rhetorical question automatically dictates the exact grammatical form of the conclusion without checking what the paragraph’s reasons actually prove (as in Passage 3).',
-      ],
+          'Stopping at an intermediate sub-conclusion (like the second-to-last sentence in Passage 2) instead of tracing the chain to the final conclusion.',
+          'Assuming an opening rhetorical question automatically dictates the exact grammatical form of the conclusion without checking what the paragraph’s reasons actually prove (as in Passage 3).',
+        ],
     },
   ],
   tradeOffMatrices: [
@@ -1768,7 +1585,7 @@ export const arqCh02Mastery: ChapterMastery = {
       roleAndContext:
         'Site Reliability Engineering (SRE) Lead chairing a severity-1 outage review after a bad configuration deployment took down checkout for 40 minutes.',
       symptomOrFailure:
-        'The postmortem document blends a Descriptive issue ("What caused the configuration rollback script to hang?") with an unstated Prescriptive issue ("Should we ban engineers from deploying on Fridays and require VP sign-off?"). The team spends 90 minutes arguing over deployment freeze policies while leaving the actual database lock bug unexamined.',
+        'The postmortem document blends a Descriptive issue ("What caused the configuration rollback script to hang?") with an unstated Prescriptive issue ("Should we ban engineers from deploying on Fridays and require VP sign-off?").',
       naiveFixAndWhyItFails:
         'Letting engineers debate every sentence in the postmortem chronologically fails because without separating the Descriptive causal conclusion from the Prescriptive policy proposal, empirical log evidence gets mixed up with organizational value trade-offs (release velocity vs. risk aversion).',
       firstPrinciplesSolution:
@@ -1782,9 +1599,9 @@ export const arqCh02Mastery: ChapterMastery = {
       roleAndContext:
         'Staff Product Manager authoring a 4-page strategy memo on enterprise AI pricing.',
       symptomOrFailure:
-        'The PM opens the memo with two paragraphs of historical background ("Enterprise SaaS seat-based pricing has been standard since 2010...") and buries the actual recommendation in paragraph 9 without any indicator words. Executive reviewers mistake the opening background and a middle customer anecdote for the thesis, spending the entire review arguing about 2010 SaaS history.',
+        'The PM opens the memo with two paragraphs of historical background ("Enterprise SaaS seat-based pricing has been standard since 2010...") and buries the actual recommendation in paragraph 9 without any indicator words.',
       naiveFixAndWhyItFails:
-        'Sending a follow-up email complaining that executives "didn’t read carefully" fails because the writer violated Clue 2 and Clue 3 of critical writing—forcing busy readers to play detective to locate the conclusion.',
+        'Sending a follow-up email complaining that executives "didn’t read carefully" fails because the writer violated Clue 2 and Clue 3 of critical writing.',
       firstPrinciplesSolution:
         'Apply Chapter 2’s Critical Writing Neon-Sign Protocol: place the explicit Prescriptive Issue in the title ("Should We Transition Enterprise AI Tiers from Seat-Based to Usage-Based Pricing?") and state the Conclusion in the first paragraph preceded by an explicit indicator phrase ("The point this memo proves is that we should adopt hybrid usage-based pricing, because...").',
       measurableOutcome:
@@ -1817,7 +1634,7 @@ export const arqCh02Mastery: ChapterMastery = {
             text: '(1) is a Prescriptive issue because domestic abuse is morally wrong, whereas (2) is Descriptive because Medicaid fraud is measured in dollars.',
             isCorrect: false,
             explanation:
-              'The topic’s emotional weight does not determine the issue type; asking for the empirical cause ("What is the most common cause...") is descriptive.',
+              'The topic’s emotional weight does not determine the issue type.',
           },
           {
             label: 'D',
@@ -1852,7 +1669,7 @@ export const arqCh02Mastery: ChapterMastery = {
             text: 'Because in the "this, because of that" structure of inference, the second sentence is the supporting belief ("that") used to prove the first sentence ("this").',
             isCorrect: true,
             explanation:
-              'A statement is not the main conclusion when its structural role is to prove something else—here, supporting the claim that GM foods should not be legal.',
+              'A statement is not the main conclusion when its structural role is to prove something else.',
           },
           {
             label: 'D',
@@ -1880,7 +1697,7 @@ export const arqCh02Mastery: ChapterMastery = {
             text: 'A mere opinion (unsupported claim), not a conclusion, because conclusions are derived from reasoning and require other ideas to support them.',
             isCorrect: true,
             explanation:
-              'Whenever someone claims something is true or ought to be done and provides zero statements to support that claim, it is not a conclusion—it is a mere opinion.',
+              'Whenever someone claims something is true or ought to be done and provides zero statements to support that claim, it is not a conclusion.',
           },
           {
             label: 'C',
@@ -1908,14 +1725,14 @@ export const arqCh02Mastery: ChapterMastery = {
             text: 'By linking candidate conclusions to the passage’s evidence with the question "Why?": asking "Social media has grown popular — Why? Because social media harms young people" makes no sense, proving the opening is background information.',
             isCorrect: true,
             explanation:
-              'The "Why? Because..." test shows that the body of evidence (harm to grades, mental health, interpersonal skills) supports the final sentence ("Parents should restrict..."), not the opening popularity statement.',
+              'The "Why?',
           },
           {
             label: 'B',
             text: 'By checking the author’s biography under Clue 5.',
             isCorrect: false,
             explanation:
-              'No author biography is provided for Practice Passage 2; the sample response relies on Clue 3 (locations), Clue 4 (background info), and the "Why?" evidence-linking test.',
+              'No author biography is provided for Practice Passage 2.',
           },
           {
             label: 'C',
@@ -1950,7 +1767,7 @@ export const arqCh02Mastery: ChapterMastery = {
             text: 'Examples, statistics, definitions, background information, and evidence.',
             isCorrect: true,
             explanation:
-              'Clue No. 4 explicitly lists these exact five categories as components of arguments that will never be the conclusion.',
+              'Clue No.',
           },
           {
             label: 'C',
@@ -1974,7 +1791,7 @@ export const arqCh02Mastery: ChapterMastery = {
         id: 'arq-ch02-fc1',
         category: 'foundation',
         front: 'What is Critical Question #1, and why must it be answered before any other evaluation takes place?',
-        back: 'Critical Question #1: "What are the issue and the conclusion?"\nYou cannot critically evaluate someone’s reasoning until you locate the conclusion they want you to accept; otherwise, you react to a distorted version of their communication.',
+        back: 'Critical Question #1: "What are the issue and the conclusion?"\nYou cannot critically evaluate someone’s reasoning until you locate the conclusion they want you to accept.',
         mentalHook: 'Find the Target (Issue + Conclusion) Before Firing Any Critique.',
       },
       {
@@ -1988,7 +1805,7 @@ export const arqCh02Mastery: ChapterMastery = {
         id: 'arq-ch02-fc3',
         category: 'architecture',
         front: 'What is the basic inferential structure of persuasive communication, and how does a "Conclusion" differ from a "Mere Opinion"?',
-        back: 'The basic structure is "this, because of that" ("this" = Conclusion; "that" = supporting reasons). Conclusions are inferred ideas supported by other statements; unsupported claims with no "that" are mere opinions.',
+        back: 'The basic structure is "this, because of that" ("this" = Conclusion; "that" = supporting reasons).',
         mentalHook: 'This (Conclusion) Because of That (Support); No "That" = Mere Opinion.',
       },
       {
@@ -2002,15 +1819,15 @@ export const arqCh02Mastery: ChapterMastery = {
         id: 'arq-ch02-fc5',
         category: 'evaluation',
         front: 'According to Clue No. 4, what 5 elements of a passage will NEVER be the conclusion?',
-        back: '1. Examples\n2. Statistics\n3. Definitions\n4. Background information\n5. Evidence',
+        back: '1.',
         mentalHook: 'Eliminate ESDBE: Examples, Statistics, Definitions, Background, Evidence.',
       },
       {
         id: 'arq-ch02-fc6',
         category: 'adaptation',
         front: 'What are the 6 Clues to Discovery for finding an author’s conclusion?',
-        back: '1. Ask what the issue is.\n2. Look for indicator words.\n3. Look in likely locations (beginning and end).\n4. Remember what a conclusion is NOT (examples, stats, definitions, background, evidence).\n5. Check communication context & author’s background/organizations.\n6. Ask "Which statement does this evidence seek to support?" ("Why? Because..." test).',
-        mentalHook: 'Issue -> Indicators -> Locations -> Not-List -> Context -> "Why? Because..." Test.',
+        back: '1.',
+        mentalHook: 'Issue -> Indicators -> Locations -> Not-List -> Context -> "Why?',
       },
     ],
     feynmanChallenges: [
@@ -2026,7 +1843,7 @@ export const arqCh02Mastery: ChapterMastery = {
           'Explains Backward Issue Discovery: when the issue is not explicitly stated, find the Conclusion first and ask what question that conclusion answers (supplemented by checking what event the author is reacting to and their organizational background).',
         ],
         modelExplanation:
-          'Every argument is sparked by an Issue—the underlying question or controversy that motivated the speaker or writer to speak up. Issues come in two distinct flavors. First are Descriptive Issues, which ask about the accuracy of descriptions of the past, present, or future—how the world actually works. They usually start with words like "Does," "Is," or "What causes," such as "Does musical training improve math learning?" or "Is Paxil an effective treatment for depression?" Second are Prescriptive Issues, which ask ethical, moral, or policy questions about how the world ought to be—what is right or wrong, desirable or undesirable. They start with words like "Should," "What ought," or "Must," such as "Should intelligent design be taught in public schools?" or "Must we outlaw SUVs to reduce asthma?" Separating them matters because descriptive issues are judged on empirical data and causal accuracy, whereas prescriptive issues also require evaluating human values.\n\nWhat if an author jumps straight into an essay without ever stating a question in the title or opening lines? While you can look at what current event the author is reacting to or check their organizational affiliations, the surest method is Backward Discovery: find the author’s Conclusion first! Because a conclusion is always an answer to an issue, once you isolate the conclusion (for instance, "It is usually a mistake for parents to homeschool their child"), you simply invert it into the question it answers ("Is it desirable for parents to homeschool their child?").',
+          'Every argument is sparked by an Issue—the underlying question or controversy that motivated the speaker or writer to speak up. Issues come in two distinct flavors.',
       },
       {
         id: 'arq-ch02-feyn-2',
@@ -2040,7 +1857,7 @@ export const arqCh02Mastery: ChapterMastery = {
           'Mentions how to apply indicator words as "neon signs" in one’s own critical writing.',
         ],
         modelExplanation:
-          'In everyday life, people call any bold statement a "conclusion," but in critical thinking a conclusion only exists inside a reasoning relationship: "this, because of that." "This" is the conclusion—the main point the communicator wants you to accept—and "that" is the set of supporting statements offered as reasons to believe it. Because conclusions are inferred from reasoning, if someone asserts a claim with zero supporting statements, they have not given you a conclusion at all; they have only given you a "mere opinion."\n\nTo hunt down a conclusion in a complex text, we run six systematic clues: (1) Ask what the issue is; (2) Scan for indicator words—linguistic neon signs like "therefore," "consequently," "thus," "shows that," or "the truth of the matter is"; (3) Check the two most likely locations: the opening paragraph and the closing paragraph; (4) Cross out the five things a conclusion can never be: examples, statistics, definitions, background information, and supporting evidence; and (5) Check the context and the author’s organizational affiliations. Finally, when an essay has zero indicator words—like Chapter 2’s passage on children and social media—we use the "Why? Because..." test. We take the opening sentence ("Social media has grown popular since the early 2000s") and the closing sentence ("Parents should restrict their children’s use of social media") and ask "Why? Because [all the passage’s evidence about grades, depression, and cyberbullying]." The evidence does not explain why social media grew popular (exposing the opening as mere background information), whereas every piece of evidence explains why parents should restrict access—proving the final sentence is the conclusion. When you write your own essays, reverse this process: put explicit indicator words in front of your thesis as a neon sign so your readers never have to guess.',
+          'In everyday life, people call any bold statement a "conclusion," but in critical thinking a conclusion only exists inside a reasoning relationship: "this, because of that." "This" is the conclusion.',
       },
     ],
   },
@@ -2100,7 +1917,7 @@ export const arqCh02Mastery: ChapterMastery = {
         chapterNumber: 2,
         importance: 2,
         definition:
-          'Testing candidate conclusions in indicator-free passages by asking "Which statement does the evidence support via Why? Because...?" and inverting the verified conclusion to discover unstated issues.',
+          'Testing candidate conclusions in indicator-free passages by asking "Which statement does the evidence support via Why?',
         formulaOrRule: '[Candidate Conclusion] <-- Why? Because -- [Passage Evidence]',
         whyItMatters:
           'Reliably isolates implicit or un-signposted conclusions (as in the Social Media and Violent Video Games passages) and reconstructs unstated issues.',
@@ -2133,7 +1950,7 @@ export const arqCh02Mastery: ChapterMastery = {
         target: 'arq-conclusion-inference',
         relationship: 'evaluates',
         explanation:
-          'Linking candidate claims to the passage’s evidence via "Why? Because..." verifies which statement is the ultimate "this" supported by "that."',
+          'Linking candidate claims to the passage’s evidence via "Why?',
       },
       {
         source: 'arq-three-dimensions-ct',
@@ -2150,6 +1967,6 @@ export const arqCh02Mastery: ChapterMastery = {
     figuresIncluded: 1,
     antiAiVerified: true,
     auditNotes:
-      'Verified 100% coverage of all Chapter 2 headings (What Are the Issue and the Conclusion?, Kinds of Issues, Searching for the Issue, Searching for the Author’s or Speaker’s Conclusion, Clues to Discovery, Practice Exercises, Sample Responses) including full deconstructions of Passages 1, 2, and 3 and figure arq_ch02_plate.png. Zero banned AI prose patterns.',
+      'Verified 100% coverage of all Chapter 2 headings (What Are the Issue and the Conclusion?, Kinds of Issues, Searching for the Issue, Searching for the Author’s or Speaker’s Conclusion, Clues to Discovery, Practice Exercises, Sample Responses) including full deconstructions of Passages 1, 2, and 3 and figure arq_ch02_plate.png.',
   },
 };

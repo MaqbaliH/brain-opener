@@ -6,17 +6,17 @@ export const ch07Mastery: ChapterMastery = {
   title: 'Finetuning',
   subtitle:
     'Adapting Model Weights Through Memory-Efficient Backpropagation, Numerical Quantization, Low-Rank Adapters (LoRA/QLoRA), and Multi-Task Model Merging',
-  readingTimeMinutes: 55,
+  readingTimeMinutes: 10,
   sourceWordCount: 18450,
   executiveThesis:
-    'While prompting and Retrieval-Augmented Generation (RAG) adapt a model at inference time by supplying instructions and external facts in the context window, finetuning permanently alters a model’s internal parameters via backpropagation to enforce behavioral alignment, domain-specific syntax, and strict output schemas. Because naive full-parameter training triggers a severe GPU memory bottleneck—requiring memory for weights, gradients, AdamW optimizer states, and forward-pass activations—modern AI engineering relies on reduced numerical precision (BF16, INT8, NF4 quantization), Parameter-Efficient Finetuning (LoRA and QLoRA), and post-hoc weight merging (Task Arithmetic, SLERP, TIES, and Sparse Upcycling) to adapt multi-billion-parameter models on commodity hardware.',
+    'While prompting and Retrieval-Augmented Generation (RAG) adapt a model at inference time by supplying instructions and external facts in the context window, finetuning permanently alters a model’s internal parameters via backpropagation to enforce behavioral alignment, domain-specific syntax, and strict output schemas. Because naive full-parameter training triggers a severe GPU memory bottleneck.',
   paradigmShift: {
     oldWay:
       'Treating finetuning as the default first step for every domain application, updating 100% of model weights in 32-bit floating point across massive GPU clusters, and attempting to inject rapidly changing factual knowledge directly into model weights.',
     newWay:
       'Following a disciplined Adaptation Progression Ladder (Prompting -> Simple RAG -> Hybrid RAG / PEFT Finetuning), using RAG for dynamic facts and finetuning strictly for form and behavior, and decomposing weight updates into low-rank adapters (LoRA) over 4-bit quantized base weights (QLoRA) that can be dynamically swapped or mathematically merged.',
     whyItChanged:
-      'Foundation models scaled from hundreds of millions to tens of billions of parameters, causing full-parameter AdamW optimizer states and activation memory to exceed single-GPU VRAM limits while empirical studies (such as Ovadia et al., 2024 and BloombergGPT vs. GPT-4) proved that RAG beats finetuning for factual recall and general-purpose frontier models often surpass expensive domain-specific pre-training.',
+      'Foundation models scaled from hundreds of millions to tens of billions of parameters, causing full-parameter AdamW optimizer states and activation memory to exceed single-GPU VRAM limits while empirical studies (such as Ovadia et al., 2024 and BloombergGPT vs.',
   },
   customDiagrams: [
     {
@@ -99,13 +99,13 @@ export const ch07Mastery: ChapterMastery = {
   <text x="650" y="383" fill="#cbd5e1" font-size="11">Activations &amp; KV Cache</text>
 </svg>`,
       bierutCaption:
-        'Full finetuning multiplies a model’s weight footprint by 4x before accounting for activations because every trainable parameter demands a gradient plus two Adam momentum/variance states; LoRA eliminates 99% of gradient/optimizer overhead, and QLoRA compresses the frozen base weights by another 4x via 4-bit NormalFloat quantization.',
+        'Full finetuning multiplies a model’s weight footprint by 4x before accounting for activations because every trainable parameter demands a gradient plus two Adam momentum/variance states.',
       annotations: [
         {
           step: '1',
           label: 'Inference Baseline (N × M × 1.2)',
           explanation:
-            'In FP16 (2 bytes/param), a 13B model needs 26 GB for static weights plus ~20% (5.2 GB) for KV cache and forward activations, totaling 31.2 GB—already exceeding a single 24 GB consumer GPU.',
+            'In FP16 (2 bytes/param), a 13B model needs 26 GB for static weights plus ~20% (5.2 GB) for KV cache and forward activations, totaling 31.2 GB.',
         },
         {
           step: '2',
@@ -123,7 +123,7 @@ export const ch07Mastery: ChapterMastery = {
           step: '4',
           label: 'QLoRA Compresses the Frozen Base',
           explanation:
-            'Once LoRA shrinks optimizer states, the frozen 26 GB base weights become the new bottleneck. QLoRA quantizes W into 4-bit NormalFloat (6.5 GB) and dequantizes to BF16 on the fly during matrix multiplication.',
+            'Once LoRA shrinks optimizer states, the frozen 26 GB base weights become the new bottleneck.',
         },
       ],
     },
@@ -239,9 +239,9 @@ export const ch07Mastery: ChapterMastery = {
       naiveIntuition:
         'When a model hallucinates company-specific metrics or fails to answer questions about recent events, engineers instinctively want to finetune the model on internal company documents so it "learns" the facts.',
       firstPrinciplesReality:
-        'Finetuning is a slow, lossy, and static mechanism for injecting factual knowledge; Ovadia et al. (2024) demonstrated that RAG decisively beats finetuning on current-events and MMLU factual recall, and finetuning can even degrade a base model’s existing RAG performance. Conversely, when a model has the right facts in context but outputs invalid proprietary SQL dialects, ignores strict JSON schemas, or uses the wrong tone, RAG cannot fix the behavior—finetuning is required to reshape the model’s output distribution.',
+        'Finetuning is a slow, lossy, and static mechanism for injecting factual knowledge; Ovadia et al.',
       howToApply:
-        'Classify every evaluation failure into two buckets: Information Failures (missing private data, post-cutoff events -> apply BM25/vector RAG) vs. Behavioral Failures (broken DSL syntax, wrong style, alignment/bias issues, refusal failures -> apply SFT/LoRA). If both exist, implement simple RAG first, then finetune.',
+        'Classify every evaluation failure into two buckets: Information Failures (missing private data, post-cutoff events -> apply BM25/vector RAG) vs.',
     },
     {
       id: 'ch07-mm-intrinsic-dimension',
@@ -251,7 +251,7 @@ export const ch07Mastery: ChapterMastery = {
       naiveIntuition:
         'If a foundation model needed billions of parameters and trillions of tokens to learn language during pre-training, adapting it to a complex domain task must also require updating billions of parameters across millions of examples.',
       firstPrinciplesReality:
-        'As shown by Aghajanyan et al. (2020) and Hu et al. (2021), self-supervised pre-training acts as a massive compression engine that reduces a model’s intrinsic dimensionality. Counterintuitively, larger and better-pretrained models have lower intrinsic dimensions for downstream adaptation—meaning the capabilities already exist inside the network’s manifold and only require a low-rank coordinate shift (rank r = 2 to 64) and a few hundred to a few thousand examples to unlock.',
+        'As shown by Aghajanyan et al.',
       howToApply:
         'When data is scarce (100–5,000 examples), pair a larger, stronger base model with a low-rank PEFT method (LoRA) spread across all attention/MLP matrices rather than attempting full finetuning on a smaller model.',
     },
@@ -263,9 +263,9 @@ export const ch07Mastery: ChapterMastery = {
       naiveIntuition:
         'FP16 and BF16 both use 16 bits (2 bytes) per parameter, so they are interchangeable "half-precision" formats that behave identically when loading or training a model.',
       firstPrinciplesReality:
-        'Every floating-point format partitions its bits between 1 sign bit, exponent (range) bits, and significand/mantissa (precision) bits. FP16 allocates 5 bits to range and 10 to precision, causing numbers above 65,504 to overflow into Infinity (INF). BF16 allocates 8 bits to range—matching FP32’s exact dynamic range—at the cost of only 7 precision bits. Casting a BF16-trained model (like Llama 2 or Llama 3.1) into FP16 clips outlier activations and weights into NaNs or alters subtle routing behavior.',
+        'Every floating-point format partitions its bits between 1 sign bit, exponent (range) bits, and significand/mantissa (precision) bits.',
       howToApply:
-        'Always inspect the native `torch_dtype` of a checkpoint (`bfloat16` vs `float16`) before inference or finetuning; use BF16 for training stability on Ampere+ GPUs, and use mixed precision (FP32 master weights + BF16/FP8 compute) when gradients risk underflowing.',
+        'Always inspect the native `torch_dtype` of a checkpoint (`bfloat16` vs `float16`) before inference or finetuning.',
     },
   ],
   deepSections: [
@@ -276,7 +276,7 @@ export const ch07Mastery: ChapterMastery = {
       subtitle:
         'Deconstructing continued pre-training, SFT, preference tuning, long-context RoPE scaling, the BloombergGPT lesson, and the Adaptation Progression Ladder',
       coreMechanism:
-        'Finetuning is the modern manifestation of transfer learning (Bozinovski & Fulgosi, 1976): transferring representations learned on a data-abundant source task (self-supervised next-token prediction over trillions of internet tokens) to a data-scarce target task (such as legal question answering or proprietary SQL generation). Unlike feature-based transfer learning—which freezes a backbone to extract embedding vectors for a separate classifier head—finetuning directly continues training the foundation model’s weights, yielding dramatic sample efficiency where a few hundred examples can unlock capabilities that would require millions of examples from scratch.\n\nBecause any training after initial pre-training counts as finetuning, AI engineers must distinguish four post-training regimes: (1) Continued Pre-Training (self-supervised finetuning on unlabeled domain corpora, such as raw Vietnamese text or unannotated legal statutes, before supervised tuning); (2) Supervised Finetuning (SFT) on (instruction, response) pairs—including autoregressive next-token tuning and infilling finetuning for code debugging and text editing; (3) Preference Finetuning (RLHF/DPO) on comparative (instruction, winning response, losing response) triplets to align safety and style; and (4) Long-Context Finetuning, which modifies positional embeddings (such as RoPE base frequency scaling in Code Llama to expand context from 4,096 to 16,384 tokens).\n\nHowever, finetuning carries steep upfront costs, ongoing maintenance burdens as new base models release, and the risk of catastrophic forgetting (degrading general capabilities when specializing on a narrow task like order changes). The cautionary tale of BloombergGPT (2023) illustrates the danger of premature domain training: Bloomberg spent 1.3 million A100 GPU hours ($1.3M–$2.6M in compute) training a 50B financial model, only for zero-shot GPT-4-0314 (released the same month) to beat it decisively on FiQA sentiment analysis (87.15 vs. 75.07 F1) and ConvFinQA (76.48% vs. 43.41% accuracy). Engineers must only finetune after exhausting systematic prompt engineering, and must choose between RAG and finetuning by diagnosing whether failures are information-based (solved by RAG) or behavior/format-based (solved by finetuning, such as grammar-constrained semantic parsing or distillation into smaller 7B/T5 models).',
+        'Finetuning is the modern manifestation of transfer learning (Bozinovski & Fulgosi, 1976): transferring representations learned on a data-abundant source task (self-supervised next-token prediction over trillions of internet tokens) to a data-scarce target task (such as legal question answering or proprietary SQL generation). Unlike feature-based transfer learning.\n\nBecause any training after initial pre-training counts as finetuning, AI engineers must distinguish four post-training regimes: (1) Continued Pre-Training (self-supervised finetuning on unlabeled domain corpora, such as raw Vietnamese text or unannotated legal statutes, before supervised tuning).',
       stepByStepFlow: [
         {
           step: 'Stage 0',
@@ -306,20 +306,17 @@ export const ch07Mastery: ChapterMastery = {
           step: 'Stage 3B',
           title: 'PEFT / SFT Finetuning (Behavioral & Format Failures)',
           detail:
-            'If the model has the right facts but outputs invalid syntax, wrong tone, or fails domain-specific DSL rules, finetune on curated (instruction, response) pairs—and optionally combine RAG + Finetuning.',
+            'If the model has the right facts but outputs invalid syntax, wrong tone, or fails domain-specific DSL rules, finetune on curated (instruction, response) pairs.',
         },
       ],
       keyTakeaways: [
-        'Finetuning is for form (syntax, structure, tone, bias mitigation, distillation); RAG is for facts (up-to-date, private, or dynamic knowledge).',
-        'In Ovadia et al. (2024), Base Model + RAG (0.875 on Mistral-7B) outperformed standalone finetuning (0.504–0.588) and even outperformed Finetuned + RAG (0.810–0.830) on current events due to alignment tax / forgetting.',
-        'Finetuned small models can beat massive general models on narrow tasks: Grammarly’s finetuned Flan-T5 outperformed a 60x larger GPT-3 model on text editing using 82,000 examples.',
-        'Before prompt caching, finetuning was heavily used to bake few-shot examples into weights to save input tokens; today, its primary token advantage is exceeding the hard context-length ceiling of in-context examples.',
-      ],
+          'Finetuning is for form (syntax, structure, tone, bias mitigation, distillation); RAG is for facts (up-to-date, private, or dynamic knowledge).',
+          'In Ovadia et al.',
+        ],
       commonPitfalls: [
-        'Jumping to finetuning after unsystematic prompt trials where instructions were vague and evaluation metrics were undefined.',
-        'Finetuning a multi-purpose assistant solely on a single failing query type (e.g., "changing orders"), which causes catastrophic forgetting on previously working query types ("product recommendations").',
-        'Assuming domain-specific pre-training is mandatory without benchmarking frontier general-purpose or mid-sized open-weight models (Llama 3 70B, Qwen2 72B) first.',
-      ],
+          'Jumping to finetuning after unsystematic prompt trials where instructions were vague and evaluation metrics were undefined.',
+          'Finetuning a multi-purpose assistant solely on a single failing query type (e.g., "changing orders"), which causes catastrophic forgetting on previously working query types ("product recommendations").',
+        ],
       figures: [
         {
           file: 'aien_0701.png',
@@ -327,11 +324,11 @@ export const ch07Mastery: ChapterMastery = {
             'Figure 7-1. Different finetuning techniques used to make different Code Llama models. Image from the Rozière et al. (2024).',
           bierutTitle: 'Chaining Post-Training Regimes Transforms a General Base Model into Specialized Code Assistants',
           editorialAnalysis:
-            'Rozière et al.’s Code Llama pipeline demonstrates how modern foundation model development is a multi-stage finetuning DAG rather than a single training run. Starting from Llama 2 (4K context), continued pre-training on 500B code tokens plus long-context finetuning (extending context from 4K to 16K via RoPE scaling) produces the Code Llama base family, while a parallel branch adds 100B Python tokens and instruction finetuning (SFT) adds human alignment.',
+            'Rozière et al.’s Code Llama pipeline demonstrates how modern foundation model development is a multi-stage finetuning DAG rather than a single training run.',
           keyTakeaways: [
-            'Continued pre-training injects raw domain knowledge (500B code tokens) before supervised instruction tuning.',
-            'Long-context finetuning requires modifying positional embeddings to expand sequence capacity from 4,096 to 16,384 tokens.',
-          ],
+          'Continued pre-training injects raw domain knowledge (500B code tokens) before supervised instruction tuning.',
+          'Long-context finetuning requires modifying positional embeddings to expand sequence capacity from 4,096 to 16,384 tokens.',
+        ],
         },
         {
           file: 'aien_0702.png',
@@ -341,9 +338,9 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'This schematic contrasts few-shot prompting—where examples 1 through k must be transmitted and processed alongside every user query—against supervised finetuning, where those examples are absorbed into the model parameters during training so inference requires only the bare user query.',
           keyTakeaways: [
-            'Baking examples into weights eliminates repetitive per-request token processing and bypasses context window limits.',
-            'Prompt caching narrows the cost gap for static prefixes, but finetuning can absorb thousands of examples that could never fit in a prompt.',
-          ],
+          'Baking examples into weights eliminates repetitive per-request token processing and bypasses context window limits.',
+          'Prompt caching narrows the cost gap for static prefixes, but finetuning can absorb thousands of examples that could never fit in a prompt.',
+        ],
         },
         {
           file: 'aien_0703.png',
@@ -353,9 +350,9 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'Modeled after OpenAI’s engineering progression, the workflow progresses linearly from prompt engineering (1 -> 2) to simple term-based retrieval (3), then bifurcates based on empirical error analysis: information deficits route toward embedding/hybrid RAG (4), whereas behavioral or formatting deficits route directly to finetuning (4/5).',
           keyTakeaways: [
-            'Never start at step 4 (finetuning); steps 1–3 build the evaluation harness and data pipeline required for finetuning to succeed.',
-            'Embedding-based RAG increases inference system complexity, whereas finetuning increases training complexity while keeping inference topology simple.',
-          ],
+          'Never start at step 4 (finetuning); steps 1–3 build the evaluation harness and data pipeline required for finetuning to succeed.',
+          'Embedding-based RAG increases inference system complexity, whereas finetuning increases training complexity while keeping inference topology simple.',
+        ],
         },
       ],
     },
@@ -366,7 +363,7 @@ export const ch07Mastery: ChapterMastery = {
       subtitle:
         'Why training requires 4x–6x more VRAM than inference: deriving exact byte formulas for weights, gradients, AdamW states, and transformer activations',
       coreMechanism:
-        'To select hardware or configure finetuning frameworks without encountering relentless `CUDA out of memory` crashes, an AI engineer must calculate memory from first principles. During inference, only the forward pass runs: input tokens flow through layers to compute output logits, requiring memory solely for static model weights ($N \\times M$, where $N$ is total parameters and $M$ is bytes per parameter) plus a ~20% overhead for forward activations and the attention KV cache ($N \\times M \\times 1.2$). No parameters change, so no gradients or optimizer histories exist.\n\nTraining introduces the backward pass via backpropagation. After the forward pass computes the loss (the divergence between predicted logits and ground-truth tokens), the backward pass computes the partial derivative of the loss with respect to every trainable parameter ($N_{\\text{trainable}}$). Each trainable parameter therefore requires storing one gradient value. Next, the optimizer uses that gradient to update the parameter. While vanilla Stochastic Gradient Descent (SGD) is stateless (0 extra values per parameter) and Momentum stores 1 state per parameter, the ubiquitous Adam/AdamW optimizer stores 2 states per trainable parameter (the first-order exponential moving average of gradients and the second-order moving average of squared gradients).\n\nConsequently, every trainable parameter in standard Adam training incurs 3 additional values (1 gradient + 2 optimizer states) on top of the weight itself. Furthermore, computing gradients during the backward pass requires retaining all intermediate forward-pass activations in memory. As Korthikanti et al. (2022) demonstrated in Megatron-LM, as sequence length and batch size grow, stored activation memory dwarfs the model weights themselves—requiring gradient checkpointing (activation recomputation), which discards intermediate activations during the forward pass and recomputes them during the backward pass, trading extra compute time for massive VRAM savings.',
+        'To select hardware or configure finetuning frameworks without encountering relentless `CUDA out of memory` crashes, an AI engineer must calculate memory from first principles. During inference, only the forward pass runs: input tokens flow through layers to compute output logits, requiring memory solely for static model weights ($N \\times M$, where $N$ is total parameters and $M$ is bytes per parameter) plus a ~20% overhead for forward activations and the attention KV cache ($N \\times M \\times 1.2$).\n\nTraining introduces the backward pass via backpropagation. After the forward pass computes the loss (the divergence between predicted logits and ground-truth tokens), the backward pass computes the partial derivative of the loss with respect to every trainable parameter ($N_{\\text{trainable}}$).',
       formulas: [
         {
           name: 'Inference Memory Footprint (Rule of Thumb)',
@@ -379,7 +376,7 @@ export const ch07Mastery: ChapterMastery = {
             { symbol: '1.2', meaning: 'Multiplier accounting for ~20% activation and KV-cache overhead' },
           ],
           workedExample:
-            'For a 13B model in FP16 (M = 2 bytes): Weights = 13B × 2 bytes = 26 GB. Total Inference Memory = 26 GB × 1.2 = 31.2 GB (will not fit on a single 24 GB GPU without quantization). For a 70B model in FP16: Weights alone require 70B × 2 = 140 GB.',
+            'For a 13B model in FP16 (M = 2 bytes): Weights = 13B × 2 bytes = 26 GB.',
         },
         {
           name: 'Training Memory Footprint with Adam Optimizer',
@@ -393,18 +390,17 @@ export const ch07Mastery: ChapterMastery = {
             { symbol: 'M_grad_opt', meaning: 'Bytes per value for gradients and optimizer states (e.g., 2 bytes in 16-bit)' },
           ],
           workedExample:
-            'Example 1 (7B Full Finetuning in FP16): Weights = 7B × 2B = 14 GB. Gradients + Adam states = 7B × 3 × 2B = 42 GB. Total before activations = 14 + 42 = 56 GB (exceeds 48 GB A6000).\nExample 2 (13B Full vs Partial Finetuning in FP16): Weights = 26 GB. If all 13B params are trainable, Gradients + Adam = 13B × 3 × 2B = 78 GB (104 GB total + activations). If only 1B params are trainable, Gradients + Adam drop to 1B × 3 × 2B = 6 GB (32 GB total + activations).',
+            'Example 1 (7B Full Finetuning in FP16): Weights = 7B × 2B = 14 GB.',
         },
       ],
       keyTakeaways: [
-        'Each trainable parameter under Adam requires 3 additional values (1 gradient + 2 optimizer states); in homogeneous precision, full training states alone require 4x the weight memory.',
-        'Activation memory scales linearly with batch size and sequence length and can easily exceed weight memory by 2x–4x on large models.',
-        'Gradient checkpointing (activation recomputation) solves the activation memory explosion by discarding forward activations and recomputing them during the backward pass, increasing training time by ~20–30% in exchange for huge memory reduction.',
-      ],
+          'Each trainable parameter under Adam requires 3 additional values (1 gradient + 2 optimizer states).',
+          'Activation memory scales linearly with batch size and sequence length and can easily exceed weight memory by 2x–4x on large models.',
+        ],
       commonPitfalls: [
-        'Forgetting to include Adam optimizer states (2 values/param) and activations when sizing GPUs for finetuning, assuming weight memory + gradient memory is enough.',
-        'Confusing total parameters (N) with trainable parameters (N_trainable): frozen parameters require zero gradients and zero optimizer states.',
-      ],
+          'Forgetting to include Adam optimizer states (2 values/param) and activations when sizing GPUs for finetuning, assuming weight memory + gradient memory is enough.',
+          'Confusing total parameters (N) with trainable parameters (N_trainable): frozen parameters require zero gradients and zero optimizer states.',
+        ],
       figures: [
         {
           file: 'aien_0704.png',
@@ -413,9 +409,9 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'In this 3-parameter schematic (w1, w2, b1) with a ReLU nonlinearity, the top panel shows the forward pass computing output y from inputs x1, x2, while the bottom panel reveals why training is memory-bound: every trainable weight must cache its local derivative (∂L/∂w1, ∂L/∂w2, ∂L/∂b1) and forward activation states to compute the chain-rule update.',
           keyTakeaways: [
-            'Inference executes only the top panel (forward pass); training executes both panels on every step.',
-            'Freezing a parameter severs its gradient branch, eliminating both gradient storage and optimizer state storage for that parameter.',
-          ],
+          'Inference executes only the top panel (forward pass); training executes both panels on every step.',
+          'Freezing a parameter severs its gradient branch, eliminating both gradient storage and optimizer state storage for that parameter.',
+        ],
         },
         {
           file: 'aien_0705.png',
@@ -423,11 +419,11 @@ export const ch07Mastery: ChapterMastery = {
             'Figure 7-5. The memory needed for activations can dwarf the memory needed for the model’s weights. Image from Korthikanti et al., 2022.',
           bierutTitle: 'Without Recomputation, Activation Memory Dwarfs Weight & Optimizer Memory as Models Scale',
           editorialAnalysis:
-            'Plotted across Megatron-LM scales from 1.7B to 530B parameters, the stacked bars compare Model & Optimizer memory (blue) against Activation memory (orange). By 22B parameters, activations consume over 60 GB—more than triple the model and optimizer shard—proving that parameter reduction alone cannot solve training OOMs without activation checkpointing.',
+            'Plotted across Megatron-LM scales from 1.7B to 530B parameters, the stacked bars compare Model & Optimizer memory (blue) against Activation memory (orange).',
           keyTakeaways: [
-            'Activation memory grows rapidly with model depth, hidden dimension, sequence length, and micro-batch size.',
-            'Selective activation recomputation (gradient checkpointing) is mandatory for training or finetuning long-context transformers.',
-          ],
+          'Activation memory grows rapidly with model depth, hidden dimension, sequence length, and micro-batch size.',
+          'Selective activation recomputation (gradient checkpointing) is mandatory for training or finetuning long-context transformers.',
+        ],
         },
       ],
     },
@@ -438,28 +434,26 @@ export const ch07Mastery: ChapterMastery = {
       subtitle:
         'Inside IEEE 754 bit layouts (FP32, FP16, BF16, TF32, INT8, INT4/NF4, BitNet b1.58), post-training quantization, and mixed-precision training',
       coreMechanism:
-        'Because memory scales directly with $M$ (bytes per value), halving the bit-width cuts weight memory in half. Neural networks historically used IEEE 754 single-precision FP32 (32 bits = 4 bytes: 1 sign bit, 8 exponent/range bits, 23 significand/precision bits). To cut memory and accelerate tensor cores, AI hardware introduced three specialized formats: (1) FP16 (16 bits = 2 bytes: 1 sign, 5 range, 10 precision), which offers high precision for small numbers but overflows to `INF` on values $\\ge 65,504$ (e.g., `123456.789` becomes `INF`); (2) BF16 (BFloat16, designed by Google for TPUs: 1 sign, 8 range, 7 precision), which preserves the exact 8-bit dynamic range of FP32 so `123456.789` is safely represented as `123392.0`, at the cost of coarser decimal precision; and (3) TF32 (NVIDIA TensorFloat-32: 19 bits total—1 sign, 8 range, 10 precision), an internal GPU math format combining BF16’s range with FP16’s precision.\n\nPushing below 16 bits enters integer and minifloat quantization: FP8, INT8 (1 byte), and INT4/FP4 (0.5 bytes). At the extreme theoretical limit, Microsoft’s BitNet b1.58 (Ma et al., 2024) restricts weights to ternary values $\\{-1, 0, +1\\}$ (1.58 bits per parameter), matching 16-bit Llama 2 benchmark performance at 3B–3.9B scale. Quantization requires two architectural decisions: What to quantize (weights are much easier and more stable to quantize than activations, though LLM.int8() and Blackwell FP4 target both) and When to quantize.\n\nPost-Training Quantization (PTQ) quantizes a fully trained high-precision model right before deployment; it is cheap, standard across PyTorch/Hugging Face/TFLite, and requires no retraining, though aggressive PTQ can degrade accuracy if outlier weights clip. Training Quantization splits into two distinct paradigms: Quantization-Aware Training (QAT), which simulates low-precision rounding noise during high-precision training so the final model resists PTQ degradation (note: QAT increases training time because math still runs in high precision), and Direct Low-Precision / Mixed-Precision Training (AMP), where sensitive master weights and loss accumulations stay in FP32/FP16 while gradients, activations, and forward matmuls execute in BF16 or INT8 (as Character.AI achieved in 2024 by training natively in INT8 to eliminate train/serve skew).',
+        'Because memory scales directly with $M$ (bytes per value), halving the bit-width cuts weight memory in half. Neural networks historically used IEEE 754 single-precision FP32 (32 bits = 4 bytes: 1 sign bit, 8 exponent/range bits, 23 significand/precision bits).\n\nPushing below 16 bits enters integer and minifloat quantization: FP8, INT8 (1 byte), and INT4/FP4 (0.5 bytes). At the extreme theoretical limit, Microsoft’s BitNet b1.58 (Ma et al., 2024) restricts weights to ternary values $\\{-1, 0, +1\\}$ (1.58 bits per parameter), matching 16-bit Llama 2 benchmark performance at 3B–3.9B scale.',
       keyTakeaways: [
-        'BF16 (8 range, 7 precision bits) avoids the catastrophic overflow (`INF`) of FP16 (5 range, 10 precision bits) on large numbers like 123,456.789, making BF16 strongly preferred for LLM training and inference.',
-        'Loading a checkpoint in the wrong 16-bit format (e.g., loading BF16-trained Llama 2 or Llama 3.1 weights into FP16) silently degrades generation quality due to range clipping and rounding discrepancies.',
-        'PTQ reduces inference memory and latency immediately after training; QAT improves low-precision inference quality by simulating quantization noise during training, but does not speed up training itself.',
-        'Backpropagation is far more sensitive to low precision than forward inference because tiny gradient rounding errors compound across thousands of optimizer steps and loss calculations.',
-      ],
+          'BF16 (8 range, 7 precision bits) avoids the catastrophic overflow (`INF`) of FP16 (5 range, 10 precision bits) on large numbers like 123,456.789, making BF16 strongly preferred for LLM training and inference.',
+          'Loading a checkpoint in the wrong 16-bit format (e.g., loading BF16-trained Llama 2 or Llama 3.1 weights into FP16) silently degrades generation quality due to range clipping and rounding discrepancies.',
+        ],
       commonPitfalls: [
-        'Assuming TF32 uses 32 bits of memory—TF32 is actually a 19-bit compute format (1 sign + 8 range + 10 precision) named for its dynamic-range compatibility with FP32.',
-        'Using QAT expecting it to reduce GPU memory or training time on a budget GPU—QAT performs fake quantization in high precision and actually adds simulation overhead; use QLoRA or AMP for training memory reduction.',
-      ],
+          'Assuming TF32 uses 32 bits of memory.',
+          'Using QAT expecting it to reduce GPU memory or training time on a budget GPU.',
+        ],
       figures: [
         {
           file: 'aien_0706.png',
           originalLabel: 'Figure 7-6. Different numerical formats with their range and precision.',
           bierutTitle: 'Bit-Width Allocation Between Exponent (Range) and Significand (Precision) Governs Numerical Stability',
           editorialAnalysis:
-            'This bit-level layout compares FP32 (1+8+23), TF32 (1+8+10 = 19 bits), FP16 (1+5+10), BF16 (1+8+7), INT8 (1+7), and INT4 (1+3). Notice the architectural symmetry: BF16 and TF32 both copy FP32’s exact 8-bit exponent field (blue), guaranteeing they can represent the same magnitude of large and small numbers without underflow or overflow.',
+            'This bit-level layout compares FP32 (1+8+23), TF32 (1+8+10 = 19 bits), FP16 (1+5+10), BF16 (1+8+7), INT8 (1+7), and INT4 (1+3).',
           keyTakeaways: [
-            'Exponent bits (range) dictate the largest and smallest representable magnitude; significand bits (precision) dictate the spacing between adjacent representable numbers.',
-            'INT8 and INT4 have zero exponent bits, requiring external scaling factors (quantization scales/zero-points) to map floating-point weight distributions onto fixed integer grids.',
-          ],
+          'Exponent bits (range) dictate the largest and smallest representable magnitude; significand bits (precision) dictate the spacing between adjacent representable numbers.',
+          'INT8 and INT4 have zero exponent bits, requiring external scaling factors (quantization scales/zero-points) to map floating-point weight distributions onto fixed integer grids.',
+        ],
         },
       ],
     },
@@ -470,7 +464,7 @@ export const ch07Mastery: ChapterMastery = {
       subtitle:
         'Why naive partial finetuning fails, how LoRA factorizes weight updates into W + (α/r)AB, optimal target modules, multi-LoRA serving math, and 4-bit NormalFloat QLoRA',
       coreMechanism:
-        'When full finetuning exceeds GPU memory or dataset size, a naive alternative is partial finetuning: freezing the first 90% of transformer layers and updating only the final layers. However, Houlsby et al. (2019) proved that partial finetuning is deeply parameter-inefficient—BERT-large required updating ~25% of all parameters via partial layer unfreezing to match full finetuning on GLUE. Instead, Parameter-Efficient Finetuning (PEFT) achieves within <0.5% of full finetuning performance while updating 0.01% to 3% of parameters. PEFT divides into two families: Soft Prompt-Based Methods (Prompt Tuning, Prefix-Tuning, P-Tuning), which prepend continuous, trainable virtual token vectors to the input embeddings or every transformer layer while keeping all weights frozen; and Adapter-Based (Additive) Methods (Houlsby Adapters, BitFit, IA3, LoRA, LongLoRA).\n\nWhile Houlsby’s original serial adapters achieved full-finetuning parity on GLUE with just 3% trainable parameters by inserting two bottleneck modules per transformer block, they added sequential layers that increased inference latency. Hu et al. (2021) solved this latency penalty with LoRA (Low-Rank Adaptation). Instead of inserting serial layers, LoRA operates in parallel on any existing weight matrix $W_0 \\in \\mathbb{R}^{n \\times m}$. It freezes $W_0$ and parameterizes the weight update $\\Delta W$ as the low-rank product of two thin matrices: $A \\in \\mathbb{R}^{n \\times r}$ and $B \\in \\mathbb{R}^{r \\times m}$, where rank $r \\ll \\min(n, m)$. The effective weight matrix becomes $W\' = W_0 + \\frac{\\alpha}{r} W_{AB}$. During training, only $A$ and $B$ receive gradients; at inference, $W_{AB}$ can either be permanently added into $W_0$ (zero latency overhead) or kept separate for multi-tenant serving.\n\nWhen configuring LoRA under a fixed parameter budget (e.g., 18M trainable parameters on GPT-3 175B, which is 0.01% of weights), Hu et al. proved that applying a smaller rank ($r = 2$) across more matrices ($W_q, W_k, W_v, W_o$) outperforms applying a larger rank ($r = 8$) to a single matrix ($W_q$), and Databricks/Fomenko et al. showed that including MLP feedforward matrices yields the largest quality boost. Because LoRA reduces adapter memory to mere megabytes (e.g., 6.55 MB on Llama 2 13B), the frozen 16-bit base weights (26 GB) remain the dominant memory bottleneck. QLoRA (Dettmers et al., 2023) eliminates this base-weight bottleneck through three innovations: (1) 4-bit NormalFloat (NF4) quantization, an information-theoretically optimal data type exploiting the fact that pre-trained neural network weights follow a zero-centered normal distribution; (2) On-the-fly BF16 dequantization during forward and backward matrix multiplications; and (3) Paged Optimizers, which use NVIDIA unified memory to automatically page optimizer states between GPU VRAM and CPU RAM during long-sequence memory spikes—enabling a 65B Guanaco model to be finetuned on a single 48 GB GPU.',
+        'When full finetuning exceeds GPU memory or dataset size, a naive alternative is partial finetuning: freezing the first 90% of transformer layers and updating only the final layers. However, Houlsby et al.\n\nWhile Houlsby’s original serial adapters achieved full-finetuning parity on GLUE with just 3% trainable parameters by inserting two bottleneck modules per transformer block, they added sequential layers that increased inference latency. Hu et al.',
       formulas: [
         {
           name: 'LoRA Weight Update & Parameter Compression Formula',
@@ -484,7 +478,7 @@ export const ch07Mastery: ChapterMastery = {
             { symbol: 'α', meaning: 'LoRA scaling constant (ratio α:r typically set between 1:8 and 8:1)' },
           ],
           workedExample:
-            'Single Matrix Example: If W_0 is 4096 × 4096 (16,777,216 parameters) and rank r = 8, then A (4096 × 8) + B (8 × 4096) = 65,536 trainable parameters (a 256x reduction).\nFull Model Example (GPT-3 175B): 96 layers, d_model = 12,288. Applying r = 2 to all 4 attention matrices (W_q, W_k, W_v, W_o) gives (12,288 × 2 × 2) × 4 = 196,608 params/layer × 96 layers = 18,874,368 trainable params (0.01% of 175B).',
+            'Single Matrix Example: If W_0 is 4096 × 4096 (16,777,216 parameters) and rank r = 8, then A (4096 × 8) + B (8 × 4096) = 65,536 trainable parameters (a 256x reduction).\nFull Model Example (GPT-3 175B): 96 layers, d_model = 12,288.',
         },
         {
           name: 'Multi-LoRA Serving Storage Math (Merged vs. Modular)',
@@ -501,14 +495,13 @@ export const ch07Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'Applying LoRA with a smaller rank across more weight matrices (all attention + MLP layers) consistently outperforms applying a large rank to only one or two matrices under the same memory budget.',
-        'Increasing LoRA rank r beyond 16–64 rarely improves performance and can cause overfitting on small datasets because downstream task updates have low intrinsic dimensionality.',
-        'QLoRA stores frozen weights in 4-bit NormalFloat (NF4) and dequantizes to BF16 during compute, trading slightly slower training throughput (dequantization overhead) for a 4x base-memory reduction.',
-      ],
+          'Applying LoRA with a smaller rank across more weight matrices (all attention + MLP layers) consistently outperforms applying a large rank to only one or two matrices under the same memory budget.',
+          'Increasing LoRA rank r beyond 16–64 rarely improves performance and can cause overfitting on small datasets because downstream task updates have low intrinsic dimensionality.',
+        ],
       commonPitfalls: [
-        'Trying to shrink LoRA rank from r=8 to r=2 to save GPU memory on a 13B model—the LoRA weights at r=2 are only 6.55 MB compared to 26 GB of base weights; quantize the base weights (QLoRA) instead.',
-        'Pre-merging LoRA weights (Option 1) when serving 50+ customer-specific models, which duplicates the multi-gigabyte base model 50 times in storage and VRAM.',
-      ],
+          'Trying to shrink LoRA rank from r=8 to r=2 to save GPU memory on a 13B model.',
+          'Pre-merging LoRA weights (Option 1) when serving 50+ customer-specific models, which duplicates the multi-gigabyte base model 50 times in storage and VRAM.',
+        ],
       figures: [
         {
           file: 'aien_0707.png',
@@ -516,11 +509,11 @@ export const ch07Mastery: ChapterMastery = {
             'Figure 7-7. The blue line shows that partial finetuning requires many trainable parameters to achieve a performance comparable to full finetuning. Image from Houlsby et al. (2019).',
           bierutTitle: 'Adapter Finetuning Reaches Full-Training Parity at 10x Fewer Parameters Than Partial Layer Unfreezing',
           editorialAnalysis:
-            'On the log-scale X-axis (trainable parameters from 0.1% to 100%) vs. Y-axis (GLUE score delta relative to full finetuning), the blue curve (partial finetuning of top layers) drops sharply by 4–8 points when fewer than 10% of parameters are trained, whereas the orange curve (Houlsby adapters) hugs the 0.0 delta line even down at 0.5%–3% trainable parameters.',
+            'On the log-scale X-axis (trainable parameters from 0.1% to 100%) vs.',
           keyTakeaways: [
-            'Naive partial finetuning (freezing early layers) is highly parameter-inefficient because task adaptation requires small adjustments distributed across all depths of the network.',
-            'PEFT distributes small trainable modules across every layer rather than unfreezing only the top layers.',
-          ],
+          'Naive partial finetuning (freezing early layers) is highly parameter-inefficient because task adaptation requires small adjustments distributed across all depths of the network.',
+          'PEFT distributes small trainable modules across every layer rather than unfreezing only the top layers.',
+        ],
         },
         {
           file: 'aien_0708.png',
@@ -528,11 +521,11 @@ export const ch07Mastery: ChapterMastery = {
             'Figure 7-8. By inserting two adapter modules into each transformer layer for a BERT model and updating only the adapters, Houlsby et al. (2019) were able to achieve strong finetuning performance using a small number of trainable parameters.',
           bierutTitle: 'Serial Bottleneck Adapters Pioneer PEFT but Introduce Sequential Inference Latency',
           editorialAnalysis:
-            'The architecture diagram shows two trainable Adapter blocks inserted sequentially inside each Transformer layer—one immediately after Multi-Head Attention and one after the Feedforward layer, each before LayerNorm. Because tokens must pass serially through these extra layers at inference time, Houlsby adapters cannot be merged into existing matrices.',
+            'The architecture diagram shows two trainable Adapter blocks inserted sequentially inside each Transformer layer.',
           keyTakeaways: [
-            'Serial adapters prove that freezing the transformer backbone and tuning <3% added parameters preserves accuracy.',
-            'Their serial placement adds forward-pass depth, motivating LoRA’s parallel matrix decomposition.',
-          ],
+          'Serial adapters prove that freezing the transformer backbone and tuning <3% added parameters preserves accuracy.',
+          'Their serial placement adds forward-pass depth, motivating LoRA’s parallel matrix decomposition.',
+        ],
         },
         {
           file: 'aien_0709.png',
@@ -541,9 +534,9 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'While hard prompts consist of discrete vocabulary tokens ("How many studio albums...") looked up in the frozen embedding table, soft prompts inject continuous floating-point vectors ([Soft Prompt 1..p]) optimized directly by backpropagation to steer attention patterns.',
           keyTakeaways: [
-            'Soft prompts are continuous vectors optimized via gradient descent, making them non-human-readable.',
-            'Prompt tuning prepends vectors only at the input embedding layer; Prefix-tuning prepends them at every transformer layer.',
-          ],
+          'Soft prompts are continuous vectors optimized via gradient descent, making them non-human-readable.',
+          'Prompt tuning prepends vectors only at the input embedding layer; Prefix-tuning prepends them at every transformer layer.',
+        ],
         },
         {
           file: 'aien_0710.png',
@@ -553,8 +546,8 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'Analyzing over 1,000 GitHub issues in `huggingface/peft` (Oct 2024), LoRA accounts for nearly 800 issues, dwarfing Prefix-tuning (~50), Prompt tuning (~45), IA3 (~40), and P-Tuning (~35) by more than an order of magnitude.',
           keyTakeaways: [
-            'LoRA is the de facto industry standard for parameter-efficient finetuning due to its zero inference latency and easy adapter modularity.',
-          ],
+          'LoRA is the de facto industry standard for parameter-efficient finetuning due to its zero inference latency and easy adapter modularity.',
+        ],
         },
         {
           file: 'aien_0711.png',
@@ -562,11 +555,11 @@ export const ch07Mastery: ChapterMastery = {
             'Figure 7-11. To apply LoRA to a weight matrix W, decompose it into the product of two matrices A and B. During finetuning, only A and B are updated. W is kept intact.',
           bierutTitle: 'Low-Rank Factorization Replaces an n × m Update Matrix with Two Narrow Rank-r Matrices',
           editorialAnalysis:
-            'The visual decomposition shows the frozen full-rank matrix W (n × m) alongside the trainable factorized matrices A (n × r) and B (r × m). Multiplying A × B reconstructs an n × m delta matrix W_AB that adds element-wise to W to form W_prime.',
+            'The visual decomposition shows the frozen full-rank matrix W (n × m) alongside the trainable factorized matrices A (n × r) and B (r × m).',
           keyTakeaways: [
-            'Matrix A compresses the n-dimensional input down to rank r; Matrix B projects the r-dimensional bottleneck back to m.',
-            'Because W_AB has the exact same n × m shape as W, the two matrices can be added together offline into a single matrix W_prime.',
-          ],
+          'Matrix A compresses the n-dimensional input down to rank r; Matrix B projects the r-dimensional bottleneck back to m.',
+          'Because W_AB has the exact same n × m shape as W, the two matrices can be added together offline into a single matrix W_prime.',
+        ],
         },
         {
           file: 'aien_0712.png',
@@ -576,8 +569,8 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'Instead of materializing separate full-rank matrices W_prime_1 and W_prime_2, the serving engine holds one shared base matrix W in GPU memory and routes tenant-specific requests through tiny adapter pairs (A1, B1) or (A2, B2) on the fly.',
           keyTakeaways: [
-            'Multi-LoRA serving enables on-device multi-tasking (e.g., Apple Intelligence) and high-density multi-tenant SaaS hosting.',
-          ],
+          'Multi-LoRA serving enables on-device multi-tasking (e.g., Apple Intelligence) and high-density multi-tenant SaaS hosting.',
+        ],
         },
       ],
     },
@@ -588,17 +581,15 @@ export const ch07Mastery: ChapterMastery = {
       subtitle:
         'Combining specialized models without catastrophic forgetting: Task Arithmetic, SLERP, TIES/DARE pruning, Frankenmerging, SOLAR depthwise scaling, and MoE upcycling',
       coreMechanism:
-        'When an application requires multiple distinct skills, training on Task A then Task B sequentially causes catastrophic forgetting (Kirkpatrick et al., 2016), while simultaneous multi-task training demands massive combined datasets and compute. Model merging solves this by finetuning separate models (or LoRA adapters) on individual tasks in parallel, then mathematically combining their weights—often requiring zero GPUs.\n\nUnlike model ensembling—which runs $K$ separate models at inference time and aggregates their output predictions (multiplying inference cost and memory by $K$)—model merging combines the constituent parameters offline into a single unified model. Chapter 7 categorizes model merging into three structural mechanisms:\n\n1. **Summing (Linear Combination, Task Arithmetic, SLERP, TIES/DARE):** Given models $A$ and $B$ derived from the same base model $W_{\\text{base}}$, subtracting the base weights yields a **task vector** ($\\tau_A = W_A - W_{\\text{base}}$) that isolates the parameter delta responsible for that skill (Ilharco et al., 2022). Engineers can perform **task arithmetic**: adding task vectors to combine skills or subtracting a task vector to erase unwanted behaviors (such as toxicity, biases, or invasive facial recognition). While simple weighted averaging ($\\frac{w_A A + w_B B}{w_A + w_B}$, or "Model Soups") works well, high-dimensional weight vectors often sit on a hypersphere where linear averaging shrinks vector magnitude; **SLERP (Spherical Linear Interpolation)** interpolates along the shortest great-circle arc on the spherical surface between two vectors ($t_1, t_2$). Furthermore, Yadav et al. (2023) discovered that 80% of parameter changes during finetuning are redundant noise that causes destructive parameter interference when multiple models are summed. **TIES-Merging** ("TrIm, Elect Sign, and merge") and **DARE** ("Drop And REscale") prune the bottom 80%+ smallest delta parameters back to zero and resolve sign conflicts before summing, dramatically boosting multi-model merge quality.\n\n2. **Layer Stacking (Frankenmerging, Sparse MoE Upcycling, Depthwise Upscaling):** Instead of summing weights within the same layer, layer stacking interleaves or duplicates entire transformer layers. In community "frankenmerging," Goliath-120B was created by stacking 72 layers each from two Llama 2-70B finetunes (Xwin and Euryale). In **Sparse Upcycling** (Komatsuzaki et al., 2022), a dense pre-trained checkpoint is converted into a Mixture-of-Experts (MoE) model by copying the FFN layers into multiple experts, inserting a trainable router, and continuing training. In **Depthwise Scaling** (used to build SOLAR 10.7B from a 32-layer 7B model), two copies of a 32-layer model are stacked while 16 middle layers are summed/dropped, yielding a 48-layer ($32 \\times 2 - 16$) upscaled model that is then further trained.\n\n3. **Concatenation:** Concatenating two LoRA adapters of ranks $r_1$ and $r_2$ produces a combined adapter of rank $r_1 + r_2$. Because concatenation does not reduce parameter count or memory footprint compared to keeping adapters separate, it is rarely recommended.',
+        'When an application requires multiple distinct skills, training on Task A then Task B sequentially causes catastrophic forgetting (Kirkpatrick et al., 2016), while simultaneous multi-task training demands massive combined datasets and compute. Model merging solves this by finetuning separate models (or LoRA adapters) on individual tasks in parallel, then mathematically combining their weights—often requiring zero GPUs.\n\nUnlike model ensembling—which runs $K$ separate models at inference time and aggregates their output predictions (multiplying inference cost and memory by $K$)—model merging combines the constituent parameters offline into a single unified model. Chapter 7 categorizes model merging into three structural mechanisms: 3. **Concatenation:** Concatenating two LoRA adapters of ranks $r_1$ and $r_2$ produces a combined adapter of rank $r_1 + r_2$.',
       keyTakeaways: [
-        'Model merging combines parameters offline (1x inference cost), whereas ensembling combines outputs at runtime (Kx inference cost).',
-        'Task vectors (W_finetuned - W_base) enable task arithmetic: adding capabilities together or subtracting undesirable behaviors like bias or PII memorization.',
-        'SLERP preserves geometric norm along a spherical arc between two models, outperforming naive linear averaging, though it operates on only two vectors at a time.',
-        'Pruning 80% of small-magnitude delta parameters via TIES or DARE eliminates cross-task parameter interference when merging three or more task vectors.',
-      ],
+          'Model merging combines parameters offline (1x inference cost), whereas ensembling combines outputs at runtime (Kx inference cost).',
+          'Task vectors (W_finetuned - W_base) enable task arithmetic: adding capabilities together or subtracting undesirable behaviors like bias or PII memorization.',
+        ],
       commonPitfalls: [
-        'Attempting linear combination or SLERP on two models that do not share the same base model or permutation alignment without first projecting or aligning their subspaces (e.g., via Git Re-Basin).',
-        'Deploying a layer-stacked (frankenmerged or depthwise-upscaled) model directly to production without a continued finetuning phase to heal the layer interfaces.',
-      ],
+          'Attempting linear combination or SLERP on two models that do not share the same base model or permutation alignment without first projecting or aligning their subspaces (e.g., via Git Re-Basin).',
+          'Deploying a layer-stacked (frankenmerged or depthwise-upscaled) model directly to production without a continued finetuning phase to heal the layer interfaces.',
+        ],
       figures: [
         {
           file: 'aien_0713.png',
@@ -607,18 +598,18 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'The side-by-side architectural comparison shows Ensembling executing Model 1 and Model 2 in parallel on every input and combining their outputs, whereas Model Merging fuses Model 1 and Model 2 into a single Merged Model prior to serving.',
           keyTakeaways: [
-            'Ensembling multiplies inference compute and memory; merging keeps single-model inference latency and VRAM.',
-          ],
+          'Ensembling multiplies inference compute and memory; merging keeps single-model inference latency and VRAM.',
+        ],
         },
         {
           file: 'aien_0714.png',
           originalLabel: 'Figure 7-14. Three main approaches to model merging: summing, layer stacking, and concatenation.',
           bierutTitle: 'Structural Taxonomy of Model Merging: Element-Wise Summing, Depthwise Layer Stacking, and Rank Concatenation',
           editorialAnalysis:
-            'Given two matrices (4×2 and 4×2), Summing produces a single 4×2 matrix by combining values; Layer Stacking stacks components vertically into an 8×2 structure; Concatenation joins them horizontally into a 4×4 structure.',
+            'Given two matrices (4×2 and 4×2), Summing produces a single 4×2 matrix by combining values.',
           keyTakeaways: [
-            'Only Summing preserves the exact original parameter count and layer topology of the constituent models.',
-          ],
+          'Only Summing preserves the exact original parameter count and layer topology of the constituent models.',
+        ],
         },
         {
           file: 'aien_0716.png',
@@ -626,10 +617,10 @@ export const ch07Mastery: ChapterMastery = {
             'Figure 7-16. How SLERP works for two vectors t1 and t2. The red line is their shortest path on the spherical surface.',
           bierutTitle: 'Spherical Linear Interpolation (SLERP) Follows the Geodesic Arc to Preserve Weight Vector Magnitude',
           editorialAnalysis:
-            'Vectors t1 and t2 sit on a 3D sphere. Whereas linear averaging cuts through the interior chord (shrinking vector length), SLERP traces the red surface arc, placing the 0.5 midpoint (blue vector) at full radial norm.',
+            'Vectors t1 and t2 sit on a 3D sphere.',
           keyTakeaways: [
-            'SLERP prevents the norm-shrinkage pathology of linear averaging in high-dimensional weight spaces.',
-          ],
+          'SLERP prevents the norm-shrinkage pathology of linear averaging in high-dimensional weight spaces.',
+        ],
         },
         {
           file: 'aien_0717.png',
@@ -639,8 +630,8 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'Across 0% to 100% reset thresholds on Yadav et al.’s TIES-Merging curve, resetting up to 80% of the smallest-magnitude task-vector changes back to their base-model values leaves average task performance virtually flat (~0.69), crashing only past 90% pruning.',
           keyTakeaways: [
-            'Pruning redundant delta parameters before merging prevents noisy weight updates in Task A from overwriting critical weights in Task B.',
-          ],
+          'Pruning redundant delta parameters before merging prevents noisy weight updates in Task A from overwriting critical weights in Task B.',
+        ],
         },
         {
           file: 'aien_0718.png',
@@ -650,8 +641,8 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'Starting from a dense transformer block (Attention -> Add & Norm -> FFN -> Add & Norm), Sparse Upcycling duplicates the trained FFN into Expert 1..n, inserts a gating Router after the first Add & Norm, and continues training.',
           keyTakeaways: [
-            'Sparse Upcycling builds high-capacity MoE models at a fraction of the compute required to pre-train an MoE from scratch.',
-          ],
+          'Sparse Upcycling builds high-capacity MoE models at a fraction of the compute required to pre-train an MoE from scratch.',
+        ],
         },
         {
           file: 'aien_0719.png',
@@ -661,8 +652,8 @@ export const ch07Mastery: ChapterMastery = {
           editorialAnalysis:
             'Two identical 32-layer models are aligned; the top 8 layers of copy 1 and bottom 8 layers of copy 2 are summed into 16 fused middle layers while the outer 16 + 16 layers are stacked intact, producing a 48-layer model (32×2 - 16 = 48).',
           keyTakeaways: [
-            'Depthwise scaling lets teams upgrade a 7B model into a 10.7B model to utilize larger GPUs without pre-training from scratch.',
-          ],
+          'Depthwise scaling lets teams upgrade a 7B model into a 10.7B model to utilize larger GPUs without pre-training from scratch.',
+        ],
         },
       ],
     },
@@ -673,17 +664,15 @@ export const ch07Mastery: ChapterMastery = {
       subtitle:
         'Selecting base models, frameworks (Unsloth, Axolotl, LLaMA-Factory, DeepSpeed), and tuning Learning Rate, Batch Size / Gradient Accumulation, Epochs, and Prompt Loss Weight',
       coreMechanism:
-        'Executing a successful finetuning run requires coordinating three tactical choices: Base Model Development Path, Finetuning Framework, and Hyperparameter Configuration. When choosing a base model workflow, OpenAI outlines two canonical engineering paths: (1) The **Progression Path**, where you first validate training scripts on the cheapest/fastest model (catching bugs like nonexistent checkpoint directories early), validate dataset learning curves on a mid-sized model, push peak capability on the strongest model, and finally map the price/performance Pareto frontier across model sizes; and (2) The **Distillation Path**, where you finetune the strongest affordable model on a tiny seed dataset (leveraging its superior sample efficiency), use that finetuned teacher to synthesize a large training set, and distill the behavior into a small, cheap student model.\n\nFor tooling, managed finetuning APIs offer turnkey simplicity but restrict base model choices and hide critical optimization knobs; self-hosted frameworks (`Axolotl`, `Unsloth`, `LLaMA-Factory`, `LitGPT`, Hugging Face `PEFT`) paired with distributed training engines (`DeepSpeed` ZeRO / CPU offloading, `PyTorch Distributed`, `ColossalAI`) unlock full control over memory and layer targeting.\n\nFinally, four hyperparameters govern convergence: (1) **Learning Rate** ($10^{-7}$ to $10^{-3}$, typically $0.1\\times$ to $1.0\\times$ the final pre-training learning rate paired with a warmup/decay schedule)—if training loss fluctuates wildly, the learning rate is too high; if loss decreases glacially, it is too small; (2) **Batch Size & Gradient Accumulation**—very small batch sizes ($<8$) produce noisy, unstable weight updates, while large batches exhaust VRAM; engineers reconcile this by running small micro-batches in VRAM and using **gradient accumulation** across $K$ steps before calling `optimizer.step()`; (3) **Number of Epochs**—large datasets (millions of rows) need only 1–2 epochs, whereas small PEFT datasets (thousands of rows) often need 4–10 epochs, monitored strictly by halting when validation loss starts rising while training loss falls (overfitting); and (4) **Prompt Loss Weight**—because users supply prompts at inference time and the model only generates responses, masking or down-weighting prompt tokens (defaulting to ~10% prompt loss weight vs. 100% response weight, or 0% masked prompt loss) focuses model capacity on response generation.',
+        'Executing a successful finetuning run requires coordinating three tactical choices: Base Model Development Path, Finetuning Framework, and Hyperparameter Configuration. When choosing a base model workflow, OpenAI outlines two canonical engineering paths: (1) The **Progression Path**, where you first validate training scripts on the cheapest/fastest model (catching bugs like nonexistent checkpoint directories early), validate dataset learning curves on a mid-sized model, push peak capability on the strongest model, and finally map the price/performance Pareto frontier across model sizes.\n\nFor tooling, managed finetuning APIs offer turnkey simplicity but restrict base model choices and hide critical optimization knobs.',
       keyTakeaways: [
-        'Use the Progression Path (cheap model -> mid model -> strong model -> frontier sweep) to debug pipelines safely, or the Distillation Path (strong model on small data -> synthesize data -> train small model) when labeled data is scarce.',
-        'Gradient accumulation simulates a large, stable effective batch size (Batch_effective = MicroBatch × AccumSteps) on memory-constrained GPUs at the cost of sequential step time.',
-        'Monitor the train-vs-validation loss divergence: if validation loss rises while training loss drops, reduce epochs or LoRA rank to stop overfitting.',
-        'Set Prompt Loss Weight to 0%–10% so gradient updates optimize response generation rather than memorizing user prompt phrasing.',
-      ],
+          'Use the Progression Path (cheap model -> mid model -> strong model -> frontier sweep) to debug pipelines safely, or the Distillation Path (strong model on small data -> synthesize data -> train small model) when labeled data is scarce.',
+          'Gradient accumulation simulates a large, stable effective batch size (Batch_effective = MicroBatch × AccumSteps) on memory-constrained GPUs at the cost of sequential step time.',
+        ],
       commonPitfalls: [
-        'Launching an overnight finetuning run on a 70B model without first running a 5-minute end-to-end checkpoint test on a tiny model.',
-        'Leaving Prompt Loss Weight at 100% on tasks with long, repetitive system prompts and short answers, causing the model to spend 95% of its gradient updates predicting the static prompt.',
-      ],
+          'Launching an overnight finetuning run on a 70B model without first running a 5-minute end-to-end checkpoint test on a tiny model.',
+          'Leaving Prompt Loss Weight at 100% on tasks with long, repetitive system prompts and short answers, causing the model to spend 95% of its gradient updates predicting the static prompt.',
+        ],
     },
   ],
   tradeOffMatrices: [
@@ -794,7 +783,7 @@ export const ch07Mastery: ChapterMastery = {
         ],
       ],
       verdictRule:
-        'Use BF16 over FP16 whenever hardware supports it to eliminate overflow instabilities; use NF4 (QLoRA) to compress frozen base weights during single-GPU finetuning; never mismatch checkpoint native dtype at load time.',
+        'Use BF16 over FP16 whenever hardware supports it to eliminate overflow instabilities.',
     },
   ],
   engineeringScenarios: [
@@ -804,11 +793,11 @@ export const ch07Mastery: ChapterMastery = {
       roleAndContext:
         'Lead AI Architect at a B2B analytics platform where 150 enterprise tenants each have custom database schemas, proprietary SQL macros, and strict formatting conventions.',
       symptomOrFailure:
-        'Few-shot prompting with 30 schema examples hits context limits and still produces 28% syntax compilation errors on custom SQL dialects. An engineer proposes full-finetuning a Llama-3-8B model per customer, which would require storing and serving 150 × 16 GB = 2,400 GB of model weights across dozens of A100 GPUs.',
+        'Few-shot prompting with 30 schema examples hits context limits and still produces 28% syntax compilation errors on custom SQL dialects.',
       naiveFixAndWhyItFails:
         'Attempting to train one monolithic multi-tenant model sequentially across all 150 customers triggers catastrophic forgetting (each new customer overwrites prior customer macros) and leaks customer-specific conventions across tenants.',
       firstPrinciplesSolution:
-        'Keep one shared, frozen Llama-3-8B base model in BF16 (16 GB) and train 150 isolated QLoRA/LoRA adapters (rank r = 16 across W_q, W_k, W_v, W_o, and MLP layers, ~40 MB per customer) using customer-specific (query, SQL) pairs while pairing dynamic schema lookup via RAG. Deploy using a Multi-LoRA serving engine (Option 2: unmerged dynamic batching) that keeps the single 16 GB base model in VRAM and hot-swaps the 40 MB tenant adapters per request.',
+        'Keep one shared, frozen Llama-3-8B base model in BF16 (16 GB) and train 150 isolated QLoRA/LoRA adapters (rank r = 16 across W_q, W_k, W_v, W_o, and MLP layers, ~40 MB per customer) using customer-specific (query, SQL) pairs while pairing dynamic schema lookup via RAG.',
       measurableOutcome:
         'Total parameter storage drops by 98% (from 2.4 TB to 16 GB base + 6 GB total adapters), SQL compilation accuracy rises from 72% to 96.4%, and all 150 tenants are served concurrently from a single node.',
     },
@@ -818,11 +807,11 @@ export const ch07Mastery: ChapterMastery = {
       roleAndContext:
         'ML Engineer finetuning a 13B open-weight model (natively pre-trained in BF16) on a 48 GB A6000 GPU for long-context legal contract extraction (8,192 tokens).',
       symptomOrFailure:
-        'First, loading the checkpoint with `torch.float16` causes immediate perplexity spikes and garbled outputs even before training starts. Second, switching to full finetuning in `bfloat16` with batch size 16 crashes immediately with `RuntimeError: CUDA out of memory`.',
+        'First, loading the checkpoint with `torch.float16` causes immediate perplexity spikes and garbled outputs even before training starts.',
       naiveFixAndWhyItFails:
         'Truncating the legal contracts from 8,192 to 1,024 tokens to stop the OOM destroys task utility (clauses at the end of contracts are clipped), and lowering the learning rate in FP16 fails because large outlier activations still overflow FP16’s 5-bit exponent (`>65,504 -> INF`).',
       firstPrinciplesSolution:
-        'First, enforce `torch.bfloat16` to preserve the 8-bit dynamic range expected by the pre-trained weights. Second, apply memory math: full 13B training requires 26 GB (weights) + 78 GB (gradients + Adam states) = 104 GB before activations. Switch to QLoRA (4-bit NF4 base weights = 6.5 GB, BF16 LoRA adapters on all linear layers), enable Gradient Checkpointing (activation recomputation) to prevent 8K-token activations from exploding VRAM, and set micro-batch size = 2 with Gradient Accumulation steps = 8 (effective batch size = 16).',
+        'First, enforce `torch.bfloat16` to preserve the 8-bit dynamic range expected by the pre-trained weights.',
       measurableOutcome:
         'Peak VRAM drops from >120 GB (OOM) to 21.4 GB on the single 48 GB GPU, numerical overflow disappears completely, and effective batch size 16 is preserved with stable loss convergence.',
     },
@@ -839,7 +828,7 @@ export const ch07Mastery: ChapterMastery = {
             text: '16.8 GB (14 GB for weights + 2.8 GB overhead)',
             isCorrect: false,
             explanation:
-              '16.8 GB is the approximate inference memory formula (N × M × 1.2 = 14 GB × 1.2). It ignores gradients and Adam optimizer states.',
+              '16.8 GB is the approximate inference memory formula (N × M × 1.2 = 14 GB × 1.2).',
           },
           {
             label: 'B',
@@ -853,28 +842,28 @@ export const ch07Mastery: ChapterMastery = {
             text: '56 GB (14 GB for weights + 14 GB for gradients + 28 GB for Adam optimizer states)',
             isCorrect: true,
             explanation:
-              'In 16-bit (2 bytes/value), weights take 7B × 2 = 14 GB. Each of the 7B trainable parameters requires 1 gradient + 2 Adam states = 3 values × 2 bytes = 42 GB. Total = 14 GB + 42 GB = 56 GB before activations.',
+              'In 16-bit (2 bytes/value), weights take 7B × 2 = 14 GB.',
           },
           {
             label: 'D',
             text: '112 GB (56 GB forward pass + 56 GB backward pass)',
             isCorrect: false,
             explanation:
-              'Weights are not duplicated between forward and backward passes; in 16-bit, weights + gradients + Adam states equal 4 values × 2 bytes × 7B = 56 GB.',
+              'Weights are not duplicated between forward and backward passes.',
           },
         ],
       },
       {
         id: 'ch07-q2',
         scenarioPrompt:
-          'An engineering team builds a financial assistant that needs to answer questions about SEC filings released earlier this morning AND output the result in a proprietary internal XML dialect. Currently, the base model hallucinates the morning’s numbers and produces invalid XML tags. Based on Ovadia et al. (2024) and Chapter 7’s adaptation framework, what is the optimal architecture?',
+          'An engineering team builds a financial assistant that needs to answer questions about SEC filings released earlier this morning AND output the result in a proprietary internal XML dialect. Currently, the base model hallucinates the morning’s numbers and produces invalid XML tags.',
         options: [
           {
             label: 'A',
             text: 'Run nightly full finetuning on every morning’s SEC filings so the model learns both the new facts and the XML format simultaneously.',
             isCorrect: false,
             explanation:
-              'Finetuning is for form, not rapidly changing facts. Ovadia et al. showed RAG strongly outperforms finetuning on current events, and daily full finetuning is prohibitively expensive and prone to catastrophic forgetting.',
+              'Finetuning is for form, not rapidly changing facts.',
           },
           {
             label: 'B',
@@ -888,7 +877,7 @@ export const ch07Mastery: ChapterMastery = {
             text: 'Use RAG for both the SEC filings and the XML grammar specification, avoiding finetuning entirely because RAG and finetuning cannot be combined.',
             isCorrect: false,
             explanation:
-              'RAG and finetuning are complementary, not mutually exclusive. When a proprietary DSL or syntax has very few examples in pre-training data, finetuning is much more reliable than context stuffing for enforcing grammar.',
+              'RAG and finetuning are complementary, not mutually exclusive.',
           },
           {
             label: 'D',
@@ -902,7 +891,7 @@ export const ch07Mastery: ChapterMastery = {
       {
         id: 'ch07-q3',
         scenarioPrompt:
-          'When configuring LoRA on a 175B transformer model under a strict budget of 18M trainable parameters, Hu et al. (2021) tested applying rank r = 8 to a single attention matrix (W_q) versus applying rank r = 2 across all four attention matrices (W_q, W_k, W_v, W_o). What did they discover, and why?',
+          'When configuring LoRA on a 175B transformer model under a strict budget of 18M trainable parameters, Hu et al. (2021) tested applying rank r = 8 to a single attention matrix (W_q) versus applying rank r = 2 across all four attention matrices (W_q, W_k, W_v, W_o).',
         options: [
           {
             label: 'A',
@@ -923,7 +912,7 @@ export const ch07Mastery: ChapterMastery = {
             text: 'Both configurations achieved identical accuracy because total trainable parameters (18M) is the only variable that determines PEFT performance.',
             isCorrect: false,
             explanation:
-              'In Table 7-5, with 18M trainable parameters fixed, WikiSQL accuracy rose from 70.4% (W_q only, r=8) to 73.7% (all four matrices, r=2). Where parameters are placed matters greatly.',
+              'In Table 7-5, with 18M trainable parameters fixed, WikiSQL accuracy rose from 70.4% (W_q only, r=8) to 73.7% (all four matrices, r=2).',
           },
           {
             label: 'D',
@@ -937,21 +926,21 @@ export const ch07Mastery: ChapterMastery = {
       {
         id: 'ch07-q4',
         scenarioPrompt:
-          'You have finetuned three separate LoRA adapters on top of the same Llama-3-8B base model for three distinct skills (SQL generation, Python debugging, and Cybersecurity Q&A). When you merge their task vectors via simple linear averaging, performance drops noticeably across all three tasks compared to the individual adapters. Which technique directly addresses the root cause of this degradation?',
+          'You have finetuned three separate LoRA adapters on top of the same Llama-3-8B base model for three distinct skills (SQL generation, Python debugging, and Cybersecurity Q&A). When you merge their task vectors via simple linear averaging, performance drops noticeably across all three tasks compared to the individual adapters.',
         options: [
           {
             label: 'A',
             text: 'Convert the base model weights from BF16 to FP16 before averaging the task vectors.',
             isCorrect: false,
             explanation:
-              'Converting BF16 to FP16 reduces dynamic range and introduces potential overflow errors; it does not resolve parameter interference across task vectors.',
+              'Converting BF16 to FP16 reduces dynamic range and introduces potential overflow errors.',
           },
           {
             label: 'B',
             text: 'Apply TIES-Merging or DARE to prune the bottom ~80% of small-magnitude redundant delta parameters back to zero and resolve sign conflicts before merging.',
             isCorrect: true,
             explanation:
-              'As Yadav et al. (2023) showed, ~80% of parameter adjustments during finetuning are redundant noise. When merging multiple models, these noisy minor adjustments interfere with critical parameters of other tasks; pruning them via TIES/DARE restores multi-task performance.',
+              'As Yadav et al.',
           },
           {
             label: 'C',
@@ -975,42 +964,42 @@ export const ch07Mastery: ChapterMastery = {
         id: 'ch07-fc1',
         category: 'adaptation',
         front: 'What is the core rule of thumb for choosing between Finetuning and RAG, and which one should you implement first if a model exhibits both failure modes?',
-        back: 'Finetuning is for form (behavior, output structure, DSL syntax, tone); RAG is for facts (private, dynamic, or post-cutoff knowledge). If a model has both issues, always start with RAG (beginning with simple BM25/term search) because it is easier to deploy, requires no training data curation, and delivers larger factual gains.',
+        back: 'Finetuning is for form (behavior, output structure, DSL syntax, tone); RAG is for facts (private, dynamic, or post-cutoff knowledge).',
         mentalHook: 'Form = Finetuning; Facts = RAG (Start with BM25 RAG first).',
       },
       {
         id: 'ch07-fc2',
         category: 'optimization',
         front: 'How many extra values per trainable parameter are stored during the backward pass for (1) Vanilla SGD, (2) Momentum, and (3) Adam optimizer?',
-        back: 'Every trainable parameter always requires 1 gradient value plus optimizer states:\n1. Vanilla SGD: 1 gradient + 0 optimizer states = 1 extra value\n2. Momentum: 1 gradient + 1 state = 2 extra values\n3. Adam / AdamW: 1 gradient + 2 states = 3 extra values per trainable parameter.',
+        back: 'Every trainable parameter always requires 1 gradient value plus optimizer states:\n1.',
         mentalHook: 'Adam = 1 Grad + 2 States = 3x extra per trainable parameter.',
       },
       {
         id: 'ch07-fc3',
         category: 'architecture',
         front: 'How do FP16 and BF16 differ in their 16-bit allocation, and why does loading a BF16 model in FP16 break generation quality?',
-        back: 'Both use 1 sign bit, but FP16 uses 5 exponent (range) bits and 10 precision bits, whereas BF16 uses 8 exponent (range) bits (matching FP32!) and 7 precision bits. Loading a BF16 model in FP16 causes any value > 65,504 to overflow into Infinity (INF), corrupting outlier activations and weights.',
+        back: 'Both use 1 sign bit, but FP16 uses 5 exponent (range) bits and 10 precision bits, whereas BF16 uses 8 exponent (range) bits (matching FP32!) and 7 precision bits.',
         mentalHook: 'BF16 = Brain Float = FP32’s 8-bit Range in 16 bits.',
       },
       {
         id: 'ch07-fc4',
         category: 'adaptation',
         front: 'How does QLoRA enable finetuning a 65B model on a single 48 GB GPU when standard 16-bit LoRA weights alone would take 130 GB?',
-        back: 'QLoRA combines three techniques:\n1. Quantizes frozen base weights into 4-bit NormalFloat (NF4), which is information-theoretically optimal for normally distributed weights.\n2. Dequantizes NF4 weights back to BF16 on the fly during forward/backward matrix multiplications.\n3. Uses Paged Optimizers to offload optimizer memory spikes to CPU RAM.',
+        back: 'QLoRA combines three techniques:\n1.',
         mentalHook: 'QLoRA = NF4 Frozen Base + BF16 Compute + Paged Optimizers.',
       },
       {
         id: 'ch07-fc5',
         category: 'adaptation',
         front: 'What is a "Task Vector" in model merging, and how does "Task Arithmetic" use it?',
-        back: 'A Task Vector (delta parameters) is obtained by subtracting the original base model’s weights from a finetuned model’s weights (τ = W_finetuned - W_base, or directly using LoRA weights). Task arithmetic adds task vectors to combine skills or subtracts a task vector to make a model unlearn undesirable behaviors (like bias or toxicity).',
+        back: 'A Task Vector (delta parameters) is obtained by subtracting the original base model’s weights from a finetuned model’s weights (τ = W_finetuned - W_base, or directly using LoRA weights).',
         mentalHook: 'Task Vector = Finetuned minus Base (Add to learn, Subtract to unlearn).',
       },
       {
         id: 'ch07-fc6',
         category: 'optimization',
         front: 'What is "Prompt Loss Weight" in instruction finetuning, and why is it typically set near 0%–10% rather than 100%?',
-        back: 'Prompt Loss Weight controls how much prompt tokens contribute to the training loss relative to response tokens. Because users provide prompts at inference time and the model only generates responses, setting prompt loss weight to 0%–10% ensures the model dedicates its capacity to learning response generation rather than memorizing instructions.',
+        back: 'Prompt Loss Weight controls how much prompt tokens contribute to the training loss relative to response tokens.',
         mentalHook: 'Predict the response, not the user’s prompt.',
       },
     ],
@@ -1027,7 +1016,7 @@ export const ch07Mastery: ChapterMastery = {
           'Explains why QLoRA is still needed: the frozen 26 GB FP16 base weights still exceed 24 GB, so QLoRA compresses them to ~6.5 GB using 4-bit NormalFloat (NF4) + on-the-fly BF16 dequantization + paged optimizers.',
         ],
         modelExplanation:
-          'When you run inference on a 13B model in 16-bit precision (2 bytes per parameter), you only execute the forward pass. You load 13B × 2 bytes = 26 GB of static weights plus roughly 20% (5.2 GB) for activations and KV cache, totaling 31.2 GB.\n\nWhen you do full finetuning, backpropagation executes a backward pass to update all 13B weights. For every trainable parameter, the GPU must store 1 gradient value (to measure error contribution) plus 2 optimizer state values for Adam (momentum and variance). At 2 bytes per value, those 3 extra states cost 13B × 3 × 2 bytes = 78 GB. Add the 26 GB of weights and you are already at 104 GB—before counting the massive forward-pass activations that must be kept in memory to compute gradients (which require gradient checkpointing to tame).\n\nLoRA attacks the 78 GB optimizer/gradient bottleneck. Instead of updating the 4096 × 4096 weight matrices directly, LoRA freezes the 13B base weights (zero gradients, zero Adam states) and inserts tiny rank-r matrices A (4096 × 8) and B (8 × 4096). Because trainable parameters drop below 1%, gradient and Adam memory shrinks from 78 GB to a few hundred megabytes.\n\nHowever, the frozen 26 GB base weights still won’t fit on a 24 GB GPU. QLoRA solves this final bottleneck by quantizing the frozen base weights into 4-bit NormalFloat (NF4), shrinking them from 26 GB to 6.5 GB, dequantizing them to BF16 on the fly during matrix multiplication, and using paged optimizers to overflow any activation spikes to CPU RAM—fitting the entire 13B training job inside ~10–12 GB of VRAM.',
+          'When you run inference on a 13B model in 16-bit precision (2 bytes per parameter), you only execute the forward pass. You load 13B × 2 bytes = 26 GB of static weights plus roughly 20% (5.2 GB) for activations and KV cache, totaling 31.2 GB.\n\nWhen you do full finetuning, backpropagation executes a backward pass to update all 13B weights.',
       },
       {
         id: 'ch07-feynman-2',
@@ -1041,7 +1030,7 @@ export const ch07Mastery: ChapterMastery = {
           'Explains Multi-LoRA serving: when hosting 100 customer models sharing one base model, keeping W_0 separate from 100 tiny (A, B) pairs saves ~98% storage/VRAM and allows millisecond hot-swapping.',
         ],
         modelExplanation:
-          'At first glance, it seems paradoxical that a model requiring billions of parameters to pre-train can be adapted by updating less than 0.1% of its weights. Research by Aghajanyan et al. shows that pre-training acts as an intrinsic dimension compressor: once a large model has learned general representations of language and code, adapting it to a specific downstream behavior only requires moving along a very low-dimensional manifold.\n\nEarly PEFT methods like Houlsby adapters exploited this by inserting two small bottleneck layers sequentially inside every transformer block. While parameter-efficient, those extra layers had to be executed one after another during inference, permanently increasing latency.\n\nLoRA eliminates this latency penalty by placing its adapter in parallel with each existing weight matrix W_0 (of shape n × m). LoRA defines two small matrices, A (shape n × r) and B (shape r × m). Their product A × B produces a matrix W_AB of the exact same shape (n × m) as W_0. For a single-model deployment, before you start the server, you simply compute W\' = W_0 + (α/r)(A × B) once offline. At runtime, the model executes the exact same single matrix multiplication W\'x as the base model—zero extra layers and zero added latency.\n\nThe only time you intentionally keep W_0 and (A, B) separate at inference is Multi-LoRA serving: if you serve 100 enterprise customers from one base model, merging creates 100 full copies of W\' (e.g., 1.68B parameters for one layer across 100 tenants), whereas keeping one frozen W_0 in VRAM and dynamically applying each tenant’s tiny (A_i, B_i) adapter takes only 23.3M parameters and lets you hot-swap customer models in milliseconds.',
+          'At first glance, it seems paradoxical that a model requiring billions of parameters to pre-train can be adapted by updating less than 0.1% of its weights. Research by Aghajanyan et al. shows that pre-training acts as an intrinsic dimension compressor: once a large model has learned general representations of language and code, adapting it to a specific downstream behavior only requires moving along a very low-dimensional manifold.\n\nEarly PEFT methods like Houlsby adapters exploited this by inserting two small bottleneck layers sequentially inside every transformer block.',
       },
     ],
   },
@@ -1218,7 +1207,7 @@ export const ch07Mastery: ChapterMastery = {
     figuresIncluded: 14,
     antiAiVerified: true,
     auditNotes:
-      'Verified 100% coverage of all Chapter 7 sections: Finetuning Overview (transfer learning, continued pre-training, SFT, infilling, preference, long-context Code Llama), When to Finetune / Reasons Not To, Domain-Specific Tasks (BloombergGPT vs GPT-4 Table 7-1), Finetuning vs RAG (Ovadia et al. Table 7-2 & adaptation progression workflow), Memory Bottlenecks (Backpropagation, Inference & Training Memory Math, Activations & Gradient Checkpointing), Numerical Representations (FP32, FP16, BF16, TF32, INT8, INT4, BitNet b1.58 Table 7-4), Quantization (PTQ vs QAT vs Mixed Precision), PEFT (Partial vs Adapters vs Soft Prompts, LoRA math, Intrinsic Dimension, LoRA target matrices Table 7-5, Multi-LoRA serving math, QLoRA NF4 & Guanaco Table 7-7), Model Merging (Summing, Linear Combination, Task Vectors, SLERP, TIES/DARE pruning, Layer Stacking, Frankenmerging, Sparse MoE Upcycling, SOLAR Depthwise Scaling, Concatenation), and Finetuning Tactics (Progression vs Distillation paths, Frameworks, Learning Rate, Batch Size/Gradient Accumulation, Epochs, Prompt Loss Weight). Zero AI clichés used.',
+      'Verified 100% coverage of all Chapter 7 sections: Finetuning Overview (transfer learning, continued pre-training, SFT, infilling, preference, long-context Code Llama), When to Finetune / Reasons Not To, Domain-Specific Tasks (BloombergGPT vs GPT-4 Table 7-1), Finetuning vs RAG (Ovadia et al.',
   },
 };
 
@@ -1228,10 +1217,10 @@ export const ch08Mastery: ChapterMastery = {
   title: 'Dataset Engineering',
   subtitle:
     'Data-Centric AI, The Golden Curation Trio (Quality, Coverage, Quantity), AI-Powered Synthesis & Verification, Model Distillation, and the 5-Stage Data Processing Pipeline',
-  readingTimeMinutes: 50,
+  readingTimeMinutes: 9,
   sourceWordCount: 15820,
   executiveThesis:
-    'As foundation model architectures converge and commodity finetuning frameworks automate the training loop, proprietary dataset engineering has become the primary moat in AI engineering. Creating datasets that maximize model capability within budget requires balancing the Golden Data Trio—Quality (relevance, alignment, consistency, formatting, uniqueness, compliance), Coverage (domain, task, and instruction diversity across training phases), and Quantity (navigating PEFT vs. full-finetuning scaling curves and model ossification)—while combining real user data flywheels with verified synthetic data pipelines (Self-Instruct, reverse instruction, execution-verified code synthesis, and distillation) and rigorous deduplication, cleaning, and chat-template formatting.',
+    'As foundation model architectures converge and commodity finetuning frameworks automate the training loop, proprietary dataset engineering has become the primary moat in AI engineering. Creating datasets that maximize model capability within budget requires balancing the Golden Data Trio.',
   paradigmShift: {
     oldWay:
       'Model-centric AI: treating the dataset as a static, pre-packaged commodity (or scraping massive unverified web dumps) while spending 95% of engineering effort tweaking model architectures and optimizer hyperparameters.',
@@ -1331,7 +1320,7 @@ export const ch08Mastery: ChapterMastery = {
           step: '1',
           label: 'Code & Math Annealing Boosts Reasoning',
           explanation:
-            'Even though code and math are a tiny fraction of raw web text, Llama 3 allocates ~42% of pre-training and SFT data to them—and anneals with small learning rates on pure code/math—to sharpen formal reasoning.',
+            'Even though code and math are a tiny fraction of raw web text, Llama 3 allocates ~42% of pre-training and SFT data to them.',
         },
         {
           step: '2',
@@ -1349,7 +1338,7 @@ export const ch08Mastery: ChapterMastery = {
           step: '4',
           label: 'High-Data Regime & Model Ossification (550K+ Examples)',
           explanation:
-            'At 550,000 examples, small models catch up completely via full finetuning—and at multi-million scale, pre-trained weights can even suffer ossification compared to training from scratch.',
+            'At 550,000 examples, small models catch up completely via full finetuning.',
         },
       ],
     },
@@ -1442,7 +1431,7 @@ export const ch08Mastery: ChapterMastery = {
           step: '1',
           label: 'Execution & Back-Translation Verification',
           explanation:
-            'Synthetic code is filtered through parsers, linters, and AI-generated unit tests; failed code is fed back with compiler errors (recovering 20% of solutions), while documentation is verified by round-trip back-translation.',
+            'Synthetic code is filtered through parsers, linters, and AI-generated unit tests.',
         },
         {
           step: '2',
@@ -1474,7 +1463,7 @@ export const ch08Mastery: ChapterMastery = {
       naiveIntuition:
         'Because deep learning scales with data size during pre-training, dumping every available scraped instruction dataset (hundreds of thousands of rows) into SFT will always produce a stronger assistant.',
       firstPrinciplesReality:
-        'Pre-training requires trillions of tokens to learn world knowledge, but post-training (SFT) aligns surface behavior and reasoning patterns. The Yi model team (Young et al., 2024) proved that 10,000 carefully crafted instructions outperform hundreds of thousands of noisy ones, and LIMA (Zhou et al., 2023) showed that finetuning a 65B Llama model on just 1,000 curated examples produced responses preferred or equal to GPT-4 in 43% of human evaluations (though 1K examples alone lacks production edge-case robustness).',
+        'Pre-training requires trillions of tokens to learn world knowledge, but post-training (SFT) aligns surface behavior and reasoning patterns.',
       howToApply:
         'Start every finetuning project by hand-curating and manually inspecting 50 to 1,000 gold-standard examples that are both high-quality and task-diverse before scaling up acquisition.',
     },
@@ -1486,9 +1475,9 @@ export const ch08Mastery: ChapterMastery = {
       naiveIntuition:
         'A model cannot improve by training on its own synthetic outputs (or a smaller model’s outputs) because a student can never exceed the ceiling of its teacher.',
       firstPrinciplesReality:
-        'Training indiscriminately on raw self-generated data degrades quality and triggers Model Collapse (Shumailov et al., 2023). However, verification is often strictly easier than generation: when Llama 3 filtered synthetic code through compilers, linters, and unit tests (and prompted the model to self-correct the 20% of failing solutions using execution tracebacks), or when NVIDIA’s 340B Nemotron-4 trained on filtered synthetic data from a smaller 56B Mixtral teacher, the resulting models surpassed their teachers.',
+        'Training indiscriminately on raw self-generated data degrades quality and triggers Model Collapse (Shumailov et al., 2023).',
       howToApply:
-        'Never train on raw synthetic outputs. Pair every synthesis pipeline with an asymmetric verifier: compilers/unit tests for code, symbolic solvers for math, back-translation for documentation/low-resource languages, Reverse Instruction (generating prompts for real human long-form text), or position-swapped AI judges.',
+        'Never train on raw synthetic outputs.',
     },
     {
       id: 'ch08-mm-manual-eyeball-ratio',
@@ -1498,7 +1487,7 @@ export const ch08Mastery: ChapterMastery = {
       naiveIntuition:
         'Data quality should be managed purely through automated summary metrics, embedding cluster plots, and LLM-as-a-Judge filtering pipelines without engineers reading raw rows.',
       firstPrinciplesReality:
-        'Automated scripts only catch failure modes you already anticipated. Spending 15 minutes reading raw training pairs, re-annotating samples yourself, and checking distributions by annotator ID and session timestamp immediately exposes silent killers: float columns rounded to integers, HTML residue, annotators who become fatigued in the second half of a shift (Kern et al., 2024), or contradictory labels for identical queries.',
+        'Automated scripts only catch failure modes you already anticipated.',
       howToApply:
         'Before running any training job or automated deduplication script, manually inspect at least 50–100 random, shortest, longest, and outlier examples across every data source and annotator cohort.',
     },
@@ -1511,18 +1500,15 @@ export const ch08Mastery: ChapterMastery = {
       subtitle:
         'Teaching CoT and tool use, the 6 pillars of Data Quality, Llama 3 domain mixes, dataset scaling curves, and model ossification',
       coreMechanism:
-        'While model-centric AI holds the dataset fixed (e.g., ImageNet) and innovates on neural architecture, **data-centric AI** (championed by Andrew Ng and benchmarked via DataComp, DataPerf, and dcbench) holds the model architecture fixed and engineers the dataset to maximize downstream performance. The organizational shift is stark: GPT-3 (2020) credited just 2 researchers with data collection and deduplication, whereas GPT-4 (2023) credited 80 researchers across data pipelines—including 11 researchers just for the ChatML format.\n\nDataset curation must first match the target training stage and behavior: self-supervised sequences for continued pre-training; `(instruction, response)` pairs for SFT; `(instruction, winning_response, losing_response)` triplets or `((instruction, response), score)` pairs for preference finetuning and reward models. Teaching complex behaviors requires specialized structures: **Chain-of-Thought (CoT)** requires step-by-step reasoning traces rather than bare final answers (Chun et al., 2024 showed CoT finetuning nearly doubles accuracy across model scales), while **Tool Use** requires multi-message chat formats with source/destination headers (as in Llama 3) and often benefits from simulation rather than human observation because humans use GUIs and browsers whereas AI agents operate far more efficiently via direct API calls. Crucially, curation also means **removing data** to unlearn bad habits—such as scrubbing training annotations that contain unsolicited style rewrites when a user only asked for fact-checking.\n\nEvery dataset is governed by the **Golden Trio**:\n1. **Data Quality (6 Characteristics):** Examples must be *Relevant* to the target temporal/domain context, *Aligned with task requirements* (factual when facts are needed, creative when creativity is needed), *Consistent* across annotators (backed by rigorous annotation guidelines), *Correctly formatted* (free of stray HTML tags, trailing whitespace, or float-to-int rounding bugs), *Sufficiently unique* (deduplicated), and *Compliant* (free of PII and copyright/policy violations).\n2. **Data Coverage (Diversity):** As Zhou et al. (2023) proved in Figure 8-1, a 7B model trained on 2,000 examples that are *both* high-quality and diverse decisively beats one trained on data that is only high-quality or only diverse. Coverage spans task types, topics, instruction lengths, typos, single-turn vs. multi-turn dialogues, and phase-specific domain mixes (Table 8-1: Llama 3 uses ~42% combined math and code during pre-training and SFT—plus learning-rate annealing on code/math—to build general reasoning, then drops code/math to 12.82% during preference tuning to mirror real user queries). Beware "The Data Addition Dilemma" (Shen et al., 2024): blindly adding heterogeneous, unaligned data can degrade target task accuracy.\n3. **Data Quantity & Scaling Curves:** Pre-training scales in trillions of tokens (Llama 2: 2T tokens; Llama 3: 16T tokens), whereas SFT scales in hundreds to millions of examples. Quantity requirements depend on three factors: *Finetuning Technique* (PEFT/LoRA works with 100–5,000 examples; Full Finetuning needs 10,000–1,000,000+), *Task Complexity*, and *Base Model Strength* (Figure 8-2: at 100 examples, stronger base models win by a massive margin; at 550,000 examples, all base models converge). At extreme data volumes (millions of examples), finetuning a pre-trained model can actually underperform training from scratch due to **ossification** (Hernandez et al., 2021), where pre-training freezes weight flexibility—a pathology that hits smaller models hardest. Engineers can also use multi-stage curriculum transfer (Self-supervised legal docs -> Supervised legal Q&A; Tweet sentiment -> Product sentiment; Synthetic medical -> Real medical) and plot performance at 25%, 50%, and 100% dataset subsets (Figure 8-3) alongside task-diversity scaling (Figure 8-4: Chung et al. showed steep gains from 9 to 282 tasks before plateauing toward 1,836 tasks) to predict ROI before buying more annotations.',
+        'While model-centric AI holds the dataset fixed (e.g., ImageNet) and innovates on neural architecture, **data-centric AI** (championed by Andrew Ng and benchmarked via DataComp, DataPerf, and dcbench) holds the model architecture fixed and engineers the dataset to maximize downstream performance. The organizational shift is stark: GPT-3 (2020) credited just 2 researchers with data collection and deduplication, whereas GPT-4 (2023) credited 80 researchers across data pipelines.\n\nDataset curation must first match the target training stage and behavior: self-supervised sequences for continued pre-training.',
       keyTakeaways: [
-        'Data Quality rests on six pillars: Relevant, Aligned with task requirements, Consistent across annotators, Correctly formatted, Sufficiently unique, and Compliant.',
-        'Code and math data (~42% of Llama 3 pre-training and SFT tokens) disproportionately boost a model’s general reasoning capability, especially when annealed at low learning rates.',
-        'If you have small data (100–1,000 rows), apply PEFT (LoRA) to the strongest base model you can afford; if you have massive data (500K+ rows), apply full finetuning to a smaller, cheaper model.',
-        'Plot accuracy across 25%, 50%, and 100% of a small 50–100 example pilot dataset to measure the slope of diminishing returns before committing budget to large-scale annotation.',
-      ],
+          'Data Quality rests on six pillars: Relevant, Aligned with task requirements, Consistent across annotators, Correctly formatted, Sufficiently unique, and Compliant.',
+          'Code and math data (~42% of Llama 3 pre-training and SFT tokens) disproportionately boost a model’s general reasoning capability, especially when annealed at low learning rates.',
+        ],
       commonPitfalls: [
-        'Having human experts record screen/browser workflows for AI tool-use training when the AI agent should be invoking batch APIs directly.',
-        'Abandoning explicit annotation guidelines halfway through a project and hoping the LLM will infer the difference between a score-3 and score-4 response on its own.',
-        'Finetuning a small pre-trained model on millions of domain examples without checking for weight ossification against a from-scratch baseline.',
-      ],
+          'Having human experts record screen/browser workflows for AI tool-use training when the AI agent should be invoking batch APIs directly.',
+          'Abandoning explicit annotation guidelines halfway through a project and hoping the LLM will infer the difference between a score-3 and score-4 response on its own.',
+        ],
       figures: [
         {
           file: 'aien_0801.png',
@@ -1532,8 +1518,8 @@ export const ch08Mastery: ChapterMastery = {
           editorialAnalysis:
             'Comparing three 2,000-example finetunes of a 7B model across 5 quality buckets (1 = terrible to 5 = great), the dataset combining High Quality + High Diversity achieves 45.7% top-tier (score 5) responses and 27.6% score-4 responses, crushing both the Low-Diversity/High-Quality cohort (23.7% score 5) and the High-Diversity/Low-Quality cohort (19.0% score 5).',
           keyTakeaways: [
-            'High quality on a narrow topic overfits; high diversity with noisy labels confuses the model.',
-          ],
+          'High quality on a narrow topic overfits; high diversity with noisy labels confuses the model.',
+        ],
         },
         {
           file: 'aien_0802.png',
@@ -1543,8 +1529,8 @@ export const ch08Mastery: ChapterMastery = {
           editorialAnalysis:
             'On the SNLI benchmark across dataset sizes from 10^2 (100) to 5.5×10^5 (550K) examples, the five model tiers (ada through davinci) are separated by ~25 percentage points of accuracy at 100 examples, but converge to nearly identical ~90% accuracy at 550,000 examples.',
           keyTakeaways: [
-            'Invest in a stronger base model when labeled data is scarce; invest in a smaller, cheaper base model when you have hundreds of thousands of examples.',
-          ],
+          'Invest in a stronger base model when labeled data is scarce.',
+        ],
         },
         {
           file: 'aien_0803.png',
@@ -1554,8 +1540,8 @@ export const ch08Mastery: ChapterMastery = {
           editorialAnalysis:
             'The logarithmic performance curve shows steep accuracy gains across the initial subsets (e.g., 25% to 50% of data) followed by diminishing marginal returns as dataset size doubles toward 100%.',
           keyTakeaways: [
-            'Always run a subsampling curve before spending $50,000 on additional human annotations.',
-          ],
+          'Always run a subsampling curve before spending $50,000 on additional human annotations.',
+        ],
         },
         {
           file: 'aien_0804.png',
@@ -1565,8 +1551,8 @@ export const ch08Mastery: ChapterMastery = {
           editorialAnalysis:
             'Tracked across 8B, 62B, and 540B PaLM/Flan models on log-scaled task counts (from 9 to 1,836 tasks), normalized performance climbs steeply between 9 and 282 tasks for all model sizes before transitioning to gentle incremental gains up to 1,836 tasks.',
           keyTakeaways: [
-            'Exposure to diverse task types (summarization, classification, QA, extraction) prevents instruction overfitting and unlocks zero-shot generalization.',
-          ],
+          'Exposure to diverse task types (summarization, classification, QA, extraction) prevents instruction overfitting and unlocks zero-shot generalization.',
+        ],
         },
       ],
     },
@@ -1575,9 +1561,9 @@ export const ch08Mastery: ChapterMastery = {
       sectionNumber: '8.2',
       title: 'Data Acquisition, Traditional & AI-Powered Data Synthesis, and Verification Pipelines',
       subtitle:
-        'Proprietary data flywheels, rule-based/simulation synthesis, Self-Instruct, Reverse Instruction, Llama 3’s 2.7M coding pipeline, and functional vs. AI-judge verification',
+        'Proprietary data flywheels, rule-based/simulation synthesis, Self-Instruct, Reverse Instruction, Llama 3’s 2.7M coding pipeline, and functional vs.',
       coreMechanism:
-        'The highest-leverage data source is always **your own application’s production data flywheel**—user queries, implicit/explicit user feedback, and usage logs—because it matches the exact target distribution better than any public benchmark. When bootstrapping before a flywheel exists, engineers mix-and-match public repositories (Hugging Face, Kaggle, Google Dataset Search, Data.gov, ICPSR, UCI, OpenML, EleutherAI’s `lm-evaluation-harness` with 400+ datasets averaging 2,000+ examples, SNAP)—always auditing data lineage and commercial licensing down to the underlying source—with targeted human annotation and data synthesis. For example, starting with 10K public pairs, an engineer might filter out 1K bad instructions, keep 6K good pairs, manually re-write responses for 3K good instructions, synthesize 2K new instructions from 100 topic templates, and manually annotate them to reach 11K clean examples.\n\nProgrammatic data generation splits into **Data Augmentation** (transforming real data, e.g., flipping images or replacing gendered pronouns like "She’s a fantastic nurse" -> "He’s a fantastic nurse" to mitigate bias, or adding adversarial perturbations as in One Pixel Attack / ImageNet-C / BERT’s 1.5% random token replacement) and **Data Synthesis** (creating artificial data from scratch). Engineers synthesize data for five core reasons: (1) *Quantity* (rare events), (2) *Coverage* (targeted lengths, rare classes, TrueTeacher factual-inconsistency pairs, Anthropic’s 154 model-written behavioral evaluations), (3) *Quality* (superhuman math problems, consistent AI preference ratings without human mood swings, API-native tool trajectories), (4) *Privacy compliance* (synthetic HIPAA medical records or insurance claims), and (5) *Model Distillation*.\n\nTraditional synthesis relies on **Rule-Based Templates** (Faker credit-card fraud templates, regexes, and DeepMind’s AlphaGeometry trained on 100M synthetic geometry proofs) and **Simulations** (CARLA/Waymo self-driving engines, robotics Sim2Real coffee pouring, API tool-use trajectory search). **AI-Powered Synthesis** expands this dramatically: AI simulates APIs without calling them (`StableToolBench`), executes **Self-Play** (OpenAI’s Dota 2 bot playing 180 years/day; AlphaGo; AI customer vs. AI support agent), paraphrases math problems (`MetaMath` expanding 15K GSM-8K/MATH problems into 400K), translates high-resource languages or code into low-resource ones verified by **back-translation** ($X \\to Y \\to X\'$), and powers post-training preference labeling (where NVIDIA’s Nemotron-4 eliminated first-position bias by querying the AI judge twice with swapped response orders and keeping only consistent winners).\n\nFor SFT instruction synthesis, `UltraChat` generated hierarchical topic/subtopic trees (30 topics $\\times$ 30–50 subtopics), while Stanford’s `Alpaca` used **Self-Instruct** (Wang et al., 2022) to expand 175 human seed `(instruction, response)` pairs into 52,000 pairs via `text-davinci-003`. Because LLMs hallucinate more on long responses than short instructions, **Reverse Instruction** (`LongForm` / Köksal et al. / Li et al.) takes real, human-written long-form articles/books as the ground-truth response and prompts an LLM to synthesize the instruction that would elicit them—enabling self-bootstrapping without new manual labels. Similarly, **Long-Context Synthesis** splits a long document into `<8K` chunks, generates `(Q, A)` pairs per chunk, and re-pairs them with the full `128K` document as context. Finally, **Data Verification** separates usable synthetic data from toxic noise: Llama 3 generated **2.7 million synthetic coding examples** by synthesizing problem descriptions, generating CoT solutions + AI-written unit tests, running parsers/linters/unit tests, prompting the LLM to self-correct failing code using compiler feedback (fixing 20% of initially broken solutions!), and verifying code documentation via round-trip code-to-doc-to-code back-translation. Where functional execution is impossible, teams use AI verifiers (1–5 rubric scorers, real-vs-synthetic discriminators, topic/outlier detectors) and Self-Instruct heuristics (dropping repetitive, too-short/too-long, contradictory, or input-copying outputs).',
+        'The highest-leverage data source is always **your own application’s production data flywheel**.\n\nProgrammatic data generation splits into **Data Augmentation** (transforming real data, e.g., flipping images or replacing gendered pronouns like "She’s a fantastic nurse" -> "He’s a fantastic nurse" to mitigate bias, or adding adversarial perturbations as in One Pixel Attack / ImageNet-C / BERT’s 1.5% random token replacement) and **Data Synthesis** (creating artificial data from scratch). Engineers synthesize data for five core reasons: (1) *Quantity* (rare events), (2) *Coverage* (targeted lengths, rare classes, TrueTeacher factual-inconsistency pairs, Anthropic’s 154 model-written behavioral evaluations), (3) *Quality* (superhuman math problems, consistent AI preference ratings without human mood swings, API-native tool trajectories), (4) *Privacy compliance* (synthetic HIPAA medical records or insurance claims), and (5) *Model Distillation*.',
       stepByStepFlow: [
         {
           step: 'Step 1',
@@ -1611,15 +1597,13 @@ export const ch08Mastery: ChapterMastery = {
         },
       ],
       keyTakeaways: [
-        'Reverse Instruction flips generation: use real human long-form text as the response and use AI to generate the short instruction, avoiding long-response hallucinations.',
-        'In preference data synthesis, always run the AI judge twice with swapped response order (A, B) and (B, A) to eliminate first-position bias (as done in Nemotron-4).',
-        'Coding dominates synthetic data (2.7M examples in Llama 3.1) because code can be functionally verified by compilers and unit tests rather than subjective judges.',
-        'In Llama 3’s synthesis pipeline, 20% of initially failing code solutions were successfully repaired by feeding compiler/unit-test errors back to the model.',
-      ],
+          'Reverse Instruction flips generation: use real human long-form text as the response and use AI to generate the short instruction, avoiding long-response hallucinations.',
+          'In preference data synthesis, always run the AI judge twice with swapped response order (A, B) and (B, A) to eliminate first-position bias (as done in Nemotron-4).',
+        ],
       commonPitfalls: [
-        'Generating 100+ synthetic instructions from a single narrow template, which destroys dataset lexical and structural diversity.',
-        'Trusting a public dataset’s top-level "Apache-2.0 / MIT" tag on Hugging Face without auditing whether subsets of its rows were scraped from non-commercial or copyrighted sources.',
-      ],
+          'Generating 100+ synthetic instructions from a single narrow template, which destroys dataset lexical and structural diversity.',
+          'Trusting a public dataset’s top-level "Apache-2.0 / MIT" tag on Hugging Face without auditing whether subsets of its rows were scraped from non-commercial or copyrighted sources.',
+        ],
       figures: [
         {
           file: 'aien_0805.png',
@@ -1628,8 +1612,8 @@ export const ch08Mastery: ChapterMastery = {
           editorialAnalysis:
             'The diagram shows how a human-authored seed task (Instruction: "Give three tips for staying healthy", Input: null, Output: 1..3 bullet list) is used as an in-context demonstration for GPT-3 (`text-davinci-003`) to synthesize novel task tuples ("Evaluate the following movie review on a scale of 1 to 5" with input text and output score).',
           keyTakeaways: [
-            'Self-Instruct synthesizes both new instructions and new input/output instances, requiring heuristic filtering to remove duplicates and degenerate echoes.',
-          ],
+          'Self-Instruct synthesizes both new instructions and new input/output instances, requiring heuristic filtering to remove duplicates and degenerate echoes.',
+        ],
         },
       ],
     },
@@ -1640,17 +1624,15 @@ export const ch08Mastery: ChapterMastery = {
       subtitle:
         'Quality control, superficial style imitation (Gudibande et al.), recursive Model Collapse (Shumailov et al.), obscure data lineage, and Teacher-Student distillation vs. reverse bootstrapping',
       coreMechanism:
-        'Despite its appeal, AI-generated data cannot completely replace human data due to four structural perils:\n1. **Quality Control ("Garbage In, Garbage Out"):** Without strict functional or rubric verification, synthetic errors silently poison training.\n2. **Superficial Imitation (Gudibande et al., 2023):** In *"The False Promise of Imitating Proprietary LLMs"*, researchers proved that finetuning a weak student model on outputs from a strong teacher (like GPT-4) teaches the student to mimic the teacher’s *surface style, formatting, and confident tone*, while failing to transfer underlying factual knowledge or reasoning on out-of-distribution tasks. Worse, when a teacher solves a complex math or knowledge question using capabilities the student lacks, training the student on that answer teaches the student to **hallucinate plausible-looking solutions** (a failure that also occurs when human annotators use external knowledge the base model lacks).\n3. **Potential Model Collapse (Shumailov et al., 2023 / Nature 2024):** Recursively training models on AI-generated data across generations causes irreversible defects across VAEs, GMMs, and LLMs. Because generative sampling favors high-probability modes (e.g., common phrasing or "no cancer") and under-samples low-probability tails ("rare cancer"), each recursive generation amplifies the head and erases the tails until the distribution collapses—while also amplifying social biases (*Data Feedback Loops*, Taori & Hashimoto, 2023). Crucially, Gerstgrasser et al. (2024) showed that while collapse is inevitable on 100% recursive synthetic replacements, **accumulating/mixing real human data alongside synthetic data** prevents collapse.\n4. **Obscure Data Lineage:** Synthetic generation launders provenance. If Model X was trained on copyrighted text or contaminated with Evaluation Benchmark B, and you train Model Y on synthetic data from Model X, Model Y inherits both copyright liability and benchmark contamination without your knowledge.\n\n**Model Distillation (Hinton et al., 2015)** is the targeted use of synthetic data where a smaller, faster student model is trained to mimic a larger teacher model—such as `DistilBERT` (40% smaller, 60% faster, retaining 97% of BERT’s capability), Stanford’s `Alpaca` (Llama-7B distilled on 52K `text-davinci-003` examples—4% the size of the 175B teacher), or BuzzFeed’s LoRA-distilled Flan-T5 (cutting inference cost by 80%). Engineers must check commercial terms of service first, as many proprietary model licenses prohibit distilling competing models. Finally, not all synthetic training is distillation: when a larger student (`Nemotron-4-340B`) is finetuned on 98% synthetic SFT/preference data generated by a smaller teacher (`Mixtral-8x7B`, 56B parameters) or via reverse-instruction bootstrapping, the student can decisively outperform the teacher.',
+        'Despite its appeal, AI-generated data cannot completely replace human data due to four structural perils:\n1. **Quality Control ("Garbage In, Garbage Out"):** Without strict functional or rubric verification, synthetic errors silently poison training.\n2. **Superficial Imitation (Gudibande et al., 2023):** In *"The False Promise of Imitating Proprietary LLMs"*, researchers proved that finetuning a weak student model on outputs from a strong teacher (like GPT-4) teaches the student to mimic the teacher’s *surface style, formatting, and confident tone*, while failing to transfer underlying factual knowledge or reasoning on out-of-distribution tasks. Worse, when a teacher solves a complex math or knowledge question using capabilities the student lacks, training the student on that answer teaches the student to **hallucinate plausible-looking solutions** (a failure that also occurs when human annotators use external knowledge the base model lacks).\n3. **Potential Model Collapse (Shumailov et al., 2023 / Nature 2024):** Recursively training models on AI-generated data across generations causes irreversible defects across VAEs, GMMs, and LLMs.\n\n**Model Distillation (Hinton et al., 2015)** is the targeted use of synthetic data where a smaller, faster student model is trained to mimic a larger teacher model.',
       keyTakeaways: [
-        'Superficial Imitation trap: training a small model on complex teacher answers it lacks the base capacity to reason through teaches the student to hallucinate with high stylistic confidence.',
-        'Model Collapse occurs because generative sampling over-represents probable head events and drops rare tail events across recursive generations; mixing real data with synthetic data prevents collapse.',
-        'Synthetic data obscures data lineage, creating hidden risks of both copyright infringement and evaluation benchmark contamination.',
-        'Distillation transfers capability from a large teacher to a small student (e.g., DistilBERT, Alpaca), whereas synthetic bootstrapping (e.g., Mixtral-8x7B -> Nemotron-4-340B) can train a student stronger than its teacher.',
-      ],
+          'Superficial Imitation trap: training a small model on complex teacher answers it lacks the base capacity to reason through teaches the student to hallucinate with high stylistic confidence.',
+          'Model Collapse occurs because generative sampling over-represents probable head events and drops rare tail events across recursive generations.',
+        ],
       commonPitfalls: [
-        'Distilling GPT-4 outputs into an open-weight commercial product without verifying the teacher API’s Terms of Service (which often ban training competing models).',
-        'Replacing 100% of real training data with synthetic outputs across multiple model generations instead of retaining and mixing the real ground-truth corpus.',
-      ],
+          'Distilling GPT-4 outputs into an open-weight commercial product without verifying the teacher API’s Terms of Service (which often ban training competing models).',
+          'Replacing 100% of real training data with synthetic outputs across multiple model generations instead of retaining and mixing the real ground-truth corpus.',
+        ],
     },
     {
       id: 'ch08-sec-data-processing-pipeline',
@@ -1659,18 +1641,15 @@ export const ch08Mastery: ChapterMastery = {
       subtitle:
         'Token/verb-noun distributions, MinHash/Bloom deduplication, Databricks’ HTML stripping win, annotator fatigue filtering, and byte-exact chat template parity',
       coreMechanism:
-        'Once raw data is acquired or synthesized, it must pass through a disciplined 5-stage processing pipeline. Two engineering rules govern the entire pipeline: (1) **Order operations by compute cost** (if cleaning takes longer per row than deduplication, deduplicate first; if pairwise deduplication is slower than heuristic length filtering, filter first) and always run small trial runs; and (2) **Never mutate raw data in place**—always preserve an immutable raw copy because script bugs corrupt datasets and future tasks will need different filtering rules.\n\n**Stage 1: Inspect Data.** Combine automated statistical profiling with 15 minutes of manual inspection (Greg Brockman’s highest value-to-prestige activity). Plot distributions of token counts, input/response lengths, topics, languages, and `(verb, direct_object_noun)` grammatical diversity—as Peng et al. (2023) did to prove GPT-4 generates both longer responses and a much broader spectrum of verb-noun pairs than GPT-3 (Figures 8-6 and 8-7). Slice distributions by annotator ID and timestamp to spot rogue labelers or score inflation, and measure inter-annotator disagreement.\n\n**Stage 2: Deduplicate Data.** Duplicates skew learned priors (e.g., Table 8-3: three duplicate rows of `{item: pencil, color: red} -> $20` teach the model that all red items are expensive) and cause train/test split contamination. Anthropic (Hernandez et al., 2022) proved that repeating just **0.1% of training data 100 times** degrades an 800M-parameter model’s performance down to a 400M-parameter model—wasting half the model’s parameters! Engineers must define granularity (whole-document, intra-document paragraph, or cross-document quote duplication) and similarity thresholds, then execute deduplication via **Hashing** (`MinHash` LSH, `Bloom filters`, `datasketch`, `lazyNLP`), **Dimensionality Reduction + Vector Search**, or **Pairwise Comparison** (exact, n-gram, fuzzy via `TheFuzz`/`Dedupe`/`dupeGuru`).\n\n**Stage 3 & 4: Clean and Filter Data.** Strip extraneous markup: **Databricks discovered that stripping extraneous HTML and Markdown tokens improved model accuracy by 20% while reducing input token lengths by 60%.** Scrub PII (names, zip codes), toxic text, and policy-violating fields. Filter out low-quality rows using heuristics discovered during manual inspection—such as Kern et al. (2024)’s finding that annotations created in the second half of an annotation session degrade due to annotator fatigue—and apply **Data Pruning** (`Sorscher et al., 2022`), **Active Learning**, or **Importance Sampling** when data volume exceeds compute budget.\n\n**Stage 5: Format Data.** Convert examples into the target model’s exact tokenizer and chat template (`ChatML`, Llama 3 headers). When graduating from few-shot prompting to SFT, strip verbose task descriptions and 3-shot examples (`Item: burger / Label: edible...`) down to compact training pairs (`burger -->` / `edible`, Table 8-4) to save inference tokens. Above all, enforce **byte-exact train-serve prompt parity**: if the model is finetuned on `"burger -->"`, passing `"burger"` (missing arrow), `"Item: burger -->"` (extra prefix), or `"burger --> "` (trailing space) at inference time will silently degrade accuracy.',
+        'Once raw data is acquired or synthesized, it must pass through a disciplined 5-stage processing pipeline. Two engineering rules govern the entire pipeline: (1) **Order operations by compute cost** (if cleaning takes longer per row than deduplication, deduplicate first; if pairwise deduplication is slower than heuristic length filtering, filter first) and always run small trial runs; and (2) **Never mutate raw data in place**—always preserve an immutable raw copy because script bugs corrupt datasets and future tasks will need different filtering rules.\n\n**Stage 1: Inspect Data.** Combine automated statistical profiling with 15 minutes of manual inspection (Greg Brockman’s highest value-to-prestige activity). Plot distributions of token counts, input/response lengths, topics, languages, and `(verb, direct_object_noun)` grammatical diversity—as Peng et al.',
       keyTakeaways: [
-        'Anthropic’s Deduplication Law: repeating 0.1% of data 100 times degrades an 800M model to the accuracy of a 400M model while also risking train/test contamination.',
-        'Databricks’ Cleaning Law: stripping extraneous HTML and Markdown formatting tokens boosted model accuracy by 20% and cut input token counts by 60%.',
-        'Annotator Fatigue Law (Kern et al., 2024): annotations produced in the second half of a labeling session exhibit measurably lower quality; inspect quality by timestamp and annotator ID.',
-        'Train-Serve Delimiter Parity: when compacting few-shot prompts into SFT delimiters (e.g., `{INPUT}-->`), even a single trailing space or missing arrow at inference time can break predictions.',
-      ],
+          'Anthropic’s Deduplication Law: repeating 0.1% of data 100 times degrades an 800M model to the accuracy of a 400M model while also risking train/test contamination.',
+          'Databricks’ Cleaning Law: stripping extraneous HTML and Markdown formatting tokens boosted model accuracy by 20% and cut input token counts by 60%.',
+        ],
       commonPitfalls: [
-        'Modifying a multi-gigabyte dataset in place without keeping an immutable raw copy, then discovering a regex bug corrupted 30% of the code blocks.',
-        'Splitting a dataset into train and validation sets *before* running fuzzy/MinHash deduplication, leaking near-duplicate examples into the validation set.',
-        'Training a model with compact SFT prompts (`{INPUT}-->`) but forgetting to update the production inference service, which still sends the old 3-shot prompt (`Item: {INPUT}\\nLabel:`).',
-      ],
+          'Modifying a multi-gigabyte dataset in place without keeping an immutable raw copy, then discovering a regex bug corrupted 30% of the code blocks.',
+          'Splitting a dataset into train and validation sets *before* running fuzzy/MinHash deduplication, leaking near-duplicate examples into the validation set.',
+        ],
       figures: [
         {
           file: 'aien_0806.png',
@@ -1678,10 +1657,10 @@ export const ch08Mastery: ChapterMastery = {
             'Figure 8-6. One statistic you can use is the distribution of (verb, direct object noun) in your data. Image from “Instruction Tuning with GPT-4” (Peng et al., 2023).',
           bierutTitle: 'Sunburst Verb-Noun Profiling Exposes Lexical and Task Diversity Across Synthetic Datasets',
           editorialAnalysis:
-            'The two concentric sunburst charts map inner rings (root verbs like write, generate, explain, list, create) to outer rings (direct object nouns like story, poem, code, essay, list) for GPT-4 vs. GPT-3 outputs on the same instructions, visually revealing whether a dataset is dominated by repetitive templates.',
+            'The two concentric sunburst charts map inner rings (root verbs like write, generate, explain, list, create) to outer rings (direct object nouns like story, poem, code, essay, list) for GPT-4 vs.',
           keyTakeaways: [
-            'Plotting (verb, direct-object noun) pairs catches template collapse where 50% of synthetic instructions start with the exact same verb phrasing.',
-          ],
+          'Plotting (verb, direct-object noun) pairs catches template collapse where 50% of synthetic instructions start with the exact same verb phrasing.',
+        ],
         },
         {
           file: 'aien_0807.png',
@@ -1691,8 +1670,8 @@ export const ch08Mastery: ChapterMastery = {
           editorialAnalysis:
             'Comparing frequency histograms across character/token length bins (<100 to >=1000), GPT-3 outputs skew heavily toward short responses (100–400 chars), whereas GPT-4 outputs shift significantly toward longer, multi-paragraph explanations (500–1000+ chars).',
           keyTakeaways: [
-            'Always plot input and response length distributions by source and annotator to prevent training a model that is unintentionally terse or overly verbose.',
-          ],
+          'Always plot input and response length distributions by source and annotator to prevent training a model that is unintentionally terse or overly verbose.',
+        ],
         },
       ],
     },
@@ -1750,11 +1729,11 @@ export const ch08Mastery: ChapterMastery = {
       roleAndContext:
         'Staff AI Engineer building an internal Rust and Go microservice code generator by finetuning a 7B base model.',
       symptomOrFailure:
-        'The team generated 200,000 synthetic (instruction, code) pairs by prompting a larger LLM and immediately ran SFT on the 7B model. In production, the finetuned 7B model writes beautifully formatted Markdown explanations and confident comments, but 42% of its Rust code fails to compile due to hallucinated crate imports and borrow-checker errors.',
+        'The team generated 200,000 synthetic (instruction, code) pairs by prompting a larger LLM and immediately ran SFT on the 7B model.',
       naiveFixAndWhyItFails:
         'Generating another 300,000 unverified synthetic examples from the same teacher or training the 7B model on its own outputs only deepens the **Superficial Imitation** trap (Gudibande et al., 2023) and triggers **Model Collapse**, teaching the 7B model to mimic the surface style of solutions without functional correctness.',
       firstPrinciplesSolution:
-        'Rebuild the dataset pipeline using Llama 3’s execution-verified synthesis architecture: (1) For every synthetic Rust/Go solution, generate unit tests and run the code through `cargo check`/`go vet`, linters, and test runners; (2) Feed compiler errors back to the teacher model to self-correct failing solutions, discarding any example that still fails execution; (3) Verify code-to-documentation pairs using round-trip back-translation; and (4) Mix the verified synthetic dataset with real, human-authored internal repository PRs and anneal on high-quality code + math data.',
+        'Rebuild the dataset pipeline using Llama 3’s execution-verified synthesis architecture: (1) For every synthetic Rust/Go solution, generate unit tests and run the code through `cargo check`/`go vet`, linters, and test runners.',
       measurableOutcome:
         'Dataset size shrinks from 200,000 unverified rows to 65,000 execution-verified rows + 15,000 real internal PRs, while compilation pass rate jumps from 58% to 94.8%.',
     },
@@ -1764,11 +1743,11 @@ export const ch08Mastery: ChapterMastery = {
       roleAndContext:
         'Machine Learning Engineer finetuning a product categorization and price-anomaly model on 500,000 scraped e-commerce listings and vendor catalogs.',
       symptomOrFailure:
-        'Despite training on 500K examples, the finetuned 8B model has bloated input token counts, high inference latency, and bizarrely predicts that every "stainless steel" item costs $1,299—while showing suspiciously high validation accuracy (99%) that collapses to 68% in live production.',
+        'Despite training on 500K examples, the finetuned 8B model has bloated input token counts, high inference latency, and bizarrely predicts that every "stainless steel" item costs $1,299.',
       naiveFixAndWhyItFails:
         'Upgrading from an 8B base model to a 70B base model on the same dataset wastes 9x more compute while learning the exact same spurious correlations and train/validation leakage.',
       firstPrinciplesSolution:
-        'Execute the 5-Stage Data Processing Pipeline on an immutable copy of the raw data: (1) **Inspect**: 15 minutes of manual inspection reveals raw `<div>`/`<span>` HTML tags in scraped descriptions and a vendor catalog bug that duplicated 600 "$1,299 stainless steel" rows 100 times; (2) **Deduplicate**: Run MinHash LSH deduplication *before* splitting train/test sets to eliminate the 100x duplicate cluster (preventing Anthropic’s 50% effective model-size degradation and fixing train/test leakage); (3) **Clean**: Strip all HTML/Markdown tags (capturing Databricks’ +20% accuracy / -60% token length gain); and (4) **Format**: Convert verbose few-shot prompts into compact `{INPUT}-->` SFT delimiters matching production inference byte-for-byte.',
+        'Execute the 5-Stage Data Processing Pipeline on an immutable copy of the raw data: (1) **Inspect**: 15 minutes of manual inspection reveals raw `<div>`/`<span>` HTML tags in scraped descriptions and a vendor catalog bug that duplicated 600 "$1,299 stainless steel" rows 100 times.',
       measurableOutcome:
         'Average input token length drops by 58%, the spurious "$1,299 stainless steel" bias vanishes, validation accuracy reflects true generalization, and live production accuracy rises from 68% to 91.2%.',
     },
@@ -1792,7 +1771,7 @@ export const ch08Mastery: ChapterMastery = {
             text: 'Use a PEFT method (like LoRA) on a larger, more capable base model—or use the Distillation Path where the strong finetuned model synthesizes a larger verified dataset to train a small student.',
             isCorrect: true,
             explanation:
-              'With only ~100–150 examples, more advanced base models yield vastly superior finetuning performance because they already possess strong representations; PEFT (LoRA) is sample-efficient for small data.',
+              'With only ~100–150 examples, more advanced base models yield vastly superior finetuning performance because they already possess strong representations.',
           },
           {
             label: 'C',
@@ -1806,14 +1785,14 @@ export const ch08Mastery: ChapterMastery = {
             text: 'Train a model from scratch to avoid weight ossification.',
             isCorrect: false,
             explanation:
-              'Weight ossification only occurs when you have massive finetuning datasets (millions of examples); with 150 examples, training from scratch is impossible.',
+              'Weight ossification only occurs when you have massive finetuning datasets (millions of examples).',
           },
         ],
       },
       {
         id: 'ch08-q2',
         scenarioPrompt:
-          'Your team wants to synthesize high-quality (instruction, long-form article) pairs to finetune an essay-writing assistant. However, whenever you prompt an LLM to generate a 2,000-word article from a short synthetic prompt, the LLM introduces factual hallucinations and repetitive filler. Which technique from Chapter 8 directly solves this?',
+          'Your team wants to synthesize high-quality (instruction, long-form article) pairs to finetune an essay-writing assistant. However, whenever you prompt an LLM to generate a 2,000-word article from a short synthetic prompt, the LLM introduces factual hallucinations and repetitive filler.',
         options: [
           {
             label: 'A',
@@ -1848,14 +1827,14 @@ export const ch08Mastery: ChapterMastery = {
       {
         id: 'ch08-q3',
         scenarioPrompt:
-          'According to Gudibande et al. (2023) ("The False Promise of Imitating Proprietary LLMs") and Shumailov et al. (2023) ("The Curse of Recursion"), what are the two distinct dangers of training student models on synthetic LLM outputs?',
+          'According to Gudibande et al. (2023) ("The False Promise of Imitating Proprietary LLMs") and Shumailov et al.',
         options: [
           {
             label: 'A',
             text: 'Superficial imitation (mimicking teacher style while hallucinating on complex reasoning tasks the student lacks capacity for) and Model Collapse (recursive training over-representing high-probability modes while forgetting rare tail events).',
             isCorrect: true,
             explanation:
-              'Gudibande et al. showed imitation models copy surface style/tone while hallucinating on hard factual/reasoning tasks; Shumailov et al. showed recursive training on synthetic data collapses the distribution toward probable modes and erases rare tails.',
+              'Gudibande et al. showed imitation models copy surface style/tone while hallucinating on hard factual/reasoning tasks.',
           },
           {
             label: 'B',
@@ -1883,7 +1862,7 @@ export const ch08Mastery: ChapterMastery = {
       {
         id: 'ch08-q4',
         scenarioPrompt:
-          'You finetune a classification model on 10,000 examples formatted strictly as `"burger -->"` (input) and `"edible"` (output), stripping out your original 3-shot prompt template to save inference tokens. When deployed to production, accuracy unexpectedly drops by 35%. Upon inspecting production logs, which bug explains this drop?',
+          'You finetune a classification model on 10,000 examples formatted strictly as `"burger -->"` (input) and `"edible"` (output), stripping out your original 3-shot prompt template to save inference tokens. When deployed to production, accuracy unexpectedly drops by 35%.',
         options: [
           {
             label: 'A',
@@ -1921,42 +1900,42 @@ export const ch08Mastery: ChapterMastery = {
         id: 'ch08-fc1',
         category: 'data',
         front: 'What are the 6 characteristics of High-Quality Data for finetuning?',
-        back: '1. Relevant (matches target task & timeframe)\n2. Aligned with task requirements (factual vs. creative vs. concise as needed)\n3. Consistent (across examples and human/AI annotators)\n4. Correctly formatted (no stray HTML, whitespace, or type-casting bugs)\n5. Sufficiently unique (deduplicated)\n6. Compliant (no PII, copyright, or policy violations).',
+        back: '1.',
         mentalHook: 'R-A-C-C-U-C: Relevant, Aligned, Consistent, Cleanly formatted, Unique, Compliant.',
       },
       {
         id: 'ch08-fc2',
         category: 'data',
         front: 'What is "Model Ossification" (Hernandez et al., 2021), and which models are most susceptible to it?',
-        back: 'Model ossification is a phenomenon where pre-training "freezes" (ossifies) a model’s weights so they cannot adapt as effectively to a massive finetuning dataset compared to training a model from scratch. Smaller models are much more susceptible to ossification than larger models when finetuning data reaches millions of examples.',
+        back: 'Model ossification is a phenomenon where pre-training "freezes" (ossifies) a model’s weights so they cannot adapt as effectively to a massive finetuning dataset compared to training a model from scratch.',
         mentalHook: 'Ossification = Pre-trained bones harden on small models when fed millions of new rows.',
       },
       {
         id: 'ch08-fc3',
         category: 'data',
         front: 'How did the Llama 3 team verify synthetic code explanations and documentation without human annotators?',
-        back: 'They used Back-Translation: starting from an original code snippet (X), an LLM generated an explanation and documentation (Y). Then a second LLM prompt generated code (X\') purely from that explanation (Y). The pair was kept only if X\' was faithful/functionally equivalent to the original code X.',
+        back: 'They used Back-Translation: starting from an original code snippet (X), an LLM generated an explanation and documentation (Y).',
         mentalHook: 'Code -> Doc -> Code\' (Keep only if Code\' matches Code).',
       },
       {
         id: 'ch08-fc4',
         category: 'data',
         front: 'What causes "Model Collapse" (Shumailov et al., 2023), and how did Gerstgrasser et al. (2024) show it can be avoided?',
-        back: 'Model Collapse occurs when models are recursively trained on AI-generated data across generations: because models sample high-probability events more often than rare events, the distribution loses its tails and collapses. It can be avoided by accumulating/mixing real human data with synthetic data rather than replacing real data 100%.',
+        back: 'Model Collapse occurs when models are recursively trained on AI-generated data across generations: because models sample high-probability events more often than rare events, the distribution loses its tails and collapses.',
         mentalHook: 'Recursion erases the tails; mixing real data anchors the distribution.',
       },
       {
         id: 'ch08-fc5',
         category: 'data',
         front: 'What is the quantitative impact of (1) 0.1% data duplicated 100x (Anthropic) and (2) stripping extraneous HTML/Markdown tags (Databricks)?',
-        back: '1. Repeating just 0.1% of training data 100 times degrades an 800M-parameter model’s performance down to that of a 400M-parameter model (Anthropic, Hernandez et al., 2022).\n2. Removing extraneous HTML and Markdown tokens improved model accuracy by 20% while cutting input token lengths by 60% (Databricks).',
+        back: '1.',
         mentalHook: '0.1% × 100 dupes = 50% brain loss; Strip HTML = +20% accuracy & -60% tokens.',
       },
       {
         id: 'ch08-fc6',
         category: 'data',
         front: 'How do you synthesize training data to extend an 8K-context model to handle 128K-token contexts?',
-        back: '1. Split a long document (up to 128K tokens) into short chunks under 8K tokens.\n2. Use the 8K-capable model to generate (question, answer) pairs from each short chunk.\n3. Pair those (question, answer) pairs with the full unchunked long document (up to 128K tokens) as the training context.',
+        back: '1.',
         mentalHook: 'Generate Q&A on short 8K chunks -> Train on the full 128K document.',
       },
     ],
@@ -1973,7 +1952,7 @@ export const ch08Mastery: ChapterMastery = {
           'Notes how verified synthesis can even allow a larger student (e.g., Nemotron-4 340B) or a self-correcting model (Llama 3) to surpass its teacher.',
         ],
         modelExplanation:
-          'Dumping 500,000 raw synthetic examples into a 7B model and then recursively training v2 on v1’s outputs hits four well-documented landmines:\n\n1. **Superficial Imitation (Gudibande et al., 2023):** When a small 7B student trains on complex answers from a huge teacher, it quickly learns the teacher’s confident formatting and tone, but if the 7B base model lacks the underlying knowledge or reasoning steps, it actually learns to *hallucinate plausible-looking answers*.\n2. **Model Collapse (Shumailov et al., 2023):** If v2 trains recursively on v1’s unverified synthetic outputs, high-probability modes get over-sampled while rare edge cases (the tails of the distribution) vanish, causing irreversible quality decay.\n3. **Quality Control & Hallucinations:** Especially on long responses, raw LLM generations contain subtle bugs and repetitive patterns.\n4. **Obscure Lineage & Licensing:** Synthetic data hides whether the teacher regurgitated copyrighted text or leaked our evaluation benchmarks—and many proprietary APIs legally forbid distilling competing models.\n\nTo make synthetic data work, we must build an **asymmetric verification and mixing pipeline** like Llama 3:\n- First, include **Chain-of-Thought (CoT)** reasoning so the 7B model learns the intermediate steps rather than just mimicking final answers.\n- Second, **verify before training**: for code or SQL, pass every generated example through parsers, linters, and unit tests, and feed compiler errors back to the generator (which fixes ~20% of broken solutions). For long-form writing, use **Reverse Instruction** (keep real human documents as the response and only synthesize the prompt). For documentation or translation, use **Back-Translation**. For preference data, run the AI judge twice with swapped response orders to eliminate first-position bias.\n- Finally, never replace real data 100% across generations: always mix verified synthetic data with our real production user data flywheel and gold human annotations to anchor the tail distribution.',
+          'Dumping 500,000 raw synthetic examples into a 7B model and then recursively training v2 on v1’s outputs hits four well-documented landmines:\n\n1. **Superficial Imitation (Gudibande et al., 2023):** When a small 7B student trains on complex answers from a huge teacher, it quickly learns the teacher’s confident formatting and tone, but if the 7B base model lacks the underlying knowledge or reasoning steps, it actually learns to *hallucinate plausible-looking answers*.\n2. **Model Collapse (Shumailov et al., 2023):** If v2 trains recursively on v1’s unverified synthetic outputs, high-probability modes get over-sampled while rare edge cases (the tails of the distribution) vanish, causing irreversible quality decay.\n3. **Quality Control & Hallucinations:** Especially on long responses, raw LLM generations contain subtle bugs and repetitive patterns.\n4. **Obscure Lineage & Licensing:** Synthetic data hides whether the teacher regurgitated copyrighted text or leaked our evaluation benchmarks.',
       },
       {
         id: 'ch08-feynman-2',
@@ -1987,7 +1966,7 @@ export const ch08Mastery: ChapterMastery = {
           'Stage 5 (Format) & Operational Rules: Never mutate raw data in place; order steps by compute cost; strip few-shot boilerplate into compact SFT templates (`burger -->`) and enforce byte-exact train-serve prompt parity (no missing arrows or trailing spaces).',
         ],
         modelExplanation:
-          'Before touching a single line of data, rule zero is **never mutate the raw dataset in place**—keep an immutable backup so script bugs don’t destroy our source data—and order our processing steps so cheap filters run before expensive pairwise checks.\n\n**Stage 1: Inspect Data.** Spend at least 15 minutes manually reading raw rows and re-annotating a sample yourself. Then plot input/response length histograms and `(verb, direct-object noun)` pairings (like Peng et al., 2023) to check for lexical diversity. Slice quality by annotator ID and timestamp: Kern et al. (2024) proved that annotations written in the second half of a shift degrade significantly due to annotator fatigue.\n\n**Stage 2: Deduplicate Data.** Before splitting train and validation sets, run MinHash LSH or Bloom filter deduplication across documents and paragraphs. Why? First, duplicates leak across train/test splits. Second, they skew priors (like 3 duplicate rows teaching a model all red pencils cost $20). Third, Anthropic proved that repeating just 0.1% of data 100 times degrades an 800M model down to the performance of a 400M model.\n\n**Stage 3: Clean Data.** Web-scraped forum data is full of HTML and Markdown tags. Databricks found that stripping extraneous HTML and Markdown tokens increased model accuracy by 20% while slashing input token length by 60%. We also scrub all PII, zip codes, and toxic content here.\n\n**Stage 4: Filter & Prune Data.** Drop empty/outlier lengths, contradicting labels for identical queries, fatigued second-half annotations, and low AI-verifier rubric scores. If compute is tight, apply data pruning or importance sampling.\n\n**Stage 5: Format Data.** Convert the cleaned pairs into the base model’s exact tokenizer chat template, stripping verbose few-shot prefixes down to compact delimiters like `"burger -->"`. Most importantly, lock in byte-exact parity with the production server: if we train on `"burger -->"` and production sends `"burger"` or `"burger --> "` with one extra trailing space, accuracy will silently crater.',
+          'Before touching a single line of data, rule zero is **never mutate the raw dataset in place**.',
       },
     ],
   },
@@ -2082,7 +2061,7 @@ export const ch08Mastery: ChapterMastery = {
         chapterNumber: 8,
         importance: 2,
         definition:
-          'Training a smaller, faster student model (e.g., DistilBERT, Alpaca 7B) on outputs generated by a larger teacher model—or bootstrapping a larger student (Nemotron-4 340B).',
+          'Training a smaller, faster student model (e.g., DistilBERT, Alpaca 7B) on outputs generated by a larger teacher model.',
         whyItMatters:
           'Slashes production inference latency and cost by 40%–80%+ while retaining teacher-level task quality.',
       },
@@ -2157,6 +2136,6 @@ export const ch08Mastery: ChapterMastery = {
     figuresIncluded: 7,
     antiAiVerified: true,
     auditNotes:
-      'Verified 100% coverage of all Chapter 8 sections and all 7 extracted book figures (aien_0801.png through aien_0807.png): Data-Centric vs Model-Centric AI (DataComp, DataPerf, GPT-3 vs GPT-4 data team growth), Data Curation (CoT, Tool Use GUI vs API & Llama 3 multi-message headers, single vs multi-turn, unlearning bad behaviors), Data Quality (LIMA 1K, Yi 10K, 6 characteristics), Data Coverage (Llama 3 domain mixes across Pre-training/SFT/Preference Table 8-1, code/math annealing, Zhou et al. Figure 8-1, Data Addition Dilemma), Data Quantity (SNLI scaling Figure 8-2, Model Ossification, curriculum transfer, subsampling curve Figure 8-3, task diversity scaling Figure 8-4), Data Acquisition & Annotation (User Data Flywheel, 10 public dataset repositories, annotation guidelines), Data Augmentation & Synthesis (5 reasons, Rule-based templates, Faker, AlphaGeometry, Perturbation/One Pixel Attack, Simulations/CARLA/Sim2Real, AI-Powered Synthesis, StableToolBench, Self-Play, MetaMath, Back-translation, swapped-order preference judging, UltraChat, Alpaca Self-Instruct Figure 8-5, Reverse Instruction, Long-context chunk-to-full synthesis, Llama 3 2.7M coding pipeline with 20% self-correction), Data Verification, 4 Limitations of Synthetic Data (Quality control, Superficial imitation, Model Collapse, Obscure data lineage), Model Distillation (DistilBERT, Alpaca, BuzzFeed, Nemotron-4 340B from Mixtral-8x7B), and the 5-Stage Data Processing Pipeline (Inspect with Peng et al. Figures 8-6 & 8-7 and Brockman quote, Deduplicate with Table 8-3 & Anthropic 0.1%×100 study, Clean & Filter with Databricks +20%/-60% HTML study & Kern et al. annotator fatigue, Format with Table 8-4 `"burger -->"` delimiter parity). Zero AI clichés used.',
+      'Verified 100% coverage of all Chapter 8 sections and all 7 extracted book figures (aien_0801.png through aien_0807.png): Data-Centric vs Model-Centric AI (DataComp, DataPerf, GPT-3 vs GPT-4 data team growth), Data Curation (CoT, Tool Use GUI vs API & Llama 3 multi-message headers, single vs multi-turn, unlearning bad behaviors), Data Quality (LIMA 1K, Yi 10K, 6 characteristics), Data Coverage (Llama 3 domain mixes across Pre-training/SFT/Preference Table 8-1, code/math annealing, Zhou et al.',
   },
 };

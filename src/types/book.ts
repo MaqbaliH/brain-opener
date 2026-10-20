@@ -7,6 +7,12 @@ export type ConceptCategory =
   | 'data'
   | 'security';
 
+export type CognitiveZoomLevel = 'brief' | 'playbook' | 'deep';
+
+export type ReaderThemeMode = 'paper' | 'sepia' | 'dark';
+
+export type ReaderFontScale = 'sm' | 'md' | 'lg' | 'xl';
+
 export interface MentalModel {
   id: string;
   name: string;
@@ -186,3 +192,10 @@ export interface BookMasteryPackage {
   architecturalOverview: string;
   chapters: ChapterMastery[];
 }
+
+export interface RecentBookSession {
+  bookSlug: string;
+  chapterNumber: number;
+  updatedAt: number;
+}
+

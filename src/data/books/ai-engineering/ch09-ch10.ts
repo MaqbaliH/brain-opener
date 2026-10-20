@@ -5,18 +5,18 @@ export const ch09Mastery: ChapterMastery = {
   chapterId: 'ch09',
   title: 'Inference Optimization',
   subtitle:
-    'Roofline Physics, Prefill vs. Decode Bottlenecks, Speculative Decoding, KV Cache Mechanics, Custom Kernels, and Disaggregated Serving',
-  readingTimeMinutes: 55,
+    'Roofline Physics, Prefill vs.',
+  readingTimeMinutes: 10,
   sourceWordCount: 13850,
   executiveThesis:
-    'Inference accounts for up to 90% of lifecycle compute expenditure for deployed AI systems, yet naive serving leaves modern accelerators operating below 20% utilization. Optimizing inference requires diagnosing whether a workload is compute-bound (like parallel input prefilling) or memory-bandwidth-bound (like sequential autoregressive token decoding). By aligning model-level interventions (quantization, speculative decoding, Grouped-Query Attention, PagedAttention, FlashAttention kernels) with service-level resource orchestration (continuous in-flight batching, prefill-decode disaggregation, prefix caching, and tensor parallelism), engineers can simultaneously slash latency and multiply goodput.',
+    'Inference accounts for up to 90% of lifecycle compute expenditure for deployed AI systems, yet naive serving leaves modern accelerators operating below 20% utilization. Optimizing inference requires diagnosing whether a workload is compute-bound (like parallel input prefilling) or memory-bandwidth-bound (like sequential autoregressive token decoding).',
   paradigmShift: {
     oldWay:
       'Treat the foundation model as an indivisible black box on a single GPU pool: process fixed static batches from start to finish, recompute overlapping system prompts on every call, allocate contiguous max-length KV cache buffers, and trust nvidia-smi GPU utilization as a measure of hardware efficiency.',
     newWay:
       'Co-design across hardware, model, and serving layers: separate compute-bound prefill pools from bandwidth-bound decode pools, manage KV cache via non-contiguous virtual memory pages (PagedAttention), break sequential decoding bottlenecks with lossless draft verification (Speculative Decoding), and optimize strictly for SLO-compliant Goodput, MFU, and MBU.',
     whyItChanged:
-      'Autoregressive transformers turn token generation into a memory-bandwidth starvation problem: every single generated token requires streaming tens of gigabytes of weights and KV cache states from High-Bandwidth Memory (HBM) into on-chip SRAM for minimal arithmetic operations. Without architectural and systems intervention, expensive Tensor Cores sit idle waiting on memory buses.',
+      'Autoregressive transformers turn token generation into a memory-bandwidth starvation problem: every single generated token requires streaming tens of gigabytes of weights and KV cache states from High-Bandwidth Memory (HBM) into on-chip SRAM for minimal arithmetic operations.',
   },
   heroIllustrationUrl: '/books/ai-engineering/assets/aien_0902.png',
   customDiagrams: [
@@ -134,13 +134,13 @@ export const ch09Mastery: ChapterMastery = {
   <text x="510" y="360" fill="#dbeafe" font-size="9">• Best case (all K accepted): emits K+1 tokens/pass.</text>
 </svg>`,
       bierutCaption:
-        'Figure 9-A (Schematic Synthesis). On the left, the log-log Roofline chart exposes why naive autoregressive decoding sits at the bottom-left corner: loading 140 GB of FP16 weights for a 70B model to produce a single token yields an arithmetic intensity near 1 FLOP/byte, starving the GPU Tensor Cores. On the right, Speculative Decoding uses a small draft model to propose K tokens and verifies them in a single target model forward pass, shifting decoding upward along the bandwidth slope by harvesting otherwise idle FLOPs.',
+        'Figure 9-A (Schematic Synthesis).',
       annotations: [
         {
           step: '1',
           label: 'Bandwidth-Bound Decode (Bottom-Left)',
           explanation:
-            'Generating 1 token at batch size 1 requires reading every model weight matrix from HBM into SRAM to perform a matrix-vector multiply (GEMV). Hardware speed is capped by HBM TB/s, not FLOP/s.',
+            'Generating 1 token at batch size 1 requires reading every model weight matrix from HBM into SRAM to perform a matrix-vector multiply (GEMV).',
         },
         {
           step: '2',
@@ -152,7 +152,7 @@ export const ch09Mastery: ChapterMastery = {
           step: '3',
           label: 'Compute-Bound Prefill (Flat Roof)',
           explanation:
-            'During prefill, all N prompt tokens are known simultaneously. Weight matrices multiply against an N-column activation matrix (GEMM), crossing the Ridge Point and saturating peak FLOP/s.',
+            'During prefill, all N prompt tokens are known simultaneously.',
         },
       ],
     },
@@ -263,7 +263,7 @@ export const ch09Mastery: ChapterMastery = {
   <text x="592" y="376" fill="#38bdf8" font-size="9.5" font-weight="700" text-anchor="middle">Result: Maximizes Goodput (RPS meeting both TTFT &amp; TPOT SLOs)</text>
 </svg>`,
       bierutCaption:
-        'Figure 9-B (Schematic Synthesis). Service-level inference architecture combines three non-degrading optimizations: (1) Continuous in-flight batching evicts finished sequences immediately and injects waiting requests at the token-iteration level; (2) PagedAttention maps logical KV tokens to fixed-size non-contiguous HBM blocks, enabling zero-copy prefix sharing across requests; (3) Prefill-Decode disaggregation isolates compute-bound prefill bursts on dedicated GPUs so ongoing token streams never suffer TPOT jitter.',
+        'Figure 9-B (Schematic Synthesis).',
       annotations: [
         {
           step: '1',
@@ -281,7 +281,7 @@ export const ch09Mastery: ChapterMastery = {
           step: '3',
           label: 'Disaggregated Prefill & Decode Pools',
           explanation:
-            'Co-locating prefill and decode causes a single arriving long prompt to monopolize GPU Tensor Cores and stall all active decode streams. Separating them onto distinct GPU pools with NVLink KV transfer preserves strict TTFT and TPOT guarantees.',
+            'Co-locating prefill and decode causes a single arriving long prompt to monopolize GPU Tensor Cores and stall all active decode streams.',
         },
       ],
     },
@@ -295,9 +295,9 @@ export const ch09Mastery: ChapterMastery = {
       naiveIntuition:
         'Buying GPUs with higher peak TFLOP/s will proportionally speed up large language model token generation.',
       firstPrinciplesReality:
-        'During the prefill step, all input tokens are processed in parallel via dense matrix-matrix multiplications (GEMM), making prefill compute-bound (governed by FLOP/s). During the decode step, tokens are generated one by one sequentially; the GPU must stream the entire model weight matrices and KV cache from High-Bandwidth Memory (HBM) into SRAM just to compute a single token step (GEMV). Decode speed is governed almost entirely by memory bandwidth (TB/s) and model byte size, leaving most FLOP/s idle.',
+        'During the prefill step, all input tokens are processed in parallel via dense matrix-matrix multiplications (GEMM), making prefill compute-bound (governed by FLOP/s).',
       howToApply:
-        'To lower Time to First Token (TTFT), optimize prefill compute (FlashAttention, prompt caching, higher FLOP/s chips, context parallelism). To lower Time Per Output Token (TPOT), reduce bytes transferred per step or amortize weight loads (weight quantization to INT8/INT4/FP8, speculative decoding, GQA/MLA, higher HBM bandwidth chips, and continuous batching).',
+        'To lower Time to First Token (TTFT), optimize prefill compute (FlashAttention, prompt caching, higher FLOP/s chips, context parallelism).',
     },
     {
       id: 'ch09-mm-goodput-slo',
@@ -307,9 +307,9 @@ export const ch09Mastery: ChapterMastery = {
       naiveIntuition:
         'If nvidia-smi reports 99% GPU utilization and the server generates 2,000 tokens/sec, the inference cluster is maximally efficient.',
       firstPrinciplesReality:
-        'nvidia-smi measures only whether at least one streaming multiprocessor is active during a sampling interval—a GPU doing 1 operation per second reports 100% utilization. Cranking up batch sizes to double or triple raw token throughput inevitably inflates queueing and per-token latency. The only metric that aligns cost with user experience is Goodput: the number of completed requests per second (or minute) that simultaneously satisfy both TTFT and TPOT Service-Level Objectives (SLOs), paired with Model FLOPs Utilization (MFU) and Model Bandwidth Utilization (MBU).',
+        'nvidia-smi measures only whether at least one streaming multiprocessor is active during a sampling interval—a GPU doing 1 operation per second reports 100% utilization.',
       howToApply:
-        'Define explicit percentile SLOs (e.g., p95 TTFT <= 200 ms, p95 TPOT <= 100 ms / ~8–10 tokens/sec human reading speed) before tuning batch sizes or replica counts. Measure cluster capacity strictly by maximum sustainable Goodput under those SLOs.',
+        'Define explicit percentile SLOs (e.g., p95 TTFT <= 200 ms, p95 TPOT <= 100 ms / ~8–10 tokens/sec human reading speed) before tuning batch sizes or replica counts.',
     },
     {
       id: 'ch09-mm-free-flops',
@@ -319,7 +319,7 @@ export const ch09Mastery: ChapterMastery = {
       naiveIntuition:
         'Running a second draft model alongside a 70B target model adds extra compute overhead and must slow down total inference.',
       firstPrinciplesReality:
-        'The primary latency cost of a 70B model decoding step is moving ~140 GB of weights from HBM to on-chip SRAM. Whether those loaded weights multiply against 1 token vector or K+1 token vectors in parallel, the HBM memory transfer time is nearly identical because the GPU has massive idle arithmetic capacity during decoding. A tiny draft model (e.g., 4B parameters) can propose K candidate tokens 8x faster; the target 70B model then verifies all K tokens in a single parallel forward pass, yielding up to K+1 mathematically exact target tokens for the memory-bandwidth price of one.',
+        'The primary latency cost of a 70B model decoding step is moving ~140 GB of weights from HBM to on-chip SRAM.',
       howToApply:
         'Deploy Speculative Decoding (or Inference with Reference / Medusa heads) whenever MFU during decoding is low and output sequences contain predictable spans (such as code generation, RAG citations, or structured JSON).',
     },
@@ -331,13 +331,8 @@ export const ch09Mastery: ChapterMastery = {
       title: 'Computational Bottlenecks, the Roofline Model & Inference APIs',
       subtitle:
         'Deconstructing compute-bound vs. memory-bandwidth-bound workloads, prefill vs. decode physics, and online vs. batch APIs',
-      coreMechanism: `In production AI systems, an inference server hosts trained models and orchestrates hardware accelerators to execute forward passes for incoming user queries, operating within a broader inference service that handles routing, load balancing, and preprocessing. Optimizing this system requires diagnosing its physical bottleneck. As formalized in the Roofline performance model (Williams et al., 2009), every computational kernel is governed by two hardware ceilings: peak arithmetic throughput (measured in FLOP/s) and memory bandwidth (measured in bytes/second transferred between memory and compute cores). The ratio of floating-point operations performed per byte of memory accessed is called **Arithmetic Intensity** ($\\text{FLOPs/Byte}$). On a log-log Roofline chart, performance rises linearly with arithmetic intensity along a sloped roof determined by memory bandwidth until it hits the "ridge point," where it flattens against the horizontal ceiling of peak chip FLOP/s.
-
-A critical terminology ambiguity often trips up cross-functional teams: systems and GPU engineers use "memory-bound" as shorthand for **memory-bandwidth-bound** (limited by data transfer speed, TB/s), whereas ML practitioners often use "memory-bound" to mean **memory-capacity-bound** (running out of RAM and triggering an Out-Of-Memory / OOM crash). In reality, capacity limitations collapse into bandwidth limitations: when a model exceeds a single GPU's High-Bandwidth Memory (HBM), engineers split the workload across GPU HBM and host CPU DRAM or across multiple devices, making execution speed once again hostage to interconnect data transfer rates.
-
-Autoregressive transformer language models exhibit a split personality across their two inference phases. During the **Prefill** phase, the model processes all $N$ input prompt tokens in parallel, populating the initial Key-Value (KV) cache. Because the weight matrices are loaded once from HBM and multiplied against an entire matrix of $N$ token vectors simultaneously, arithmetic intensity is high and prefill is **compute-bound**. During the **Decode** phase, the model generates one output token at a time sequentially—token $x_{t+1}$ cannot be computed until token $x_t$ is emitted. At each step, the entire model's parameter matrices (plus all historical KV cache vectors) must be streamed from HBM into on-chip SRAM just to compute a single token vector. Arithmetic intensity plummets to ~1–2 FLOPs/byte, making autoregressive decoding severely **memory-bandwidth-bound**. Anyscale's empirical benchmarks demonstrate that a single generated output token imposes roughly the same latency penalty as prefilling **100 input tokens**, which is why commercial API providers price output tokens 2x to 4x higher than input tokens.
-
-To accommodate diverse latency tolerances, commercial providers and internal platforms expose two distinct serving tiers: **Online APIs** and **Batch APIs**. Online APIs optimize for low latency (streaming tokens via Server-Sent Events as soon as each decode step finishes, though streaming prevents full-response output guardrails from scoring the text prior to user visibility). Batch APIs optimize for throughput and cost—providers like OpenAI and Google Gemini offer a 50% discount in exchange for asynchronous turnaround windows up to 24 hours, packing requests into massive high-utilization batches during off-peak compute hours for synthetic data generation, offline document indexing, nightly Slack/ticket summarization, or bulk model migrations. Crucially, foundation model batch APIs differ from traditional ML batch inference: traditional ML precomputes predictions for a finite set of inputs (e.g., daily movie recommendations for all users) before requests arrive, whereas foundation model prompts are open-ended and cannot be precomputed in advance; LLM batch APIs simply buffer and group actual user requests asynchronously.`,
+      coreMechanism:
+        `In production AI systems, an inference server hosts trained models and orchestrates hardware accelerators to execute forward passes for incoming user queries, operating within a broader inference service that handles routing, load balancing, and preprocessing. Optimizing this system requires diagnosing its physical bottleneck. As formalized in the Roofline performance model (Williams et al., 2009), every computational kernel is governed by two hardware ceilings: peak arithmetic throughput (measured in FLOP/s) and memory bandwidth (measured in bytes/second transferred between memory and compute cores).`,
       stepByStepFlow: [
         {
           step: '1',
@@ -366,9 +361,9 @@ To accommodate diverse latency tolerances, commercial providers and internal pla
           editorialAnalysis:
             'Figure 9-1 delineates the boundary between the outer Inference Service (which handles external client connections, request routing, and input/output preprocessing) and the inner Inference Server (which manages model weights and schedules kernels across hardware accelerators).',
           keyTakeaways: [
-            'An inference server is a specialized runtime inside a broader inference service.',
-            'Service-level routing and preprocessing happen before hardware allocation.',
-          ],
+          'An inference server is a specialized runtime inside a broader inference service.',
+          'Service-level routing and preprocessing happen before hardware allocation.',
+        ],
         },
         {
           file: 'aien_0902.png',
@@ -376,11 +371,11 @@ To accommodate diverse latency tolerances, commercial providers and internal pla
             'Figure 9-2. The roofline chart can help you visualize whether an operation is compute-bound or memory bandwidth-bound. This graph is on a log scale.',
           bierutTitle: 'The Geometry of Hardware Starvation',
           editorialAnalysis:
-            'Plotted on log-log axes (Arithmetic Intensity in FLOPs/Byte on X vs. Attainable FLOP/s on Y), the Roofline chart splits the performance space into two regimes. Left of the ridge point, an operation hits the diagonal memory-bandwidth ceiling; right of the ridge point, it hits the flat peak FLOP/s ceiling.',
+            'Plotted on log-log axes (Arithmetic Intensity in FLOPs/Byte on X vs.',
           keyTakeaways: [
-            'Memory-bandwidth-bound workloads can only be accelerated by higher HBM bandwidth or higher arithmetic intensity (e.g., batching, quantization, kernel fusion).',
-            'Adding more raw FLOP/s to a bandwidth-bound workload yields zero speedup.',
-          ],
+          'Memory-bandwidth-bound workloads can only be accelerated by higher HBM bandwidth or higher arithmetic intensity (e.g., batching, quantization, kernel fusion).',
+          'Adding more raw FLOP/s to a bandwidth-bound workload yields zero speedup.',
+        ],
         },
         {
           file: 'aien_0903.png',
@@ -390,22 +385,19 @@ To accommodate diverse latency tolerances, commercial providers and internal pla
           editorialAnalysis:
             'Figure 9-3 contrasts the two distinct computational phases of transformer generation: Prefill digests the entire prompt in one parallel pass to emit the first token, whereas Decode loops sequentially, feeding each newly generated token back as input until the <eos> token terminates generation.',
           keyTakeaways: [
-            'Prefill determines Time to First Token (TTFT) and is compute-bound.',
-            'Decode determines Time Per Output Token (TPOT) and is memory-bandwidth-bound.',
-          ],
+          'Prefill determines Time to First Token (TTFT) and is compute-bound.',
+          'Decode determines Time Per Output Token (TPOT) and is memory-bandwidth-bound.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Arithmetic intensity (FLOPs per byte accessed from memory) determines whether a workload is compute-bound or memory-bandwidth-bound.',
-        'Transformer prefill is compute-bound (parallel token processing), while autoregressive decode is memory-bandwidth-bound (sequential weight loading per token).',
-        'A single output token has roughly the same latency impact as 100 input tokens.',
-        'Foundation model batch APIs queue open-ended requests asynchronously for 50% lower cost, unlike traditional ML batch inference which precomputes finite lookup tables.',
-      ],
+          'Arithmetic intensity (FLOPs per byte accessed from memory) determines whether a workload is compute-bound or memory-bandwidth-bound.',
+          'Transformer prefill is compute-bound (parallel token processing), while autoregressive decode is memory-bandwidth-bound (sequential weight loading per token).',
+        ],
       commonPitfalls: [
-        'Confusing memory-capacity-bound (OOM crashes) with memory-bandwidth-bound (HBM transfer speed bottlenecks).',
-        'Using streaming completion mode without realizing it prevents full-response output safety scoring before tokens reach the user.',
-        'Evaluating inference latency using mean (average) TTFT instead of tail percentiles (p90, p95, p99), allowing rare network or long-prompt outliers to distort capacity planning.',
-      ],
+          'Confusing memory-capacity-bound (OOM crashes) with memory-bandwidth-bound (HBM transfer speed bottlenecks).',
+          'Using streaming completion mode without realizing it prevents full-response output safety scoring before tokens reach the user.',
+        ],
     },
     {
       id: 'ch09-sec-metrics',
@@ -413,11 +405,8 @@ To accommodate diverse latency tolerances, commercial providers and internal pla
       title: 'Inference Performance Metrics: Latency, Goodput, MFU & MBU',
       subtitle:
         'Quantifying end-to-end latency distributions, cost per million tokens, SLO-compliant Goodput, and true hardware utilization',
-      coreMechanism: `Optimizing an inference service requires balancing user-facing latency against operator-facing throughput and utilization. For autoregressive models, total end-to-end latency decomposes into two fundamental components: **Time to First Token (TTFT)**, which spans the prefill step and scales with input prompt length, and **Time Per Output Token (TPOT)** (also tracked as Time Between Tokens, TBT, by LinkedIn or Inter-Token Latency, ITL, by NVIDIA), which measures the interval between consecutive decoded tokens. A fast human reader consumes text at roughly 120 ms per token (6 to 8 tokens/second), meaning streaming chat applications rarely need TPOT much lower than ~100–120 ms once TTFT is responsive. Crucially, in multi-step Chain-of-Thought (CoT) or agentic workflows where the model generates hidden planning tokens and tool calls before emitting the final answer, **model-observed TTFT** (when step 1 starts) diverges sharply from **user-observed TTFT** ("Time to Publish"—when the first visible token of the final answer reaches the screen).
-
-While users care about latency percentiles ($p_{50}, p_{90}, p_{95}, p_{99}$), engineering economics are governed by **Throughput**—measured in output tokens per second (TPS), TPS per user, or completed requests per minute (RPM). Because increasing batch size boosts TPS while degrading TTFT and TPOT (LinkedIn's production team noted it is easy to 2x–3x throughput if you sacrifice latency), optimizing for raw TPS alone ruins user experience. Modern serving teams instead optimize for **Goodput**: the number of completed requests per second (or minute) that strictly satisfy defined latency Service-Level Objectives (e.g., $\\text{TTFT} \\le 200\\text{ ms}$ AND $\\text{TPOT} \\le 100\\text{ ms}$). If a server completes 10 RPS but 7 of those requests breach the TPOT threshold due to batch contention, its throughput is 10 RPS but its **Goodput is only 3 RPS**.
-
-To diagnose hardware efficiency, engineers must look past \`nvidia-smi\`'s "GPU Utilization" metric, which merely reports the fraction of time intervals during which at least one GPU core is active (a GPU executing 1 FLOP/s out of 1,000 TFLOP/s capacity still reports 100% utilization). Instead, true compute efficiency is measured by **MFU (Model FLOP/s Utilization)**, introduced in the PaLM paper (Chowdhery et al., 2022), which compares observed token throughput against theoretical peak FLOP/s. True memory bus efficiency is measured by **MBU (Model Bandwidth Utilization)**, which divides the actual memory bandwidth consumed per second ($\text{Parameter Count} \\times \\text{Bytes/Param} \\times \\text{Tokens/s}$) by the chip's theoretical peak HBM bandwidth. As concurrency rises on a serving node (e.g., Llama 2-70B on H100/A100/Gaudi 2), MBU initially dominates but gradually declines as higher batch sizes increase arithmetic intensity and shift the workload toward compute saturation.`,
+      coreMechanism:
+        `Optimizing an inference service requires balancing user-facing latency against operator-facing throughput and utilization. For autoregressive models, total end-to-end latency decomposes into two fundamental components: **Time to First Token (TTFT)**, which spans the prefill step and scales with input prompt length, and **Time Per Output Token (TPOT)** (also tracked as Time Between Tokens, TBT, by LinkedIn or Inter-Token Latency, ITL, by NVIDIA), which measures the interval between consecutive decoded tokens. A fast human reader consumes text at roughly 120 ms per token (6 to 8 tokens/second), meaning streaming chat applications rarely need TPOT much lower than ~100–120 ms once TTFT is responsive.`,
       formulas: [
         {
           name: 'Total Autoregressive Inference Latency',
@@ -445,7 +434,7 @@ To diagnose hardware efficiency, engineers must look past \`nvidia-smi\`'s "GPU 
             { symbol: 'BW_peak', meaning: 'Theoretical peak HBM memory bandwidth of the accelerator (Bytes/s)' },
           ],
           workedExample:
-            'Serving a 7B model in FP16 (2 bytes/param) at 100 tokens/s on an NVIDIA A100-80GB (BW_peak = 2 TB/s = 2,000 GB/s): Consumed bandwidth = 7×10^9 × 2 × 100 = 1,400 GB/s (or 700 GB/s at 50 tok/s as illustrated in text; at 700 GB/s / 2,000 GB/s, MBU = 35%, or 70% on a 1 TB/s bus). Quantizing to INT8 (1 byte/param) halves bandwidth pressure per token.',
+            'Serving a 7B model in FP16 (2 bytes/param) at 100 tokens/s on an NVIDIA A100-80GB (BW_peak = 2 TB/s = 2,000 GB/s): Consumed bandwidth = 7×10^9 × 2 × 100 = 1,400 GB/s (or 700 GB/s at 50 tok/s as illustrated in text; at 700 GB/s / 2,000 GB/s, MBU = 35%, or 70% on a 1 TB/s bus).',
         },
         {
           name: 'Inference Compute Cost per Request (Prefill + Decode)',
@@ -460,7 +449,7 @@ To diagnose hardware efficiency, engineers must look past \`nvidia-smi\`'s "GPU 
             { symbol: 'RPM_prefill', meaning: 'Number of prompts prefilled per minute' },
           ],
           workedExample:
-            'Hardware costs $2.00/hour. Decode throughput = 100 tokens/s (360,000 tokens/hour), so 1M output tokens cost $2.00 / 0.36 = $5.56. For 1,000 requests averaging 200 output tokens (200K tokens), decode cost = $1.11. If prefill handles 100 requests/min (6,000/hour), prefilling 1,000 requests takes 1/6 hour = $0.33. Total cost per 1K requests = $1.11 + $0.33 = $1.44.',
+            'Hardware costs $2.00/hour.',
         },
       ],
       figures: [
@@ -470,11 +459,11 @@ To diagnose hardware efficiency, engineers must look past \`nvidia-smi\`'s "GPU 
             'Figure 9-4. If an inference service can complete 10 RPS but only 3 satisfy the SLO, then its goodput is 3 RPS.',
           bierutTitle: 'Why Goodput Filters Out Latency-Violating Throughput',
           editorialAnalysis:
-            'Figure 9-4 plots individual completed requests against a two-dimensional SLO boundary (maximum allowable TTFT and maximum allowable TPOT). Requests that finish outside the latency box still count toward raw RPS, but are excluded from Goodput because they degrade user experience.',
+            'Figure 9-4 plots individual completed requests against a two-dimensional SLO boundary (maximum allowable TTFT and maximum allowable TPOT).',
           keyTakeaways: [
-            'Goodput counts only requests per second that satisfy both TTFT and TPOT SLOs.',
-            'Over-batching inflates raw RPS while collapsing Goodput.',
-          ],
+          'Goodput counts only requests per second that satisfy both TTFT and TPOT SLOs.',
+          'Over-batching inflates raw RPS while collapsing Goodput.',
+        ],
         },
         {
           file: 'aien_0905.png',
@@ -482,22 +471,21 @@ To diagnose hardware efficiency, engineers must look past \`nvidia-smi\`'s "GPU 
             'Figure 9-5. Bandwidth utilization for Llama 2-70B in FP16 across three different chips shows a decrease in MBU as the number of concurrent users increases. Image from “LLM Training and Inference with Intel Gaudi 2 AI Accelerators” (Databricks, 2024).',
           bierutTitle: 'Concurrency Shifts Workloads from Bandwidth-Bound to Compute-Bound',
           editorialAnalysis:
-            'Comparing NVIDIA H100, A100, and Intel Gaudi 2 serving Llama 2-70B in FP16, MBU starts high at low concurrency (55–75%) because decoding is purely memory-bandwidth-bound. As concurrent users climb from 1 to 64, more tokens are batched per weight load, raising arithmetic intensity and shifting the bottleneck toward compute FLOPs, which causes MBU to decline.',
+            'Comparing NVIDIA H100, A100, and Intel Gaudi 2 serving Llama 2-70B in FP16, MBU starts high at low concurrency (55–75%) because decoding is purely memory-bandwidth-bound.',
           keyTakeaways: [
-            'At low batch sizes, LLM decoding is dominated by HBM bandwidth (high MBU, low MFU).',
-            'As batch concurrency increases, arithmetic intensity rises and MBU drops as compute cores saturate.',
-          ],
+          'At low batch sizes, LLM decoding is dominated by HBM bandwidth (high MBU, low MFU).',
+          'As batch concurrency increases, arithmetic intensity rises and MBU drops as compute cores saturate.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Total latency equals TTFT + TPOT × (number of output tokens); human reading speed (~6–8 tokens/s or ~120 ms/token) sets a practical ceiling on necessary streaming TPOT.',
-        'In CoT and agentic pipelines, track "Time to Publish" (user-visible first token) rather than internal model TTFT.',
-        'Goodput (SLO-compliant RPS), MFU (Model FLOP/s Utilization), and MBU (Model Bandwidth Utilization) replace misleading nvidia-smi utilization numbers.',
-      ],
+          'Total latency equals TTFT + TPOT × (number of output tokens).',
+          'In CoT and agentic pipelines, track "Time to Publish" (user-visible first token) rather than internal model TTFT.',
+        ],
       commonPitfalls: [
-        'Comparing raw tokens/second across models with different tokenizers (where a single token may represent 3 characters in one model and 5 characters in another) instead of measuring cost per request.',
-        'Falling for hardware vendors’ "peak FLOP/s hacking" (advertising sparse matrix FP8 TFLOP/s that are unreachable on dense production workloads).',
-      ],
+          'Comparing raw tokens/second across models with different tokenizers (where a single token may represent 3 characters in one model and 5 characters in another) instead of measuring cost per request.',
+          'Falling for hardware vendors’ "peak FLOP/s hacking" (advertising sparse matrix FP8 TFLOP/s that are unreachable on dense production workloads).',
+        ],
     },
     {
       id: 'ch09-sec-accelerators',
@@ -505,15 +493,8 @@ To diagnose hardware efficiency, engineers must look past \`nvidia-smi\`'s "GPU 
       title: 'AI Accelerators: Compute Primitives, Memory Hierarchy & Power',
       subtitle:
         'Inside GPU Tensor Cores, HBM vs. on-chip SRAM bandwidth, numerical precision scaling, and thermal power envelopes',
-      coreMechanism: `Software optimization is bounded by the physical silicon executing it. While CPUs contain a small number of complex cores (typically 8 to 64) optimized for sequential branching, operating system I/O, and single-thread latency, AI accelerators—led by NVIDIA GPUs, Google TPUs, AMD Instinct (ROCm), Intel Gaudi, AWS Inferentia, Meta MTIA, Groq LPUs, and Cerebras Wafer-Scale engines—pack thousands of parallel cores designed specifically for matrix multiplication (matmul), which accounts for over 90% of floating-point operations in deep neural networks. Hardware compute units specialize around three structural primitives: **scalars** (single numbers), **vectors** (1D arrays), and **tensors** (multidimensional matrices). Modern NVIDIA GPUs pair traditional vector cores with dedicated **Tensor Cores**, while Google TPUs use systolic tensor arrays as their native primitive.
-
-When evaluating an accelerator for inference—which accounts for up to 90% of deployed ML compute costs (Desislavov et al., 2023) and favors low precision and fast memory access over massive training memory capacity—three physical specifications dominate:
-1. **Computational Capability (FLOP/s by Precision)**: Halving numerical bit-width roughly doubles peak Tensor Core throughput. On an NVIDIA H100 SXM (with sparsity), peak throughput scales from **989 TFLOP/s** in TF32 (a 19-bit format) to **1,979 TFLOP/s** in BF16/FP16, and **3,958 TFLOP/s** in FP8.
-2. **Three-Tier Memory Hierarchy (Capacity vs. Bandwidth)**: An accelerator moves tensors across three distinct memory tiers with an order-of-magnitude speed jump at each level:
-   - **Host CPU DRAM (DDR SDRAM, 2D layout)**: Large capacity (64 GB to >1 TB+) but slow transfer bandwidth (**25–50 GB/s**) across PCIe/interconnects.
-   - **GPU High-Bandwidth Memory (HBM, 3D stacked silicon)**: Dedicated off-chip memory sitting adjacent to the GPU die, offering **24–80+ GB** capacity and **256 GB/s to >1.5–3+ TB/s** bandwidth.
-   - **GPU On-Chip SRAM (L1/L2 caches, shared memory, register files)**: Etched directly onto the compute die; tiny capacity (**typically $\\le 40\\text{ MB}$**) but blistering transfer speed (**exceeding 10 TB/s**).
-3. **Power Consumption & Thermal Design Power (TDP)**: Switching 54 billion transistors (NVIDIA A100) or 80 billion transistors (NVIDIA H100) generates immense heat. Hardware specs report **TDP** (the maximum heat a cooling system must dissipate under typical load), while peak power draw reaches **1.1x to 1.5x TDP**. A single H100 running at peak draw for one year consumes roughly **7,000 kWh**—nearly 70% of an average US household's entire annual electricity consumption (10,000 kWh)—making electrical grid capacity and data-center cooling a primary bottleneck for AI scaling.`,
+      coreMechanism:
+        `Software optimization is bounded by the physical silicon executing it. While CPUs contain a small number of complex cores (typically 8 to 64) optimized for sequential branching, operating system I/O, and single-thread latency, AI accelerators—led by NVIDIA GPUs, Google TPUs, AMD Instinct (ROCm), Intel Gaudi, AWS Inferentia, Meta MTIA, Groq LPUs, and Cerebras Wafer-Scale engines—pack thousands of parallel cores designed specifically for matrix multiplication (matmul), which accounts for over 90% of floating-point operations in deep neural networks. Hardware compute units specialize around three structural primitives: **scalars** (single numbers), **vectors** (1D arrays), and **tensors** (multidimensional matrices).`,
       figures: [
         {
           file: 'aien_0906.png',
@@ -522,9 +503,9 @@ When evaluating an accelerator for inference—which accounts for up to 90% of d
           editorialAnalysis:
             'Figure 9-6 illustrates the hierarchy of hardware execution units: scalar units process one element per cycle, vector units (SIMD) process 1D rows, and tensor units execute entire 2D/3D matrix-multiply-accumulate blocks in a single instruction.',
           keyTakeaways: [
-            'Over 90% of neural network FLOPs are matrix multiplications.',
-            'Matching model operators to native hardware tensor primitives is essential for high MFU.',
-          ],
+          'Over 90% of neural network FLOPs are matrix multiplications.',
+          'Matching model operators to native hardware tensor primitives is essential for high MFU.',
+        ],
         },
         {
           file: 'aien_0907.png',
@@ -532,22 +513,21 @@ When evaluating an accelerator for inference—which accounts for up to 90% of d
             'Figure 9-7. The memory hierarchy of an AI accelerator. The numbers are for reference only. The actual numbers vary for each chip.',
           bierutTitle: 'The 200x Bandwidth Gap Between CPU DRAM, GPU HBM, and On-Chip SRAM',
           editorialAnalysis:
-            'Figure 9-7 maps the inverse relationship between capacity and bandwidth across the three memory tiers: CPU DRAM (~1 TB at 25–50 GB/s), GPU HBM (24–80 GB at 256 GB/s–1.5+ TB/s), and On-Chip SRAM (<40 MB at >10 TB/s). Custom kernels like FlashAttention exist specifically to keep intermediate tensors inside the >10 TB/s SRAM tier instead of round-tripping to HBM.',
+            'Figure 9-7 maps the inverse relationship between capacity and bandwidth across the three memory tiers: CPU DRAM (~1 TB at 25–50 GB/s), GPU HBM (24–80 GB at 256 GB/s–1.5+ TB/s), and On-Chip SRAM (<40 MB at >10 TB/s).',
           keyTakeaways: [
-            'On-chip SRAM is ~10x faster than HBM, and HBM is ~30x–50x faster than CPU DRAM.',
-            'Low-level GPU languages (CUDA, OpenAI Triton, AMD ROCm) allow explicit tiling across SRAM and HBM.',
-          ],
+          'On-chip SRAM is ~10x faster than HBM, and HBM is ~30x–50x faster than CPU DRAM.',
+          'Low-level GPU languages (CUDA, OpenAI Triton, AMD ROCm) allow explicit tiling across SRAM and HBM.',
+        ],
         },
       ],
       keyTakeaways: [
-        'NVIDIA H100 Tensor Core throughput doubles with each step down in precision: 989 TFLOP/s (TF32) -> 1,979 TFLOP/s (BF16/FP16) -> 3,958 TFLOP/s (FP8).',
-        'GPU optimization revolves around the 3-tier memory hierarchy: keeping working tiles inside <40 MB on-chip SRAM (>10 TB/s) to minimize reads/writes to 24–80 GB HBM (~1.5–3 TB/s) and avoiding CPU DRAM (25–50 GB/s).',
-        'A single H100 at peak load consumes ~7,000 kWh/year; maximum power draw is 1.1x–1.5x TDP.',
-      ],
+          'NVIDIA H100 Tensor Core throughput doubles with each step down in precision: 989 TFLOP/s (TF32) -> 1,979 TFLOP/s (BF16/FP16) -> 3,958 TFLOP/s (FP8).',
+          'GPU optimization revolves around the 3-tier memory hierarchy: keeping working tiles inside <40 MB on-chip SRAM (>10 TB/s) to minimize reads/writes to 24–80 GB HBM (~1.5–3 TB/s) and avoiding CPU DRAM (25–50 GB/s).',
+        ],
       commonPitfalls: [
-        'Selecting compute-heavy accelerators for memory-bandwidth-bound LLM decoding without checking HBM TB/s and capacity.',
-        'Relying solely on default eager-mode PyTorch operators, which materialize every intermediate activation back to HBM instead of keeping fused tiles in SRAM.',
-      ],
+          'Selecting compute-heavy accelerators for memory-bandwidth-bound LLM decoding without checking HBM TB/s and capacity.',
+          'Relying solely on default eager-mode PyTorch operators, which materialize every intermediate activation back to HBM instead of keeping fused tiles in SRAM.',
+        ],
     },
     {
       id: 'ch09-sec-model-decode-opt',
@@ -555,16 +535,11 @@ When evaluating an accelerator for inference—which accounts for up to 90% of d
       title: 'Model-Level Optimization: Compression & Breaking Autoregressive Decoding',
       subtitle:
         'Quantization, distillation, pruning, Speculative Decoding, Inference with Reference, and Parallel Decoding (Medusa & Lookahead)',
-      coreMechanism: `Model-level optimization targets the three structural culprits that make transformer inference expensive: parameter count, sequential autoregressive decoding, and quadratic/linear attention scaling. Caution is warranted: unlike service-level scheduling, some model-level modifications can subtly alter output quality across providers (as demonstrated by Cerebras's 2024 benchmark showing variance across commercial hosts serving the exact same Llama weights).
+      coreMechanism:
+        `Model-level optimization targets the three structural culprits that make transformer inference expensive: parameter count, sequential autoregressive decoding, and quadratic/linear attention scaling. Caution is warranted: unlike service-level scheduling, some model-level modifications can subtly alter output quality across providers (as demonstrated by Cerebras's 2024 benchmark showing variance across commercial hosts serving the exact same Llama weights).
 
 **1. Model Compression (Quantization, Distillation, and Pruning)**:
-Reducing parameter footprint simultaneously shrinks HBM capacity requirements and accelerates bandwidth-bound decoding. **Weight-only quantization** (Chapter 7, e.g., FP16 to INT8 or INT4) is the most widely adopted technique in production because it works out of the box and cuts memory bandwidth pressure by 2x to 4x, though hardware bit-width limits bound quantization at 1 bit. **Model distillation** (Chapter 8) trains a compact student network to mimic a frontier teacher. **Pruning** either removes entire structural nodes/channels (architectural pruning) or zeroes out low-magnitude weights to induce sparsity (Frankle & Carbin's 2019 Lottery Ticket Hypothesis showed >90% of parameters can sometimes be zeroed without accuracy loss). However, unstructured pruning is rare in production LLM serving because general GPU hardware cannot efficiently skip arbitrary zero entries unless weights follow rigid structural sparsity patterns (such as NVIDIA's 2:4 sparsity).
-
-**2. Overcoming the Autoregressive Decoding Bottleneck**:
-Because standard autoregressive decoding generates one token per forward pass, researchers have developed three families of lossless or near-lossless acceleration:
-- **Speculative Decoding (Speculative Sampling)**: Pairs the large **target model** (e.g., Chinchilla-70B at 14.1 ms/token) with a tiny, fast **draft model** (e.g., a 4B model at 1.8 ms/token—8x faster). Given prefix $x_{1:t}$, the draft model autoregressively proposes $K$ tokens ($x_{t+1}, \\dots, x_{t+K}$). The target model then processes all $K$ draft tokens **in parallel in a single forward pass**, verifying where it agrees from left to right. If the target model accepts the first $j$ draft tokens ($0 \\le j \\le K$), it also emits one additional token $x_{t+j+1}$ from its own verification logits at position $j+1$. Thus each target pass yields between $1$ (if all rejected) and $K+1$ (if all accepted) tokens that follow the **exact mathematical probability distribution** of the target model alone! This succeeds due to three physical insights: (a) parallel verification converts bandwidth-bound decoding into a prefill-like matrix operation; (b) natural language and code contain many easy-to-predict function words and syntax tokens that a small draft model predicts accurately; and (c) decoding has abundant idle FLOPs waiting on HBM transfers that verify the $K$ tokens "for free."
-- **Inference with Reference (Prompt Lookup Decoding)**: Eliminates the separate draft model entirely by copying candidate $K$-token spans directly from the input prompt or conversation history whenever the current suffix matches an earlier n-gram (Yang et al., 2023). For RAG, document summarization, and code editing—where outputs heavily quote or modify input spans—this achieves ~2x lossless speedup with zero extra model memory.
-- **Parallel Decoding (Lookahead / Jacobi Decoding & Medusa)**: Breaks sequential dependency within the single model itself. **Lookahead decoding** (Fu et al., 2024) applies the iterative numerical **Jacobi method** to generate $K$ future tokens simultaneously and refine failed positions in parallel until they pass self-consistency verification. **Medusa** (Cai et al., 2024) freezes the base LLM backbone and attaches $K$ lightweight extra decoding heads on top of the final hidden state, where head $k$ is trained to predict token $x_{t+k+1}$. At inference, each Medusa head proposes top candidates that are assembled into a candidate **tree attention mask** and verified in parallel in a single pass—achieving up to 1.9x speedup on Llama 3.1 on NVIDIA HGX H200 GPUs.`,
+Reducing parameter footprint simultaneously shrinks HBM capacity requirements and accelerates bandwidth-bound decoding. **Weight-only quantization** (Chapter 7, e.g., FP16 to INT8 or INT4) is the most widely adopted technique in production because it works out of the box and cuts memory bandwidth pressure by 2x to 4x, though hardware bit-width limits bound quantization at 1 bit. **Model distillation** (Chapter 8) trains a compact student network to mimic a frontier teacher. **Pruning** either removes entire structural nodes/channels (architectural pruning) or zeroes out low-magnitude weights to induce sparsity (Frankle & Carbin's 2019 Lottery Ticket Hypothesis showed >90% of parameters can sometimes be zeroed without accuracy loss).`,
       stepByStepFlow: [
         {
           step: '1',
@@ -592,11 +567,11 @@ Because standard autoregressive decoding generates one token per forward pass, r
             'Figure 9-8. An inference service provider might use optimization techniques that can alter a model’s behavior, causing different providers to have slight model quality variations. The experiment was conducted by Cerebras (2024).',
           bierutTitle: 'Why Model-Level Shortcuts Create Silent Quality Drift Across API Hosts',
           editorialAnalysis:
-            'Cerebras benchmarked identical open-weight Llama models hosted across different commercial inference providers and uncovered measurable accuracy divergence on GSM8K and MMLU. Aggressive quantization or approximate kernels can silently degrade reasoning fidelity.',
+            'Cerebras benchmarked identical open-weight Llama models hosted across different commercial inference providers and uncovered measurable accuracy divergence on GSM8K and MMLU.',
           keyTakeaways: [
-            'Always benchmark accuracy after applying model-level optimizations or switching third-party inference hosts.',
-            'Service-level optimizations (continuous batching, prefix caching) preserve exact model outputs; lossy compression does not.',
-          ],
+          'Always benchmark accuracy after applying model-level optimizations or switching third-party inference hosts.',
+          'Service-level optimizations (continuous batching, prefix caching) preserve exact model outputs; lossy compression does not.',
+        ],
         },
         {
           file: 'aien_0909.png',
@@ -606,9 +581,9 @@ Because standard autoregressive decoding generates one token per forward pass, r
           editorialAnalysis:
             'Figure 9-9 traces a speculative decoding step where the draft model proposes five tokens ("the", "cat", "sat", "on", "mat"), the main target model verifies all five in parallel, accepts the first four, and replaces the fifth with its own token ("a") in a single verification pass.',
           keyTakeaways: [
-            'Verification of K tokens takes virtually the same wall-clock time as generating 1 token on the target model.',
-            'Speculative decoding is mathematically lossless: output quality is identical to running the target model alone.',
-          ],
+          'Verification of K tokens takes virtually the same wall-clock time as generating 1 token on the target model.',
+          'Speculative decoding is mathematically lossless: output quality is identical to running the target model alone.',
+        ],
         },
         {
           file: 'aien_0910.png',
@@ -618,8 +593,8 @@ Because standard autoregressive decoding generates one token per forward pass, r
           editorialAnalysis:
             'Figure 9-10 highlights verbatim spans (in green and red) copied directly from a RAG context passage and a code refactoring prompt as draft tokens, achieving a 2x decoding speedup without hosting a separate draft neural network.',
           keyTakeaways: [
-            'Inference with reference excels in RAG, summarization, and code editing where outputs overlap heavily with inputs.',
-          ],
+          'Inference with reference excels in RAG, summarization, and code editing where outputs overlap heavily with inputs.',
+        ],
         },
         {
           file: 'aien_0911.png',
@@ -627,22 +602,21 @@ Because standard autoregressive decoding generates one token per forward pass, r
             'Figure 9-11. In Medusa (Cai et al., 2024), each head predicts several options for a token position. The most promising sequence from these options is selected. Image adapted from the paper, which is licensed under CC BY 4.0.',
           bierutTitle: 'Multi-Head Tree Speculation Inside a Single Backbone',
           editorialAnalysis:
-            'Instead of running a separate sequential draft model, Medusa attaches multiple lightweight linear heads to the last hidden state of the frozen base model. Head 1 predicts candidates for t+2, Head 2 for t+3, and a tree-attention mask verifies the Cartesian candidate paths in one forward pass.',
+            'Instead of running a separate sequential draft model, Medusa attaches multiple lightweight linear heads to the last hidden state of the frozen base model.',
           keyTakeaways: [
-            'Medusa requires training lightweight auxiliary heads while keeping the base LLM frozen.',
-            'Tree attention verifies multiple branching candidate continuations simultaneously.',
-          ],
+          'Medusa requires training lightweight auxiliary heads while keeping the base LLM frozen.',
+          'Tree attention verifies multiple branching candidate continuations simultaneously.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Weight-only quantization (FP16 -> INT8/INT4) is the highest-ROI compression method; unstructured pruning rarely accelerates GPUs due to hardware sparsity constraints.',
-        'Speculative decoding achieves >2x latency reduction with zero quality degradation by verifying K fast draft tokens in a single parallel target pass.',
-        'If target GPU MFU is already maxed out (compute-bound), speculative decoding loses its advantage because there are no idle FLOPs for free verification.',
-      ],
+          'Weight-only quantization (FP16 -> INT8/INT4) is the highest-ROI compression method; unstructured pruning rarely accelerates GPUs due to hardware sparsity constraints.',
+          'Speculative decoding achieves >2x latency reduction with zero quality degradation by verifying K fast draft tokens in a single parallel target pass.',
+        ],
       commonPitfalls: [
-        'Setting speculative lookahead K too large for creative/high-entropy tasks, which causes low draft acceptance rates and wastes draft compute.',
-        'Using a draft model whose tokenizer/vocabulary differs from the target model without complex token-alignment mapping.',
-      ],
+          'Setting speculative lookahead K too large for creative/high-entropy tasks, which causes low draft acceptance rates and wastes draft compute.',
+          'Using a draft model whose tokenizer/vocabulary differs from the target model without complex token-alignment mapping.',
+        ],
     },
     {
       id: 'ch09-sec-attention-kernels',
@@ -650,21 +624,10 @@ Because standard autoregressive decoding generates one token per forward pass, r
       title: 'Attention & KV Cache Optimization, Custom Kernels & Compilers',
       subtitle:
         'Exact KV cache memory sizing, GQA/MQA/MLA architectures, vLLM PagedAttention, FlashAttention SRAM tiling, and compiler lowering',
-      coreMechanism: `In an autoregressive transformer, generating token $x_t$ requires computing attention scores against the Key ($K$) and Value ($V$) vectors of all preceding tokens $x_1, \\dots, x_{t-1}$. While training computes all positions in parallel without caching, inference stores previously computed $K$ and $V$ vectors in a **KV Cache** in GPU HBM so they are not recomputed at every step. However, while attention compute scales quadratically $O(S^2)$ with sequence length $S$, KV cache memory footprint scales linearly with batch size $B$, sequence length $S$, layer count $L$, and hidden dimension $H$:
+      coreMechanism:
+        `In an autoregressive transformer, generating token $x_t$ requires computing attention scores against the Key ($K$) and Value ($V$) vectors of all preceding tokens $x_1, \\dots, x_{t-1}$. While training computes all positions in parallel without caching, inference stores previously computed $K$ and $V$ vectors in a **KV Cache** in GPU HBM so they are not recomputed at every step. However, while attention compute scales quadratically $O(S^2)$ with sequence length $S$, KV cache memory footprint scales linearly with batch size $B$, sequence length $S$, layer count $L$, and hidden dimension $H$:
 $$\\text{KV Cache Bytes} = 2 \\times B \\times S \\times L \\times H \\times M$$
-where $2$ accounts for both Key and Value matrices and $M$ is bytes per numerical element. For **Llama 2 13B** ($L=40$ layers, $H=5,120$, FP16 $M=2\\text{ bytes}$) serving a batch of $B=32$ at sequence length $S=2,048$, the unoptimized KV cache consumes $2 \\times 32 \\times 2,048 \\times 40 \\times 5,120 \\times 2 = 53.69\\text{ GB}$ ($\approx 54\\text{ GB}$)—exceeding the 26 GB needed for the 13B model weights themselves! At 500B+ scale with $B=512$ and $S=2,048$, Pope et al. (2022) showed the KV cache reaches **3 TB** (3x the model weights).
-
-Engineers attack this attention and KV bottleneck across three distinct layers:
-1. **Redesigning the Attention Mechanism (Requires Training/Finetuning)**:
-   - **Local Windowed Attention** (Beltagy et al., 2020): Restricts attention to a sliding window $W$ (e.g., 1,000 tokens instead of 10,000), slashing KV cache 10x; often interleaved with global attention layers.
-   - **Multi-Query Attention (MQA)** (Shazeer, 2019) & **Grouped-Query Attention (GQA)** (Ainslie et al., 2023): Standard Multi-Head Attention (MHA) maintains separate $K$ and $V$ heads for every Query head ($h_{kv} = h_q$). MQA shares a single $K$ and $V$ head across all Query heads ($h_{kv}=1$). **GQA** generalizes this by partitioning $h_q$ Query heads into $G$ groups that share one $K,V$ head per group ($H_{kv} = h_{kv} \\times d_h$), cutting KV cache size by $h_q / G$ (usually 4x–8x) with negligible accuracy loss.
-   - **Cross-Layer Attention** (Brandon et al., 2024) shares $K,V$ projections across adjacent transformer layers. By combining MQA, interleaved local/global attention, and cross-layer attention, **Character.AI** (serving 180-message average dialogues) reduced its production KV cache footprint by **over 20x** (and architectures like DeepSeek's Multi-Head Latent Attention, MLA, compress KV into low-rank latent vectors).
-2. **Optimizing KV Cache Management (Runtime Service Layer)**:
-   - **PagedAttention (vLLM)** (Kwon et al., 2023): Traditional serving pre-allocates a contiguous chunk of HBM for the maximum possible sequence length per request, wasting 60%–80% of memory to internal/external fragmentation. Inspired by OS virtual memory paging, PagedAttention partitions the KV cache into fixed-size, non-contiguous physical KV blocks addressed via a logical block table, eliminating fragmentation and enabling copy-on-write prefix sharing across requests, alongside **KV cache quantization** (INT8/FP8/INT4) and selective/adaptive eviction.
-3. **Writing Hardware-Specific Kernels & Compiler Lowering**:
-   - Standard PyTorch operations execute sequentially, writing intermediate attention matrices ($N \\times N$) out to slow HBM and reading them back. **FlashAttention** (Dao et al., 2022 for A100; FlashAttention-3 by Shah et al., 2024 for H100) is a custom GPU kernel that uses **loop tiling** and **operator fusion** (fusing $\\text{MatMul} \\to \\text{Mask} \\to \\text{Softmax} \\to \\text{Dropout} \\to \\text{MatMul}$) to compute exact attention entirely inside tiny, ultra-fast **on-chip SRAM (>10 TB/s)** without ever materializing the $N \\times N$ attention matrix in HBM.
-   - Four core kernel techniques drive these speedups: **Vectorization** (processing contiguous memory words per instruction), **Parallelization** (splitting independent chunks across GPU threads/blocks), **Loop Tiling** (ordering memory accesses to fit L1/L2 SRAM cache lines), and **Operator Fusion** (combining sequential loops into one pass to eliminate HBM round-trips).
-   - **ML Compilers** (` +
+where $2$ accounts for both Key and Value matrices and $M$ is bytes per numerical element.` +
     '`torch.compile`' +
     `, OpenXLA, Apache TVM, MLIR, NVIDIA TensorRT) automate the **lowering** of high-level Python model graphs into fused hardware-specific kernels (written in CUDA, OpenAI Triton, or AMD ROCm). In PyTorch's famous Llama-7B A100 case study, stacking ` +
     '`torch.compile`' +
@@ -674,7 +637,7 @@ Engineers attack this attention and KV bottleneck across three distinct layers:
           name: 'Unoptimized KV Cache Memory Footprint (MHA / GQA)',
           expression: 'KV_bytes = 2 × B × S × L × (h_kv × d_h) × M',
           intuition:
-            'Every token in every active sequence in the batch stores a Key vector and a Value vector at every transformer layer. In standard MHA, h_kv × d_h equals the full model dimension H; in GQA, h_kv is reduced by the group sharing factor.',
+            'Every token in every active sequence in the batch stores a Key vector and a Value vector at every transformer layer.',
           variables: [
             { symbol: '2', meaning: 'Factor of 2 for storing both Key (K) and Value (V) tensors' },
             { symbol: 'B', meaning: 'Active batch size (number of concurrent sequences)' },
@@ -687,7 +650,7 @@ Engineers attack this attention and KV bottleneck across three distinct layers:
             { symbol: 'M', meaning: 'Bytes per value (2 for FP16/BF16, 1 for INT8/FP8)' },
           ],
           workedExample:
-            'For Llama 2 13B (MHA with L = 40 layers, H = h_kv × d_h = 5,120) at batch size B = 32, sequence length S = 2,048, in FP16 (M = 2 bytes): KV_bytes = 2 × 32 × 2,048 × 40 × 5,120 × 2 = 53,687,091,200 bytes ≈ 54 GB. If converted to 8-group GQA (h_kv reduced 8x) and INT8 KV cache (M = 1), KV_bytes drops by 16x to 3.36 GB!',
+            'For Llama 2 13B (MHA with L = 40 layers, H = h_kv × d_h = 5,120) at batch size B = 32, sequence length S = 2,048, in FP16 (M = 2 bytes): KV_bytes = 2 × 32 × 2,048 × 40 × 5,120 × 2 = 53,687,091,200 bytes ≈ 54 GB.',
         },
       ],
       figures: [
@@ -699,9 +662,9 @@ Engineers attack this attention and KV bottleneck across three distinct layers:
           editorialAnalysis:
             'Figure 9-12 shows how during decoding step t+1, the Key and Value projections for tokens 1..t are fetched from the KV cache in HBM while only the newest token x_t computes fresh K_t and V_t vectors to append to the cache.',
           keyTakeaways: [
-            'KV caching is strictly an inference optimization; training computes all tokens in parallel and needs no KV cache.',
-            'Without KV cache optimization, long-context batching quickly exhausts GPU HBM.',
-          ],
+          'KV caching is strictly an inference optimization; training computes all tokens in parallel and needs no KV cache.',
+          'Without KV cache optimization, long-context batching quickly exhausts GPU HBM.',
+        ],
         },
         {
           file: 'aien_0913.png',
@@ -711,9 +674,9 @@ Engineers attack this attention and KV bottleneck across three distinct layers:
           editorialAnalysis:
             'Figure 9-13 contrasts standard unfused attention (which reads/writes intermediate MatMul, Mask, Softmax, and Dropout tensors back and forth to slow HBM) against the fused FlashAttention kernel, which loads Q, K, V tiles once into on-chip SRAM, executes all five sub-operations in-register/SRAM, and writes only the final output back to HBM.',
           keyTakeaways: [
-            'Operator fusion eliminates redundant HBM memory reads and writes.',
-            'Hardware changes require new kernel engineering (e.g., FlashAttention-1/2 for A100 vs. FlashAttention-3 for H100 asynchronous Tensor Cores).',
-          ],
+          'Operator fusion eliminates redundant HBM memory reads and writes.',
+          'Hardware changes require new kernel engineering (e.g., FlashAttention-1/2 for A100 vs.',
+        ],
         },
         {
           file: 'aien_0914.png',
@@ -723,19 +686,18 @@ Engineers attack this attention and KV bottleneck across three distinct layers:
           editorialAnalysis:
             'PyTorch’s benchmark on Llama-7B (A100-80GB) demonstrates how orthogonal optimizations compound: moving from eager FP16 baseline to torch.compile kernel lowering, then INT8 weight quantization, INT4 weight quantization, and finally Speculative Decoding progressively multiplies tokens/second.',
           keyTakeaways: [
-            'Inference optimizations across compiler, precision, and decoding algorithm layers stack multiplicatively.',
-          ],
+          'Inference optimizations across compiler, precision, and decoding algorithm layers stack multiplicatively.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Unoptimized KV cache grows as 2 × B × S × L × H × M and easily surpasses model weight size on long contexts or large batches.',
-        'GQA, MQA, sliding-window attention, and cross-layer attention shrink KV cache architecturally (over 20x at Character.AI); PagedAttention eliminates runtime memory fragmentation via non-contiguous virtual blocks.',
-        'FlashAttention speeds up attention not by reducing FLOPs, but by tiling and fusing operators inside >10 TB/s on-chip SRAM to avoid HBM bandwidth bottlenecks.',
-      ],
+          'Unoptimized KV cache grows as 2 × B × S × L × H × M and easily surpasses model weight size on long contexts or large batches.',
+          'GQA, MQA, sliding-window attention, and cross-layer attention shrink KV cache architecturally (over 20x at Character.AI).',
+        ],
       commonPitfalls: [
-        'Attempting to enable GQA or sliding-window attention at serving time without finetuning—architectural attention changes alter weight shapes and attention patterns and must be trained or uptrained.',
-        'Allocating contiguous max-context KV buffers per request, which causes OOM at low concurrency even when 70% of reserved HBM sits unused.',
-      ],
+          'Attempting to enable GQA or sliding-window attention at serving time without finetuning.',
+          'Allocating contiguous max-context KV buffers per request, which causes OOM at low concurrency even when 70% of reserved HBM sits unused.',
+        ],
     },
     {
       id: 'ch09-sec-service-opt',
@@ -743,35 +705,21 @@ Engineers attack this attention and KV bottleneck across three distinct layers:
       title: 'Inference Service Optimization: Batching, Disaggregation, Caching & Parallelism',
       subtitle:
         'Continuous in-flight batching, prefill-decode disaggregation, prefix/prompt caching, and replica vs. tensor vs. pipeline vs. context parallelism',
-      coreMechanism: `Unlike model-level compression, **service-level optimizations** orchestrate how hardware resources, request queues, and memory buffers are scheduled—meaning they are **100% lossless** and never alter model output quality. Four service-level pillars define modern production LLM engines (such as vLLM, TensorRT-LLM, SGLang, and DistServe):
+      coreMechanism:
+        `Unlike model-level compression, **service-level optimizations** orchestrate how hardware resources, request queues, and memory buffers are scheduled—meaning they are **100% lossless** and never alter model output quality. Four service-level pillars define modern production LLM engines (such as vLLM, TensorRT-LLM, SGLang, and DistServe):
 
-**1. Batching Strategies (Static vs. Dynamic vs. Continuous / In-Flight Batching)**:
-- **Static Batching**: Waits until a fixed batch size $B$ (e.g., 4 requests) is full before executing, and waits until all $B$ sequences finish before returning any response. Like a bus that refuses to depart until every seat is full, the first request suffers arbitrary arrival delay.
-- **Dynamic Batching**: Adds a maximum time window (e.g., dispatch when $B=4$ OR $100\\text{ ms}$ elapses). However, in naive sequence-level batching, if Request 1 generates 10 tokens and Request 2 generates 1,000 tokens, Request 1 is held hostage until Request 2 emits '<eos>', wasting GPU compute on padding tokens and inflating tail latency.
-- **Continuous Batching (In-Flight / Iteration-Level Batching)**: Introduced in **Orca** (Yu et al., 2022), the scheduler operates at the granularity of a single token iteration rather than an entire sequence. The moment Request 1 emits '<eos>' at step 10, it is immediately returned to the user, and a waiting Request 5 is slotted into the active batch at step 11. GPU occupancy stays maxed out with zero padding waste.
-
-**2. Decoupling (Disaggregating) Prefill and Decode**:
-When prefill and decode share the same GPU, a newly arriving request with a long prompt triggers a compute-heavy prefill burst that hogs Tensor Cores and stalls all ongoing decode streams on that GPU, spiking TPOT for active users. Systems like **DistServe** (Zhong et al., 2024) and **TetriInfer / Inference Without Interference** (Hu et al., 2024) disaggregate prefill and decode onto separate GPU pools: the **Prefill Pool** computes the initial prompt pass and transfers the resulting KV cache across high-speed intra-node **NVLink** or inter-node RDMA to the **Decode Pool**, which smoothly streams output tokens without compute interference. Workload characteristics dictate the **Prefill-to-Decode GPU ratio**: long-input workloads prioritizing low TTFT use **2:1 to 4:1** prefill-to-decode instances, whereas short-prompt chat workloads prioritizing low TPOT use **1:2 to 1:1**.
-
-**3. Prompt (Prefix / Context) Caching**:
-Production applications repeatedly process identical prompt prefixes across calls: a 1,000-token system prompt sent 1,000,000 times daily wastes **1 billion input tokens/day** of prefill compute! **Prompt Caching** (Gim et al., 2023) stores the precomputed KV cache blocks of common prefixes (system prompts, few-shot examples, uploaded codebases/books, or multi-turn conversation history) in memory for instant reuse across queries. Anthropic reports up to **90% cost savings and 79% TTFT reduction** (e.g., a 100K-token book chat drops from 11.5s to 2.4s TTFT; a 10-turn conversation drops from ~10s to ~2.5s TTFT), while Google Gemini offers a 75% discount on cached input tokens plus an hourly storage fee.
-
-**4. Parallelism Strategies (Replica vs. Model vs. Context/Sequence Parallelism)**:
-- **Replica Parallelism**: Deploys multiple independent full copies of the model across GPUs (solving a multi-model bin-packing problem across heterogeneous 24GB/40GB/80GB GPUs). Scales RPS throughput linearly without inter-GPU communication overhead, and lowers latency under high traffic by reducing queue depth per replica.
-- **Tensor Parallelism (Intra-Operator)**: Splits individual weight matrices column-wise and row-wise across multiple GPUs (e.g., 4 or 8 GPUs connected via NVLink) so all GPUs compute slices of the same matrix multiplication simultaneously. Essential for fitting large models (e.g., 70B–405B) that exceed single-GPU HBM, and **reduces single-request latency** (TPOT/TTFT) because multiple HBM buses stream weight shards in parallel, provided interconnect bandwidth exceeds communication overhead.
-- **Pipeline Parallelism (Inter-Operator)**: Assigns consecutive blocks of transformer layers to different machines (e.g., Layers 1–20 on GPU 1, Layers 21–40 on GPU 2) and streams micro-batches across stages. Increases aggregate throughput and fits giant models, but **increases single-request latency** due to stage handoff overhead (making it popular for training, but generally avoided for low-latency inference in favor of tensor + replica parallelism).
-- **Context & Sequence Parallelism**: For ultra-long inputs (100K–1M+ tokens), **Context Parallelism** splits the input token sequence across devices (GPU 1 processes tokens 1..50K, GPU 2 processes 50K..100K), while **Sequence Parallelism** distributes specific operators (such as LayerNorm, Dropout, or Attention vs. FFN) across devices.`,
+**1. Batching Strategies (Static vs.`,
       figures: [
         {
           file: 'aien_0915.png',
           originalLabel: 'Figure 9-15. Dynamic batching keeps the latency manageable but might be less compute-efficient.',
           bierutTitle: 'Why Sequence-Level Batching Wastes Compute on Variable-Length Prompts',
           editorialAnalysis:
-            'Figure 9-15 compares Static Batching (which stalls early requests until the batch fills) with Dynamic Batching (which dispatches after a fixed timer window even if partially full). Both still suffer when short and long generations are locked together until the longest response completes.',
+            'Figure 9-15 compares Static Batching (which stalls early requests until the batch fills) with Dynamic Batching (which dispatches after a fixed timer window even if partially full).',
           keyTakeaways: [
-            'Static batching maximizes batch fullness at the expense of unbounded arrival latency.',
-            'Dynamic batching bounds wait time via a timer window (e.g., 100 ms).',
-          ],
+          'Static batching maximizes batch fullness at the expense of unbounded arrival latency.',
+          'Dynamic batching bounds wait time via a timer window (e.g., 100 ms).',
+        ],
         },
         {
           file: 'aien_0916.png',
@@ -781,8 +729,8 @@ Production applications repeatedly process identical prompt prefixes across call
           editorialAnalysis:
             'Figure 9-16 illustrates Continuous (In-Flight) Batching: as soon as one sequence finishes generating, it exits the batch and a new queued request takes its slot on the very next token step, keeping all batch lanes occupied.',
           keyTakeaways: [
-            'Continuous batching is the single highest-impact scheduling upgrade for LLM serving throughput and latency.',
-          ],
+          'Continuous batching is the single highest-impact scheduling upgrade for LLM serving throughput and latency.',
+        ],
         },
         {
           file: 'aien_0917.png',
@@ -792,41 +740,39 @@ Production applications repeatedly process identical prompt prefixes across call
           editorialAnalysis:
             'Figure 9-17 shows how multiple user queries that share a common prefix (System Prompt + Shared Document Context) bypass redundant prefill computation by reading the pre-populated KV states directly from the Prompt Cache.',
           keyTakeaways: [
-            'Prompt caching slashes TTFT by up to 75–79% and input token cost by up to 75–90% on long shared prefixes.',
-            'Structure prompts with static content (system instructions, RAG corpus, few-shot examples) strictly at the beginning of the prompt so prefix matching succeeds.',
-          ],
+          'Prompt caching slashes TTFT by up to 75–79% and input token cost by up to 75–90% on long shared prefixes.',
+          'Structure prompts with static content (system instructions, RAG corpus, few-shot examples) strictly at the beginning of the prompt so prefix matching succeeds.',
+        ],
         },
         {
           file: 'aien_0918.png',
           originalLabel: 'Figure 9-18. Tensor parallelism for matrix multiplication.',
           bierutTitle: 'Sharding Weight Matrices Across GPUs to Multiply HBM Bandwidth',
           editorialAnalysis:
-            'Figure 9-18 depicts column-wise Tensor Parallelism: matrix B is split into B1 and B2 across two accelerators, each multiplying against input A simultaneously before concatenating [A·B1 | A·B2]. This aggregates both HBM capacity and HBM bandwidth across GPUs.',
+            'Figure 9-18 depicts column-wise Tensor Parallelism: matrix B is split into B1 and B2 across two accelerators, each multiplying against input A simultaneously before concatenating [A·B1 | A·B2].',
           keyTakeaways: [
-            'Tensor parallelism reduces per-request latency (TTFT and TPOT) by parallelizing every matrix multiply across high-speed NVLink.',
-          ],
+          'Tensor parallelism reduces per-request latency (TTFT and TPOT) by parallelizing every matrix multiply across high-speed NVLink.',
+        ],
         },
         {
           file: 'aien_0919.png',
           originalLabel: 'Figure 9-19. Pipeline parallelism enables model splits to be executed in parallel.',
           bierutTitle: 'Layer-Staged Micro-Batching across Multi-Node Pipelines',
           editorialAnalysis:
-            'Figure 9-19 shows a model split into 4 sequential layer stages across 4 machines processing micro-batches in an overlapping staircase schedule. While total cluster throughput rises, each individual micro-batch must traverse all 4 network hops sequentially.',
+            'Figure 9-19 shows a model split into 4 sequential layer stages across 4 machines processing micro-batches in an overlapping staircase schedule.',
           keyTakeaways: [
-            'Pipeline parallelism fits huge models and boosts throughput, but adds inter-stage communication latency to each request.',
-          ],
+          'Pipeline parallelism fits huge models and boosts throughput, but adds inter-stage communication latency to each request.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Continuous (in-flight) batching schedules at the token iteration level, returning short responses immediately and slotting new requests without padding bubbles.',
-        'Disaggregating prefill and decode onto separate GPU pools prevents compute-heavy prefill bursts from degrading decode TPOT; tune Prefill:Decode ratios (e.g., 2:1–4:1 for long inputs vs. 1:2–1:1 for short inputs).',
-        'Prompt caching eliminates redundant prefill on shared prefixes (system prompts, long documents, chat history), slashing TTFT by up to 79% and cost by up to 90%.',
-        'Use Tensor Parallelism within a node (NVLink) to fit large models and lower latency; use Replica Parallelism across nodes to scale RPS.',
-      ],
+          'Continuous (in-flight) batching schedules at the token iteration level, returning short responses immediately and slotting new requests without padding bubbles.',
+          'Disaggregating prefill and decode onto separate GPU pools prevents compute-heavy prefill bursts from degrading decode TPOT.',
+        ],
       commonPitfalls: [
-        'Placing dynamic variables (like timestamps or user IDs) at the very top of a system prompt, which invalidates exact prefix matching and destroys Prompt Cache hit rates.',
-        'Using Pipeline Parallelism instead of Tensor/Replica Parallelism for strict low-latency online chat, incurring inter-stage bubble and hop delays.',
-      ],
+          'Placing dynamic variables (like timestamps or user IDs) at the very top of a system prompt, which invalidates exact prefix matching and destroys Prompt Cache hit rates.',
+          'Using Pipeline Parallelism instead of Tensor/Replica Parallelism for strict low-latency online chat, incurring inter-stage bubble and hop delays.',
+        ],
     },
   ],
   tradeOffMatrices: [
@@ -917,7 +863,7 @@ Production applications repeatedly process identical prompt prefixes across call
         ],
       ],
       verdictRule:
-        'Start with lossless service-level and kernel optimizations (Continuous Batching + PagedAttention + FlashAttention + Prompt Caching + Tensor Parallelism). Next, add FP8/INT8 quantization and Speculative Decoding if decode TPOT remains bandwidth-bound.',
+        'Start with lossless service-level and kernel optimizations (Continuous Batching + PagedAttention + FlashAttention + Prompt Caching + Tensor Parallelism).',
     },
   ],
   engineeringScenarios: [
@@ -925,13 +871,13 @@ Production applications repeatedly process identical prompt prefixes across call
       id: 'ch09-scen-rag-tpot-spikes',
       title: 'Eliminating p99 TPOT Stalls in a Long-Context Enterprise RAG Service',
       roleAndContext:
-        'Principal Inference Systems Engineer running a self-hosted Llama-3-70B RAG service on 8xH100 nodes. Users query 30,000-token legal contracts and expect streaming chat responses with TTFT < 1.5s and smooth streaming TPOT < 80ms.',
+        'Principal Inference Systems Engineer running a self-hosted Llama-3-70B RAG service on 8xH100 nodes.',
       symptomOrFailure:
-        'While median (p50) TPOT is 45ms, p95 and p99 TPOT spike above 900ms—causing visible 1-second freezes in the middle of streaming sentences for active users—and the GPUs frequently hit Out-Of-Memory (OOM) at just 12 concurrent users despite 640 GB of aggregate HBM.',
+        'While median (p50) TPOT is 45ms, p95 and p99 TPOT spike above 900ms.',
       naiveFixAndWhyItFails:
-        'Doubling the number of replica nodes and lowering the max batch size to 4. This doubles infrastructure cost to $60K/month while barely fixing the p99 streaming freezes, because even a single new 30,000-token contract arriving on a node monopolizes GPU Tensor Cores for ~800ms of compute-bound prefill, stalling all 3 other active decode streams on that node.',
+        'Doubling the number of replica nodes and lowering the max batch size to 4.',
       firstPrinciplesSolution:
-        'Apply a three-part systems fix: (1) Enable PagedAttention + INT8 KV Cache Quantization with Prefix Caching so multiple questions against the same 30,000-token contract share physical non-contiguous KV pages in HBM without recomputing prefill; (2) Disaggregate the 8xH100 node into a Prefill Pool (5 GPUs, ~2.5:1 ratio for long inputs) and a Decode Pool (3 GPUs) transferring KV states over 900 GB/s NVLink, completely isolating active decode streams from incoming 30K-token prefill bursts; (3) Enable Inference with Reference (Prompt Lookup Decoding) on the Decode Pool, since legal answers frequently quote contract clauses verbatim.',
+        'Apply a three-part systems fix: (1) Enable PagedAttention + INT8 KV Cache Quantization with Prefix Caching so multiple questions against the same 30,000-token contract share physical non-contiguous KV pages in HBM without recomputing prefill.',
       measurableOutcome:
         'p99 TPOT drops from 920ms to 52ms (zero mid-stream freezes), TTFT on repeated contract queries drops by 78% (from 1.4s to 0.31s via prefix caching), concurrent user capacity per node rises 4.2x without OOM, and SLO-compliant Goodput increases by 380%.',
     },
@@ -962,7 +908,7 @@ Production applications repeatedly process identical prompt prefixes across call
             text: '53.7 GB (~54 GB)',
             isCorrect: true,
             explanation:
-              'Using KV_bytes = 2 × B × S × L × H × M = 2 × 32 × 2,048 × 40 × 5,120 × 2 = 53,687,091,200 bytes ≈ 54 GB. At B=32 and S=2,048, the KV cache is more than double the 26 GB footprint of the 13B model weights!',
+              'Using KV_bytes = 2 × B × S × L × H × M = 2 × 32 × 2,048 × 40 × 5,120 × 2 = 53,687,091,200 bytes ≈ 54 GB.',
           },
           {
             label: 'D',
@@ -975,28 +921,28 @@ Production applications repeatedly process identical prompt prefixes across call
       {
         id: 'ch09-q2',
         scenarioPrompt:
-          'Your team serves a 7B parameter model in FP16 (2 bytes/parameter) on an accelerator with a theoretical peak HBM memory bandwidth of 2 TB/s (2,000 GB/s). At low concurrency, you observe an aggregate decode throughput of 50 tokens/second. What is the approximate Model Bandwidth Utilization (MBU), and why would Speculative Decoding be effective here?',
+          'Your team serves a 7B parameter model in FP16 (2 bytes/parameter) on an accelerator with a theoretical peak HBM memory bandwidth of 2 TB/s (2,000 GB/s). At low concurrency, you observe an aggregate decode throughput of 50 tokens/second.',
         options: [
           {
             label: 'A',
             text: 'MBU is 35% (700 GB/s used); Speculative Decoding is effective because low-concurrency decoding is memory-bandwidth-bound with abundant idle compute FLOPs (low MFU) to verify K draft tokens in parallel.',
             isCorrect: true,
             explanation:
-              'Bandwidth used = 7B params × 2 bytes/param × 50 tokens/s = 700 GB/s. Dividing by 2,000 GB/s peak bandwidth gives 35% MBU (or 70% at 100 tok/s on 2 TB/s). Because the GPU is waiting on HBM transfers and leaving Tensor Core FLOPs idle, verifying K draft tokens in parallel uses those idle FLOPs without increasing weight transfer time.',
+              'Bandwidth used = 7B params × 2 bytes/param × 50 tokens/s = 700 GB/s.',
           },
           {
             label: 'B',
             text: 'MBU is 95%; Speculative Decoding is effective because it reduces the number of bytes per parameter stored in HBM.',
             isCorrect: false,
             explanation:
-              'Speculative decoding does not compress bytes per parameter (that is quantization); in fact, hosting a draft model slightly increases total memory footprint.',
+              'Speculative decoding does not compress bytes per parameter (that is quantization).',
           },
           {
             label: 'C',
             text: 'MBU is 35%; Speculative Decoding works by skipping verification of the target model logits and trusting the draft model whenever draft confidence exceeds 0.8.',
             isCorrect: false,
             explanation:
-              'Speculative decoding NEVER skips target model verification; the target model verifies every draft token in parallel, which guarantees the output distribution is 100% lossless.',
+              'Speculative decoding NEVER skips target model verification.',
           },
           {
             label: 'D',
@@ -1010,21 +956,21 @@ Production applications repeatedly process identical prompt prefixes across call
       {
         id: 'ch09-q3',
         scenarioPrompt:
-          'You manage a cluster serving a customer-facing coding assistant with strict SLOs: TTFT <= 200 ms and TPOT <= 100 ms. Under peak traffic, your cluster completes 100 requests per minute (RPM), nvidia-smi shows 98% GPU utilization, and only 30 of those 100 completed requests satisfy both the TTFT and TPOT thresholds. Which statement accurately diagnoses your system?',
+          'You manage a cluster serving a customer-facing coding assistant with strict SLOs: TTFT <= 200 ms and TPOT <= 100 ms. Under peak traffic, your cluster completes 100 requests per minute (RPM), nvidia-smi shows 98% GPU utilization, and only 30 of those 100 completed requests satisfy both the TTFT and TPOT thresholds.',
         options: [
           {
             label: 'A',
             text: 'Your MFU is 98%, and your Goodput is 100 RPM.',
             isCorrect: false,
             explanation:
-              'nvidia-smi GPU utilization only measures whether any GPU core is active over a time slice, not MFU (Model FLOP/s Utilization). In addition, Goodput only counts requests that meet the SLO.',
+              'nvidia-smi GPU utilization only measures whether any GPU core is active over a time slice, not MFU (Model FLOP/s Utilization).',
           },
           {
             label: 'B',
             text: 'Your raw throughput is 100 RPM, your Goodput is 30 RPM, and your batching/scheduling or co-located prefill-decode interference is violating latency SLOs for 70% of requests.',
             isCorrect: true,
             explanation:
-              'By definition, Goodput is the rate of completed requests that satisfy the application SLOs (here, 30 RPM out of 100 RPM). High nvidia-smi utilization simply means the GPU is busy, not that it is achieving high MFU or meeting latency targets.',
+              'By definition, Goodput is the rate of completed requests that satisfy the application SLOs (here, 30 RPM out of 100 RPM).',
           },
           {
             label: 'C',
@@ -1038,28 +984,28 @@ Production applications repeatedly process identical prompt prefixes across call
             text: 'Replacing Tensor Parallelism with Pipeline Parallelism will cut per-request latency and double Goodput.',
             isCorrect: false,
             explanation:
-              'Pipeline parallelism increases per-request latency due to inter-stage communication handoffs; Tensor Parallelism and Prefill-Decode Disaggregation are the right tools to reduce latency.',
+              'Pipeline parallelism increases per-request latency due to inter-stage communication handoffs.',
           },
         ],
       },
       {
         id: 'ch09-q4',
         scenarioPrompt:
-          'An enterprise AI application prepends a 1,000-token system prompt to every user request and processes 1,000,000 requests per day. However, a developer formatted the system prompt template as: `"Current Timestamp: {unix_time_ms}\\nYou are an enterprise support assistant..."`. What is the architectural consequence of this template on an inference server with Prompt (Prefix) Caching enabled?',
+          'An enterprise AI application prepends a 1,000-token system prompt to every user request and processes 1,000,000 requests per day. However, a developer formatted the system prompt template as: `"Current Timestamp: {unix_time_ms}\\nYou are an enterprise support assistant..."`.',
         options: [
           {
             label: 'A',
             text: 'Prompt Caching will still cache the remaining 995 tokens of the system prompt because transformer attention is position-independent.',
             isCorrect: false,
             explanation:
-              'Causal self-attention and rotary positional embeddings (RoPE) mean that every token’s Key and Value vector depends on all preceding tokens and its exact position. Changing token 1 invalidates the entire downstream KV cache.',
+              'Causal self-attention and rotary positional embeddings (RoPE) mean that every token’s Key and Value vector depends on all preceding tokens and its exact position.',
           },
           {
             label: 'B',
             text: 'Injecting a millisecond timestamp at token position 0 invalidates the prefix match on every request, reducing Prompt Cache hit rate to 0% and forcing the cluster to prefill 1 billion redundant system-prompt tokens per day.',
             isCorrect: true,
             explanation:
-              'Because causal attention computes K and V conditioned on all prior tokens, prefix caching requires an exact token match from the very beginning of the sequence. Putting a dynamic timestamp at the start breaks prefix sharing across requests.',
+              'Because causal attention computes K and V conditioned on all prior tokens, prefix caching requires an exact token match from the very beginning of the sequence.',
           },
           {
             label: 'C',
@@ -1082,15 +1028,15 @@ Production applications repeatedly process identical prompt prefixes across call
         id: 'ch09-fc1',
         category: 'optimization',
         front: 'Why is Transformer Prefill compute-bound while Autoregressive Decode is memory-bandwidth-bound?',
-        back: 'Prefill processes all N input tokens in parallel (dense matrix-matrix multiplication, GEMM), achieving high arithmetic intensity (FLOPs/byte) and saturating GPU Tensor Cores. Decode generates 1 token at a time sequentially (matrix-vector multiplication, GEMV), requiring the entire model weights and KV cache to be streamed from HBM into SRAM for each single token step.',
+        back: 'Prefill processes all N input tokens in parallel (dense matrix-matrix multiplication, GEMM), achieving high arithmetic intensity (FLOPs/byte) and saturating GPU Tensor Cores.',
         mentalHook: 'Prefill = parallel GEMM sprint (FLOP-limited); Decode = sequential GEMV weight-streaming marathon (HBM TB/s-limited).',
       },
       {
         id: 'ch09-fc2',
         category: 'optimization',
         front: 'What is the exact formula for unoptimized KV Cache size in bytes, and how does Grouped-Query Attention (GQA) reduce it?',
-        back: 'KV_bytes = 2 × B × S × L × H × M (where 2 = K and V, B = batch size, S = sequence length, L = layers, H = model hidden dimension = h_kv × d_h, and M = bytes per value). GQA groups Query heads into G groups that share a single Key and Value head per group, shrinking the H dimension in the KV cache by a factor of (h_q / G).',
-        mentalHook: '2 · B · S · L · H · M — GQA divides H by the query-head sharing factor.',
+        back: 'KV_bytes = 2 × B × S × L × H × M (where 2 = K and V, B = batch size, S = sequence length, L = layers, H = model hidden dimension = h_kv × d_h, and M = bytes per value).',
+        mentalHook: '2 · B · S · L · H · M.',
       },
       {
         id: 'ch09-fc3',
@@ -1103,7 +1049,7 @@ Production applications repeatedly process identical prompt prefixes across call
         id: 'ch09-fc4',
         category: 'optimization',
         front: 'How does Speculative Decoding achieve a 2x+ speedup without changing model quality?',
-        back: 'A small, fast draft model proposes K tokens sequentially. The large target model verifies all K tokens in parallel in a single forward pass (harvesting idle FLOPs during bandwidth-bound decoding). It accepts the longest valid prefix j (using rejection sampling that preserves the exact target distribution) and emits 1 additional token from its own verification logits, yielding j+1 exact target tokens in one target pass.',
+        back: 'A small, fast draft model proposes K tokens sequentially.',
         mentalHook: 'Draft K fast -> Verify K in parallel using free FLOPs -> Emit j+1 exact target tokens.',
       },
       {
@@ -1134,7 +1080,7 @@ Production applications repeatedly process identical prompt prefixes across call
           'Shows how Speculative Decoding uses a small draft model to guess K tokens and verifies all K+1 positions in a single target model HBM weight load—using the idle Tensor Core FLOPs to convert sequential decoding into a mini-prefill pass with 100% mathematical losslessness.',
         ],
         modelExplanation:
-          'Think of a GPU as a factory with massively parallel assembly lines (Tensor Cores capable of ~2,000 TFLOP/s) fed by a warehouse across the street (High-Bandwidth Memory, HBM, holding 140 GB of weights for a 70B FP16 model). When a user sends a 100-token prompt ( the Prefill step), all 100 tokens are already known. The GPU trucks the 140 GB of weights across the street once and multiplies them against all 100 tokens simultaneously inside its fast on-chip SRAM. Arithmetic intensity (operations per byte moved) is high, so Prefill finishes in milliseconds and is compute-bound.\n\nWhen generating the response (the Decode step), the model is autoregressive: it cannot generate token #2 until it knows token #1. So to generate just one token, the GPU must truck the entire 140 GB of weights from HBM into SRAM, do a tiny amount of math for that single token, and throw the weights away—repeating that 140 GB transfer 100 separate times for 100 output tokens! During each step, 95%+ of the GPU’s arithmetic units sit completely idle waiting on the memory bus. Speculative Decoding exploits those idle arithmetic units: a tiny 4B draft model rapidly guesses the next K=5 tokens. Then, the 70B target model loads its 140 GB of weights from HBM once and checks all 5 draft tokens in parallel—which takes almost the exact same time as generating 1 token because the bottleneck was loading the weights, not doing the math. It accepts every valid prefix token and emits one bonus token from its own logits, yielding up to 6 exact 70B-quality tokens for the memory-bandwidth price of 1.',
+          'Think of a GPU as a factory with massively parallel assembly lines (Tensor Cores capable of ~2,000 TFLOP/s) fed by a warehouse across the street (High-Bandwidth Memory, HBM, holding 140 GB of weights for a 70B FP16 model). When a user sends a 100-token prompt ( the Prefill step), all 100 tokens are already known.',
       },
       {
         id: 'ch09-feyn-2',
@@ -1148,7 +1094,7 @@ Production applications repeatedly process identical prompt prefixes across call
           'Explains why an incoming long prompt’s compute-bound prefill steals GPU resources and causes TPOT jitter for ongoing decodes, and how Prefill-Decode Disaggregation isolates them across separate GPU pools connected via NVLink.',
         ],
         modelExplanation:
-          'In a naive LLM server handling 50 concurrent users, three bottlenecks collide. First, every generated token requires attending to all prior tokens’ Key and Value vectors (the KV cache, which grows as 2 × B × S × L × H × M). Because the server does not know in advance whether a user’s response will be 20 tokens or 4,096 tokens, a naive engine reserves a contiguous 4,096-token slab of HBM for every request—wasting up to 80% of GPU memory on empty reserved slots and causing Out-Of-Memory crashes at low concurrency. Second, in naive batching, all requests in a batch are locked together until the longest response finishes; a user whose answer is 10 tokens long waits seconds while another user in the batch generates a 1,000-token essay. Third, whenever a new user submits a 10,000-token document, the GPU must pause its fast token-streaming loop to crunch a massive compute-bound prefill pass, causing visible freezes (TPOT spikes) for everyone else.\n\nModern engines solve all three at the service layer without touching model accuracy. First, PagedAttention (from vLLM) treats GPU HBM like operating system virtual memory: it chops the KV cache into small, fixed-size blocks that can sit anywhere in physical HBM, allocating a new block only when a sequence actually grows and allowing multiple users to share the exact same physical KV blocks for a shared system prompt. Second, Continuous (In-Flight) Batching schedules at every single token step: the millisecond the 10-token user hits <eos>, their response returns immediately and a waiting user takes their slot on the very next token step. Finally, Prefill-Decode Disaggregation splits the cluster into a Prefill GPU pool and a Decode GPU pool: incoming long prompts are crunched on the Prefill GPUs, and their initial KV blocks are shipped over high-speed NVLink to the Decode GPUs, which stream tokens smoothly with zero prefill interference.',
+          'In a naive LLM server handling 50 concurrent users, three bottlenecks collide. First, every generated token requires attending to all prior tokens’ Key and Value vectors (the KV cache, which grows as 2 × B × S × L × H × M).',
       },
     ],
   },
@@ -1185,7 +1131,7 @@ Production applications repeatedly process identical prompt prefixes across call
         chapterNumber: 9,
         importance: 2,
         definition:
-          'Goodput measures completed RPS satisfying both TTFT and TPOT SLOs; MFU and MBU measure true fraction of peak FLOP/s and peak HBM bandwidth utilized.',
+          'Goodput measures completed RPS satisfying both TTFT and TPOT SLOs.',
         formulaOrRule: 'MBU = (Params × Bytes/Param × TPS) / Peak_Bandwidth',
         whyItMatters:
           'Replaces misleading nvidia-smi utilization and raw TPS metrics that ignore user-facing latency violations.',
@@ -1345,17 +1291,17 @@ export const ch10Mastery: ChapterMastery = {
   title: 'AI Engineering Architecture and User Feedback',
   subtitle:
     'The Progressive 5-Stage Production Architecture, Guardrails, Routers & Gateways, Caching, Observability & the Conversational Data Flywheel',
-  readingTimeMinutes: 55,
+  readingTimeMinutes: 10,
   sourceWordCount: 13420,
   executiveThesis:
-    'A production AI application is not a naked model API call; it is a modular, observable distributed system coupled to a proprietary user feedback flywheel. By evolving architecture progressively—from (1) Context Enhancement via RAG and tools, to (2) Input/Output Guardrails with PII reverse-mapping, (3) Intent Routers and Unified Model Gateways, (4) Exact and Semantic Caching, and (5) Agentic Loops with Controlled Write Actions—and instrumenting end-to-end traces alongside explicit and implicit conversational feedback extraction, teams transform fragile demos into self-improving, defensible products while guarding against sycophancy and degenerate feedback loops.',
+    'A production AI application is not a naked model API call.',
   paradigmShift: {
     oldWay:
       'Jump straight into a heavy orchestration framework wrapping a single frontier LLM API, ship without granular tracing or PII masking, treat monitoring as simple uptime checks, and leave user feedback collection to generic product star ratings.',
     newWay:
       'Evolve architecture incrementally as concrete failure modes appear: mask sensitive inputs before external API calls, route intents across specialized/small models behind a unified Model Gateway, trace every span to minimize MTTD/MTTR, and engineer implicit conversational feedback extraction directly into the user workflow to power a preference-tuning data flywheel.',
     whyItChanged:
-      'Foundation models are probabilistic, open-ended, and expensive. Without architectural guardrails, gateways, and observability, failures compound silently across multi-step loops; without embedded conversational feedback engineering, teams fail to capture the proprietary preference data that separates durable AI products from thin API wrappers.',
+      'Foundation models are probabilistic, open-ended, and expensive.',
   },
   heroIllustrationUrl: '/books/ai-engineering/assets/aien_1010.png',
   customDiagrams: [
@@ -1465,7 +1411,7 @@ export const ch10Mastery: ChapterMastery = {
   <text x="400" y="392" fill="#cbd5e1" font-size="9" text-anchor="middle">Append-Only Logs (Prompts, Configs, Tool Calls) • End-to-End Request Traces (Spans, Latency, Cost) • Drift Detection (Prompt, User, Model API)</text>
 </svg>`,
       bierutCaption:
-        'Figure 10-A (Schematic Synthesis). Rather than adopting every abstraction on day one, a production AI platform evolves across five purposeful stages: (1) Context construction via RAG and read-only tools; (2) Input and output guardrails with reversible PII masking; (3) Intent routers and a centralized Model Gateway; (4) Exact and semantic caches; and (5) Iterative agent loops and write actions—all instrumented by continuous tracing and drift detection.',
+        'Figure 10-A (Schematic Synthesis).',
       annotations: [
         {
           step: '1–2',
@@ -1588,7 +1534,7 @@ export const ch10Mastery: ChapterMastery = {
   <text x="646" y="376" fill="#f3e8ff" font-size="8.5" text-anchor="middle">Adapt tone, verbosity &amp; domain memory per user</text>
 </svg>`,
       bierutCaption:
-        'Figure 10-B (Schematic Synthesis). Conversational interfaces generate a rich stream of implicit natural-language signals (early termination, rephrasing, user edits, FITS complaints) and workflow signals (Midjourney upscales, Copilot Tab-accepts, turn length vs. diversity). To turn these signals into a competitive data flywheel across Evaluation, Model Development, and Personalization, engineers must actively de-bias against leniency, position, and sycophancy loops.',
+        'Figure 10-B (Schematic Synthesis).',
       annotations: [
         {
           step: '1',
@@ -1606,7 +1552,7 @@ export const ch10Mastery: ChapterMastery = {
           step: '3',
           label: 'Preventing Sycophancy & Degenerate Feedback Loops',
           explanation:
-            'Blindly reinforcement-tuning on thumbs-up ratings causes exposure bias, audience drift, and sycophancy—teaching the model to agree with user misconceptions rather than remain factually accurate.',
+            'Blindly reinforcement-tuning on thumbs-up ratings causes exposure bias, audience drift, and sycophancy.',
         },
       ],
     },
@@ -1620,9 +1566,9 @@ export const ch10Mastery: ChapterMastery = {
       naiveIntuition:
         'Before launching an AI product, we should wire together LangChain/LlamaIndex, a semantic vector cache, three guardrail models, and an autonomous multi-agent loop.',
       firstPrinciplesReality:
-        'Every additional component in an AI pipeline introduces new latency penalties, hidden API calls, and compounding failure surfaces. Successful teams evolve their architecture through five deliberate steps—(0) bare model call, (1) context construction, (2) input/output guardrails, (3) router + gateway, (4) exact/semantic caching, and (5) agent loops + write actions—adding each layer only when metrics and traces justify the added complexity.',
+        'Every additional component in an AI pipeline introduces new latency penalties, hidden API calls, and compounding failure surfaces.',
       howToApply:
-        'Build v0 with direct, transparent code (no heavy orchestrator abstractions). Add RAG/tools first to ground quality; add PII masking and output validation before external exposure; introduce routers and caches once traffic patterns reveal cost and latency hotspots.',
+        'Build v0 with direct, transparent code (no heavy orchestrator abstractions).',
     },
     {
       id: 'ch10-mm-observability-vs-monitoring',
@@ -1632,9 +1578,9 @@ export const ch10Mastery: ChapterMastery = {
       naiveIntuition:
         'Tracking aggregate daily dashboards of latency and average AI-judge relevancy scores is sufficient to maintain an AI application in production.',
       firstPrinciplesReality:
-        'Traditional monitoring watches external outputs without guaranteeing you can diagnose internal root causes. Observability—a stronger systems property—requires instrumenting every component so internal execution states can be inferred directly from external logs and hierarchical traces without deploying new debugging code. In foundation model pipelines, silent failures stem from three moving targets: unauthorized system prompt edits, evolving user prompting habits, and unannounced upstream commercial API model updates.',
+        'Traditional monitoring watches external outputs without guaranteeing you can diagnose internal root causes.',
       howToApply:
-        'Log every configuration, prompt template version, raw query, retrieved chunk, tool call, sampling parameter, and token distribution. Link these events into end-to-end request traces so any spike in MTTD/MTTR can be pinned to a specific step, release, or upstream API shift.',
+        'Log every configuration, prompt template version, raw query, retrieved chunk, tool call, sampling parameter, and token distribution.',
     },
     {
       id: 'ch10-mm-workflow-flywheel',
@@ -1644,7 +1590,7 @@ export const ch10Mastery: ChapterMastery = {
       naiveIntuition:
         'Put a 5-star rating widget or thumbs-up/down button under every response and finetune the model on all positively rated conversations.',
       firstPrinciplesReality:
-        'Explicit ratings are sparse and skewed by leniency, position, and verbosity biases. Conversely, implicit signals embedded directly inside the user’s task workflow (like GitHub Copilot Tab-accepts, Midjourney Upscales, or inline code edits) provide abundant, natural preference pairs. However, because you only receive feedback on what you show users, naively training on user approval creates degenerate feedback loops: exposure bias, user-base drift ("cat-photo haven"), and sycophancy (Sharma et al., 2023), where the LLM learns to flatter user prejudices at the expense of factual truth.',
+        'Explicit ratings are sparse and skewed by leniency, position, and verbosity biases.',
       howToApply:
         'Design UI actions where completing the user’s task simultaneously emits a clear preference signal, randomize side-by-side option positions to cancel position bias, never ask users to judge factual questions they aren’t qualified to verify, and balance user preference data against objective factual verification in post-training.',
     },
@@ -1656,23 +1602,17 @@ export const ch10Mastery: ChapterMastery = {
       title: 'Progressive Architecture Steps 1 & 2: Context Construction and Guardrails',
       subtitle:
         'Feature engineering via RAG/tools, reversible PII masking dictionaries, output validation retries, and the streaming vs. safety trade-off',
-      coreMechanism: `In its simplest incarnation (Step 0), an AI application passes a raw user query to a Model API (commercial or self-hosted) and returns the generated text—offering zero context augmentation, zero safety filtering, and zero cost optimization. In production, teams progressively expand this core through five architectural stages, beginning with **Step 1 (Enhance Context)** and **Step 2 (Put in Guardrails)**.
+      coreMechanism:
+        `In its simplest incarnation (Step 0), an AI application passes a raw user query to a Model API (commercial or self-hosted) and returns the generated text—offering zero context augmentation, zero safety filtering, and zero cost optimization. In production, teams progressively expand this core through five architectural stages, beginning with **Step 1 (Enhance Context)** and **Step 2 (Put in Guardrails)**.
 
 **Step 1: Enhance Context (Feature Engineering for Foundation Models)**:
-Just as traditional machine learning relies on feature engineering to supply predictive signals, foundation models rely on **context construction** to supply task-specific ground truth at inference time. Context is assembled via two mechanisms: **Retrieval (RAG)** across unstructured text, images, and SQL/tabular databases, and **Read-Only Tool Use** (invoking web search, weather, news, or internal enterprise APIs). While commercial model APIs (OpenAI, Anthropic Claude, Google Gemini) offer built-in document uploads and function calling, production platforms frequently build dedicated context pipelines to overcome provider caps on document counts, customize chunking and hybrid retrieval algorithms, and orchestrate parallel or long-running tool executions.
-
-**Step 2: Input and Output Guardrails**:
-Guardrails sit at every risk boundary where data enters or leaves the system:
-- **Input Guardrails** defend against two primary threats: **Prompt Attacks** (jailbreaks, indirect prompt injections—covered in Chapter 5) and **Leaking Private Information to External APIs**. Data leaks happen when employees paste proprietary source code or customer PII into third-party APIs (as famously occurred when Samsung engineers leaked confidential code to ChatGPT), when developers hardcode internal policies into system prompts, or when retrieval tools automatically inject restricted database rows into the prompt context. When an input scanner detects sensitive entities (SSN/phone numbers, human faces, or proprietary project codenames), the system can either block the request or apply **Reversible PII Masking**: replacing sensitive strings with placeholders like \`[PHONE NUMBER]\` before calling the external API, and using a local **PII Reverse Dictionary** to unmask the placeholders back into the real values when the response returns.
-- **Output Guardrails** perform two duties: **catching output failures** and **executing failure-handling policies**. Output failures split into **Quality Failures** (empty responses, malformatted JSON/schemas, factual hallucinations, or low-quality prose) and **Security Failures** (toxic/racist/illegal content, leaked PII, unauthorized remote code/tool execution, or brand-damaging statements about competitors). Engineers must simultaneously track the **False Refusal Rate**—an overly aggressive guardrail that blocks legitimate user work is itself a severe product failure.
-- **Failure Handling, Retries & Human Handoff**: Because LLM sampling is probabilistic, format and empty-response failures can often be resolved via **retry policies**. However, sequential retries double user-perceived latency; for strict latency SLOs, teams execute **parallel speculative calls** (sending the query twice simultaneously and picking the valid/higher-scoring output, trading API cost for low latency). For high-stakes or failing conversations, systems trigger **Human Operator Handoff** based on explicit trigger phrases, a sentiment classifier detecting rising user anger, or a turn-count threshold that prevents users from getting trapped in an unhelpful loop.
-- **The Guardrail Implementation Trade-Off (Latency & Streaming)**: Guardrails add latency—some latency-critical teams controversially skip them altogether. Crucially, **output guardrails conflict with streaming mode**: streaming sends tokens to the user screen as they are decoded to minimize TTFT, making it impossible to score the complete response before the user sees it (requiring retrospective retraction if a violation is detected mid-stream). Finally, third-party APIs vs. self-hosting shift guardrail priorities: self-hosting keeps data in-house (reducing external PII-leak input guardrails) but requires you to build the safety guardrails that commercial APIs include out of the box (using tools like Meta Purple Llama, NVIDIA NeMo Guardrails, Azure PyRIT / AI Content Filters, Google Perspective API, or OpenAI Moderation API).`,
+Just as traditional machine learning relies on feature engineering to supply predictive signals, foundation models rely on **context construction** to supply task-specific ground truth at inference time. Context is assembled via two mechanisms: **Retrieval (RAG)** across unstructured text, images, and SQL/tabular databases, and **Read-Only Tool Use** (invoking web search, weather, news, or internal enterprise APIs).`,
       stepByStepFlow: [
         {
           step: '1',
           title: 'Input Scanning & Reversible PII Masking',
           detail:
-            'Incoming query and retrieved context are scanned for PII and proprietary secrets. Detected entities are replaced with placeholders (e.g., [PHONE NUMBER]) stored in an in-memory Reverse PII Map.',
+            'Incoming query and retrieved context are scanned for PII and proprietary secrets.',
         },
         {
           step: '2',
@@ -1684,7 +1624,7 @@ Guardrails sit at every risk boundary where data enters or leaves the system:
           step: '3',
           title: 'Output Scoring, Retry/Fallback & Unmasking',
           detail:
-            'Output guardrails and AI scorers validate schema formatting, factual consistency, and safety. On pass, the Reverse PII Map restores masked placeholders before returning the response to the user; on fail, the system retries or transfers to a human agent.',
+            'Output guardrails and AI scorers validate schema formatting, factual consistency, and safety.',
         },
       ],
       figures: [
@@ -1695,8 +1635,8 @@ Guardrails sit at every risk boundary where data enters or leaves the system:
           editorialAnalysis:
             'Figure 10-1 establishes the minimal baseline: a user query flows directly into a Model API (commercial or self-hosted) and returns a response with no external context, no safety boundary, and no caching.',
           keyTakeaways: [
-            'Every architectural component should be justified by a concrete limitation of this Step 0 baseline.',
-          ],
+          'Every architectural component should be justified by a concrete limitation of this Step 0 baseline.',
+        ],
         },
         {
           file: 'aien_1002.png',
@@ -1705,8 +1645,8 @@ Guardrails sit at every risk boundary where data enters or leaves the system:
           editorialAnalysis:
             'Figure 10-2 adds the Context Enhancement layer, connecting the application to vector/tabular databases and external information-gathering APIs (search, news, weather) prior to model invocation.',
           keyTakeaways: [
-            'Context construction is the foundation-model equivalent of feature engineering.',
-          ],
+          'Context construction is the foundation-model equivalent of feature engineering.',
+        ],
         },
         {
           file: 'aien_1003.png',
@@ -1716,8 +1656,8 @@ Guardrails sit at every risk boundary where data enters or leaves the system:
           editorialAnalysis:
             'Figure 10-3 demonstrates how an input guardrail intercepts a user phone number (415-555-2671) and name, replaces them with symbolic tokens ([PHONE], [NAME]) before the prompt leaves the corporate perimeter, and re-hydrates the exact values on the return path.',
           keyTakeaways: [
-            'Reversible PII masking preserves task utility on third-party APIs without exposing customer data.',
-          ],
+          'Reversible PII masking preserves task utility on third-party APIs without exposing customer data.',
+        ],
         },
         {
           file: 'aien_1004.png',
@@ -1727,19 +1667,18 @@ Guardrails sit at every risk boundary where data enters or leaves the system:
           editorialAnalysis:
             'Figure 10-4 places Input Guardrails before the Model API and Output Guardrails (paired with lightweight AI Scorers) on the return path, creating a bidirectional safety and quality perimeter.',
           keyTakeaways: [
-            'AI Scorers are typically smaller, faster models invoked to grade factual consistency and toxicity before responses reach users.',
-          ],
+          'AI Scorers are typically smaller, faster models invoked to grade factual consistency and toxicity before responses reach users.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Context construction (RAG + tools) is feature engineering for foundation models.',
-        'Input guardrails prevent prompt injection and external PII/IP leakage (using reversible PII masking dictionaries).',
-        'Output guardrails enforce format schemas, factual consistency, and safety via retries, parallel calls, or human handoff, but face a fundamental trade-off with token streaming mode.',
-      ],
+          'Context construction (RAG + tools) is feature engineering for foundation models.',
+          'Input guardrails prevent prompt injection and external PII/IP leakage (using reversible PII masking dictionaries).',
+        ],
       commonPitfalls: [
-        'Deploying aggressive security guardrails without monitoring the False Refusal Rate, frustrating legitimate users.',
-        'Using sequential retries on a high-latency model without timeout budgets, doubling or tripling p99 user wait time.',
-      ],
+          'Deploying aggressive security guardrails without monitoring the False Refusal Rate, frustrating legitimate users.',
+          'Using sequential retries on a high-latency model without timeout budgets, doubling or tripling p99 user wait time.',
+        ],
     },
     {
       id: 'ch10-sec-steps-3-4-5',
@@ -1747,19 +1686,11 @@ Guardrails sit at every risk boundary where data enters or leaves the system:
       title: 'Progressive Architecture Steps 3, 4 & 5: Routers, Gateways, Caches & Agentic Write Loops',
       subtitle:
         'Intent routing, unified model gateways, exact vs. semantic vector caching, cross-user cache leak risks, and controlled write actions',
-      coreMechanism: `As an AI application scales across multiple tasks, models, and traffic tiers, **Steps 3, 4, and 5** introduce multi-model orchestration, latency/cost caching, and autonomous write capabilities.
+      coreMechanism:
+        `As an AI application scales across multiple tasks, models, and traffic tiers, **Steps 3, 4, and 5** introduce multi-model orchestration, latency/cost caching, and autonomous write capabilities.
 
 **Step 3: Model Router and Unified Gateway**:
-- **Routers (Intent Classifiers & Next-Action Predictors)**: Serving every query with a single frontier model is both overly expensive and suboptimal compared to specialized models. A **Router**—typically built on a fast, cheap classifier (finetuned BERT, GPT-2, Llama-7B, or a custom small classifier trained from scratch)—predicts user intent to dispatch each query: e.g., routing password resets to a static FAQ page, billing disputes to a human agent, and technical issues to a specialized troubleshooting LLM. Routers also filter **out-of-scope queries** (politely declining political questions with a stock response for $0 API cost), trigger **clarification prompts** on ambiguous single-word inputs (e.g., asking whether "Freezing" refers to freezing a bank account or the weather), predict **next actions** for multi-tool agents, and select **memory tiers** (deciding whether to answer "What’s the cutest animal in Melbourne?" from an attached travel PDF or via live web search). Crucially, routing usually happens **before retrieval** (to decide if retrieval is even needed), and must dynamically handle **context-window mismatches**: if a query initially routed to a 4K-context model triggers a web search that returns 8,000 tokens, the router must either truncate the context or re-route to a long-context model.
-- **Model Gateway**: A centralized middleware layer providing a **unified API interface** across self-hosted models and commercial providers (OpenAI, Gemini, Anthropic), as exemplified by off-the-shelf gateways like Portkey, MLflow AI Gateway, Wealthsimple LLM Gateway, TrueFoundry, Kong, and Cloudflare. First, it isolates code maintenance: when an upstream API changes its schema, engineers update only the gateway. Second, it centralizes **access control and secret management**: developers authenticate against the internal gateway rather than holding raw organizational OpenAI API keys. Third, it enforces **cost/rate limits, automated fallback policies** (seamlessly failing over to a backup model when the primary API suffers an outage or HTTP 429 rate limit), load balancing, centralized logging, and even gateway-level caching and guardrails.
-
-**Step 4: Reduce Latency and Cost with System Caches**:
-Complementing the model-internal KV and Prompt caches from Chapter 9, system-level caching operates across two paradigms:
-- **Exact Caching**: Stores and returns results only on an identical match (either for full LLM generations like product summaries, or for embedding vector searches to skip redundant database queries). Backed by Redis, PostgreSQL, or tiered memory using **LRU (Least Recently Used), LFU (Least Frequently Used), or FIFO** eviction policies, exact caches yield massive savings on multi-step Chain-of-Thought or SQL/search pipelines. However, teams often train a **cacheability classifier** to bypass caching on user-specific queries ("What is my order status?") or time-sensitive queries ("How is the weather?"). **Critical Security Hazard**: Naive exact caching causes **cross-user data leaks**—if User X asks a generic-looking query ("What is the return policy for electronics?") and the RAG pipeline injects User X's VIP membership details into the prompt before caching the answer against the raw query string, User Y asking the identical question will receive User X's private information!
-- **Semantic Caching**: Embeds incoming queries into a vector database and returns a cached response if the cosine/dot-product similarity $X$ to a previously cached query exceeds a threshold $\\tau$ (e.g., matching "What’s the capital city of Vietnam?" to "What’s the capital of Vietnam?"). While semantic caching boosts cache hit rates, its production value is often **dubious and risky**: a slightly miscalibrated threshold $\\tau$ or imperfect embedding returns wrong answers for subtly different questions, and running an embedding model plus vector search over a large cache index adds its own latency and compute cost.
-
-**Step 5: Complex Agentic Patterns and Write Actions**:
-Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional branching, and parallel execution**—feeding generated outputs back into context retrieval and reasoning whenever an initial pass is insufficient (Figure 10-9). Finally, the system gains **Write Actions** (Figure 10-10): invoking tools that mutate the external world (composing and sending emails, placing purchases, executing bank transfers). Because write actions turn hallucinations or prompt injections into irreversible real-world damage, they require strict sandboxing, confirmation gates, and comprehensive system observability.`,
+- **Routers (Intent Classifiers & Next-Action Predictors)**: Serving every query with a single frontier model is both overly expensive and suboptimal compared to specialized models. A **Router**.`,
       figures: [
         {
           file: 'aien_1005.png',
@@ -1768,9 +1699,9 @@ Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional br
           editorialAnalysis:
             'Figure 10-5 places the Router inside the model management boundary while illustrating how incoming queries are triaged across specialized models, static FAQs, or human operators based on predicted intent and context length.',
           keyTakeaways: [
-            'The most common production execution order is: Routing -> Retrieval -> Generation -> Scoring.',
-            'Routers must be small and fast so multiple routing decisions do not inflate end-to-end latency.',
-          ],
+          'The most common production execution order is: Routing -> Retrieval -> Generation -> Scoring.',
+          'Routers must be small and fast so multiple routing decisions do not inflate end-to-end latency.',
+        ],
         },
         {
           file: 'aien_1006.png',
@@ -1779,8 +1710,8 @@ Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional br
           editorialAnalysis:
             'Figure 10-6 illustrates how multiple internal applications communicate with a single Model Gateway endpoint, which abstracts authentication, schema translation, and fallback routing across OpenAI, Google Gemini, Anthropic, and self-hosted endpoints.',
           keyTakeaways: [
-            'Gateways eliminate raw API key sprawl and provide automatic failover during provider outages.',
-          ],
+          'Gateways eliminate raw API key sprawl and provide automatic failover during provider outages.',
+        ],
         },
         {
           file: 'aien_1007.png',
@@ -1789,8 +1720,8 @@ Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional br
           editorialAnalysis:
             'Figure 10-7 replaces the raw Model API box with the unified Model Gateway housing routers, generative models, and scorers under centralized access control and fallback policies.',
           keyTakeaways: [
-            'Centralizing all model traffic through a gateway creates a natural choke point for logging, rate limiting, and cost attribution.',
-          ],
+          'Centralizing all model traffic through a gateway creates a natural choke point for logging, rate limiting, and cost attribution.',
+        ],
         },
         {
           file: 'aien_1008.png',
@@ -1799,8 +1730,8 @@ Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional br
           editorialAnalysis:
             'Figure 10-8 integrates the System Cache (Exact and Semantic) alongside a write-back arrow that populates the cache with newly generated, guardrail-validated responses.',
           keyTakeaways: [
-            'Never cache responses generated from user-personalized RAG contexts under a global un-scoped query key.',
-          ],
+          'Never cache responses generated from user-personalized RAG contexts under a global un-scoped query key.',
+        ],
         },
         {
           file: 'aien_1009.png',
@@ -1810,8 +1741,8 @@ Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional br
           editorialAnalysis:
             'The highlighted yellow feedback path in Figure 10-9 transforms a linear pipeline into an iterative agent capable of inspecting its own intermediate output, formulating follow-up queries, and re-invoking context retrieval.',
           keyTakeaways: [
-            'Loops multiply capability on multi-hop tasks but require hard step/token caps to prevent runaway cost.',
-          ],
+          'Loops multiply capability on multi-hop tasks but require hard step/token caps to prevent runaway cost.',
+        ],
         },
         {
           file: 'aien_1010.png',
@@ -1820,19 +1751,18 @@ Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional br
           editorialAnalysis:
             'Figure 10-10 completes the 5-step architecture by connecting validated outputs to external Write Action actuators (sending emails, placing orders, mutating databases).',
           keyTakeaways: [
-            'Write actions require the highest level of output guardrail verification and human-in-the-loop confirmation.',
-          ],
+          'Write actions require the highest level of output guardrail verification and human-in-the-loop confirmation.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Routers use fast, small classifiers to filter out-of-scope queries, request clarification on ambiguous inputs, route simple tasks to cheap models, and adjust for context-length overflows.',
-        'Model Gateways centralize API keys, unify multi-provider schemas, enforce rate/cost quotas, and automate model fallbacks.',
-        'Exact caching is reliable but requires scoping/classifiers to prevent cross-user PII leaks; Semantic caching increases hit rates via vector similarity but carries significant false-positive accuracy and latency risks.',
-      ],
+          'Routers use fast, small classifiers to filter out-of-scope queries, request clarification on ambiguous inputs, route simple tasks to cheap models, and adjust for context-length overflows.',
+          'Model Gateways centralize API keys, unify multi-provider schemas, enforce rate/cost quotas, and automate model fallbacks.',
+        ],
       commonPitfalls: [
-        'Caching an answer to a generic-looking query ("What is the return policy?") when the RAG step silently injected User X’s private account tier into the prompt, leaking User X’s data to User Y.',
-        'Deploying a Semantic Cache with a loose similarity threshold, causing queries like "Flight from NYC to SFO" and "Flight from SFO to NYC" to return the same cached answer.',
-      ],
+          'Caching an answer to a generic-looking query ("What is the return policy?") when the RAG step silently injected User X’s private account tier into the prompt, leaking User X’s data to User Y.',
+          'Deploying a Semantic Cache with a loose similarity threshold, causing queries like "Flight from NYC to SFO" and "Flight from SFO to NYC" to return the same cached answer.',
+        ],
     },
     {
       id: 'ch10-sec-observability-orchestration',
@@ -1840,23 +1770,8 @@ Up to Step 4, data flows sequentially. Step 5 introduces **loops, conditional br
       title: 'Monitoring, Observability, Drift Detection & Pipeline Orchestration',
       subtitle:
         'MTTD/MTTR/CFR metrics, hierarchical request traces, the 3 sources of production drift, and when to avoid heavy orchestrators',
-      coreMechanism: `As architectural components multiply across Steps 1–5, failure modes compound. While **Monitoring** passively tracks external outputs to alert when something breaks, **Observability** is a stronger structural property: instrumenting the system so its internal states can be inferred strictly from external logs, metrics, and traces **without shipping new debugging code**. The quality of an observability system is governed by three DevOps metrics: **MTTD (Mean Time to Detection)**, **MTTR (Mean Time to Response/Resolution)**, and **CFR (Change Failure Rate)**—the percentage of deployments or prompt/model changes that require rollbacks or hotfixes. Evaluation and monitoring must form a closed loop: pre-deployment evaluation metrics must correlate with production monitoring metrics, and production failures must be fed back into the offline evaluation suite.
-
-**1. Failure-Driven Metrics Design**:
-Metrics exist to catch specific failure modes and uncover optimization opportunities:
-- **Quality, Format & Safety Metrics**: Track JSON/schema validation failure rates (distinguishing trivial syntax errors like a missing closing bracket from missing semantic keys), factual consistency / hallucination scores (via spot checks on a sampled subset or exhaustive checks on 100% of traffic using AI judges), guardrail trigger rates, and model refusal rates.
-- **Conversational & Length Telemetry**: Track early generation stops, average turns per conversation, input/output token length distributions, and lexical diversity—and slice every metric across granular axes (**user cohorts, software releases, prompt/chain versions, and time**) while correlating them against business **North Star metrics** (DAU, session duration, subscription conversion).
-
-**2. Append-Only Logs & End-to-End Request Traces**:
-When an aggregated metric spikes 5 minutes ago, engineers pivot to **Logs**—an append-only record of every runtime event that must be available in near-real-time (a 15-minute log ingestion delay cripples MTTR). Because you cannot predict future bugs, the rule is to **log everything** with component tags and correlation IDs: endpoint URLs, model names, sampling hyperparameters ($T$, top-$p$, top-$k$, stop tokens), prompt templates, raw queries, assembled prompts, retrieved chunks, intermediate CoT steps, and tool inputs/outputs. In addition to automated AI log-anomaly detection, **inspecting a sample of production logs manually every single day** is indispensable—Shankar et al. (2024) showed that developers' criteria for "good vs. bad" outputs actively evolve as they read real user traffic ("criteria drift"). **Traces** (e.g., in LangSmith, Arize Phoenix, or OpenTelemetry) stitch disjointed logs into a hierarchical timeline of spans for a single request, exposing the exact step latency, token cost, and intermediate data transformation where a failure occurred.
-
-**3. Detecting the Three Production Drifts**:
-1. **System Prompt Drift**: Accidental edits to shared prompt templates or hotfixes by teammates that silently alter downstream behavior.
-2. **User Behavior Drift**: Users adapt to AI systems over time (just as pedestrians learned to bully self-driving cars or users learned Google keyword-stuffing). Users may start writing "be concise" in prompts, causing a gradual drop in average output token length that looks like a model regression unless investigated.
-3. **Underlying Model API Drift**: Commercial API providers frequently update weights behind the same endpoint name without warning—Chen et al. (2023) documented major benchmark shifts between the March 2023 and June 2023 versions of GPT-4/GPT-3.5, and Voiceflow reported a **10% performance drop** when migrating from \`gpt-3.5-turbo-0301\` to \`gpt-3.5-turbo-1106\`.
-
-**4. AI Pipeline Orchestration**:
-AI orchestrators (LangChain, LlamaIndex, Flowise, Langflow, Haystack—distinct from batch workflow schedulers like Airflow or Metaflow) operate via **component definition** and **chaining** (function composition). **Crucial Engineering Rule**: Start building your application **without** an orchestrator! External orchestration frameworks wrap simple function calls in opaque abstractions, initiate hidden API calls, add latency, and make debugging harder. Adopt an orchestrator only in later stages if it passes three criteria: (1) **Integration & Extensibility** (how easily you can plug in custom models/databases), (2) **Complex Pipeline Support** (branching, parallel execution—such as running PII masking and intent routing concurrently—and error handling), and (3) **Performance & Zero Hidden Overhead**.`,
+      coreMechanism:
+        `As architectural components multiply across Steps 1–5, failure modes compound. While **Monitoring** passively tracks external outputs to alert when something breaks, **Observability** is a stronger structural property: instrumenting the system so its internal states can be inferred strictly from external logs, metrics, and traces **without shipping new debugging code**. The quality of an observability system is governed by three DevOps metrics: **MTTD (Mean Time to Detection)**, **MTTR (Mean Time to Response/Resolution)**, and **CFR (Change Failure Rate)**—the percentage of deployments or prompt/model changes that require rollbacks or hotfixes.`,
       figures: [
         {
           file: 'aien_1011.png',
@@ -1865,21 +1780,19 @@ AI orchestrators (LangChain, LlamaIndex, Flowise, Langflow, Haystack—distinct 
           editorialAnalysis:
             'Figure 10-11 displays a waterfall trace of a single user request across query transformation, vector retrieval, prompt formatting, and LLM generation spans, annotated with exact wall-clock durations and token counts.',
           keyTakeaways: [
-            'A trace links disjointed log events into a single causal timeline per request.',
-            'Tracing instantly reveals whether a bad answer stemmed from irrelevant RAG retrieval or model hallucination.',
-          ],
+          'A trace links disjointed log events into a single causal timeline per request.',
+          'Tracing instantly reveals whether a bad answer stemmed from irrelevant RAG retrieval or model hallucination.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Evaluate observability via MTTD (Mean Time to Detection), MTTR (Mean Time to Response), and CFR (Change Failure Rate).',
-        'Combine spot-check AI-judge evaluations with exhaustive programmatic checks (JSON validity, token lengths, latency percentiles, refusal rates).',
-        'Monitor for three distinct drift vectors: unauthorized system prompt edits, user behavior adaptation, and silent upstream model API updates.',
-        'Avoid premature orchestration frameworks; write plain code first and parallelize independent pipeline steps (like PII masking + routing).',
-      ],
+          'Evaluate observability via MTTD (Mean Time to Detection), MTTR (Mean Time to Response), and CFR (Change Failure Rate).',
+          'Combine spot-check AI-judge evaluations with exhaustive programmatic checks (JSON validity, token lengths, latency percentiles, refusal rates).',
+        ],
       commonPitfalls: [
-        'Adopting a heavy AI orchestration library on day one that hides prompt templates and initiates hidden LLM calls.',
-        'Attributing a sudden drop in output length to model degradation when it was actually caused by users learning to prompt for shorter answers (User Behavior Drift).',
-      ],
+          'Adopting a heavy AI orchestration library on day one that hides prompt templates and initiates hidden LLM calls.',
+          'Attributing a sudden drop in output length to model degradation when it was actually caused by users learning to prompt for shorter answers (User Behavior Drift).',
+        ],
     },
     {
       id: 'ch10-sec-conversational-feedback',
@@ -1887,28 +1800,8 @@ AI orchestrators (LangChain, LlamaIndex, Flowise, Langflow, Haystack—distinct 
       title: 'Extracting Conversational User Feedback: Explicit vs. Implicit Signals',
       subtitle:
         'Early termination, error correction, user edits, FITS complaint clusters, regeneration, turn length, and dialogue diversity',
-      coreMechanism: `In traditional software, user feedback evaluates product health; in AI engineering, user feedback is **proprietary training data** that powers the **data flywheel** across three destinations: **Evaluation** (monitoring metrics), **Model Development** (SFT and RLHF/DPO preference tuning), and **Personalization** (adapting to individual user preferences, such as inferring a budget vs. artsy hotel preference in Sydney from how a user responds to three options). Open-source models and applications face a structural handicap here: when users self-host an open-source app, the creator receives zero interaction feedback.
-
-While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your problem?") is unambiguous, it requires extra user effort, making it sparse and prone to response bias (angry users complain disproportionately). **Implicit Feedback** inferred from natural conversational messages and UI actions is vastly more abundant, though noisier and context-dependent:
-
-**1. Natural Language Feedback (Extracted from Message Content)**:
-- **Early Termination**: Stopping token generation mid-stream, closing the app, saying "Stop" to a voice assistant, or leaving an agent's multi-option prompt hanging indicates immediate dissatisfaction.
-- **Error Correction & User Edits**: Starting a follow-up with *"No, ..."* or *"I meant, ..."*, rephrasing the prompt immediately after an early stop (Figure 10-12), correcting factual hallucinations (*"Bill is the suspect, not the victim"*), nudging an agent's tool trajectory (*"You should also check XYZ’s GitHub page"*), or expressing skepticism (*"Are you sure?"*, *"Show me the sources"*). When an application allows users to **directly edit** generated outputs (e.g., modifying AI-generated code or email drafts), every edit yields a gold-standard preference tuple: $(\\text{Query}, \\text{Winning Response} = \\text{User Edit}, \\text{Losing Response} = \\text{Original Generation})$.
-- **Complaints (The FITS Dataset Taxonomy)**: Yuan et al. (2023) clustered 13,947 natural language feedback instances from the **FITS (Feedback for Interactive Talk & Search)** dataset (Xu et al., 2022) into 8 empirical failure groups:
-  1. Clarify demand again (**26.54%** / 3,702)
-  2. Complain bot didn't answer, gave irrelevant info, or told user to look it up (**16.20%** / 2,260)
-  3. Point out specific search results that contain the answer (**16.17%** / 2,255)
-  4. Suggest bot should use search results (**15.27%** / 2,130)
-  5. State answer is factually incorrect or ungrounded (**11.27%** / 1,572)
-  6. Point out answer lacks specificity/accuracy/detail (**9.39%** / 1,309)
-  7. Complain bot lacks confidence ("I am not sure" / "I don't know") (**4.17%** / 582)
-  8. Complain about repetition or rudeness (**0.99%** / 137)
-- **Sentiment & Model Refusals**: Tracking user frustration (*"Uggh"*, or rising voice volume in call-center audio) alongside the model's own refusal rate (*"As a language model, I can't..."*). Moving from angry sentiment at turn 1 to positive sentiment at turn 5 signals successful resolution.
-
-**2. Other Conversational & Behavioral Signals (Extracted from Actions)**:
-- **Regeneration**: Clicking "Regenerate" often signals dissatisfaction with the first answer, though in creative tasks (stories, images) users regenerate to explore options, and power users regenerate complex reasoning prompts to verify consistency. Crucially, regeneration is a **much stronger negative signal under usage-based billing** (where each retry costs money) than under flat-rate subscriptions. When a user regenerates, prompting a side-by-side comparative vote (Figure 10-13) harvests clean preference pairs.
-- **Conversation Organization**: **Deleting** a thread signals a bad (or embarrassing/private) conversation; **Renaming** a thread signals that the conversation itself is valuable enough to keep, but the auto-generated title model failed; **Bookmarking/Sharing** requires disambiguation (some users share useful outputs with coworkers; others share hilarious model failures on social media—if a user shares a link and immediately rephrases their prompt, the share was mocking a failure!).
-- **Conversation Length $\\times$ Dialogue Diversity**: Long turn counts are positive for AI companions (high engagement) but negative for productivity/support bots (slow task resolution). Pairing turn length with **dialogue diversity** (distinct token or topic count) exposes **conversational loops**: a 20-turn conversation with low token diversity means the bot is repeating stock lines and the user is trapped.`,
+      coreMechanism:
+        `In traditional software, user feedback evaluates product health.`,
       figures: [
         {
           file: 'aien_1012.png',
@@ -1918,8 +1811,8 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           editorialAnalysis:
             'In Figure 10-12, the user asks "Why is the sky blue?", stops the overly technical physics lecture after two sentences, and immediately rephrases to "Explain to a 5-year-old why the sky is blue." Combining the stop event with the rephrase yields an unmistakable implicit signal that the initial register/tone missed the user’s intent.',
           keyTakeaways: [
-            'Single implicit signals can be ambiguous, but combining two signals (Stop + Rephrase) pinpoints the failure mode.',
-          ],
+          'Single implicit signals can be ambiguous, but combining two signals (Stop + Rephrase) pinpoints the failure mode.',
+        ],
         },
         {
           file: 'aien_1013.png',
@@ -1929,20 +1822,18 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           editorialAnalysis:
             'Figure 10-13 shows how ChatGPT turns an implicit regeneration action into an explicit comparative preference label ("Was this response better or worse?") to collect (prompt, chosen, rejected) triples for RLHF/DPO.',
           keyTakeaways: [
-            'Asking for comparative feedback immediately after regeneration captures user judgment while both responses are fresh.',
-          ],
+          'Asking for comparative feedback immediately after regeneration captures user judgment while both responses are fresh.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Conversational feedback powers three flywheels: Evaluation (monitoring), Development (SFT/DPO training), and Personalization.',
-        'User edits (code/text modifications) and regeneration comparisons directly generate (query, winning, losing) preference training tuples.',
-        'In the FITS dataset, over 58% of natural language complaints involve demand clarification (26.5%) or failure to properly use/ground search results (16.2% + 16.2%).',
-        'Always cross-reference conversation length with dialogue token diversity to detect users stuck in repetitive loops.',
-      ],
+          'Conversational feedback powers three flywheels: Evaluation (monitoring), Development (SFT/DPO training), and Personalization.',
+          'User edits (code/text modifications) and regeneration comparisons directly generate (query, winning, losing) preference training tuples.',
+        ],
       commonPitfalls: [
-        'Treating long conversation turn counts as universally positive (it indicates failure in customer-support and search applications).',
-        'Assuming "Share conversation" is always a positive endorsement without checking if the user immediately rephrased or complained.',
-      ],
+          'Treating long conversation turn counts as universally positive (it indicates failure in customer-support and search applications).',
+          'Assuming "Share conversation" is always a positive endorsement without checking if the user immediately rephrased or complained.',
+        ],
     },
     {
       id: 'ch10-sec-feedback-design-biases',
@@ -1950,15 +1841,12 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
       title: 'Feedback UX Design, Biases & Degenerate Feedback Loops',
       subtitle:
         'Midjourney & Copilot workflow design, comparative UI traps, leniency/position/length biases, exposure bias, and model sycophancy',
-      coreMechanism: `Collecting high-signal feedback without degrading user experience requires careful **Feedback UX Design** across *when* to ask, *how* to integrate into the workflow, and *how to defend against statistical biases and degenerate loops*.
+      coreMechanism:
+        `Collecting high-signal feedback without degrading user experience requires careful **Feedback UX Design** across *when* to ask, *how* to integrate into the workflow, and *how to defend against statistical biases and degenerate loops*.
 
 **1. When to Collect Feedback**:
 - **At Onboarding (Calibration)**: Necessary for hardware/biometric calibration (Face ID scans, "Hey Google" wake-word voice reading) or optional skill placement (language learning apps). When optional, always provide a zero-friction default and calibrate gradually over time.
-- **When Something Bad Happens (Collaborative Recovery)**: Beyond downvotes and model switching, let users **collaborate with the AI to fix errors in-place**—such as editing a misclassified product tag or using **DALL-E Inpainting** (Figure 10-14) to highlight a specific flawed region of an image and prompt a localized correction.
-- **When the Model Has Low Confidence (Comparative Active Learning)**: When uncertain whether a user wants a brief executive summary or a section-by-section breakdown, generate both side-by-side (Figure 10-15). To combat voter fatigue on long outputs, **Google Gemini** shows only truncated previews side-by-side (Figure 10-16), requiring the user to click to expand the more promising opening—though whether full vs. partial previews yield cleaner signals remains debated (full text informs judgment, but once read, users lack incentive to click a vote button). Similarly, **Google Photos** prompts binary confirmation (*"Same person or different?"*) only when facial/object clustering confidence is borderline (Figure 10-17). While Apple's Human Interface Guidelines warn against asking for ratings on normal good results (implying good results are rare exceptions), AI product teams sample a small fraction (e.g., 1% of users) to capture positive delight signals that identify which high-impact features to double down on.
-
-**2. How to Collect Feedback Seamlessly Inside the Workflow**:
-- **Midjourney's 3-Tier Implicit Grid** (Figure 10-18): Presents 4 low-res candidate images with buttons ` +
+- **When Something Bad Happens (Collaborative Recovery)**: Beyond downvotes and model switching, let users **collaborate with the AI to fix errors in-place**.` +
     '`U1–U4`' +
     ` (Upscale = **strong positive signal** for that image), ` +
     '`V1–V4`' +
@@ -1985,8 +1873,8 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           editorialAnalysis:
             'Figure 10-14 shows a user masking a specific region of a generated living-room image in DALL-E and prompting "add a flamingo." This collaborative repair workflow lets the user finish their task while teaching the model exactly which spatial region failed.',
           keyTakeaways: [
-            'Letting users edit or inpaint localized mistakes is superior to full-response rejection.',
-          ],
+          'Letting users edit or inpaint localized mistakes is superior to full-response rejection.',
+        ],
         },
         {
           file: 'aien_1015.png',
@@ -1995,8 +1883,8 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           editorialAnalysis:
             'Figure 10-15 shows ChatGPT presenting two complete candidate responses side-by-side when model uncertainty is high, converting user selection directly into a pairwise preference label.',
           keyTakeaways: [
-            'Full side-by-side responses risk random clicks or length bias when outputs are long.',
-          ],
+          'Full side-by-side responses risk random clicks or length bias when outputs are long.',
+        ],
         },
         {
           file: 'aien_1016.png',
@@ -2004,10 +1892,10 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
             'Figure 10-16. Google Gemini shows partial responses side by side for comparative feedback. Users have to click on the response they want to read more about, which gives feedback about which response they find more promising.',
           bierutTitle: 'Truncated Previews Force an Intentional Click Signal',
           editorialAnalysis:
-            'Unlike ChatGPT’s full-text comparison, Figure 10-16 shows Google Gemini truncating both candidate options after the opening lines so the user must click to expand the one they want to read—guaranteeing a behavioral signal before consumption.',
+            'Unlike ChatGPT’s full-text comparison, Figure 10-16 shows Google Gemini truncating both candidate options after the opening lines so the user must click to expand the one they want to read.',
           keyTakeaways: [
-            'Truncated previews ensure higher click-through capture rates, though users judge only the opening hook.',
-          ],
+          'Truncated previews ensure higher click-through capture rates, though users judge only the opening hook.',
+        ],
         },
         {
           file: 'aien_1017.png',
@@ -2017,18 +1905,18 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           editorialAnalysis:
             'Figure 10-17 illustrates Google Photos asking a low-friction binary question ("Same or different?") only when its embedding similarity score falls in an uncertain boundary zone.',
           keyTakeaways: [
-            'Trigger explicit user confirmation only when model confidence is low.',
-          ],
+          'Trigger explicit user confirmation only when model confidence is low.',
+        ],
         },
         {
           file: 'aien_1018.png',
           originalLabel: 'Figure 10-18. Midjourney’s workflow allows the app to collect implicit feedback.',
           bierutTitle: 'The Gold Standard of Workflow-Embedded Implicit Telemetry',
           editorialAnalysis:
-            'Figure 10-18 shows Midjourney’s 2×2 image grid paired with U1–U4 (Upscale), V1–V4 (Variation), and Regenerate buttons. Users cannot get a high-res image without clicking U1–U4, giving Midjourney a 100% capture rate of strong positive preference signals.',
+            'Figure 10-18 shows Midjourney’s 2×2 image grid paired with U1–U4 (Upscale), V1–V4 (Variation), and Regenerate buttons.',
           keyTakeaways: [
-            'Tie feedback collection directly to the action that delivers user value (e.g., upscaling or accepting code).',
-          ],
+          'Tie feedback collection directly to the action that delivers user value (e.g., upscaling or accepting code).',
+        ],
         },
         {
           file: 'aien_1019.png',
@@ -2037,8 +1925,8 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           editorialAnalysis:
             'Figure 10-19 displays GitHub Copilot’s dimmed inline code suggestion inside an IDE, where pressing Tab accepts the completion and continuing to type seamlessly discards it.',
           keyTakeaways: [
-            'IDE-integrated assistants capture downstream edit survival rates that standalone chat apps never see.',
-          ],
+          'IDE-integrated assistants capture downstream edit survival rates that standalone chat apps never see.',
+        ],
         },
         {
           file: 'aien_1020.png',
@@ -2046,10 +1934,10 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
             'Figure 10-20. An example of ChatGPT asking a user to select the response the user prefers. However, for mathematical questions like this, the right answer shouldn’t be a matter of preference.',
           bierutTitle: 'The Fallacy of Crowdsourcing Objective Math via Preference Votes',
           editorialAnalysis:
-            'Figure 10-20 exposes a major flaw in uncalibrated comparative UI: asking a user who doesn’t know the answer to a statistical probability problem to pick which derivation they "prefer"—with no "I don’t know" button—feeds random or length-biased noise into the preference dataset.',
+            'Figure 10-20 exposes a major flaw in uncalibrated comparative UI: asking a user who doesn’t know the answer to a statistical probability problem to pick which derivation they "prefer".',
           keyTakeaways: [
-            'Never ask users to vote on objective math/science correctness they cannot evaluate; always provide an "I don’t know" or skip option.',
-          ],
+          'Never ask users to vote on objective math/science correctness they cannot evaluate.',
+        ],
         },
         {
           file: 'aien_1021.png',
@@ -2057,21 +1945,20 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
             'Figure 10-21. Because Luma put the angry emoji, corresponding to a one-star rating, where a five-star rating should’ve been, some users mistakenly picked it for positive reviews.',
           bierutTitle: 'How Reversed UI Scales Corrupt Feedback Ground Truth',
           editorialAnalysis:
-            'Figure 10-21 shows Luma’s feedback widget ordering emojis from delighted (left, 5/5) to furious (right, 1/5)—the exact opposite of standard left-to-right 1-to-5 star conventions—causing happy workshop attendees to submit 1-star ratings.',
+            'Figure 10-21 shows Luma’s feedback widget ordering emojis from delighted (left, 5/5) to furious (right, 1/5).',
           keyTakeaways: [
-            'Ambiguous or inverted rating scales silently poison evaluation metrics.',
-          ],
+          'Ambiguous or inverted rating scales silently poison evaluation metrics.',
+        ],
         },
       ],
       keyTakeaways: [
-        'Seamless workflow feedback (Midjourney U1–U4 upscales, Copilot Tab-accepts, DALL-E inpainting) captures high-volume preference data with zero extra user friction.',
-        'Account for Leniency Bias (inflated ratings to avoid conflict/forms), Position Bias (favoring option 1), and Length Bias (favoring verbose but inaccurate answers).',
-        'Guard against Degenerate Feedback Loops: exposure bias (filter bubbles), user-base drift ("cat haven"), and RLHF Sycophancy (flattering user misconceptions instead of stating truth).',
-      ],
+          'Seamless workflow feedback (Midjourney U1–U4 upscales, Copilot Tab-accepts, DALL-E inpainting) captures high-volume preference data with zero extra user friction.',
+          'Account for Leniency Bias (inflated ratings to avoid conflict/forms), Position Bias (favoring option 1), and Length Bias (favoring verbose but inaccurate answers).',
+        ],
       commonPitfalls: [
-        'Punishing users who click Thumbs Down with a mandatory multi-field questionnaire, which trains users to either ignore feedback or click Thumbs Up (Leniency Bias).',
-        'Finetuning a model directly on unfiltered thumbs-up/comparative votes for factual/math queries, amplifying verbosity bias and sycophancy.',
-      ],
+          'Punishing users who click Thumbs Down with a mandatory multi-field questionnaire, which trains users to either ignore feedback or click Thumbs Up (Leniency Bias).',
+          'Finetuning a model directly on unfiltered thumbs-up/comparative votes for factual/math queries, amplifying verbosity bias and sycophancy.',
+        ],
     },
   ],
   tradeOffMatrices: [
@@ -2138,7 +2025,7 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
         ],
       ],
       verdictRule:
-        'Build incrementally from Step 1 to Step 5. Parallelize input guardrails and routing, centralize model access via a Gateway, prefer Exact + Prompt Caching over risky Semantic Caching until proven necessary, and gate all Write Actions behind strict verification.',
+        'Build incrementally from Step 1 to Step 5.',
     },
     {
       title: 'Explicit vs. Implicit Conversational Feedback Matrix',
@@ -2206,11 +2093,11 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
       roleAndContext:
         'Lead AI Architect for an enterprise e-commerce and customer-support platform serving 500,000 daily conversations across commercial LLM APIs.',
       symptomOrFailure:
-        'Two crises hit in the same week: (1) A regular customer asking "What is the return policy for electronics?" receives a response containing another customer’s full name, VIP account number, and home address; (2) The customer-support resolution rate suddenly drops by 12% and JSON formatting errors spike 4x, even though zero application code was deployed that week.',
+        'Two crises hit in the same week: (1) A regular customer asking "What is the return policy for electronics?" receives a response containing another customer’s full name, VIP account number, and home address.',
       naiveFixAndWhyItFails:
-        'Ripping out all caching across the platform and rewriting the entire system prompt from scratch. Disabling all caching triples API costs and inflates TTFT by 800ms, while blindly rewriting the prompt without root-cause traces risks breaking working intents and increasing Change Failure Rate (CFR).',
+        'Ripping out all caching across the platform and rewriting the entire system prompt from scratch.',
       firstPrinciplesSolution:
-        'Execute an architectural and observability fix: (1) For the PII leak, inspect the LangSmith request trace to discover that the Exact Cache keyed strictly on the raw query string ("What is the return policy for electronics?") AFTER the RAG pipeline injected User X’s VIP profile into the prompt. Fix by training a cacheability classifier to exclude user-contextualized queries from global exact caching, scoping cache keys by `(query_hash, auth_tier)` only for generic policies, and placing a Reversible PII Masking guardrail before external API and cache writes. (2) For the 12% accuracy drop, slice monitoring metrics by `model_version` and `prompt_template_hash` in the Model Gateway logs: traces reveal the commercial API provider silently updated the underlying weights behind their stable alias (Underlying Model Drift) AND a teammate edited a shared sub-template (System Prompt Drift). Pin the exact model snapshot version in the Model Gateway, institute automated hash alerts for system prompt changes, and configure the Gateway to auto-fallback when JSON schema validation error rates exceed 2%.',
+        'Execute an architectural and observability fix: (1) For the PII leak, inspect the LangSmith request trace to discover that the Exact Cache keyed strictly on the raw query string ("What is the return policy for electronics?") AFTER the RAG pipeline injected User X’s VIP profile into the prompt.',
       measurableOutcome:
         'Zero cross-user PII leaks (verified by synthetic canary PII injection tests), MTTD drops from 4 days to 6 minutes via gateway trace alerts, JSON schema compliance rebounds to 99.8%, and safe exact caching preserves a 42% reduction in monthly API spend.',
     },
@@ -2220,7 +2107,7 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
       {
         id: 'ch10-q1',
         scenarioPrompt:
-          'You work on an e-commerce AI assistant. User A (a Platinum VIP member) asks: "What is the return policy for electronics?" Your system retrieves User A’s account record (including User A’s name and VIP status) to tailor the policy, generates the response, and stores the response in an Exact Cache keyed by the raw query string. Ten minutes later, User B asks: "What is the return policy for electronics?" What happens, and how should this be prevented?',
+          'You work on an e-commerce AI assistant. User A (a Platinum VIP member) asks: "What is the return policy for electronics?" Your system retrieves User A’s account record (including User A’s name and VIP status) to tailor the policy, generates the response, and stores the response in an Exact Cache keyed by the raw query string.',
         options: [
           {
             label: 'A',
@@ -2290,14 +2177,14 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
       {
         id: 'ch10-q3',
         scenarioPrompt:
-          'While reviewing production dashboards for your AI coding assistant, you notice two phenomena: (1) over the past 3 months, the average number of output tokens per response has gradually declined by 25%, even though you pinned your self-hosted model weights and system prompt; and (2) some conversations have 25+ turns with very low distinct token/topic counts. What is the most accurate diagnosis of (1) and (2)?',
+          'While reviewing production dashboards for your AI coding assistant, you notice two phenomena: (1) over the past 3 months, the average number of output tokens per response has gradually declined by 25%, even though you pinned your self-hosted model weights and system prompt.',
         options: [
           {
             label: 'A',
             text: '(1) is caused by User Behavior Drift (users adapting their prompts to ask for more concise code/answers over time), and (2) indicates users are stuck in a repetitive failure loop with the bot.',
             isCorrect: true,
             explanation:
-              'When model weights and system prompts are fixed, a gradual shift in output length is a classic signature of User Behavior Drift (users learning how to prompt the tool). Long conversation turn counts paired with low dialogue diversity indicate the bot is repeating itself in an unproductive loop.',
+              'When model weights and system prompts are fixed, a gradual shift in output length is a classic signature of User Behavior Drift (users learning how to prompt the tool).',
           },
           {
             label: 'B',
@@ -2325,14 +2212,14 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
       {
         id: 'ch10-q4',
         scenarioPrompt:
-          'You design a feedback system to collect preference pairs for RLHF/DPO post-training. Whenever the model answers a complex scientific or mathematical question with low confidence, you display two long, detailed candidate responses side-by-side and require the user to click "Prefer Left" or "Prefer Right" before continuing. Which combination of feedback limitations will corrupt your preference dataset?',
+          'You design a feedback system to collect preference pairs for RLHF/DPO post-training. Whenever the model answers a complex scientific or mathematical question with low confidence, you display two long, detailed candidate responses side-by-side and require the user to click "Prefer Left" or "Prefer Right" before continuing.',
         options: [
           {
             label: 'A',
             text: 'Only Exposure Bias, because users can see both responses simultaneously.',
             isCorrect: false,
             explanation:
-              'Exposure bias occurs when ranked items shown first get clicked and reinforced over iterations; here, several other acute comparative biases dominate.',
+              'Exposure bias occurs when ranked items shown first get clicked and reinforced over iterations.',
           },
           {
             label: 'B',
@@ -2370,7 +2257,7 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
         id: 'ch10-fc2',
         category: 'security',
         front: 'How does Reversible PII Masking work in an Input/Output Guardrail pipeline?',
-        back: 'Before sending a prompt to an external commercial API, an input detector identifies sensitive entities (phone numbers, SSNs, names, proprietary codenames), replaces them with symbolic placeholders (e.g., [PHONE NUMBER]), and stores the mapping in a local Reverse PII Dictionary. When the external API returns a response containing [PHONE NUMBER], the output guardrail looks up the dictionary and restores the original string.',
+        back: 'Before sending a prompt to an external commercial API, an input detector identifies sensitive entities (phone numbers, SSNs, names, proprietary codenames), replaces them with symbolic placeholders (e.g., [PHONE NUMBER]), and stores the mapping in a local Reverse PII Dictionary.',
         mentalHook: 'Mask outbound with [PLACEHOLDER] -> Store in local Reverse Map -> Unmask inbound.',
       },
       {
@@ -2384,7 +2271,7 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
         id: 'ch10-fc4',
         category: 'evaluation',
         front: 'How does Observability differ from Monitoring, and what are the 3 DevOps observability metrics and 3 sources of AI Drift?',
-        back: '• Monitoring tracks external outputs to see *when* something breaks; Observability instruments internal spans so you can infer *why* it broke from logs/traces without shipping new code.\n• 3 Metrics: MTTD (Mean Time to Detection), MTTR (Mean Time to Response), CFR (Change Failure Rate).\n• 3 AI Drifts: (1) System Prompt Drift (silent template edits), (2) User Behavior Drift (users adapting prompts), (3) Underlying Model API Drift (silent provider weight updates).',
+        back: '• Monitoring tracks external outputs to see *when* something breaks.',
         mentalHook: 'MTTD + MTTR + CFR; watch for Prompt drift, User drift, and Upstream Model drift.',
       },
       {
@@ -2398,7 +2285,7 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
         id: 'ch10-fc6',
         category: 'data',
         front: 'What are the major User Feedback Biases, and how do Degenerate Feedback Loops (including Sycophancy) damage an AI product?',
-        back: '• Biases: Leniency bias (high ratings to avoid forms/conflict), Randomness, Position bias (favoring Option 1), Length bias (favoring verbose inaccurate answers), Recency bias.\n• Degenerate Loops: Because you only get feedback on what you show users, training blindly on feedback causes (1) Exposure/Popularity bias (filter bubbles), (2) User-base drift ("cat haven"), and (3) Sycophancy (Sharma et al. 2023—models flattering user beliefs instead of telling the truth).',
+        back: '• Biases: Leniency bias (high ratings to avoid forms/conflict), Randomness, Position bias (favoring Option 1), Length bias (favoring verbose inaccurate answers), Recency bias.\n• Degenerate Loops: Because you only get feedback on what you show users, training blindly on feedback causes (1) Exposure/Popularity bias (filter bubbles), (2) User-base drift ("cat haven"), and (3) Sycophancy (Sharma et al.',
         mentalHook: 'Blindly optimizing for thumbs-up creates filter bubbles, cat havens, and sycophantic liars.',
       },
     ],
@@ -2415,7 +2302,7 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           'Contrasts Exact Caching (fast and exact, but causes cross-user PII leaks if personalized RAG answers are cached under generic query keys) with Semantic Caching (higher hit rate via vector search, but prone to false-positive similarity collisions and vector-search overhead).',
         ],
         modelExplanation:
-          'A prototype sends a raw user string straight to a model API, which fails in production because the model lacks private enterprise knowledge, leaks secrets, costs too much, and has no fallback when the API goes down. We evolve the architecture in five deliberate steps. In Step 1 (Enhance Context), we connect RAG vector/tabular databases and read-only APIs so the model has the facts to answer. In Step 2 (Guardrails), we add Input Guardrails that scan for prompt injections and mask sensitive customer PII into placeholders like [PHONE] stored in a local Reverse PII Map before any data leaves our servers, paired with Output Guardrails and small AI Scorers that check JSON validity, hallucinations, and toxicity before unmasking the PII. Here we hit our first big trade-off: if we stream tokens to the user to keep TTFT low, the user sees tokens before the Output Guardrail can evaluate the whole response; and if an output fails validation, sequential retries double latency unless we fire parallel speculative API calls.\n\nIn Step 3 (Router & Gateway), we run a fast Intent Router in parallel with PII masking *before* retrieval to reject out-of-scope queries for $0 and route simple intents to cheap models and hard intents to frontier models, all behind a Unified Model Gateway that holds our API keys, enforces budgets, and auto-fails over to a backup model when OpenAI or Gemini returns a 429/500 error. In Step 4 (Caching), we add an Exact Cache (Redis/Postgres) to skip redundant multi-step queries, being careful never to cache personalized RAG responses under a global query key (which would leak User A’s VIP account data to User B!). We only add a Semantic Vector Cache if paraphrase hit rates are proven high, because embedding + vector search adds latency and a slightly loose similarity threshold will return wrong cached answers. Finally, in Step 5, we add an agentic feedback loop so the system can re-retrieve when its first answer is incomplete, and gate any external Write Actions (sending emails, placing orders) behind strict authorization and confirmation.',
+          'A prototype sends a raw user string straight to a model API, which fails in production because the model lacks private enterprise knowledge, leaks secrets, costs too much, and has no fallback when the API goes down. We evolve the architecture in five deliberate steps.',
       },
       {
         id: 'ch10-feyn-2',
@@ -2429,7 +2316,7 @@ While **Explicit Feedback** (thumbs up/down, star ratings, "Did this solve your 
           'Explains how Position Bias, Length/Verbosity Bias, and Degenerate Feedback Loops (Exposure/Popularity bias, "Cat-Photo Haven" audience drift, and RLHF Sycophancy) corrupt models trained blindly on human approval.',
         ],
         modelExplanation:
-          'If you rely only on explicit thumbs-up/thumbs-down or 5-star widgets, fewer than 1–5% of users will click them, and those who do are heavily skewed—either angry users venting or rushed users clicking 5 stars just to avoid a "tell us why" form (leniency bias). In AI engineering, conversational interfaces and integrated workflows let us capture 100x more implicit feedback without asking users to do extra work. Inside the dialogue itself, if a user hits "Stop generating" and immediately rephrases their prompt, we know the model missed their intent; if a user edits a block of generated code, the original code and the user’s edited code immediately form a (query, losing_response, winning_response) preference pair for DPO/RLHF; and if a support chat has 25 turns with very low distinct token diversity, we know the user is trapped in a repetitive failure loop. Better yet, apps like Midjourney and GitHub Copilot fuse feedback into the task action itself: a Midjourney user *must* click Upscale (U1–U4) to get a high-res image or Variation (V1–V4) to tweak one, and a Copilot user presses Tab to accept code or keeps typing to reject it—delivering 100% feedback capture at zero friction.\n\nHowever, treating raw user feedback as infallible ground truth will destroy your model. In side-by-side comparisons, humans exhibit Position Bias (clicking the first option) and Length Bias (preferring longer, prettier answers even when factually wrong, especially if you ask them to judge math or science questions without an "I don’t know" button). Worse, because you only get feedback on outputs your model chooses to show, retraining blindly on user feedback triggers Degenerate Feedback Loops: popular outputs get clicked and boosted into filter bubbles (exposure bias), a small cohort upvoting cat images shifts the model to generate more cats until non-cat users leave (audience drift), and conversational models trained purely to maximize human approval develop Sycophancy (Sharma et al., 2023)—learning to flatter the user’s misconceptions and tell comforting lies rather than objective truth.',
+          'If you rely only on explicit thumbs-up/thumbs-down or 5-star widgets, fewer than 1–5% of users will click them, and those who do are heavily skewed.',
       },
     ],
   },

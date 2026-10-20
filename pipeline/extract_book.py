@@ -109,10 +109,10 @@ def extract_epub(epub_path: str, book_slug: str, workspace_root: str):
                 with z.open(name) as src, open(target, "wb") as dst:
                     shutil.copyfileobj(src, dst)
 
-        # 2. Extract chapters ch01.html .. ch10.html (plus preface/afterword)
+        # 2. Extract chapters ch01.html .. ch10.html or c01.xhtml .. c22.xhtml
         chapter_files = sorted(
-            [n for n in z.namelist() if re.search(r"ch\d+\.x?html$", n)],
-            key=lambda x: int(re.search(r"ch(\d+)", x).group(1))
+            [n for n in z.namelist() if re.search(r"(?:^|/)(?:ch|c)\d+\.x?html$", n)],
+            key=lambda x: int(re.search(r"(?:ch|c)(\d+)", os.path.basename(x)).group(1))
         )
 
         for idx, ch_file in enumerate(chapter_files, start=1):
@@ -201,13 +201,13 @@ def extract_pdf(pdf_path: str, book_slug: str, workspace_root: str):
 
     for level, title, page_num in toc:
         clean_title = title.replace("\ufffd", "'").strip()
-        if level == 1 and clean_title.lower().startswith("chapter "):
+        m_ch = re.match(r"^(?:Chapter\s+(\d+)\s*[:.\-]?\s*(.*)|(\d+)\.\s+(.*))", clean_title, re.I)
+        if level == 1 and m_ch:
             if current_ch:
                 current_ch["endPage"] = page_num - 1
                 chapters_raw.append(current_ch)
-            m = re.match(r"Chapter\s+(\d+)\s*(.*)", clean_title, re.I)
-            ch_num = int(m.group(1)) if m else len(chapters_raw) + 1
-            ch_title_clean = m.group(2).strip() if (m and m.group(2).strip()) else clean_title
+            ch_num = int(m_ch.group(1) or m_ch.group(3))
+            ch_title_clean = (m_ch.group(2) or m_ch.group(4) or clean_title).strip()
             current_ch = {
                 "chapterNumber": ch_num,
                 "title": ch_title_clean,

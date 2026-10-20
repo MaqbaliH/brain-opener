@@ -1,6 +1,6 @@
 {
-  "name": "Brain Opener — Book Mastery Engine",
-  "short_name": "Brain Opener",
+  "name": "PRISM — First-Principles Book Mastery Engine",
+  "short_name": "PRISM",
   "description": "First-Principles Interactive Book Mastery Engine for Mobile, iPad, and Desktop.",
   "start_url": "./",
   "display": "standalone",

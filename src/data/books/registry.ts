@@ -1,5 +1,9 @@
 import { BookMasteryPackage } from '../../types/book';
+import { agentforceBook } from './agentforce-harnessing-agency-of-ai';
+import { agenticGraphRagBook } from './agentic-graphrag';
 import { aiEngineeringBook } from './ai-engineering';
+import { aiNativeSoftwareDeliveryBook } from './ai-native-software-delivery';
+import { aiValueCreatorsBook } from './ai-value-creators';
 import { askingTheRightQuestionsBook } from './asking-the-right-questions';
 import { beyondVibeCodingBook } from './beyond-vibe-coding';
 
@@ -25,6 +29,10 @@ export interface VaultBookPreview {
  * Whenever Nexus finishes synthesizing a new book from /Books, register its BookMasteryPackage here.
  */
 export const PUBLISHED_BOOKS: Record<string, BookMasteryPackage> = {
+  'agentforce-harnessing-agency-of-ai': agentforceBook,
+  'agentic-graphrag': agenticGraphRagBook,
+  'ai-value-creators': aiValueCreatorsBook,
+  'ai-native-software-delivery': aiNativeSoftwareDeliveryBook,
   'asking-the-right-questions': askingTheRightQuestionsBook,
   'beyond-vibe-coding': beyondVibeCodingBook,
   'ai-engineering': aiEngineeringBook,
@@ -39,6 +47,44 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
   // =========================================================================
   // PUBLISHED & VERITAS-CERTIFIED VOLUMES
   // =========================================================================
+  {
+    bookSlug: 'agentforce-harnessing-agency-of-ai',
+    fileName:
+      'Agentforce Harnessing the Agency of AI to Scale, Grow, and Lead Any Industry.epub',
+    format: 'EPUB',
+    title: 'Agentforce: Harnessing the Agency of AI to Scale, Grow, and Lead Any Industry',
+    author: 'Martin Kihn',
+    category: 'AI & Agents',
+    status: 'published',
+  },
+  {
+    bookSlug: 'agentic-graphrag',
+    fileName:
+      'Agentic GraphRAG Integrating Knowledge Graphs, Reasoning, and Agency for Enterprise AI.epub',
+    format: 'EPUB',
+    title: 'Agentic GraphRAG: Integrating Knowledge Graphs, Reasoning, and Agency',
+    author: 'Anthony Alcaraz & Sam Julien',
+    category: 'AI & Agents',
+    status: 'published',
+  },
+  {
+    bookSlug: 'ai-value-creators',
+    fileName: 'AI Value Creators.pdf',
+    format: 'PDF',
+    title: 'AI Value Creators',
+    author: 'Rob Thomas, Paul Zikopoulos & Kate Soule',
+    category: 'Data & ML',
+    status: 'published',
+  },
+  {
+    bookSlug: 'ai-native-software-delivery',
+    fileName: 'AI-Native Software Delivery.epub',
+    format: 'EPUB',
+    title: 'AI-Native Software Delivery',
+    author: 'Nick Durkin, Eric Minick & Chinmay Gaikwad',
+    category: 'AI & Agents',
+    status: 'published',
+  },
   {
     bookSlug: 'asking-the-right-questions',
     fileName:
@@ -90,16 +136,6 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     status: 'queued',
   },
   {
-    bookSlug: 'agentic-graphrag',
-    fileName:
-      'Agentic GraphRAG Integrating Knowledge Graphs, Reasoning, and Agency for Enterprise AI.epub',
-    format: 'EPUB',
-    title: 'Agentic GraphRAG: Integrating Knowledge Graphs, Reasoning, and Agency',
-    author: 'Enterprise AI Series',
-    category: 'AI & Agents',
-    status: 'queued',
-  },
-  {
     bookSlug: 'design-multi-agent-mcp-a2a',
     fileName: 'Design Multi-Agent AI Systems Using MCP and A2A.pdf',
     format: 'PDF',
@@ -145,30 +181,11 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     status: 'queued',
   },
   {
-    bookSlug: 'ai-native-software-delivery',
-    fileName: 'AI-Native Software Delivery.epub',
-    format: 'EPUB',
-    title: 'AI-Native Software Delivery',
-    author: 'Modern DevOps & AI Series',
-    category: 'AI & Agents',
-    status: 'queued',
-  },
-  {
     bookSlug: 'building-ai-agents-for-finance',
     fileName: 'Building AI Agents for Finance.epub',
     format: 'EPUB',
     title: 'Building AI Agents for Finance',
     author: 'Quantitative AI Series',
-    category: 'AI & Agents',
-    status: 'queued',
-  },
-  {
-    bookSlug: 'agentforce-harnessing-agency-of-ai',
-    fileName:
-      'Agentforce Harnessing the Agency of AI to Scale, Grow, and Lead Any Industry.epub',
-    format: 'EPUB',
-    title: 'Agentforce: Harnessing the Agency of AI',
-    author: 'Enterprise Agent Systems',
     category: 'AI & Agents',
     status: 'queued',
   },
@@ -306,15 +323,6 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     format: 'PDF',
     title: 'Think Stats (3rd Edition): Exploratory Data Analysis',
     author: 'Allen B. Downey',
-    category: 'Data & ML',
-    status: 'queued',
-  },
-  {
-    bookSlug: 'ai-value-creators',
-    fileName: 'AI Value Creators.pdf',
-    format: 'PDF',
-    title: 'AI Value Creators',
-    author: 'Enterprise Data & AI Strategy',
     category: 'Data & ML',
     status: 'queued',
   },

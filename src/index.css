@@ -27,11 +27,25 @@
     --accent-emerald: #10B981;
   }
 
+  .sepia-mode {
+    --bg-canvas: #F4ECD8;
+    --bg-surface: #FBF6EA;
+    --bg-subtle: #EAE0C8;
+    --ink-primary: #2C221E;
+    --ink-secondary: #4A3B32;
+    --ink-muted: #7A685D;
+    --border-grid: #D8CBB3;
+    --accent-signal: #C2410C;
+    --accent-cobalt: #1D4ED8;
+    --accent-emerald: #047857;
+  }
+
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--bg-canvas);
     color: var(--ink-primary);
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .font-display {
@@ -51,8 +65,27 @@
 /* Custom prose measure for Graphy & Guten 55-68ch optimal reading */
 .editorial-prose {
   max-width: 66ch;
-  line-height: 1.72;
-  font-size: 1.05rem;
+  line-height: var(--reader-line-height, 1.72);
+  font-size: var(--reader-font-size, 1.05rem);
+}
+
+/* Sepia Reading Theme Overrides for Warm Tablet/Mobile Comfort */
+.sepia-mode .bg-white {
+  background-color: #FBF6EA !important;
+}
+.sepia-mode .bg-\[\#FAF8F5\] {
+  background-color: #F4ECD8 !important;
+}
+.sepia-mode .bg-\[\#F3EFEA\] {
+  background-color: #EAE0C8 !important;
+}
+.sepia-mode .border-\[\#E5E0D8\] {
+  border-color: #D8CBB3 !important;
+}
+
+/* Safe-area bottom padding for iOS/iPadOS Home Indicator */
+.pb-safe-dock {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
 }
 
 /* ============================================================================
