@@ -1,0 +1,2634 @@
+{
+  "bookSlug": "midjourney-mastery",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Midjourney Mastery - The Ultimate Book of Prompts.epub",
+  "totalChapters": 6,
+  "totalFigures": 500,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/3_introduction.xhtml",
+      "title": "INTRODUCTION",
+      "charCount": 11228,
+      "wordCount": 1855,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "1"
+        },
+        {
+          "level": "h1",
+          "title": "INTRODUCTION"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c12e1eb55df7d9f6d54bfdc5f7251a34_smallRaw.png",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8d2d0406a174df7434582c3ea9db9ad2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a48632a83216e43403d83599713e6730_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d67a9a592e9f3e041e6bfd2606736522_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "262dd3b8ee2d98cd81939eec92a3f2da_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "618ca1be4af365beaa23236e188dd34a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "289ce8c4e8e277a0c21b87604b660fa2_smallRaw.png",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bed9f1aaeaf1ac5601c594becfb762fe_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "89945d5ccdb615f8bcea6655f6877f53_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "544c6cea06e410127baf8c3be8ea087c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\midjourney-mastery\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/4_digital-art.xhtml",
+      "title": "DIGITAL ART",
+      "charCount": 29471,
+      "wordCount": 4713,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "2"
+        },
+        {
+          "level": "h1",
+          "title": "DIGITAL ART"
+        }
+      ],
+      "figures": [
+        {
+          "file": "b3cbb761e84b363b71edbedad0a1252b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0fbb2cfc66dddee78bba1cba694953a0_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bc36ca481c00e5d2b991c6b0e546da24_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a802d469e87e41c2172ef5932c68d73a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6ff0980ba19a4984ed26f8496fba52d4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dd82fb602ec8d0635345367116a0d58d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ca8f9ac80f640a6548828bb014643fc3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1b99d216604a68a5798d8c72d7063570_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dc90d4198cfc3e4be302aa84718abae5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b4f84eea6123257c65b6f4a6b78bb64e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f8a82ce96c059386587d8318f697c7fc_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2ca3ed92cdbfce0f7630ebd6dc300549_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "cec59f42d8a30f3d0f9a19d8206b41c4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b1e1790324bb382fbbe17724d793305b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fa6ddcd04be8a78b41553cc4134b3fa8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6d222c209ab5a248815e110157859982_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "db4d98bf832b7aac0302d10761f4370c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "80e5a773c52a97af6f6334663525e221_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "03a3ed0c4b6f6d137bc7a130e366f6f3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0f9a7f996f314daf9378da89c1139e38_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e2871951f238420901fa4edc4f32bd19_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4551d42a28ca117ae6b186131203480a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3423668cbcfe63d0c1812acc3ac313bd_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0611c427285d60c4fd15c085c967f43c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "405106c06e91b562ec172e96be41eecb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6c9c6505f0e4dfd6a42046854aff2962_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "12927b5a7f2b2135d7b813fa87b3c395_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "07c621185260ea7ed95784db81aedcf7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e31430624aa4d6fada84d0cb3fe24824_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "25111e32f15e61004dcd8e5e68e2bf77_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "90eb0d6c69b15aa7ed3a292c55b3a514_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bffbcbafe477d33618b6ea6f7d221778_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7476477f7bfdaf2353c51c9dacc41516_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "238b70236ba495d0583d50b739c830d3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4d3b37fa030b311308eb9cd4f0815cdb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9310440aa1037a3b85de15085fb90a86_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "43a942929a749d8b1581fcd67f7acf90_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "92afa1bfc788be5c3830f0dd98ccb8be_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c0d65074a1bb6e0bc32be81ccecfe05d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "989a45334d812b3ab6029e28b2d25891_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0353784f6fd5cfb0105a4ae60d7a06f4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "20e44fbbe6abf829c16e0945e713c05e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "49f3a061c76b5d07453cb59bb60b3d89_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8dfd06f4b9f941626eca0ad06850c882_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7e43543842e18790370191404328fb78_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0639a002b3a22ad6ccd890edd9207dfa_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d2f346158d87401b8e23ce8e8c7fc12d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c5eccfdebc1665cf061d77f26e39f851_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ef5427b5f91ea993cccdfe58c0be79b3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "46038c5ab49283680954012dcc5d222e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5e02506f0edd807e51a1d778814a62d7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7c113b842aa8d93a6afec5c75b3cf1f7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ad92a7eb818662b4b3efeba41ca39d98_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b7ecc40b97a4886f692c4d9276b33512_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7bafc963b696dc0d9793ed908462cc20_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "cce0f9775dae24d4d628b07e11e0f901_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4117502bacc8c23bf6c5c9fff89994ad_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bc30076eacbfd4414d0889770a36781a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6bd89432f78f33671f62bd8724bc81d1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "68a97949adec902b82fdda576bae2b03_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1c444299f1c7bb9bbb4146e0f732cf94_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8bd1d48ed5549fbea3dd97f66143b013_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e4b41f7cac777b954ae19a1b5e2e0e8f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7645a7f6b513c424db0a710b1bbc4edc_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "cf06f2a9e6b81166a82dd86abdcbf8b3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "75001092a2b091870049bdbba2e5534d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c141751cb02932bcfc5a774046279572_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c716f7006599a47bd59213098fc1cfa1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2541a5a0bc637bcc4634ea7dbc980d73_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4ab27b3b7e74ae558c84767175ef731a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b6a448e572e81636370ddc3a63ab9aa2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a41f5e9f73a1a8db0e457c34a60c79b6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b2a433da7826871e72d6d5ebf2586c76_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "675b4da1767132e700c848210580d71d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fef62f2e60e20f3863ac54943ddf6163_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d9520ade4cdbb844dc12d0ff6feb36cc_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "22e92854b74d4dc741196323c6622196_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "de6d4132a3dc79041eeddb793651e961_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9dc5b50eb7eae70c33e4e1a3b045ab41_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bc7f74bd20bc4db3ac33c92f99707ab9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ed1944b3779fe48fcea7436509f0eae3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "26154cc2ab59461e55b24009d63c273b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "886a3273cb997afadffdcb1df3187bc1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5c1d63f70bc25e46cdbc5d10c2eba29a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bcc7e818265d8873ac1852bf3b8ed270_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "48c9e20ebf22cfd6d664e9dd90805c8f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6e298d6457084cd8471e919e1c83f6ae_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9c7f23730698f78f5fa4c2553a88b553_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f6528cec9ad0b176760046f51679bdf4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a1e47b9659530f471d1d81b9ddf5ab5e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6195bc85809acd00a3cb26ceebc08f9f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bad2cee358f3092371e0b7eb17631ff0_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2bcd033fb0599d1656f2e9047377a10c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "45203db6c4cde4341498697aed179179_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "eec7f620ae08869100e0da619a6f60ba_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a9e943a0d472ad78232796ccd57f8e5d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "95e84f4ee785a9883ca4883954c65cf8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "871c596dd0fd07267e6f17dc13e07c48_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f9495e7a89fccd2aee7835704588f37c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dd08ac37ef192764afb0eae6bffef1ed_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "97a2d5dcb3416b1adf101032e7a85aca_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b413cbf4004c6c833bec5fe9866f1a72_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b7c3224fafb42f9abf35c0e4c78209fe_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "26a2927c8e20fe72d69b9c7e7ee69d4d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a49d32994bb3b10e08ebef3756bce1e5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "beae796195c75bc5a0cac2143b03f8fe_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f09fd0078fcb194393929436a3c2606d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "42ee206f80e250b7029b55ffa6accebe_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e4b762a6802941ade754ff323aa3335a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "39b1aa36a2947318c88a2aea20b20e2b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "726e0ba0955b65769504e4f9c5e2c551_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "53a9a11cb738966db9c1ea85a8a3bd60_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dc048f89c23129389fe455e43e1e2272_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6ea747332cbd34b54fccbb8ee2ded0a7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "396c23caa8f6f70b5a84cce6396c38cf_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1b22623c43c26115e0079a972cb95500_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bd1ecc002a5619a24a2c0528aefe7f8a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "13c29cbbfd22b59c909b22e9e2f0780a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0c87a96f514e42d0cb202080690ad0b8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "99a59d36f95eefda0d00a91169e7e15d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "cca08cc7d51bdc065b9d03d83bf1e1ba_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dcb74f7c5492a29a95e84d578c929385_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9b8e5ceaa029a865c731254d3cb159f6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\midjourney-mastery\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/5_photography.xhtml",
+      "title": "PHOTOGRAPHY",
+      "charCount": 48601,
+      "wordCount": 8108,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "3"
+        },
+        {
+          "level": "h1",
+          "title": "PHOTOGRAPHY"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ee6942181774f54235fb2dedf28a3830_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "871cdfc1569a0228232e00be707b00c4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "59cb9a5d439e06bf52ed8698bf19ebf8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f7e7c79df6abb31391c82d172a9e9fa4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "56fca571186af117ce47e25d9ff079dc_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9c8e4843f1185ebf82587bcb681bc342_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bf1bf7f308b624608c3f46471eea5831_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "758951c487b9feb2910c9873c73bf943_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8cf1ed0044556c940846dd23f145a691_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ea467f309cd017ee16912332b244472a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2e38b37798735c91a21abc59887708fb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "affab8d3cf657377a36aaf26f24e7adf_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e591396b51b46727510a577b63b9b34a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "10e299f8a44ac0278dfc117622906ee7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5593850e2ca9d7d2cb39ff2316a39c2b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4aab854905d4262ebd779f0b6907cfbb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c27d64db144fde64808c21f249cb1873_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f90efb17a55916e19b24866fade6e1e6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "db9530f6868881c8a7f648a5cd94ce59_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0095c37a74aee099c8f553b04c7078e6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f6440f1e6531854b844105b324755730_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3f9296dc03c16cf4b19b6212548e457a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "42ef45c46fe3364df6c52908760bf880_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f0f5ce5f3d2397725cac4d512f343f3e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "28b9f6f4504ce5ab36a87fc70144df14_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b530d83bb5bffb6028d5e23fc18694ef_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "397b29af271e34b599af94282d9f511e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2a4cc65959450276d5ae6161980a7078_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c70903343b67e535f787fc162458515b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "99e162b69ffb55e9f7635508716d552e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5ef2569e0b3c9c49c380fc91b9f402d9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6c3d2c7a59425fce9a02da17e5d5e446_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3b69a424ef0ebe71499e7fd49d98c237_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7c12c448ee060f34fd39ec1aca00a82c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d7beb5c144206e533bae6f61cd0a9abd_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "617a02c0c8c181002a13c9fa91db7612_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0cb7d2e4d4e14767dec7ade480619b67_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4f16966a0645eaca9234288bfed1e1cf_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4d92e969491a8953add15f79532ae346_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f9a9cdae40597ed56c1b2a8dd5f2e417_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8d3f69b3f1e3b72839dae83bd980d1c0_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f3cdac2efcd6d9c5467d06ddb09aa6b0_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "04f7b44cbd15943046a0fc620baa9176_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bcf33393ae7ec08d4e91e06c7aaf0127_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ced23228539f247084fd1473ffbcc0a4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e43b0301e6cabf04aa785010b910b6b1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7208ac697aa3076287cf6532cf2774d1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "379b5373a459755d8bc7d7ff5f9a9677_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "80313bfde0fad4dec9882326c31f774a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "00133c22028d5fffa25d3495abe74a53_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0c4da3db86a32dbc4d0f03abf37b4c11_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fe0de139af7b59a97bdcfe0c5d4ce7b5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b217f9f74a85d8f1d356390c2c7fc051_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b3de5d2786ca79343231252696d9c577_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "81feb7fb9b93b872674b369066016970_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "729876501dcc706e433735554948718d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b85bf0437ffd3c6863b5f2826eb477b7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1c365e90d94fa8e473822d86247691e6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "94ec0c62ff8cd5d685f2d523763eac50_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a81c9ca956ae1760e7aa55720324fe3f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "14702e1b85fb1d46834fbe22c57a5d01_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "186afc4b5a67be91e230d4b66b68b5c6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a21734666b4f318364186a3fdaa5bac3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "da66b1b478cd8dec9837e40a1a5b50a2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dd5e38c93c8a31def8520a29451e9ca1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0a46431e83ec13ac87ba300460642433_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "81b77f557f4494d987a7cf05c76e92fa_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a14f9e20476fbf2c1df7be4d1a89dbbb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "76e82abc2d37ceeb76e311610ae0d343_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2273a21b0a7f41ac39fadc899ff1b596_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5a50e007c580c7dfea6b0d0bd8ac2c5d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "78526dc4eb77285429719fb230dc68f6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0325e9ede98b08d0883b38131923e168_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "980fc2b4e0ca2287df3c73d1f933cadf_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "78c62acfd24bf3398daccdb4fe2c314d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e8245cde6308db2338696f4b8d389b0d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ee715803f1951d2c6202fa19c3914a8d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "18a1b76017ad85214f9a3360dca7d836_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b1ae027535e82b7b10f533adf34653ee_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "545fef04a0f1b5d8f666a9f1165e9edc_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "75f59bf847c2007a22cc75ab3583b5a7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5a8e2fe9dd7726cb765776c8c47bb506_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5c6ce1c75777a37f6b13393f3699da8a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "95579164e9b67c0ab79c0033edbf38da_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3f6812698d3c22c0e6e0d604a4fc384b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9870ff5c179f4d03d7d042c48ca19a8f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9a98588c247d7f07b5f11aa5bf98f360_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bdbf040bc1d74e96e39124f014a002f7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1490949485f629d3a62b1a139f153e2d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "275870defb7bd3e3390082a526a80f41_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b641b039b7e6b3ad242bc70c92904d8f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "933c9c097907e9004dcc4b9acc486c07_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "07414b336b19eaf54807285c3aad174e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7068eed0340c3ef1673070d997dbc292_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "67213748388551424b498965b8d4cbff_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b367d3b6d68a49c9a79a6fe70b4fbf09_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "90d3144594e99951907a7ba11b737f15_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fa71695482f3dcb0c1f530ce095a1f09_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f2f8d71a9e4150a3147631a17b9800ab_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9eabfaa09b5c3e9fbf941e38bf075e51_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "064136ce691732859a1e51d38e907b03_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8f34fa177c6f9e9382b2a2df6a06899e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c1e8ac9362a9244259725481f33b016d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5a8f2668041ccc1bb7fb6045473076e4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "002b37217f923aaed55e67e88b739b7d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c46d77a65dee00111bb961ef6f7cd626_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5abe216f7ef04a6e5b824646f53c9306_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2e74622cd4cec01782279bb9be366c2e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "78b6e7a10157ba9b2d3ece44ade43d90_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3da7500c2365e1ab5b6aa52bfb11886b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1bf5e1512c3c44590a842a2a3756b053_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4963be987bb40d99b434595ab55aeffd_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "46a24b1cc89975ad6ea61b022995f503_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9aa7326765ed93de0f16f91b2e01d188_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5a32cdce213b557559ca0eb23761b112_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6921785922e50db65e9df0d3f1218756_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4e38f120b8454f66f0ea1dff11558ed5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dffa13e586167075e0e0f3130c9fea80_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0e9db06e5d4691c31378c0ba278a9a99_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b7dc1c6f5a67f730b0e21aad6d0dffca_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "cb1c14014cbf3578e1c1e66d3324f4f0_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fe9699e5486d20007f7d9dfc8f2b19de_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "68a90e9a6ed1c4378d706fec1831edc5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "55f53503642aad8f8c183fae3dc35435_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "00e1eaea7b390ea26f8c0adede6d381a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "48ae3739a5b9a6999e8556c91b51c63c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "82d1b8463251174f5d441fa9e3112de4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c5280f22a96162309a89137d0a29ecc7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "697d2a65a5f81ee7098e2fa39bb82b6f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5581b273b6b07e81ff40a238155c890b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4b9df875ebd15869fdcd224323d8128a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d120dc564700e0b64099092c11779715_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b62ae155af159b010dccea115fd36dc8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "21dbe557191816c5f8aa53e9dcca6a3e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c6eceeecb3702a1198cf5d5374d89713_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3281ba4fc933e00cf659a924b9866d04_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5a34f8c98a24db24317c87311732d13c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ad465f00703d0f945e915622ecef5b7e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dc235739d41e7ce93102730cdb44208f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d6c2e8be9c99306470cba63b18002af5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c5bb50e84994699791554d06c5703ae1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6f25c1825fcd79d2ed053aa471176739_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5459893019045c6e8d26bfd029d2fbde_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d4d884b6f04e95e971ec951b760287c0_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "172c29dbd17a0fe04fdeaae69250bf85_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "79f3080e0ade5d5bb6afeeb0cafe2316_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c4147394761918665d87bdd6077bf1f4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dd23fce7a9eac964449564a1ec71fca0_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "00257c55d0a05f2a47f54561c821df7d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "84dd3ea27e34e553b1722217742f94f4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fe70eac9fa41b9edf988d166f8e2541f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "33407c26264c7f882b25571884feeb28_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "de61e38576b69c50773a5c5017dd47da_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "69495ee812029c426000343caa59d878_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0114d348cd3b8ca6bd0967ec55f4f9b7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6cf5a781799f62efd8afb99b9b7ff802_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0d9f98a335fb1c7b40a6b38808091e55_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4834c36baf96064d1e2e6a340b595aa1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e3ed95b8183709786aa3a3a962347b87_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e9d28c251ed55b335d93d7a8ae62d62e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7abe974ba966588602cca494fdb4670a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8c21c05e31e5fab756e82bbbbe376bf4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d74bfd8ad80bb1723f16060ad7dc148d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e3a538646d31a2b04eda016b8b946cda_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b8832d4b54a1461499766a1b420a81e5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "29dca43d1f712b2c00f8e8f5bf0f91e1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "25fb6ab761e2bb132aa807725a06e49c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9f597cc087737841a31fd7b7790e5abd_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c474b46a4208183693756d510653deb8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8609ed2c5bce6280d77f5f0fa4336cc4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "662f1d8ab7bc3f3934f299086f2e1c8c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "72d2e10b38688a777932a0de65b1504e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ddf123038b2e6aaeacc946b4c85e9254_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c58ac3163cc7382d73eb1742257d0bae_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a7980af5ec0eef794832c9c394bc44f8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9d218076d8f2a9f34e029c50d2333483_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e64a603b779b5b7bf503730d6fcf28db_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e75760d0dda0e4b335b118b6c9278a32_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6466db0f0c0780e7e3822d6b9b1383e5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9f7c88780b8b45a4d161db496ad3424f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "95b564d6720db6ebf2885ae696314dc6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "23ef22b00d04aae13250d40b5caefab8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "05be73d4b10dbff78e93b676d71731b7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\midjourney-mastery\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/6_drawings-paintings-p.xhtml",
+      "title": "DRAWINGS, PAINTINGS & PATTERNS",
+      "charCount": 22677,
+      "wordCount": 3572,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "4"
+        },
+        {
+          "level": "h1",
+          "title": "DRAWINGS, PAINTINGS & PATTERNS"
+        }
+      ],
+      "figures": [
+        {
+          "file": "1f9265cc321f9161604119ed6a15831d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6892c8b8a82477de4e95a3ab4fdc2874_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "862e899e559c7f52b0157bb34ba9c444_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b4ade282ecb5c2201484147d9ed0f38a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "aedbc192056b1422cb073fe104397419_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "430e98d00542ca53c8baa7872977f8f9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "af9fd45e902d0c37a246ac4246786263_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8e1366506528e251a4f3c33e5961c722_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6d969dc660f4178b8c115ba5471e213a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4bde981f2884c4ac2ad0df4cc7f153af_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "274eda88c4d4726f4cbabcd6ed453247_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fcaac18f110544130ec73a4c23b7da55_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8f452cf3554a403c381d658ea2e56128_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7f4635ec20e33f5dd8f838e3f21b005b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "408289ba44bebfa4ac885222380b3d4c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9117e6e6fe699dc3c8616f6451f4e84a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6b7da6a65ac145d01187eb40c13c0d36_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7ec241f992ffc5bfac5968098d2274e9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c0686989279ef62bd5a7c526fde53d5e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8f65cad062c5a5fb10e2b71af634508b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "52fd419deddfa9184b0fb1a9b0c2cb11_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "317623cc095201044524df70381df8e5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "be239dbfb4d7775ac064d8620144f6df_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d8b29f5c7b59aa26e0742b1a46eb8dde_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a4059621afa06940d10c27c2463775ea_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2bcbb90b38aad8ece5a32ffbdadc73f9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2520ccf9b3105052bbfdaa5b07e74bfb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bfd845dc0594921cf83ce17fa1f36c64_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f7d113bd78c78b1a48136b3e1d37e840_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c9cab6b8abf6fb3bc16d383ccfc919a7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "aa08b31920da7090d02636a975817696_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d2bceb9936e0bef1071b3caceb3d5606_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1b81836ed1387c87cb845f4be26fa7d3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3dd47ceaad65eb35e31c48037e273941_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8e0b516c30e4d76cd5e0b5dd5422e846_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b97f7ac90158c780da01aeeb419539ec_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d281287bda0fa75935e3ad8618a32357_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6558dcd5d5e442a1dcdb3f94cb0a7bbd_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1c5e23f5195a00d8f7120c0133adf102_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "314fe06a30f8614da4c2a52acbff7d2e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "523b20230d56f0a537ddb7a231440f85_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5663d801c9a4c119f2290d236d4893fc_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bf9a459e309b00bebca39096cd7df6a9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2d2483452c61fcb81fd24019f6713a2a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d2d18bf50a376746d35b96fdecd7d5de_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "85669328cbc6fe113fa62acc64f7bc32_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1a71afd746419055ca2f7aa685e4dd4e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1ef9fa466cfb6a82f9e102e30ad575a9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4714881787db2af8794375f65ef8072f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fe060ec9f907963e9dc127a08ce77757_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "458cbbe6feeff4cf2ceb26de85a64d67_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b9952ded5891e6d49bd54d808ebf1106_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "973155ab395204be63b3c4c6eaa65cab_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4bb72c7cc556422f269d5e54ea9af89a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "af7990e761c5b2b7b9e80528a238491a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ab56d10509c0805e07ffd2f1f9733c6d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6b1c15cec8d24abcd0812bdac6ac88b4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e9c04e07db0825edfbfcb64cad145405_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "423896d6e2cf1ef7183481d3f863261d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b8932ae4b5c147b553530ed5c1145e13_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0b1e9fa76859713e9b2663c4e35da8f6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "483c3bb49c4af2c8c0d67fadc3c0df75_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "6af1ab3c046f60194f86b92856ce6067_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1efb847f7cf36e6ed9dbfba6113c36fc_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8938eda9f01bca328758623514d292f3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ef72646ba2a06640753d6b6e60128a2e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "22db619d2d6eb89d8dc9dee0bbf74128_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7d8cd2b39e3e3b3ee8f8e4265f2cab52_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "05c2ca896d0d84596129bc27f751a8eb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5ea15cd8a15accfd0d50313fba3af19b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b80d8806eb223843ec098b0f0956747d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e7c8c7af96f9c4a5757ec07d1326f247_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "925623c7cf37d2c42ec1eda21b83d18f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4db380959c6403918fe0db23302468fb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "8af405c7441fa58ca00f87e3a698c7fa_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "81c97aa132aae6a00fd4d2a0eabb8796_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2ff47b9cae1de117f5f436c34012f7f6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c4e5ac20efe7305fc13be3fb7ad9fbde_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "26f408cac7e9e2cf6ef5ec97f2fdb48e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5df906dfd34ad8ec7fb1116172c7c3c5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d6010b133bf751ec503c5476f9fb71b4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1fd9bbe161e7ba51d5b28f0547c9275a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e3bf6de985752a0afd6dd6a88ca7be48_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "732f64d03a61a8c7b959b3305af5a71d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9444cd0a46d2f8a32c467a8e701f694e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0121cfd8829474ccb68df09ef6584221_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1b5d30d76aad4449f3d990c3d0bc6378_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "49bfee4bc875393a532bba36b468339a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2d60f73d77789f3616970c50262777e8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "16a6ed6030b8e87f8476a53fbeb4bf06_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "71dd7b5db0d2fa06afe7ded3dd935e46_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2055ebed22534036359eea29c29a142e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\midjourney-mastery\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/7_logos-tattoos-sticke.xhtml",
+      "title": "LOGOS, TATTOOS, STICKERS, T-SHIRT DESIGNS",
+      "charCount": 19896,
+      "wordCount": 3170,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "5"
+        },
+        {
+          "level": "h1",
+          "title": "LOGOS, TATTOOS, STICKERS, T-SHIRT DESIGNS"
+        }
+      ],
+      "figures": [
+        {
+          "file": "dddf260f0b0dc0a121c173911bdeecff_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5899f49833d8fba6652e76bdacb31b17_smallRaw.png",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "dea00647ce68c9288be3f71b459fe99b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0f3c580dc2916934e24954d169819e33_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a85cac550161107f8fabbef8164e8f7a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "031c14bddfae670cc7bd860a563e6c96_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f3ef8421e08401423b264ace081bdaa8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "04709d8162cc122fe3b1ac2c2c25a07c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "afdd5cd0fd4d79790f9118435a1504b9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d26792199f6fb8c63ce139bd919e4c9c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3def4b723e3f828b00c9279bed31326b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ea0be2fefafb138d4c46b3b0b4775b28_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5359588ed80acef30284b8c6f39099f4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bc6eb2409183fcff87df3396e1c5d280_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "19c5c3969c5c901ec5badf7694542327_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "130307bc65176fa8e2566bd0fdd36fc2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fad1f79479c1bcb2f351332926f76ef4_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "60e0dd3663f1c7c1896a1a8a5e4a59c9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "96f1639baca48ebce9e51f39987672eb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "578a6643509e438b3add799ebcfb1a92_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "aaec0ee60b713d968e9805d907099b94_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0e421df03a54e06657371ba20d0739e3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ccb80f75e84087833c8ed065e364af33_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4d866a6275b2246e69d83882ff56efd2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b7481e18afe9688442962794f91f9ac2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9511709320b6ad0d5c6e5bdcb0ceef4b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5b500554b56f359cac40238d4a92c3a6_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "db1f2fa505190dbe6a5a28225d2a76e7_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2b18eae5f8e312fb2addef0a555b8f82_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ee6903d58b6b70433e78b3cc71b4defb_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b71b7302c07ab345da827cee0bbda118_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e3d9d8ad528b2f7b3cb0e0a041a4aa11_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5c430724438006a0f1d50d1369cfa2b2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c42a30ae837cbb44d59d20bcea1ba2e9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d7e696e13544ba1952d69e67ce1cca0d_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d06fbdc645a86993f06eca0ad7535c73_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "3e61beb1214f2e5fea11d746452a2662_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ddcb659977d6c15aa979bea45c7c7db9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a79666be91d4f1d4fafd460b72aa202a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "15436ad30eb330585a060601803ec8b9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "01376dbf21450ab599f5fc273b4ff236_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ab115c79969617b3167b4512915ec398_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "148e694c256cb4ff438cf07b3ef702f8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5f0713fb5142ee00a4b916e26966a17a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7a687c0e584437c20e6604de1af8681e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "724d2dbb82cb83e9b1e8448288d4deda_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b91ed880df6ab9d32c9356ac44776369_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7ad7e609965cad65da7ad46504565d2a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0b5e8937dd5857fba540dd993cbc4ba5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "af7a73a005726fd4176ec3670b607040_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "03b06a5abf4c5170f7ee1693efc9f510_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7b6257a21b341a0414f871e37aa8bae2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ae253a77f54ff97d97bb88825814a964_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\midjourney-mastery\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/8_manga-anime.xhtml",
+      "title": "MANGA & ANIME",
+      "charCount": 12766,
+      "wordCount": 2059,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "6"
+        },
+        {
+          "level": "h1",
+          "title": "MANGA & ANIME"
+        }
+      ],
+      "figures": [
+        {
+          "file": "19da971d3b4057032fdfb03a6940686a_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ab6b51b883aa333196e7d24fb2c8a4a1_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "35f49eff38874578a56b5ebfa7ab0a38_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "bb3e1bc70bc6a209b33605009585bee2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "ed1505657ca5f88cd10896dd9a83c68c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "7a52283b2d85aa61b4895edf273994de_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "d24277d3d98d29680a05347998531216_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "669afd6df4b26fbf9a064afb3dc62d45_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c29aebf450b3aef1c4d6d431a426da9b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b7cd3006f9ffcc509d413325e853fe0e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b27d6fec26ea174e40ebb49bc9005d92_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "73270cccc768bec4783f823966cabf7b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "97deca12f5c315b5969973f24f7ba260_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "706a0e644367564f5629a8e5565e17d8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4a70434d4885ab7ff0a964bacc1fcef2_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2b62bea1263a0bfbd53431ed39c52ea3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "1a77537a889caa68e566abbf9f9a0b75_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f64ec9713c570fee4b5d31a11c61a6b8_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "f1ddae57fe796331638039c3074b8518_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0efe83527549545563b18bb727628998_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a79dc7deb464b95bd656ed99f582581c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "e5d482c9f0fdaaffa2c17daf235ceaac_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "5db64e9a01ccd4713c872c000de92b9f_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "69c7d22483de9544322e3f52c1cdc1d5_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "256153039615dd68fc41bf3254d7e8f3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "10d15d9776b86c62b47cfedcc8a5d10b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "b67d961f25118d8229f44862ffb20e9c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "2c9a175ba739ba6cc25c5003d575d24c_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "408d56bef233db5e46b0f3831b52f81b_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "c217b95c67fc9abaa34052c7a48ce11e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "080db633fc73cce354b739f9302f6162_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "af8766f338f89374f869a879fd0c1ae9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "20b97b18dc67dae41c5aaca9fcfb1dd3_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "0f9be53a3a3326420214efcbfb833f52_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "9307c0247ada0007150b77abe5efc9e9_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "fc3316dae9ceae7609f8874a99dc68fa_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "4ea89d2ac641e72b4f2ef641f8f76042_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a2e4b6912d9276fa61e92a9fb54aee6e_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        },
+        {
+          "file": "a32c8615b09ee8981862c9fa47f1c1fa_smallRaw.jpg",
+          "caption": "Image",
+          "alt": "Image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\midjourney-mastery\\ch06.txt"
+    }
+  ]
+}

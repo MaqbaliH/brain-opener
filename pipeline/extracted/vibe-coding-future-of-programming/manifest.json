@@ -1,0 +1,198 @@
+{
+  "bookSlug": "vibe-coding-future-of-programming",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Vibe Coding The Future of Programming.epub",
+  "totalChapters": 2,
+  "totalFigures": 1,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/ch01.html",
+      "title": "Chapter 1. The 70% Problem: AI-Assisted Workflows That Actually Work",
+      "charCount": 24524,
+      "wordCount": 3710,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1. The 70% Problem: AI-Assisted Workflows That Actually Work"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Common Failure Patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Two Steps Back"
+        },
+        {
+          "level": "h2",
+          "title": "The Demo-Quality Trap"
+        },
+        {
+          "level": "h1",
+          "title": "What Actually Works: Practical Workflow Patterns"
+        },
+        {
+          "level": "h2",
+          "title": "AI as First Drafter"
+        },
+        {
+          "level": "h2",
+          "title": "AI as Pair Programmer"
+        },
+        {
+          "level": "h2",
+          "title": "Best Practices for AI Pair Programming"
+        },
+        {
+          "level": "h2",
+          "title": "AI as Validator"
+        },
+        {
+          "level": "h1",
+          "title": "The Golden Rules of Vibe Coding"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ch03_figure_1_1744816025642764.png",
+          "caption": "Figure 1-1. The “two steps back” antipattern",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\vibe-coding-future-of-programming\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/ch02.html",
+      "title": "Chapter 2. Beyond the 70%: Maximizing Human Contribution",
+      "charCount": 39218,
+      "wordCount": 6151,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2. Beyond the 70%: Maximizing Human Contribution"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Senior Engineers and Developers: Leverage Your Experience with AI"
+        },
+        {
+          "level": "h2",
+          "title": "Be the Architect and the Editor-in-Chief"
+        },
+        {
+          "level": "h2",
+          "title": "Use AI as a Force Multiplier for Big Initiatives"
+        },
+        {
+          "level": "h2",
+          "title": "Mentor and Set Standards"
+        },
+        {
+          "level": "h2",
+          "title": "Continue to Cultivate Domain Mastery and Foresight"
+        },
+        {
+          "level": "h2",
+          "title": "Hone Your Soft Skills and Leadership"
+        },
+        {
+          "level": "h1",
+          "title": "Midlevel Engineers: Adapt and Specialize"
+        },
+        {
+          "level": "h2",
+          "title": "Learn to Manage Systems Integration and Boundaries"
+        },
+        {
+          "level": "h2",
+          "title": "Build Your Domain Expertise"
+        },
+        {
+          "level": "h2",
+          "title": "Master Performance Optimization and DevOps"
+        },
+        {
+          "level": "h2",
+          "title": "Focus on Code Review and Quality Assurance"
+        },
+        {
+          "level": "h2",
+          "title": "Learn Systems Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Be Adaptable–and Never Stop Learning"
+        },
+        {
+          "level": "h2",
+          "title": "Get Good at Cross-Functional Communication"
+        },
+        {
+          "level": "h2",
+          "title": "Learn System Design and Architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Use AI!"
+        },
+        {
+          "level": "h2",
+          "title": "Venture into UI and UX Design"
+        },
+        {
+          "level": "h1",
+          "title": "Junior Developers: Thrive Alongside AI"
+        },
+        {
+          "level": "h2",
+          "title": "Learn the Fundamentals: Don’T Skip the “Why”"
+        },
+        {
+          "level": "h2",
+          "title": "Practice Problem Solving and Debugging Without the AI Safety Net"
+        },
+        {
+          "level": "h2",
+          "title": "Focus on Testing and Verification"
+        },
+        {
+          "level": "h2",
+          "title": "Build an Eye for Maintainability"
+        },
+        {
+          "level": "h2",
+          "title": "Develop Your Prompting and Tooling Skills (Wisely)"
+        },
+        {
+          "level": "h2",
+          "title": "Seek Feedback and Mentorship"
+        },
+        {
+          "level": "h2",
+          "title": "Communicate and Collaborate"
+        },
+        {
+          "level": "h2",
+          "title": "Shift Your Mindset: From Consuming to Creating"
+        },
+        {
+          "level": "h1",
+          "title": "Future-Proof Your Career with Durable Engineering Skills"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\vibe-coding-future-of-programming\\ch02.txt"
+    }
+  ]
+}

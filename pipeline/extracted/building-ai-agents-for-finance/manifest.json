@@ -1,0 +1,4415 @@
+{
+  "bookSlug": "building-ai-agents-for-finance",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Building AI Agents for Finance.epub",
+  "totalChapters": 12,
+  "totalFigures": 271,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/Text/Chapter_1.xhtml",
+      "title": "What Are AI Agents?",
+      "charCount": 77422,
+      "wordCount": 11189,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "1"
+        },
+        {
+          "level": "h1",
+          "title": "What Are AI Agents?"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Introducing LLMs"
+        },
+        {
+          "level": "h2",
+          "title": "What are Transformers?"
+        },
+        {
+          "level": "h2",
+          "title": "What are the different tasks LLMs can perform?"
+        },
+        {
+          "level": "h2",
+          "title": "Various input types"
+        },
+        {
+          "level": "h2",
+          "title": "Open-source vs. closed-source models"
+        },
+        {
+          "level": "h2",
+          "title": "Reasoning vs. non-reasoning LLMs"
+        },
+        {
+          "level": "h1",
+          "title": "Overview of specialized LLMs and tools in finance"
+        },
+        {
+          "level": "h2",
+          "title": "Open-source LLMs"
+        },
+        {
+          "level": "h2",
+          "title": "Commercial/proprietary finance LLMs"
+        },
+        {
+          "level": "h2",
+          "title": "Open-source datasets"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: API calls"
+        },
+        {
+          "level": "h3",
+          "title": "Interacting with closed-source models"
+        },
+        {
+          "level": "h4",
+          "title": "OpenAI API - GPT-4.1-mini"
+        },
+        {
+          "level": "h4",
+          "title": "Google - Gemini-2.5-Flash"
+        },
+        {
+          "level": "h3",
+          "title": "Interacting with an open-source model"
+        },
+        {
+          "level": "h1",
+          "title": "LLM limitations and solutions"
+        },
+        {
+          "level": "h2",
+          "title": "LLM limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Knowledge cutoffs"
+        },
+        {
+          "level": "h3",
+          "title": "Lack of domain-specific knowledge"
+        },
+        {
+          "level": "h3",
+          "title": "Access to proprietary data"
+        },
+        {
+          "level": "h3",
+          "title": "Dependency on training data quality"
+        },
+        {
+          "level": "h2",
+          "title": "LLM solutions"
+        },
+        {
+          "level": "h3",
+          "title": "Crafting instructions - Prompting"
+        },
+        {
+          "level": "h4",
+          "title": "Zero-shot learning"
+        },
+        {
+          "level": "h4",
+          "title": "Few-shot learning"
+        },
+        {
+          "level": "h4",
+          "title": "Chain-of-thought (CoT)"
+        },
+        {
+          "level": "h4",
+          "title": "Zero-CoT"
+        },
+        {
+          "level": "h3",
+          "title": "Fine-tuning"
+        },
+        {
+          "level": "h4",
+          "title": "How does it work in practice?"
+        },
+        {
+          "level": "h4",
+          "title": "How to fine-tune an LLM?"
+        },
+        {
+          "level": "h3",
+          "title": "RAG"
+        },
+        {
+          "level": "h4",
+          "title": "The RAG process"
+        },
+        {
+          "level": "h4",
+          "title": "Why is RAG useful"
+        },
+        {
+          "level": "h3",
+          "title": "AI agents"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Knowledge cutoff example"
+        },
+        {
+          "level": "h1",
+          "title": "What are AI agents?"
+        },
+        {
+          "level": "h2",
+          "title": "Non-agentic vs. agentic systems"
+        },
+        {
+          "level": "h2",
+          "title": "When should we use an agent?"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Non-agentic vs. agentic workflow with tool calling"
+        },
+        {
+          "level": "h3",
+          "title": "Interacting with a non-agentic system"
+        },
+        {
+          "level": "h3",
+          "title": "Interacting with an agentic system"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_1_1.png",
+          "caption": "Figure 1.1 – LLM definition",
+          "alt": "Figure 1.1 – LLM definition"
+        },
+        {
+          "file": "B32414_1_1.png",
+          "caption": "Figure 1.1 – LLM definition",
+          "alt": "Figure 1.1 – LLM definition"
+        },
+        {
+          "file": "B32414_1_2.png",
+          "caption": "Figure 1.2 – LLM limitations and the solutions that address them",
+          "alt": "Figure 1.2 – LLM limitations and the solutions that address them"
+        },
+        {
+          "file": "B32414_1_2.png",
+          "caption": "Figure 1.2 – LLM limitations and the solutions that address them",
+          "alt": "Figure 1.2 – LLM limitations and the solutions that address them"
+        },
+        {
+          "file": "B32414_1_3.png",
+          "caption": "Figure 1.3 – Instructing an LLM",
+          "alt": "Figure 1.3 – Instructing an LLM"
+        },
+        {
+          "file": "B32414_1_3.png",
+          "caption": "Figure 1.3 – Instructing an LLM",
+          "alt": "Figure 1.3 – Instructing an LLM"
+        },
+        {
+          "file": "B32414_1_4.png",
+          "caption": "Figure 1.4 – Examples of sentiment analysis dataset: Financial Phrasebank dataset. Source:https://huggingface.co/datasets/takala/financial_phrasebank",
+          "alt": "Figure 1.4 – Examples of sentiment analysis dataset: Financial Phrasebank dataset. Source:https://huggingface.co/datasets/takala/financial_phrasebank"
+        },
+        {
+          "file": "B32414_1_4.png",
+          "caption": "Figure 1.4 – Examples of sentiment analysis dataset: Financial Phrasebank dataset. Source:https://huggingface.co/datasets/takala/financial_phrasebank",
+          "alt": "Figure 1.4 – Examples of sentiment analysis dataset: Financial Phrasebank dataset. Source:https://huggingface.co/datasets/takala/financial_phrasebank"
+        },
+        {
+          "file": "B32414_1_5.png",
+          "caption": "Figure 1.5 – RAG – Retrieval-augmented generation",
+          "alt": "Figure 1.5 – RAG – Retrieval-augmented generation"
+        },
+        {
+          "file": "B32414_1_5.png",
+          "caption": "Figure 1.5 – RAG – Retrieval-augmented generation",
+          "alt": "Figure 1.5 – RAG – Retrieval-augmented generation"
+        },
+        {
+          "file": "B32414_1_6.png",
+          "caption": "Figure 1.6 – Client reporting agent illustration",
+          "alt": "Figure 1.6 – Client reporting agent illustration"
+        },
+        {
+          "file": "B32414_1_6.png",
+          "caption": "Figure 1.6 – Client reporting agent illustration",
+          "alt": "Figure 1.6 – Client reporting agent illustration"
+        },
+        {
+          "file": "B32414_1_7.png",
+          "caption": "Figure 1.7 – Non-agentic vs. agentic system",
+          "alt": "Figure 1.7 – Non-agentic vs. agentic system"
+        },
+        {
+          "file": "B32414_1_7.png",
+          "caption": "Figure 1.7 – Non-agentic vs. agentic system",
+          "alt": "Figure 1.7 – Non-agentic vs. agentic system"
+        },
+        {
+          "file": "B32414_1_8.png",
+          "caption": "Figure 1.8 – Agentic systems spectrum: from simple prompting to autonomous agents, with workflows and multi-agent systems as architectural patterns",
+          "alt": "Figure 1.8 – Agentic systems spectrum: from simple prompting to autonomous agents, with workflows and multi-agent systems as architectural patterns"
+        },
+        {
+          "file": "B32414_1_8.png",
+          "caption": "Figure 1.8 – Agentic systems spectrum: from simple prompting to autonomous agents, with workflows and multi-agent systems as architectural patterns",
+          "alt": "Figure 1.8 – Agentic systems spectrum: from simple prompting to autonomous agents, with workflows and multi-agent systems as architectural patterns"
+        },
+        {
+          "file": "B32414_1_9.png",
+          "caption": "Figure 1.9 – The agent loop behind the stock-price agent",
+          "alt": "Figure 1.9 – The agent loop behind the stock-price agent"
+        },
+        {
+          "file": "B32414_1_9.png",
+          "caption": "Figure 1.9 – The agent loop behind the stock-price agent",
+          "alt": "Figure 1.9 – The agent loop behind the stock-price agent"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/Text/Chapter_2.xhtml",
+      "title": "Exploring Design Patterns for AI Agents",
+      "charCount": 107711,
+      "wordCount": 14660,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "2"
+        },
+        {
+          "level": "h1",
+          "title": "Exploring Design Patterns for AI Agents"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Capability patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Tool use"
+        },
+        {
+          "level": "h3",
+          "title": "Hands-on lab: Retrieving fundamental ratios for Apple"
+        },
+        {
+          "level": "h2",
+          "title": "Memory"
+        },
+        {
+          "level": "h3",
+          "title": "Short-term (working) memory"
+        },
+        {
+          "level": "h4",
+          "title": "Hands-on lab: Portfolio rebalancing agent with working memory"
+        },
+        {
+          "level": "h3",
+          "title": "Long-term memory"
+        },
+        {
+          "level": "h3",
+          "title": "Episodic memory"
+        },
+        {
+          "level": "h4",
+          "title": "Hands-on lab: Portfolio rebalancing agent with episodic memory"
+        },
+        {
+          "level": "h3",
+          "title": "Semantic memory"
+        },
+        {
+          "level": "h3",
+          "title": "Procedural memory"
+        },
+        {
+          "level": "h2",
+          "title": "Retrieval-augmented generation (RAG)"
+        },
+        {
+          "level": "h1",
+          "title": "Reasoning patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Task-level reasoning patterns"
+        },
+        {
+          "level": "h3",
+          "title": "Planning"
+        },
+        {
+          "level": "h4",
+          "title": "Plan-then-execute"
+        },
+        {
+          "level": "h4",
+          "title": "Plan-and-execute"
+        },
+        {
+          "level": "h4",
+          "title": "Hierarchical planning"
+        },
+        {
+          "level": "h4",
+          "title": "Planning + ReAct"
+        },
+        {
+          "level": "h4",
+          "title": "Planning and reflection"
+        },
+        {
+          "level": "h3",
+          "title": "ReAct"
+        },
+        {
+          "level": "h4",
+          "title": "Hands-on lab: Fetching stock price information"
+        },
+        {
+          "level": "h2",
+          "title": "Thought-based reasoning patterns"
+        },
+        {
+          "level": "h3",
+          "title": "Chain-of-thought: CoT"
+        },
+        {
+          "level": "h3",
+          "title": "Self-consistency"
+        },
+        {
+          "level": "h1",
+          "title": "Quality patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Reflection"
+        },
+        {
+          "level": "h2",
+          "title": "LLM-as-a-judge"
+        },
+        {
+          "level": "h3",
+          "title": "Hands-on lab: Implementing a financial news agent with the evaluator–optimizer pattern"
+        },
+        {
+          "level": "h4",
+          "title": "Defining the web_news_searcher agent"
+        },
+        {
+          "level": "h4",
+          "title": "Defining the news_evaluator agent"
+        },
+        {
+          "level": "h2",
+          "title": "Guardrails"
+        },
+        {
+          "level": "h1",
+          "title": "Orchestration patterns"
+        },
+        {
+          "level": "h2",
+          "title": "What is a sequential multi-agent orchestration?"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Investment recommendation using profitability and valuation ratios"
+        },
+        {
+          "level": "h3",
+          "title": "System architecture"
+        },
+        {
+          "level": "h3",
+          "title": "Implementation and run"
+        },
+        {
+          "level": "h1",
+          "title": "Challenges in designing AI agents"
+        },
+        {
+          "level": "h2",
+          "title": "Context engineering"
+        },
+        {
+          "level": "h3",
+          "title": "Key contextual elements"
+        },
+        {
+          "level": "h3",
+          "title": "Selecting the right context"
+        },
+        {
+          "level": "h3",
+          "title": "Ensuring context fits within the limits of the context window"
+        },
+        {
+          "level": "h4",
+          "title": "Context compression"
+        },
+        {
+          "level": "h4",
+          "title": "Context isolation"
+        },
+        {
+          "level": "h2",
+          "title": "Memory management"
+        },
+        {
+          "level": "h3",
+          "title": "Implementation mechanisms of memory"
+        },
+        {
+          "level": "h3",
+          "title": "Forgetting and memory maintenance"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_2_1.png",
+          "caption": "Figure 2.1 – AI Agent's Core Design Patterns",
+          "alt": "Figure 2.1 – AI Agent's Core Design Patterns"
+        },
+        {
+          "file": "B32414_2_1.png",
+          "caption": "Figure 2.1 – AI Agent's Core Design Patterns",
+          "alt": "Figure 2.1 – AI Agent's Core Design Patterns"
+        },
+        {
+          "file": "B32414_2_2.png",
+          "caption": "Figure 2.2 – Tool use pattern",
+          "alt": "Figure 2.2 – Tool use pattern"
+        },
+        {
+          "file": "B32414_2_2.png",
+          "caption": "Figure 2.2 – Tool use pattern",
+          "alt": "Figure 2.2 – Tool use pattern"
+        },
+        {
+          "file": "B32414_2_3.png",
+          "caption": "Figure 2.3 – Working memory in AI agents",
+          "alt": "Figure 2.3 – Working memory in AI agents"
+        },
+        {
+          "file": "B32414_2_3.png",
+          "caption": "Figure 2.3 – Working memory in AI agents",
+          "alt": "Figure 2.3 – Working memory in AI agents"
+        },
+        {
+          "file": "B32414_2_4.png",
+          "caption": "Figure 2.4 – Episodic memory in AI agents",
+          "alt": "Figure 2.4 – Episodic memory in AI agents"
+        },
+        {
+          "file": "B32414_2_4.png",
+          "caption": "Figure 2.4 – Episodic memory in AI agents",
+          "alt": "Figure 2.4 – Episodic memory in AI agents"
+        },
+        {
+          "file": "B32414_2_5.png",
+          "caption": "Figure 2.5 – Semantic memory in an AI agent",
+          "alt": "Figure 2.5 – Semantic memory in an AI agent"
+        },
+        {
+          "file": "B32414_2_5.png",
+          "caption": "Figure 2.5 – Semantic memory in an AI agent",
+          "alt": "Figure 2.5 – Semantic memory in an AI agent"
+        },
+        {
+          "file": "B32414_2_6.png",
+          "caption": "Figure 2.6 – Procedural memory in an AI agent",
+          "alt": "Figure 2.6 – Procedural memory in an AI agent"
+        },
+        {
+          "file": "B32414_2_6.png",
+          "caption": "Figure 2.6 – Procedural memory in an AI agent",
+          "alt": "Figure 2.6 – Procedural memory in an AI agent"
+        },
+        {
+          "file": "B32414_2_7.png",
+          "caption": "Figure 2.7 – ReAct reasoning paradigm. The agent generates a reasoning trace, takes an action, and collects the results as observations. This information constitutes the context used in the next reasoning step.",
+          "alt": "Figure 2.7 – ReAct reasoning paradigm. The agent generates a reasoning trace, takes an action, and collects the results as observations. This information constitutes the context used in the next reasoning step."
+        },
+        {
+          "file": "B32414_2_7.png",
+          "caption": "Figure 2.7 – ReAct reasoning paradigm. The agent generates a reasoning trace, takes an action, and collects the results as observations. This information constitutes the context used in the next reasoning step.",
+          "alt": "Figure 2.7 – ReAct reasoning paradigm. The agent generates a reasoning trace, takes an action, and collects the results as observations. This information constitutes the context used in the next reasoning step."
+        },
+        {
+          "file": "B32414_2_8.png",
+          "caption": "Figure 2.8 – Reflection",
+          "alt": "Figure 2.8 – Reflection"
+        },
+        {
+          "file": "B32414_2_8.png",
+          "caption": "Figure 2.8 – Reflection",
+          "alt": "Figure 2.8 – Reflection"
+        },
+        {
+          "file": "B32414_2_9.png",
+          "caption": "Figure 2.9 – Evaluator–optimizer (LLM-as-a-judge)",
+          "alt": "Figure 2.9 – Evaluator–optimizer (LLM-as-a-judge)"
+        },
+        {
+          "file": "B32414_2_9.png",
+          "caption": "Figure 2.9 – Evaluator–optimizer (LLM-as-a-judge)",
+          "alt": "Figure 2.9 – Evaluator–optimizer (LLM-as-a-judge)"
+        },
+        {
+          "file": "B32414_2_10.png",
+          "caption": "Figure 2.10 – Evaluator–optimizer pattern for financial news retrieval",
+          "alt": "Figure 2.10 – Evaluator–optimizer pattern for financial news retrieval"
+        },
+        {
+          "file": "B32414_2_10.png",
+          "caption": "Figure 2.10 – Evaluator–optimizer pattern for financial news retrieval",
+          "alt": "Figure 2.10 – Evaluator–optimizer pattern for financial news retrieval"
+        },
+        {
+          "file": "B32414_2_11.png",
+          "caption": "Figure 2.11 – Guardrails applied at the input and output stages of a multi-agent workflow",
+          "alt": "Figure 2.11 – Guardrails applied at the input and output stages of a multi-agent workflow"
+        },
+        {
+          "file": "B32414_2_11.png",
+          "caption": "Figure 2.11 – Guardrails applied at the input and output stages of a multi-agent workflow",
+          "alt": "Figure 2.11 – Guardrails applied at the input and output stages of a multi-agent workflow"
+        },
+        {
+          "file": "B32414_2_12.png",
+          "caption": "Figure 2.12 – Sequential multi-agent orchestration",
+          "alt": "Figure 2.12 – Sequential multi-agent orchestration"
+        },
+        {
+          "file": "B32414_2_12.png",
+          "caption": "Figure 2.12 – Sequential multi-agent orchestration",
+          "alt": "Figure 2.12 – Sequential multi-agent orchestration"
+        },
+        {
+          "file": "B32414_2_13.png",
+          "caption": "Figure 2.13 – Core components of the context",
+          "alt": "Figure 2.13 – Core components of the context"
+        },
+        {
+          "file": "B32414_2_13.png",
+          "caption": "Figure 2.13 – Core components of the context",
+          "alt": "Figure 2.13 – Core components of the context"
+        },
+        {
+          "file": "B32414_2_14.png",
+          "caption": "Figure 2.14 – Context summarization and long-term memory storage when the 40k-token threshold is reached",
+          "alt": "Figure 2.14 – Context summarization and long-term memory storage when the 40k-token threshold is reached"
+        },
+        {
+          "file": "B32414_2_14.png",
+          "caption": "Figure 2.14 – Context summarization and long-term memory storage when the 40k-token threshold is reached",
+          "alt": "Figure 2.14 – Context summarization and long-term memory storage when the 40k-token threshold is reached"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/Text/Chapter_3.xhtml",
+      "title": "AI Agent Frameworks in Finance",
+      "charCount": 104940,
+      "wordCount": 14158,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "3"
+        },
+        {
+          "level": "h1",
+          "title": "AI Agent Frameworks in Finance"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "The rise of AI agent frameworks in finance"
+        },
+        {
+          "level": "h2",
+          "title": "Why AI agent frameworks matter in finance"
+        },
+        {
+          "level": "h2",
+          "title": "From prompts to agents"
+        },
+        {
+          "level": "h2",
+          "title": "Criteria that matter in finance"
+        },
+        {
+          "level": "h1",
+          "title": "Understanding framework similarities and differences"
+        },
+        {
+          "level": "h2",
+          "title": "Common framework capabilities"
+        },
+        {
+          "level": "h3",
+          "title": "Core orchestration"
+        },
+        {
+          "level": "h3",
+          "title": "Agent coordination"
+        },
+        {
+          "level": "h3",
+          "title": "Data integration"
+        },
+        {
+          "level": "h3",
+          "title": "Safety and validation"
+        },
+        {
+          "level": "h2",
+          "title": "Observability"
+        },
+        {
+          "level": "h2",
+          "title": "What differentiates frameworks"
+        },
+        {
+          "level": "h1",
+          "title": "Survey of key frameworks"
+        },
+        {
+          "level": "h2",
+          "title": "LangChain/LangGraph: Modular orchestration and RAG"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "Google ADK (Agent Development Kit)"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "CrewAI: Role-based multi-agent collaboration"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "AutoGen: Conversational orchestration for finance"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "OpenAI Agents SDK"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "PydanticAI: Type-safe agents for structured financial data"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "Mistral AI agents: Lightweight, open-weight performance"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "smolagents (Hugging Face): Minimalist code-first agents"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "Claude Agent SDK (Anthropic): Safe-by-design agentic workflows"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "LlamaIndex: Data-centric agents for finance"
+        },
+        {
+          "level": "h3",
+          "title": "Key features and strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Limitations"
+        },
+        {
+          "level": "h3",
+          "title": "Finance use cases"
+        },
+        {
+          "level": "h3",
+          "title": "Decision fit"
+        },
+        {
+          "level": "h2",
+          "title": "Positioning the frameworks"
+        },
+        {
+          "level": "h1",
+          "title": "Decision framework: How to pick the right one"
+        },
+        {
+          "level": "h2",
+          "title": "Evaluation method at a glance"
+        },
+        {
+          "level": "h2",
+          "title": "Decision dimensions (what to score)"
+        },
+        {
+          "level": "h2",
+          "title": "Scoring rubric (0–5)"
+        },
+        {
+          "level": "h2",
+          "title": "Compact decision matrix (starter view)"
+        },
+        {
+          "level": "h2",
+          "title": "Scenario playbooks"
+        },
+        {
+          "level": "h2",
+          "title": "Governance and risk checklist"
+        },
+        {
+          "level": "h2",
+          "title": "Anti-patterns (what to avoid)"
+        },
+        {
+          "level": "h2",
+          "title": "Migration and hybrid patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Request for Proposal and architecture questions (copy for vendors)"
+        },
+        {
+          "level": "h2",
+          "title": "Understanding and optimizing token costs"
+        },
+        {
+          "level": "h1",
+          "title": "Case study: Comparing frameworks on a single task"
+        },
+        {
+          "level": "h2",
+          "title": "OpenAI Agents SDK"
+        },
+        {
+          "level": "h2",
+          "title": "LangChain"
+        },
+        {
+          "level": "h2",
+          "title": "AutoGen"
+        },
+        {
+          "level": "h2",
+          "title": "PydanticAI"
+        },
+        {
+          "level": "h2",
+          "title": "Framework comparison and summary"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        },
+        {
+          "level": "h2",
+          "title": "Framework documentation"
+        },
+        {
+          "level": "h2",
+          "title": "Industry deployments referenced in this chapter"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_3_1.png",
+          "caption": "Figure 3.1 – Decision flowchart for framework selection",
+          "alt": "Figure 3.1 – Decision flowchart for framework selection"
+        },
+        {
+          "file": "B32414_3_1.png",
+          "caption": "Figure 3.1 – Decision flowchart for framework selection",
+          "alt": "Figure 3.1 – Decision flowchart for framework selection"
+        },
+        {
+          "file": "B32414_3_2.png",
+          "caption": "Figure 3.2 – Agent workflow sequence diagram",
+          "alt": "Figure 3.2 – Agent workflow sequence diagram"
+        },
+        {
+          "file": "B32414_3_2.png",
+          "caption": "Figure 3.2 – Agent workflow sequence diagram",
+          "alt": "Figure 3.2 – Agent workflow sequence diagram"
+        },
+        {
+          "file": "B32414_3_3.png",
+          "caption": "Figure 3.3 – Framework comparison at a glance",
+          "alt": "Figure 3.3 – Framework comparison at a glance"
+        },
+        {
+          "file": "B32414_3_3.png",
+          "caption": "Figure 3.3 – Framework comparison at a glance",
+          "alt": "Figure 3.3 – Framework comparison at a glance"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/Text/Chapter_4.xhtml",
+      "title": "Building a Fundamental Analysis Agentic System",
+      "charCount": 135862,
+      "wordCount": 17722,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "4"
+        },
+        {
+          "level": "h1",
+          "title": "Building a Fundamental Analysis Agentic System"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Understanding the basics of fundamental analysis"
+        },
+        {
+          "level": "h2",
+          "title": "The three financial statements"
+        },
+        {
+          "level": "h3",
+          "title": "The income statement"
+        },
+        {
+          "level": "h3",
+          "title": "The balance sheet"
+        },
+        {
+          "level": "h3",
+          "title": "The cash flow statement"
+        },
+        {
+          "level": "h2",
+          "title": "Key ratios and what they signify"
+        },
+        {
+          "level": "h3",
+          "title": "Valuation ratios"
+        },
+        {
+          "level": "h3",
+          "title": "Profitability ratios"
+        },
+        {
+          "level": "h3",
+          "title": "Liquidity and leverage ratios"
+        },
+        {
+          "level": "h3",
+          "title": "Growth metrics"
+        },
+        {
+          "level": "h3",
+          "title": "Cash flow ratios"
+        },
+        {
+          "level": "h3",
+          "title": "Dividend ratios"
+        },
+        {
+          "level": "h2",
+          "title": "Qualitative factors"
+        },
+        {
+          "level": "h2",
+          "title": "Why fundamental analysis is hard to automate, and why agents help"
+        },
+        {
+          "level": "h1",
+          "title": "Designing the agentic architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Single-agent vs. multi-agent: Why specialization wins"
+        },
+        {
+          "level": "h2",
+          "title": "The agentic system architecture"
+        },
+        {
+          "level": "h1",
+          "title": "Building the specialized agents"
+        },
+        {
+          "level": "h2",
+          "title": "FinancialDataAgent"
+        },
+        {
+          "level": "h2",
+          "title": "NewsAndSentimentAgent"
+        },
+        {
+          "level": "h2",
+          "title": "RiskAgent"
+        },
+        {
+          "level": "h2",
+          "title": "ValuationAgent"
+        },
+        {
+          "level": "h2",
+          "title": "ReportWriterAgent"
+        },
+        {
+          "level": "h2",
+          "title": "OrchestratorAgent"
+        },
+        {
+          "level": "h2",
+          "title": "The orchestration pattern: Agents as tools"
+        },
+        {
+          "level": "h1",
+          "title": "Building the tools"
+        },
+        {
+          "level": "h2",
+          "title": "Financial tools (tools/financial_tools.py)"
+        },
+        {
+          "level": "h3",
+          "title": "Tool 1: Get income statement"
+        },
+        {
+          "level": "h3",
+          "title": "Tools 2 and 3: Get balance sheet and cash flow"
+        },
+        {
+          "level": "h3",
+          "title": "Tool 4: Compute key ratios"
+        },
+        {
+          "level": "h2",
+          "title": "Valuation tools (tools/valuation_tools.py)"
+        },
+        {
+          "level": "h3",
+          "title": "Tool 1: DCF model"
+        },
+        {
+          "level": "h3",
+          "title": "Tool 2: Peer multiples comparison"
+        },
+        {
+          "level": "h2",
+          "title": "News tools (tools/news_tools.py)"
+        },
+        {
+          "level": "h3",
+          "title": "Tool 1: Search recent news"
+        },
+        {
+          "level": "h3",
+          "title": "Tool 2: Analyze sentiment"
+        },
+        {
+          "level": "h1",
+          "title": "Running the agentic system"
+        },
+        {
+          "level": "h2",
+          "title": "Running the pipeline with the SDK runner"
+        },
+        {
+          "level": "h2",
+          "title": "The entry point"
+        },
+        {
+          "level": "h2",
+          "title": "Sample output: Apple Inc. (AAPL)"
+        },
+        {
+          "level": "h1",
+          "title": "Behind the scenes: Issues encountered and how we fixed them"
+        },
+        {
+          "level": "h2",
+          "title": "LLMs should not classify values they did not compute"
+        },
+        {
+          "level": "h2",
+          "title": "Instructions placed after the output they govern are often ignored"
+        },
+        {
+          "level": "h2",
+          "title": "Agents must be instructed to keep sections self-contained"
+        },
+        {
+          "level": "h2",
+          "title": "LLMs add editorial interpretations that are not sourced from the data"
+        },
+        {
+          "level": "h2",
+          "title": "Shared tools should be cached to avoid redundant API calls"
+        },
+        {
+          "level": "h2",
+          "title": "Parallel execution must be verified, not assumed"
+        },
+        {
+          "level": "h2",
+          "title": "Chain-of-thought reasoning should be built into agent instructions, not left implicit"
+        },
+        {
+          "level": "h1",
+          "title": "Agents versus humans in investment decision making"
+        },
+        {
+          "level": "h1",
+          "title": "What to build next"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_4_1.png",
+          "caption": "Figure 4.1 – The fundamental multi-agent system analyzes Apple data",
+          "alt": "Figure 4.1 – The fundamental multi-agent system analyzes Apple data"
+        },
+        {
+          "file": "B32414_4_1.png",
+          "caption": "Figure 4.1 – The fundamental multi-agent system analyzes Apple data",
+          "alt": "Figure 4.1 – The fundamental multi-agent system analyzes Apple data"
+        },
+        {
+          "file": "B32414_4_2.png",
+          "caption": "Figure 4.2 – FinancialDataAgent",
+          "alt": "Figure 4.2 – FinancialDataAgent"
+        },
+        {
+          "file": "B32414_4_2.png",
+          "caption": "Figure 4.2 – FinancialDataAgent",
+          "alt": "Figure 4.2 – FinancialDataAgent"
+        },
+        {
+          "file": "B32414_4_3.png",
+          "caption": "Figure 4.3 – NewsAndSentimentAgent",
+          "alt": "Figure 4.3 – NewsAndSentimentAgent"
+        },
+        {
+          "file": "B32414_4_3.png",
+          "caption": "Figure 4.3 – NewsAndSentimentAgent",
+          "alt": "Figure 4.3 – NewsAndSentimentAgent"
+        },
+        {
+          "file": "B32414_4_4.png",
+          "caption": "Figure 4.4 – RiskAgent",
+          "alt": "Figure 4.4 – RiskAgent"
+        },
+        {
+          "file": "B32414_4_4.png",
+          "caption": "Figure 4.4 – RiskAgent",
+          "alt": "Figure 4.4 – RiskAgent"
+        },
+        {
+          "file": "B32414_4_5.png",
+          "caption": "Figure 4.5 – ValuationAgent",
+          "alt": "Figure 4.5 – ValuationAgent"
+        },
+        {
+          "file": "B32414_4_5.png",
+          "caption": "Figure 4.5 – ValuationAgent",
+          "alt": "Figure 4.5 – ValuationAgent"
+        },
+        {
+          "file": "B32414_4_6.png",
+          "caption": "Figure 4.6 – ReportWriterAgent",
+          "alt": "Figure 4.6 – ReportWriterAgent"
+        },
+        {
+          "file": "B32414_4_6.png",
+          "caption": "Figure 4.6 – ReportWriterAgent",
+          "alt": "Figure 4.6 – ReportWriterAgent"
+        },
+        {
+          "file": "B32414_4_7.png",
+          "caption": "Figure 4.7 – OrchestratorAgent: First, the FinancialDataAgent, NewsAndSentimentAgent, and RiskAgent run in parallel, as they operate independently. Next, the ValuationAgent runs, as it depends on outputs from the FinancialDataAgent. Finally, the ReportWriterAgent aggregates inputs from all preceding agents: FinancialDataAgent, NewsAndSentimentAgent, RiskAgent, and ValuationAgent.",
+          "alt": "Figure 4.7 – OrchestratorAgent: First, the FinancialDataAgent, NewsAndSentimentAgent, and RiskAgent run in parallel, as they operate independently. Next, the ValuationAgent runs, as it depends on outputs from the FinancialDataAgent. Finally, the ReportWriterAgent aggregates inputs from all preceding agents: FinancialDataAgent, NewsAndSentimentAgent, RiskAgent, and ValuationAgent."
+        },
+        {
+          "file": "B32414_4_7.png",
+          "caption": "Figure 4.7 – OrchestratorAgent: First, the FinancialDataAgent, NewsAndSentimentAgent, and RiskAgent run in parallel, as they operate independently. Next, the ValuationAgent runs, as it depends on outputs from the FinancialDataAgent. Finally, the ReportWriterAgent aggregates inputs from all preceding agents: FinancialDataAgent, NewsAndSentimentAgent, RiskAgent, and ValuationAgent.",
+          "alt": "Figure 4.7 – OrchestratorAgent: First, the FinancialDataAgent, NewsAndSentimentAgent, and RiskAgent run in parallel, as they operate independently. Next, the ValuationAgent runs, as it depends on outputs from the FinancialDataAgent. Finally, the ReportWriterAgent aggregates inputs from all preceding agents: FinancialDataAgent, NewsAndSentimentAgent, RiskAgent, and ValuationAgent."
+        },
+        {
+          "file": "B32414_4_8.png",
+          "caption": "Figure 4.8 – Verdicts generated by the run_dcf_model and get_peer_multiples tools, along with the final output of the Valuation Agent",
+          "alt": "Figure 4.8 – Verdicts generated by the run_dcf_model and get_peer_multiples tools, along with the final output of the Valuation Agent"
+        },
+        {
+          "file": "B32414_4_8.png",
+          "caption": "Figure 4.8 – Verdicts generated by the run_dcf_model and get_peer_multiples tools, along with the final output of the Valuation Agent",
+          "alt": "Figure 4.8 – Verdicts generated by the run_dcf_model and get_peer_multiples tools, along with the final output of the Valuation Agent"
+        },
+        {
+          "file": "B32414_4_9.png",
+          "caption": "Figure 4.9 – Sentiment classification using search_recent_news and analyze_sentiment tools",
+          "alt": "Figure 4.9 – Sentiment classification using search_recent_news and analyze_sentiment tools"
+        },
+        {
+          "file": "B32414_4_9.png",
+          "caption": "Figure 4.9 – Sentiment classification using search_recent_news and analyze_sentiment tools",
+          "alt": "Figure 4.9 – Sentiment classification using search_recent_news and analyze_sentiment tools"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/Text/Chapter_5.xhtml",
+      "title": "Deep Search – Analyst-Grade Research with AI Agents",
+      "charCount": 77919,
+      "wordCount": 10962,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "5"
+        },
+        {
+          "level": "h1",
+          "title": "Deep Search – Analyst-Grade Research with AI Agents"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "What is deep search?"
+        },
+        {
+          "level": "h2",
+          "title": "Deep search vs. basic RAG"
+        },
+        {
+          "level": "h2",
+          "title": "Why deep search matters in finance"
+        },
+        {
+          "level": "h2",
+          "title": "The deep research landscape"
+        },
+        {
+          "level": "h1",
+          "title": "Decoding the anatomy of a deep search agent"
+        },
+        {
+          "level": "h2",
+          "title": "The core loop"
+        },
+        {
+          "level": "h2",
+          "title": "Key architectural components"
+        },
+        {
+          "level": "h2",
+          "title": "Three architectural approaches"
+        },
+        {
+          "level": "h3",
+          "title": "Approach 1: Single agent with ReAct loop"
+        },
+        {
+          "level": "h3",
+          "title": "Approach 2: Multi-agent with specialized roles"
+        },
+        {
+          "level": "h3",
+          "title": "Approach 3: Deep orchestrator with MCP"
+        },
+        {
+          "level": "h1",
+          "title": "Financial data: The real challenge"
+        },
+        {
+          "level": "h2",
+          "title": "The data landscape"
+        },
+        {
+          "level": "h2",
+          "title": "Why financial data is \"adversarial\""
+        },
+        {
+          "level": "h2",
+          "title": "Key lessons for building financial data tools"
+        },
+        {
+          "level": "h2",
+          "title": "Tool integration patterns"
+        },
+        {
+          "level": "h1",
+          "title": "Building a deep search agent step by step"
+        },
+        {
+          "level": "h2",
+          "title": "Architecture decisions"
+        },
+        {
+          "level": "h2",
+          "title": "Data models"
+        },
+        {
+          "level": "h2",
+          "title": "The planner"
+        },
+        {
+          "level": "h2",
+          "title": "The tool layer"
+        },
+        {
+          "level": "h2",
+          "title": "The researcher (task executor)"
+        },
+        {
+          "level": "h2",
+          "title": "The validator"
+        },
+        {
+          "level": "h2",
+          "title": "The synthesizer"
+        },
+        {
+          "level": "h2",
+          "title": "The orchestrator: Putting it all together"
+        },
+        {
+          "level": "h1",
+          "title": "Assessing production considerations"
+        },
+        {
+          "level": "h2",
+          "title": "Lessons from production: Fintool"
+        },
+        {
+          "level": "h2",
+          "title": "Context management at scale"
+        },
+        {
+          "level": "h2",
+          "title": "Cost optimization"
+        },
+        {
+          "level": "h2",
+          "title": "Evaluation: How do you know your agent is correct?"
+        },
+        {
+          "level": "h1",
+          "title": "Learning from open-source deep research agents"
+        },
+        {
+          "level": "h2",
+          "title": "Dexter – Autonomous financial research agent"
+        },
+        {
+          "level": "h2",
+          "title": "AI Alliance Deep Research Agent"
+        },
+        {
+          "level": "h2",
+          "title": "ai-hedge-fund – Multi-agent investment analysis"
+        },
+        {
+          "level": "h2",
+          "title": "Commercial platforms"
+        },
+        {
+          "level": "h1",
+          "title": "Hands-on lab: Building a financial deep search agent"
+        },
+        {
+          "level": "h2",
+          "title": "Goals, prerequisites, and structure"
+        },
+        {
+          "level": "h2",
+          "title": "Setting up"
+        },
+        {
+          "level": "h2",
+          "title": "Running the agent"
+        },
+        {
+          "level": "h2",
+          "title": "Code walkthrough"
+        },
+        {
+          "level": "h2",
+          "title": "Sample output"
+        },
+        {
+          "level": "h2",
+          "title": "Extension ideas"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        },
+        {
+          "level": "h2",
+          "title": "Open-source projects"
+        },
+        {
+          "level": "h2",
+          "title": "Articles and blog posts"
+        },
+        {
+          "level": "h2",
+          "title": "Research papers"
+        },
+        {
+          "level": "h2",
+          "title": "Commercial platforms"
+        },
+        {
+          "level": "h2",
+          "title": "Benchmarks"
+        },
+        {
+          "level": "h2",
+          "title": "Documentation and APIs"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_5_1.png",
+          "caption": "Figure 5.1 – Basic RAG versus the iterative deep search loop",
+          "alt": "Figure 5.1 – Basic RAG versus the iterative deep search loop"
+        },
+        {
+          "file": "B32414_5_1.png",
+          "caption": "Figure 5.1 – Basic RAG versus the iterative deep search loop",
+          "alt": "Figure 5.1 – Basic RAG versus the iterative deep search loop"
+        },
+        {
+          "file": "B32414_5_2.png",
+          "caption": "Figure 5.2 – The core deep search loop",
+          "alt": "Figure 5.2 – The core deep search loop"
+        },
+        {
+          "file": "B32414_5_2.png",
+          "caption": "Figure 5.2 – The core deep search loop",
+          "alt": "Figure 5.2 – The core deep search loop"
+        },
+        {
+          "file": "B32414_5_3.png",
+          "caption": "Figure 5.3 – The architectural components of a deep search agent",
+          "alt": "Figure 5.3 – The architectural components of a deep search agent"
+        },
+        {
+          "file": "B32414_5_3.png",
+          "caption": "Figure 5.3 – The architectural components of a deep search agent",
+          "alt": "Figure 5.3 – The architectural components of a deep search agent"
+        },
+        {
+          "file": "B32414_5_4.png",
+          "caption": "Figure 5.4 – Single-agent ReAct loop",
+          "alt": "Figure 5.4 – Single-agent ReAct loop"
+        },
+        {
+          "file": "B32414_5_4.png",
+          "caption": "Figure 5.4 – Single-agent ReAct loop",
+          "alt": "Figure 5.4 – Single-agent ReAct loop"
+        },
+        {
+          "file": "B32414_5_5.png",
+          "caption": "Figure 5.5 – Multi-agent approach with four specialized agents",
+          "alt": "Figure 5.5 – Multi-agent approach with four specialized agents"
+        },
+        {
+          "file": "B32414_5_5.png",
+          "caption": "Figure 5.5 – Multi-agent approach with four specialized agents",
+          "alt": "Figure 5.5 – Multi-agent approach with four specialized agents"
+        },
+        {
+          "file": "B32414_5_6.png",
+          "caption": "Figure 5.6 – The deep orchestrator approach with MCP servers",
+          "alt": "Figure 5.6 – The deep orchestrator approach with MCP servers"
+        },
+        {
+          "file": "B32414_5_6.png",
+          "caption": "Figure 5.6 – The deep orchestrator approach with MCP servers",
+          "alt": "Figure 5.6 – The deep orchestrator approach with MCP servers"
+        },
+        {
+          "file": "B32414_5_7.png",
+          "caption": "Figure 5.7 – The financial data landscape",
+          "alt": "Figure 5.7 – The financial data landscape"
+        },
+        {
+          "file": "B32414_5_7.png",
+          "caption": "Figure 5.7 – The financial data landscape",
+          "alt": "Figure 5.7 – The financial data landscape"
+        },
+        {
+          "file": "B32414_5_8.png",
+          "caption": "Figure 5.8 – Fiscal period alignment across three companies",
+          "alt": "Figure 5.8 – Fiscal period alignment across three companies"
+        },
+        {
+          "file": "B32414_5_8.png",
+          "caption": "Figure 5.8 – Fiscal period alignment across three companies",
+          "alt": "Figure 5.8 – Fiscal period alignment across three companies"
+        },
+        {
+          "file": "B32414_5_9.png",
+          "caption": "Figure 5.9 – The meta-tool routing pattern",
+          "alt": "Figure 5.9 – The meta-tool routing pattern"
+        },
+        {
+          "file": "B32414_5_9.png",
+          "caption": "Figure 5.9 – The meta-tool routing pattern",
+          "alt": "Figure 5.9 – The meta-tool routing pattern"
+        },
+        {
+          "file": "B32414_5_10.png",
+          "caption": "Figure 5.10 – Task dependency graph for the NVIDIA research question",
+          "alt": "Figure 5.10 – Task dependency graph for the NVIDIA research question"
+        },
+        {
+          "file": "B32414_5_10.png",
+          "caption": "Figure 5.10 – Task dependency graph for the NVIDIA research question",
+          "alt": "Figure 5.10 – Task dependency graph for the NVIDIA research question"
+        },
+        {
+          "file": "B32414_5_11.png",
+          "caption": "Figure 5.11 – Sequence diagram showing the full deep search execution",
+          "alt": "Figure 5.11 – Sequence diagram showing the full deep search execution"
+        },
+        {
+          "file": "B32414_5_11.png",
+          "caption": "Figure 5.11 – Sequence diagram showing the full deep search execution",
+          "alt": "Figure 5.11 – Sequence diagram showing the full deep search execution"
+        },
+        {
+          "file": "B32414_5_12.png",
+          "caption": "Figure 5.12 – Model routing by complexity",
+          "alt": "Figure 5.12 – Model routing by complexity"
+        },
+        {
+          "file": "B32414_5_12.png",
+          "caption": "Figure 5.12 – Model routing by complexity",
+          "alt": "Figure 5.12 – Model routing by complexity"
+        },
+        {
+          "file": "B32414_5_13.png",
+          "caption": "Figure 5.13 – Dexter's architecture",
+          "alt": "Figure 5.13 – Dexter's architecture"
+        },
+        {
+          "file": "B32414_5_13.png",
+          "caption": "Figure 5.13 – Dexter's architecture",
+          "alt": "Figure 5.13 – Dexter's architecture"
+        },
+        {
+          "file": "B32414_5_14.png",
+          "caption": "Figure 5.14 – The AI Alliance's journey through three architectural iterations",
+          "alt": "Figure 5.14 – The AI Alliance's journey through three architectural iterations"
+        },
+        {
+          "file": "B32414_5_14.png",
+          "caption": "Figure 5.14 – The AI Alliance's journey through three architectural iterations",
+          "alt": "Figure 5.14 – The AI Alliance's journey through three architectural iterations"
+        },
+        {
+          "file": "B32414_5_15.png",
+          "caption": "Figure 5.15 – ai-hedge-fund's multi-perspective architecture",
+          "alt": "Figure 5.15 – ai-hedge-fund's multi-perspective architecture"
+        },
+        {
+          "file": "B32414_5_15.png",
+          "caption": "Figure 5.15 – ai-hedge-fund's multi-perspective architecture",
+          "alt": "Figure 5.15 – ai-hedge-fund's multi-perspective architecture"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/Text/Chapter_6.xhtml",
+      "title": "Implementing Reasoning Paradigms for Financial Agents",
+      "charCount": 142916,
+      "wordCount": 20223,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "6"
+        },
+        {
+          "level": "h1",
+          "title": "Implementing Reasoning Paradigms for Financial Agents"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Self-refine (reflection)"
+        },
+        {
+          "level": "h2",
+          "title": "Mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "Self-refine in finance"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Self-refine investment thesis generator"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: Defining the generator"
+        },
+        {
+          "level": "h3",
+          "title": "Step 2: Defining the feedback provider"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3: Defining the refiner"
+        },
+        {
+          "level": "h3",
+          "title": "Step 4: Running the self-refine loop"
+        },
+        {
+          "level": "h3",
+          "title": "Lab results"
+        },
+        {
+          "level": "h1",
+          "title": "Self-consistency"
+        },
+        {
+          "level": "h2",
+          "title": "Mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "Sampling algorithms"
+        },
+        {
+          "level": "h2",
+          "title": "Self-consistency in finance"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Self-consistency investment recommendation"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: Configuring the model and the CoT system prompt"
+        },
+        {
+          "level": "h3",
+          "title": "Step 2: Sampling a single reasoning path"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3: Aggregating the majority vote"
+        },
+        {
+          "level": "h3",
+          "title": "Step 4: Running the workflow"
+        },
+        {
+          "level": "h3",
+          "title": "Lab results"
+        },
+        {
+          "level": "h1",
+          "title": "ReAct"
+        },
+        {
+          "level": "h2",
+          "title": "Mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "ReAct in finance"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: ReAct valuation agent"
+        },
+        {
+          "level": "h3",
+          "title": "Tools"
+        },
+        {
+          "level": "h4",
+          "title": "The valuation tool"
+        },
+        {
+          "level": "h4",
+          "title": "The sector comparison tool"
+        },
+        {
+          "level": "h4",
+          "title": "The balance sheet tool"
+        },
+        {
+          "level": "h3",
+          "title": "The ReAct format"
+        },
+        {
+          "level": "h3",
+          "title": "The agent loop"
+        },
+        {
+          "level": "h3",
+          "title": "Running the agent"
+        },
+        {
+          "level": "h3",
+          "title": "Lab results"
+        },
+        {
+          "level": "h1",
+          "title": "CRITIC"
+        },
+        {
+          "level": "h2",
+          "title": "Mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "CRITIC in finance"
+        },
+        {
+          "level": "h1",
+          "title": "Reflexion"
+        },
+        {
+          "level": "h2",
+          "title": "Mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "Reflexion in finance"
+        },
+        {
+          "level": "h1",
+          "title": "Tree-of-thoughts"
+        },
+        {
+          "level": "h2",
+          "title": "Mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Two-level ToT for a pre-earnings equity hedge"
+        },
+        {
+          "level": "h3",
+          "title": "Lab results"
+        },
+        {
+          "level": "h1",
+          "title": "Language Agent Tree Search (LATS)"
+        },
+        {
+          "level": "h2",
+          "title": "Mechanism"
+        },
+        {
+          "level": "h3",
+          "title": "Selection"
+        },
+        {
+          "level": "h3",
+          "title": "Expansion"
+        },
+        {
+          "level": "h3",
+          "title": "Evaluation"
+        },
+        {
+          "level": "h3",
+          "title": "Simulation"
+        },
+        {
+          "level": "h3",
+          "title": "Backpropagation"
+        },
+        {
+          "level": "h3",
+          "title": "Reflection"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: LATS for a tech-sector trim"
+        },
+        {
+          "level": "h3",
+          "title": "Lab results"
+        },
+        {
+          "level": "h4",
+          "title": "Iteration 1"
+        },
+        {
+          "level": "h4",
+          "title": "Iteration 2"
+        },
+        {
+          "level": "h4",
+          "title": "Iteration 3"
+        },
+        {
+          "level": "h1",
+          "title": "Choosing a reasoning paradigm"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_6_1.png",
+          "caption": "Figure 6.1 – The self-refine loop, where a single LLM acts as generator, feedback provider, and refiner",
+          "alt": "Figure 6.1 – The self-refine loop, where a single LLM acts as generator, feedback provider, and refiner"
+        },
+        {
+          "file": "B32414_6_1.png",
+          "caption": "Figure 6.1 – The self-refine loop, where a single LLM acts as generator, feedback provider, and refiner",
+          "alt": "Figure 6.1 – The self-refine loop, where a single LLM acts as generator, feedback provider, and refiner"
+        },
+        {
+          "file": "B32414_6_2.png",
+          "caption": "Figure 6.2 – A self-refine trace applied to investment thesis generation",
+          "alt": "Figure 6.2 – A self-refine trace applied to investment thesis generation"
+        },
+        {
+          "file": "B32414_6_2.png",
+          "caption": "Figure 6.2 – A self-refine trace applied to investment thesis generation",
+          "alt": "Figure 6.2 – A self-refine trace applied to investment thesis generation"
+        },
+        {
+          "file": "B32414_6_3.png",
+          "caption": "Figure 6.3 – Self-consistency generates multiple independent reasoning paths (N = 5 in this example) and selects the final recommendation through majority voting across the generated answers",
+          "alt": "Figure 6.3 – Self-consistency generates multiple independent reasoning paths (N = 5 in this example) and selects the final recommendation through majority voting across the generated answers"
+        },
+        {
+          "file": "B32414_6_3.png",
+          "caption": "Figure 6.3 – Self-consistency generates multiple independent reasoning paths (N = 5 in this example) and selects the final recommendation through majority voting across the generated answers",
+          "alt": "Figure 6.3 – Self-consistency generates multiple independent reasoning paths (N = 5 in this example) and selects the final recommendation through majority voting across the generated answers"
+        },
+        {
+          "file": "B32414_6_4.png",
+          "caption": "Figure 6.4 – Self-consistency applied to investment recommendation",
+          "alt": "Figure 6.4 – Self-consistency applied to investment recommendation"
+        },
+        {
+          "file": "B32414_6_4.png",
+          "caption": "Figure 6.4 – Self-consistency applied to investment recommendation",
+          "alt": "Figure 6.4 – Self-consistency applied to investment recommendation"
+        },
+        {
+          "file": "B32414_6_5.png",
+          "caption": "Figure 6.5 – Each step in the ReAct loop consists of a thought (internal reasoning trace), an action (external call), and an observation (the result)",
+          "alt": "Figure 6.5 – Each step in the ReAct loop consists of a thought (internal reasoning trace), an action (external call), and an observation (the result)"
+        },
+        {
+          "file": "B32414_6_5.png",
+          "caption": "Figure 6.5 – Each step in the ReAct loop consists of a thought (internal reasoning trace), an action (external call), and an observation (the result)",
+          "alt": "Figure 6.5 – Each step in the ReAct loop consists of a thought (internal reasoning trace), an action (external call), and an observation (the result)"
+        },
+        {
+          "file": "B32414_6_6.png",
+          "caption": "Figure 6.6 – A ReAct trace for equity valuation analysis",
+          "alt": "Figure 6.6 – A ReAct trace for equity valuation analysis"
+        },
+        {
+          "file": "B32414_6_6.png",
+          "caption": "Figure 6.6 – A ReAct trace for equity valuation analysis",
+          "alt": "Figure 6.6 – A ReAct trace for equity valuation analysis"
+        },
+        {
+          "file": "B32414_6_7.png",
+          "caption": "Figure 6.7 – The CRITIC loop",
+          "alt": "Figure 6.7 – The CRITIC loop"
+        },
+        {
+          "file": "B32414_6_7.png",
+          "caption": "Figure 6.7 – The CRITIC loop",
+          "alt": "Figure 6.7 – The CRITIC loop"
+        },
+        {
+          "file": "B32414_6_8.png",
+          "caption": "Figure 6.8 – CRITIC applied to a market-data fact-checking agent",
+          "alt": "Figure 6.8 – CRITIC applied to a market-data fact-checking agent"
+        },
+        {
+          "file": "B32414_6_8.png",
+          "caption": "Figure 6.8 – CRITIC applied to a market-data fact-checking agent",
+          "alt": "Figure 6.8 – CRITIC applied to a market-data fact-checking agent"
+        },
+        {
+          "file": "B32414_6_9.png",
+          "caption": "Figure 6.9 – The reflexion loop",
+          "alt": "Figure 6.9 – The reflexion loop"
+        },
+        {
+          "file": "B32414_6_9.png",
+          "caption": "Figure 6.9 – The reflexion loop",
+          "alt": "Figure 6.9 – The reflexion loop"
+        },
+        {
+          "file": "B32414_6_10.png",
+          "caption": "Figure 6.10 – Reflexion applied to an equity research screening agent",
+          "alt": "Figure 6.10 – Reflexion applied to an equity research screening agent"
+        },
+        {
+          "file": "B32414_6_10.png",
+          "caption": "Figure 6.10 – Reflexion applied to an equity research screening agent",
+          "alt": "Figure 6.10 – Reflexion applied to an equity research screening agent"
+        },
+        {
+          "file": "B32414_6_11.png",
+          "caption": "Figure 6.11 – ToT search tree",
+          "alt": "Figure 6.11 – ToT search tree"
+        },
+        {
+          "file": "B32414_6_11.png",
+          "caption": "Figure 6.11 – ToT search tree",
+          "alt": "Figure 6.11 – ToT search tree"
+        },
+        {
+          "file": "B32414_6_12.png",
+          "caption": "Figure 6.12 – The two-level ToT search performed by the lab",
+          "alt": "Figure 6.12 – The two-level ToT search performed by the lab"
+        },
+        {
+          "file": "B32414_6_12.png",
+          "caption": "Figure 6.12 – The two-level ToT search performed by the lab",
+          "alt": "Figure 6.12 – The two-level ToT search performed by the lab"
+        },
+        {
+          "file": "B32414_6_13.png",
+          "caption": "Figure 6.13 – The six operations of LATS",
+          "alt": "Figure 6.13 – The six operations of LATS"
+        },
+        {
+          "file": "B32414_6_13.png",
+          "caption": "Figure 6.13 – The six operations of LATS",
+          "alt": "Figure 6.13 – The six operations of LATS"
+        },
+        {
+          "file": "B32414_06_042.png",
+          "caption": "Table 6.1 – A comparative summary of the seven reasoning paradigms",
+          "alt": "B32414_06_042.png"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OEBPS/Text/Chapter_7.xhtml",
+      "title": "Multi-Agent Systems and Architectural Styles",
+      "charCount": 110266,
+      "wordCount": 15645,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "7"
+        },
+        {
+          "level": "h1",
+          "title": "Multi-Agent Systems and Architectural Styles"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Defining multi-agent systems"
+        },
+        {
+          "level": "h1",
+          "title": "Understanding the limits of single agents"
+        },
+        {
+          "level": "h2",
+          "title": "Deciding when multi-agent systems are worth it"
+        },
+        {
+          "level": "h2",
+          "title": "Design patterns vs. architectural styles"
+        },
+        {
+          "level": "h1",
+          "title": "Architectural styles for multi-agent financial systems"
+        },
+        {
+          "level": "h2",
+          "title": "Sequential (pipeline)"
+        },
+        {
+          "level": "h3",
+          "title": "How it works"
+        },
+        {
+          "level": "h3",
+          "title": "Financial use case: Fundamental analysis pipeline"
+        },
+        {
+          "level": "h3",
+          "title": "Strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Weaknesses"
+        },
+        {
+          "level": "h3",
+          "title": "When to use"
+        },
+        {
+          "level": "h2",
+          "title": "Leader-follower (orchestrator–worker)"
+        },
+        {
+          "level": "h3",
+          "title": "How it works"
+        },
+        {
+          "level": "h3",
+          "title": "Financial use case: Portfolio analysis with a manager agent"
+        },
+        {
+          "level": "h3",
+          "title": "Strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Weaknesses"
+        },
+        {
+          "level": "h3",
+          "title": "When to use"
+        },
+        {
+          "level": "h2",
+          "title": "Hierarchical"
+        },
+        {
+          "level": "h3",
+          "title": "How it works"
+        },
+        {
+          "level": "h3",
+          "title": "Financial use case: Enterprise risk management"
+        },
+        {
+          "level": "h3",
+          "title": "Strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Weaknesses"
+        },
+        {
+          "level": "h3",
+          "title": "When to use"
+        },
+        {
+          "level": "h2",
+          "title": "Peer-to-peer (decentralized)"
+        },
+        {
+          "level": "h3",
+          "title": "How it works"
+        },
+        {
+          "level": "h3",
+          "title": "Financial use case: Multi-perspective investment analysis"
+        },
+        {
+          "level": "h3",
+          "title": "Strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Weaknesses"
+        },
+        {
+          "level": "h3",
+          "title": "When to use"
+        },
+        {
+          "level": "h2",
+          "title": "Parallelization"
+        },
+        {
+          "level": "h3",
+          "title": "How it works"
+        },
+        {
+          "level": "h3",
+          "title": "Financial use case: Multi-company earnings analysis"
+        },
+        {
+          "level": "h3",
+          "title": "Strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Weaknesses"
+        },
+        {
+          "level": "h3",
+          "title": "When to use"
+        },
+        {
+          "level": "h2",
+          "title": "Evaluator–optimizer (LLM-as-a-judge)"
+        },
+        {
+          "level": "h3",
+          "title": "How it works"
+        },
+        {
+          "level": "h3",
+          "title": "Financial use case: Trading strategy code refinement"
+        },
+        {
+          "level": "h3",
+          "title": "Strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Weaknesses"
+        },
+        {
+          "level": "h3",
+          "title": "When to use"
+        },
+        {
+          "level": "h2",
+          "title": "Contract-net marketplace (mediator + bids)"
+        },
+        {
+          "level": "h3",
+          "title": "How it works"
+        },
+        {
+          "level": "h3",
+          "title": "Financial use case: Dynamic research routing"
+        },
+        {
+          "level": "h3",
+          "title": "Why this matters in finance"
+        },
+        {
+          "level": "h3",
+          "title": "Strengths"
+        },
+        {
+          "level": "h3",
+          "title": "Weaknesses"
+        },
+        {
+          "level": "h3",
+          "title": "When to use"
+        },
+        {
+          "level": "h2",
+          "title": "Additional patterns: Brief overview"
+        },
+        {
+          "level": "h1",
+          "title": "Choosing and combining architectural styles"
+        },
+        {
+          "level": "h2",
+          "title": "Matching scenarios to architectural styles"
+        },
+        {
+          "level": "h2",
+          "title": "Combining styles: Hybrid patterns in practice"
+        },
+        {
+          "level": "h2",
+          "title": "Evolving your architecture: A phased approach"
+        },
+        {
+          "level": "h1",
+          "title": "Communicating and coordinating between agents"
+        },
+        {
+          "level": "h2",
+          "title": "How agents talk: Message passing vs. shared state"
+        },
+        {
+          "level": "h2",
+          "title": "Handoffs: Transferring control between agents"
+        },
+        {
+          "level": "h2",
+          "title": "Resolving conflicts: When agents disagree"
+        },
+        {
+          "level": "h2",
+          "title": "Controlling flow: Static vs. dynamic coordination"
+        },
+        {
+          "level": "h2",
+          "title": "Negotiating for shared resources"
+        },
+        {
+          "level": "h1",
+          "title": "Mapping architectural styles to financial domains"
+        },
+        {
+          "level": "h2",
+          "title": "Designing for domain-specific constraints"
+        },
+        {
+          "level": "h1",
+          "title": "Implementing multi-agent patterns: A framework walkthrough"
+        },
+        {
+          "level": "h2",
+          "title": "The reference task: Multi-agent financial health analysis"
+        },
+        {
+          "level": "h2",
+          "title": "Implementation 1: LlamaIndex AgentWorkflow (sequential pipeline with handoffs)"
+        },
+        {
+          "level": "h2",
+          "title": "Implementation 2: OpenAI Agents SDK (leader-follower with dynamic routing)"
+        },
+        {
+          "level": "h2",
+          "title": "Implementation 3: AutoGen (conversational multi-agent)"
+        },
+        {
+          "level": "h2",
+          "title": "Comparing the three approaches"
+        },
+        {
+          "level": "h1",
+          "title": "Taking multi-agent systems to production"
+        },
+        {
+          "level": "h2",
+          "title": "Observing and tracing multi-agent behavior"
+        },
+        {
+          "level": "h2",
+          "title": "Handling errors across agent boundaries"
+        },
+        {
+          "level": "h2",
+          "title": "Managing context across agents"
+        },
+        {
+          "level": "h2",
+          "title": "Controlling token costs"
+        },
+        {
+          "level": "h2",
+          "title": "Testing multi-agent systems"
+        },
+        {
+          "level": "h2",
+          "title": "Knowing when to stop adding agents"
+        },
+        {
+          "level": "h1",
+          "title": "Hands-on lab: Building a multi-agent financial health analyzer"
+        },
+        {
+          "level": "h2",
+          "title": "Lab overview"
+        },
+        {
+          "level": "h2",
+          "title": "Setting up the environment"
+        },
+        {
+          "level": "h2",
+          "title": "Building the multi-agent system"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: Defining the shared state and tools"
+        },
+        {
+          "level": "h3",
+          "title": "Step 2: Defining financial health thresholds"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3: Configuring the agents"
+        },
+        {
+          "level": "h3",
+          "title": "Step 4: Creating and running the workflow"
+        },
+        {
+          "level": "h3",
+          "title": "Step 5: Executing and observing"
+        },
+        {
+          "level": "h2",
+          "title": "Extension: Adding the evaluator–optimizer pattern"
+        },
+        {
+          "level": "h2",
+          "title": "Extension: Parallel multi-company analysis"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_7_1.png",
+          "caption": "Figure 7.1 – Design patterns and architectural styles",
+          "alt": "Figure 7.1 – Design patterns and architectural styles"
+        },
+        {
+          "file": "B32414_7_1.png",
+          "caption": "Figure 7.1 – Design patterns and architectural styles",
+          "alt": "Figure 7.1 – Design patterns and architectural styles"
+        },
+        {
+          "file": "B32414_7_2.png",
+          "caption": "Figure 7.2 – Sequential pipeline architecture",
+          "alt": "Figure 7.2 – Sequential pipeline architecture"
+        },
+        {
+          "file": "B32414_7_2.png",
+          "caption": "Figure 7.2 – Sequential pipeline architecture",
+          "alt": "Figure 7.2 – Sequential pipeline architecture"
+        },
+        {
+          "file": "B32414_7_3.png",
+          "caption": "Figure 7.3 – Orchestrator–worker architecture",
+          "alt": "Figure 7.3 – Orchestrator–worker architecture"
+        },
+        {
+          "file": "B32414_7_3.png",
+          "caption": "Figure 7.3 – Orchestrator–worker architecture",
+          "alt": "Figure 7.3 – Orchestrator–worker architecture"
+        },
+        {
+          "file": "B32414_7_4.png",
+          "caption": "Figure 7.4 – Hierarchical architecture for enterprise risk management",
+          "alt": "Figure 7.4 – Hierarchical architecture for enterprise risk management"
+        },
+        {
+          "file": "B32414_7_4.png",
+          "caption": "Figure 7.4 – Hierarchical architecture for enterprise risk management",
+          "alt": "Figure 7.4 – Hierarchical architecture for enterprise risk management"
+        },
+        {
+          "file": "B32414_7_5.png",
+          "caption": "Figure 7.5 – The full peer-to-peer debate pattern, modeled on an investment committee",
+          "alt": "Figure 7.5 – The full peer-to-peer debate pattern, modeled on an investment committee"
+        },
+        {
+          "file": "B32414_7_5.png",
+          "caption": "Figure 7.5 – The full peer-to-peer debate pattern, modeled on an investment committee",
+          "alt": "Figure 7.5 – The full peer-to-peer debate pattern, modeled on an investment committee"
+        },
+        {
+          "file": "B32414_7_6.png",
+          "caption": "Figure 7.6 – Parallelization architecture for multi-company portfolio analysis",
+          "alt": "Figure 7.6 – Parallelization architecture for multi-company portfolio analysis"
+        },
+        {
+          "file": "B32414_7_6.png",
+          "caption": "Figure 7.6 – Parallelization architecture for multi-company portfolio analysis",
+          "alt": "Figure 7.6 – Parallelization architecture for multi-company portfolio analysis"
+        },
+        {
+          "file": "B32414_7_7.png",
+          "caption": "Figure 7.7 – Evaluator–optimizer architecture for trading strategy refinement",
+          "alt": "Figure 7.7 – Evaluator–optimizer architecture for trading strategy refinement"
+        },
+        {
+          "file": "B32414_7_7.png",
+          "caption": "Figure 7.7 – Evaluator–optimizer architecture for trading strategy refinement",
+          "alt": "Figure 7.7 – Evaluator–optimizer architecture for trading strategy refinement"
+        },
+        {
+          "file": "B32414_7_8.png",
+          "caption": "Figure 7.8 – Contract-net marketplace architecture",
+          "alt": "Figure 7.8 – Contract-net marketplace architecture"
+        },
+        {
+          "file": "B32414_7_8.png",
+          "caption": "Figure 7.8 – Contract-net marketplace architecture",
+          "alt": "Figure 7.8 – Contract-net marketplace architecture"
+        },
+        {
+          "file": "B32414_7_9.png",
+          "caption": "Figure 7.9 – Hybrid hierarchical + parallel architecture for financial risk assessment",
+          "alt": "Figure 7.9 – Hybrid hierarchical + parallel architecture for financial risk assessment"
+        },
+        {
+          "file": "B32414_7_9.png",
+          "caption": "Figure 7.9 – Hybrid hierarchical + parallel architecture for financial risk assessment",
+          "alt": "Figure 7.9 – Hybrid hierarchical + parallel architecture for financial risk assessment"
+        },
+        {
+          "file": "B32414_7_10.png",
+          "caption": "Figure 7.10 – Hybrid sequential + dynamic routing: a classifier picks the pipeline",
+          "alt": "Figure 7.10 – Hybrid sequential + dynamic routing: a classifier picks the pipeline"
+        },
+        {
+          "file": "B32414_7_10.png",
+          "caption": "Figure 7.10 – Hybrid sequential + dynamic routing: a classifier picks the pipeline",
+          "alt": "Figure 7.10 – Hybrid sequential + dynamic routing: a classifier picks the pipeline"
+        },
+        {
+          "file": "B32414_7_11.png",
+          "caption": "Figure 7.11 – Hybrid single-agent + multi-agent escalation",
+          "alt": "Figure 7.11 – Hybrid single-agent + multi-agent escalation"
+        },
+        {
+          "file": "B32414_7_11.png",
+          "caption": "Figure 7.11 – Hybrid single-agent + multi-agent escalation",
+          "alt": "Figure 7.11 – Hybrid single-agent + multi-agent escalation"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OEBPS/Text/Chapter_8.xhtml",
+      "title": "Designing Multi-Agent Trading Systems: From Investment Committee to Adversarial Debate",
+      "charCount": 110538,
+      "wordCount": 15165,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "8"
+        },
+        {
+          "level": "h1",
+          "title": "Designing Multi-Agent Trading Systems: From Investment Committee to Adversarial Debate"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Part A – Building a multi-agent investment committee with LangGraph"
+        },
+        {
+          "level": "h2",
+          "title": "How investment decisions are really made"
+        },
+        {
+          "level": "h3",
+          "title": "What an efficient market already prices in"
+        },
+        {
+          "level": "h3",
+          "title": "The four canonical information lenses"
+        },
+        {
+          "level": "h4",
+          "title": "Fundamentals: Estimating intrinsic value"
+        },
+        {
+          "level": "h4",
+          "title": "Technicals: Understanding market behavior through price"
+        },
+        {
+          "level": "h4",
+          "title": "Sentiment: Understanding the market narrative"
+        },
+        {
+          "level": "h4",
+          "title": "Macro: Understanding the market regime"
+        },
+        {
+          "level": "h3",
+          "title": "Why no single lens is enough"
+        },
+        {
+          "level": "h2",
+          "title": "The investment committee as a multi-agent system"
+        },
+        {
+          "level": "h3",
+          "title": "Why orchestration fits regulated finance"
+        },
+        {
+          "level": "h3",
+          "title": "The six roles in the model committee"
+        },
+        {
+          "level": "h2",
+          "title": "Translating the committee into LangGraph"
+        },
+        {
+          "level": "h3",
+          "title": "State as a shared workspace"
+        },
+        {
+          "level": "h3",
+          "title": "Fan-out to specialists, fan-in to the portfolio manager"
+        },
+        {
+          "level": "h2",
+          "title": "Case study: A multi-agent analysis of TESLA"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Implementing the committee"
+        },
+        {
+          "level": "h3",
+          "title": "Importing dependencies and configuring models"
+        },
+        {
+          "level": "h3",
+          "title": "Defining the shared state"
+        },
+        {
+          "level": "h3",
+          "title": "Retrieving deterministic market data"
+        },
+        {
+          "level": "h3",
+          "title": "Implementing the four specialist analyst nodes"
+        },
+        {
+          "level": "h4",
+          "title": "Fundamental analyst"
+        },
+        {
+          "level": "h4",
+          "title": "Technical analyst"
+        },
+        {
+          "level": "h4",
+          "title": "Sentiment analyst"
+        },
+        {
+          "level": "h4",
+          "title": "Macro analyst"
+        },
+        {
+          "level": "h3",
+          "title": "Synthesizing recommendations with the portfolio manager"
+        },
+        {
+          "level": "h3",
+          "title": "Validating recommendations with the risk officer"
+        },
+        {
+          "level": "h3",
+          "title": "Assembling and running the graph"
+        },
+        {
+          "level": "h2",
+          "title": "Orchestrating the agentic workflow"
+        },
+        {
+          "level": "h2",
+          "title": "Backtesting the architecture (and what a research-grade version would require)"
+        },
+        {
+          "level": "h3",
+          "title": "Why LLM-agent backtests are different"
+        },
+        {
+          "level": "h4",
+          "title": "Cost and latency"
+        },
+        {
+          "level": "h4",
+          "title": "Look-ahead bias"
+        },
+        {
+          "level": "h4",
+          "title": "Point-in-time data"
+        },
+        {
+          "level": "h3",
+          "title": "What to measure"
+        },
+        {
+          "level": "h3",
+          "title": "Walk-forward as the right backtesting approach"
+        },
+        {
+          "level": "h3",
+          "title": "Hands-on lab: A minimal backtest harness"
+        },
+        {
+          "level": "h4",
+          "title": "Defining the trade record"
+        },
+        {
+          "level": "h4",
+          "title": "Parsing the portfolio manager's decision"
+        },
+        {
+          "level": "h4",
+          "title": "Implementing the walk-forward loop"
+        },
+        {
+          "level": "h4",
+          "title": "Computing the equity curve and metrics"
+        },
+        {
+          "level": "h4",
+          "title": "Reading the output"
+        },
+        {
+          "level": "h3",
+          "title": "Where this backtest simplifies reality"
+        },
+        {
+          "level": "h3",
+          "title": "Where the committee pattern reaches its limits"
+        },
+        {
+          "level": "h1",
+          "title": "Part B - Stress-testing the committee with an adversarial debate layer"
+        },
+        {
+          "level": "h2",
+          "title": "Why a committee alone is not enough"
+        },
+        {
+          "level": "h3",
+          "title": "Confirmation bias within a single hierarchy"
+        },
+        {
+          "level": "h3",
+          "title": "Correlated reasoning across identical models"
+        },
+        {
+          "level": "h2",
+          "title": "Anatomy of a debate layer"
+        },
+        {
+          "level": "h3",
+          "title": "The four debate roles"
+        },
+        {
+          "level": "h3",
+          "title": "Composing the debate on top of the committee"
+        },
+        {
+          "level": "h2",
+          "title": "A finance example: Debating the TSLA verdict"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Implementing the debate"
+        },
+        {
+          "level": "h3",
+          "title": "Importing dependencies and defining the debate state"
+        },
+        {
+          "level": "h3",
+          "title": "Implementing the bull and bear nodes"
+        },
+        {
+          "level": "h3",
+          "title": "Specifying the devil's advocate"
+        },
+        {
+          "level": "h3",
+          "title": "Judging the debate"
+        },
+        {
+          "level": "h3",
+          "title": "Building the debate graph and pipeline"
+        },
+        {
+          "level": "h3",
+          "title": "Running the full pipeline"
+        },
+        {
+          "level": "h3",
+          "title": "Closing the loop: Using backtest evidence to improve the system"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_8_1.png",
+          "caption": "Figure 8.1 – The four canonical information lenses used by professional investors and the research foundations behind them",
+          "alt": "Figure 8.1 – The four canonical information lenses used by professional investors and the research foundations behind them"
+        },
+        {
+          "file": "B32414_8_1.png",
+          "caption": "Figure 8.1 – The four canonical information lenses used by professional investors and the research foundations behind them",
+          "alt": "Figure 8.1 – The four canonical information lenses used by professional investors and the research foundations behind them"
+        },
+        {
+          "file": "B32414_8_2.png",
+          "caption": "Figure 8.2 – The six roles that make up the investment committee",
+          "alt": "Figure 8.2 – The six roles that make up the investment committee"
+        },
+        {
+          "file": "B32414_8_2.png",
+          "caption": "Figure 8.2 – The six roles that make up the investment committee",
+          "alt": "Figure 8.2 – The six roles that make up the investment committee"
+        },
+        {
+          "file": "B32414_8_3.png",
+          "caption": "Figure 8.3 – LangGraph state as a shared workspace",
+          "alt": "Figure 8.3 – LangGraph state as a shared workspace"
+        },
+        {
+          "file": "B32414_8_3.png",
+          "caption": "Figure 8.3 – LangGraph state as a shared workspace",
+          "alt": "Figure 8.3 – LangGraph state as a shared workspace"
+        },
+        {
+          "file": "B32414_8_4.png",
+          "caption": "Figure 8.4 – The LangGraph implementation of the investment committee",
+          "alt": "Figure 8.4 – The LangGraph implementation of the investment committee"
+        },
+        {
+          "file": "B32414_8_4.png",
+          "caption": "Figure 8.4 – The LangGraph implementation of the investment committee",
+          "alt": "Figure 8.4 – The LangGraph implementation of the investment committee"
+        },
+        {
+          "file": "B32414_8_5.png",
+          "caption": "Figure 8.5 – Information flow through the investment committee",
+          "alt": "Figure 8.5 – Information flow through the investment committee"
+        },
+        {
+          "file": "B32414_8_5.png",
+          "caption": "Figure 8.5 – Information flow through the investment committee",
+          "alt": "Figure 8.5 – Information flow through the investment committee"
+        },
+        {
+          "file": "B32414_8_6.png",
+          "caption": "Figure 8.6 – Walk-forward backtesting framework",
+          "alt": "Figure 8.6 – Walk-forward backtesting framework"
+        },
+        {
+          "file": "B32414_8_6.png",
+          "caption": "Figure 8.6 – Walk-forward backtesting framework",
+          "alt": "Figure 8.6 – Walk-forward backtesting framework"
+        },
+        {
+          "file": "B32414_8_7.png",
+          "caption": "Figure 8.7 – The debate layer consists of four roles",
+          "alt": "Figure 8.7 – The debate layer consists of four roles"
+        },
+        {
+          "file": "B32414_8_7.png",
+          "caption": "Figure 8.7 – The debate layer consists of four roles",
+          "alt": "Figure 8.7 – The debate layer consists of four roles"
+        },
+        {
+          "file": "B32414_8_8.png",
+          "caption": "Figure 8.8 – The two-stage pipeline. Stage 1 (the committee) produces a thesis; Stage 2 (the debate) consumes that thesis and produces a possibly different final verdict.",
+          "alt": "Figure 8.8 – The two-stage pipeline. Stage 1 (the committee) produces a thesis; Stage 2 (the debate) consumes that thesis and produces a possibly different final verdict."
+        },
+        {
+          "file": "B32414_8_8.png",
+          "caption": "Figure 8.8 – The two-stage pipeline. Stage 1 (the committee) produces a thesis; Stage 2 (the debate) consumes that thesis and produces a possibly different final verdict.",
+          "alt": "Figure 8.8 – The two-stage pipeline. Stage 1 (the committee) produces a thesis; Stage 2 (the debate) consumes that thesis and produces a possibly different final verdict."
+        },
+        {
+          "file": "B32414_8_9.png",
+          "caption": "Figure 8.9 – Stress-testing the TSLA recommendation through the debate layer",
+          "alt": "Figure 8.9 – Stress-testing the TSLA recommendation through the debate layer"
+        },
+        {
+          "file": "B32414_8_9.png",
+          "caption": "Figure 8.9 – Stress-testing the TSLA recommendation through the debate layer",
+          "alt": "Figure 8.9 – Stress-testing the TSLA recommendation through the debate layer"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "OEBPS/Text/Chapter_9.xhtml",
+      "title": "Building Multi-Agent Insurance Workflows",
+      "charCount": 69003,
+      "wordCount": 9614,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "9"
+        },
+        {
+          "level": "h1",
+          "title": "Building Multi-Agent Insurance Workflows"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Understanding the insurance workflow problem"
+        },
+        {
+          "level": "h2",
+          "title": "How insurance differs from trading"
+        },
+        {
+          "level": "h2",
+          "title": "The multi-agent opportunity"
+        },
+        {
+          "level": "h1",
+          "title": "Anatomy of insurance workflows"
+        },
+        {
+          "level": "h2",
+          "title": "Claims processing: The core workflow"
+        },
+        {
+          "level": "h2",
+          "title": "Underwriting: Assessing risk and setting prices"
+        },
+        {
+          "level": "h2",
+          "title": "Fraud detection: Adversarial validation"
+        },
+        {
+          "level": "h2",
+          "title": "Customer service and First Notice of Loss"
+        },
+        {
+          "level": "h1",
+          "title": "Designing multi-agent insurance systems"
+        },
+        {
+          "level": "h2",
+          "title": "Defining the agent roles"
+        },
+        {
+          "level": "h2",
+          "title": "The compliance-first design principle"
+        },
+        {
+          "level": "h2",
+          "title": "Handling unstructured documents: The insurance data challenge"
+        },
+        {
+          "level": "h1",
+          "title": "Implementing a multi-agent claims processing system"
+        },
+        {
+          "level": "h2",
+          "title": "System architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Defining the claim data model"
+        },
+        {
+          "level": "h2",
+          "title": "Building the document processing agents"
+        },
+        {
+          "level": "h2",
+          "title": "Building the analysis agents"
+        },
+        {
+          "level": "h2",
+          "title": "Building the decision and compliance agents"
+        },
+        {
+          "level": "h2",
+          "title": "Wiring the pipeline"
+        },
+        {
+          "level": "h1",
+          "title": "Advanced pattern: Multi-agent fraud investigation"
+        },
+        {
+          "level": "h2",
+          "title": "The adversarial investigation architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Implementing the debate"
+        },
+        {
+          "level": "h1",
+          "title": "Taking insurance AI systems to production"
+        },
+        {
+          "level": "h2",
+          "title": "Navigating the regulatory landscape"
+        },
+        {
+          "level": "h2",
+          "title": "Building audit trails as a first-class component"
+        },
+        {
+          "level": "h2",
+          "title": "Configuring human-in-the-loop gates"
+        },
+        {
+          "level": "h2",
+          "title": "Protecting sensitive data"
+        },
+        {
+          "level": "h1",
+          "title": "Hands-on lab: Building a claims processing pipeline"
+        },
+        {
+          "level": "h2",
+          "title": "Lab overview"
+        },
+        {
+          "level": "h2",
+          "title": "Setting up the environment"
+        },
+        {
+          "level": "h2",
+          "title": "Building the pipeline"
+        },
+        {
+          "level": "h2",
+          "title": "Extension: Adding fraud investigation escalation"
+        },
+        {
+          "level": "h2",
+          "title": "Extension: Parallelizing underwriting enrichment"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_9_1.png",
+          "caption": "Figure 9.1 – Trading versus insurance architectures",
+          "alt": "Figure 9.1 – Trading versus insurance architectures"
+        },
+        {
+          "file": "B32414_9_1.png",
+          "caption": "Figure 9.1 – Trading versus insurance architectures",
+          "alt": "Figure 9.1 – Trading versus insurance architectures"
+        },
+        {
+          "file": "B32414_9_2.png",
+          "caption": "Figure 9.2 – Claims processing pipeline",
+          "alt": "Figure 9.2 – Claims processing pipeline"
+        },
+        {
+          "file": "B32414_9_2.png",
+          "caption": "Figure 9.2 – Claims processing pipeline",
+          "alt": "Figure 9.2 – Claims processing pipeline"
+        },
+        {
+          "file": "B32414_9_3.png",
+          "caption": "Figure 9.3 – Underwriting pipeline with parallel data enrichment",
+          "alt": "Figure 9.3 – Underwriting pipeline with parallel data enrichment"
+        },
+        {
+          "file": "B32414_9_3.png",
+          "caption": "Figure 9.3 – Underwriting pipeline with parallel data enrichment",
+          "alt": "Figure 9.3 – Underwriting pipeline with parallel data enrichment"
+        },
+        {
+          "file": "B32414_9_4.png",
+          "caption": "Figure 9.4 – Adversarial fraud investigation",
+          "alt": "Figure 9.4 – Adversarial fraud investigation"
+        },
+        {
+          "file": "B32414_9_4.png",
+          "caption": "Figure 9.4 – Adversarial fraud investigation",
+          "alt": "Figure 9.4 – Adversarial fraud investigation"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "OEBPS/Text/Chapter_10.xhtml",
+      "title": "Building Agentic RAG Systems in Finance",
+      "charCount": 95714,
+      "wordCount": 13433,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "10"
+        },
+        {
+          "level": "h1",
+          "title": "Building Agentic RAG Systems in Finance"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Foundations of RAG in finance"
+        },
+        {
+          "level": "h2",
+          "title": "The core components of a RAG system"
+        },
+        {
+          "level": "h2",
+          "title": "Finance example: answering a single-fact question from a 10-K"
+        },
+        {
+          "level": "h1",
+          "title": "From naive RAG to agentic RAG"
+        },
+        {
+          "level": "h2",
+          "title": "Limitations of naive RAG"
+        },
+        {
+          "level": "h2",
+          "title": "How agentic AI helps overcome these limitations"
+        },
+        {
+          "level": "h2",
+          "title": "Finance example: a liquidity question no single document answers"
+        },
+        {
+          "level": "h1",
+          "title": "Agentic RAG patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Routing"
+        },
+        {
+          "level": "h2",
+          "title": "Query decomposition"
+        },
+        {
+          "level": "h2",
+          "title": "Self-correcting agentic retrieval"
+        },
+        {
+          "level": "h1",
+          "title": "Improving retrieval quality"
+        },
+        {
+          "level": "h1",
+          "title": "Evaluating RAG systems"
+        },
+        {
+          "level": "h1",
+          "title": "Hands-on lab: Agentic RAG over financial documents with LlamaIndex"
+        },
+        {
+          "level": "h2",
+          "title": "Step 1: Configuring the models"
+        },
+        {
+          "level": "h2",
+          "title": "Step 2: Loading the corpus and building per-document indexes"
+        },
+        {
+          "level": "h2",
+          "title": "Step 3: Building the naive RAG baseline"
+        },
+        {
+          "level": "h2",
+          "title": "Step 4: Routing with a RouterQueryEngine"
+        },
+        {
+          "level": "h2",
+          "title": "Step 5: Query decomposition with SubQuestionQueryEngine"
+        },
+        {
+          "level": "h2",
+          "title": "Step 6: Building a self-correcting agent"
+        },
+        {
+          "level": "h2",
+          "title": "Step 7: Combining dense and sparse retrieval (hybrid search)"
+        },
+        {
+          "level": "h2",
+          "title": "Step 8: Reranking"
+        },
+        {
+          "level": "h2",
+          "title": "Step 9: Combining hybrid search and reranking"
+        },
+        {
+          "level": "h2",
+          "title": "Step 10: Evaluating the answer"
+        },
+        {
+          "level": "h2",
+          "title": "Results of the lab"
+        },
+        {
+          "level": "h3",
+          "title": "Step-by-step results"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3 (naive baseline)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 4 (router)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 5 (query decomposition)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 6 (agent)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 7 (hybrid retrieval)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 8 (reranking)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 9 (hybrid retrieval + reranking)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 10 (evaluation)"
+        },
+        {
+          "level": "h2",
+          "title": "Comparing the patterns on one question"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_10_1.png",
+          "caption": "Figure 10.1 – The naive RAG pipeline. The user's question is embedded, the most relevant chunks are retrieved from the vector index, and the LLM generates an answer grounded in the retrieved context rather than relying solely on its internal knowledge.",
+          "alt": "Figure 10.1 – The naive RAG pipeline. The user's question is embedded, the most relevant chunks are retrieved from the vector index, and the LLM generates an answer grounded in the retrieved context rather than relying solely on its internal knowledge."
+        },
+        {
+          "file": "B32414_10_1.png",
+          "caption": "Figure 10.1 – The naive RAG pipeline. The user's question is embedded, the most relevant chunks are retrieved from the vector index, and the LLM generates an answer grounded in the retrieved context rather than relying solely on its internal knowledge.",
+          "alt": "Figure 10.1 – The naive RAG pipeline. The user's question is embedded, the most relevant chunks are retrieved from the vector index, and the LLM generates an answer grounded in the retrieved context rather than relying solely on its internal knowledge."
+        },
+        {
+          "file": "B32414_10_2.png",
+          "caption": "Figure 10.2 – The building blocks of a RAG system. The first four, knowledge base, embedding model, vector database, and retriever, form the naive RAG pipeline shown in Figure 10.1. Agentic RAG extends this architecture by replacing the single retriever with a collection of tools that the agent can select according to the task.",
+          "alt": "Figure 10.2 – The building blocks of a RAG system. The first four, knowledge base, embedding model, vector database, and retriever, form the naive RAG pipeline shown in Figure 10.1. Agentic RAG extends this architecture by replacing the single retriever with a collection of tools that the agent can select according to the task."
+        },
+        {
+          "file": "B32414_10_2.png",
+          "caption": "Figure 10.2 – The building blocks of a RAG system. The first four, knowledge base, embedding model, vector database, and retriever, form the naive RAG pipeline shown in Figure 10.1. Agentic RAG extends this architecture by replacing the single retriever with a collection of tools that the agent can select according to the task.",
+          "alt": "Figure 10.2 – The building blocks of a RAG system. The first four, knowledge base, embedding model, vector database, and retriever, form the naive RAG pipeline shown in Figure 10.1. Agentic RAG extends this architecture by replacing the single retriever with a collection of tools that the agent can select according to the task."
+        },
+        {
+          "file": "B32414_10_3.png",
+          "caption": "Figure 10.3 – Naive RAG on a single-fact query. A single retrieval step returns the relevant passage, allowing the model to generate a grounded answer with a citation. No routing, decomposition, or additional retrieval is required.",
+          "alt": "Figure 10.3 – Naive RAG on a single-fact query. A single retrieval step returns the relevant passage, allowing the model to generate a grounded answer with a citation. No routing, decomposition, or additional retrieval is required."
+        },
+        {
+          "file": "B32414_10_3.png",
+          "caption": "Figure 10.3 – Naive RAG on a single-fact query. A single retrieval step returns the relevant passage, allowing the model to generate a grounded answer with a citation. No routing, decomposition, or additional retrieval is required.",
+          "alt": "Figure 10.3 – Naive RAG on a single-fact query. A single retrieval step returns the relevant passage, allowing the model to generate a grounded answer with a citation. No routing, decomposition, or additional retrieval is required."
+        },
+        {
+          "file": "B32414_10_4.png",
+          "caption": "Figure 10.4 – Naive RAG follows a fixed retrieval pipeline. Agentic RAG introduces a decision-making loop in which the agent selects the appropriate sources, decomposes complex questions, evaluates whether the retrieved evidence is sufficient, and performs additional retrieval before generating an answer.",
+          "alt": "Figure 10.4 – Naive RAG follows a fixed retrieval pipeline. Agentic RAG introduces a decision-making loop in which the agent selects the appropriate sources, decomposes complex questions, evaluates whether the retrieved evidence is sufficient, and performs additional retrieval before generating an answer."
+        },
+        {
+          "file": "B32414_10_4.png",
+          "caption": "Figure 10.4 – Naive RAG follows a fixed retrieval pipeline. Agentic RAG introduces a decision-making loop in which the agent selects the appropriate sources, decomposes complex questions, evaluates whether the retrieved evidence is sufficient, and performs additional retrieval before generating an answer.",
+          "alt": "Figure 10.4 – Naive RAG follows a fixed retrieval pipeline. Agentic RAG introduces a decision-making loop in which the agent selects the appropriate sources, decomposes complex questions, evaluates whether the retrieved evidence is sufficient, and performs additional retrieval before generating an answer."
+        },
+        {
+          "file": "B32414_10_5.png",
+          "caption": "Figure 10.5 – Agentic RAG applied to a cross-document liquidity question. The agent retrieves information from three separate sources, combines the evidence, compares the two liquidity ratios, and evaluates the result against the policy threshold, reasoning that a single retrieval step cannot reliably perform.",
+          "alt": "Figure 10.5 – Agentic RAG applied to a cross-document liquidity question. The agent retrieves information from three separate sources, combines the evidence, compares the two liquidity ratios, and evaluates the result against the policy threshold, reasoning that a single retrieval step cannot reliably perform."
+        },
+        {
+          "file": "B32414_10_5.png",
+          "caption": "Figure 10.5 – Agentic RAG applied to a cross-document liquidity question. The agent retrieves information from three separate sources, combines the evidence, compares the two liquidity ratios, and evaluates the result against the policy threshold, reasoning that a single retrieval step cannot reliably perform.",
+          "alt": "Figure 10.5 – Agentic RAG applied to a cross-document liquidity question. The agent retrieves information from three separate sources, combines the evidence, compares the two liquidity ratios, and evaluates the result against the policy threshold, reasoning that a single retrieval step cannot reliably perform."
+        },
+        {
+          "file": "B32414_10_6.png",
+          "caption": "Figure 10.6 – A router query engine. The LLM-based selector matches the user's question to the most appropriate tool based on its description and routes the retrieval accordingly, instead of searching a single blended index.",
+          "alt": "Figure 10.6 – A router query engine. The LLM-based selector matches the user's question to the most appropriate tool based on its description and routes the retrieval accordingly, instead of searching a single blended index."
+        },
+        {
+          "file": "B32414_10_6.png",
+          "caption": "Figure 10.6 – A router query engine. The LLM-based selector matches the user's question to the most appropriate tool based on its description and routes the retrieval accordingly, instead of searching a single blended index.",
+          "alt": "Figure 10.6 – A router query engine. The LLM-based selector matches the user's question to the most appropriate tool based on its description and routes the retrieval accordingly, instead of searching a single blended index."
+        },
+        {
+          "file": "B32414_10_7.png",
+          "caption": "Figure 10.7 – Routing a question across three candidate sources. The LLM selector compares the user's question with each tool's description, selects the best-matching query engine, and performs retrieval only on that source. The remaining tools are not queried.",
+          "alt": "Figure 10.7 – Routing a question across three candidate sources. The LLM selector compares the user's question with each tool's description, selects the best-matching query engine, and performs retrieval only on that source. The remaining tools are not queried."
+        },
+        {
+          "file": "B32414_10_7.png",
+          "caption": "Figure 10.7 – Routing a question across three candidate sources. The LLM selector compares the user's question with each tool's description, selects the best-matching query engine, and performs retrieval only on that source. The remaining tools are not queried.",
+          "alt": "Figure 10.7 – Routing a question across three candidate sources. The LLM selector compares the user's question with each tool's description, selects the best-matching query engine, and performs retrieval only on that source. The remaining tools are not queried."
+        },
+        {
+          "file": "B32414_10_8.png",
+          "caption": "Figure 10.8 – A sub-question query engine. The original question is decomposed into sub-questions, each answered independently before the results are synthesized into a single response.",
+          "alt": "Figure 10.8 – A sub-question query engine. The original question is decomposed into sub-questions, each answered independently before the results are synthesized into a single response."
+        },
+        {
+          "file": "B32414_10_8.png",
+          "caption": "Figure 10.8 – A sub-question query engine. The original question is decomposed into sub-questions, each answered independently before the results are synthesized into a single response.",
+          "alt": "Figure 10.8 – A sub-question query engine. The original question is decomposed into sub-questions, each answered independently before the results are synthesized into a single response."
+        },
+        {
+          "file": "B32414_10_9.png",
+          "caption": "Figure 10.9 – Decomposition applied to the cross-document liquidity question. Each sub-question is a clean single-source lookup; the synthesis step does the comparison and the policy check.",
+          "alt": "Figure 10.9 – Decomposition applied to the cross-document liquidity question. Each sub-question is a clean single-source lookup; the synthesis step does the comparison and the policy check."
+        },
+        {
+          "file": "B32414_10_9.png",
+          "caption": "Figure 10.9 – Decomposition applied to the cross-document liquidity question. Each sub-question is a clean single-source lookup; the synthesis step does the comparison and the policy check.",
+          "alt": "Figure 10.9 – Decomposition applied to the cross-document liquidity question. Each sub-question is a clean single-source lookup; the synthesis step does the comparison and the policy check."
+        },
+        {
+          "file": "B32414_10_10.png",
+          "caption": "Figure 10.10 – A self-correcting agent. After each tool call, the agent evaluates whether the retrieved evidence is sufficient and performs additional retrieval when necessary instead of answering from an incomplete first pass.",
+          "alt": "Figure 10.10 – A self-correcting agent. After each tool call, the agent evaluates whether the retrieved evidence is sufficient and performs additional retrieval when necessary instead of answering from an incomplete first pass."
+        },
+        {
+          "file": "B32414_10_10.png",
+          "caption": "Figure 10.10 – A self-correcting agent. After each tool call, the agent evaluates whether the retrieved evidence is sufficient and performs additional retrieval when necessary instead of answering from an incomplete first pass.",
+          "alt": "Figure 10.10 – A self-correcting agent. After each tool call, the agent evaluates whether the retrieved evidence is sufficient and performs additional retrieval when necessary instead of answering from an incomplete first pass."
+        },
+        {
+          "file": "B32414_10_11.png",
+          "caption": "Figure 10.11 – A self-correcting compliance check. The agent retrieves the rule first, recognizes the missing figure, re-queries for it, and only then renders a cited verdict.",
+          "alt": "Figure 10.11 – A self-correcting compliance check. The agent retrieves the rule first, recognizes the missing figure, re-queries for it, and only then renders a cited verdict."
+        },
+        {
+          "file": "B32414_10_11.png",
+          "caption": "Figure 10.11 – A self-correcting compliance check. The agent retrieves the rule first, recognizes the missing figure, re-queries for it, and only then renders a cited verdict.",
+          "alt": "Figure 10.11 – A self-correcting compliance check. The agent retrieves the rule first, recognizes the missing figure, re-queries for it, and only then renders a cited verdict."
+        },
+        {
+          "file": "B32414_10_12.png",
+          "caption": "Figure 10.12 – Hybrid retrieval followed by reranking. Dense and sparse results are fused for recall, then a reranker re-scores for precision so only the most relevant passages reach the model.",
+          "alt": "Figure 10.12 – Hybrid retrieval followed by reranking. Dense and sparse results are fused for recall, then a reranker re-scores for precision so only the most relevant passages reach the model."
+        },
+        {
+          "file": "B32414_10_12.png",
+          "caption": "Figure 10.12 – Hybrid retrieval followed by reranking. Dense and sparse results are fused for recall, then a reranker re-scores for precision so only the most relevant passages reach the model.",
+          "alt": "Figure 10.12 – Hybrid retrieval followed by reranking. Dense and sparse results are fused for recall, then a reranker re-scores for precision so only the most relevant passages reach the model."
+        },
+        {
+          "file": "B32414_10_13.png",
+          "caption": "Figure 10.13 – Evaluating a retrieval-augmented answer with the three evaluation metrics: context relevancy, faithfulness, and answer relevancy",
+          "alt": "Figure 10.13 – Evaluating a retrieval-augmented answer with the three evaluation metrics: context relevancy, faithfulness, and answer relevancy"
+        },
+        {
+          "file": "B32414_10_13.png",
+          "caption": "Figure 10.13 – Evaluating a retrieval-augmented answer with the three evaluation metrics: context relevancy, faithfulness, and answer relevancy",
+          "alt": "Figure 10.13 – Evaluating a retrieval-augmented answer with the three evaluation metrics: context relevancy, faithfulness, and answer relevancy"
+        },
+        {
+          "file": "B32414_10_14.png",
+          "caption": "Figure 10.14 – The faithfulness metric, step by step. The answer is split into claims, each claim is verified against the context by an LLM, and the score is the proportion of claims that are grounded in the context.",
+          "alt": "Figure 10.14 – The faithfulness metric, step by step. The answer is split into claims, each claim is verified against the context by an LLM, and the score is the proportion of claims that are grounded in the context."
+        },
+        {
+          "file": "B32414_10_14.png",
+          "caption": "Figure 10.14 – The faithfulness metric, step by step. The answer is split into claims, each claim is verified against the context by an LLM, and the score is the proportion of claims that are grounded in the context.",
+          "alt": "Figure 10.14 – The faithfulness metric, step by step. The answer is split into claims, each claim is verified against the context by an LLM, and the score is the proportion of claims that are grounded in the context."
+        },
+        {
+          "file": "B32414_10_15.png",
+          "caption": "Figure 10.15 – Computing answer relevancy. Each statement in the generated answer is checked against the input query; the score is the share of statements judged relevant, so higher means a more on-topic answer.",
+          "alt": "Figure 10.15 – Computing answer relevancy. Each statement in the generated answer is checked against the input query; the score is the share of statements judged relevant, so higher means a more on-topic answer."
+        },
+        {
+          "file": "B32414_10_15.png",
+          "caption": "Figure 10.15 – Computing answer relevancy. Each statement in the generated answer is checked against the input query; the score is the share of statements judged relevant, so higher means a more on-topic answer.",
+          "alt": "Figure 10.15 – Computing answer relevancy. Each statement in the generated answer is checked against the input query; the score is the share of statements judged relevant, so higher means a more on-topic answer."
+        },
+        {
+          "file": "B32414_10_16.png",
+          "caption": "Figure 10.16 – Computing context relevancy. Each sentence in the retrieved context is checked against the input query; the score is the share of sentences judged relevant, so higher means the retriever pulled less irrelevant material.",
+          "alt": "Figure 10.16 – Computing context relevancy. Each sentence in the retrieved context is checked against the input query; the score is the share of sentences judged relevant, so higher means the retriever pulled less irrelevant material."
+        },
+        {
+          "file": "B32414_10_16.png",
+          "caption": "Figure 10.16 – Computing context relevancy. Each sentence in the retrieved context is checked against the input query; the score is the share of sentences judged relevant, so higher means the retriever pulled less irrelevant material.",
+          "alt": "Figure 10.16 – Computing context relevancy. Each sentence in the retrieved context is checked against the input query; the score is the share of sentences judged relevant, so higher means the retriever pulled less irrelevant material."
+        },
+        {
+          "file": "B32414_10_17.png",
+          "caption": "Figure 10.17 – Three RAG evaluation metrics. Faithfulness and answer relevancy judge the generated answer; context relevancy judges the retriever. Together they help identify where a failure occurred.",
+          "alt": "Figure 10.17 – Three RAG evaluation metrics. Faithfulness and answer relevancy judge the generated answer; context relevancy judges the retriever. Together they help identify where a failure occurred."
+        },
+        {
+          "file": "B32414_10_17.png",
+          "caption": "Figure 10.17 – Three RAG evaluation metrics. Faithfulness and answer relevancy judge the generated answer; context relevancy judges the retriever. Together they help identify where a failure occurred.",
+          "alt": "Figure 10.17 – Three RAG evaluation metrics. Faithfulness and answer relevancy judge the generated answer; context relevancy judges the retriever. Together they help identify where a failure occurred."
+        },
+        {
+          "file": "B32414_10_18.png",
+          "caption": "Figure 10.18 – How LLMRerank re-scores retrieved passages. Candidate nodes are batched, assigned a relevance score from 1 to 10 by the LLM, parsed back into per-node scores, and ranked globally across all batches. Only the top `top_n` passages are then forwarded to the LLM for answer generation.",
+          "alt": "Figure 10.18 – How LLMRerank re-scores retrieved passages. Candidate nodes are batched, assigned a relevance score from 1 to 10 by the LLM, parsed back into per-node scores, and ranked globally across all batches. Only the top `top_n` passages are then forwarded to the LLM for answer generation."
+        },
+        {
+          "file": "B32414_10_18.png",
+          "caption": "Figure 10.18 – How LLMRerank re-scores retrieved passages. Candidate nodes are batched, assigned a relevance score from 1 to 10 by the LLM, parsed back into per-node scores, and ranked globally across all batches. Only the top `top_n` passages are then forwarded to the LLM for answer generation.",
+          "alt": "Figure 10.18 – How LLMRerank re-scores retrieved passages. Candidate nodes are batched, assigned a relevance score from 1 to 10 by the LLM, parsed back into per-node scores, and ranked globally across all batches. Only the top `top_n` passages are then forwarded to the LLM for answer generation."
+        },
+        {
+          "file": "B32414_10_19.png",
+          "caption": "Figure 10.19 – Step-by-step results",
+          "alt": "Figure 10.19 – Step-by-step results"
+        },
+        {
+          "file": "B32414_10_19.png",
+          "caption": "Figure 10.19 – Step-by-step results",
+          "alt": "Figure 10.19 – Step-by-step results"
+        },
+        {
+          "file": "B32414_10_20.png",
+          "caption": "Figure 10.20 – Comparison of the retrieval patterns on the same cross-source question.",
+          "alt": "Figure 10.20 – Comparison of the retrieval patterns on the same cross-source question."
+        },
+        {
+          "file": "B32414_10_20.png",
+          "caption": "Figure 10.20 – Comparison of the retrieval patterns on the same cross-source question.",
+          "alt": "Figure 10.20 – Comparison of the retrieval patterns on the same cross-source question."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch10.txt"
+    },
+    {
+      "chapterNumber": 11,
+      "chapterId": "ch11",
+      "sourceFile": "OEBPS/Text/Chapter_11.xhtml",
+      "title": "Evaluating AI Agents in Finance – A KYC Agent Case Study",
+      "charCount": 109397,
+      "wordCount": 15838,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "11"
+        },
+        {
+          "level": "h1",
+          "title": "Evaluating AI Agents in Finance – A KYC Agent Case Study"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "Why traditional machine learning metrics are not enough"
+        },
+        {
+          "level": "h2",
+          "title": "The three layers of agent evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "What \"good\" looks like for a financial agent"
+        },
+        {
+          "level": "h2",
+          "title": "The regulatory backdrop"
+        },
+        {
+          "level": "h1",
+          "title": "Measuring agent quality"
+        },
+        {
+          "level": "h2",
+          "title": "Output-level metrics: Did the agent produce the right answer?"
+        },
+        {
+          "level": "h2",
+          "title": "Trajectory metrics: Did the agent take the right path?"
+        },
+        {
+          "level": "h2",
+          "title": "Decision-quality metrics: Was the reasoning sound?"
+        },
+        {
+          "level": "h2",
+          "title": "Safety, compliance, and bias metrics"
+        },
+        {
+          "level": "h2",
+          "title": "Efficiency metrics: Cost, latency, and resource use"
+        },
+        {
+          "level": "h2",
+          "title": "Combining metrics: The scorecard"
+        },
+        {
+          "level": "h1",
+          "title": "Evaluation methodologies: How to measure"
+        },
+        {
+          "level": "h2",
+          "title": "Reference-based evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "LLM-as-a-judge"
+        },
+        {
+          "level": "h2",
+          "title": "Programmatic assertions and schema validation"
+        },
+        {
+          "level": "h2",
+          "title": "Trajectory and trace evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "Adversarial and red-team evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "Human-in-the-loop evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing the right methodology for each metric"
+        },
+        {
+          "level": "h1",
+          "title": "Frameworks and tooling for agent evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "DeepEval: The pytest-style eval library"
+        },
+        {
+          "level": "h2",
+          "title": "RAGAS: Specialized for retrieval-augmented pipelines"
+        },
+        {
+          "level": "h2",
+          "title": "Braintrust: Hosted eval with strong trajectory support"
+        },
+        {
+          "level": "h2",
+          "title": "LangSmith and Langfuse: Trace-first platforms"
+        },
+        {
+          "level": "h2",
+          "title": "Promptfoo and Inspect AI"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing a stack: A decision framework"
+        },
+        {
+          "level": "h1",
+          "title": "Building evaluation datasets"
+        },
+        {
+          "level": "h2",
+          "title": "What makes an evaluation dataset strong"
+        },
+        {
+          "level": "h2",
+          "title": "Dataset sources and construction strategies"
+        },
+        {
+          "level": "h2",
+          "title": "Stratification: Why random sampling fails"
+        },
+        {
+          "level": "h2",
+          "title": "Labeling: Producing reliable ground truth"
+        },
+        {
+          "level": "h2",
+          "title": "Versioning and governance of evaluation datasets"
+        },
+        {
+          "level": "h2",
+          "title": "The production feedback loop: Continuous dataset growth"
+        },
+        {
+          "level": "h1",
+          "title": "The KYC use case: Defining the system under test"
+        },
+        {
+          "level": "h2",
+          "title": "The KYC agent: Pipeline and architecture"
+        },
+        {
+          "level": "h2",
+          "title": "What could go wrong: A failure taxonomy"
+        },
+        {
+          "level": "h2",
+          "title": "Designing the KYC evaluation scorecard"
+        },
+        {
+          "level": "h2",
+          "title": "The KYC evaluation dataset structure"
+        },
+        {
+          "level": "h1",
+          "title": "Hands-on lab: Building an evaluation harness for the KYC agent"
+        },
+        {
+          "level": "h2",
+          "title": "Lab overview"
+        },
+        {
+          "level": "h2",
+          "title": "Lab setup"
+        },
+        {
+          "level": "h2",
+          "title": "Lab implementation"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: Defining the evaluation data model"
+        },
+        {
+          "level": "h3",
+          "title": "Step 2: Applying reference-based evaluation to measure risk-tier accuracy"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3: Applying trajectory assertions"
+        },
+        {
+          "level": "h3",
+          "title": "Step 4: Using an LLM as a judge to evaluate reasoning grounding"
+        },
+        {
+          "level": "h3",
+          "title": "Step 5: Checking PII redaction safety"
+        },
+        {
+          "level": "h3",
+          "title": "Step 6: Analyzing disparate impact"
+        },
+        {
+          "level": "h3",
+          "title": "Step 7: Running adversarial tests"
+        },
+        {
+          "level": "h3",
+          "title": "Step 8: Composing the evaluation scorecard"
+        },
+        {
+          "level": "h3",
+          "title": "Step 9: Integrating the evaluation harness into CI"
+        },
+        {
+          "level": "h3",
+          "title": "Step 10: Capturing production traces"
+        },
+        {
+          "level": "h2",
+          "title": "Lab extension: Calibrating the LLM judge"
+        },
+        {
+          "level": "h2",
+          "title": "Lab extension: Production drift detection"
+        },
+        {
+          "level": "h2",
+          "title": "Lab extension: Generating the model risk report"
+        },
+        {
+          "level": "h1",
+          "title": "Production evaluation: Continuous monitoring and regression testing"
+        },
+        {
+          "level": "h2",
+          "title": "Offline versus online evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "Drift detection in practice"
+        },
+        {
+          "level": "h2",
+          "title": "Regression testing on model and prompt updates"
+        },
+        {
+          "level": "h2",
+          "title": "Online A/B testing of agent versions"
+        },
+        {
+          "level": "h2",
+          "title": "The production evaluation loop"
+        },
+        {
+          "level": "h2",
+          "title": "Audit logging for evaluation runs"
+        },
+        {
+          "level": "h1",
+          "title": "Production considerations: Model risk management for agentic systems"
+        },
+        {
+          "level": "h2",
+          "title": "US model risk guidance applied to agents: From SR 11-7 to SR 26-2"
+        },
+        {
+          "level": "h2",
+          "title": "Model documentation requirements"
+        },
+        {
+          "level": "h2",
+          "title": "The EU AI Act for financial agents"
+        },
+        {
+          "level": "h2",
+          "title": "Disparate impact and fair-treatment considerations"
+        },
+        {
+          "level": "h2",
+          "title": "Vendor model risk: Foundation models as third-party components"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_11_1.png",
+          "caption": "Figure 11.1 – Three layers of agent evaluation form a hierarchy of trust",
+          "alt": "Figure 11.1 – Three layers of agent evaluation form a hierarchy of trust"
+        },
+        {
+          "file": "B32414_11_1.png",
+          "caption": "Figure 11.1 – Three layers of agent evaluation form a hierarchy of trust",
+          "alt": "Figure 11.1 – Three layers of agent evaluation form a hierarchy of trust"
+        },
+        {
+          "file": "B32414_11_2.png",
+          "caption": "Figure 11.2 – The six dimensions of agent quality",
+          "alt": "Figure 11.2 – The six dimensions of agent quality"
+        },
+        {
+          "file": "B32414_11_2.png",
+          "caption": "Figure 11.2 – The six dimensions of agent quality",
+          "alt": "Figure 11.2 – The six dimensions of agent quality"
+        },
+        {
+          "file": "B32414_11_3.png",
+          "caption": "Figure 11.3 – The KYC pipeline with evaluation hooks attached",
+          "alt": "Figure 11.3 – The KYC pipeline with evaluation hooks attached"
+        },
+        {
+          "file": "B32414_11_3.png",
+          "caption": "Figure 11.3 – The KYC pipeline with evaluation hooks attached",
+          "alt": "Figure 11.3 – The KYC pipeline with evaluation hooks attached"
+        },
+        {
+          "file": "B32414_11_4.png",
+          "caption": "Figure 11.4 – The evaluation harness architecture",
+          "alt": "Figure 11.4 – The evaluation harness architecture"
+        },
+        {
+          "file": "B32414_11_4.png",
+          "caption": "Figure 11.4 – The evaluation harness architecture",
+          "alt": "Figure 11.4 – The evaluation harness architecture"
+        },
+        {
+          "file": "B32414_11_5.png",
+          "caption": "Figure 11.5 – The production evaluation loop",
+          "alt": "Figure 11.5 – The production evaluation loop"
+        },
+        {
+          "file": "B32414_11_5.png",
+          "caption": "Figure 11.5 – The production evaluation loop",
+          "alt": "Figure 11.5 – The production evaluation loop"
+        },
+        {
+          "file": "B32414_11_6.png",
+          "caption": "Figure 11.6 – Three lines of defense applied to AI agents under US model risk guidance",
+          "alt": "Figure 11.6 – Three lines of defense applied to AI agents under US model risk guidance"
+        },
+        {
+          "file": "B32414_11_6.png",
+          "caption": "Figure 11.6 – Three lines of defense applied to AI agents under US model risk guidance",
+          "alt": "Figure 11.6 – Three lines of defense applied to AI agents under US model risk guidance"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch11.txt"
+    },
+    {
+      "chapterNumber": 12,
+      "chapterId": "ch12",
+      "sourceFile": "OEBPS/Text/Chapter_12.xhtml",
+      "title": "Operationalizing AI Agents Responsibly in Finance",
+      "charCount": 138111,
+      "wordCount": 19267,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "12"
+        },
+        {
+          "level": "h1",
+          "title": "Operationalizing AI Agents Responsibly in Finance"
+        },
+        {
+          "level": "h1",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h1",
+          "title": "From prototype to production: What actually changes"
+        },
+        {
+          "level": "h1",
+          "title": "Engineering the agent harness"
+        },
+        {
+          "level": "h2",
+          "title": "The anatomy of a harness"
+        },
+        {
+          "level": "h2",
+          "title": "Retries, timeouts, and idempotency"
+        },
+        {
+          "level": "h2",
+          "title": "Failure recovery and graceful degradation"
+        },
+        {
+          "level": "h2",
+          "title": "Permissioning and least privilege for tools"
+        },
+        {
+          "level": "h2",
+          "title": "Secrets, credentials, and sandboxed execution"
+        },
+        {
+          "level": "h2",
+          "title": "The harness used in this chapter's labs: An OpenAI Agents SDK workflow"
+        },
+        {
+          "level": "h2",
+          "title": "Finance illustration: Hardening an overnight coverage universe run"
+        },
+        {
+          "level": "h1",
+          "title": "Engineering the agentic loop"
+        },
+        {
+          "level": "h2",
+          "title": "The stack of loops"
+        },
+        {
+          "level": "h2",
+          "title": "Termination conditions and budgets"
+        },
+        {
+          "level": "h2",
+          "title": "Checkpointing and resumability"
+        },
+        {
+          "level": "h2",
+          "title": "Finance illustration: An evidence-gathering loop that knows when to stop"
+        },
+        {
+          "level": "h1",
+          "title": "Managing cost, latency, and scaling trade-offs"
+        },
+        {
+          "level": "h2",
+          "title": "The cost anatomy of an agent run"
+        },
+        {
+          "level": "h2",
+          "title": "Caching at two levels"
+        },
+        {
+          "level": "h2",
+          "title": "Model routing, cascades, and small language models"
+        },
+        {
+          "level": "h2",
+          "title": "Parallelism, throughput, and rate limits"
+        },
+        {
+          "level": "h2",
+          "title": "Finance illustration: A 500-name morning briefing under a hard deadline"
+        },
+        {
+          "level": "h1",
+          "title": "Observing agents in production"
+        },
+        {
+          "level": "h2",
+          "title": "The three pillars of observability"
+        },
+        {
+          "level": "h2",
+          "title": "Drift and incident signals"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Instrumenting a finance agent with structured tracing"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: Establishing the uninstrumented baseline"
+        },
+        {
+          "level": "h3",
+          "title": "Steps 2 and 3: Capturing traces and deriving per-run metrics"
+        },
+        {
+          "level": "h3",
+          "title": "Step 4: Rendering the trace as a tree"
+        },
+        {
+          "level": "h3",
+          "title": "Step 5: Rolling runs up into a metrics table"
+        },
+        {
+          "level": "h3",
+          "title": "Step 6: Monitoring drift and detecting incidents"
+        },
+        {
+          "level": "h2",
+          "title": "Finance illustration: Tracing a wrong valuation verdict to its source"
+        },
+        {
+          "level": "h1",
+          "title": "Deploying and versioning agent systems"
+        },
+        {
+          "level": "h2",
+          "title": "What is a version of an agent system?"
+        },
+        {
+          "level": "h2",
+          "title": "The deployment pipeline"
+        },
+        {
+          "level": "h2",
+          "title": "Finance illustration: Shipping a change to the synthesis prompt"
+        },
+        {
+          "level": "h1",
+          "title": "Guardrailing agent inputs and outputs"
+        },
+        {
+          "level": "h2",
+          "title": "Input, tool-output, and output guardrails: The three places a check can run"
+        },
+        {
+          "level": "h2",
+          "title": "Indirect prompt injection: The finance-realistic attack"
+        },
+        {
+          "level": "h2",
+          "title": "Finance illustration: A client-facing research assistant behind a guardrail stack"
+        },
+        {
+          "level": "h2",
+          "title": "Hands-on lab: Building a guardrails pipeline around a finance agent"
+        },
+        {
+          "level": "h3",
+          "title": "Step 1: Establishing the guardrail pipeline skeleton"
+        },
+        {
+          "level": "h3",
+          "title": "Step 2: Validating inputs before execution (BLOCK via an input guardrail)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 3: Redacting PII before model access (a REDACT transform)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 4: Detecting and escalating prompt injection"
+        },
+        {
+          "level": "h3",
+          "title": "Step 5: Enforcing output policy (BLOCK via an output guardrail)"
+        },
+        {
+          "level": "h3",
+          "title": "Step 6: Running the red-team suite"
+        },
+        {
+          "level": "h1",
+          "title": "Governing agents: Risk, compliance, and the human in the loop"
+        },
+        {
+          "level": "h2",
+          "title": "Autonomy tiers and approval gates"
+        },
+        {
+          "level": "h2",
+          "title": "The anatomy of an audit record"
+        },
+        {
+          "level": "h2",
+          "title": "The human in the loop"
+        },
+        {
+          "level": "h2",
+          "title": "A short survey of the regulatory landscape"
+        },
+        {
+          "level": "h2",
+          "title": "Finance illustration: A recommendation that must clear a human approver"
+        },
+        {
+          "level": "h1",
+          "title": "Bringing it together: A reference architecture and readiness checklist"
+        },
+        {
+          "level": "h2",
+          "title": "A production reference architecture"
+        },
+        {
+          "level": "h2",
+          "title": "An operational readiness checklist"
+        },
+        {
+          "level": "h3",
+          "title": "Harness and execution loop"
+        },
+        {
+          "level": "h3",
+          "title": "Security"
+        },
+        {
+          "level": "h3",
+          "title": "Cost"
+        },
+        {
+          "level": "h3",
+          "title": "Observability"
+        },
+        {
+          "level": "h3",
+          "title": "Deployment"
+        },
+        {
+          "level": "h3",
+          "title": "Guardrails"
+        },
+        {
+          "level": "h3",
+          "title": "Governance"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Bibliography"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B32414_12_1.png",
+          "caption": "Figure 12.1 – Moving from a prototype to a production system",
+          "alt": "Figure 12.1 – Moving from a prototype to a production system"
+        },
+        {
+          "file": "B32414_12_1.png",
+          "caption": "Figure 12.1 – Moving from a prototype to a production system",
+          "alt": "Figure 12.1 – Moving from a prototype to a production system"
+        },
+        {
+          "file": "B32414_12_2.png",
+          "caption": "Figure 12.2 – The anatomy of a harness",
+          "alt": "Figure 12.2 – The anatomy of a harness"
+        },
+        {
+          "file": "B32414_12_2.png",
+          "caption": "Figure 12.2 – The anatomy of a harness",
+          "alt": "Figure 12.2 – The anatomy of a harness"
+        },
+        {
+          "file": "B32414_12_3.png",
+          "caption": "Figure 12.3 – A graceful degradation strategy for a market-data dependency",
+          "alt": "Figure 12.3 – A graceful degradation strategy for a market-data dependency"
+        },
+        {
+          "file": "B32414_12_3.png",
+          "caption": "Figure 12.3 – A graceful degradation strategy for a market-data dependency",
+          "alt": "Figure 12.3 – A graceful degradation strategy for a market-data dependency"
+        },
+        {
+          "file": "B32414_12_4.png",
+          "caption": "Figure 12.4 – The trust boundary between the language model and the harness",
+          "alt": "Figure 12.4 – The trust boundary between the language model and the harness"
+        },
+        {
+          "file": "B32414_12_4.png",
+          "caption": "Figure 12.4 – The trust boundary between the language model and the harness",
+          "alt": "Figure 12.4 – The trust boundary between the language model and the harness"
+        },
+        {
+          "file": "B32414_12_5.png",
+          "caption": "Figure 12.5 – A production-hardened overnight coverage run. The harness retries transient failures, isolates per-company errors, and enforces tool permissions, enabling reliable unattended execution across an entire coverage universe.",
+          "alt": "Figure 12.5 – A production-hardened overnight coverage run. The harness retries transient failures, isolates per-company errors, and enforces tool permissions, enabling reliable unattended execution across an entire coverage universe."
+        },
+        {
+          "file": "B32414_12_5.png",
+          "caption": "Figure 12.5 – A production-hardened overnight coverage run. The harness retries transient failures, isolates per-company errors, and enforces tool permissions, enabling reliable unattended execution across an entire coverage universe.",
+          "alt": "Figure 12.5 – A production-hardened overnight coverage run. The harness retries transient failures, isolates per-company errors, and enforces tool permissions, enabling reliable unattended execution across an entire coverage universe."
+        },
+        {
+          "file": "B32414_12_6.png",
+          "caption": "Figure 12.6 – The loop stack of a production AI agent",
+          "alt": "Figure 12.6 – The loop stack of a production AI agent"
+        },
+        {
+          "file": "B32414_12_6.png",
+          "caption": "Figure 12.6 – The loop stack of a production AI agent",
+          "alt": "Figure 12.6 – The loop stack of a production AI agent"
+        },
+        {
+          "file": "B32414_12_7.png",
+          "caption": "Figure 12.7 – The agentic execution loop with its two primary termination conditions: goal satisfaction, when the model completes the task, and budget exhaustion, when the maximum iteration limit is reached. Production systems always enforce the latter to prevent unbounded execution.",
+          "alt": "Figure 12.7 – The agentic execution loop with its two primary termination conditions: goal satisfaction, when the model completes the task, and budget exhaustion, when the maximum iteration limit is reached. Production systems always enforce the latter to prevent unbounded execution."
+        },
+        {
+          "file": "B32414_12_7.png",
+          "caption": "Figure 12.7 – The agentic execution loop with its two primary termination conditions: goal satisfaction, when the model completes the task, and budget exhaustion, when the maximum iteration limit is reached. Production systems always enforce the latter to prevent unbounded execution.",
+          "alt": "Figure 12.7 – The agentic execution loop with its two primary termination conditions: goal satisfaction, when the model completes the task, and budget exhaustion, when the maximum iteration limit is reached. Production systems always enforce the latter to prevent unbounded execution."
+        },
+        {
+          "file": "B32414_12_8.png",
+          "caption": "Figure 12.8 – An evidence-gathering loop that stops gracefully. When repeated retrieval attempts fail to uncover new information, the no-progress detector terminates the loop and the agent returns INSUFFICIENT_EVIDENCE rather than continuing indefinitely or fabricating a conclusion.",
+          "alt": "Figure 12.8 – An evidence-gathering loop that stops gracefully. When repeated retrieval attempts fail to uncover new information, the no-progress detector terminates the loop and the agent returns INSUFFICIENT_EVIDENCE rather than continuing indefinitely or fabricating a conclusion."
+        },
+        {
+          "file": "B32414_12_8.png",
+          "caption": "Figure 12.8 – An evidence-gathering loop that stops gracefully. When repeated retrieval attempts fail to uncover new information, the no-progress detector terminates the loop and the agent returns INSUFFICIENT_EVIDENCE rather than continuing indefinitely or fabricating a conclusion.",
+          "alt": "Figure 12.8 – An evidence-gathering loop that stops gracefully. When repeated retrieval attempts fail to uncover new information, the no-progress detector terminates the loop and the agent returns INSUFFICIENT_EVIDENCE rather than continuing indefinitely or fabricating a conclusion."
+        },
+        {
+          "file": "B32414_12_9.png",
+          "caption": "Figure 12.9 – The cost anatomy of an agent run. Because language model APIs are stateless, each iteration re-sends the accumulated conversation history. As a result, every additional tool invocation adds another full model call, making tool use a significant contributor to overall cost and latency.",
+          "alt": "Figure 12.9 – The cost anatomy of an agent run. Because language model APIs are stateless, each iteration re-sends the accumulated conversation history. As a result, every additional tool invocation adds another full model call, making tool use a significant contributor to overall cost and latency."
+        },
+        {
+          "file": "B32414_12_9.png",
+          "caption": "Figure 12.9 – The cost anatomy of an agent run. Because language model APIs are stateless, each iteration re-sends the accumulated conversation history. As a result, every additional tool invocation adds another full model call, making tool use a significant contributor to overall cost and latency.",
+          "alt": "Figure 12.9 – The cost anatomy of an agent run. Because language model APIs are stateless, each iteration re-sends the accumulated conversation history. As a result, every additional tool invocation adds another full model call, making tool use a significant contributor to overall cost and latency."
+        },
+        {
+          "file": "B32414_12_10.png",
+          "caption": "Figure 12.10 – A two-tier model cascade",
+          "alt": "Figure 12.10 – A two-tier model cascade"
+        },
+        {
+          "file": "B32414_12_10.png",
+          "caption": "Figure 12.10 – A two-tier model cascade",
+          "alt": "Figure 12.10 – A two-tier model cascade"
+        },
+        {
+          "file": "B32414_12_11.png",
+          "caption": "Figure 12.11 – A cost-optimized morning briefing",
+          "alt": "Figure 12.11 – A cost-optimized morning briefing"
+        },
+        {
+          "file": "B32414_12_11.png",
+          "caption": "Figure 12.11 – A cost-optimized morning briefing",
+          "alt": "Figure 12.11 – A cost-optimized morning briefing"
+        },
+        {
+          "file": "B32414_12_12.png",
+          "caption": "Figure 12.12 – The three pillars of observability applied to an agent run",
+          "alt": "Figure 12.12 – The three pillars of observability applied to an agent run"
+        },
+        {
+          "file": "B32414_12_12.png",
+          "caption": "Figure 12.12 – The three pillars of observability applied to an agent run",
+          "alt": "Figure 12.12 – The three pillars of observability applied to an agent run"
+        },
+        {
+          "file": "B32414_12_13.png",
+          "caption": "Figure 12.13 – Root-cause analysis of a challenged recommendation",
+          "alt": "Figure 12.13 – Root-cause analysis of a challenged recommendation"
+        },
+        {
+          "file": "B32414_12_13.png",
+          "caption": "Figure 12.13 – Root-cause analysis of a challenged recommendation",
+          "alt": "Figure 12.13 – Root-cause analysis of a challenged recommendation"
+        },
+        {
+          "file": "B32414_12_14.png",
+          "caption": "Figure 12.14 – The deployment pipeline for an agent system, with rollback available at every stage",
+          "alt": "Figure 12.14 – The deployment pipeline for an agent system, with rollback available at every stage"
+        },
+        {
+          "file": "B32414_12_14.png",
+          "caption": "Figure 12.14 – The deployment pipeline for an agent system, with rollback available at every stage",
+          "alt": "Figure 12.14 – The deployment pipeline for an agent system, with rollback available at every stage"
+        },
+        {
+          "file": "B32414_12_15.png",
+          "caption": "Figure 12.15 – A one-line prompt change detected during shadow deployment",
+          "alt": "Figure 12.15 – A one-line prompt change detected during shadow deployment"
+        },
+        {
+          "file": "B32414_12_15.png",
+          "caption": "Figure 12.15 – A one-line prompt change detected during shadow deployment",
+          "alt": "Figure 12.15 – A one-line prompt change detected during shadow deployment"
+        },
+        {
+          "file": "B32414_12_16.png",
+          "caption": "Figure 12.16 – The guardrail pipeline and its three attachment points",
+          "alt": "Figure 12.16 – The guardrail pipeline and its three attachment points"
+        },
+        {
+          "file": "B32414_12_16.png",
+          "caption": "Figure 12.16 – The guardrail pipeline and its three attachment points",
+          "alt": "Figure 12.16 – The guardrail pipeline and its three attachment points"
+        },
+        {
+          "file": "B32414_12_17.png",
+          "caption": "Figure 12.17 – Indirect prompt injection through retrieved content",
+          "alt": "Figure 12.17 – Indirect prompt injection through retrieved content"
+        },
+        {
+          "file": "B32414_12_17.png",
+          "caption": "Figure 12.17 – Indirect prompt injection through retrieved content",
+          "alt": "Figure 12.17 – Indirect prompt injection through retrieved content"
+        },
+        {
+          "file": "B32414_12_18.png",
+          "caption": "Figure 12.18 – A client-facing research assistant protected by a complete guardrail pipeline",
+          "alt": "Figure 12.18 – A client-facing research assistant protected by a complete guardrail pipeline"
+        },
+        {
+          "file": "B32414_12_18.png",
+          "caption": "Figure 12.18 – A client-facing research assistant protected by a complete guardrail pipeline",
+          "alt": "Figure 12.18 – A client-facing research assistant protected by a complete guardrail pipeline"
+        },
+        {
+          "file": "B32414_12_19.png",
+          "caption": "Figure 12.19 – Agent autonomy tiers",
+          "alt": "Figure 12.19 – Agent autonomy tiers"
+        },
+        {
+          "file": "B32414_12_19.png",
+          "caption": "Figure 12.19 – Agent autonomy tiers",
+          "alt": "Figure 12.19 – Agent autonomy tiers"
+        },
+        {
+          "file": "B32414_12_20.png",
+          "caption": "Figure 12.20 – The anatomy of an audit record. It binds the request, the retrieved evidence, the reasoning trace, the exact system version, the guardrail decisions, the conclusion, and the human approver into a single reconstructable record. Each field is produced by a component introduced earlier in the chapter, bringing together observability, versioning, and guardrails to support accountability.",
+          "alt": "Figure 12.20 – The anatomy of an audit record. It binds the request, the retrieved evidence, the reasoning trace, the exact system version, the guardrail decisions, the conclusion, and the human approver into a single reconstructable record. Each field is produced by a component introduced earlier in the chapter, bringing together observability, versioning, and guardrails to support accountability."
+        },
+        {
+          "file": "B32414_12_20.png",
+          "caption": "Figure 12.20 – The anatomy of an audit record. It binds the request, the retrieved evidence, the reasoning trace, the exact system version, the guardrail decisions, the conclusion, and the human approver into a single reconstructable record. Each field is produced by a component introduced earlier in the chapter, bringing together observability, versioning, and guardrails to support accountability.",
+          "alt": "Figure 12.20 – The anatomy of an audit record. It binds the request, the retrieved evidence, the reasoning trace, the exact system version, the guardrail decisions, the conclusion, and the human approver into a single reconstructable record. Each field is produced by a component introduced earlier in the chapter, bringing together observability, versioning, and guardrails to support accountability."
+        },
+        {
+          "file": "B32414_12_21.png",
+          "caption": "Figure 12.21 – An investment recommendation requiring human approval",
+          "alt": "Figure 12.21 – An investment recommendation requiring human approval"
+        },
+        {
+          "file": "B32414_12_21.png",
+          "caption": "Figure 12.21 – An investment recommendation requiring human approval",
+          "alt": "Figure 12.21 – An investment recommendation requiring human approval"
+        },
+        {
+          "file": "B32414_12_22.png",
+          "caption": "Figure 12.22 – A production reference architecture for a finance agent",
+          "alt": "Figure 12.22 – A production reference architecture for a finance agent"
+        },
+        {
+          "file": "B32414_12_22.png",
+          "caption": "Figure 12.22 – A production reference architecture for a finance agent",
+          "alt": "Figure 12.22 – A production reference architecture for a finance agent"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-ai-agents-for-finance\\ch12.txt"
+    }
+  ]
+}

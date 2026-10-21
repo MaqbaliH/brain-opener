@@ -1,0 +1,545 @@
+{
+  "bookSlug": "an-illustrated-guide-to-ai-agents",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\An Illustrated Guide to AI Agents.epub",
+  "totalChapters": 2,
+  "totalFigures": 67,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/ch01.html",
+      "title": "Chapter 1. Memory",
+      "charCount": 55501,
+      "wordCount": 8607,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1. Memory"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Types of Memory"
+        },
+        {
+          "level": "h1",
+          "title": "Short-Term Memory"
+        },
+        {
+          "level": "h1",
+          "title": "Long-Term Memory"
+        },
+        {
+          "level": "h2",
+          "title": "Retrieval-Augmented Generation (RAG)"
+        },
+        {
+          "level": "h1",
+          "title": "MemoryBank"
+        },
+        {
+          "level": "h2",
+          "title": "Agentic RAG"
+        },
+        {
+          "level": "h3",
+          "title": "A-MEM"
+        },
+        {
+          "level": "h3",
+          "title": "Search-o1"
+        },
+        {
+          "level": "h1",
+          "title": "Context Engineering"
+        },
+        {
+          "level": "h2",
+          "title": "What is inside the context?"
+        },
+        {
+          "level": "h2",
+          "title": "Context Engineering for Multi-Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Optimizing the Context"
+        },
+        {
+          "level": "h3",
+          "title": "Context Tracking and Storage"
+        },
+        {
+          "level": "h3",
+          "title": "Context Selection"
+        },
+        {
+          "level": "h3",
+          "title": "Context Compression"
+        },
+        {
+          "level": "h3",
+          "title": "Context Ordering"
+        },
+        {
+          "level": "h2",
+          "title": "Context as the Specification"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ch04_figure_1_1760455018635952.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_2_1760455018635988.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_3_1760455018636036.png",
+          "caption": "A diagram of a memory processing model\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a memory processing model\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_4_1760455018636064.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_5_1760455018636090.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_6_1760455018636110.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_7_1760455018636120.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_8_1760455018636134.png",
+          "caption": "A row of rectangular objects\n\nAI-generated content may be incorrect.",
+          "alt": "A row of rectangular objects\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_9_1760455018636151.png",
+          "caption": "A diagram of a diagram\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a diagram\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_10_1760455018636165.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_11_1760455018636179.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_12_1760455018636193.png",
+          "caption": "A black and blue rectangular object with black text\n\nAI-generated content may be incorrect.",
+          "alt": "A black and blue rectangular object with black text\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_13_1760455018636207.png",
+          "caption": "A black and white math equation\n\nAI-generated content may be incorrect.",
+          "alt": "A black and white math equation\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_14_1760455018636221.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_15_1760455018636234.png",
+          "caption": "A diagram of a diagram\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a diagram\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_16_1760455018636248.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_17_1760455018636302.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_18_1760455018636326.png",
+          "caption": "A diagram of a computer process\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a computer process\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_19_1760455018636341.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_20_1760455018636355.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_21_1760455018636389.png",
+          "caption": "A diagram of a company\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a company\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_22_1760455018636414.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_23_1760455018636435.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_24_1760455018636451.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_25_1760455018636466.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_26_1760455018636479.png",
+          "caption": "A diagram of a search engine\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a search engine\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_27_1760455018636492.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_28_1760455018636531.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_29_1760455018636557.png",
+          "caption": "A diagram of a software program\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a software program\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_30_1760455018636579.png",
+          "caption": "A graph with different colored squares\n\nAI-generated content may be incorrect.",
+          "alt": "A graph with different colored squares\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch04_figure_31_1760455018636596.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_32_1760455018636610.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_33_1760455018636624.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_34_1760455018636650.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_35_1760455018636677.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch04_figure_36_1760455018636700.png",
+          "caption": "",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\an-illustrated-guide-to-ai-agents\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/ch02.html",
+      "title": "Chapter 2. Tool Usage, Learning, and Protocols",
+      "charCount": 47420,
+      "wordCount": 7488,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2. Tool Usage, Learning, and Protocols"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Tool Usage"
+        },
+        {
+          "level": "h2",
+          "title": "Tool Creation"
+        },
+        {
+          "level": "h2",
+          "title": "Tool Definition"
+        },
+        {
+          "level": "h2",
+          "title": "Tool Selection"
+        },
+        {
+          "level": "h2",
+          "title": "Tool Calling"
+        },
+        {
+          "level": "h2",
+          "title": "Tool Output Processing"
+        },
+        {
+          "level": "h1",
+          "title": "Tool Learning"
+        },
+        {
+          "level": "h2",
+          "title": "In-context Learning"
+        },
+        {
+          "level": "h3",
+          "title": "HuggingGPT"
+        },
+        {
+          "level": "h4",
+          "title": "Task Planning"
+        },
+        {
+          "level": "h4",
+          "title": "Model Selection"
+        },
+        {
+          "level": "h4",
+          "title": "Task Execution"
+        },
+        {
+          "level": "h4",
+          "title": "Response Generation"
+        },
+        {
+          "level": "h2",
+          "title": "Supervised Fine-tuning"
+        },
+        {
+          "level": "h3",
+          "title": "ToolFormer"
+        },
+        {
+          "level": "h2",
+          "title": "Reinforcement Learning"
+        },
+        {
+          "level": "h2",
+          "title": "ToolRL"
+        },
+        {
+          "level": "h2",
+          "title": "Search-R1"
+        },
+        {
+          "level": "h1",
+          "title": "Model Context Protocol (MCP)"
+        },
+        {
+          "level": "h2",
+          "title": "Core Components"
+        },
+        {
+          "level": "h2",
+          "title": "The MCP Flow"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ch05_figure_1_1760455020911943.png",
+          "caption": "A black and white icons\n\nAI-generated content may be incorrect.",
+          "alt": "A black and white icons\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_2_1760455020911973.png",
+          "caption": "A diagram of a computer program\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a computer program\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_3_1760455020911990.png",
+          "caption": "A diagram of a company\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a company\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_4_1760455020912000.png",
+          "caption": "A diagram of a diagram of a memory tool\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a diagram of a memory tool\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_5_1760455020912016.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_6_1760455020912031.png",
+          "caption": "A close-up of a text\n\nAI-generated content may be incorrect.",
+          "alt": "A close-up of a text\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_7_1760455020912045.png",
+          "caption": "A diagram of a diagram\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a diagram\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_8_1760455020912059.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_9_1760455020912083.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_10_1760455020912097.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_11_1760455020912112.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_12_1760455020912126.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_13_1760455020912140.png",
+          "caption": "A screenshot of a computer program\n\nAI-generated content may be incorrect.",
+          "alt": "A screenshot of a computer program\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_14_1760455020912153.png",
+          "caption": "A diagram of a user flow\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a user flow\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_15_1760455020912166.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_16_1760455020912180.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_17_1760455020912194.png",
+          "caption": "A blue squares with white text\n\nAI-generated content may be incorrect.",
+          "alt": "A blue squares with white text\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_18_1760455020912207.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_19_1760455020912220.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_20_1760455020912233.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_21_1760455020912246.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_22_1760455020912260.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_23_1760455020912273.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_24_1760455020912287.png",
+          "caption": "A screenshot of a chat\n\nAI-generated content may be incorrect.",
+          "alt": "A screenshot of a chat\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_25_1760455020912301.png",
+          "caption": "A diagram of a process\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a process\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_26_1760455020912315.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_27_1760455020912328.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_28_1760455020912341.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_29_1760455020912355.png",
+          "caption": "A diagram of a software process\n\nAI-generated content may be incorrect.",
+          "alt": "A diagram of a software process\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch05_figure_30_1760455020912368.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "ch05_figure_31_1760455020912381.png",
+          "caption": "",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\an-illustrated-guide-to-ai-agents\\ch02.txt"
+    }
+  ]
+}

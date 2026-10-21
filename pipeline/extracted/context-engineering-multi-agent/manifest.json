@@ -1,0 +1,1538 @@
+{
+  "bookSlug": "context-engineering-multi-agent",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Context Engineering for Multi-Agent Systems.epub",
+  "totalChapters": 10,
+  "totalFigures": 48,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "EPUB/Chapter_1.xhtml",
+      "title": "From Prompts to Context: Building the Semantic Blueprint",
+      "charCount": 74560,
+      "wordCount": 9388,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "1"
+        },
+        {
+          "level": "h1",
+          "title": "From Prompts to Context: Building the Semantic Blueprint"
+        },
+        {
+          "level": "h1",
+          "title": "Understanding context engineering"
+        },
+        {
+          "level": "h2",
+          "title": "Level 1: The basic prompt (zero context)"
+        },
+        {
+          "level": "h2",
+          "title": "Level 2: The better context (linear context)"
+        },
+        {
+          "level": "h2",
+          "title": "Level 3: The good context (goal-oriented context)"
+        },
+        {
+          "level": "h2",
+          "title": "Level 4: The advanced context (role-based context)"
+        },
+        {
+          "level": "h2",
+          "title": "Level 5: The semantic blueprint"
+        },
+        {
+          "level": "h1",
+          "title": "SRL: from linear sequences to semantic structures"
+        },
+        {
+          "level": "h1",
+          "title": "Building an SRL notebook in Python"
+        },
+        {
+          "level": "h2",
+          "title": "The main function: visualize_srl"
+        },
+        {
+          "level": "h2",
+          "title": "Defining the semantic roles"
+        },
+        {
+          "level": "h2",
+          "title": "The plotting engine: _plot_stemma and canvas setup"
+        },
+        {
+          "level": "h2",
+          "title": "Dynamic positioning and drawing the stemma (graph)"
+        },
+        {
+          "level": "h2",
+          "title": "Running SRL examples"
+        },
+        {
+          "level": "h3",
+          "title": "Example 1: Business pitch"
+        },
+        {
+          "level": "h3",
+          "title": "Example 2: Technical update"
+        },
+        {
+          "level": "h3",
+          "title": "Example 3: Project milestone"
+        },
+        {
+          "level": "h1",
+          "title": "Engineering a meeting analysis use case"
+        },
+        {
+          "level": "h2",
+          "title": "Layer 1: Establishing the scope (the “what”)"
+        },
+        {
+          "level": "h2",
+          "title": "Layer 2: Conducting the investigation (the “how”)"
+        },
+        {
+          "level": "h2",
+          "title": "Layer 3: Determining the action (the “what next”)"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_1_1.png",
+          "caption": "Figure 1.1: Evolving from prompts to contexts",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_1_2.png",
+          "caption": "Figure 1.2: Flowchart of the SRL program",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_1_3.png",
+          "caption": "Figure 1.3: A root node and four child nodes",
+          "alt": "Image 3"
+        },
+        {
+          "file": "B36602_1_4.png",
+          "caption": "Figure 1.4: A stemma with an action and a location",
+          "alt": "Image 4"
+        },
+        {
+          "file": "B36602_1_5.png",
+          "caption": "Figure 1.5: A stemma explaining the “how” of an action",
+          "alt": "Image 5"
+        },
+        {
+          "file": "B36602_1_6.png",
+          "caption": "Figure 1.6: Context chaining flowchart",
+          "alt": "Image 6"
+        },
+        {
+          "file": "B36602_1_7.png",
+          "caption": "Image 7",
+          "alt": "Image 7"
+        },
+        {
+          "file": "B36602_1_8.png",
+          "caption": "Image 8",
+          "alt": "Image 8"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "EPUB/Chapter_2.xhtml",
+      "title": "Building a Multi-Agent System with MCP",
+      "charCount": 62189,
+      "wordCount": 7491,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "2"
+        },
+        {
+          "level": "h1",
+          "title": "Building a Multi-Agent System with MCP"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting the MAS workflow with MCP"
+        },
+        {
+          "level": "h1",
+          "title": "Building an MAS with MCP"
+        },
+        {
+          "level": "h2",
+          "title": "Initializing the client"
+        },
+        {
+          "level": "h2",
+          "title": "Defining the protocol"
+        },
+        {
+          "level": "h3",
+          "title": "Message format"
+        },
+        {
+          "level": "h3",
+          "title": "Transport layers"
+        },
+        {
+          "level": "h3",
+          "title": "Protocol management"
+        },
+        {
+          "level": "h2",
+          "title": "Building the agents"
+        },
+        {
+          "level": "h3",
+          "title": "Creating the helper function"
+        },
+        {
+          "level": "h3",
+          "title": "Defining the Researcher agent"
+        },
+        {
+          "level": "h3",
+          "title": "Defining the Writer agent"
+        },
+        {
+          "level": "h2",
+          "title": "Building the Orchestrator"
+        },
+        {
+          "level": "h2",
+          "title": "Running the system"
+        },
+        {
+          "level": "h1",
+          "title": "Error handling and validation"
+        },
+        {
+          "level": "h2",
+          "title": "Building robust components for the LLM"
+        },
+        {
+          "level": "h2",
+          "title": "Validating MCP messages"
+        },
+        {
+          "level": "h2",
+          "title": "Adding agent specialization controls and validation"
+        },
+        {
+          "level": "h2",
+          "title": "The final Orchestrator with a validation loop"
+        },
+        {
+          "level": "h2",
+          "title": "Running the final robust system"
+        },
+        {
+          "level": "h1",
+          "title": "The evolution of AI architecture"
+        },
+        {
+          "level": "h1",
+          "title": "Tools for building agent systems"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_2_1.png",
+          "caption": "Figure 2.1: The architectural blueprint of our MAS workflow",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_2_2.png",
+          "caption": "Figure 2.2: The architecture of the multi-agent functions",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_2_3.png",
+          "caption": "Figure 2.3: The Orchestrator of the agents",
+          "alt": "Image 3"
+        },
+        {
+          "file": "B36602_2_4.png",
+          "caption": "Figure 2.4: The flow of a context-driven MAS",
+          "alt": "Image 4"
+        },
+        {
+          "file": "B36602_2_5.png",
+          "caption": "Figure 2.5: The evolution of AI architecture models to systems",
+          "alt": "Image 5"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "EPUB/Chapter_3.xhtml",
+      "title": "Building the Context-Aware Multi-Agent System",
+      "charCount": 57513,
+      "wordCount": 6695,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "3"
+        },
+        {
+          "level": "h1",
+          "title": "Building the Context-Aware Multi-Agent System"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting a dual RAG MAS"
+        },
+        {
+          "level": "h2",
+          "title": "Phase 1: Data preparation"
+        },
+        {
+          "level": "h2",
+          "title": "Phase 2: Runtime execution analysis"
+        },
+        {
+          "level": "h1",
+          "title": "RAG pipeline data ingestion (context and knowledge)"
+        },
+        {
+          "level": "h2",
+          "title": "Installation and setup"
+        },
+        {
+          "level": "h2",
+          "title": "Initializing the Pinecone index"
+        },
+        {
+          "level": "h2",
+          "title": "Data preparation: the context library (procedural RAG)"
+        },
+        {
+          "level": "h2",
+          "title": "Data preparation: the knowledge base (factual RAG)"
+        },
+        {
+          "level": "h3",
+          "title": "Helper functions for chunking and embedding"
+        },
+        {
+          "level": "h2",
+          "title": "Process and upload (upsert) data"
+        },
+        {
+          "level": "h3",
+          "title": "Context library"
+        },
+        {
+          "level": "h3",
+          "title": "Knowledge base"
+        },
+        {
+          "level": "h2",
+          "title": "Building the context-aware system"
+        },
+        {
+          "level": "h3",
+          "title": "Defining the agents"
+        },
+        {
+          "level": "h4",
+          "title": "Context Librarian agent"
+        },
+        {
+          "level": "h4",
+          "title": "Researcher agent"
+        },
+        {
+          "level": "h4",
+          "title": "Writer agent"
+        },
+        {
+          "level": "h3",
+          "title": "Building the Orchestrator"
+        },
+        {
+          "level": "h4",
+          "title": "Goal analysis"
+        },
+        {
+          "level": "h4",
+          "title": "Agent coordination"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_3_1.png",
+          "caption": "Figure 3.1: The dual RAG MAS architecture",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_3_2.png",
+          "caption": "Figure 3.2: Flowchart of the RAG ingestion pipeline",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_3_3.png",
+          "caption": "Figure 3.3: Context-aware MAS process",
+          "alt": "Image 3"
+        },
+        {
+          "file": "B36602_3_4.png",
+          "caption": "Image 4",
+          "alt": "Image 4"
+        },
+        {
+          "file": "B36602_3_5.png",
+          "caption": "Image 5",
+          "alt": "Image 5"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "EPUB/Chapter_4.xhtml",
+      "title": "Assembling the Context Engine",
+      "charCount": 62978,
+      "wordCount": 7718,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "4"
+        },
+        {
+          "level": "h1",
+          "title": "Assembling the Context Engine"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting the Context Engine"
+        },
+        {
+          "level": "h2",
+          "title": "Architectural overview"
+        },
+        {
+          "level": "h2",
+          "title": "Functional deep dive"
+        },
+        {
+          "level": "h1",
+          "title": "Assembling the system"
+        },
+        {
+          "level": "h2",
+          "title": "The specialist agents"
+        },
+        {
+          "level": "h3",
+          "title": "Context Librarian agent"
+        },
+        {
+          "level": "h3",
+          "title": "Researcher agent"
+        },
+        {
+          "level": "h3",
+          "title": "Writer agent"
+        },
+        {
+          "level": "h2",
+          "title": "Agent Registry"
+        },
+        {
+          "level": "h2",
+          "title": "The Context Engine"
+        },
+        {
+          "level": "h3",
+          "title": "Planner"
+        },
+        {
+          "level": "h3",
+          "title": "Executor"
+        },
+        {
+          "level": "h3",
+          "title": "Execution Tracer"
+        },
+        {
+          "level": "h2",
+          "title": "Putting it all together"
+        },
+        {
+          "level": "h1",
+          "title": "Running the engine"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_4_1.png",
+          "caption": "Figure 4.1: The architecture of the Context Engine",
+          "alt": "Image 1"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "EPUB/Chapter_5.xhtml",
+      "title": "Hardening the Context Engine",
+      "charCount": 81404,
+      "wordCount": 9519,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "5"
+        },
+        {
+          "level": "h1",
+          "title": "Hardening the Context Engine"
+        },
+        {
+          "level": "h1",
+          "title": "Step-by-step architectural walk-through"
+        },
+        {
+          "level": "h2",
+          "title": "Phase 1: Initiation"
+        },
+        {
+          "level": "h2",
+          "title": "Phase 2: The planning stage"
+        },
+        {
+          "level": "h2",
+          "title": "Phase 3: The execution loop"
+        },
+        {
+          "level": "h2",
+          "title": "Phase 4: Finalization"
+        },
+        {
+          "level": "h1",
+          "title": "Refactoring for scalability in the real world"
+        },
+        {
+          "level": "h2",
+          "title": "Creating the centralized setup functions"
+        },
+        {
+          "level": "h2",
+          "title": "Simplifying the main notebook"
+        },
+        {
+          "level": "h2",
+          "title": "Hardening the helper functions"
+        },
+        {
+          "level": "h3",
+          "title": "Enhancing modularity with dependency injection"
+        },
+        {
+          "level": "h3",
+          "title": "Improving transparency through production-level logging"
+        },
+        {
+          "level": "h3",
+          "title": "Increasing efficiency with proactive context management"
+        },
+        {
+          "level": "h3",
+          "title": "Upgraded helper functions in action"
+        },
+        {
+          "level": "h2",
+          "title": "Refactoring the agents for production"
+        },
+        {
+          "level": "h3",
+          "title": "Context Librarian agent"
+        },
+        {
+          "level": "h4",
+          "title": "Final hardened code"
+        },
+        {
+          "level": "h3",
+          "title": "Researcher agent"
+        },
+        {
+          "level": "h4",
+          "title": "Final hardened code"
+        },
+        {
+          "level": "h3",
+          "title": "Writer agent"
+        },
+        {
+          "level": "h4",
+          "title": "Final hardened code"
+        },
+        {
+          "level": "h2",
+          "title": "Refactoring the Agent Registry"
+        },
+        {
+          "level": "h3",
+          "title": "Final hardened code"
+        },
+        {
+          "level": "h2",
+          "title": "Upgrading the central orchestrator"
+        },
+        {
+          "level": "h3",
+          "title": "Final hardened code"
+        },
+        {
+          "level": "h2",
+          "title": "Running the hardened engine"
+        },
+        {
+          "level": "h3",
+          "title": "Visualizing the trace"
+        },
+        {
+          "level": "h3",
+          "title": "Standard workflow execution"
+        },
+        {
+          "level": "h3",
+          "title": "Complex workflow execution"
+        },
+        {
+          "level": "h2",
+          "title": "Deconstructing the engine's thought process"
+        },
+        {
+          "level": "h3",
+          "title": "Initiation and planning"
+        },
+        {
+          "level": "h3",
+          "title": "Execution step 1 – The Librarian"
+        },
+        {
+          "level": "h3",
+          "title": "Execution step 2 – The Researcher"
+        },
+        {
+          "level": "h3",
+          "title": "Execution step 3 – The Writer"
+        },
+        {
+          "level": "h2",
+          "title": "Finalization"
+        },
+        {
+          "level": "h1",
+          "title": "Modularizing the engine"
+        },
+        {
+          "level": "h2",
+          "title": "Local imports"
+        },
+        {
+          "level": "h2",
+          "title": "Module independence"
+        },
+        {
+          "level": "h3",
+          "title": "Issue 1: Missing agents"
+        },
+        {
+          "level": "h3",
+          "title": "Issue 2: Mismatch of data structures"
+        },
+        {
+          "level": "h2",
+          "title": "The final pre-production notebook"
+        },
+        {
+          "level": "h3",
+          "title": "Centralized execution function (the engine room)"
+        },
+        {
+          "level": "h3",
+          "title": "User interactions (the control deck)"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_5_1.png",
+          "caption": "Figure 5.1: The upgraded Context Engine flowchart",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_5_2.png",
+          "caption": "Image 2",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_5_3.png",
+          "caption": "Image 3",
+          "alt": "Image 3"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "EPUB/Chapter_6.xhtml",
+      "title": "Building the Summarizer Agent for Context Reduction",
+      "charCount": 68215,
+      "wordCount": 8349,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "6"
+        },
+        {
+          "level": "h1",
+          "title": "Building the Summarizer Agent for Context Reduction"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting the glass-box system"
+        },
+        {
+          "level": "h2",
+          "title": "Step-by-step architectural walkthrough"
+        },
+        {
+          "level": "h2",
+          "title": "Separation of responsibilities"
+        },
+        {
+          "level": "h2",
+          "title": "Why the glass box matters"
+        },
+        {
+          "level": "h1",
+          "title": "Implementing context reduction with the Summarizer agent"
+        },
+        {
+          "level": "h2",
+          "title": "Foundation for cost management"
+        },
+        {
+          "level": "h2",
+          "title": "Building the Summarizer agent"
+        },
+        {
+          "level": "h3",
+          "title": "Micro-context engineering"
+        },
+        {
+          "level": "h2",
+          "title": "Integrating the new agent into the engine's toolkit"
+        },
+        {
+          "level": "h2",
+          "title": "Reinforcing the Writer agent for greater flexibility"
+        },
+        {
+          "level": "h2",
+          "title": "Exploring the Summarizer in action"
+        },
+        {
+          "level": "h3",
+          "title": "Deconstructing the engine's thought process: the proof is in the trace"
+        },
+        {
+          "level": "h4",
+          "title": "Step 1: Summarizer agent takes the lead"
+        },
+        {
+          "level": "h4",
+          "title": "Step 2: Librarian secures the blueprint"
+        },
+        {
+          "level": "h4",
+          "title": "Step 3: Writer synthesizes the final output"
+        },
+        {
+          "level": "h4",
+          "title": "Final output: Synthesis of style and summarized fact"
+        },
+        {
+          "level": "h1",
+          "title": "Translating technical efficiency into business value"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_6_1.png",
+          "caption": "Figure 6.1: From human architects to AI workers",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_6_2.png",
+          "caption": "Figure 6.2: The content reduction architecture",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_6_3.png",
+          "caption": "Figure 6.3: From brittle to agile AI systems",
+          "alt": "Image 3"
+        },
+        {
+          "file": "B36602_6_4.png",
+          "caption": "Figure 6.4: The importance of context engineering skills",
+          "alt": "Image 4"
+        },
+        {
+          "file": "B36602_6_5.png",
+          "caption": "Figure 6.5: The dynamic discovery loop between the Planner and AgentRegistry",
+          "alt": "Image 5"
+        },
+        {
+          "file": "B36602_6_6.png",
+          "caption": "Figure 6.6: One of the roles of a new era AI engineer is to prove the business value of an AI project",
+          "alt": "Image 6"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "EPUB/Chapter_7.xhtml",
+      "title": "High-Fidelity RAG and Defense: The NASA-Inspired Research Assistant",
+      "charCount": 82690,
+      "wordCount": 9686,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "7"
+        },
+        {
+          "level": "h1",
+          "title": "High-Fidelity RAG and Defense: The NASA-Inspired Research Assistant"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting a trustworthy research assistant"
+        },
+        {
+          "level": "h2",
+          "title": "Step-by-step architectural walkthrough"
+        },
+        {
+          "level": "h2",
+          "title": "Separation of responsibilities"
+        },
+        {
+          "level": "h1",
+          "title": "Implementing high-fidelity RAG and agent defenses"
+        },
+        {
+          "level": "h2",
+          "title": "Part 1: Upgrading the ingestion pipeline"
+        },
+        {
+          "level": "h3",
+          "title": "Preparing source documents"
+        },
+        {
+          "level": "h3",
+          "title": "Updating the data loading and processing logic"
+        },
+        {
+          "level": "h3",
+          "title": "Verification"
+        },
+        {
+          "level": "h2",
+          "title": "Part 2: Upgrading the context engine's capabilities"
+        },
+        {
+          "level": "h3",
+          "title": "Implementing the helper_sanitize_input function"
+        },
+        {
+          "level": "h3",
+          "title": "High-fidelity Researcher agent"
+        },
+        {
+          "level": "h2",
+          "title": "Part 3: The final application: the NASA research assistant"
+        },
+        {
+          "level": "h3",
+          "title": "The control deck"
+        },
+        {
+          "level": "h3",
+          "title": "Deconstructing the high-fidelity trace and output"
+        },
+        {
+          "level": "h1",
+          "title": "Validation and retro compatibility of the context engine"
+        },
+        {
+          "level": "h2",
+          "title": "Complete inventory of the context engine"
+        },
+        {
+          "level": "h3",
+          "title": "Main application notebook functions"
+        },
+        {
+          "level": "h3",
+          "title": "Helper functions (helpers.py)"
+        },
+        {
+          "level": "h3",
+          "title": "Specialist agents (agents.py)"
+        },
+        {
+          "level": "h3",
+          "title": "AgentRegistry (registry.py)"
+        },
+        {
+          "level": "h3",
+          "title": "Engine core (engine.py)"
+        },
+        {
+          "level": "h2",
+          "title": "How the context engine thinks"
+        },
+        {
+          "level": "h3",
+          "title": "The architecture as a whole"
+        },
+        {
+          "level": "h3",
+          "title": "Seeing the system in motion"
+        },
+        {
+          "level": "h4",
+          "title": "How the engine plans: the dialogue of contexts"
+        },
+        {
+          "level": "h2",
+          "title": "Validating the mind of the machine"
+        },
+        {
+          "level": "h3",
+          "title": "Chapter 7 test case: High-fidelity, secure research workflow"
+        },
+        {
+          "level": "h3",
+          "title": "Chapter 6 test case: Validating the system through backward compatibility"
+        },
+        {
+          "level": "h3",
+          "title": "Chapter 5 test case: Grounded reasoning and preventing hallucination"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_7_1.png",
+          "caption": "Figure 7.1: High-fidelity RAG and defense architecture",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_7_2.png",
+          "caption": "Figure 7.2: Mapping the context engine",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_7_3.png",
+          "caption": "Figure 7.3: Visualizing the components and specific functions used by the NASA research assistant",
+          "alt": "Image 3"
+        },
+        {
+          "file": "B36602_7_4.png",
+          "caption": "Figure 7.4: Visualizing the activated functions for the Chapter 6 workflow running on the Chapter 7 engine",
+          "alt": "Image 4"
+        },
+        {
+          "file": "B36602_7_5.png",
+          "caption": "Figure 7.5: Backward compatibility test",
+          "alt": "Image 5"
+        },
+        {
+          "file": "B36602_7_6.png",
+          "caption": "Image 6",
+          "alt": "Image 6"
+        },
+        {
+          "file": "B36602_7_7.png",
+          "caption": "Image 7",
+          "alt": "Image 7"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "EPUB/Chapter_8.xhtml",
+      "title": "Architecting for Reality: Moderation, Latency, and Policy-Driven AI",
+      "charCount": 78517,
+      "wordCount": 10038,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "8"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting for Reality: Moderation, Latency, and Policy-Driven AI"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting the enterprise-ready Context Engine"
+        },
+        {
+          "level": "h2",
+          "title": "Step-by-step architectural walkthrough"
+        },
+        {
+          "level": "h1",
+          "title": "The deliberate pace of a reasoning engine"
+        },
+        {
+          "level": "h1",
+          "title": "Implementing moderation"
+        },
+        {
+          "level": "h2",
+          "title": "Building the moderation gatekeeper"
+        },
+        {
+          "level": "h2",
+          "title": "Integrating the moderation gatekeeper"
+        },
+        {
+          "level": "h2",
+          "title": "Moderation guardrail in action"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting a policy-driven meta-controller"
+        },
+        {
+          "level": "h2",
+          "title": "Principle 1: AI systems must continuously adapt to reality"
+        },
+        {
+          "level": "h2",
+          "title": "Principle 2: Limits of automated contextual judgment"
+        },
+        {
+          "level": "h2",
+          "title": "Principle 3: New engineer's mindset"
+        },
+        {
+          "level": "h2",
+          "title": "Principle 4: Policy as the ultimate context"
+        },
+        {
+          "level": "h2",
+          "title": "Principle 5: Architectural solution"
+        },
+        {
+          "level": "h1",
+          "title": "Multi-domain, generic control decks"
+        },
+        {
+          "level": "h2",
+          "title": "Template 1: High-fidelity RAG"
+        },
+        {
+          "level": "h2",
+          "title": "Template 2: Context reduction"
+        },
+        {
+          "level": "h2",
+          "title": "Template 3: Grounded reasoning"
+        },
+        {
+          "level": "h1",
+          "title": "Applying the engine: the legal compliance assistant"
+        },
+        {
+          "level": "h2",
+          "title": "Building the legal knowledge base"
+        },
+        {
+          "level": "h2",
+          "title": "Legal use cases and real-world limits"
+        },
+        {
+          "level": "h3",
+          "title": "Control deck 1: High-fidelity RAG"
+        },
+        {
+          "level": "h4",
+          "title": "Limits of automation: sanitization"
+        },
+        {
+          "level": "h3",
+          "title": "Control deck 2: Context reduction"
+        },
+        {
+          "level": "h4",
+          "title": "Limits of automation: vague objective"
+        },
+        {
+          "level": "h3",
+          "title": "Control deck 3: Grounded reasoning"
+        },
+        {
+          "level": "h4",
+          "title": "Limits of automation: ambiguous request"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_8_1.png",
+          "caption": "Figure 8.1: The end-to-end process of the generic Context Engine",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_8_2.png",
+          "caption": "Figure 8.2: The production safeguards architecture—integrating the two-stage moderation protocol",
+          "alt": "Image 2"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "EPUB/Chapter_9.xhtml",
+      "title": "Architecting for Brand and Agility: The Strategic Marketing Engine",
+      "charCount": 50484,
+      "wordCount": 6121,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "9"
+        },
+        {
+          "level": "h1",
+          "title": "Architecting for Brand and Agility: The Strategic Marketing Engine"
+        },
+        {
+          "level": "h1",
+          "title": "Step-by-step architectural flow"
+        },
+        {
+          "level": "h1",
+          "title": "Designing the marketing knowledge base"
+        },
+        {
+          "level": "h4",
+          "title": "Document 1: brand_style_guide.txt"
+        },
+        {
+          "level": "h4",
+          "title": "Document 2: product_spec_sheet_quantum_drive.txt"
+        },
+        {
+          "level": "h4",
+          "title": "Document 3: competitor_press_release_chrono_ssd.txt"
+        },
+        {
+          "level": "h4",
+          "title": "Document 4: social_media_brief_q1_launch.txt"
+        },
+        {
+          "level": "h4",
+          "title": "Document 5: seo_target_keywords_2025.txt"
+        },
+        {
+          "level": "h4",
+          "title": "Document 6: customer_interview_notes_maria_r.txt"
+        },
+        {
+          "level": "h4",
+          "title": "Document 7: email_nurture_sequence_outline.txt"
+        },
+        {
+          "level": "h1",
+          "title": "Running the engine"
+        },
+        {
+          "level": "h2",
+          "title": "Validating production safeguards"
+        },
+        {
+          "level": "h2",
+          "title": "Use case 1: Competitive analysis"
+        },
+        {
+          "level": "h2",
+          "title": "Use case 2: Transforming technical specs into marketing copy"
+        },
+        {
+          "level": "h2",
+          "title": "Use case 3: Synthesizing a persuasive pitch from multiple sources"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_9_1.png",
+          "caption": "Figure 9.1: The end-to-end process of the generic Context Engine",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_9_2.png",
+          "caption": "Figure 9.2: An activated workflow mindmap: visualizing the moderation and RAG workflow for the strategic marketing engine",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_9_3.png",
+          "caption": "Figure 9.3: A view of the entire system in action",
+          "alt": "Image 3"
+        },
+        {
+          "file": "B36602_9_4.png",
+          "caption": "Figure 9.4: From technical specs to marketing content",
+          "alt": "Image 4"
+        },
+        {
+          "file": "B36602_9_5.png",
+          "caption": "Figure 9.5: A view of the synthesis workflow",
+          "alt": "Image 5"
+        },
+        {
+          "file": "B36602_9_6.png",
+          "caption": "Image 6",
+          "alt": "Image 6"
+        },
+        {
+          "file": "B36602_9_7.png",
+          "caption": "Image 7",
+          "alt": "Image 7"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "EPUB/Chapter_10.xhtml",
+      "title": "The Blueprint for Production-Ready AI",
+      "charCount": 55275,
+      "wordCount": 6622,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "10"
+        },
+        {
+          "level": "h1",
+          "title": "The Blueprint for Production-Ready AI"
+        },
+        {
+          "level": "h1",
+          "title": "Productionizing the glass-box engine"
+        },
+        {
+          "level": "h2",
+          "title": "Environment configuration and secrets management"
+        },
+        {
+          "level": "h2",
+          "title": "Building the production API (orchestration layer)"
+        },
+        {
+          "level": "h2",
+          "title": "Asynchronous execution and task queues"
+        },
+        {
+          "level": "h2",
+          "title": "Centralized logging and observability"
+        },
+        {
+          "level": "h2",
+          "title": "Infrastructure and containerization"
+        },
+        {
+          "level": "h1",
+          "title": "Deploying enterprise capabilities and production guardrails"
+        },
+        {
+          "level": "h2",
+          "title": "Managing operational costs with proactive context reduction"
+        },
+        {
+          "level": "h2",
+          "title": "Ensuring trust and compliance with high-fidelity RAG"
+        },
+        {
+          "level": "h2",
+          "title": "Defending the data pipeline against poisoning and adversarial attacks"
+        },
+        {
+          "level": "h2",
+          "title": "Ensuring compliance and safety with automated guardrails"
+        },
+        {
+          "level": "h2",
+          "title": "Enforcing governance and quality with creative workflows"
+        },
+        {
+          "level": "h1",
+          "title": "Presenting the business value"
+        },
+        {
+          "level": "h2",
+          "title": "From cost center to value multiplier"
+        },
+        {
+          "level": "h2",
+          "title": "Stakeholder trust through verifiability and security"
+        },
+        {
+          "level": "h2",
+          "title": "Creating a strategic asset"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        },
+        {
+          "level": "h1",
+          "title": "Questions"
+        },
+        {
+          "level": "h1",
+          "title": "References"
+        },
+        {
+          "level": "h1",
+          "title": "Further reading"
+        },
+        {
+          "level": "h1",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B36602_10_1.png",
+          "caption": "Figure 10.1: The anatomy of a resilient system",
+          "alt": "Image 1"
+        },
+        {
+          "file": "B36602_10_2.png",
+          "caption": "Figure 10.2: The value multiplier flywheel of the Context Engine",
+          "alt": "Image 2"
+        },
+        {
+          "file": "B36602_10_3.png",
+          "caption": "Figure 10.3: Pillar of trust and compliance",
+          "alt": "Image 3"
+        },
+        {
+          "file": "B36602_10_4.png",
+          "caption": "Figure 10.4: Protecting the system with a moat cycle",
+          "alt": "Image 4"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\context-engineering-multi-agent\\ch10.txt"
+    }
+  ]
+}

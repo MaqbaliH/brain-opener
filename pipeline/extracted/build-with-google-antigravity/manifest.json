@@ -1,0 +1,184 @@
+{
+  "bookSlug": "build-with-google-antigravity",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Build with Google Antigravity.epub",
+  "totalChapters": 11,
+  "totalFigures": 0,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/c3S.xhtml",
+      "title": "Chapter 1: Understanding Google Antigravity",
+      "charCount": 16364,
+      "wordCount": 2183,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1: Understanding Google Antigravity"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/c63.xhtml",
+      "title": "Chapter 2: Installation and Setup",
+      "charCount": 19438,
+      "wordCount": 2684,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2: Installation and Setup"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/c8Y.xhtml",
+      "title": "Chapter 3: Mastering the Interface",
+      "charCount": 18054,
+      "wordCount": 2340,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 3: Mastering the Interface"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/cB9.xhtml",
+      "title": "Chapter 4: Your First Project",
+      "charCount": 15238,
+      "wordCount": 2144,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 4: Your First Project"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/cDK.xhtml",
+      "title": "Chapter 5: Building Real Web Applications",
+      "charCount": 16276,
+      "wordCount": 2175,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 5: Building Real Web Applications"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/cFU.xhtml",
+      "title": "Chapter 6: Connecting to Supabase",
+      "charCount": 16533,
+      "wordCount": 2276,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 6: Connecting to Supabase"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OEBPS/cJ2.xhtml",
+      "title": "Chapter 7: Working with Firebase",
+      "charCount": 14553,
+      "wordCount": 1910,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 7: Working with Firebase"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OEBPS/cM6.xhtml",
+      "title": "Chapter 8: GitHub Integration and Version Control",
+      "charCount": 14535,
+      "wordCount": 2034,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 8: GitHub Integration and Version Control"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "OEBPS/cPC.xhtml",
+      "title": "Chapter 9: Deploying Your Apps",
+      "charCount": 15127,
+      "wordCount": 1997,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 9: Deploying Your Apps"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "OEBPS/cSR.xhtml",
+      "title": "Chapter 10: Project Ideas for Entrepreneurs",
+      "charCount": 12361,
+      "wordCount": 1615,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 10: Project Ideas for Entrepreneurs"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch10.txt"
+    },
+    {
+      "chapterNumber": 11,
+      "chapterId": "ch11",
+      "sourceFile": "OEBPS/cUJ.xhtml",
+      "title": "Chapter 11: Marketing Your Apps",
+      "charCount": 13696,
+      "wordCount": 1821,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 11: Marketing Your Apps"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\build-with-google-antigravity\\ch11.txt"
+    }
+  ]
+}

@@ -1,0 +1,1956 @@
+{
+  "bookSlug": "design-multi-agent-mcp-a2a",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Design Multi-Agent AI Systems Using MCP and A2A.pdf",
+  "totalChapters": 12,
+  "totalFigures": 12,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_34_55.pdf",
+      "title": "Introduction to Generative AI and AI Agents",
+      "startPage": 34,
+      "endPage": 55,
+      "charCount": 42485,
+      "wordCount": 6244,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Introduction to Generative AI and AI Agents"
+        },
+        {
+          "level": "h3",
+          "title": "Free benefits with your book"
+        },
+        {
+          "level": "h2",
+          "title": "The evolution of generative AI"
+        },
+        {
+          "level": "h3",
+          "title": "The early days of symbolic AI"
+        },
+        {
+          "level": "h3",
+          "title": "The expert systems era"
+        },
+        {
+          "level": "h3",
+          "title": "The rise of machine learning and statistical methods"
+        },
+        {
+          "level": "h3",
+          "title": "Deep learning and the neural network renaissance"
+        },
+        {
+          "level": "h3",
+          "title": "The emergence of generative models, transformers, and language models"
+        },
+        {
+          "level": "h3",
+          "title": "The rise of AI agents"
+        },
+        {
+          "level": "h2",
+          "title": "Introducing AI agents"
+        },
+        {
+          "level": "h3",
+          "title": "AI agent characteristics"
+        },
+        {
+          "level": "h3",
+          "title": "Key differences: chatbots versus agents"
+        },
+        {
+          "level": "h3",
+          "title": "Use cases for agentic AI"
+        },
+        {
+          "level": "h2",
+          "title": "Introducing the components of agentic AI systems"
+        },
+        {
+          "level": "h3",
+          "title": "Common components of agentic AI systems"
+        },
+        {
+          "level": "h3",
+          "title": "Types of agentic AI architectures"
+        },
+        {
+          "level": "h4",
+          "title": "Single-agent loop"
+        },
+        {
+          "level": "h3",
+          "title": "Planner and executors"
+        },
+        {
+          "level": "h4",
+          "title": "Multi-agent system"
+        },
+        {
+          "level": "h4",
+          "title": "Graph-based architecture"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: Introduction to Generative AI and AI Agents (Page 34)",
+          "alt": "Chapter 1 opening page (Introduction to Generative AI and AI Agents)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_56_89.pdf",
+      "title": "Understanding How AI Agents Work",
+      "startPage": 56,
+      "endPage": 89,
+      "charCount": 55136,
+      "wordCount": 8239,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Understanding How AI Agents Work"
+        },
+        {
+          "level": "h2",
+          "title": "Understanding the agent loop: sense, think, act"
+        },
+        {
+          "level": "h3",
+          "title": "The session workflow"
+        },
+        {
+          "level": "h3",
+          "title": "The agent loop phases"
+        },
+        {
+          "level": "h3",
+          "title": "Workings of an agent loop in AutoGen"
+        },
+        {
+          "level": "h4",
+          "title": "The core implementation of AutoGen"
+        },
+        {
+          "level": "h2",
+          "title": "Managing long conversations with memory, goals, and state"
+        },
+        {
+          "level": "h3",
+          "title": "The context window"
+        },
+        {
+          "level": "h4",
+          "title": "Why do LLMs have no memory?"
+        },
+        {
+          "level": "h3",
+          "title": "Memory in AutoGen"
+        },
+        {
+          "level": "h2",
+          "title": "Planning and reasoning mechanisms"
+        },
+        {
+          "level": "h3",
+          "title": "Working with reasoning models"
+        },
+        {
+          "level": "h3",
+          "title": "Single-agent planning and reasoning"
+        },
+        {
+          "level": "h3",
+          "title": "Multi-agent planning and reasoning"
+        },
+        {
+          "level": "h2",
+          "title": "Tool use and environment interactions"
+        },
+        {
+          "level": "h3",
+          "title": "How are user-defined tools implemented?"
+        },
+        {
+          "level": "h3",
+          "title": "How are tools declared?"
+        },
+        {
+          "level": "h4",
+          "title": "How does the LLM decide which tool to use?"
+        },
+        {
+          "level": "h3",
+          "title": "Tool use in AutoGen"
+        },
+        {
+          "level": "h2",
+          "title": "Agent evaluation and feedback loops"
+        },
+        {
+          "level": "h3",
+          "title": "Human feedback"
+        },
+        {
+          "level": "h3",
+          "title": "Automated evaluation"
+        },
+        {
+          "level": "h3",
+          "title": "Industry benchmarks"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Understanding How AI Agents Work (Page 56)",
+          "alt": "Chapter 2 opening page (Understanding How AI Agents Work)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_90_115.pdf",
+      "title": "A Hands-On Walk-Through of a Simple AI Agent",
+      "startPage": 90,
+      "endPage": 115,
+      "charCount": 37854,
+      "wordCount": 5653,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "A Hands-On Walk-Through of a Simple AI Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "Introducing the k8s-ai agent"
+        },
+        {
+          "level": "h3",
+          "title": "Setting up a local kind cluster"
+        },
+        {
+          "level": "h3",
+          "title": "Running the k8s-ai agent"
+        },
+        {
+          "level": "h3",
+          "title": "Checking the cluster with k8s-ai"
+        },
+        {
+          "level": "h2",
+          "title": "Understanding the k8s-ai agentic system"
+        },
+        {
+          "level": "h3",
+          "title": "Code walk-through of the k8s-ai agent"
+        },
+        {
+          "level": "h3",
+          "title": "Defining and registering tools with OpenAI"
+        },
+        {
+          "level": "h3",
+          "title": "Implementing the tool-calling execution loop"
+        },
+        {
+          "level": "h3",
+          "title": "Running and interacting with the Kubernetes chat agent"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: A Hands-On Walk-Through of a Simple AI Agent (Page 90)",
+          "alt": "Chapter 3 opening page (A Hands-On Walk-Through of a Simple AI Agent)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_116_155.pdf",
+      "title": "Building a Tool-Based Agentic AI Framework",
+      "startPage": 116,
+      "endPage": 155,
+      "charCount": 71012,
+      "wordCount": 10040,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Building a Tool-Based Agentic AI Framework"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "AI-6 framework backend architecture and components"
+        },
+        {
+          "level": "h3",
+          "title": "Core engine"
+        },
+        {
+          "level": "h4",
+          "title": "Initialization"
+        },
+        {
+          "level": "h4",
+          "title": "Running the engine"
+        },
+        {
+          "level": "h4",
+          "title": "Executing the agentic loop"
+        },
+        {
+          "level": "h3",
+          "title": "The LLM provider abstraction"
+        },
+        {
+          "level": "h4",
+          "title": "The LLMProvider interface"
+        },
+        {
+          "level": "h4",
+          "title": "The supported providers"
+        },
+        {
+          "level": "h4",
+          "title": "The OpenAI provider"
+        },
+        {
+          "level": "h4",
+          "title": "The Ollama provider"
+        },
+        {
+          "level": "h2",
+          "title": "Tool system architecture"
+        },
+        {
+          "level": "h3",
+          "title": "Custom tool support"
+        },
+        {
+          "level": "h4",
+          "title": "What about built-in tools?"
+        },
+        {
+          "level": "h3",
+          "title": "Tool security and permissions"
+        },
+        {
+          "level": "h2",
+          "title": "Memory management"
+        },
+        {
+          "level": "h3",
+          "title": "What is a session?"
+        },
+        {
+          "level": "h3",
+          "title": "Short-term memory in the agentic loop"
+        },
+        {
+          "level": "h3",
+          "title": "Sessions and conversations"
+        },
+        {
+          "level": "h3",
+          "title": "Long-term memory and session loading"
+        },
+        {
+          "level": "h3",
+          "title": "Handling long contexts"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Building a Tool-Based Agentic AI Framework (Page 116)",
+          "alt": "Chapter 4 opening page (Building a Tool-Based Agentic AI Framework)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "pages_156_197.pdf",
+      "title": "Implementing Custom Tools",
+      "startPage": 156,
+      "endPage": 197,
+      "charCount": 67421,
+      "wordCount": 9389,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Implementing Custom Tools"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "Defining provider-agnostic tools"
+        },
+        {
+          "level": "h3",
+          "title": "OpenAI Python tool specification"
+        },
+        {
+          "level": "h3",
+          "title": "Ollama Python tool specification"
+        },
+        {
+          "level": "h3",
+          "title": "Defining the AI-6 tool specification schema"
+        },
+        {
+          "level": "h2",
+          "title": "Defining AI-6 custom tools"
+        },
+        {
+          "level": "h3",
+          "title": "General command-line tools"
+        },
+        {
+          "level": "h3",
+          "title": "Filesystem tools"
+        },
+        {
+          "level": "h3",
+          "title": "Implementing the echo tool"
+        },
+        {
+          "level": "h3",
+          "title": "Test runner tool"
+        },
+        {
+          "level": "h3",
+          "title": "Bootstrap tool"
+        },
+        {
+          "level": "h3",
+          "title": "Memory tools"
+        },
+        {
+          "level": "h3",
+          "title": "Listing sessions"
+        },
+        {
+          "level": "h3",
+          "title": "Loading sessions"
+        },
+        {
+          "level": "h3",
+          "title": "Getting the current session ID"
+        },
+        {
+          "level": "h3",
+          "title": "Deleting sessions"
+        },
+        {
+          "level": "h2",
+          "title": "Implementing a new tool from scratch with AI-6"
+        },
+        {
+          "level": "h3",
+          "title": "How to interact with AI-6"
+        },
+        {
+          "level": "h3",
+          "title": "Building a new GitHub tool with AI-6"
+        },
+        {
+          "level": "h2",
+          "title": "Implementing a new tool manually"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch05_plate.png",
+          "caption": "Chapter 5 Opening Blueprint: Implementing Custom Tools (Page 156)",
+          "alt": "Chapter 5 opening page (Implementing Custom Tools)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "pages_198_243.pdf",
+      "title": "Creating Chat Interfaces Using Slack and Chainlit",
+      "startPage": 198,
+      "endPage": 243,
+      "charCount": 62098,
+      "wordCount": 9249,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Creating Chat Interfaces Using Slack and Chainlit"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "Why the UI matters in agentic AI workflows"
+        },
+        {
+          "level": "h3",
+          "title": "Agent feedback loops and visibility"
+        },
+        {
+          "level": "h3",
+          "title": "Interruptibility and human-in-the-loop design"
+        },
+        {
+          "level": "h3",
+          "title": "Diagnosing and debugging agent behaviors"
+        },
+        {
+          "level": "h3",
+          "title": "Balancing autonomy and user control"
+        },
+        {
+          "level": "h3",
+          "title": "UI as a trust-building mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "Building a Slack bot interface"
+        },
+        {
+          "level": "h3",
+          "title": "Taking the AI-6 Slack bot for a spin"
+        },
+        {
+          "level": "h3",
+          "title": "Authentication and configuration setup"
+        },
+        {
+          "level": "h3",
+          "title": "**/.env.*Slack Bot initialization"
+        },
+        {
+          "level": "h3",
+          "title": "Message handling and event processing"
+        },
+        {
+          "level": "h3",
+          "title": "Channel management and multi-user support"
+        },
+        {
+          "level": "h3",
+          "title": "Integration with the AI-6 engine"
+        },
+        {
+          "level": "h2",
+          "title": "Developing a web UI with Chainlit"
+        },
+        {
+          "level": "h3",
+          "title": "Chainlit framework overview"
+        },
+        {
+          "level": "h3",
+          "title": "Taking AI-6 Chainlit for a spin"
+        },
+        {
+          "level": "h3",
+          "title": "Configuration and engine integration"
+        },
+        {
+          "level": "h3",
+          "title": "Application life cycle and event handlers"
+        },
+        {
+          "level": "h4",
+          "title": "The on_chat_start event handler"
+        },
+        {
+          "level": "h4",
+          "title": "The on_message event handler"
+        },
+        {
+          "level": "h4",
+          "title": "The on_settings event handler"
+        },
+        {
+          "level": "h2",
+          "title": "Best practices for interactive agent interfaces"
+        },
+        {
+          "level": "h3",
+          "title": "Clarify the agent’s role and capabilities"
+        },
+        {
+          "level": "h3",
+          "title": "Safeguards – confirmations, dry-runs, and safety nets"
+        },
+        {
+          "level": "h3",
+          "title": "Design for turn-based transparency"
+        },
+        {
+          "level": "h3",
+          "title": "Prioritize tool invocation and feedback loops"
+        },
+        {
+          "level": "h3",
+          "title": "Embrace configurability and runtime control"
+        },
+        {
+          "level": "h3",
+          "title": "Logs, metrics, and distributed tracing for agentic systems"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch06_plate.png",
+          "caption": "Chapter 6 Opening Blueprint: Creating Chat Interfaces Using Slack and Chainlit (Page 198)",
+          "alt": "Chapter 6 opening page (Creating Chat Interfaces Using Slack and Chainlit)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "pages_244_285.pdf",
+      "title": "Integrating with the Model Context Protocol Ecosystem",
+      "startPage": 244,
+      "endPage": 285,
+      "charCount": 63748,
+      "wordCount": 8697,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Integrating with the Model Context Protocol Ecosystem"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "What is MCP?"
+        },
+        {
+          "level": "h3",
+          "title": "The motivation behind MCP"
+        },
+        {
+          "level": "h2",
+          "title": "MCP architecture core and core components"
+        },
+        {
+          "level": "h3",
+          "title": "MCP servers"
+        },
+        {
+          "level": "h3",
+          "title": "MCP clients"
+        },
+        {
+          "level": "h3",
+          "title": "MCP hosts"
+        },
+        {
+          "level": "h3",
+          "title": "Local versus remote MCP servers"
+        },
+        {
+          "level": "h3",
+          "title": "Benefits of using MCP"
+        },
+        {
+          "level": "h3",
+          "title": "The MCP ecosystem"
+        },
+        {
+          "level": "h2",
+          "title": "Building MCP servers"
+        },
+        {
+          "level": "h3",
+          "title": "Filesystem MCP server"
+        },
+        {
+          "level": "h3",
+          "title": "GitHub MCP server"
+        },
+        {
+          "level": "h2",
+          "title": "Building MCP clients"
+        },
+        {
+          "level": "h3",
+          "title": "The MCPClient class"
+        },
+        {
+          "level": "h3",
+          "title": "Connecting to an MCP server"
+        },
+        {
+          "level": "h3",
+          "title": "Invoking an MCP tool"
+        },
+        {
+          "level": "h2",
+          "title": "Integrating MCP into the AI-6 framework"
+        },
+        {
+          "level": "h3",
+          "title": "The universal MCPTool class"
+        },
+        {
+          "level": "h3",
+          "title": "MCP tool discovery"
+        },
+        {
+          "level": "h3",
+          "title": "The tool manager"
+        },
+        {
+          "level": "h3",
+          "title": "How the engine uses the tool manager"
+        },
+        {
+          "level": "h2",
+          "title": "Putting it all together"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch07_plate.png",
+          "caption": "Chapter 7 Opening Blueprint: Integrating with the Model Context Protocol Ecosystem (Page 244)",
+          "alt": "Chapter 7 opening page (Integrating with the Model Context Protocol Ecosystem)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "pages_286_341.pdf",
+      "title": "Designing Multi-Agent Systems",
+      "startPage": 286,
+      "endPage": 341,
+      "charCount": 85639,
+      "wordCount": 11358,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Designing Multi-Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "What is multi-agent orchestration and why does it matter?"
+        },
+        {
+          "level": "h3",
+          "title": "What is an AI agent?"
+        },
+        {
+          "level": "h3",
+          "title": "Adding explicit agents to AI-6"
+        },
+        {
+          "level": "h4",
+          "title": "Renaming Engine to Agent"
+        },
+        {
+          "level": "h4",
+          "title": "Adding a system prompt to the Agent configuration"
+        },
+        {
+          "level": "h4",
+          "title": "Adding enabled_tools and disabled_tools fields to the Agent configuration"
+        },
+        {
+          "level": "h4",
+          "title": "Adding a new AgentTool that wraps an AI-6 Agent instance"
+        },
+        {
+          "level": "h3",
+          "title": "Why do we need multi-agent systems?"
+        },
+        {
+          "level": "h4",
+          "title": "Context window limitations"
+        },
+        {
+          "level": "h4",
+          "title": "Specialization challenges"
+        },
+        {
+          "level": "h4",
+          "title": "Model selection constraints"
+        },
+        {
+          "level": "h4",
+          "title": "Cognitive load distribution"
+        },
+        {
+          "level": "h4",
+          "title": "Fault tolerance and resilience"
+        },
+        {
+          "level": "h4",
+          "title": "Testability and debugging"
+        },
+        {
+          "level": "h3",
+          "title": "How to orchestrate multiple agents"
+        },
+        {
+          "level": "h4",
+          "title": "Sequential orchestration"
+        },
+        {
+          "level": "h4",
+          "title": "Parallel orchestration"
+        },
+        {
+          "level": "h4",
+          "title": "Hierarchical orchestration"
+        },
+        {
+          "level": "h4",
+          "title": "Event-driven orchestration"
+        },
+        {
+          "level": "h4",
+          "title": "Collaborative orchestration"
+        },
+        {
+          "level": "h4",
+          "title": "Hybrid orchestration"
+        },
+        {
+          "level": "h3",
+          "title": "Design considerations"
+        },
+        {
+          "level": "h2",
+          "title": "Introduction to the A2A protocol"
+        },
+        {
+          "level": "h3",
+          "title": "Core components of the A2A protocol"
+        },
+        {
+          "level": "h4",
+          "title": "A2A communication mechanisms"
+        },
+        {
+          "level": "h4",
+          "title": "Adding A2A support to AI-6"
+        },
+        {
+          "level": "h4",
+          "title": "Integrating A2A client capabilities into AI-6"
+        },
+        {
+          "level": "h4",
+          "title": "The A2ATool class"
+        },
+        {
+          "level": "h4",
+          "title": "Configuration and setup"
+        },
+        {
+          "level": "h4",
+          "title": "A2A tool discovery flow"
+        },
+        {
+          "level": "h2",
+          "title": "Designing collaborative agent workflows"
+        },
+        {
+          "level": "h3",
+          "title": "Agent decomposition strategies"
+        },
+        {
+          "level": "h4",
+          "title": "Decomposition by domain expertise"
+        },
+        {
+          "level": "h4",
+          "title": "Decomposition by workflow stage"
+        },
+        {
+          "level": "h4",
+          "title": "Decomposition by capability pattern"
+        },
+        {
+          "level": "h4",
+          "title": "Decomposition decision framework"
+        },
+        {
+          "level": "h3",
+          "title": "System prompt design patterns"
+        },
+        {
+          "level": "h4",
+          "title": "The specialist agent template"
+        },
+        {
+          "level": "h4",
+          "title": "The coordinator agent template"
+        },
+        {
+          "level": "h4",
+          "title": "The validator agent template"
+        },
+        {
+          "level": "h4",
+          "title": "Domain-specific prompt examples"
+        },
+        {
+          "level": "h3",
+          "title": "Tool assignment decision framework"
+        },
+        {
+          "level": "h3",
+          "title": "Context engineering for multi-agent systems"
+        },
+        {
+          "level": "h4",
+          "title": "Types of context in multi-agent systems"
+        },
+        {
+          "level": "h4",
+          "title": "Context management strategies"
+        },
+        {
+          "level": "h4",
+          "title": "Context window management"
+        },
+        {
+          "level": "h4",
+          "title": "Inter-agent context sharing"
+        },
+        {
+          "level": "h3",
+          "title": "Taking AI-6 and A2A for a ride"
+        },
+        {
+          "level": "h4",
+          "title": "Multi-agent patterns in action"
+        },
+        {
+          "level": "h2",
+          "title": "Conflict resolution and role assignment in multi-agent systems"
+        },
+        {
+          "level": "h3",
+          "title": "Best practices for conflict prevention"
+        },
+        {
+          "level": "h4",
+          "title": "Design-time conflict analysis"
+        },
+        {
+          "level": "h4",
+          "title": "Runtime conflict detection"
+        },
+        {
+          "level": "h4",
+          "title": "Clear escalation paths"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch08_plate.png",
+          "caption": "Chapter 8 Opening Blueprint: Designing Multi-Agent Systems (Page 286)",
+          "alt": "Chapter 8 opening page (Designing Multi-Agent Systems)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch08.txt"
+    },
+    {
+      "chapterNumber": 9,
+      "chapterId": "ch09",
+      "sourceFile": "pages_342_399.pdf",
+      "title": "Implementing Multi-Agent Systems with A2A",
+      "startPage": 342,
+      "endPage": 399,
+      "charCount": 86102,
+      "wordCount": 11439,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Implementing Multi-Agent Systems with A2A"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "Building an AI-driven DevOps team"
+        },
+        {
+          "level": "h3",
+          "title": "What makes DevOps suitable for multi-agent AI?"
+        },
+        {
+          "level": "h3",
+          "title": "MAKDO – a multi-agent Kubernetes DevOps system"
+        },
+        {
+          "level": "h4",
+          "title": "System architecture"
+        },
+        {
+          "level": "h4",
+          "title": "The coordinator agent – orchestrating operations"
+        },
+        {
+          "level": "h3",
+          "title": "Agent interaction patterns"
+        },
+        {
+          "level": "h4",
+          "title": "LLM-driven agent coordination"
+        },
+        {
+          "level": "h4",
+          "title": "Extending AI-6 with new tools"
+        },
+        {
+          "level": "h4",
+          "title": "Tool discovery and assignment"
+        },
+        {
+          "level": "h4",
+          "title": "Context sharing and state management"
+        },
+        {
+          "level": "h2",
+          "title": "Defining roles and responsibilities for specialized agents"
+        },
+        {
+          "level": "h3",
+          "title": "From DevOps workflows to agent architecture"
+        },
+        {
+          "level": "h4",
+          "title": "Why four agents instead of one?"
+        },
+        {
+          "level": "h4",
+          "title": "Why separate the analyzer and fixer?"
+        },
+        {
+          "level": "h4",
+          "title": "Why separate Slack_Bot?"
+        },
+        {
+          "level": "h4",
+          "title": "Tool access boundaries"
+        },
+        {
+          "level": "h3",
+          "title": "Extending the architecture"
+        },
+        {
+          "level": "h4",
+          "title": "Key design patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Implementing the agents"
+        },
+        {
+          "level": "h3",
+          "title": "Configuration-driven agent implementation"
+        },
+        {
+          "level": "h4",
+          "title": "Tool discovery and assignment"
+        },
+        {
+          "level": "h4",
+          "title": "Session isolation"
+        },
+        {
+          "level": "h4",
+          "title": "Configuration over code"
+        },
+        {
+          "level": "h4",
+          "title": "Key takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Orchestrating the team with a manager agent"
+        },
+        {
+          "level": "h3",
+          "title": "Dynamic workflow execution"
+        },
+        {
+          "level": "h4",
+          "title": "Decision points and branching"
+        },
+        {
+          "level": "h4",
+          "title": "Example 1: safe versus destructive operations"
+        },
+        {
+          "level": "h4",
+          "title": "Example 2: auto-remediation versus escalation"
+        },
+        {
+          "level": "h3",
+          "title": "Handling complex multi-step operations"
+        },
+        {
+          "level": "h4",
+          "title": "Multi-cluster coordination"
+        },
+        {
+          "level": "h4",
+          "title": "Conditional remediation"
+        },
+        {
+          "level": "h4",
+          "title": "Retry and verification loops"
+        },
+        {
+          "level": "h3",
+          "title": "Error handling and recovery"
+        },
+        {
+          "level": "h4",
+          "title": "Agent communication failures"
+        },
+        {
+          "level": "h4",
+          "title": "Partial failures"
+        },
+        {
+          "level": "h4",
+          "title": "Cascading failures"
+        },
+        {
+          "level": "h3",
+          "title": "State management and coordination"
+        },
+        {
+          "level": "h4",
+          "title": "Memory tools for long-term state"
+        },
+        {
+          "level": "h4",
+          "title": "Avoiding duplicate operations"
+        },
+        {
+          "level": "h3",
+          "title": "Proactive versus reactive orchestration"
+        },
+        {
+          "level": "h4",
+          "title": "Reactive mode – user-initiated operations"
+        },
+        {
+          "level": "h4",
+          "title": "Proactive mode – autonomous monitoring"
+        },
+        {
+          "level": "h4",
+          "title": "Hybrid approach – event-driven coordination"
+        },
+        {
+          "level": "h2",
+          "title": "Integrating human feedback and control channels"
+        },
+        {
+          "level": "h3",
+          "title": "The human-AI interface challenge"
+        },
+        {
+          "level": "h3",
+          "title": "The Slack_Bot agent architecture"
+        },
+        {
+          "level": "h3",
+          "title": "Building a custom MCP server with FastMCP"
+        },
+        {
+          "level": "h4",
+          "title": "The FastMCP Slack server"
+        },
+        {
+          "level": "h3",
+          "title": "Communication patterns"
+        },
+        {
+          "level": "h4",
+          "title": "Notification hierarchy"
+        },
+        {
+          "level": "h4",
+          "title": "Message formatting"
+        },
+        {
+          "level": "h4",
+          "title": "Contextual messaging"
+        },
+        {
+          "level": "h3",
+          "title": "Escalation pattern for restricted operations"
+        },
+        {
+          "level": "h3",
+          "title": "Alternative communication channels"
+        },
+        {
+          "level": "h3",
+          "title": "Security and access control"
+        },
+        {
+          "level": "h3",
+          "title": "Observability and audit trail"
+        },
+        {
+          "level": "h2",
+          "title": "MAKDO in action – a complete demo walk-through"
+        },
+        {
+          "level": "h3",
+          "title": "Demo setup"
+        },
+        {
+          "level": "h3",
+          "title": "Creating cluster problems"
+        },
+        {
+          "level": "h4",
+          "title": "Step 1 – demo start notification"
+        },
+        {
+          "level": "h4",
+          "title": "Step 2 – analysis phase"
+        },
+        {
+          "level": "h4",
+          "title": "Step 3 – remediation phase"
+        },
+        {
+          "level": "h4",
+          "title": "Step 4 – demo complete"
+        },
+        {
+          "level": "h3",
+          "title": "Key observations"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch09_plate.png",
+          "caption": "Chapter 9 Opening Blueprint: Implementing Multi-Agent Systems with A2A (Page 342)",
+          "alt": "Chapter 9 opening page (Implementing Multi-Agent Systems with A2A)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch09.txt"
+    },
+    {
+      "chapterNumber": 10,
+      "chapterId": "ch10",
+      "sourceFile": "pages_400_443.pdf",
+      "title": "Testing, Debugging, and Troubleshooting Multi-Agent Systems",
+      "startPage": 400,
+      "endPage": 443,
+      "charCount": 98855,
+      "wordCount": 14417,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Testing, Debugging, and Troubleshooting Multi-Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Common failure modes in agentic systems"
+        },
+        {
+          "level": "h3",
+          "title": "Agent hallucination"
+        },
+        {
+          "level": "h3",
+          "title": "Wrong tool use and tool misuse"
+        },
+        {
+          "level": "h3",
+          "title": "Poor instruction following"
+        },
+        {
+          "level": "h3",
+          "title": "Infinite loops and runaway agents"
+        },
+        {
+          "level": "h3",
+          "title": "Communication and coordination breakdowns"
+        },
+        {
+          "level": "h3",
+          "title": "Timeout and latency issues"
+        },
+        {
+          "level": "h3",
+          "title": "State management and consistency errors"
+        },
+        {
+          "level": "h3",
+          "title": "Security and permission failures"
+        },
+        {
+          "level": "h2",
+          "title": "Instrumentation and observability for AI agents"
+        },
+        {
+          "level": "h3",
+          "title": "Core observability primitives"
+        },
+        {
+          "level": "h4",
+          "title": "LLM call tracing"
+        },
+        {
+          "level": "h4",
+          "title": "Tool execution logs"
+        },
+        {
+          "level": "h4",
+          "title": "Agent state snapshots"
+        },
+        {
+          "level": "h4",
+          "title": "Span and trace hierarchies"
+        },
+        {
+          "level": "h4",
+          "title": "Metadata enrichment"
+        },
+        {
+          "level": "h4",
+          "title": "Structured logging and trace formats"
+        },
+        {
+          "level": "h3",
+          "title": "LLM-specific observability tools"
+        },
+        {
+          "level": "h3",
+          "title": "Metrics and KPIs for agent performance"
+        },
+        {
+          "level": "h3",
+          "title": "Real-time monitoring and alerting"
+        },
+        {
+          "level": "h3",
+          "title": "Debugging with observability data"
+        },
+        {
+          "level": "h3",
+          "title": "Privacy and security considerations"
+        },
+        {
+          "level": "h2",
+          "title": "Debugging tool use and function call chains"
+        },
+        {
+          "level": "h3",
+          "title": "Understanding the tool call life cycle"
+        },
+        {
+          "level": "h3",
+          "title": "Tracing function call chains"
+        },
+        {
+          "level": "h4",
+          "title": "Common tool use anti-patterns"
+        },
+        {
+          "level": "h4",
+          "title": "Debugging strategies for tool use"
+        },
+        {
+          "level": "h4",
+          "title": "Building tool use guardrails"
+        },
+        {
+          "level": "h2",
+          "title": "Diagnosing coordination failures in multi-agent workflows"
+        },
+        {
+          "level": "h3",
+          "title": "Understanding coordination failure patterns"
+        },
+        {
+          "level": "h4",
+          "title": "Agent interaction patterns and their failure modes"
+        },
+        {
+          "level": "h4",
+          "title": "Tracing dependencies and data flow"
+        },
+        {
+          "level": "h3",
+          "title": "Managing shared state and detecting deadlocks"
+        },
+        {
+          "level": "h4",
+          "title": "State synchronization challenges"
+        },
+        {
+          "level": "h4",
+          "title": "Detecting and resolving deadlocks"
+        },
+        {
+          "level": "h3",
+          "title": "Building coordination guardrails"
+        },
+        {
+          "level": "h2",
+          "title": "Designing for resilience and recoverability"
+        },
+        {
+          "level": "h3",
+          "title": "Redundancy and failover mechanisms"
+        },
+        {
+          "level": "h3",
+          "title": "Graceful degradation strategies"
+        },
+        {
+          "level": "h3",
+          "title": "Retry logic and circuit breakers"
+        },
+        {
+          "level": "h3",
+          "title": "Checkpointing and state recovery"
+        },
+        {
+          "level": "h3",
+          "title": "Human escalation patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch10_plate.png",
+          "caption": "Chapter 10 Opening Blueprint: Testing, Debugging, and Troubleshooting Multi-Agent Systems (Page 400)",
+          "alt": "Chapter 10 opening page (Testing, Debugging, and Troubleshooting Multi-Agent Systems)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch10.txt"
+    },
+    {
+      "chapterNumber": 11,
+      "chapterId": "ch11",
+      "sourceFile": "pages_444_499.pdf",
+      "title": "Deploying Multi-Agent Systems",
+      "startPage": 444,
+      "endPage": 499,
+      "charCount": 74583,
+      "wordCount": 9743,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Deploying Multi-Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Technical requirements"
+        },
+        {
+          "level": "h2",
+          "title": "Setting up dual KinD clusters for multi-agent deployment"
+        },
+        {
+          "level": "h3",
+          "title": "Installing KinD and prerequisites"
+        },
+        {
+          "level": "h3",
+          "title": "Creating the control cluster configuration"
+        },
+        {
+          "level": "h3",
+          "title": "Creating the worker cluster configuration"
+        },
+        {
+          "level": "h3",
+          "title": "Setting up cluster networking and port forwarding"
+        },
+        {
+          "level": "h3",
+          "title": "Verifying cross-cluster connectivity"
+        },
+        {
+          "level": "h3",
+          "title": "Deploying a test workload to the worker cluster"
+        },
+        {
+          "level": "h2",
+          "title": "Deploying MAKDO to the control cluster"
+        },
+        {
+          "level": "h3",
+          "title": "Preparing the MAKDO configuration"
+        },
+        {
+          "level": "h3",
+          "title": "Creating Kubernetes secrets for API keys"
+        },
+        {
+          "level": "h3",
+          "title": "Creating the kubeconfig ConfigMap"
+        },
+        {
+          "level": "h3",
+          "title": "Deploying MAKDO as a Kubernetes deployment"
+        },
+        {
+          "level": "h3",
+          "title": "Building and loading the MAKDO image"
+        },
+        {
+          "level": "h3",
+          "title": "Configuring MAKDO to connect to the worker cluster"
+        },
+        {
+          "level": "h3",
+          "title": "Verifying MAKDO deployment and logs"
+        },
+        {
+          "level": "h2",
+          "title": "Deploying k8s-ai to the worker cluster"
+        },
+        {
+          "level": "h3",
+          "title": "Building the k8s-ai Docker image"
+        },
+        {
+          "level": "h3",
+          "title": "Creating k8s-ai deployment manifests"
+        },
+        {
+          "level": "h3",
+          "title": "Deploying k8s-ai to the worker cluster"
+        },
+        {
+          "level": "h3",
+          "title": "Exposing the k8s-ai service for cross-cluster access"
+        },
+        {
+          "level": "h3",
+          "title": "Verifying k8s-ai deployment"
+        },
+        {
+          "level": "h4",
+          "title": "Check pod status"
+        },
+        {
+          "level": "h4",
+          "title": "Verify pod health"
+        },
+        {
+          "level": "h4",
+          "title": "Check server logs"
+        },
+        {
+          "level": "h4",
+          "title": "Test the A2A endpoint"
+        },
+        {
+          "level": "h4",
+          "title": "Verify service configuration"
+        },
+        {
+          "level": "h3",
+          "title": "Testing the k8s-ai Admin API and session management"
+        },
+        {
+          "level": "h4",
+          "title": "Exposing the Admin API port"
+        },
+        {
+          "level": "h4",
+          "title": "Creating a session"
+        },
+        {
+          "level": "h4",
+          "title": "Listing active sessions"
+        },
+        {
+          "level": "h4",
+          "title": "Deleting a session"
+        },
+        {
+          "level": "h4",
+          "title": "Using sessions with the A2A protocol"
+        },
+        {
+          "level": "h2",
+          "title": "Enabling secure communication between clusters"
+        },
+        {
+          "level": "h3",
+          "title": "Service discovery and networking"
+        },
+        {
+          "level": "h4",
+          "title": "How MAKDO discovers k8s-ai"
+        },
+        {
+          "level": "h4",
+          "title": "Tracing a request path"
+        },
+        {
+          "level": "h3",
+          "title": "Service discovery patterns"
+        },
+        {
+          "level": "h4",
+          "title": "Cross-cluster networking approaches"
+        },
+        {
+          "level": "h4",
+          "title": "Testing end-to-end connectivity"
+        },
+        {
+          "level": "h3",
+          "title": "Understanding the security architecture"
+        },
+        {
+          "level": "h3",
+          "title": "API key authentication"
+        },
+        {
+          "level": "h4",
+          "title": "k8s-ai authentication"
+        },
+        {
+          "level": "h4",
+          "title": "MAKDO configuration"
+        },
+        {
+          "level": "h3",
+          "title": "Session-based security"
+        },
+        {
+          "level": "h3",
+          "title": "RBAC and least privilege"
+        },
+        {
+          "level": "h4",
+          "title": "Inspecting RBAC configuration"
+        },
+        {
+          "level": "h4",
+          "title": "Testing permission boundaries"
+        },
+        {
+          "level": "h3",
+          "title": "Network segmentation in KinD"
+        },
+        {
+          "level": "h4",
+          "title": "Port mapping security"
+        },
+        {
+          "level": "h4",
+          "title": "Testing network isolation"
+        },
+        {
+          "level": "h3",
+          "title": "Production security enhancements"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Get This Book’s PDF Version and Exclusive Extras"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch11_plate.png",
+          "caption": "Chapter 11 Opening Blueprint: Deploying Multi-Agent Systems (Page 444)",
+          "alt": "Chapter 11 opening page (Deploying Multi-Agent Systems)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch11.txt"
+    },
+    {
+      "chapterNumber": 12,
+      "chapterId": "ch12",
+      "sourceFile": "pages_500_517.pdf",
+      "title": "Advanced Topics and Future Directions",
+      "startPage": 500,
+      "endPage": 517,
+      "charCount": 42270,
+      "wordCount": 6156,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Advanced Topics and Future Directions"
+        },
+        {
+          "level": "h2",
+          "title": "Superhuman reasoning and strategic foresight"
+        },
+        {
+          "level": "h3",
+          "title": "What is superhuman reasoning?"
+        },
+        {
+          "level": "h3",
+          "title": "Why is strategic foresight so important?"
+        },
+        {
+          "level": "h3",
+          "title": "Challenges and limitations of superhuman reasoning"
+        },
+        {
+          "level": "h3",
+          "title": "Implications for society and ethics"
+        },
+        {
+          "level": "h2",
+          "title": "Massive context windows and their implications"
+        },
+        {
+          "level": "h3",
+          "title": "The evolution of context windows"
+        },
+        {
+          "level": "h3",
+          "title": "What can you do with million-token context windows?"
+        },
+        {
+          "level": "h3",
+          "title": "Challenges and trade-offs of large context windows"
+        },
+        {
+          "level": "h3",
+          "title": "Context windows and multi-agent systems"
+        },
+        {
+          "level": "h3",
+          "title": "The future – infinite context and continuous learning"
+        },
+        {
+          "level": "h3",
+          "title": "Architectures for long-horizon planning"
+        },
+        {
+          "level": "h4",
+          "title": "The challenge of planning over time"
+        },
+        {
+          "level": "h4",
+          "title": "Hierarchical planning and abstraction"
+        },
+        {
+          "level": "h4",
+          "title": "Model-based planning and world models"
+        },
+        {
+          "level": "h2",
+          "title": "Beyond text – multi-modal models and world simulation"
+        },
+        {
+          "level": "h3",
+          "title": "Transformers for everything: vision, audio, video, and beyond"
+        },
+        {
+          "level": "h4",
+          "title": "Biological models: proteins, DNA, and molecular design"
+        },
+        {
+          "level": "h4",
+          "title": "From language models to world models and simulations"
+        },
+        {
+          "level": "h4",
+          "title": "Multi-modal multi-agent systems"
+        },
+        {
+          "level": "h3",
+          "title": "Designing for generative user experience"
+        },
+        {
+          "level": "h3",
+          "title": "The robots are coming"
+        },
+        {
+          "level": "h4",
+          "title": "The convergence of AI and robotics"
+        },
+        {
+          "level": "h4",
+          "title": "Embodied AI agents"
+        },
+        {
+          "level": "h4",
+          "title": "Humanoid robots and general-purpose physical intelligence"
+        },
+        {
+          "level": "h4",
+          "title": "Multi-agent and multi-robot coordination in physical spaces"
+        },
+        {
+          "level": "h4",
+          "title": "Challenges in real-world deployment"
+        },
+        {
+          "level": "h3",
+          "title": "The AI economy"
+        },
+        {
+          "level": "h4",
+          "title": "Cryptocurrencies and AI agents as economic actors"
+        },
+        {
+          "level": "h4",
+          "title": "Payment protocols for autonomous agents: AP2 and beyond"
+        },
+        {
+          "level": "h4",
+          "title": "Robots accelerate the AI self-improvement loop"
+        },
+        {
+          "level": "h4",
+          "title": "Conquering space – the final frontier"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Subscribe for a free eBook"
+        }
+      ],
+      "figures": [
+        {
+          "file": "design_multi_agent_mcp_a2a_ch12_plate.png",
+          "caption": "Chapter 12 Opening Blueprint: Advanced Topics and Future Directions (Page 500)",
+          "alt": "Chapter 12 opening page (Advanced Topics and Future Directions)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\design-multi-agent-mcp-a2a\\ch12.txt"
+    }
+  ]
+}

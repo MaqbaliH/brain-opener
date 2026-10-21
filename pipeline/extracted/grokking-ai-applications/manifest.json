@@ -1,0 +1,1250 @@
+{
+  "bookSlug": "grokking-ai-applications",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Grokking AI Applications.pdf",
+  "totalChapters": 8,
+  "totalFigures": 182,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_24_45.pdf",
+      "title": "Peeking inside the black box",
+      "startPage": 24,
+      "endPage": 45,
+      "charCount": 45945,
+      "wordCount": 7249,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Peeking inside the black box"
+        },
+        {
+          "level": "h2",
+          "title": "Our journey ahead"
+        },
+        {
+          "level": "h2",
+          "title": "The uniqueness of GenAI programming"
+        },
+        {
+          "level": "h2",
+          "title": "Dealing with LLMs"
+        },
+        {
+          "level": "h2",
+          "title": "Building GenAI applications that extend LLMs"
+        },
+        {
+          "level": "h2",
+          "title": "Inside the LLM"
+        },
+        {
+          "level": "h2",
+          "title": "Understanding GPT: How a real LLM works"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: Peeking inside the black box (Page 24)",
+          "alt": "Chapter 1 opening page (Peeking inside the black box)"
+        },
+        {
+          "file": "grokking_ai_applications_p026_fig1.png",
+          "caption": "Embedded figure from page 26",
+          "alt": "Book illustration on page 26"
+        },
+        {
+          "file": "grokking_ai_applications_p027_fig1.png",
+          "caption": "Embedded figure from page 27",
+          "alt": "Book illustration on page 27"
+        },
+        {
+          "file": "grokking_ai_applications_p029_fig1.png",
+          "caption": "Embedded figure from page 29",
+          "alt": "Book illustration on page 29"
+        },
+        {
+          "file": "grokking_ai_applications_p032_fig1.png",
+          "caption": "Embedded figure from page 32",
+          "alt": "Book illustration on page 32"
+        },
+        {
+          "file": "grokking_ai_applications_p033_fig1.png",
+          "caption": "Embedded figure from page 33",
+          "alt": "Book illustration on page 33"
+        },
+        {
+          "file": "grokking_ai_applications_p034_fig1.png",
+          "caption": "Embedded figure from page 34",
+          "alt": "Book illustration on page 34"
+        },
+        {
+          "file": "grokking_ai_applications_p035_fig1.png",
+          "caption": "Embedded figure from page 35",
+          "alt": "Book illustration on page 35"
+        },
+        {
+          "file": "grokking_ai_applications_p038_fig1.png",
+          "caption": "Embedded figure from page 38",
+          "alt": "Book illustration on page 38"
+        },
+        {
+          "file": "grokking_ai_applications_p041_fig1.png",
+          "caption": "Embedded figure from page 41",
+          "alt": "Book illustration on page 41"
+        },
+        {
+          "file": "grokking_ai_applications_p043_fig1.png",
+          "caption": "Embedded figure from page 43",
+          "alt": "Book illustration on page 43"
+        },
+        {
+          "file": "grokking_ai_applications_p044_fig1.png",
+          "caption": "Embedded figure from page 44",
+          "alt": "Book illustration on page 44"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_46_69.pdf",
+      "title": "Building your first GenAI app",
+      "startPage": 46,
+      "endPage": 69,
+      "charCount": 42755,
+      "wordCount": 6915,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Building your first GenAI app"
+        },
+        {
+          "level": "h2",
+          "title": "Wait a minute, low code?"
+        },
+        {
+          "level": "h2",
+          "title": "Intro to Langflow"
+        },
+        {
+          "level": "h2",
+          "title": "Hello, World! Our pirate chatbot"
+        },
+        {
+          "level": "h2",
+          "title": "What if we coded it?"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Building your first GenAI app (Page 46)",
+          "alt": "Chapter 2 opening page (Building your first GenAI app)"
+        },
+        {
+          "file": "grokking_ai_applications_p047_fig1.png",
+          "caption": "Embedded figure from page 47",
+          "alt": "Book illustration on page 47"
+        },
+        {
+          "file": "grokking_ai_applications_p048_fig1.png",
+          "caption": "Embedded figure from page 48",
+          "alt": "Book illustration on page 48"
+        },
+        {
+          "file": "grokking_ai_applications_p051_fig1.png",
+          "caption": "Embedded figure from page 51",
+          "alt": "Book illustration on page 51"
+        },
+        {
+          "file": "grokking_ai_applications_p052_fig1.png",
+          "caption": "Embedded figure from page 52",
+          "alt": "Book illustration on page 52"
+        },
+        {
+          "file": "grokking_ai_applications_p053_fig1.png",
+          "caption": "Embedded figure from page 53",
+          "alt": "Book illustration on page 53"
+        },
+        {
+          "file": "grokking_ai_applications_p053_fig2.png",
+          "caption": "Embedded figure from page 53",
+          "alt": "Book illustration on page 53"
+        },
+        {
+          "file": "grokking_ai_applications_p054_fig1.png",
+          "caption": "Embedded figure from page 54",
+          "alt": "Book illustration on page 54"
+        },
+        {
+          "file": "grokking_ai_applications_p055_fig1.png",
+          "caption": "Embedded figure from page 55",
+          "alt": "Book illustration on page 55"
+        },
+        {
+          "file": "grokking_ai_applications_p056_fig1.png",
+          "caption": "Embedded figure from page 56",
+          "alt": "Book illustration on page 56"
+        },
+        {
+          "file": "grokking_ai_applications_p058_fig1.png",
+          "caption": "Embedded figure from page 58",
+          "alt": "Book illustration on page 58"
+        },
+        {
+          "file": "grokking_ai_applications_p059_fig1.png",
+          "caption": "Embedded figure from page 59",
+          "alt": "Book illustration on page 59"
+        },
+        {
+          "file": "grokking_ai_applications_p060_fig1.png",
+          "caption": "Embedded figure from page 60",
+          "alt": "Book illustration on page 60"
+        },
+        {
+          "file": "grokking_ai_applications_p061_fig1.png",
+          "caption": "Embedded figure from page 61",
+          "alt": "Book illustration on page 61"
+        },
+        {
+          "file": "grokking_ai_applications_p062_fig1.png",
+          "caption": "Embedded figure from page 62",
+          "alt": "Book illustration on page 62"
+        },
+        {
+          "file": "grokking_ai_applications_p063_fig1.png",
+          "caption": "Embedded figure from page 63",
+          "alt": "Book illustration on page 63"
+        },
+        {
+          "file": "grokking_ai_applications_p064_fig1.png",
+          "caption": "Embedded figure from page 64",
+          "alt": "Book illustration on page 64"
+        },
+        {
+          "file": "grokking_ai_applications_p065_fig1.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "grokking_ai_applications_p068_fig1.png",
+          "caption": "Embedded figure from page 68",
+          "alt": "Book illustration on page 68"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_70_95.pdf",
+      "title": "Writing the right prompt",
+      "startPage": 70,
+      "endPage": 95,
+      "charCount": 50711,
+      "wordCount": 7995,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Writing the right prompt"
+        },
+        {
+          "level": "h2",
+          "title": "What makes a good prompt?"
+        },
+        {
+          "level": "h2",
+          "title": "Prompting enhancement techniques"
+        },
+        {
+          "level": "h2",
+          "title": "Prompt templates in Langflow"
+        },
+        {
+          "level": "h2",
+          "title": "What if we coded it?"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Writing the right prompt (Page 70)",
+          "alt": "Chapter 3 opening page (Writing the right prompt)"
+        },
+        {
+          "file": "grokking_ai_applications_p071_fig1.png",
+          "caption": "Embedded figure from page 71",
+          "alt": "Book illustration on page 71"
+        },
+        {
+          "file": "grokking_ai_applications_p072_fig1.png",
+          "caption": "Embedded figure from page 72",
+          "alt": "Book illustration on page 72"
+        },
+        {
+          "file": "grokking_ai_applications_p075_fig1.png",
+          "caption": "Embedded figure from page 75",
+          "alt": "Book illustration on page 75"
+        },
+        {
+          "file": "grokking_ai_applications_p076_fig1.png",
+          "caption": "Embedded figure from page 76",
+          "alt": "Book illustration on page 76"
+        },
+        {
+          "file": "grokking_ai_applications_p079_fig1.png",
+          "caption": "Embedded figure from page 79",
+          "alt": "Book illustration on page 79"
+        },
+        {
+          "file": "grokking_ai_applications_p082_fig1.png",
+          "caption": "Embedded figure from page 82",
+          "alt": "Book illustration on page 82"
+        },
+        {
+          "file": "grokking_ai_applications_p082_fig2.png",
+          "caption": "Embedded figure from page 82",
+          "alt": "Book illustration on page 82"
+        },
+        {
+          "file": "grokking_ai_applications_p083_fig1.png",
+          "caption": "Embedded figure from page 83",
+          "alt": "Book illustration on page 83"
+        },
+        {
+          "file": "grokking_ai_applications_p084_fig1.png",
+          "caption": "Embedded figure from page 84",
+          "alt": "Book illustration on page 84"
+        },
+        {
+          "file": "grokking_ai_applications_p085_fig1.png",
+          "caption": "Embedded figure from page 85",
+          "alt": "Book illustration on page 85"
+        },
+        {
+          "file": "grokking_ai_applications_p085_fig2.png",
+          "caption": "Embedded figure from page 85",
+          "alt": "Book illustration on page 85"
+        },
+        {
+          "file": "grokking_ai_applications_p086_fig1.png",
+          "caption": "Embedded figure from page 86",
+          "alt": "Book illustration on page 86"
+        },
+        {
+          "file": "grokking_ai_applications_p088_fig1.png",
+          "caption": "Embedded figure from page 88",
+          "alt": "Book illustration on page 88"
+        },
+        {
+          "file": "grokking_ai_applications_p088_fig2.png",
+          "caption": "Embedded figure from page 88",
+          "alt": "Book illustration on page 88"
+        },
+        {
+          "file": "grokking_ai_applications_p088_fig3.png",
+          "caption": "Embedded figure from page 88",
+          "alt": "Book illustration on page 88"
+        },
+        {
+          "file": "grokking_ai_applications_p090_fig1.png",
+          "caption": "Embedded figure from page 90",
+          "alt": "Book illustration on page 90"
+        },
+        {
+          "file": "grokking_ai_applications_p090_fig2.png",
+          "caption": "Embedded figure from page 90",
+          "alt": "Book illustration on page 90"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_96_123.pdf",
+      "title": "Augmenting LLMs with your own documents",
+      "startPage": 96,
+      "endPage": 123,
+      "charCount": 48283,
+      "wordCount": 7895,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Augmenting LLMs with your own documents"
+        },
+        {
+          "level": "h2",
+          "title": "RAG in a nutshell"
+        },
+        {
+          "level": "h2",
+          "title": "Building a RAG system in Langflow"
+        },
+        {
+          "level": "h2",
+          "title": "Taking RAG to the next level"
+        },
+        {
+          "level": "h2",
+          "title": "What if we coded it?"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Augmenting LLMs with your own documents (Page 96)",
+          "alt": "Chapter 4 opening page (Augmenting LLMs with your own documents)"
+        },
+        {
+          "file": "grokking_ai_applications_p098_fig1.png",
+          "caption": "Embedded figure from page 98",
+          "alt": "Book illustration on page 98"
+        },
+        {
+          "file": "grokking_ai_applications_p098_fig2.png",
+          "caption": "Embedded figure from page 98",
+          "alt": "Book illustration on page 98"
+        },
+        {
+          "file": "grokking_ai_applications_p100_fig1.png",
+          "caption": "Embedded figure from page 100",
+          "alt": "Book illustration on page 100"
+        },
+        {
+          "file": "grokking_ai_applications_p101_fig1.png",
+          "caption": "Embedded figure from page 101",
+          "alt": "Book illustration on page 101"
+        },
+        {
+          "file": "grokking_ai_applications_p103_fig1.png",
+          "caption": "Embedded figure from page 103",
+          "alt": "Book illustration on page 103"
+        },
+        {
+          "file": "grokking_ai_applications_p104_fig1.png",
+          "caption": "Embedded figure from page 104",
+          "alt": "Book illustration on page 104"
+        },
+        {
+          "file": "grokking_ai_applications_p106_fig1.png",
+          "caption": "Embedded figure from page 106",
+          "alt": "Book illustration on page 106"
+        },
+        {
+          "file": "grokking_ai_applications_p107_fig1.png",
+          "caption": "Embedded figure from page 107",
+          "alt": "Book illustration on page 107"
+        },
+        {
+          "file": "grokking_ai_applications_p108_fig1.png",
+          "caption": "Embedded figure from page 108",
+          "alt": "Book illustration on page 108"
+        },
+        {
+          "file": "grokking_ai_applications_p108_fig2.png",
+          "caption": "Embedded figure from page 108",
+          "alt": "Book illustration on page 108"
+        },
+        {
+          "file": "grokking_ai_applications_p109_fig1.png",
+          "caption": "Embedded figure from page 109",
+          "alt": "Book illustration on page 109"
+        },
+        {
+          "file": "grokking_ai_applications_p109_fig2.png",
+          "caption": "Embedded figure from page 109",
+          "alt": "Book illustration on page 109"
+        },
+        {
+          "file": "grokking_ai_applications_p110_fig1.png",
+          "caption": "Embedded figure from page 110",
+          "alt": "Book illustration on page 110"
+        },
+        {
+          "file": "grokking_ai_applications_p112_fig1.png",
+          "caption": "Embedded figure from page 112",
+          "alt": "Book illustration on page 112"
+        },
+        {
+          "file": "grokking_ai_applications_p113_fig1.png",
+          "caption": "Embedded figure from page 113",
+          "alt": "Book illustration on page 113"
+        },
+        {
+          "file": "grokking_ai_applications_p114_fig1.png",
+          "caption": "Embedded figure from page 114",
+          "alt": "Book illustration on page 114"
+        },
+        {
+          "file": "grokking_ai_applications_p115_fig1.png",
+          "caption": "Embedded figure from page 115",
+          "alt": "Book illustration on page 115"
+        },
+        {
+          "file": "grokking_ai_applications_p116_fig1.png",
+          "caption": "Embedded figure from page 116",
+          "alt": "Book illustration on page 116"
+        },
+        {
+          "file": "grokking_ai_applications_p117_fig1.png",
+          "caption": "Embedded figure from page 117",
+          "alt": "Book illustration on page 117"
+        },
+        {
+          "file": "grokking_ai_applications_p118_fig1.png",
+          "caption": "Embedded figure from page 118",
+          "alt": "Book illustration on page 118"
+        },
+        {
+          "file": "grokking_ai_applications_p119_fig1.png",
+          "caption": "Embedded figure from page 119",
+          "alt": "Book illustration on page 119"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "pages_124_151.pdf",
+      "title": "Expanding GenAI capabilities with tools and agents",
+      "startPage": 124,
+      "endPage": 151,
+      "charCount": 49403,
+      "wordCount": 7993,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Expanding GenAI capabilities with tools and agents"
+        },
+        {
+          "level": "h2",
+          "title": "Beyond words: When GenAI needs to act"
+        },
+        {
+          "level": "h2",
+          "title": "Agents and tools"
+        },
+        {
+          "level": "h2",
+          "title": "Building an agent in Langflow"
+        },
+        {
+          "level": "h2",
+          "title": "Building a travel agent"
+        },
+        {
+          "level": "h2",
+          "title": "Taking agents to the next level"
+        },
+        {
+          "level": "h2",
+          "title": "What if we coded it?"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch05_plate.png",
+          "caption": "Chapter 5 Opening Blueprint: Expanding GenAI capabilities with tools and agents (Page 124)",
+          "alt": "Chapter 5 opening page (Expanding GenAI capabilities with tools and agents)"
+        },
+        {
+          "file": "grokking_ai_applications_p127_fig1.png",
+          "caption": "Embedded figure from page 127",
+          "alt": "Book illustration on page 127"
+        },
+        {
+          "file": "grokking_ai_applications_p128_fig1.png",
+          "caption": "Embedded figure from page 128",
+          "alt": "Book illustration on page 128"
+        },
+        {
+          "file": "grokking_ai_applications_p130_fig1.png",
+          "caption": "Embedded figure from page 130",
+          "alt": "Book illustration on page 130"
+        },
+        {
+          "file": "grokking_ai_applications_p132_fig1.png",
+          "caption": "Embedded figure from page 132",
+          "alt": "Book illustration on page 132"
+        },
+        {
+          "file": "grokking_ai_applications_p132_fig2.png",
+          "caption": "Embedded figure from page 132",
+          "alt": "Book illustration on page 132"
+        },
+        {
+          "file": "grokking_ai_applications_p133_fig1.png",
+          "caption": "Embedded figure from page 133",
+          "alt": "Book illustration on page 133"
+        },
+        {
+          "file": "grokking_ai_applications_p134_fig1.png",
+          "caption": "Embedded figure from page 134",
+          "alt": "Book illustration on page 134"
+        },
+        {
+          "file": "grokking_ai_applications_p135_fig1.png",
+          "caption": "Embedded figure from page 135",
+          "alt": "Book illustration on page 135"
+        },
+        {
+          "file": "grokking_ai_applications_p136_fig1.png",
+          "caption": "Embedded figure from page 136",
+          "alt": "Book illustration on page 136"
+        },
+        {
+          "file": "grokking_ai_applications_p137_fig1.png",
+          "caption": "Embedded figure from page 137",
+          "alt": "Book illustration on page 137"
+        },
+        {
+          "file": "grokking_ai_applications_p138_fig1.png",
+          "caption": "Embedded figure from page 138",
+          "alt": "Book illustration on page 138"
+        },
+        {
+          "file": "grokking_ai_applications_p139_fig1.png",
+          "caption": "Embedded figure from page 139",
+          "alt": "Book illustration on page 139"
+        },
+        {
+          "file": "grokking_ai_applications_p140_fig1.png",
+          "caption": "Embedded figure from page 140",
+          "alt": "Book illustration on page 140"
+        },
+        {
+          "file": "grokking_ai_applications_p141_fig1.png",
+          "caption": "Embedded figure from page 141",
+          "alt": "Book illustration on page 141"
+        },
+        {
+          "file": "grokking_ai_applications_p141_fig2.png",
+          "caption": "Embedded figure from page 141",
+          "alt": "Book illustration on page 141"
+        },
+        {
+          "file": "grokking_ai_applications_p142_fig1.png",
+          "caption": "Embedded figure from page 142",
+          "alt": "Book illustration on page 142"
+        },
+        {
+          "file": "grokking_ai_applications_p143_fig1.png",
+          "caption": "Embedded figure from page 143",
+          "alt": "Book illustration on page 143"
+        },
+        {
+          "file": "grokking_ai_applications_p144_fig1.png",
+          "caption": "Embedded figure from page 144",
+          "alt": "Book illustration on page 144"
+        },
+        {
+          "file": "grokking_ai_applications_p145_fig1.png",
+          "caption": "Embedded figure from page 145",
+          "alt": "Book illustration on page 145"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "pages_152_195.pdf",
+      "title": "Implementing agentic structures",
+      "startPage": 152,
+      "endPage": 195,
+      "charCount": 84236,
+      "wordCount": 12974,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Implementing agentic structures"
+        },
+        {
+          "level": "h2",
+          "title": "From solo agents to agentic structures"
+        },
+        {
+          "level": "h2",
+          "title": "Types of agentic structures"
+        },
+        {
+          "level": "h2",
+          "title": "HealthyChef reimagined"
+        },
+        {
+          "level": "h2",
+          "title": "Setting up an agentic copywriting team"
+        },
+        {
+          "level": "h2",
+          "title": "What if we coded it?"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch06_plate.png",
+          "caption": "Chapter 6 Opening Blueprint: Implementing agentic structures (Page 152)",
+          "alt": "Chapter 6 opening page (Implementing agentic structures)"
+        },
+        {
+          "file": "grokking_ai_applications_p153_fig1.png",
+          "caption": "Embedded figure from page 153",
+          "alt": "Book illustration on page 153"
+        },
+        {
+          "file": "grokking_ai_applications_p155_fig1.png",
+          "caption": "Embedded figure from page 155",
+          "alt": "Book illustration on page 155"
+        },
+        {
+          "file": "grokking_ai_applications_p157_fig1.png",
+          "caption": "Embedded figure from page 157",
+          "alt": "Book illustration on page 157"
+        },
+        {
+          "file": "grokking_ai_applications_p158_fig1.png",
+          "caption": "Embedded figure from page 158",
+          "alt": "Book illustration on page 158"
+        },
+        {
+          "file": "grokking_ai_applications_p159_fig1.png",
+          "caption": "Embedded figure from page 159",
+          "alt": "Book illustration on page 159"
+        },
+        {
+          "file": "grokking_ai_applications_p160_fig1.png",
+          "caption": "Embedded figure from page 160",
+          "alt": "Book illustration on page 160"
+        },
+        {
+          "file": "grokking_ai_applications_p161_fig1.png",
+          "caption": "Embedded figure from page 161",
+          "alt": "Book illustration on page 161"
+        },
+        {
+          "file": "grokking_ai_applications_p162_fig1.png",
+          "caption": "Embedded figure from page 162",
+          "alt": "Book illustration on page 162"
+        },
+        {
+          "file": "grokking_ai_applications_p163_fig1.png",
+          "caption": "Embedded figure from page 163",
+          "alt": "Book illustration on page 163"
+        },
+        {
+          "file": "grokking_ai_applications_p165_fig1.png",
+          "caption": "Embedded figure from page 165",
+          "alt": "Book illustration on page 165"
+        },
+        {
+          "file": "grokking_ai_applications_p165_fig2.png",
+          "caption": "Embedded figure from page 165",
+          "alt": "Book illustration on page 165"
+        },
+        {
+          "file": "grokking_ai_applications_p166_fig1.png",
+          "caption": "Embedded figure from page 166",
+          "alt": "Book illustration on page 166"
+        },
+        {
+          "file": "grokking_ai_applications_p168_fig1.png",
+          "caption": "Embedded figure from page 168",
+          "alt": "Book illustration on page 168"
+        },
+        {
+          "file": "grokking_ai_applications_p168_fig2.png",
+          "caption": "Embedded figure from page 168",
+          "alt": "Book illustration on page 168"
+        },
+        {
+          "file": "grokking_ai_applications_p170_fig1.png",
+          "caption": "Embedded figure from page 170",
+          "alt": "Book illustration on page 170"
+        },
+        {
+          "file": "grokking_ai_applications_p171_fig1.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "grokking_ai_applications_p173_fig1.png",
+          "caption": "Embedded figure from page 173",
+          "alt": "Book illustration on page 173"
+        },
+        {
+          "file": "grokking_ai_applications_p175_fig1.png",
+          "caption": "Embedded figure from page 175",
+          "alt": "Book illustration on page 175"
+        },
+        {
+          "file": "grokking_ai_applications_p176_fig1.png",
+          "caption": "Embedded figure from page 176",
+          "alt": "Book illustration on page 176"
+        },
+        {
+          "file": "grokking_ai_applications_p178_fig1.png",
+          "caption": "Embedded figure from page 178",
+          "alt": "Book illustration on page 178"
+        },
+        {
+          "file": "grokking_ai_applications_p179_fig1.png",
+          "caption": "Embedded figure from page 179",
+          "alt": "Book illustration on page 179"
+        },
+        {
+          "file": "grokking_ai_applications_p180_fig1.png",
+          "caption": "Embedded figure from page 180",
+          "alt": "Book illustration on page 180"
+        },
+        {
+          "file": "grokking_ai_applications_p180_fig2.png",
+          "caption": "Embedded figure from page 180",
+          "alt": "Book illustration on page 180"
+        },
+        {
+          "file": "grokking_ai_applications_p182_fig1.png",
+          "caption": "Embedded figure from page 182",
+          "alt": "Book illustration on page 182"
+        },
+        {
+          "file": "grokking_ai_applications_p184_fig1.png",
+          "caption": "Embedded figure from page 184",
+          "alt": "Book illustration on page 184"
+        },
+        {
+          "file": "grokking_ai_applications_p185_fig1.png",
+          "caption": "Embedded figure from page 185",
+          "alt": "Book illustration on page 185"
+        },
+        {
+          "file": "grokking_ai_applications_p185_fig2.png",
+          "caption": "Embedded figure from page 185",
+          "alt": "Book illustration on page 185"
+        },
+        {
+          "file": "grokking_ai_applications_p186_fig1.png",
+          "caption": "Embedded figure from page 186",
+          "alt": "Book illustration on page 186"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "pages_196_233.pdf",
+      "title": "Integrating GenAI in your data ecosystem",
+      "startPage": 196,
+      "endPage": 233,
+      "charCount": 68396,
+      "wordCount": 11033,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Integrating GenAI in your data ecosystem"
+        },
+        {
+          "level": "h2",
+          "title": "Getting started with KNIME"
+        },
+        {
+          "level": "h2",
+          "title": "Generating personalized emails at scale"
+        },
+        {
+          "level": "h2",
+          "title": "What if we coded it?"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch07_plate.png",
+          "caption": "Chapter 7 Opening Blueprint: Integrating GenAI in your data ecosystem (Page 196)",
+          "alt": "Chapter 7 opening page (Integrating GenAI in your data ecosystem)"
+        },
+        {
+          "file": "grokking_ai_applications_p197_fig1.png",
+          "caption": "Embedded figure from page 197",
+          "alt": "Book illustration on page 197"
+        },
+        {
+          "file": "grokking_ai_applications_p198_fig1.png",
+          "caption": "Embedded figure from page 198",
+          "alt": "Book illustration on page 198"
+        },
+        {
+          "file": "grokking_ai_applications_p200_fig1.png",
+          "caption": "Embedded figure from page 200",
+          "alt": "Book illustration on page 200"
+        },
+        {
+          "file": "grokking_ai_applications_p201_fig1.png",
+          "caption": "Embedded figure from page 201",
+          "alt": "Book illustration on page 201"
+        },
+        {
+          "file": "grokking_ai_applications_p202_fig1.png",
+          "caption": "Embedded figure from page 202",
+          "alt": "Book illustration on page 202"
+        },
+        {
+          "file": "grokking_ai_applications_p203_fig1.png",
+          "caption": "Embedded figure from page 203",
+          "alt": "Book illustration on page 203"
+        },
+        {
+          "file": "grokking_ai_applications_p204_fig1.png",
+          "caption": "Embedded figure from page 204",
+          "alt": "Book illustration on page 204"
+        },
+        {
+          "file": "grokking_ai_applications_p205_fig1.png",
+          "caption": "Embedded figure from page 205",
+          "alt": "Book illustration on page 205"
+        },
+        {
+          "file": "grokking_ai_applications_p206_fig1.png",
+          "caption": "Embedded figure from page 206",
+          "alt": "Book illustration on page 206"
+        },
+        {
+          "file": "grokking_ai_applications_p207_fig1.png",
+          "caption": "Embedded figure from page 207",
+          "alt": "Book illustration on page 207"
+        },
+        {
+          "file": "grokking_ai_applications_p207_fig2.png",
+          "caption": "Embedded figure from page 207",
+          "alt": "Book illustration on page 207"
+        },
+        {
+          "file": "grokking_ai_applications_p208_fig1.png",
+          "caption": "Embedded figure from page 208",
+          "alt": "Book illustration on page 208"
+        },
+        {
+          "file": "grokking_ai_applications_p209_fig1.png",
+          "caption": "Embedded figure from page 209",
+          "alt": "Book illustration on page 209"
+        },
+        {
+          "file": "grokking_ai_applications_p210_fig1.png",
+          "caption": "Embedded figure from page 210",
+          "alt": "Book illustration on page 210"
+        },
+        {
+          "file": "grokking_ai_applications_p211_fig1.png",
+          "caption": "Embedded figure from page 211",
+          "alt": "Book illustration on page 211"
+        },
+        {
+          "file": "grokking_ai_applications_p213_fig1.png",
+          "caption": "Embedded figure from page 213",
+          "alt": "Book illustration on page 213"
+        },
+        {
+          "file": "grokking_ai_applications_p214_fig1.png",
+          "caption": "Embedded figure from page 214",
+          "alt": "Book illustration on page 214"
+        },
+        {
+          "file": "grokking_ai_applications_p215_fig1.png",
+          "caption": "Embedded figure from page 215",
+          "alt": "Book illustration on page 215"
+        },
+        {
+          "file": "grokking_ai_applications_p216_fig1.png",
+          "caption": "Embedded figure from page 216",
+          "alt": "Book illustration on page 216"
+        },
+        {
+          "file": "grokking_ai_applications_p217_fig1.png",
+          "caption": "Embedded figure from page 217",
+          "alt": "Book illustration on page 217"
+        },
+        {
+          "file": "grokking_ai_applications_p218_fig1.png",
+          "caption": "Embedded figure from page 218",
+          "alt": "Book illustration on page 218"
+        },
+        {
+          "file": "grokking_ai_applications_p219_fig1.png",
+          "caption": "Embedded figure from page 219",
+          "alt": "Book illustration on page 219"
+        },
+        {
+          "file": "grokking_ai_applications_p220_fig1.png",
+          "caption": "Embedded figure from page 220",
+          "alt": "Book illustration on page 220"
+        },
+        {
+          "file": "grokking_ai_applications_p221_fig1.png",
+          "caption": "Embedded figure from page 221",
+          "alt": "Book illustration on page 221"
+        },
+        {
+          "file": "grokking_ai_applications_p222_fig1.png",
+          "caption": "Embedded figure from page 222",
+          "alt": "Book illustration on page 222"
+        },
+        {
+          "file": "grokking_ai_applications_p223_fig1.png",
+          "caption": "Embedded figure from page 223",
+          "alt": "Book illustration on page 223"
+        },
+        {
+          "file": "grokking_ai_applications_p224_fig1.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "grokking_ai_applications_p224_fig2.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "grokking_ai_applications_p225_fig1.png",
+          "caption": "Embedded figure from page 225",
+          "alt": "Book illustration on page 225"
+        },
+        {
+          "file": "grokking_ai_applications_p226_fig1.png",
+          "caption": "Embedded figure from page 226",
+          "alt": "Book illustration on page 226"
+        },
+        {
+          "file": "grokking_ai_applications_p227_fig1.png",
+          "caption": "Embedded figure from page 227",
+          "alt": "Book illustration on page 227"
+        },
+        {
+          "file": "grokking_ai_applications_p227_fig2.png",
+          "caption": "Embedded figure from page 227",
+          "alt": "Book illustration on page 227"
+        },
+        {
+          "file": "grokking_ai_applications_p228_fig1.png",
+          "caption": "Embedded figure from page 228",
+          "alt": "Book illustration on page 228"
+        },
+        {
+          "file": "grokking_ai_applications_p229_fig1.png",
+          "caption": "Embedded figure from page 229",
+          "alt": "Book illustration on page 229"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "pages_234_265.pdf",
+      "title": "Deploying and orchestrating GenAI apps",
+      "startPage": 234,
+      "endPage": 265,
+      "charCount": 59675,
+      "wordCount": 9747,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Deploying and orchestrating GenAI apps"
+        },
+        {
+          "level": "h2",
+          "title": "Deploying your GenAI app"
+        },
+        {
+          "level": "h2",
+          "title": "Orchestrating GenAI apps"
+        },
+        {
+          "level": "h2",
+          "title": "Setting up a culinary travel agent"
+        },
+        {
+          "level": "h2",
+          "title": "What if we coded it?"
+        },
+        {
+          "level": "h2",
+          "title": "Summary"
+        },
+        {
+          "level": "h2",
+          "title": "Now what happens?"
+        }
+      ],
+      "figures": [
+        {
+          "file": "grokking_ai_applications_ch08_plate.png",
+          "caption": "Chapter 8 Opening Blueprint: Deploying and orchestrating GenAI apps (Page 234)",
+          "alt": "Chapter 8 opening page (Deploying and orchestrating GenAI apps)"
+        },
+        {
+          "file": "grokking_ai_applications_p237_fig1.png",
+          "caption": "Embedded figure from page 237",
+          "alt": "Book illustration on page 237"
+        },
+        {
+          "file": "grokking_ai_applications_p238_fig1.png",
+          "caption": "Embedded figure from page 238",
+          "alt": "Book illustration on page 238"
+        },
+        {
+          "file": "grokking_ai_applications_p239_fig1.png",
+          "caption": "Embedded figure from page 239",
+          "alt": "Book illustration on page 239"
+        },
+        {
+          "file": "grokking_ai_applications_p239_fig2.png",
+          "caption": "Embedded figure from page 239",
+          "alt": "Book illustration on page 239"
+        },
+        {
+          "file": "grokking_ai_applications_p240_fig1.png",
+          "caption": "Embedded figure from page 240",
+          "alt": "Book illustration on page 240"
+        },
+        {
+          "file": "grokking_ai_applications_p241_fig1.png",
+          "caption": "Embedded figure from page 241",
+          "alt": "Book illustration on page 241"
+        },
+        {
+          "file": "grokking_ai_applications_p241_fig2.png",
+          "caption": "Embedded figure from page 241",
+          "alt": "Book illustration on page 241"
+        },
+        {
+          "file": "grokking_ai_applications_p242_fig1.png",
+          "caption": "Embedded figure from page 242",
+          "alt": "Book illustration on page 242"
+        },
+        {
+          "file": "grokking_ai_applications_p243_fig1.png",
+          "caption": "Embedded figure from page 243",
+          "alt": "Book illustration on page 243"
+        },
+        {
+          "file": "grokking_ai_applications_p244_fig1.png",
+          "caption": "Embedded figure from page 244",
+          "alt": "Book illustration on page 244"
+        },
+        {
+          "file": "grokking_ai_applications_p245_fig1.png",
+          "caption": "Embedded figure from page 245",
+          "alt": "Book illustration on page 245"
+        },
+        {
+          "file": "grokking_ai_applications_p246_fig1.png",
+          "caption": "Embedded figure from page 246",
+          "alt": "Book illustration on page 246"
+        },
+        {
+          "file": "grokking_ai_applications_p248_fig1.png",
+          "caption": "Embedded figure from page 248",
+          "alt": "Book illustration on page 248"
+        },
+        {
+          "file": "grokking_ai_applications_p249_fig1.png",
+          "caption": "Embedded figure from page 249",
+          "alt": "Book illustration on page 249"
+        },
+        {
+          "file": "grokking_ai_applications_p250_fig1.png",
+          "caption": "Embedded figure from page 250",
+          "alt": "Book illustration on page 250"
+        },
+        {
+          "file": "grokking_ai_applications_p251_fig1.png",
+          "caption": "Embedded figure from page 251",
+          "alt": "Book illustration on page 251"
+        },
+        {
+          "file": "grokking_ai_applications_p251_fig2.png",
+          "caption": "Embedded figure from page 251",
+          "alt": "Book illustration on page 251"
+        },
+        {
+          "file": "grokking_ai_applications_p253_fig1.png",
+          "caption": "Embedded figure from page 253",
+          "alt": "Book illustration on page 253"
+        },
+        {
+          "file": "grokking_ai_applications_p254_fig1.png",
+          "caption": "Embedded figure from page 254",
+          "alt": "Book illustration on page 254"
+        },
+        {
+          "file": "grokking_ai_applications_p255_fig1.png",
+          "caption": "Embedded figure from page 255",
+          "alt": "Book illustration on page 255"
+        },
+        {
+          "file": "grokking_ai_applications_p255_fig2.png",
+          "caption": "Embedded figure from page 255",
+          "alt": "Book illustration on page 255"
+        },
+        {
+          "file": "grokking_ai_applications_p256_fig1.png",
+          "caption": "Embedded figure from page 256",
+          "alt": "Book illustration on page 256"
+        },
+        {
+          "file": "grokking_ai_applications_p257_fig1.png",
+          "caption": "Embedded figure from page 257",
+          "alt": "Book illustration on page 257"
+        },
+        {
+          "file": "grokking_ai_applications_p258_fig1.png",
+          "caption": "Embedded figure from page 258",
+          "alt": "Book illustration on page 258"
+        },
+        {
+          "file": "grokking_ai_applications_p259_fig1.png",
+          "caption": "Embedded figure from page 259",
+          "alt": "Book illustration on page 259"
+        },
+        {
+          "file": "grokking_ai_applications_p260_fig1.png",
+          "caption": "Embedded figure from page 260",
+          "alt": "Book illustration on page 260"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\grokking-ai-applications\\ch08.txt"
+    }
+  ]
+}

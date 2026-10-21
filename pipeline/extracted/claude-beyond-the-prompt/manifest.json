@@ -1,0 +1,382 @@
+{
+  "bookSlug": "claude-beyond-the-prompt",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Claude Beyond the Prompt.epub",
+  "totalChapters": 3,
+  "totalFigures": 12,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/Chapter_1.xhtml",
+      "title": "From Prompt to Skills. The Limits of One-off AI Use",
+      "charCount": 28295,
+      "wordCount": 4742,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "1"
+        },
+        {
+          "level": "h1",
+          "title": "From Prompt to Skills. The Limits of One-off AI Use"
+        },
+        {
+          "level": "h1",
+          "title": "What prompting made possible"
+        },
+        {
+          "level": "h2",
+          "title": "What prompting makes possible"
+        },
+        {
+          "level": "h2",
+          "title": "Considering context and outcome"
+        },
+        {
+          "level": "h2",
+          "title": "Moving from question to task"
+        },
+        {
+          "level": "h2",
+          "title": "Prompting the example project"
+        },
+        {
+          "level": "h2",
+          "title": "Where prompting works"
+        },
+        {
+          "level": "h2",
+          "title": "Where prompting doesn't work"
+        },
+        {
+          "level": "h2",
+          "title": "Prompting as a way of working"
+        },
+        {
+          "level": "h2",
+          "title": "The boundaries of one-off prompting"
+        },
+        {
+          "level": "h1",
+          "title": "Where one-off prompting starts to fail"
+        },
+        {
+          "level": "h2",
+          "title": "The problem of reconstruction"
+        },
+        {
+          "level": "h2",
+          "title": "Understanding the patterns in your work"
+        },
+        {
+          "level": "h2",
+          "title": "The loss of context across one-off prompts"
+        },
+        {
+          "level": "h1",
+          "title": "Creating reusable method instead of clever inputs"
+        },
+        {
+          "level": "h2",
+          "title": "The moment a pattern becomes visible"
+        },
+        {
+          "level": "h2",
+          "title": "Shifting from smart prompts to structured methods"
+        },
+        {
+          "level": "h2",
+          "title": "Making the shift explicit"
+        },
+        {
+          "level": "h2",
+          "title": "Shifting toward a structured approach"
+        },
+        {
+          "level": "h2",
+          "title": "What actually changes"
+        },
+        {
+          "level": "h2",
+          "title": "Shifting from a prompt to a template"
+        },
+        {
+          "level": "h2",
+          "title": "Why is this different?"
+        },
+        {
+          "level": "h2",
+          "title": "What is still missing"
+        },
+        {
+          "level": "h1",
+          "title": "From prompting to skills, workflows, and agents"
+        },
+        {
+          "level": "h2",
+          "title": "This is where Skills come in"
+        },
+        {
+          "level": "h2",
+          "title": "The transition from methods to workflows"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\claude-beyond-the-prompt\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/Chapter_2.xhtml",
+      "title": "What Agentic Engineering Actually Means",
+      "charCount": 38390,
+      "wordCount": 6440,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "2"
+        },
+        {
+          "level": "h1",
+          "title": "What Agentic Engineering Actually Means"
+        },
+        {
+          "level": "h1",
+          "title": "Model, tool, agent: the core loop"
+        },
+        {
+          "level": "h2",
+          "title": "The model: reasoning without action"
+        },
+        {
+          "level": "h2",
+          "title": "The tool: moving from advice to action"
+        },
+        {
+          "level": "h2",
+          "title": "The agent: connecting reasoning and action"
+        },
+        {
+          "level": "h2",
+          "title": "What makes the loop work"
+        },
+        {
+          "level": "h2",
+          "title": "From autonomy to reliability"
+        },
+        {
+          "level": "h1",
+          "title": "What a skill is, and what it is not"
+        },
+        {
+          "level": "h2",
+          "title": "What the agent can do, and how it should do it"
+        },
+        {
+          "level": "h2",
+          "title": "From repeated prompting to reusable practice"
+        },
+        {
+          "level": "h1",
+          "title": "Agents and subagents"
+        },
+        {
+          "level": "h1",
+          "title": "Interfaces, memory, and access"
+        },
+        {
+          "level": "h2",
+          "title": "Observing work through interfaces"
+        },
+        {
+          "level": "h2",
+          "title": "Adding continuity with memory"
+        },
+        {
+          "level": "h2",
+          "title": "Using systems by defining access"
+        },
+        {
+          "level": "h2",
+          "title": "Seeing the whole system"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B39004_2_1.png",
+          "caption": "Figure 2.1 – The agentic loop",
+          "alt": "Figure 2.1 – The agentic loop"
+        },
+        {
+          "file": "B39004_2_1.png",
+          "caption": "Figure 2.1 – The agentic loop",
+          "alt": "Figure 2.1 – The agentic loop"
+        },
+        {
+          "file": "B39004_2_2.png",
+          "caption": "Figure 2.2 – The layers around the agentic loop",
+          "alt": "Figure 2.2 – The layers around the agentic loop"
+        },
+        {
+          "file": "B39004_2_2.png",
+          "caption": "Figure 2.2 – The layers around the agentic loop",
+          "alt": "Figure 2.2 – The layers around the agentic loop"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\claude-beyond-the-prompt\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/Chapter_3.xhtml",
+      "title": "What a Skill Is: Instructions, Context, and Reuse",
+      "charCount": 39966,
+      "wordCount": 6564,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "3"
+        },
+        {
+          "level": "h1",
+          "title": "What a Skill Is: Instructions, Context, and Reuse"
+        },
+        {
+          "level": "h1",
+          "title": "Why Skills exist"
+        },
+        {
+          "level": "h2",
+          "title": "Seeing the method inside the prompt"
+        },
+        {
+          "level": "h2",
+          "title": "Repetition depends on your memory"
+        },
+        {
+          "level": "h2",
+          "title": "Inconsistency creates drift"
+        },
+        {
+          "level": "h2",
+          "title": "Context pressure turns prompts into storage"
+        },
+        {
+          "level": "h1",
+          "title": "The three layers of a Skill"
+        },
+        {
+          "level": "h2",
+          "title": "Metadata: helping Claude recognize the task"
+        },
+        {
+          "level": "h2",
+          "title": "Instructions: describing the reusable method"
+        },
+        {
+          "level": "h2",
+          "title": "Supporting resources: keeping depth available without loading everything"
+        },
+        {
+          "level": "h2",
+          "title": "Progressive disclosure: separating discovery from depth"
+        },
+        {
+          "level": "h1",
+          "title": "A Skill is not just a better prompt"
+        },
+        {
+          "level": "h2",
+          "title": "The wrong comparison"
+        },
+        {
+          "level": "h2",
+          "title": "From request to method"
+        },
+        {
+          "level": "h2",
+          "title": "What changes when the prompt becomes a Skill"
+        },
+        {
+          "level": "h1",
+          "title": "When a task deserves to become a Skill"
+        },
+        {
+          "level": "h2",
+          "title": "Recurrence is the first signal"
+        },
+        {
+          "level": "h2",
+          "title": "Drift is the second signal"
+        },
+        {
+          "level": "h2",
+          "title": "Judgment is the third signal"
+        },
+        {
+          "level": "h2",
+          "title": "Context cost is the fourth signal"
+        },
+        {
+          "level": "h2",
+          "title": "A first candidate shortlist"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "B39004_3_1.png",
+          "caption": "Figure 3.1 – From prompt habit to skill candidate",
+          "alt": "Figure 3.1 – From prompt habit to skill candidate"
+        },
+        {
+          "file": "B39004_3_1.png",
+          "caption": "Figure 3.1 – From prompt habit to skill candidate",
+          "alt": "Figure 3.1 – From prompt habit to skill candidate"
+        },
+        {
+          "file": "B39004_3_2.png",
+          "caption": "Figure 3.2 – The three layers of a Skill",
+          "alt": "Figure 3.2 – The three layers of a Skill"
+        },
+        {
+          "file": "B39004_3_2.png",
+          "caption": "Figure 3.2 – The three layers of a Skill",
+          "alt": "Figure 3.2 – The three layers of a Skill"
+        },
+        {
+          "file": "B39004_3_3.png",
+          "caption": "Figure 3.3 – From prompt to Skill: what changes",
+          "alt": "Figure 3.3 – From prompt to Skill: what changes"
+        },
+        {
+          "file": "B39004_3_3.png",
+          "caption": "Figure 3.3 – From prompt to Skill: what changes",
+          "alt": "Figure 3.3 – From prompt to Skill: what changes"
+        },
+        {
+          "file": "B39004_3_4.png",
+          "caption": "Figure 3.4 – From prompt candidate to Skill candidate",
+          "alt": "Figure 3.4 – From prompt candidate to Skill candidate"
+        },
+        {
+          "file": "B39004_3_4.png",
+          "caption": "Figure 3.4 – From prompt candidate to Skill candidate",
+          "alt": "Figure 3.4 – From prompt candidate to Skill candidate"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\claude-beyond-the-prompt\\ch03.txt"
+    }
+  ]
+}

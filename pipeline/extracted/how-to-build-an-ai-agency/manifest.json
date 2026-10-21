@@ -1,0 +1,272 @@
+{
+  "bookSlug": "how-to-build-an-ai-agency",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\How to Build an AI Agency.pdf",
+  "totalChapters": 7,
+  "totalFigures": 15,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_8_29.pdf",
+      "title": "A Day in the Life of an AI Agency Owner / What is an AI Agency? / The AI Agency Business Model",
+      "startPage": 8,
+      "endPage": 29,
+      "charCount": 27169,
+      "wordCount": 4242,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "A Day in the Life of an AI Agency Owner"
+        },
+        {
+          "level": "h1",
+          "title": "What is an AI Agency?"
+        },
+        {
+          "level": "h1",
+          "title": "The AI Agency Business Model"
+        }
+      ],
+      "figures": [
+        {
+          "file": "how_to_build_an_ai_agency_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: A Day in the Life of an AI Agency Owner / What is an AI Agency? / The AI Agency Business Model (Page 8)",
+          "alt": "Chapter 1 opening page (A Day in the Life of an AI Agency Owner / What is an AI Agency? / The AI Agency Business Model)"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p025_fig1.png",
+          "caption": "Embedded figure from page 25",
+          "alt": "Book illustration on page 25"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-build-an-ai-agency\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_30_53.pdf",
+      "title": "Financial Management for the Modern Agency / Building Your A-Team / The AI Technology Stack",
+      "startPage": 30,
+      "endPage": 53,
+      "charCount": 26967,
+      "wordCount": 4100,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Financial Management for the Modern Agency"
+        },
+        {
+          "level": "h1",
+          "title": "Building Your A-Team"
+        },
+        {
+          "level": "h1",
+          "title": "The AI Technology Stack"
+        }
+      ],
+      "figures": [
+        {
+          "file": "how_to_build_an_ai_agency_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Financial Management for the Modern Agency / Building Your A-Team / The AI Technology Stack (Page 30)",
+          "alt": "Chapter 2 opening page (Financial Management for the Modern Agency / Building Your A-Team / The AI Technology Stack)"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p037_fig1.png",
+          "caption": "Embedded figure from page 37",
+          "alt": "Book illustration on page 37"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p046_fig1.png",
+          "caption": "Embedded figure from page 46",
+          "alt": "Book illustration on page 46"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-build-an-ai-agency\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_54_77.pdf",
+      "title": "Mastering AI Workflows / Building Intelligent AI Agents / The Art of the Chatbot",
+      "startPage": 54,
+      "endPage": 77,
+      "charCount": 23268,
+      "wordCount": 3672,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Mastering AI Workflows"
+        },
+        {
+          "level": "h1",
+          "title": "Building Intelligent AI Agents"
+        },
+        {
+          "level": "h1",
+          "title": "The Art of the Chatbot"
+        }
+      ],
+      "figures": [
+        {
+          "file": "how_to_build_an_ai_agency_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Mastering AI Workflows / Building Intelligent AI Agents / The Art of the Chatbot (Page 54)",
+          "alt": "Chapter 3 opening page (Mastering AI Workflows / Building Intelligent AI Agents / The Art of the Chatbot)"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p056_fig1.png",
+          "caption": "Embedded figure from page 56",
+          "alt": "Book illustration on page 56"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p064_fig1.png",
+          "caption": "Embedded figure from page 64",
+          "alt": "Book illustration on page 64"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p072_fig1.png",
+          "caption": "Embedded figure from page 72",
+          "alt": "Book illustration on page 72"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-build-an-ai-agency\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_78_104.pdf",
+      "title": "Niching Down: Dominating Your Market / Acquiring Your First Clients / Advanced Sales and Closing Techniques",
+      "startPage": 78,
+      "endPage": 104,
+      "charCount": 31693,
+      "wordCount": 4870,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Niching Down: Dominating Your Market"
+        },
+        {
+          "level": "h1",
+          "title": "Acquiring Your First Clients"
+        },
+        {
+          "level": "h1",
+          "title": "Advanced Sales and Closing Techniques"
+        }
+      ],
+      "figures": [
+        {
+          "file": "how_to_build_an_ai_agency_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Niching Down: Dominating Your Market / Acquiring Your First Clients / Advanced Sales and Closing Techniques (Page 78)",
+          "alt": "Chapter 4 opening page (Niching Down: Dominating Your Market / Acquiring Your First Clients / Advanced Sales and Closing Techniques)"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p089_fig1.png",
+          "caption": "Embedded figure from page 89",
+          "alt": "Book illustration on page 89"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-build-an-ai-agency\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "pages_105_127.pdf",
+      "title": "Crafting Bulletproof Contracts and SOWs / Delivering Exceptional Results / Building a Partner Ecosystem",
+      "startPage": 105,
+      "endPage": 127,
+      "charCount": 31291,
+      "wordCount": 4707,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Crafting Bulletproof Contracts and SOWs"
+        },
+        {
+          "level": "h1",
+          "title": "Delivering Exceptional Results"
+        },
+        {
+          "level": "h1",
+          "title": "Building a Partner Ecosystem"
+        }
+      ],
+      "figures": [
+        {
+          "file": "how_to_build_an_ai_agency_ch05_plate.png",
+          "caption": "Chapter 5 Opening Blueprint: Crafting Bulletproof Contracts and SOWs / Delivering Exceptional Results / Building a Partner Ecosystem (Page 105)",
+          "alt": "Chapter 5 opening page (Crafting Bulletproof Contracts and SOWs / Delivering Exceptional Results / Building a Partner Ecosystem)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-build-an-ai-agency\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "pages_128_149.pdf",
+      "title": "Scaling Your AI Agency / Running Your Agency with AI / The Ethical AI Agency",
+      "startPage": 128,
+      "endPage": 149,
+      "charCount": 26365,
+      "wordCount": 3874,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Scaling Your AI Agency"
+        },
+        {
+          "level": "h1",
+          "title": "Running Your Agency with AI"
+        },
+        {
+          "level": "h1",
+          "title": "The Ethical AI Agency"
+        }
+      ],
+      "figures": [
+        {
+          "file": "how_to_build_an_ai_agency_ch06_plate.png",
+          "caption": "Chapter 6 Opening Blueprint: Scaling Your AI Agency / Running Your Agency with AI / The Ethical AI Agency (Page 128)",
+          "alt": "Chapter 6 opening page (Scaling Your AI Agency / Running Your Agency with AI / The Ethical AI Agency)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-build-an-ai-agency\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "pages_150_177.pdf",
+      "title": "The AI Entrepreneur’s Mindset: Navigating the Emotional Rollercoaster / The Road Ahead / Building a CRM from Scratch for Your AI Agency",
+      "startPage": 150,
+      "endPage": 177,
+      "charCount": 32120,
+      "wordCount": 4806,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The AI Entrepreneur’s Mindset: Navigating the Emotional Rollercoaster"
+        },
+        {
+          "level": "h1",
+          "title": "The Road Ahead"
+        },
+        {
+          "level": "h1",
+          "title": "Building a CRM from Scratch for Your AI Agency"
+        }
+      ],
+      "figures": [
+        {
+          "file": "how_to_build_an_ai_agency_ch07_plate.png",
+          "caption": "Chapter 7 Opening Blueprint: The AI Entrepreneur’s Mindset: Navigating the Emotional Rollercoaster / The Road Ahead / Building a CRM from Scratch for Your AI Agency (Page 150)",
+          "alt": "Chapter 7 opening page (The AI Entrepreneur’s Mindset: Navigating the Emotional Rollercoaster / The Road Ahead / Building a CRM from Scratch for Your AI Agency)"
+        },
+        {
+          "file": "how_to_build_an_ai_agency_p165_fig1.png",
+          "caption": "Embedded figure from page 165",
+          "alt": "Book illustration on page 165"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-build-an-ai-agency\\ch07.txt"
+    }
+  ]
+}

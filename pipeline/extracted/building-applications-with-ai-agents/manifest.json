@@ -1,0 +1,824 @@
+{
+  "bookSlug": "building-applications-with-ai-agents",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Building Applications with AI Agents.epub",
+  "totalChapters": 8,
+  "totalFigures": 6,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/ch01.html",
+      "title": "Chapter 1. Introduction to Agents",
+      "charCount": 25828,
+      "wordCount": 3523,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1. Introduction to Agents"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "What are Agents?"
+        },
+        {
+          "level": "h1",
+          "title": "Similarities and Differences from Traditional Machine Learning"
+        },
+        {
+          "level": "h1",
+          "title": "Recent Advancements"
+        },
+        {
+          "level": "h1",
+          "title": "From Synchronous to Asynchronous"
+        },
+        {
+          "level": "h1",
+          "title": "When Are Agents Useful?"
+        },
+        {
+          "level": "h1",
+          "title": "Managing Expectations"
+        },
+        {
+          "level": "h1",
+          "title": "Use Cases for Agents"
+        },
+        {
+          "level": "h2",
+          "title": "Customer Support Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Personal Assistant Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Legal Agent"
+        },
+        {
+          "level": "h2",
+          "title": "Advertising Agent"
+        },
+        {
+          "level": "h1",
+          "title": "Building with Change in Mind"
+        },
+        {
+          "level": "h2",
+          "title": "Scalability"
+        },
+        {
+          "level": "h2",
+          "title": "Modularity"
+        },
+        {
+          "level": "h2",
+          "title": "Continuous Learning"
+        },
+        {
+          "level": "h2",
+          "title": "Resilience"
+        },
+        {
+          "level": "h2",
+          "title": "Future-Proofing"
+        },
+        {
+          "level": "h2",
+          "title": "Towards Multi-Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Foundation Models and Autonomous Agents"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/ch02.html",
+      "title": "Chapter 2. Overview of Designing Agent Systems",
+      "charCount": 61719,
+      "wordCount": 8599,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 2. Overview of Designing Agent Systems"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Scenario Selection and Task Definition"
+        },
+        {
+          "level": "h2",
+          "title": "Defining the Problem: Scoping Tasks for Agents"
+        },
+        {
+          "level": "h3",
+          "title": "Understanding the Problem Context"
+        },
+        {
+          "level": "h3",
+          "title": "Defining Objectives"
+        },
+        {
+          "level": "h3",
+          "title": "Identifying Constraints"
+        },
+        {
+          "level": "h2",
+          "title": "Avoiding Common Pitfalls in Task Definition"
+        },
+        {
+          "level": "h3",
+          "title": "Choosing Too Narrow a Task"
+        },
+        {
+          "level": "h3",
+          "title": "Choosing Too Broad a Task"
+        },
+        {
+          "level": "h3",
+          "title": "Choosing Too Vague a Task"
+        },
+        {
+          "level": "h2",
+          "title": "Great Example Scenarios"
+        },
+        {
+          "level": "h1",
+          "title": "Core Components of Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Model Selection"
+        },
+        {
+          "level": "h3",
+          "title": "Model Selection: Choosing the Best Foundation Model for the Job"
+        },
+        {
+          "level": "h3",
+          "title": "Complexity vs. Efficiency"
+        },
+        {
+          "level": "h3",
+          "title": "Scalability and Adaptability"
+        },
+        {
+          "level": "h2",
+          "title": "Skills"
+        },
+        {
+          "level": "h3",
+          "title": "Designing Capabilities for Specific Tasks"
+        },
+        {
+          "level": "h3",
+          "title": "Skill Integration and Modularity"
+        },
+        {
+          "level": "h2",
+          "title": "Memory"
+        },
+        {
+          "level": "h3",
+          "title": "Short-Term Memory"
+        },
+        {
+          "level": "h3",
+          "title": "Long-Term Memory"
+        },
+        {
+          "level": "h3",
+          "title": "Memory Management and Retrieval"
+        },
+        {
+          "level": "h2",
+          "title": "Planning"
+        },
+        {
+          "level": "h3",
+          "title": "Action Sequencing and Goal-Oriented Behavior"
+        },
+        {
+          "level": "h3",
+          "title": "Dynamic Planning and Adaptability"
+        },
+        {
+          "level": "h3",
+          "title": "Incremental and Real-Time Planning"
+        },
+        {
+          "level": "h1",
+          "title": "Design Tradeoffs"
+        },
+        {
+          "level": "h2",
+          "title": "Performance: Speed vs. Accuracy Tradeoffs"
+        },
+        {
+          "level": "h2",
+          "title": "Scalability: Engineering Scalability for Agent Systems"
+        },
+        {
+          "level": "h2",
+          "title": "Reliability: Ensuring Robust and Consistent Agent Behavior"
+        },
+        {
+          "level": "h3",
+          "title": "Fault Tolerance"
+        },
+        {
+          "level": "h3",
+          "title": "Consistency and Robustness"
+        },
+        {
+          "level": "h2",
+          "title": "Balancing Costs and Returns"
+        },
+        {
+          "level": "h3",
+          "title": "Development Costs"
+        },
+        {
+          "level": "h3",
+          "title": "Operational Costs"
+        },
+        {
+          "level": "h3",
+          "title": "Cost vs. Value"
+        },
+        {
+          "level": "h1",
+          "title": "Architecture Design Patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Single-Agent Architectures"
+        },
+        {
+          "level": "h2",
+          "title": "2.4.2 Multi-Agent Architectures: Collaboration, Parallelism, and Coordination"
+        },
+        {
+          "level": "h1",
+          "title": "Best Practices"
+        },
+        {
+          "level": "h2",
+          "title": "Iterative Design with Continuous Feedback"
+        },
+        {
+          "level": "h2",
+          "title": "Robust Evaluation"
+        },
+        {
+          "level": "h2",
+          "title": "Real-World Testing: Validating Agents in Production Environments"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/ch03.html",
+      "title": "Chapter 3. User Experience Design for Agentic Systems",
+      "charCount": 45770,
+      "wordCount": 6288,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 3. User Experience Design for Agentic Systems"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Interaction Modalities"
+        },
+        {
+          "level": "h2",
+          "title": "Text-Based"
+        },
+        {
+          "level": "h2",
+          "title": "Graphical Interfaces"
+        },
+        {
+          "level": "h2",
+          "title": "Speech and Voice Interfaces"
+        },
+        {
+          "level": "h2",
+          "title": "Video Based Interfaces"
+        },
+        {
+          "level": "h1",
+          "title": "Synchronous vs Asynchronous Agent Experiences"
+        },
+        {
+          "level": "h2",
+          "title": "Design Principles for Synchronous Experiences"
+        },
+        {
+          "level": "h2",
+          "title": "Design Principles for Async Experiences"
+        },
+        {
+          "level": "h2",
+          "title": "Finding the balance between proactive and intrusive agent behavior"
+        },
+        {
+          "level": "h1",
+          "title": "Context Retention and Continuity"
+        },
+        {
+          "level": "h2",
+          "title": "Maintaining State Across Interactions"
+        },
+        {
+          "level": "h2",
+          "title": "Personalization and Adaptability"
+        },
+        {
+          "level": "h1",
+          "title": "Communicating Agent Capabilities"
+        },
+        {
+          "level": "h2",
+          "title": "Setting Realistic Expectations"
+        },
+        {
+          "level": "h2",
+          "title": "Communicating Confidence and Uncertainty"
+        },
+        {
+          "level": "h2",
+          "title": "Asking for Guidance and Input from Users"
+        },
+        {
+          "level": "h2",
+          "title": "Failing Gracefully"
+        },
+        {
+          "level": "h1",
+          "title": "Trust and Transparency"
+        },
+        {
+          "level": "h2",
+          "title": "Building Predictable and Reliable Agents"
+        },
+        {
+          "level": "h2",
+          "title": "Preventing Automation Bias"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/ch04.html",
+      "title": "Chapter 4. Skills",
+      "charCount": 37469,
+      "wordCount": 5220,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 4. Skills"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Local Skills"
+        },
+        {
+          "level": "h1",
+          "title": "Skill Design Considerations"
+        },
+        {
+          "level": "h2",
+          "title": "API-Based Skills"
+        },
+        {
+          "level": "h2",
+          "title": "Plug-in Skills"
+        },
+        {
+          "level": "h2",
+          "title": "Skill Hierarchies"
+        },
+        {
+          "level": "h1",
+          "title": "Automated Skill Development"
+        },
+        {
+          "level": "h2",
+          "title": "Real-Time Code Generation"
+        },
+        {
+          "level": "h2",
+          "title": "Imitation Learning"
+        },
+        {
+          "level": "h2",
+          "title": "Skill Learning from Rewards"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/ch05.html",
+      "title": "Chapter 5. Orchestration",
+      "charCount": 36418,
+      "wordCount": 4803,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 5. Orchestration"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Skill Selection"
+        },
+        {
+          "level": "h2",
+          "title": "Generative Skill Selection"
+        },
+        {
+          "level": "h2",
+          "title": "Semantic Skill Selection"
+        },
+        {
+          "level": "h2",
+          "title": "Machine Learned Skill Selection"
+        },
+        {
+          "level": "h1",
+          "title": "Skill Execution"
+        },
+        {
+          "level": "h1",
+          "title": "Skill Topologies"
+        },
+        {
+          "level": "h2",
+          "title": "Single Skill Execution"
+        },
+        {
+          "level": "h2",
+          "title": "Parallel Skill Execution"
+        },
+        {
+          "level": "h2",
+          "title": "Chains"
+        },
+        {
+          "level": "h2",
+          "title": "Trees"
+        },
+        {
+          "level": "h2",
+          "title": "Graphs"
+        },
+        {
+          "level": "h2",
+          "title": "Choosing a Topology"
+        },
+        {
+          "level": "h1",
+          "title": "Planning"
+        },
+        {
+          "level": "h2",
+          "title": "Iterative Planning"
+        },
+        {
+          "level": "h2",
+          "title": "Zero-Shot Planning"
+        },
+        {
+          "level": "h2",
+          "title": "In-Context Learning with Hand-Crafted Examples"
+        },
+        {
+          "level": "h2",
+          "title": "Plan Adaptation"
+        },
+        {
+          "level": "h1",
+          "title": "Summary"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch05.txt"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterId": "ch06",
+      "sourceFile": "OEBPS/ch06.html",
+      "title": "Chapter 6. Knowledge and Memory",
+      "charCount": 33338,
+      "wordCount": 4815,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 6. Knowledge and Memory"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Foundational Approaches to Memory"
+        },
+        {
+          "level": "h2",
+          "title": "Managing Context Windows"
+        },
+        {
+          "level": "h2",
+          "title": "Keyword-Based Memory"
+        },
+        {
+          "level": "h2",
+          "title": "Integrating Keyword-Based Memory with Rolling Context Windows"
+        },
+        {
+          "level": "h1",
+          "title": "Semantic Memory and Vector Stores"
+        },
+        {
+          "level": "h2",
+          "title": "Introduction to Semantic Search"
+        },
+        {
+          "level": "h2",
+          "title": "Implementing Semantic Memory with Vector Stores"
+        },
+        {
+          "level": "h2",
+          "title": "Retrieval Augmented Generation"
+        },
+        {
+          "level": "h2",
+          "title": "Semantic Experience Memory"
+        },
+        {
+          "level": "h1",
+          "title": "Graph RAG"
+        },
+        {
+          "level": "h2",
+          "title": "Using Knowledge Graphs"
+        },
+        {
+          "level": "h2",
+          "title": "Building Knowledge Graphs"
+        },
+        {
+          "level": "h2",
+          "title": "Promise and Peril of Dynamic Knowledge Graphs"
+        },
+        {
+          "level": "h1",
+          "title": "Working Memory"
+        },
+        {
+          "level": "h2",
+          "title": "Whiteboards"
+        },
+        {
+          "level": "h2",
+          "title": "Note Taking"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ch05_figure_1_1730820650301105.png",
+          "caption": "Figure 6-1. Taking Notes on the Context and Question to Improving Answer Quality (Source: https://arxiv.org/pdf/2305.00833)",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch06.txt"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterId": "ch07",
+      "sourceFile": "OEBPS/ch07.html",
+      "title": "Chapter 7. Learning in Agentic Systems",
+      "charCount": 37143,
+      "wordCount": 5053,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 7. Learning in Agentic Systems"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "Nonparametric Learning"
+        },
+        {
+          "level": "h2",
+          "title": "Non-Parametric Exemplar Learning"
+        },
+        {
+          "level": "h2",
+          "title": "Reflextion"
+        },
+        {
+          "level": "h2",
+          "title": "Experiential Learning"
+        },
+        {
+          "level": "h1",
+          "title": "Parametric Learning: Fine Tuning"
+        },
+        {
+          "level": "h2",
+          "title": "Fine Tuning Large Foundation Models"
+        },
+        {
+          "level": "h2",
+          "title": "The Promise of Small Models"
+        },
+        {
+          "level": "h2",
+          "title": "Function Calling Fine Tuning"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        }
+      ],
+      "figures": [
+        {
+          "file": "ch07_figure_1_1744383118417428.png",
+          "caption": "Figure 7-1. Caption to come",
+          "alt": "A close-up of a sign\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch07_figure_2_1744383118417474.png",
+          "caption": "Figure 7-2. Caption to come",
+          "alt": "A close-up of a sign\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch07_figure_3_1744383118417498.png",
+          "caption": "Figure 7-3. Caption to come",
+          "alt": "A close-up of a sign\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch07_figure_4_1744383118417518.png",
+          "caption": "Figure 7-4. Caption to come",
+          "alt": "A close-up of a sign\n\nAI-generated content may be incorrect."
+        },
+        {
+          "file": "ch07_figure_5_1744383118417537.png",
+          "caption": "Figure 7-5. Caption to come",
+          "alt": "A close-up of a sign\n\nAI-generated content may be incorrect."
+        }
+      ],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch07.txt"
+    },
+    {
+      "chapterNumber": 8,
+      "chapterId": "ch08",
+      "sourceFile": "OEBPS/ch08.html",
+      "title": "Chapter 8. From One Agent to Many",
+      "charCount": 34217,
+      "wordCount": 4635,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 8. From One Agent to Many"
+        },
+        {
+          "level": "h1",
+          "title": "A Note for Early Release Readers"
+        },
+        {
+          "level": "h1",
+          "title": "How Many Agents Do I Need?"
+        },
+        {
+          "level": "h2",
+          "title": "Single-Agent Scenarios"
+        },
+        {
+          "level": "h2",
+          "title": "Multi-Agent Scenarios"
+        },
+        {
+          "level": "h2",
+          "title": "Principles for Adding Agents"
+        },
+        {
+          "level": "h1",
+          "title": "Multi-Agent Coordination"
+        },
+        {
+          "level": "h2",
+          "title": "Democratic Coordination"
+        },
+        {
+          "level": "h2",
+          "title": "Manager Coordination"
+        },
+        {
+          "level": "h2",
+          "title": "Hierarchical Coordination"
+        },
+        {
+          "level": "h2",
+          "title": "Actor-Critic Approaches"
+        },
+        {
+          "level": "h2",
+          "title": "Automated Design of Agent Systems"
+        },
+        {
+          "level": "h1",
+          "title": "Multi-Agent Frameworks"
+        },
+        {
+          "level": "h2",
+          "title": "Do-It-Yourself (DIY)"
+        },
+        {
+          "level": "h2",
+          "title": "LangGraph"
+        },
+        {
+          "level": "h2",
+          "title": "Autogen"
+        },
+        {
+          "level": "h2",
+          "title": "Crew AI"
+        },
+        {
+          "level": "h2",
+          "title": "Swarm"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\building-applications-with-ai-agents\\ch08.txt"
+    }
+  ]
+}

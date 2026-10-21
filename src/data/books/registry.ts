@@ -4,8 +4,21 @@ import { agenticGraphRagBook } from './agentic-graphrag';
 import { aiEngineeringBook } from './ai-engineering';
 import { aiNativeSoftwareDeliveryBook } from './ai-native-software-delivery';
 import { aiValueCreatorsBook } from './ai-value-creators';
+import { anIllustratedGuideToAiAgentsBook } from './an-illustrated-guide-to-ai-agents';
+import { artOfPromptEngineeringMultimodelBook } from './art-of-prompt-engineering-multimodel';
 import { askingTheRightQuestionsBook } from './asking-the-right-questions';
 import { beyondVibeCodingBook } from './beyond-vibe-coding';
+import { buildWithGoogleAntigravityBook } from './build-with-google-antigravity';
+import { buildingAiAgentsForFinanceBook } from './building-ai-agents-for-finance';
+import { buildingApplicationsWithAiAgentsBook } from './building-applications-with-ai-agents';
+import { claudeBeyondThePromptBook } from './claude-beyond-the-prompt';
+import { contextEngineeringMultiAgentBook } from './context-engineering-multi-agent';
+import { designMultiAgentMcpA2aBook } from './design-multi-agent-mcp-a2a';
+import { grokkingAiApplicationsBook } from './grokking-ai-applications';
+import { howToBuildAnAiAgencyBook } from './how-to-build-an-ai-agency';
+import { midjourneyMasteryBook } from './midjourney-mastery';
+import { promptEngineeringForLlmsBook } from './prompt-engineering-for-llms';
+import { vibeCodingFutureOfProgrammingBook } from './vibe-coding-future-of-programming';
 
 export type BookDomainCategory =
   | 'AI & Agents'
@@ -29,6 +42,19 @@ export interface VaultBookPreview {
  * Whenever Nexus finishes synthesizing a new book from /Books, register its BookMasteryPackage here.
  */
 export const PUBLISHED_BOOKS: Record<string, BookMasteryPackage> = {
+  'midjourney-mastery': midjourneyMasteryBook,
+  'art-of-prompt-engineering-multimodel': artOfPromptEngineeringMultimodelBook,
+  'how-to-build-an-ai-agency': howToBuildAnAiAgencyBook,
+  'vibe-coding-future-of-programming': vibeCodingFutureOfProgrammingBook,
+  'grokking-ai-applications': grokkingAiApplicationsBook,
+  'building-ai-agents-for-finance': buildingAiAgentsForFinanceBook,
+  'an-illustrated-guide-to-ai-agents': anIllustratedGuideToAiAgentsBook,
+  'claude-beyond-the-prompt': claudeBeyondThePromptBook,
+  'build-with-google-antigravity': buildWithGoogleAntigravityBook,
+  'prompt-engineering-for-llms': promptEngineeringForLlmsBook,
+  'design-multi-agent-mcp-a2a': designMultiAgentMcpA2aBook,
+  'building-applications-with-ai-agents': buildingApplicationsWithAiAgentsBook,
+  'context-engineering-multi-agent': contextEngineeringMultiAgentBook,
   'agentforce-harnessing-agency-of-ai': agentforceBook,
   'agentic-graphrag': agenticGraphRagBook,
   'ai-value-creators': aiValueCreatorsBook,
@@ -113,10 +139,6 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     category: 'AI & Agents',
     status: 'published',
   },
-
-  // =========================================================================
-  // AI & AGENTS VAULT QUEUE
-  // =========================================================================
   {
     bookSlug: 'context-engineering-multi-agent',
     fileName: 'Context Engineering for Multi-Agent Systems.epub',
@@ -124,7 +146,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Context Engineering for Multi-Agent Systems',
     author: 'Denis Rothman',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'building-applications-with-ai-agents',
@@ -133,16 +155,16 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Building Applications with AI Agents',
     author: 'Michael Albada',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'design-multi-agent-mcp-a2a',
     fileName: 'Design Multi-Agent AI Systems Using MCP and A2A.pdf',
     format: 'PDF',
     title: 'Design Multi-Agent AI Systems Using MCP and A2A',
-    author: 'Multi-Agent Systems Architecture',
+    author: 'Gigi Sayfan',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'prompt-engineering-for-llms',
@@ -151,106 +173,88 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Prompt Engineering for LLMs',
     author: 'John Berryman & Albert Ziegler',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'build-with-google-antigravity',
     fileName: 'Build with Google Antigravity.epub',
     format: 'EPUB',
     title: 'Build with Google Antigravity',
-    author: 'Google Antigravity Engineering',
+    author: 'Elnaz Sarraf',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'claude-beyond-the-prompt',
     fileName: 'Claude Beyond the Prompt.epub',
     format: 'EPUB',
     title: 'Claude Beyond the Prompt',
-    author: 'AI Engineering Series',
+    author: 'Martin Krause',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'an-illustrated-guide-to-ai-agents',
     fileName: 'An Illustrated Guide to AI Agents.epub',
     format: 'EPUB',
     title: 'An Illustrated Guide to AI Agents',
-    author: 'Visual AI Series',
+    author: 'Maarten Grootendorst & Jay Alammar',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'building-ai-agents-for-finance',
     fileName: 'Building AI Agents for Finance.epub',
     format: 'EPUB',
     title: 'Building AI Agents for Finance',
-    author: 'Quantitative AI Series',
+    author: 'Hanane Dupouy',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'grokking-ai-applications',
     fileName: 'Grokking AI Applications.pdf',
     format: 'PDF',
     title: 'Grokking AI Applications',
-    author: 'Manning Grokking Series',
+    author: 'Andrea De Mauro',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'vibe-coding-future-of-programming',
     fileName: 'Vibe Coding The Future of Programming.epub',
     format: 'EPUB',
     title: 'Vibe Coding: The Future of Programming',
-    author: 'AI Development Series',
+    author: 'Addy Osmani',
     category: 'AI & Agents',
-    status: 'queued',
-  },
-  {
-    bookSlug: 'vibe-coding',
-    fileName: 'Vibe Coding.epub',
-    format: 'EPUB',
-    title: 'Vibe Coding',
-    author: 'AI Coding Series',
-    category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'how-to-build-an-ai-agency',
     fileName: 'How to Build an AI Agency.pdf',
     format: 'PDF',
     title: 'How to Build an AI Agency',
-    author: 'AI Operations Guide',
+    author: 'Vedant Pandya',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'art-of-prompt-engineering-multimodel',
     fileName: 'The Art of Prompt Engineering for Multimodel.azw3',
     format: 'AZW3',
-    title: 'The Art of Prompt Engineering for Multimodal Systems',
-    author: 'Multimodal AI Series',
+    title: 'The Art of Prompt Engineering for Multimodal AI',
+    author: 'Yash Jain',
     category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'midjourney-mastery',
     fileName: 'Midjourney Mastery - The Ultimate Book of Prompts.epub',
     format: 'EPUB',
     title: 'Midjourney Mastery: The Ultimate Book of Prompts',
-    author: 'Generative Visual Series',
+    author: 'Andreea Todinca',
     category: 'AI & Agents',
-    status: 'queued',
-  },
-  {
-    bookSlug: '1000-ai-image-prompts-stable-diffusion',
-    fileName: '1000 AI Image Prompts Stable Diffusion.epub',
-    format: 'EPUB',
-    title: '1000 AI Image Prompts: Stable Diffusion',
-    author: 'Diffusion Prompt Engineering',
-    category: 'AI & Agents',
-    status: 'queued',
+    status: 'published',
   },
 
   // =========================================================================
