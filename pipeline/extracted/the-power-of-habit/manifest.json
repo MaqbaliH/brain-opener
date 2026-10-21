@@ -1,0 +1,788 @@
+{
+  "bookSlug": "the-power-of-habit",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\The Power of Habit Why We Do What We Do in Life and Business (Charles Duhigg) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+  "totalChapters": 4,
+  "totalFigures": 104,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/Duhi_9780679603856_epub_prl_r1.htm",
+      "title": "PROLOGUEThe Habit Cure / THE HABIT LOOPHow Habits Work / THE CRAVING BRAINHow to Create New Habits",
+      "charCount": 117512,
+      "wordCount": 19865,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "PROLOGUEThe Habit Cure"
+        },
+        {
+          "level": "h1",
+          "title": "THE HABIT LOOPHow Habits Work"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h2",
+          "title": "IV."
+        },
+        {
+          "level": "h1",
+          "title": "THE CRAVING BRAINHow to Create New Habits"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h2",
+          "title": "IV."
+        },
+        {
+          "level": "h2",
+          "title": "V."
+        }
+      ],
+      "figures": [
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_002_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_003_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_004_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_005_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_006_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_007_r1.jpg",
+          "caption": "THE HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_008_r1.jpg",
+          "caption": "EUGENE’S HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_009_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_010_r1.jpg",
+          "caption": "HOPKINS’S CONCEPTION OF THE PEPSODENT HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_011_r1.jpg",
+          "caption": "JULIO’S REWARD RESPONSE WHEN HE RECEIVES THE JUICE",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_012_r1.jpg",
+          "caption": "JULIO’S HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_013_r1.jpg",
+          "caption": "NOW, JULIO’S REWARD RESPONSE OCCURS BEFORE THE JUICE ARRIVES",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_014_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_015_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_016_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_017_r1.jpg",
+          "caption": "JULIO’S HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_018_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_019_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_020_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_021_r1.jpg",
+          "caption": "THE FEBREZE HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_022_r1.jpg",
+          "caption": "THE REAL PEPSODENT HABIT LOOP",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-power-of-habit\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/Duhi_9780679603856_epub_c03_r1.htm",
+      "title": "THE GOLDEN RULE OF HABIT CHANGEWhy Transformation Occurs / KEYSTONE HABITS, OR THE BALLAD OF PAUL O’NEILLWhich Habits Matter Most / STARBUCKS AND THE HABIT OF SUCCESSWhen Willpower Becomes Automatic",
+      "charCount": 167853,
+      "wordCount": 28031,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "THE GOLDEN RULE OF HABIT CHANGEWhy Transformation Occurs"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h2",
+          "title": "IV."
+        },
+        {
+          "level": "h2",
+          "title": "V."
+        },
+        {
+          "level": "h1",
+          "title": "KEYSTONE HABITS, OR THE BALLAD OF PAUL O’NEILLWhich Habits Matter Most"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h1",
+          "title": "STARBUCKS AND THE HABIT OF SUCCESSWhen Willpower Becomes Automatic"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h2",
+          "title": "IV."
+        },
+        {
+          "level": "h2",
+          "title": "V."
+        }
+      ],
+      "figures": [
+        {
+          "file": "Duhi_9780679603856_epub_023_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_024_r1.jpg",
+          "caption": "HOW IT WORKS: USE THE SAME CUE. PROVIDE THE SAME REWARD. CHANGE THE ROUTINE.",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_025_r1.jpg",
+          "caption": "KEEP THE CUE, PROVIDE THE SAME REWARD, INSERT A NEW ROUTINE",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_026_r1.jpg",
+          "caption": "MANDY’S HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_027_r1.jpg",
+          "caption": "MANDY’S NEW HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_028_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_029_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_031_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_032_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_033_r1.jpg",
+          "caption": "ALCOA’S INSTITUTIONAL HABIT LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_034_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_035_r1.jpg",
+          "caption": "WHEN KIDS LEARN HABITS FOR DELAYING THEIR CRAVINGS…",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_036_r1.jpg",
+          "caption": "THOSE HABITS SPILL OVER TO OTHER PARTS OF LIFE",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_037_r1.jpg",
+          "caption": "PATIENTS DESIGNED WILLPOWER HABITS TO HELP THEM OVERCOME PAINFUL INFLECTION POINTS",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_038_r1.jpg",
+          "caption": "THE LATTE HABIT LOOP",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-power-of-habit\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/Duhi_9780679603856_epub_c06_r1.htm",
+      "title": "THE POWER OF A CRISISHow Leaders Create Habits Through Accident and Design / HOW TARGET KNOWS WHAT YOU WANT BEFORE YOU DOWhen Companies Predict (and Manipulate) Habits / SADDLEBACK CHURCH AND THE MONTGOMERY BUS BOYCOTTHow Movements Happen",
+      "charCount": 167591,
+      "wordCount": 27569,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "THE POWER OF A CRISISHow Leaders Create Habits Through Accident and Design"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h2",
+          "title": "IV."
+        },
+        {
+          "level": "h1",
+          "title": "HOW TARGET KNOWS WHAT YOU WANT BEFORE YOU DOWhen Companies Predict (and Manipulate) Habits"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h2",
+          "title": "IV."
+        },
+        {
+          "level": "h1",
+          "title": "SADDLEBACK CHURCH AND THE MONTGOMERY BUS BOYCOTTHow Movements Happen"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        }
+      ],
+      "figures": [
+        {
+          "file": "Duhi_9780679603856_epub_039_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_040_r1.jpg",
+          "caption": "ROUTINES CREATE TRUCES THAT ALLOW WORK TO GET DONE",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_041_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_042_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_043_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_044_r1.jpg",
+          "caption": "THE FAMILIARITY LOOP",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_045_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_047_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-power-of-habit\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/Duhi_9780679603856_epub_c09_r1.htm",
+      "title": "THE NEUROLOGY OF FREE WILLAre We Responsible for Our Habits? / APPENDIXA Reader’s Guide to Using These Ideas",
+      "charCount": 73254,
+      "wordCount": 12700,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "THE NEUROLOGY OF FREE WILLAre We Responsible for Our Habits?"
+        },
+        {
+          "level": "h2",
+          "title": "I."
+        },
+        {
+          "level": "h2",
+          "title": "II."
+        },
+        {
+          "level": "h2",
+          "title": "III."
+        },
+        {
+          "level": "h2",
+          "title": "IV."
+        },
+        {
+          "level": "h1",
+          "title": "APPENDIXA Reader’s Guide to Using These Ideas"
+        },
+        {
+          "level": "h2",
+          "title": "STEP ONE: IDENTIFY THE ROUTINE"
+        },
+        {
+          "level": "h2",
+          "title": "STEP TWO: EXPERIMENT WITH REWARDS"
+        },
+        {
+          "level": "h2",
+          "title": "STEP THREE: ISOLATE THE CUE"
+        },
+        {
+          "level": "h2",
+          "title": "STEP FOUR: HAVE A PLAN"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Duhi_9780679603856_epub_048_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_049_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_050_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_051_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_L01_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_052_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_053_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_054_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_055_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_056_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Duhi_9780679603856_epub_057_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-power-of-habit\\ch04.txt"
+    }
+  ]
+}

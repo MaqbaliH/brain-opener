@@ -1,0 +1,1199 @@
+{
+  "bookSlug": "minto-pyramid-principle",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\20 oct 26\\The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving (Barbara Minto) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "totalChapters": 4,
+  "totalFigures": 223,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_17_88.pdf",
+      "title": "Part 1: Logic in Writing (Top-Down & Bottom-Up Pyramids, SCQA Introductions, Deduction vs. Induction)",
+      "startPage": 17,
+      "endPage": 88,
+      "charCount": 139873,
+      "wordCount": 23772,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Part 1: Logic in Writing"
+        }
+      ],
+      "figures": [
+        {
+          "file": "minto_pyramid_principle_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: Part 1: Logic in Writing (Top-Down & Bottom-Up Pyramids, SCQA Introductions, Deduction vs. Induction) (Page 17)",
+          "alt": "Chapter 1 opening page (Part 1: Logic in Writing (Top-Down & Bottom-Up Pyramids, SCQA Introductions, Deduction vs. Induction))"
+        },
+        {
+          "file": "minto_pyramid_principle_p017_fig1.png",
+          "caption": "Embedded figure from page 17",
+          "alt": "Book illustration on page 17"
+        },
+        {
+          "file": "minto_pyramid_principle_p018_fig1.png",
+          "caption": "Embedded figure from page 18",
+          "alt": "Book illustration on page 18"
+        },
+        {
+          "file": "minto_pyramid_principle_p019_fig1.png",
+          "caption": "Embedded figure from page 19",
+          "alt": "Book illustration on page 19"
+        },
+        {
+          "file": "minto_pyramid_principle_p020_fig1.png",
+          "caption": "Embedded figure from page 20",
+          "alt": "Book illustration on page 20"
+        },
+        {
+          "file": "minto_pyramid_principle_p021_fig1.png",
+          "caption": "Embedded figure from page 21",
+          "alt": "Book illustration on page 21"
+        },
+        {
+          "file": "minto_pyramid_principle_p022_fig1.png",
+          "caption": "Embedded figure from page 22",
+          "alt": "Book illustration on page 22"
+        },
+        {
+          "file": "minto_pyramid_principle_p023_fig1.png",
+          "caption": "Embedded figure from page 23",
+          "alt": "Book illustration on page 23"
+        },
+        {
+          "file": "minto_pyramid_principle_p024_fig1.png",
+          "caption": "Embedded figure from page 24",
+          "alt": "Book illustration on page 24"
+        },
+        {
+          "file": "minto_pyramid_principle_p025_fig1.png",
+          "caption": "Embedded figure from page 25",
+          "alt": "Book illustration on page 25"
+        },
+        {
+          "file": "minto_pyramid_principle_p026_fig1.png",
+          "caption": "Embedded figure from page 26",
+          "alt": "Book illustration on page 26"
+        },
+        {
+          "file": "minto_pyramid_principle_p027_fig1.png",
+          "caption": "Embedded figure from page 27",
+          "alt": "Book illustration on page 27"
+        },
+        {
+          "file": "minto_pyramid_principle_p028_fig1.png",
+          "caption": "Embedded figure from page 28",
+          "alt": "Book illustration on page 28"
+        },
+        {
+          "file": "minto_pyramid_principle_p029_fig1.png",
+          "caption": "Embedded figure from page 29",
+          "alt": "Book illustration on page 29"
+        },
+        {
+          "file": "minto_pyramid_principle_p030_fig1.png",
+          "caption": "Embedded figure from page 30",
+          "alt": "Book illustration on page 30"
+        },
+        {
+          "file": "minto_pyramid_principle_p031_fig1.png",
+          "caption": "Embedded figure from page 31",
+          "alt": "Book illustration on page 31"
+        },
+        {
+          "file": "minto_pyramid_principle_p032_fig1.png",
+          "caption": "Embedded figure from page 32",
+          "alt": "Book illustration on page 32"
+        },
+        {
+          "file": "minto_pyramid_principle_p033_fig1.png",
+          "caption": "Embedded figure from page 33",
+          "alt": "Book illustration on page 33"
+        },
+        {
+          "file": "minto_pyramid_principle_p034_fig1.png",
+          "caption": "Embedded figure from page 34",
+          "alt": "Book illustration on page 34"
+        },
+        {
+          "file": "minto_pyramid_principle_p035_fig1.png",
+          "caption": "Embedded figure from page 35",
+          "alt": "Book illustration on page 35"
+        },
+        {
+          "file": "minto_pyramid_principle_p036_fig1.png",
+          "caption": "Embedded figure from page 36",
+          "alt": "Book illustration on page 36"
+        },
+        {
+          "file": "minto_pyramid_principle_p037_fig1.png",
+          "caption": "Embedded figure from page 37",
+          "alt": "Book illustration on page 37"
+        },
+        {
+          "file": "minto_pyramid_principle_p038_fig1.png",
+          "caption": "Embedded figure from page 38",
+          "alt": "Book illustration on page 38"
+        },
+        {
+          "file": "minto_pyramid_principle_p039_fig1.png",
+          "caption": "Embedded figure from page 39",
+          "alt": "Book illustration on page 39"
+        },
+        {
+          "file": "minto_pyramid_principle_p040_fig1.png",
+          "caption": "Embedded figure from page 40",
+          "alt": "Book illustration on page 40"
+        },
+        {
+          "file": "minto_pyramid_principle_p041_fig1.png",
+          "caption": "Embedded figure from page 41",
+          "alt": "Book illustration on page 41"
+        },
+        {
+          "file": "minto_pyramid_principle_p042_fig1.png",
+          "caption": "Embedded figure from page 42",
+          "alt": "Book illustration on page 42"
+        },
+        {
+          "file": "minto_pyramid_principle_p043_fig1.png",
+          "caption": "Embedded figure from page 43",
+          "alt": "Book illustration on page 43"
+        },
+        {
+          "file": "minto_pyramid_principle_p044_fig1.png",
+          "caption": "Embedded figure from page 44",
+          "alt": "Book illustration on page 44"
+        },
+        {
+          "file": "minto_pyramid_principle_p045_fig1.png",
+          "caption": "Embedded figure from page 45",
+          "alt": "Book illustration on page 45"
+        },
+        {
+          "file": "minto_pyramid_principle_p046_fig1.png",
+          "caption": "Embedded figure from page 46",
+          "alt": "Book illustration on page 46"
+        },
+        {
+          "file": "minto_pyramid_principle_p047_fig1.png",
+          "caption": "Embedded figure from page 47",
+          "alt": "Book illustration on page 47"
+        },
+        {
+          "file": "minto_pyramid_principle_p048_fig1.png",
+          "caption": "Embedded figure from page 48",
+          "alt": "Book illustration on page 48"
+        },
+        {
+          "file": "minto_pyramid_principle_p049_fig1.png",
+          "caption": "Embedded figure from page 49",
+          "alt": "Book illustration on page 49"
+        },
+        {
+          "file": "minto_pyramid_principle_p050_fig1.png",
+          "caption": "Embedded figure from page 50",
+          "alt": "Book illustration on page 50"
+        },
+        {
+          "file": "minto_pyramid_principle_p051_fig1.png",
+          "caption": "Embedded figure from page 51",
+          "alt": "Book illustration on page 51"
+        },
+        {
+          "file": "minto_pyramid_principle_p052_fig1.png",
+          "caption": "Embedded figure from page 52",
+          "alt": "Book illustration on page 52"
+        },
+        {
+          "file": "minto_pyramid_principle_p053_fig1.png",
+          "caption": "Embedded figure from page 53",
+          "alt": "Book illustration on page 53"
+        },
+        {
+          "file": "minto_pyramid_principle_p054_fig1.png",
+          "caption": "Embedded figure from page 54",
+          "alt": "Book illustration on page 54"
+        },
+        {
+          "file": "minto_pyramid_principle_p055_fig1.png",
+          "caption": "Embedded figure from page 55",
+          "alt": "Book illustration on page 55"
+        },
+        {
+          "file": "minto_pyramid_principle_p056_fig1.png",
+          "caption": "Embedded figure from page 56",
+          "alt": "Book illustration on page 56"
+        },
+        {
+          "file": "minto_pyramid_principle_p057_fig1.png",
+          "caption": "Embedded figure from page 57",
+          "alt": "Book illustration on page 57"
+        },
+        {
+          "file": "minto_pyramid_principle_p058_fig1.png",
+          "caption": "Embedded figure from page 58",
+          "alt": "Book illustration on page 58"
+        },
+        {
+          "file": "minto_pyramid_principle_p059_fig1.png",
+          "caption": "Embedded figure from page 59",
+          "alt": "Book illustration on page 59"
+        },
+        {
+          "file": "minto_pyramid_principle_p060_fig1.png",
+          "caption": "Embedded figure from page 60",
+          "alt": "Book illustration on page 60"
+        },
+        {
+          "file": "minto_pyramid_principle_p061_fig1.png",
+          "caption": "Embedded figure from page 61",
+          "alt": "Book illustration on page 61"
+        },
+        {
+          "file": "minto_pyramid_principle_p062_fig1.png",
+          "caption": "Embedded figure from page 62",
+          "alt": "Book illustration on page 62"
+        },
+        {
+          "file": "minto_pyramid_principle_p063_fig1.png",
+          "caption": "Embedded figure from page 63",
+          "alt": "Book illustration on page 63"
+        },
+        {
+          "file": "minto_pyramid_principle_p064_fig1.png",
+          "caption": "Embedded figure from page 64",
+          "alt": "Book illustration on page 64"
+        },
+        {
+          "file": "minto_pyramid_principle_p065_fig1.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "minto_pyramid_principle_p066_fig1.png",
+          "caption": "Embedded figure from page 66",
+          "alt": "Book illustration on page 66"
+        },
+        {
+          "file": "minto_pyramid_principle_p067_fig1.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "minto_pyramid_principle_p068_fig1.png",
+          "caption": "Embedded figure from page 68",
+          "alt": "Book illustration on page 68"
+        },
+        {
+          "file": "minto_pyramid_principle_p069_fig1.png",
+          "caption": "Embedded figure from page 69",
+          "alt": "Book illustration on page 69"
+        },
+        {
+          "file": "minto_pyramid_principle_p070_fig1.png",
+          "caption": "Embedded figure from page 70",
+          "alt": "Book illustration on page 70"
+        },
+        {
+          "file": "minto_pyramid_principle_p071_fig1.png",
+          "caption": "Embedded figure from page 71",
+          "alt": "Book illustration on page 71"
+        },
+        {
+          "file": "minto_pyramid_principle_p072_fig1.png",
+          "caption": "Embedded figure from page 72",
+          "alt": "Book illustration on page 72"
+        },
+        {
+          "file": "minto_pyramid_principle_p073_fig1.png",
+          "caption": "Embedded figure from page 73",
+          "alt": "Book illustration on page 73"
+        },
+        {
+          "file": "minto_pyramid_principle_p074_fig1.png",
+          "caption": "Embedded figure from page 74",
+          "alt": "Book illustration on page 74"
+        },
+        {
+          "file": "minto_pyramid_principle_p075_fig1.png",
+          "caption": "Embedded figure from page 75",
+          "alt": "Book illustration on page 75"
+        },
+        {
+          "file": "minto_pyramid_principle_p076_fig1.png",
+          "caption": "Embedded figure from page 76",
+          "alt": "Book illustration on page 76"
+        },
+        {
+          "file": "minto_pyramid_principle_p077_fig1.png",
+          "caption": "Embedded figure from page 77",
+          "alt": "Book illustration on page 77"
+        },
+        {
+          "file": "minto_pyramid_principle_p078_fig1.png",
+          "caption": "Embedded figure from page 78",
+          "alt": "Book illustration on page 78"
+        },
+        {
+          "file": "minto_pyramid_principle_p079_fig1.png",
+          "caption": "Embedded figure from page 79",
+          "alt": "Book illustration on page 79"
+        },
+        {
+          "file": "minto_pyramid_principle_p080_fig1.png",
+          "caption": "Embedded figure from page 80",
+          "alt": "Book illustration on page 80"
+        },
+        {
+          "file": "minto_pyramid_principle_p081_fig1.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "minto_pyramid_principle_p082_fig1.png",
+          "caption": "Embedded figure from page 82",
+          "alt": "Book illustration on page 82"
+        },
+        {
+          "file": "minto_pyramid_principle_p083_fig1.png",
+          "caption": "Embedded figure from page 83",
+          "alt": "Book illustration on page 83"
+        },
+        {
+          "file": "minto_pyramid_principle_p084_fig1.png",
+          "caption": "Embedded figure from page 84",
+          "alt": "Book illustration on page 84"
+        },
+        {
+          "file": "minto_pyramid_principle_p085_fig1.png",
+          "caption": "Embedded figure from page 85",
+          "alt": "Book illustration on page 85"
+        },
+        {
+          "file": "minto_pyramid_principle_p086_fig1.png",
+          "caption": "Embedded figure from page 86",
+          "alt": "Book illustration on page 86"
+        },
+        {
+          "file": "minto_pyramid_principle_p087_fig1.png",
+          "caption": "Embedded figure from page 87",
+          "alt": "Book illustration on page 87"
+        },
+        {
+          "file": "minto_pyramid_principle_p088_fig1.png",
+          "caption": "Embedded figure from page 88",
+          "alt": "Book illustration on page 88"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\minto-pyramid-principle\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_89_134.pdf",
+      "title": "Part 2: Logic in Thinking (Imposing Logical Order: Time, Structure, Degree & Summarizing Grouped Ideas)",
+      "startPage": 89,
+      "endPage": 134,
+      "charCount": 93644,
+      "wordCount": 15502,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Part 2: Logic in Thinking"
+        }
+      ],
+      "figures": [
+        {
+          "file": "minto_pyramid_principle_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Part 2: Logic in Thinking (Imposing Logical Order: Time, Structure, Degree & Summarizing Grouped Ideas) (Page 89)",
+          "alt": "Chapter 2 opening page (Part 2: Logic in Thinking (Imposing Logical Order: Time, Structure, Degree & Summarizing Grouped Ideas))"
+        },
+        {
+          "file": "minto_pyramid_principle_p089_fig1.png",
+          "caption": "Embedded figure from page 89",
+          "alt": "Book illustration on page 89"
+        },
+        {
+          "file": "minto_pyramid_principle_p090_fig1.png",
+          "caption": "Embedded figure from page 90",
+          "alt": "Book illustration on page 90"
+        },
+        {
+          "file": "minto_pyramid_principle_p091_fig1.png",
+          "caption": "Embedded figure from page 91",
+          "alt": "Book illustration on page 91"
+        },
+        {
+          "file": "minto_pyramid_principle_p092_fig1.png",
+          "caption": "Embedded figure from page 92",
+          "alt": "Book illustration on page 92"
+        },
+        {
+          "file": "minto_pyramid_principle_p093_fig1.png",
+          "caption": "Embedded figure from page 93",
+          "alt": "Book illustration on page 93"
+        },
+        {
+          "file": "minto_pyramid_principle_p094_fig1.png",
+          "caption": "Embedded figure from page 94",
+          "alt": "Book illustration on page 94"
+        },
+        {
+          "file": "minto_pyramid_principle_p095_fig1.png",
+          "caption": "Embedded figure from page 95",
+          "alt": "Book illustration on page 95"
+        },
+        {
+          "file": "minto_pyramid_principle_p096_fig1.png",
+          "caption": "Embedded figure from page 96",
+          "alt": "Book illustration on page 96"
+        },
+        {
+          "file": "minto_pyramid_principle_p097_fig1.png",
+          "caption": "Embedded figure from page 97",
+          "alt": "Book illustration on page 97"
+        },
+        {
+          "file": "minto_pyramid_principle_p098_fig1.png",
+          "caption": "Embedded figure from page 98",
+          "alt": "Book illustration on page 98"
+        },
+        {
+          "file": "minto_pyramid_principle_p099_fig1.png",
+          "caption": "Embedded figure from page 99",
+          "alt": "Book illustration on page 99"
+        },
+        {
+          "file": "minto_pyramid_principle_p100_fig1.png",
+          "caption": "Embedded figure from page 100",
+          "alt": "Book illustration on page 100"
+        },
+        {
+          "file": "minto_pyramid_principle_p101_fig1.png",
+          "caption": "Embedded figure from page 101",
+          "alt": "Book illustration on page 101"
+        },
+        {
+          "file": "minto_pyramid_principle_p102_fig1.png",
+          "caption": "Embedded figure from page 102",
+          "alt": "Book illustration on page 102"
+        },
+        {
+          "file": "minto_pyramid_principle_p103_fig1.png",
+          "caption": "Embedded figure from page 103",
+          "alt": "Book illustration on page 103"
+        },
+        {
+          "file": "minto_pyramid_principle_p104_fig1.png",
+          "caption": "Embedded figure from page 104",
+          "alt": "Book illustration on page 104"
+        },
+        {
+          "file": "minto_pyramid_principle_p105_fig1.png",
+          "caption": "Embedded figure from page 105",
+          "alt": "Book illustration on page 105"
+        },
+        {
+          "file": "minto_pyramid_principle_p106_fig1.png",
+          "caption": "Embedded figure from page 106",
+          "alt": "Book illustration on page 106"
+        },
+        {
+          "file": "minto_pyramid_principle_p107_fig1.png",
+          "caption": "Embedded figure from page 107",
+          "alt": "Book illustration on page 107"
+        },
+        {
+          "file": "minto_pyramid_principle_p108_fig1.png",
+          "caption": "Embedded figure from page 108",
+          "alt": "Book illustration on page 108"
+        },
+        {
+          "file": "minto_pyramid_principle_p109_fig1.png",
+          "caption": "Embedded figure from page 109",
+          "alt": "Book illustration on page 109"
+        },
+        {
+          "file": "minto_pyramid_principle_p110_fig1.png",
+          "caption": "Embedded figure from page 110",
+          "alt": "Book illustration on page 110"
+        },
+        {
+          "file": "minto_pyramid_principle_p111_fig1.png",
+          "caption": "Embedded figure from page 111",
+          "alt": "Book illustration on page 111"
+        },
+        {
+          "file": "minto_pyramid_principle_p112_fig1.png",
+          "caption": "Embedded figure from page 112",
+          "alt": "Book illustration on page 112"
+        },
+        {
+          "file": "minto_pyramid_principle_p113_fig1.png",
+          "caption": "Embedded figure from page 113",
+          "alt": "Book illustration on page 113"
+        },
+        {
+          "file": "minto_pyramid_principle_p114_fig1.png",
+          "caption": "Embedded figure from page 114",
+          "alt": "Book illustration on page 114"
+        },
+        {
+          "file": "minto_pyramid_principle_p115_fig1.png",
+          "caption": "Embedded figure from page 115",
+          "alt": "Book illustration on page 115"
+        },
+        {
+          "file": "minto_pyramid_principle_p116_fig1.png",
+          "caption": "Embedded figure from page 116",
+          "alt": "Book illustration on page 116"
+        },
+        {
+          "file": "minto_pyramid_principle_p117_fig1.png",
+          "caption": "Embedded figure from page 117",
+          "alt": "Book illustration on page 117"
+        },
+        {
+          "file": "minto_pyramid_principle_p118_fig1.png",
+          "caption": "Embedded figure from page 118",
+          "alt": "Book illustration on page 118"
+        },
+        {
+          "file": "minto_pyramid_principle_p119_fig1.png",
+          "caption": "Embedded figure from page 119",
+          "alt": "Book illustration on page 119"
+        },
+        {
+          "file": "minto_pyramid_principle_p120_fig1.png",
+          "caption": "Embedded figure from page 120",
+          "alt": "Book illustration on page 120"
+        },
+        {
+          "file": "minto_pyramid_principle_p121_fig1.png",
+          "caption": "Embedded figure from page 121",
+          "alt": "Book illustration on page 121"
+        },
+        {
+          "file": "minto_pyramid_principle_p122_fig1.png",
+          "caption": "Embedded figure from page 122",
+          "alt": "Book illustration on page 122"
+        },
+        {
+          "file": "minto_pyramid_principle_p123_fig1.png",
+          "caption": "Embedded figure from page 123",
+          "alt": "Book illustration on page 123"
+        },
+        {
+          "file": "minto_pyramid_principle_p124_fig1.png",
+          "caption": "Embedded figure from page 124",
+          "alt": "Book illustration on page 124"
+        },
+        {
+          "file": "minto_pyramid_principle_p125_fig1.png",
+          "caption": "Embedded figure from page 125",
+          "alt": "Book illustration on page 125"
+        },
+        {
+          "file": "minto_pyramid_principle_p126_fig1.png",
+          "caption": "Embedded figure from page 126",
+          "alt": "Book illustration on page 126"
+        },
+        {
+          "file": "minto_pyramid_principle_p127_fig1.png",
+          "caption": "Embedded figure from page 127",
+          "alt": "Book illustration on page 127"
+        },
+        {
+          "file": "minto_pyramid_principle_p128_fig1.png",
+          "caption": "Embedded figure from page 128",
+          "alt": "Book illustration on page 128"
+        },
+        {
+          "file": "minto_pyramid_principle_p129_fig1.png",
+          "caption": "Embedded figure from page 129",
+          "alt": "Book illustration on page 129"
+        },
+        {
+          "file": "minto_pyramid_principle_p130_fig1.png",
+          "caption": "Embedded figure from page 130",
+          "alt": "Book illustration on page 130"
+        },
+        {
+          "file": "minto_pyramid_principle_p131_fig1.png",
+          "caption": "Embedded figure from page 131",
+          "alt": "Book illustration on page 131"
+        },
+        {
+          "file": "minto_pyramid_principle_p132_fig1.png",
+          "caption": "Embedded figure from page 132",
+          "alt": "Book illustration on page 132"
+        },
+        {
+          "file": "minto_pyramid_principle_p133_fig1.png",
+          "caption": "Embedded figure from page 133",
+          "alt": "Book illustration on page 133"
+        },
+        {
+          "file": "minto_pyramid_principle_p134_fig1.png",
+          "caption": "Embedded figure from page 134",
+          "alt": "Book illustration on page 134"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\minto-pyramid-principle\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_135_183.pdf",
+      "title": "Part 3: Logic in Problem Solving (Defining the Problem R1/R2 & Diagnostic Logic Trees)",
+      "startPage": 135,
+      "endPage": 183,
+      "charCount": 85014,
+      "wordCount": 13867,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Part 3: Logic in Problem Solving"
+        }
+      ],
+      "figures": [
+        {
+          "file": "minto_pyramid_principle_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Part 3: Logic in Problem Solving (Defining the Problem R1/R2 & Diagnostic Logic Trees) (Page 135)",
+          "alt": "Chapter 3 opening page (Part 3: Logic in Problem Solving (Defining the Problem R1/R2 & Diagnostic Logic Trees))"
+        },
+        {
+          "file": "minto_pyramid_principle_p135_fig1.png",
+          "caption": "Embedded figure from page 135",
+          "alt": "Book illustration on page 135"
+        },
+        {
+          "file": "minto_pyramid_principle_p136_fig1.png",
+          "caption": "Embedded figure from page 136",
+          "alt": "Book illustration on page 136"
+        },
+        {
+          "file": "minto_pyramid_principle_p137_fig1.png",
+          "caption": "Embedded figure from page 137",
+          "alt": "Book illustration on page 137"
+        },
+        {
+          "file": "minto_pyramid_principle_p138_fig1.png",
+          "caption": "Embedded figure from page 138",
+          "alt": "Book illustration on page 138"
+        },
+        {
+          "file": "minto_pyramid_principle_p139_fig1.png",
+          "caption": "Embedded figure from page 139",
+          "alt": "Book illustration on page 139"
+        },
+        {
+          "file": "minto_pyramid_principle_p140_fig1.png",
+          "caption": "Embedded figure from page 140",
+          "alt": "Book illustration on page 140"
+        },
+        {
+          "file": "minto_pyramid_principle_p141_fig1.png",
+          "caption": "Embedded figure from page 141",
+          "alt": "Book illustration on page 141"
+        },
+        {
+          "file": "minto_pyramid_principle_p142_fig1.png",
+          "caption": "Embedded figure from page 142",
+          "alt": "Book illustration on page 142"
+        },
+        {
+          "file": "minto_pyramid_principle_p143_fig1.png",
+          "caption": "Embedded figure from page 143",
+          "alt": "Book illustration on page 143"
+        },
+        {
+          "file": "minto_pyramid_principle_p144_fig1.png",
+          "caption": "Embedded figure from page 144",
+          "alt": "Book illustration on page 144"
+        },
+        {
+          "file": "minto_pyramid_principle_p145_fig1.png",
+          "caption": "Embedded figure from page 145",
+          "alt": "Book illustration on page 145"
+        },
+        {
+          "file": "minto_pyramid_principle_p146_fig1.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "minto_pyramid_principle_p147_fig1.png",
+          "caption": "Embedded figure from page 147",
+          "alt": "Book illustration on page 147"
+        },
+        {
+          "file": "minto_pyramid_principle_p148_fig1.png",
+          "caption": "Embedded figure from page 148",
+          "alt": "Book illustration on page 148"
+        },
+        {
+          "file": "minto_pyramid_principle_p149_fig1.png",
+          "caption": "Embedded figure from page 149",
+          "alt": "Book illustration on page 149"
+        },
+        {
+          "file": "minto_pyramid_principle_p150_fig1.png",
+          "caption": "Embedded figure from page 150",
+          "alt": "Book illustration on page 150"
+        },
+        {
+          "file": "minto_pyramid_principle_p151_fig1.png",
+          "caption": "Embedded figure from page 151",
+          "alt": "Book illustration on page 151"
+        },
+        {
+          "file": "minto_pyramid_principle_p152_fig1.png",
+          "caption": "Embedded figure from page 152",
+          "alt": "Book illustration on page 152"
+        },
+        {
+          "file": "minto_pyramid_principle_p153_fig1.png",
+          "caption": "Embedded figure from page 153",
+          "alt": "Book illustration on page 153"
+        },
+        {
+          "file": "minto_pyramid_principle_p154_fig1.png",
+          "caption": "Embedded figure from page 154",
+          "alt": "Book illustration on page 154"
+        },
+        {
+          "file": "minto_pyramid_principle_p155_fig1.png",
+          "caption": "Embedded figure from page 155",
+          "alt": "Book illustration on page 155"
+        },
+        {
+          "file": "minto_pyramid_principle_p156_fig1.png",
+          "caption": "Embedded figure from page 156",
+          "alt": "Book illustration on page 156"
+        },
+        {
+          "file": "minto_pyramid_principle_p157_fig1.png",
+          "caption": "Embedded figure from page 157",
+          "alt": "Book illustration on page 157"
+        },
+        {
+          "file": "minto_pyramid_principle_p158_fig1.png",
+          "caption": "Embedded figure from page 158",
+          "alt": "Book illustration on page 158"
+        },
+        {
+          "file": "minto_pyramid_principle_p159_fig1.png",
+          "caption": "Embedded figure from page 159",
+          "alt": "Book illustration on page 159"
+        },
+        {
+          "file": "minto_pyramid_principle_p160_fig1.png",
+          "caption": "Embedded figure from page 160",
+          "alt": "Book illustration on page 160"
+        },
+        {
+          "file": "minto_pyramid_principle_p161_fig1.png",
+          "caption": "Embedded figure from page 161",
+          "alt": "Book illustration on page 161"
+        },
+        {
+          "file": "minto_pyramid_principle_p162_fig1.png",
+          "caption": "Embedded figure from page 162",
+          "alt": "Book illustration on page 162"
+        },
+        {
+          "file": "minto_pyramid_principle_p163_fig1.png",
+          "caption": "Embedded figure from page 163",
+          "alt": "Book illustration on page 163"
+        },
+        {
+          "file": "minto_pyramid_principle_p164_fig1.png",
+          "caption": "Embedded figure from page 164",
+          "alt": "Book illustration on page 164"
+        },
+        {
+          "file": "minto_pyramid_principle_p165_fig1.png",
+          "caption": "Embedded figure from page 165",
+          "alt": "Book illustration on page 165"
+        },
+        {
+          "file": "minto_pyramid_principle_p166_fig1.png",
+          "caption": "Embedded figure from page 166",
+          "alt": "Book illustration on page 166"
+        },
+        {
+          "file": "minto_pyramid_principle_p167_fig1.png",
+          "caption": "Embedded figure from page 167",
+          "alt": "Book illustration on page 167"
+        },
+        {
+          "file": "minto_pyramid_principle_p168_fig1.png",
+          "caption": "Embedded figure from page 168",
+          "alt": "Book illustration on page 168"
+        },
+        {
+          "file": "minto_pyramid_principle_p169_fig1.png",
+          "caption": "Embedded figure from page 169",
+          "alt": "Book illustration on page 169"
+        },
+        {
+          "file": "minto_pyramid_principle_p170_fig1.png",
+          "caption": "Embedded figure from page 170",
+          "alt": "Book illustration on page 170"
+        },
+        {
+          "file": "minto_pyramid_principle_p171_fig1.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "minto_pyramid_principle_p172_fig1.png",
+          "caption": "Embedded figure from page 172",
+          "alt": "Book illustration on page 172"
+        },
+        {
+          "file": "minto_pyramid_principle_p173_fig1.png",
+          "caption": "Embedded figure from page 173",
+          "alt": "Book illustration on page 173"
+        },
+        {
+          "file": "minto_pyramid_principle_p174_fig1.png",
+          "caption": "Embedded figure from page 174",
+          "alt": "Book illustration on page 174"
+        },
+        {
+          "file": "minto_pyramid_principle_p175_fig1.png",
+          "caption": "Embedded figure from page 175",
+          "alt": "Book illustration on page 175"
+        },
+        {
+          "file": "minto_pyramid_principle_p176_fig1.png",
+          "caption": "Embedded figure from page 176",
+          "alt": "Book illustration on page 176"
+        },
+        {
+          "file": "minto_pyramid_principle_p177_fig1.png",
+          "caption": "Embedded figure from page 177",
+          "alt": "Book illustration on page 177"
+        },
+        {
+          "file": "minto_pyramid_principle_p178_fig1.png",
+          "caption": "Embedded figure from page 178",
+          "alt": "Book illustration on page 178"
+        },
+        {
+          "file": "minto_pyramid_principle_p179_fig1.png",
+          "caption": "Embedded figure from page 179",
+          "alt": "Book illustration on page 179"
+        },
+        {
+          "file": "minto_pyramid_principle_p180_fig1.png",
+          "caption": "Embedded figure from page 180",
+          "alt": "Book illustration on page 180"
+        },
+        {
+          "file": "minto_pyramid_principle_p181_fig1.png",
+          "caption": "Embedded figure from page 181",
+          "alt": "Book illustration on page 181"
+        },
+        {
+          "file": "minto_pyramid_principle_p182_fig1.png",
+          "caption": "Embedded figure from page 182",
+          "alt": "Book illustration on page 182"
+        },
+        {
+          "file": "minto_pyramid_principle_p183_fig1.png",
+          "caption": "Embedded figure from page 183",
+          "alt": "Book illustration on page 183"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\minto-pyramid-principle\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_184_235.pdf",
+      "title": "Part 4: Logic in Presentation (Page Hierarchy, Visual Slide Storyboarding & Image-Driven Prose)",
+      "startPage": 184,
+      "endPage": 235,
+      "charCount": 99992,
+      "wordCount": 16752,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Part 4: Logic in Presentation"
+        }
+      ],
+      "figures": [
+        {
+          "file": "minto_pyramid_principle_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Part 4: Logic in Presentation (Page Hierarchy, Visual Slide Storyboarding & Image-Driven Prose) (Page 184)",
+          "alt": "Chapter 4 opening page (Part 4: Logic in Presentation (Page Hierarchy, Visual Slide Storyboarding & Image-Driven Prose))"
+        },
+        {
+          "file": "minto_pyramid_principle_p184_fig1.png",
+          "caption": "Embedded figure from page 184",
+          "alt": "Book illustration on page 184"
+        },
+        {
+          "file": "minto_pyramid_principle_p185_fig1.png",
+          "caption": "Embedded figure from page 185",
+          "alt": "Book illustration on page 185"
+        },
+        {
+          "file": "minto_pyramid_principle_p186_fig1.png",
+          "caption": "Embedded figure from page 186",
+          "alt": "Book illustration on page 186"
+        },
+        {
+          "file": "minto_pyramid_principle_p187_fig1.png",
+          "caption": "Embedded figure from page 187",
+          "alt": "Book illustration on page 187"
+        },
+        {
+          "file": "minto_pyramid_principle_p188_fig1.png",
+          "caption": "Embedded figure from page 188",
+          "alt": "Book illustration on page 188"
+        },
+        {
+          "file": "minto_pyramid_principle_p189_fig1.png",
+          "caption": "Embedded figure from page 189",
+          "alt": "Book illustration on page 189"
+        },
+        {
+          "file": "minto_pyramid_principle_p190_fig1.png",
+          "caption": "Embedded figure from page 190",
+          "alt": "Book illustration on page 190"
+        },
+        {
+          "file": "minto_pyramid_principle_p191_fig1.png",
+          "caption": "Embedded figure from page 191",
+          "alt": "Book illustration on page 191"
+        },
+        {
+          "file": "minto_pyramid_principle_p192_fig1.png",
+          "caption": "Embedded figure from page 192",
+          "alt": "Book illustration on page 192"
+        },
+        {
+          "file": "minto_pyramid_principle_p193_fig1.png",
+          "caption": "Embedded figure from page 193",
+          "alt": "Book illustration on page 193"
+        },
+        {
+          "file": "minto_pyramid_principle_p194_fig1.png",
+          "caption": "Embedded figure from page 194",
+          "alt": "Book illustration on page 194"
+        },
+        {
+          "file": "minto_pyramid_principle_p195_fig1.png",
+          "caption": "Embedded figure from page 195",
+          "alt": "Book illustration on page 195"
+        },
+        {
+          "file": "minto_pyramid_principle_p196_fig1.png",
+          "caption": "Embedded figure from page 196",
+          "alt": "Book illustration on page 196"
+        },
+        {
+          "file": "minto_pyramid_principle_p197_fig1.png",
+          "caption": "Embedded figure from page 197",
+          "alt": "Book illustration on page 197"
+        },
+        {
+          "file": "minto_pyramid_principle_p198_fig1.png",
+          "caption": "Embedded figure from page 198",
+          "alt": "Book illustration on page 198"
+        },
+        {
+          "file": "minto_pyramid_principle_p199_fig1.png",
+          "caption": "Embedded figure from page 199",
+          "alt": "Book illustration on page 199"
+        },
+        {
+          "file": "minto_pyramid_principle_p200_fig1.png",
+          "caption": "Embedded figure from page 200",
+          "alt": "Book illustration on page 200"
+        },
+        {
+          "file": "minto_pyramid_principle_p201_fig1.png",
+          "caption": "Embedded figure from page 201",
+          "alt": "Book illustration on page 201"
+        },
+        {
+          "file": "minto_pyramid_principle_p202_fig1.png",
+          "caption": "Embedded figure from page 202",
+          "alt": "Book illustration on page 202"
+        },
+        {
+          "file": "minto_pyramid_principle_p203_fig1.png",
+          "caption": "Embedded figure from page 203",
+          "alt": "Book illustration on page 203"
+        },
+        {
+          "file": "minto_pyramid_principle_p204_fig1.png",
+          "caption": "Embedded figure from page 204",
+          "alt": "Book illustration on page 204"
+        },
+        {
+          "file": "minto_pyramid_principle_p205_fig1.png",
+          "caption": "Embedded figure from page 205",
+          "alt": "Book illustration on page 205"
+        },
+        {
+          "file": "minto_pyramid_principle_p206_fig1.png",
+          "caption": "Embedded figure from page 206",
+          "alt": "Book illustration on page 206"
+        },
+        {
+          "file": "minto_pyramid_principle_p207_fig1.png",
+          "caption": "Embedded figure from page 207",
+          "alt": "Book illustration on page 207"
+        },
+        {
+          "file": "minto_pyramid_principle_p208_fig1.png",
+          "caption": "Embedded figure from page 208",
+          "alt": "Book illustration on page 208"
+        },
+        {
+          "file": "minto_pyramid_principle_p209_fig1.png",
+          "caption": "Embedded figure from page 209",
+          "alt": "Book illustration on page 209"
+        },
+        {
+          "file": "minto_pyramid_principle_p210_fig1.png",
+          "caption": "Embedded figure from page 210",
+          "alt": "Book illustration on page 210"
+        },
+        {
+          "file": "minto_pyramid_principle_p211_fig1.png",
+          "caption": "Embedded figure from page 211",
+          "alt": "Book illustration on page 211"
+        },
+        {
+          "file": "minto_pyramid_principle_p212_fig1.png",
+          "caption": "Embedded figure from page 212",
+          "alt": "Book illustration on page 212"
+        },
+        {
+          "file": "minto_pyramid_principle_p213_fig1.png",
+          "caption": "Embedded figure from page 213",
+          "alt": "Book illustration on page 213"
+        },
+        {
+          "file": "minto_pyramid_principle_p214_fig1.png",
+          "caption": "Embedded figure from page 214",
+          "alt": "Book illustration on page 214"
+        },
+        {
+          "file": "minto_pyramid_principle_p215_fig1.png",
+          "caption": "Embedded figure from page 215",
+          "alt": "Book illustration on page 215"
+        },
+        {
+          "file": "minto_pyramid_principle_p216_fig1.png",
+          "caption": "Embedded figure from page 216",
+          "alt": "Book illustration on page 216"
+        },
+        {
+          "file": "minto_pyramid_principle_p217_fig1.png",
+          "caption": "Embedded figure from page 217",
+          "alt": "Book illustration on page 217"
+        },
+        {
+          "file": "minto_pyramid_principle_p218_fig1.png",
+          "caption": "Embedded figure from page 218",
+          "alt": "Book illustration on page 218"
+        },
+        {
+          "file": "minto_pyramid_principle_p219_fig1.png",
+          "caption": "Embedded figure from page 219",
+          "alt": "Book illustration on page 219"
+        },
+        {
+          "file": "minto_pyramid_principle_p220_fig1.png",
+          "caption": "Embedded figure from page 220",
+          "alt": "Book illustration on page 220"
+        },
+        {
+          "file": "minto_pyramid_principle_p221_fig1.png",
+          "caption": "Embedded figure from page 221",
+          "alt": "Book illustration on page 221"
+        },
+        {
+          "file": "minto_pyramid_principle_p222_fig1.png",
+          "caption": "Embedded figure from page 222",
+          "alt": "Book illustration on page 222"
+        },
+        {
+          "file": "minto_pyramid_principle_p223_fig1.png",
+          "caption": "Embedded figure from page 223",
+          "alt": "Book illustration on page 223"
+        },
+        {
+          "file": "minto_pyramid_principle_p224_fig1.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "minto_pyramid_principle_p225_fig1.png",
+          "caption": "Embedded figure from page 225",
+          "alt": "Book illustration on page 225"
+        },
+        {
+          "file": "minto_pyramid_principle_p226_fig1.png",
+          "caption": "Embedded figure from page 226",
+          "alt": "Book illustration on page 226"
+        },
+        {
+          "file": "minto_pyramid_principle_p227_fig1.png",
+          "caption": "Embedded figure from page 227",
+          "alt": "Book illustration on page 227"
+        },
+        {
+          "file": "minto_pyramid_principle_p228_fig1.png",
+          "caption": "Embedded figure from page 228",
+          "alt": "Book illustration on page 228"
+        },
+        {
+          "file": "minto_pyramid_principle_p229_fig1.png",
+          "caption": "Embedded figure from page 229",
+          "alt": "Book illustration on page 229"
+        },
+        {
+          "file": "minto_pyramid_principle_p230_fig1.png",
+          "caption": "Embedded figure from page 230",
+          "alt": "Book illustration on page 230"
+        },
+        {
+          "file": "minto_pyramid_principle_p231_fig1.png",
+          "caption": "Embedded figure from page 231",
+          "alt": "Book illustration on page 231"
+        },
+        {
+          "file": "minto_pyramid_principle_p232_fig1.png",
+          "caption": "Embedded figure from page 232",
+          "alt": "Book illustration on page 232"
+        },
+        {
+          "file": "minto_pyramid_principle_p233_fig1.png",
+          "caption": "Embedded figure from page 233",
+          "alt": "Book illustration on page 233"
+        },
+        {
+          "file": "minto_pyramid_principle_p234_fig1.png",
+          "caption": "Embedded figure from page 234",
+          "alt": "Book illustration on page 234"
+        },
+        {
+          "file": "minto_pyramid_principle_p235_fig1.png",
+          "caption": "Embedded figure from page 235",
+          "alt": "Book illustration on page 235"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\minto-pyramid-principle\\ch04.txt"
+    }
+  ]
+}

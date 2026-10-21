@@ -11,13 +11,34 @@ import { beyondVibeCodingBook } from './beyond-vibe-coding';
 import { buildWithGoogleAntigravityBook } from './build-with-google-antigravity';
 import { buildingAiAgentsForFinanceBook } from './building-ai-agents-for-finance';
 import { buildingApplicationsWithAiAgentsBook } from './building-applications-with-ai-agents';
+import { bulletproofProblemSolvingBook } from './bulletproof-problem-solving';
 import { claudeBeyondThePromptBook } from './claude-beyond-the-prompt';
 import { contextEngineeringMultiAgentBook } from './context-engineering-multi-agent';
+import { criticalThinkingHaberBook } from './critical-thinking-haber';
+import { criticalThinkingPowerfulStrategiesBook } from './critical-thinking-powerful-strategies';
+import { deepWorkBook } from './deep-work';
 import { designMultiAgentMcpA2aBook } from './design-multi-agent-mcp-a2a';
 import { grokkingAiApplicationsBook } from './grokking-ai-applications';
+import { hemingwaysBoatBook } from './hemingways-boat';
 import { howToBuildAnAiAgencyBook } from './how-to-build-an-ai-agency';
+import { howToMakeYourBrainYourBestFriendBook } from './how-to-make-your-brain-your-best-friend';
+import { leadershipSecretsTopCeosBook } from './leadership-secrets-top-ceos';
+import { masteryBook } from './mastery';
 import { midjourneyMasteryBook } from './midjourney-mastery';
+import { mindsetBook } from './mindset';
+import { mintoPyramidPrincipleBook } from './minto-pyramid-principle';
 import { promptEngineeringForLlmsBook } from './prompt-engineering-for-llms';
+import { revengeOfTheTippingPointBook } from './revenge-of-the-tipping-point';
+import { rewireBook } from './rewire';
+import { soGoodTheyCantIgnoreYouBook } from './so-good-they-cant-ignore-you';
+import { theAnxiousGenerationBook } from './the-anxious-generation';
+import { theComfortCrisisBook } from './the-comfort-crisis';
+import { theCourageToBeDislikedBook } from './the-courage-to-be-disliked';
+import { theCourageToBeHappyBook } from './the-courage-to-be-happy';
+import { theMckinseyMindBook } from './the-mckinsey-mind';
+import { theMckinseyWayBook } from './the-mckinsey-way';
+import { thePowerOfHabitBook } from './the-power-of-habit';
+import { thinkingSidewaysBook } from './thinking-sideways';
 import { vibeCodingFutureOfProgrammingBook } from './vibe-coding-future-of-programming';
 
 export type BookDomainCategory =
@@ -42,6 +63,27 @@ export interface VaultBookPreview {
  * Whenever Nexus finishes synthesizing a new book from /Books, register its BookMasteryPackage here.
  */
 export const PUBLISHED_BOOKS: Record<string, BookMasteryPackage> = {
+  'deep-work': deepWorkBook,
+  'so-good-they-cant-ignore-you': soGoodTheyCantIgnoreYouBook,
+  mastery: masteryBook,
+  mindset: mindsetBook,
+  'the-power-of-habit': thePowerOfHabitBook,
+  'thinking-sideways': thinkingSidewaysBook,
+  rewire: rewireBook,
+  'how-to-make-your-brain-your-best-friend': howToMakeYourBrainYourBestFriendBook,
+  'the-courage-to-be-disliked': theCourageToBeDislikedBook,
+  'the-courage-to-be-happy': theCourageToBeHappyBook,
+  'the-comfort-crisis': theComfortCrisisBook,
+  'the-anxious-generation': theAnxiousGenerationBook,
+  'revenge-of-the-tipping-point': revengeOfTheTippingPointBook,
+  'hemingways-boat': hemingwaysBoatBook,
+  'bulletproof-problem-solving': bulletproofProblemSolvingBook,
+  'critical-thinking-haber': criticalThinkingHaberBook,
+  'critical-thinking-powerful-strategies': criticalThinkingPowerfulStrategiesBook,
+  'minto-pyramid-principle': mintoPyramidPrincipleBook,
+  'the-mckinsey-mind': theMckinseyMindBook,
+  'the-mckinsey-way': theMckinseyWayBook,
+  'leadership-secrets-top-ceos': leadershipSecretsTopCeosBook,
   'midjourney-mastery': midjourneyMasteryBook,
   'art-of-prompt-engineering-multimodel': artOfPromptEngineeringMultimodelBook,
   'how-to-build-an-ai-agency': howToBuildAnAiAgencyBook,
@@ -393,7 +435,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
   },
 
   // =========================================================================
-  // COGNITIVE & MASTERY VAULT QUEUE
+  // COGNITIVE & MASTERY PUBLISHED VOLUMES
   // =========================================================================
   {
     bookSlug: 'deep-work',
@@ -402,7 +444,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Deep Work: Rules for Focused Success in a Distracted World',
     author: 'Cal Newport',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'so-good-they-cant-ignore-you',
@@ -412,7 +454,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: "So Good They Can't Ignore You",
     author: 'Cal Newport',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'mastery',
@@ -421,17 +463,17 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Mastery',
     author: 'Robert Greene',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'mindset',
     fileName:
-      'Mindset - Changing The Way You Think To Fulfil Your Potential (Updated Edition) (Carol Susan Dweck) (z-library.sk, 1lib.sk, z-lib.sk).epub',
-    format: 'EPUB',
+      'Mindset - Changing The Way You Think To Fulfil Your Potential (Updated Edition) (Carol Susan Dweck) (z-library.sk, 1lib.sk, z-lib.sk).pdf',
+    format: 'PDF',
     title: 'Mindset: The New Psychology of Success',
     author: 'Carol S. Dweck',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'the-power-of-habit',
@@ -441,7 +483,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The Power of Habit',
     author: 'Charles Duhigg',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'thinking-sideways',
@@ -450,7 +492,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Thinking Sideways: Lateral Problem Solving',
     author: 'Cognitive Strategy Series',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'rewire',
@@ -459,7 +501,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Rewire: Break the Cycle, Alter Your Thoughts',
     author: 'Nicole Vignola',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'how-to-make-your-brain-your-best-friend',
@@ -468,7 +510,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'How to Make Your Brain Your Best Friend',
     author: 'Rachel Barr',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'the-courage-to-be-disliked',
@@ -477,7 +519,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The Courage to Be Disliked',
     author: 'Ichiro Kishimi & Fumitake Koga',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'the-courage-to-be-happy',
@@ -486,7 +528,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The Courage to Be Happy',
     author: 'Ichiro Kishimi & Fumitake Koga',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'the-comfort-crisis',
@@ -495,7 +537,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The Comfort Crisis: Embrace Discomfort To Reclaim Your Wild, Happy, Healthy Self',
     author: 'Michael Easter',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'the-anxious-generation',
@@ -504,7 +546,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The Anxious Generation',
     author: 'Jonathan Haidt',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'revenge-of-the-tipping-point',
@@ -513,7 +555,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Revenge of the Tipping Point',
     author: 'Malcolm Gladwell',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'hemingways-boat',
@@ -522,7 +564,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: "Hemingway's Boat: Everything He Loved in Life, and Lost",
     author: 'Paul Hendrickson',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'bulletproof-problem-solving',
@@ -532,7 +574,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Bulletproof Problem Solving: The One Skill That Changes Everything',
     author: 'Charles Conn & Robert McLean',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'critical-thinking-haber',
@@ -542,7 +584,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Critical Thinking (MIT Press Essential Knowledge)',
     author: 'Jonathan Haber',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'critical-thinking-powerful-strategies',
@@ -552,7 +594,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'Critical Thinking: Powerful Strategies to Improve Decisions',
     author: 'Harvey Segler',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'minto-pyramid-principle',
@@ -562,7 +604,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The Minto Pyramid Principle: Logic in Writing, Thinking, and Problem Solving',
     author: 'Barbara Minto',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'the-mckinsey-mind',
@@ -572,7 +614,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The McKinsey Mind: Problem-Solving Tools and Management Techniques',
     author: 'Ethan M. Rasiel & Paul N. Friga',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'the-mckinsey-way',
@@ -582,7 +624,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: 'The McKinsey Way',
     author: 'Ethan M. Rasiel',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'leadership-secrets-top-ceos',
@@ -592,7 +634,7 @@ export const VAULT_BOOK_CATALOG: VaultBookPreview[] = [
     title: "Leadership Secrets of the World's Most Successful CEOs",
     author: 'Eric Yaverbaum',
     category: 'Cognitive & Mastery',
-    status: 'queued',
+    status: 'published',
   },
   {
     bookSlug: 'software-engineering-at-google',

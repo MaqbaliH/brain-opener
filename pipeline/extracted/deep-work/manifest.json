@@ -1,0 +1,370 @@
+{
+  "bookSlug": "deep-work",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Deep Work Rules for Focused Success in a Distracted World.epub",
+  "totalChapters": 4,
+  "totalFigures": 26,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/Text/chapter001.html",
+      "title": "Chapter One / Chapter Two",
+      "charCount": 76581,
+      "wordCount": 12382,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter One"
+        },
+        {
+          "level": "h1",
+          "title": "Deep Work Is Valuable"
+        },
+        {
+          "level": "h2",
+          "title": "How to Become a Winner inthe New Economy"
+        },
+        {
+          "level": "h2",
+          "title": "Deep Work Helps You QuicklyLearn Hard Things"
+        },
+        {
+          "level": "h2",
+          "title": "Deep Work Helps You Produceat an Elite Level"
+        },
+        {
+          "level": "h2",
+          "title": "What About Jack Dorsey?"
+        },
+        {
+          "level": "h1",
+          "title": "Chapter Two"
+        },
+        {
+          "level": "h1",
+          "title": "Deep Work Is Rare"
+        },
+        {
+          "level": "h2",
+          "title": "The Metric Black Hole"
+        },
+        {
+          "level": "h2",
+          "title": "The Principle of Least Resistance"
+        },
+        {
+          "level": "h2",
+          "title": "Busyness as a Proxy for Productivity"
+        },
+        {
+          "level": "h2",
+          "title": "The Cult of the Internet"
+        },
+        {
+          "level": "h2",
+          "title": "Bad for Business. Good for You."
+        }
+      ],
+      "figures": [
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\deep-work\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/Text/chapter003.html",
+      "title": "Chapter Three / Rule #1",
+      "charCount": 124974,
+      "wordCount": 20640,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter Three"
+        },
+        {
+          "level": "h1",
+          "title": "Deep Work Is Meaningful"
+        },
+        {
+          "level": "h2",
+          "title": "A Neurological Argument for Depth"
+        },
+        {
+          "level": "h2",
+          "title": "A Psychological Argument for Depth"
+        },
+        {
+          "level": "h2",
+          "title": "A Philosophical Argument for Depth"
+        },
+        {
+          "level": "h2",
+          "title": "Homo Sapiens Deepensis"
+        },
+        {
+          "level": "h1",
+          "title": "Rule #1"
+        },
+        {
+          "level": "h1",
+          "title": "Work Deeply"
+        },
+        {
+          "level": "h2",
+          "title": "Decide on Your Depth Philosophy"
+        },
+        {
+          "level": "h2",
+          "title": "Ritualize"
+        },
+        {
+          "level": "h2",
+          "title": "Make Grand Gestures"
+        },
+        {
+          "level": "h2",
+          "title": "Don’t Work Alone"
+        },
+        {
+          "level": "h2",
+          "title": "Execute Like a Business"
+        },
+        {
+          "level": "h2",
+          "title": "Be Lazy"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\deep-work\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/Text/chapter005.html",
+      "title": "Rule #2 / Rule #3",
+      "charCount": 91496,
+      "wordCount": 14992,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Rule #2"
+        },
+        {
+          "level": "h1",
+          "title": "Embrace Boredom"
+        },
+        {
+          "level": "h2",
+          "title": "Don’t Take Breaks from Distraction.Instead Take Breaks from Focus."
+        },
+        {
+          "level": "h2",
+          "title": "Work Like Teddy Roosevelt"
+        },
+        {
+          "level": "h2",
+          "title": "Meditate Productively"
+        },
+        {
+          "level": "h2",
+          "title": "Memorize a Deck of Cards"
+        },
+        {
+          "level": "h1",
+          "title": "Rule #3"
+        },
+        {
+          "level": "h1",
+          "title": "Quit Social Media"
+        },
+        {
+          "level": "h2",
+          "title": "Apply the Law of the Vital Few toYour Internet Habits"
+        },
+        {
+          "level": "h2",
+          "title": "Quit Social Media"
+        },
+        {
+          "level": "h2",
+          "title": "Don’t Use the Internet to Entertain Yourself"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\deep-work\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/Text/chapter007.html",
+      "title": "Rule #4",
+      "charCount": 62600,
+      "wordCount": 10477,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Rule #4"
+        },
+        {
+          "level": "h1",
+          "title": "Drain the Shallows"
+        },
+        {
+          "level": "h2",
+          "title": "Schedule Every Minute of Your Day"
+        },
+        {
+          "level": "h2",
+          "title": "Quantify the Depth of Every Activity"
+        },
+        {
+          "level": "h2",
+          "title": "Ask Your Boss for a Shallow Work Budget"
+        },
+        {
+          "level": "h2",
+          "title": "Finish Your Work by Five Thirty"
+        },
+        {
+          "level": "h2",
+          "title": "Become Hard to Reach"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_Pline.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\deep-work\\ch04.txt"
+    }
+  ]
+}

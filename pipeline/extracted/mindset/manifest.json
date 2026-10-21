@@ -1,0 +1,375 @@
+{
+  "bookSlug": "mindset",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Mindset - Changing The Way You Think To Fulfil Your Potential (Updated Edition) (Carol Susan Dweck) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "totalChapters": 4,
+  "totalFigures": 7,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_12_64.pdf",
+      "title": "The Mindsets / Inside the Mindsets",
+      "startPage": 12,
+      "endPage": 64,
+      "charCount": 101165,
+      "wordCount": 17784,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The Mindsets"
+        },
+        {
+          "level": "h2",
+          "title": "Why Do People Differ?"
+        },
+        {
+          "level": "h2",
+          "title": "What Does All This Mean for You? The Two Mindsets"
+        },
+        {
+          "level": "h2",
+          "title": "A View from the Two Mindsets"
+        },
+        {
+          "level": "h2",
+          "title": "So, What’s New?"
+        },
+        {
+          "level": "h2",
+          "title": "Self-Insight: Who Has Accurate Views of Their Assets and Limitations?"
+        },
+        {
+          "level": "h2",
+          "title": "What’s in Store"
+        },
+        {
+          "level": "h1",
+          "title": "Inside the Mindsets"
+        },
+        {
+          "level": "h2",
+          "title": "Is Success About Learning—Or Proving You’re Smart?"
+        },
+        {
+          "level": "h2",
+          "title": "Mindsets Change the Meaning of Failure"
+        },
+        {
+          "level": "h2",
+          "title": "Mindsets Change the Meaning of Effort"
+        },
+        {
+          "level": "h2",
+          "title": "Questions and Answers"
+        }
+      ],
+      "figures": [
+        {
+          "file": "mindset_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: The Mindsets / Inside the Mindsets (Page 12)",
+          "alt": "Chapter 1 opening page (The Mindsets / Inside the Mindsets)"
+        },
+        {
+          "file": "mindset_p050_fig1.png",
+          "caption": "Embedded figure from page 50",
+          "alt": "Book illustration on page 50"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mindset\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_65_119.pdf",
+      "title": "The Truth About Ability and Accomplishment / Sports: The Mindset of a Champion",
+      "startPage": 65,
+      "endPage": 119,
+      "charCount": 106661,
+      "wordCount": 18774,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The Truth About Ability and Accomplishment"
+        },
+        {
+          "level": "h2",
+          "title": "Mindset and School Achievement"
+        },
+        {
+          "level": "h2",
+          "title": "Is Artistic Ability a Gift?"
+        },
+        {
+          "level": "h2",
+          "title": "The Danger of Praise and Positive Labels"
+        },
+        {
+          "level": "h2",
+          "title": "Negative Labels and How They Work"
+        },
+        {
+          "level": "h1",
+          "title": "Sports: The Mindset of a Champion"
+        },
+        {
+          "level": "h2",
+          "title": "The Idea of the Natural"
+        },
+        {
+          "level": "h2",
+          "title": "“Character”"
+        },
+        {
+          "level": "h2",
+          "title": "What Is Success?"
+        },
+        {
+          "level": "h2",
+          "title": "What Is Failure?"
+        },
+        {
+          "level": "h2",
+          "title": "Taking Charge of Success"
+        },
+        {
+          "level": "h2",
+          "title": "What Does It Mean to Be a Star?"
+        },
+        {
+          "level": "h2",
+          "title": "Hearing the Mindsets"
+        }
+      ],
+      "figures": [
+        {
+          "file": "mindset_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: The Truth About Ability and Accomplishment / Sports: The Mindset of a Champion (Page 65)",
+          "alt": "Chapter 2 opening page (The Truth About Ability and Accomplishment / Sports: The Mindset of a Champion)"
+        },
+        {
+          "file": "mindset_p080_fig1.png",
+          "caption": "Embedded figure from page 80",
+          "alt": "Book illustration on page 80"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mindset\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_120_189.pdf",
+      "title": "Business: Mindset and Leadership / Relationships: Mindsets in Love (or not)",
+      "startPage": 120,
+      "endPage": 189,
+      "charCount": 141758,
+      "wordCount": 24352,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Business: Mindset and Leadership"
+        },
+        {
+          "level": "h2",
+          "title": "Enron and the Talent Mindset"
+        },
+        {
+          "level": "h2",
+          "title": "Organizations That Grow"
+        },
+        {
+          "level": "h2",
+          "title": "A Study of Mindset and Management Decisions"
+        },
+        {
+          "level": "h2",
+          "title": "Leadership and the Fixed Mindset"
+        },
+        {
+          "level": "h2",
+          "title": "Fixed-Mindset Leaders in Action"
+        },
+        {
+          "level": "h2",
+          "title": "Growth-Mindset Leaders in Action"
+        },
+        {
+          "level": "h2",
+          "title": "A Study of Group Processes"
+        },
+        {
+          "level": "h2",
+          "title": "Groupthink Versus We Think"
+        },
+        {
+          "level": "h2",
+          "title": "The Praised Generation Hits the Workforce"
+        },
+        {
+          "level": "h2",
+          "title": "Are Negotiators Born or Made?"
+        },
+        {
+          "level": "h2",
+          "title": "Corporate Training: Are Managers Born or Made?"
+        },
+        {
+          "level": "h2",
+          "title": "Are Leaders Born or Made?"
+        },
+        {
+          "level": "h2",
+          "title": "Organizational Mindsets"
+        },
+        {
+          "level": "h1",
+          "title": "Relationships: Mindsets in Love (or not)"
+        },
+        {
+          "level": "h2",
+          "title": "Relationships Are Different"
+        },
+        {
+          "level": "h2",
+          "title": "Mindsets Falling in Love"
+        },
+        {
+          "level": "h2",
+          "title": "The Partner as Enemy"
+        },
+        {
+          "level": "h2",
+          "title": "Competition: Who’s the Greatest?"
+        },
+        {
+          "level": "h2",
+          "title": "Developing in Relationships"
+        },
+        {
+          "level": "h2",
+          "title": "Friendship"
+        },
+        {
+          "level": "h2",
+          "title": "Shyness"
+        },
+        {
+          "level": "h2",
+          "title": "Bullies and Victims: Revenge Revisited"
+        }
+      ],
+      "figures": [
+        {
+          "file": "mindset_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Business: Mindset and Leadership / Relationships: Mindsets in Love (or not) (Page 120)",
+          "alt": "Chapter 3 opening page (Business: Mindset and Leadership / Relationships: Mindsets in Love (or not))"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mindset\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_190_281.pdf",
+      "title": "Parents, Teachers, and Coaches: Where do Mindsets Come From? / Changing Mindsets",
+      "startPage": 190,
+      "endPage": 281,
+      "charCount": 177036,
+      "wordCount": 31107,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Parents, Teachers, and Coaches: Where do Mindsets Come From?"
+        },
+        {
+          "level": "h2",
+          "title": "Parents (and Teachers): Messages About Success and Failure"
+        },
+        {
+          "level": "h2",
+          "title": "Teachers (and Parents): What Makes a Great Teacher (or Parent)?"
+        },
+        {
+          "level": "h2",
+          "title": "Coaches: Winning Through Mindset"
+        },
+        {
+          "level": "h2",
+          "title": "False Growth Mindset"
+        },
+        {
+          "level": "h2",
+          "title": "Our Legacy"
+        },
+        {
+          "level": "h1",
+          "title": "Changing Mindsets"
+        },
+        {
+          "level": "h2",
+          "title": "The Nature of Change"
+        },
+        {
+          "level": "h2",
+          "title": "The Mindset Lectures"
+        },
+        {
+          "level": "h2",
+          "title": "A Mindset Workshop"
+        },
+        {
+          "level": "h2",
+          "title": "Brainology"
+        },
+        {
+          "level": "h2",
+          "title": "More About Change"
+        },
+        {
+          "level": "h2",
+          "title": "Opening Yourself Up to Growth"
+        },
+        {
+          "level": "h2",
+          "title": "People Who Don’t Want to Change"
+        },
+        {
+          "level": "h2",
+          "title": "Changing Your Child’s Mindset"
+        },
+        {
+          "level": "h2",
+          "title": "Mindset and Willpower"
+        },
+        {
+          "level": "h2",
+          "title": "Maintaining Change"
+        },
+        {
+          "level": "h2",
+          "title": "The Journey to a (True) Growth Mindset"
+        },
+        {
+          "level": "h2",
+          "title": "Learn and Help Learn"
+        },
+        {
+          "level": "h2",
+          "title": "The Road Ahead"
+        }
+      ],
+      "figures": [
+        {
+          "file": "mindset_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Parents, Teachers, and Coaches: Where do Mindsets Come From? / Changing Mindsets (Page 190)",
+          "alt": "Chapter 4 opening page (Parents, Teachers, and Coaches: Where do Mindsets Come From? / Changing Mindsets)"
+        },
+        {
+          "file": "mindset_p280_fig1.png",
+          "caption": "Embedded figure from page 280",
+          "alt": "Book illustration on page 280"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mindset\\ch04.txt"
+    }
+  ]
+}

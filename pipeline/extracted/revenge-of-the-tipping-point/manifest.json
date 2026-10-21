@@ -1,0 +1,111 @@
+{
+  "bookSlug": "revenge-of-the-tipping-point",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Revenge of the Tipping Point.epub",
+  "totalChapters": 4,
+  "totalFigures": 11,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/xhtml/007_FM_002.xhtml",
+      "title": "Chapter 1 / Chapter 2 / Chapter 3",
+      "charCount": 49123,
+      "wordCount": 8479,
+      "headings": [],
+      "figures": [
+        {
+          "file": "Art_P1.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\revenge-of-the-tipping-point\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/xhtml/011_Chapter_002.xhtml",
+      "title": "Chapter 4 / Chapter 5 / Chapter 6",
+      "charCount": 145590,
+      "wordCount": 25215,
+      "headings": [],
+      "figures": [
+        {
+          "file": "Art_P62.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_P86.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_P87.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\revenge-of-the-tipping-point\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/xhtml/015_Chapter_005.xhtml",
+      "title": "Chapter 7 / Chapter 8 / Chapter 9",
+      "charCount": 139913,
+      "wordCount": 23743,
+      "headings": [],
+      "figures": [
+        {
+          "file": "Art_in187a.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_in187b.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_P216.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\revenge-of-the-tipping-point\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/xhtml/019_Chapter_008.xhtml",
+      "title": "Chapter 10 / Chapter 11 / Chapter 12",
+      "charCount": 165341,
+      "wordCount": 25110,
+      "headings": [],
+      "figures": [
+        {
+          "file": "Art_P264.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_P291.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_P301.jpg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "Art_P304.jpg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\revenge-of-the-tipping-point\\ch04.txt"
+    }
+  ]
+}

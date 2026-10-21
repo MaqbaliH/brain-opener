@@ -1,0 +1,302 @@
+{
+  "bookSlug": "so-good-they-cant-ignore-you",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\So Good They Cant Ignore You Why Skills Trump Passion in the Quest for Work You Love.epub",
+  "totalChapters": 5,
+  "totalFigures": 4,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "text/part0003_split_000.html",
+      "title": "Introduction / A Quest Begins / The Passion Hypothesis (+4 more)",
+      "charCount": 44856,
+      "wordCount": 7720,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Introduction"
+        },
+        {
+          "level": "h1",
+          "title": "The Passion of the Monk"
+        },
+        {
+          "level": "h1",
+          "title": "A Quest Begins"
+        },
+        {
+          "level": "h1",
+          "title": "The Passion Hypothesis"
+        },
+        {
+          "level": "h4",
+          "title": "The Passion Hypothesis"
+        },
+        {
+          "level": "h1",
+          "title": "Do What Steve Jobs Did, Not What He Said"
+        },
+        {
+          "level": "h1",
+          "title": "The Birth of the Passion Hypothesis"
+        },
+        {
+          "level": "h1",
+          "title": "Upstairs at the Bluegrass Frat House"
+        },
+        {
+          "level": "h1",
+          "title": "The Craftsman Mindset"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00003.jpeg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\so-good-they-cant-ignore-you\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "text/part0009_split_004.html",
+      "title": "Adopting the Craftsman Mindset / The Economics of Great Jobs / From Courage to Food Stamps (+4 more)",
+      "charCount": 44530,
+      "wordCount": 7711,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Adopting the Craftsman Mindset"
+        },
+        {
+          "level": "h1",
+          "title": "The Economics of Great Jobs"
+        },
+        {
+          "level": "h4",
+          "title": "TRAITS THAT DEFINE GREAT WORK"
+        },
+        {
+          "level": "h4",
+          "title": "THE CAREER CAPITAL THEORY OF GREAT WORK"
+        },
+        {
+          "level": "h1",
+          "title": "From Courage to Food Stamps"
+        },
+        {
+          "level": "h1",
+          "title": "The Closed-Off World of Television Kabillionaires"
+        },
+        {
+          "level": "h1",
+          "title": "How Alex Berger Broke into Hollywood"
+        },
+        {
+          "level": "h1",
+          "title": "How Mike Jackson Became a Venture Capitalist"
+        },
+        {
+          "level": "h1",
+          "title": "Why Is Jordan Tice a Better Guitar Player than Me?"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\so-good-they-cant-ignore-you\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "text/part0012_split_002.html",
+      "title": "How to Become a Grand Master / Alex Berger Craves Criticism and Mike Jackson Doesn’t Check E-mail / Step 1: Decide What Capital Market You’re In (+4 more)",
+      "charCount": 47856,
+      "wordCount": 8113,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "How to Become a Grand Master"
+        },
+        {
+          "level": "h4",
+          "title": "The 10,000-Hour Rule"
+        },
+        {
+          "level": "h1",
+          "title": "Alex Berger Craves Criticism and Mike Jackson Doesn’t Check E-mail"
+        },
+        {
+          "level": "h2",
+          "title": "Step 1: Decide What Capital Market You’re In"
+        },
+        {
+          "level": "h1",
+          "title": "Cracking the Red Fire Code"
+        },
+        {
+          "level": "h1",
+          "title": "Control Requires Capital"
+        },
+        {
+          "level": "h4",
+          "title": "The First Control Trap"
+        },
+        {
+          "level": "h1",
+          "title": "Why Lulu Keeps Turning Down Promotions"
+        },
+        {
+          "level": "h1",
+          "title": "Control Generates Resistance"
+        },
+        {
+          "level": "h4",
+          "title": "The Second Control Trap"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\so-good-they-cant-ignore-you\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "text/part0018_split_002.html",
+      "title": "The Law of Financial Viability / The Baffling Popularity of Randomized Linear Network Coding / Pardis’s Patience (+4 more)",
+      "charCount": 38141,
+      "wordCount": 6466,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The Law of Financial Viability"
+        },
+        {
+          "level": "h4",
+          "title": "The Law of Financial Viability"
+        },
+        {
+          "level": "h1",
+          "title": "The Baffling Popularity of Randomized Linear Network Coding"
+        },
+        {
+          "level": "h1",
+          "title": "Pardis’s Patience"
+        },
+        {
+          "level": "h1",
+          "title": "American Treasures"
+        },
+        {
+          "level": "h1",
+          "title": "The Armchair Archaeologist"
+        },
+        {
+          "level": "h1",
+          "title": "Leveraging Little Bets"
+        },
+        {
+          "level": "h1",
+          "title": "The Remarkable Life of Giles Bowkett"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\so-good-they-cant-ignore-you\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "text/part0024_split_002.html",
+      "title": "Purple Cows and Open-Source Rock Stars / Conclusion / How I Applied Rule #1 (+4 more)",
+      "charCount": 56756,
+      "wordCount": 9734,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Purple Cows and Open-Source Rock Stars"
+        },
+        {
+          "level": "h1",
+          "title": "Conclusion"
+        },
+        {
+          "level": "h1",
+          "title": "My Story Resumes"
+        },
+        {
+          "level": "h1",
+          "title": "How I Applied Rule #1"
+        },
+        {
+          "level": "h1",
+          "title": "How I Applied Rule #2"
+        },
+        {
+          "level": "h1",
+          "title": "How I Applied Rule #3"
+        },
+        {
+          "level": "h1",
+          "title": "Final Thoughts: Working Right Trumps Finding the Right Work"
+        },
+        {
+          "level": "h1",
+          "title": "Career Profile Summaries"
+        },
+        {
+          "level": "h4",
+          "title": "JOE DUFFY"
+        },
+        {
+          "level": "h4",
+          "title": "ALEX BERGER"
+        },
+        {
+          "level": "h4",
+          "title": "MIKE JACKSON"
+        },
+        {
+          "level": "h4",
+          "title": "RYAN VOILAND"
+        },
+        {
+          "level": "h4",
+          "title": "LULU YOUNG"
+        },
+        {
+          "level": "h4",
+          "title": "DEREK SIVERS"
+        },
+        {
+          "level": "h4",
+          "title": "PARDIS SABETI"
+        },
+        {
+          "level": "h4",
+          "title": "KIRK FRENCH"
+        },
+        {
+          "level": "h4",
+          "title": "GILES BOWKETT"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00003.jpeg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "00003.jpeg",
+          "caption": "image",
+          "alt": "image"
+        },
+        {
+          "file": "00003.jpeg",
+          "caption": "image",
+          "alt": "image"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\so-good-they-cant-ignore-you\\ch05.txt"
+    }
+  ]
+}

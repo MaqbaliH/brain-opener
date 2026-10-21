@@ -193,32 +193,94 @@ def extract_epub(epub_path: str, book_slug: str, workspace_root: str):
                 ch_title = parser.headings[0]["title"] if parser.headings else f"Chapter {idx}"
 
             word_count = len(full_text.split())
-            if word_count < 400 and ("unlock" in ch_title.lower() or "benefit" in ch_title.lower()):
+            if word_count < 400:
                 continue
-            if ch_title.strip().lower() in ("glossary", "index", "other books you may enjoy", "summary", "extra prompts"):
+            if ch_title.strip().lower() in ("glossary", "index", "other books you may enjoy", "summary", "extra prompts", "acknowledgments", "notes", "bibliography", "references", "appendix"):
                 continue
 
             real_idx = len(chapters_manifest) + 1
             ch_id = f"ch{real_idx:02d}"
-
-            # Save full text per chapter for Axiom & Feynman nodes
-            ch_text_path = out_extracted_dir / f"{ch_id}.txt"
-            ch_text_path.write_text(full_text, encoding="utf-8")
-
-            ch_entry = {
+            chapters_manifest.append({
                 "chapterNumber": real_idx,
                 "chapterId": ch_id,
                 "sourceFile": ch_file,
                 "title": ch_title,
+                "fullText": full_text,
                 "charCount": len(full_text),
                 "wordCount": word_count,
                 "headings": parser.headings,
                 "figures": parser.figures,
-                "textFile": str(ch_text_path.relative_to(workspace_root)),
-            }
-            chapters_manifest.append(ch_entry)
-            for fig in parser.figures:
+            })
+
+        # Handle Calibre multi-part split files (< 4 chapters with > 12,000 words)
+        if len(chapters_manifest) < 4 and sum(c["wordCount"] for c in chapters_manifest) > 12000:
+            combined_text = "\n\n".join(c["fullText"] for c in chapters_manifest)
+            part_splits = re.split(r"(?=(?:\n### \[H[1234]\]\s*|\n)(?:PART\s+(?:ONE|TWO|THREE|FOUR|FIVE|\d+)|CHAPTER\s+\d+))", combined_text, flags=re.I)
+            part_splits = [p.strip() for p in part_splits if len(p.split()) >= 800]
+            if len(part_splits) < 4:
+                words_all = combined_text.split()
+                chunk_w = len(words_all) // 4
+                part_splits = [" ".join(words_all[i*chunk_w : (i+1)*chunk_w if i < 3 else len(words_all)]) for i in range(4)]
+            new_manifest = []
+            for idx_p, p_txt in enumerate(part_splits, start=1):
+                first_line = p_txt.splitlines()[0].replace("### [H1]", "").replace("### [H2]", "").replace("### [H3]", "").strip()
+                new_manifest.append({
+                    "chapterNumber": idx_p,
+                    "chapterId": f"ch{idx_p:02d}",
+                    "sourceFile": f"split_part_{idx_p}.html",
+                    "title": first_line[:90] if len(first_line) < 95 else f"Part {idx_p}",
+                    "fullText": p_txt,
+                    "charCount": len(p_txt),
+                    "wordCount": len(p_txt.split()),
+                    "headings": [{"level": "h1", "title": first_line[:90]}],
+                    "figures": chapters_manifest[0]["figures"] if idx_p == 1 and chapters_manifest else [],
+                })
+            chapters_manifest = new_manifest
+
+        # Consolidate books with > 6 chapters into 4-6 substantive thematic modules
+        if len(chapters_manifest) > 6:
+            target_modules = 5 if len(chapters_manifest) >= 10 else 4
+            chunk_sz = max(2, (len(chapters_manifest) + target_modules - 1) // target_modules)
+            consolidated = []
+            for g_idx in range(0, len(chapters_manifest), chunk_sz):
+                grp = chapters_manifest[g_idx : g_idx + chunk_sz]
+                mod_num = len(consolidated) + 1
+                ch_id = f"ch{mod_num:02d}"
+                titles = [g["title"] for g in grp if not re.match(r"^Chapter\s+\d+$", g["title"], re.I)]
+                if not titles:
+                    titles = [g["title"] for g in grp]
+                merged_title = " / ".join(titles[:3])
+                if len(titles) > 3:
+                    merged_title += f" (+{len(titles)-3} more)"
+                merged_text = "\n\n".join(g["fullText"] for g in grp)
+                consolidated.append({
+                    "chapterNumber": mod_num,
+                    "chapterId": ch_id,
+                    "sourceFile": grp[0]["sourceFile"],
+                    "title": merged_title,
+                    "fullText": merged_text,
+                    "charCount": len(merged_text),
+                    "wordCount": sum(g["wordCount"] for g in grp),
+                    "headings": [h for g in grp for h in g["headings"]],
+                    "figures": [f for g in grp for f in g["figures"]],
+                })
+            chapters_manifest = consolidated
+
+        for old_txt in out_extracted_dir.glob("ch*.txt"):
+            old_txt.unlink()
+
+        final_chapters = []
+        for ch_entry in chapters_manifest:
+            ch_id = ch_entry["chapterId"]
+            real_idx = ch_entry["chapterNumber"]
+            full_text = ch_entry.pop("fullText")
+            ch_text_path = out_extracted_dir / f"{ch_id}.txt"
+            ch_text_path.write_text(full_text, encoding="utf-8")
+            ch_entry["textFile"] = str(ch_text_path.relative_to(workspace_root))
+            final_chapters.append(ch_entry)
+            for fig in ch_entry["figures"]:
                 all_figures.append({**fig, "chapterId": ch_id, "chapterNumber": real_idx})
+        chapters_manifest = final_chapters
 
     manifest = {
         "bookSlug": book_slug,
@@ -268,11 +330,20 @@ def extract_pdf(pdf_path: str, book_slug: str, workspace_root: str):
             if xref_page_counts.get(xref, 0) > 2 or xref in saved_xrefs:
                 continue
             pix = fitz.Pixmap(doc, xref)
+            if pix.colorspace is None:
+                continue
             if pix.width > 160 and pix.height > 120:
-                if pix.n - pix.alpha > 3:
-                    pix = fitz.Pixmap(fitz.csRGB, pix)
                 fname = f"{prefix}_p{pno+1:03d}_fig{img_idx+1}.png"
-                pix.save(str(out_public_assets / fname))
+                try:
+                    if pix.colorspace.n not in (1, 3) or pix.alpha:
+                        pix = fitz.Pixmap(fitz.csRGB, pix)
+                    pix.save(str(out_public_assets / fname))
+                except Exception:
+                    try:
+                        pix = fitz.Pixmap(fitz.csRGB, pix)
+                        pix.save(str(out_public_assets / fname))
+                    except Exception:
+                        continue
                 saved_xrefs.add(xref)
                 page_embedded_figures.setdefault(pno + 1, []).append({
                     "file": fname,
@@ -321,8 +392,8 @@ def extract_pdf(pdf_path: str, book_slug: str, workspace_root: str):
         if has_explicit_chapter_word:
             m_ch = re.match(r"^(?:\d+\.\s*)?Chapter\s+(\d+)\s*[:.\-]?\s*(.*)", clean_title, re.I)
         else:
-            m_ch = re.match(r"^(?:Chapter\s+(\d+)\s*[:.\-]?\s*(.*)|(\d+)(?:\.\s+|\s+)(.*))", clean_title, re.I)
-        if not has_digit_chapters and level == 1 and m_ch:
+            m_ch = re.match(r"^(?:Chapter\s+(\d+)\s*[:.\-]?\s*(.*)|(\d+)(?:[:.\-]\s*|\s+)(.*))", clean_title, re.I)
+        if not has_digit_chapters and level == 1 and m_ch and page_num > 0:
             if current_ch:
                 current_ch["endPage"] = page_num - 1
                 chapters_raw.append(current_ch)
@@ -372,13 +443,47 @@ def extract_pdf(pdf_path: str, book_slug: str, workspace_root: str):
     if current_ch is not None:
         chapters_raw.append(current_ch)
 
-    # Consolidate micro-chapter PDFs (>14 chapters averaging <10 pages/chapter) into 3-chapter modules
-    if len(chapters_raw) > 14 and (len(doc) / len(chapters_raw)) < 10:
+    if not chapters_raw:
+        if book_slug == "minto-pyramid-principle":
+            chapters_raw = [
+                {"chapterNumber": 1, "title": "Part 1: Logic in Writing (Top-Down & Bottom-Up Pyramids, SCQA Introductions, Deduction vs. Induction)", "fullHeading": "Part 1: Logic in Writing", "startPage": 17, "endPage": 88, "headings": [{"level": "h1", "title": "Part 1: Logic in Writing", "page": 17}]},
+                {"chapterNumber": 2, "title": "Part 2: Logic in Thinking (Imposing Logical Order: Time, Structure, Degree & Summarizing Grouped Ideas)", "fullHeading": "Part 2: Logic in Thinking", "startPage": 89, "endPage": 134, "headings": [{"level": "h1", "title": "Part 2: Logic in Thinking", "page": 89}]},
+                {"chapterNumber": 3, "title": "Part 3: Logic in Problem Solving (Defining the Problem R1/R2 & Diagnostic Logic Trees)", "fullHeading": "Part 3: Logic in Problem Solving", "startPage": 135, "endPage": 183, "headings": [{"level": "h1", "title": "Part 3: Logic in Problem Solving", "page": 135}]},
+                {"chapterNumber": 4, "title": "Part 4: Logic in Presentation (Page Hierarchy, Visual Slide Storyboarding & Image-Driven Prose)", "fullHeading": "Part 4: Logic in Presentation", "startPage": 184, "endPage": 235, "headings": [{"level": "h1", "title": "Part 4: Logic in Presentation", "page": 184}]},
+            ]
+        elif book_slug == "the-mckinsey-mind":
+            chapters_raw = [
+                {"chapterNumber": 1, "title": "Framing the Problem & Designing the Analysis (MECE Issue Trees, Initial Hypotheses & Analytical Diagnostics)", "fullHeading": "Module 1: Framing & Designing", "startPage": 19, "endPage": 67, "headings": [{"level": "h1", "title": "Framing the Problem & Designing the Analysis", "page": 19}]},
+                {"chapterNumber": 2, "title": "Gathering the Data & Interpreting Results (Fact-Based Research, Interviewing, 80/20 Rule & Actionable Synthesis)", "fullHeading": "Module 2: Gathering & Interpreting", "startPage": 68, "endPage": 120, "headings": [{"level": "h1", "title": "Gathering the Data & Interpreting Results", "page": 68}]},
+                {"chapterNumber": 3, "title": "Presenting Your Ideas & Managing Your Team (Structured Buy-In, Prewiring, Team Bonding & Direction)", "fullHeading": "Module 3: Presenting & Team Management", "startPage": 121, "endPage": 176, "headings": [{"level": "h1", "title": "Presenting Your Ideas & Managing Your Team", "page": 121}]},
+                {"chapterNumber": 4, "title": "Managing Your Client & Managing Yourself (Client Engagement, Implementation Rigor & Sustainable Pace)", "fullHeading": "Module 4: Client & Self Management", "startPage": 177, "endPage": 222, "headings": [{"level": "h1", "title": "Managing Your Client & Managing Yourself", "page": 177}]},
+            ]
+        else:
+            step_p = max(10, (len(doc) - 10) // 4)
+            for idx_m in range(4):
+                sp = 10 + idx_m * step_p
+                ep = min(len(doc), sp + step_p - 1) if idx_m < 3 else len(doc)
+                chapters_raw.append({
+                    "chapterNumber": idx_m + 1,
+                    "title": f"Part {idx_m + 1}",
+                    "fullHeading": f"Part {idx_m + 1}",
+                    "startPage": sp,
+                    "endPage": ep,
+                    "headings": [{"level": "h1", "title": f"Part {idx_m + 1}", "page": sp}],
+                })
+
+    # Consolidate PDFs with > 6 chapters into 4-5 balanced modules
+    if len(chapters_raw) > 6:
+        target_mods = 5 if len(chapters_raw) >= 10 else 4
+        chunk_sz = max(2, (len(chapters_raw) + target_mods - 1) // target_mods)
         consolidated = []
-        for g_idx in range(0, len(chapters_raw), 3):
-            group = chapters_raw[g_idx:g_idx + 3]
+        for g_idx in range(0, len(chapters_raw), chunk_sz):
+            group = chapters_raw[g_idx:g_idx + chunk_sz]
             mod_num = len(consolidated) + 1
-            merged_title = " / ".join(g["title"] for g in group)
+            titles = [g["title"] for g in group]
+            merged_title = " / ".join(titles[:3])
+            if len(titles) > 3:
+                merged_title += f" (+{len(titles)-3} more)"
             merged_headings = []
             for g in group:
                 merged_headings.extend(g["headings"])
@@ -391,6 +496,9 @@ def extract_pdf(pdf_path: str, book_slug: str, workspace_root: str):
                 "headings": merged_headings,
             })
         chapters_raw = consolidated
+
+    for old_txt in out_extracted_dir.glob("ch*.txt"):
+        old_txt.unlink()
 
     chapters_manifest = []
     all_figures = []

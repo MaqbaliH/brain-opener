@@ -1,0 +1,186 @@
+{
+  "bookSlug": "critical-thinking-haber",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\20 oct 26\\Critical Thinking (Jonathan Haber) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "totalChapters": 4,
+  "totalFigures": 6,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_21_56.pdf",
+      "title": "The Genealogy of Critical Thinking",
+      "startPage": 21,
+      "endPage": 56,
+      "charCount": 44705,
+      "wordCount": 6888,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "The Genealogy of Critical Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Philosophy"
+        },
+        {
+          "level": "h2",
+          "title": "The Renaissance, Scientific Revolution, and Age of Enlightenment"
+        },
+        {
+          "level": "h2",
+          "title": "Psychology and Pragmatism"
+        },
+        {
+          "level": "h2",
+          "title": "John Dewey"
+        },
+        {
+          "level": "h2",
+          "title": "Advances in Understanding of Education, Human Development, and Behavior"
+        },
+        {
+          "level": "h2",
+          "title": "Turning Point?"
+        },
+        {
+          "level": "h2",
+          "title": "Orphans"
+        }
+      ],
+      "figures": [
+        {
+          "file": "critical_thinking_haber_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: The Genealogy of Critical Thinking (Page 21)",
+          "alt": "Chapter 1 opening page (The Genealogy of Critical Thinking)"
+        },
+        {
+          "file": "critical_thinking_haber_p047_fig1.png",
+          "caption": "Embedded figure from page 47",
+          "alt": "Book illustration on page 47"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\critical-thinking-haber\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_57_120.pdf",
+      "title": "Components of Critical Thinking",
+      "startPage": 57,
+      "endPage": 120,
+      "charCount": 72362,
+      "wordCount": 11324,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Components of Critical Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Structured Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Language Skills"
+        },
+        {
+          "level": "h2",
+          "title": "Argumentation"
+        },
+        {
+          "level": "h2",
+          "title": "Background Knowledge"
+        },
+        {
+          "level": "h2",
+          "title": "Creativity"
+        },
+        {
+          "level": "h2",
+          "title": "Dispositions"
+        },
+        {
+          "level": "h2",
+          "title": "Out of Many, One"
+        }
+      ],
+      "figures": [
+        {
+          "file": "critical_thinking_haber_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Components of Critical Thinking (Page 57)",
+          "alt": "Chapter 2 opening page (Components of Critical Thinking)"
+        },
+        {
+          "file": "critical_thinking_haber_p087_fig1.png",
+          "caption": "Embedded figure from page 87",
+          "alt": "Book illustration on page 87"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\critical-thinking-haber\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_121_180.pdf",
+      "title": "Defining, Teaching, and Assessing Critical Thinking",
+      "startPage": 121,
+      "endPage": 180,
+      "charCount": 76043,
+      "wordCount": 11274,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Defining, Teaching, and Assessing Critical Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Can Critical Thinking Be Defined?"
+        },
+        {
+          "level": "h2",
+          "title": "Can Critical Thinking Be Taught?"
+        },
+        {
+          "level": "h2",
+          "title": "Can Critical Thinking Be Assessed?"
+        },
+        {
+          "level": "h2",
+          "title": "Case Study"
+        }
+      ],
+      "figures": [
+        {
+          "file": "critical_thinking_haber_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Defining, Teaching, and Assessing Critical Thinking (Page 121)",
+          "alt": "Chapter 3 opening page (Defining, Teaching, and Assessing Critical Thinking)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\critical-thinking-haber\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_181_202.pdf",
+      "title": "Where Do We Go from Here?",
+      "startPage": 181,
+      "endPage": 202,
+      "charCount": 27087,
+      "wordCount": 4131,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Where Do We Go from Here?"
+        }
+      ],
+      "figures": [
+        {
+          "file": "critical_thinking_haber_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Where Do We Go from Here? (Page 181)",
+          "alt": "Chapter 4 opening page (Where Do We Go from Here?)"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\critical-thinking-haber\\ch04.txt"
+    }
+  ]
+}

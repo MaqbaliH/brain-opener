@@ -1,0 +1,601 @@
+{
+  "bookSlug": "mastery",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Mastery.epub",
+  "totalChapters": 5,
+  "totalFigures": 44,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "text/part0006.html",
+      "title": "INTRODUCTION / THE HIDDEN FORCE / 1. Return to your origins—The primal inclination strategy (+9 more)",
+      "charCount": 168274,
+      "wordCount": 28899,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "INTRODUCTION"
+        },
+        {
+          "level": "h3",
+          "title": "THE ULTIMATE POWER"
+        },
+        {
+          "level": "h3",
+          "title": "THE EVOLUTION OF MASTERY"
+        },
+        {
+          "level": "h3",
+          "title": "KEYS TO MASTERY"
+        },
+        {
+          "level": "h3",
+          "title": "THE HIDDEN FORCE"
+        },
+        {
+          "level": "h3",
+          "title": "KEYS TO MASTERY"
+        },
+        {
+          "level": "h3",
+          "title": "STRATEGIES FOR FINDING YOUR LIFE’S TASK"
+        },
+        {
+          "level": "h2",
+          "title": "1. Return to your origins—The primal inclination strategy"
+        },
+        {
+          "level": "h2",
+          "title": "2. Occupy the perfect niche—The Darwinian strategy"
+        },
+        {
+          "level": "h2",
+          "title": "3. Avoid the false path—The rebellion strategy"
+        },
+        {
+          "level": "h2",
+          "title": "4. Let go of the past—The adaptation strategy"
+        },
+        {
+          "level": "h2",
+          "title": "5. Find your way back—The life-or-death strategy"
+        },
+        {
+          "level": "h3",
+          "title": "REVERSAL"
+        },
+        {
+          "level": "h3",
+          "title": "KEYS TO MASTERY"
+        },
+        {
+          "level": "h2",
+          "title": "Step One: Deep Observation—The Passive Mode"
+        },
+        {
+          "level": "h2",
+          "title": "Step Two: Skills Acquisition—The Practice Mode"
+        },
+        {
+          "level": "h2",
+          "title": "Step Three: Experimentation—The Active Mode"
+        },
+        {
+          "level": "h3",
+          "title": "STRATEGIES FOR COMPLETINGTHE IDEAL APPRENTICESHIP"
+        },
+        {
+          "level": "h2",
+          "title": "1. Value learning over money"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00003.gif",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mastery\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "text/part0010_split_006.html",
+      "title": "2. Keep expanding your horizons / 3. Revert to a feeling of inferiority / 4. Trust the process (+9 more)",
+      "charCount": 147333,
+      "wordCount": 25296,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "2. Keep expanding your horizons"
+        },
+        {
+          "level": "h2",
+          "title": "3. Revert to a feeling of inferiority"
+        },
+        {
+          "level": "h2",
+          "title": "4. Trust the process"
+        },
+        {
+          "level": "h2",
+          "title": "5. Move toward resistance and pain"
+        },
+        {
+          "level": "h2",
+          "title": "6. Apprentice yourself in failure"
+        },
+        {
+          "level": "h2",
+          "title": "7. Combine the “how” and the “what”"
+        },
+        {
+          "level": "h2",
+          "title": "8. Advance through trial and error"
+        },
+        {
+          "level": "h3",
+          "title": "REVERSAL"
+        },
+        {
+          "level": "h3",
+          "title": "THE ALCHEMY OF KNOWLEDGE"
+        },
+        {
+          "level": "h3",
+          "title": "KEYS TO MASTERY"
+        },
+        {
+          "level": "h3",
+          "title": "STRATEGIES FOR DEEPENINGTHE MENTOR DYNAMIC"
+        },
+        {
+          "level": "h2",
+          "title": "1. Choose the mentor according to your needs and inclinations"
+        },
+        {
+          "level": "h2",
+          "title": "2. Gaze deep into the mentor’s mirror"
+        },
+        {
+          "level": "h2",
+          "title": "3. Transfigure their ideas"
+        },
+        {
+          "level": "h2",
+          "title": "4. Create a back-and-forth dynamic"
+        },
+        {
+          "level": "h3",
+          "title": "REVERSAL"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mastery\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "text/part0014_split_000.html",
+      "title": "THINKING INSIDE / Specific Knowledge—Reading People / General Knowledge—The Seven Deadly Realities (+9 more)",
+      "charCount": 216822,
+      "wordCount": 36978,
+      "headings": [
+        {
+          "level": "h3",
+          "title": "THINKING INSIDE"
+        },
+        {
+          "level": "h3",
+          "title": "KEYS TO MASTERY"
+        },
+        {
+          "level": "h2",
+          "title": "Specific Knowledge—Reading People"
+        },
+        {
+          "level": "h2",
+          "title": "General Knowledge—The Seven Deadly Realities"
+        },
+        {
+          "level": "h3",
+          "title": "STRATEGIES FOR ACQUIRING SOCIALINTELLIGENCE"
+        },
+        {
+          "level": "h2",
+          "title": "1. Speak through your work"
+        },
+        {
+          "level": "h2",
+          "title": "2. Craft the appropriate persona"
+        },
+        {
+          "level": "h2",
+          "title": "3. See yourself as others see you"
+        },
+        {
+          "level": "h2",
+          "title": "4. Suffer fools gladly"
+        },
+        {
+          "level": "h3",
+          "title": "REVERSAL"
+        },
+        {
+          "level": "h3",
+          "title": "THE SECOND TRANSFORMATION"
+        },
+        {
+          "level": "h3",
+          "title": "KEYS TO MASTERY"
+        },
+        {
+          "level": "h2",
+          "title": "Step One: The Creative Task"
+        },
+        {
+          "level": "h2",
+          "title": "Step Two: Creative Strategies"
+        },
+        {
+          "level": "h2",
+          "title": "Step Three: The Creative Breakthrough—Tension and Insight"
+        },
+        {
+          "level": "h2",
+          "title": "Emotional Pitfalls"
+        },
+        {
+          "level": "h3",
+          "title": "STRATEGIES FOR THE CREATIVE-ACTIVE PHASE"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mastery\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "text/part0016_split_005.html",
+      "title": "1. The Authentic Voice / 2. The Fact of Great Yield / 3. Mechanical Intelligence (+9 more)",
+      "charCount": 178387,
+      "wordCount": 30334,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "1. The Authentic Voice"
+        },
+        {
+          "level": "h2",
+          "title": "2. The Fact of Great Yield"
+        },
+        {
+          "level": "h2",
+          "title": "3. Mechanical Intelligence"
+        },
+        {
+          "level": "h2",
+          "title": "4. Natural Powers"
+        },
+        {
+          "level": "h2",
+          "title": "5. The Open Field"
+        },
+        {
+          "level": "h2",
+          "title": "6. The High End"
+        },
+        {
+          "level": "h2",
+          "title": "7. The Evolutionary Hijack"
+        },
+        {
+          "level": "h2",
+          "title": "8. Dimensional Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "9. Alchemical Creativity and the Unconscious"
+        },
+        {
+          "level": "h3",
+          "title": "REVERSAL"
+        },
+        {
+          "level": "h3",
+          "title": "THE THIRD TRANSFORMATION"
+        },
+        {
+          "level": "h3",
+          "title": "KEYS TO MASTERY"
+        },
+        {
+          "level": "h2",
+          "title": "The Roots of Masterly Intuition"
+        },
+        {
+          "level": "h2",
+          "title": "The Return to Reality"
+        },
+        {
+          "level": "h3",
+          "title": "STRATEGIES FOR ATTAINING MASTERY"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mastery\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "text/part0018_split_003.html",
+      "title": "1. Connect to your environment—Primal Powers / 2. Play to your strengths—Supreme Focus / 3. Transform yourself through practice—The Fingertip Feel (+6 more)",
+      "charCount": 141011,
+      "wordCount": 24031,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "1. Connect to your environment—Primal Powers"
+        },
+        {
+          "level": "h2",
+          "title": "2. Play to your strengths—Supreme Focus"
+        },
+        {
+          "level": "h2",
+          "title": "3. Transform yourself through practice—The Fingertip Feel"
+        },
+        {
+          "level": "h2",
+          "title": "4. Internalize the details—The Life Force"
+        },
+        {
+          "level": "h2",
+          "title": "5. Widen your vision—the Global Perspective"
+        },
+        {
+          "level": "h2",
+          "title": "6. Submit to the other—The Inside-out Perspective"
+        },
+        {
+          "level": "h2",
+          "title": "7. Synthesize all forms of knowledge—The Universal Man/Woman"
+        },
+        {
+          "level": "h3",
+          "title": "REVERSAL"
+        },
+        {
+          "level": "h1",
+          "title": "CONTEMPORARYMASTER BIOGRAPHIES"
+        },
+        {
+          "level": "h1",
+          "title": "SELECTED BIBLIOGRAPHY"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "00002.jpeg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\mastery\\ch05.txt"
+    }
+  ]
+}

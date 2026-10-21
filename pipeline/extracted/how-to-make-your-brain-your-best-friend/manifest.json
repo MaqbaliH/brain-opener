@@ -1,0 +1,360 @@
+{
+  "bookSlug": "how-to-make-your-brain-your-best-friend",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\How to Make Your Brain Your Best Friend.epub",
+  "totalChapters": 4,
+  "totalFigures": 8,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/xhtml/016-041_Chapter_One.xhtml",
+      "title": "Know Thyself: Reclaiming Identity in the Age of Optimization / When Life Feels Impossible, Turn on Delight",
+      "charCount": 81296,
+      "wordCount": 13408,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "1"
+        },
+        {
+          "level": "h1",
+          "title": "Know Thyself: Reclaiming Identity in the Age of Optimization"
+        },
+        {
+          "level": "h2",
+          "title": "Identity Crisis: Now with Extra Crisis"
+        },
+        {
+          "level": "h2",
+          "title": "Your Brain’s Greatest Magic Trick"
+        },
+        {
+          "level": "h2",
+          "title": "The Emperor’s New Clothes: Link in Bio!"
+        },
+        {
+          "level": "h2",
+          "title": "Mirror, Mirror, Do You Still Like Me?"
+        },
+        {
+          "level": "h2",
+          "title": "Know Thyself, Be Kind to Thyself"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        },
+        {
+          "level": "h1",
+          "title": "2"
+        },
+        {
+          "level": "h1",
+          "title": "When Life Feels Impossible, Turn on Delight"
+        },
+        {
+          "level": "h2",
+          "title": "Down and Out in Bristol and Leeds"
+        },
+        {
+          "level": "h2",
+          "title": "Delighten the Load"
+        },
+        {
+          "level": "h2",
+          "title": "The Anatomy of Delight"
+        },
+        {
+          "level": "h2",
+          "title": "Breaking the Cycle: Delight Over Distraction"
+        },
+        {
+          "level": "h2",
+          "title": "The Pitfalls of Pleasure"
+        },
+        {
+          "level": "h2",
+          "title": "Focus Pocus, the Magic of Paying Attention"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-make-your-brain-your-best-friend\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/xhtml/060-083_Chapter_Three.xhtml",
+      "title": "The Neuroscience of Why We Need Each Other / I Sleep, Therefore I Am",
+      "charCount": 82296,
+      "wordCount": 13657,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "3"
+        },
+        {
+          "level": "h1",
+          "title": "The Neuroscience of Why We Need Each Other"
+        },
+        {
+          "level": "h2",
+          "title": "The Democracy of Loneliness"
+        },
+        {
+          "level": "h2",
+          "title": "The Lonely Brain"
+        },
+        {
+          "level": "h2",
+          "title": "Click, Scroll, Repeat"
+        },
+        {
+          "level": "h2",
+          "title": "Quid Prosocial Quo"
+        },
+        {
+          "level": "h2",
+          "title": "The Empathy Gap"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        },
+        {
+          "level": "h1",
+          "title": "4"
+        },
+        {
+          "level": "h1",
+          "title": "I Sleep, Therefore I Am"
+        },
+        {
+          "level": "h2",
+          "title": "Ctrl+Z for the Soul: Undoing the Day"
+        },
+        {
+          "level": "h2",
+          "title": "Pillow Talk: Couples Therapy for You and Your Brain"
+        },
+        {
+          "level": "h2",
+          "title": "From Dusk Till Dawn and Back Again"
+        },
+        {
+          "level": "h2",
+          "title": "Rise and Grind"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-make-your-brain-your-best-friend\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/xhtml/104-125_Chapter_Five.xhtml",
+      "title": "Art & Soul: The Heartbeat of Human Creativity / The Mind in Motion: Finding Freedom Through Movement",
+      "charCount": 88056,
+      "wordCount": 14609,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "5"
+        },
+        {
+          "level": "h1",
+          "title": "Art & Soul: The Heartbeat of Human Creativity"
+        },
+        {
+          "level": "h2",
+          "title": "Ancient Urges, Modern Art"
+        },
+        {
+          "level": "h2",
+          "title": "A Robot, a Human, and a Mouse Walk into a Bar"
+        },
+        {
+          "level": "h2",
+          "title": "Mother of Invention"
+        },
+        {
+          "level": "h2",
+          "title": "Speaks to Me: The Language of Art"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        },
+        {
+          "level": "h1",
+          "title": "6"
+        },
+        {
+          "level": "h1",
+          "title": "The Mind in Motion: Finding Freedom Through Movement"
+        },
+        {
+          "level": "h2",
+          "title": "Grow Your Own Hippocampus"
+        },
+        {
+          "level": "h2",
+          "title": "Context Is Everything"
+        },
+        {
+          "level": "h2",
+          "title": "Failure Is Not an Option. Or Is It?"
+        },
+        {
+          "level": "h2",
+          "title": "Pumping Irony: The Lighter Side of Lifting Heavy"
+        },
+        {
+          "level": "h2",
+          "title": "Moving Forward and Moving Silly"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-make-your-brain-your-best-friend\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/xhtml/150-173_Chapter_Seven.xhtml",
+      "title": "Me, Myself & Wi-Fi: Keeping It Together Online / The Meaning of Life",
+      "charCount": 105608,
+      "wordCount": 17394,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "7"
+        },
+        {
+          "level": "h1",
+          "title": "Me, Myself & Wi-Fi: Keeping It Together Online"
+        },
+        {
+          "level": "h2",
+          "title": "Is the Internet Making Us Dumb?"
+        },
+        {
+          "level": "h2",
+          "title": "Split-Screen Living"
+        },
+        {
+          "level": "h2",
+          "title": "Hook, Line, and Thinker"
+        },
+        {
+          "level": "h2",
+          "title": "The Thrill of the Chase"
+        },
+        {
+          "level": "h2",
+          "title": "Keyboard Warfare"
+        },
+        {
+          "level": "h2",
+          "title": "The Lust for Comfort"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        },
+        {
+          "level": "h1",
+          "title": "8"
+        },
+        {
+          "level": "h1",
+          "title": "The Meaning of Life"
+        },
+        {
+          "level": "h2",
+          "title": "Meaning, Schmeaning: What’s the Point?"
+        },
+        {
+          "level": "h2",
+          "title": "There’s No AI in Team"
+        },
+        {
+          "level": "h2",
+          "title": "To Be or Not to Be, Plus a Million Other Choices"
+        },
+        {
+          "level": "h2",
+          "title": "Choose Your Own Adventure"
+        },
+        {
+          "level": "h2",
+          "title": "LifeStory_final_newfinal_NEW.doc"
+        },
+        {
+          "level": "h2",
+          "title": "When Life Gives You Lemons"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter summary"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "file": "Cloud.png",
+          "caption": "",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\how-to-make-your-brain-your-best-friend\\ch04.txt"
+    }
+  ]
+}

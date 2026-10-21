@@ -1,0 +1,417 @@
+{
+  "bookSlug": "hemingways-boat",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Hemingways Boat.epub",
+  "totalChapters": 5,
+  "totalFigures": 28,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/Hend_9780307700537_epub_prl_r1.htm",
+      "title": "PROLOGUEAMID SO MUCH RUIN, STILL THE BEAUTY / AMERICAN LIGHT / THAT BOAT (+3 more)",
+      "charCount": 197673,
+      "wordCount": 34453,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "PROLOGUEAMID SO MUCH RUIN, STILL THE BEAUTY"
+        },
+        {
+          "level": "h1",
+          "title": "AMERICAN LIGHT"
+        },
+        {
+          "level": "h1",
+          "title": "THAT BOAT"
+        },
+        {
+          "level": "h1",
+          "title": "GONE TO FIREWOOD"
+        },
+        {
+          "level": "h1",
+          "title": "STATES OF RAPTURE"
+        },
+        {
+          "level": "h1",
+          "title": "HOME"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Hend_9780307700537_epub_002_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_003_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_004_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_005_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_006_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_007_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_008_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\hemingways-boat\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/Hend_9780307700537_epub_c06_r1.htm",
+      "title": "SHADOW STORY / HIGH SUMMER / CATCHING FISH (+1 more)",
+      "charCount": 275022,
+      "wordCount": 48818,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "SHADOW STORY"
+        },
+        {
+          "level": "h1",
+          "title": "HIGH SUMMER"
+        },
+        {
+          "level": "h1",
+          "title": "CATCHING FISH"
+        },
+        {
+          "level": "h1",
+          "title": "ON BEING SHOT AGAIN"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Hend_9780307700537_epub_010_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_011_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_012_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_013_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_014_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_015_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\hemingways-boat\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/Hend_9780307700537_epub_c10_r1.htm",
+      "title": "OUTSIDE WORLDS / EXUBERATING,AND THEN THE JACKALS OF HIS MIND / EDENS LOST AND DARKNESS VISIBLE (+2 more)",
+      "charCount": 285591,
+      "wordCount": 50937,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "OUTSIDE WORLDS"
+        },
+        {
+          "level": "h1",
+          "title": "EXUBERATING,AND THEN THE JACKALS OF HIS MIND"
+        },
+        {
+          "level": "h1",
+          "title": "EDENS LOST AND DARKNESS VISIBLE"
+        },
+        {
+          "level": "h1",
+          "title": "MOMENTS SUPREME"
+        },
+        {
+          "level": "h1",
+          "title": "FACET OF HIS CHARACTER"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Hend_9780307700537_epub_016_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_017_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_018_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_019_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_020_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_021_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\hemingways-boat\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/Hend_9780307700537_epub_c15_r1.htm",
+      "title": "THE GALLANTRY OF AN AGING MACHINE / BRAVER THAN WE KNEW / IN SPITE OF EVERYTHING (+1 more)",
+      "charCount": 171784,
+      "wordCount": 30674,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "THE GALLANTRY OF AN AGING MACHINE"
+        },
+        {
+          "level": "h1",
+          "title": "BRAVER THAN WE KNEW"
+        },
+        {
+          "level": "h1",
+          "title": "IN SPITE OF EVERYTHING"
+        },
+        {
+          "level": "h1",
+          "title": "“NECROTIC”"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Hend_9780307700537_epub_022_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_023_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_024_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_025_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_026_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\hemingways-boat\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/Hend_9780307700537_epub_c19_r1.htm",
+      "title": "WHAT HE HAD / REENACTMENT / EPILOGUEHUNGER OF MEMORY (+3 more)",
+      "charCount": 224060,
+      "wordCount": 39255,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "WHAT HE HAD"
+        },
+        {
+          "level": "h1",
+          "title": "REENACTMENT"
+        },
+        {
+          "level": "h1",
+          "title": "EPILOGUEHUNGER OF MEMORY"
+        },
+        {
+          "level": "h1",
+          "title": "ESSAY ON SOURCES"
+        },
+        {
+          "level": "h2",
+          "title": "PROLOGUE: AMID SO MUCH RUIN, STILL THE BEAUTY"
+        },
+        {
+          "level": "h2",
+          "title": "PART ONE. GETTING HER"
+        },
+        {
+          "level": "h2",
+          "title": "AMERICAN LIGHT"
+        },
+        {
+          "level": "h2",
+          "title": "THAT BOAT"
+        },
+        {
+          "level": "h2",
+          "title": "GONE TO FIREWOOD"
+        },
+        {
+          "level": "h2",
+          "title": "STATES OF RAPTURE"
+        },
+        {
+          "level": "h2",
+          "title": "PART TWO. WHEN SHE WAS NEW, 1934–1935"
+        },
+        {
+          "level": "h2",
+          "title": "HOME"
+        },
+        {
+          "level": "h2",
+          "title": "SHADOW STORY"
+        },
+        {
+          "level": "h2",
+          "title": "HIGH SUMMER"
+        },
+        {
+          "level": "h2",
+          "title": "CATCHING FISH"
+        },
+        {
+          "level": "h2",
+          "title": "ON BEING SHOT AGAIN"
+        },
+        {
+          "level": "h2",
+          "title": "OUTSIDE WORLDS"
+        },
+        {
+          "level": "h2",
+          "title": "EXUBERATING, AND THEN THE JACKALS OF HIS MIND"
+        },
+        {
+          "level": "h2",
+          "title": "PART THREE. BEFORE"
+        },
+        {
+          "level": "h2",
+          "title": "EDENS LOST AND DARKNESS VISIBLE"
+        },
+        {
+          "level": "h2",
+          "title": "PART FOUR. OLD MEN AT THE EDGE OF THE SEA:ERNEST/GIGI/WALTER HOUK, 1949–1952 AND AFTER"
+        },
+        {
+          "level": "h2",
+          "title": "MOMENTS SUPREME"
+        },
+        {
+          "level": "h2",
+          "title": "FACET OF HIS CHARACTER"
+        },
+        {
+          "level": "h2",
+          "title": "THE GALLANTRY OF AN AGING MACHINE"
+        },
+        {
+          "level": "h2",
+          "title": "BRAVER THAN WE KNEW"
+        },
+        {
+          "level": "h2",
+          "title": "IN SPITE OF EVERYTHING"
+        },
+        {
+          "level": "h2",
+          "title": "“NECROTIC”"
+        },
+        {
+          "level": "h2",
+          "title": "WHAT HE HAD"
+        },
+        {
+          "level": "h2",
+          "title": "REENACTMENT"
+        },
+        {
+          "level": "h2",
+          "title": "EPILOGUE: HUNGER OF MEMORY"
+        },
+        {
+          "level": "h1",
+          "title": "CODAON THE CURIOUS AFTERLIFE OF PILAR"
+        },
+        {
+          "level": "h1",
+          "title": "SELECTED BIBLIOGRAPHY"
+        }
+      ],
+      "figures": [
+        {
+          "file": "Hend_9780307700537_epub_027_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_028_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_029_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        },
+        {
+          "file": "Hend_9780307700537_epub_030_r1.jpg",
+          "caption": "Book illustration",
+          "alt": "Book illustration"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\hemingways-boat\\ch05.txt"
+    }
+  ]
+}

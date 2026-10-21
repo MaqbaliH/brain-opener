@@ -1,0 +1,959 @@
+{
+  "bookSlug": "bulletproof-problem-solving",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\20 oct 26\\Bulletproof Problem Solving The One Skill That Changes Everything (Charles Conn, Robert McLean) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "totalChapters": 5,
+  "totalFigures": 88,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_30_77.pdf",
+      "title": "Learn the Bulletproof Problem Solving Approach / Define the Problem",
+      "startPage": 30,
+      "endPage": 77,
+      "charCount": 62059,
+      "wordCount": 10178,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Learn the Bulletproof Problem Solving Approach"
+        },
+        {
+          "level": "h2",
+          "title": "The Bulletproof Problem Solving Cycle"
+        },
+        {
+          "level": "h2",
+          "title": "Prepare for an Avalanche of Trees!"
+        },
+        {
+          "level": "h2",
+          "title": "Let’s Start with Some Case Studies"
+        },
+        {
+          "level": "h2",
+          "title": "Case 1: Does Sydney Airport Have Adequate Capacity?"
+        },
+        {
+          "level": "h2",
+          "title": "Case 2: Should Rob Install Solar Panels on His Roof Now?"
+        },
+        {
+          "level": "h2",
+          "title": "Case 3: Where Should I Move?"
+        },
+        {
+          "level": "h2",
+          "title": "Case 4: Making Pricing Decisions in a Start-up Company"
+        },
+        {
+          "level": "h2",
+          "title": "Case 5: Should Charles Support the Local School Levy?"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 1 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        },
+        {
+          "level": "h1",
+          "title": "Define the Problem"
+        },
+        {
+          "level": "h2",
+          "title": "How a Problem Statement Is Refined: The Case of Pacific Salmon"
+        },
+        {
+          "level": "h2",
+          "title": "Defining the Highest-Level Problem: Steel Company Investments"
+        },
+        {
+          "level": "h2",
+          "title": "Widening the Aperture on the Problem: The Avahan HIV Project in India"
+        },
+        {
+          "level": "h2",
+          "title": "Porpoising to Get the Problem Statement Right"
+        },
+        {
+          "level": "h2",
+          "title": "Design Thinking and Seven Steps"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 2 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bulletproof_problem_solving_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: Learn the Bulletproof Problem Solving Approach / Define the Problem (Page 30)",
+          "alt": "Chapter 1 opening page (Learn the Bulletproof Problem Solving Approach / Define the Problem)"
+        },
+        {
+          "file": "bulletproof_problem_solving_p030_fig1.png",
+          "caption": "Embedded figure from page 30",
+          "alt": "Book illustration on page 30"
+        },
+        {
+          "file": "bulletproof_problem_solving_p033_fig5.png",
+          "caption": "Embedded figure from page 33",
+          "alt": "Book illustration on page 33"
+        },
+        {
+          "file": "bulletproof_problem_solving_p035_fig1.png",
+          "caption": "Embedded figure from page 35",
+          "alt": "Book illustration on page 35"
+        },
+        {
+          "file": "bulletproof_problem_solving_p042_fig1.png",
+          "caption": "Embedded figure from page 42",
+          "alt": "Book illustration on page 42"
+        },
+        {
+          "file": "bulletproof_problem_solving_p063_fig1.png",
+          "caption": "Embedded figure from page 63",
+          "alt": "Book illustration on page 63"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig1.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig2.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig3.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig4.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig5.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig6.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig7.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig8.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p065_fig9.png",
+          "caption": "Embedded figure from page 65",
+          "alt": "Book illustration on page 65"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig1.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig2.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig3.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig4.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig5.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig6.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig7.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig8.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig9.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig10.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        },
+        {
+          "file": "bulletproof_problem_solving_p067_fig11.png",
+          "caption": "Embedded figure from page 67",
+          "alt": "Book illustration on page 67"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\bulletproof-problem-solving\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_78_139.pdf",
+      "title": "Problem Disaggregation and Prioritization / Build a Great Workplan and Team Processes",
+      "startPage": 78,
+      "endPage": 139,
+      "charCount": 85696,
+      "wordCount": 13820,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Problem Disaggregation and Prioritization"
+        },
+        {
+          "level": "h2",
+          "title": "Introduction"
+        },
+        {
+          "level": "h2",
+          "title": "Types of Logic Trees: Getting Started"
+        },
+        {
+          "level": "h3",
+          "title": "Case Study: Saving Pacific Salmon—From Initial Component Tree to Refined Hypothesis Tree"
+        },
+        {
+          "level": "h3",
+          "title": "Deductive Logic Trees"
+        },
+        {
+          "level": "h3",
+          "title": "Case Study: Battle of the Hardware Kings: Hechinger versus Home Depot"
+        },
+        {
+          "level": "h3",
+          "title": "Case Study: Bay Area Nursing Related Patient Outcomes"
+        },
+        {
+          "level": "h3",
+          "title": "Inductive Logic Trees"
+        },
+        {
+          "level": "h3",
+          "title": "Case Study: Dealing with Contested Historical Legacies—from Inductive Thinking to a Decision Tree"
+        },
+        {
+          "level": "h2",
+          "title": "Step 3: Prioritization—Pruning Your Logic Trees"
+        },
+        {
+          "level": "h2",
+          "title": "Advanced Class: Using Cleaving Frames to Take Apart Problems"
+        },
+        {
+          "level": "h3",
+          "title": "Case Study: Climate Change Abatement and the Cost Curve"
+        },
+        {
+          "level": "h2",
+          "title": "Team Processes in Problem Disaggregation and Prioritization"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 3 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        },
+        {
+          "level": "h1",
+          "title": "Build a Great Workplan and Team Processes"
+        },
+        {
+          "level": "h2",
+          "title": "Workplanning and Project Management"
+        },
+        {
+          "level": "h3",
+          "title": "Chunky Workplans and Lean Project Plans"
+        },
+        {
+          "level": "h2",
+          "title": "One-Day Answers"
+        },
+        {
+          "level": "h2",
+          "title": "Great Team Processes for Workplanning and Analysis"
+        },
+        {
+          "level": "h3",
+          "title": "Team Structure and Leadership"
+        },
+        {
+          "level": "h3",
+          "title": "Team Norms"
+        },
+        {
+          "level": "h3",
+          "title": "Team Behaviors to Avoid Bias and Error"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 4 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bulletproof_problem_solving_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Problem Disaggregation and Prioritization / Build a Great Workplan and Team Processes (Page 78)",
+          "alt": "Chapter 2 opening page (Problem Disaggregation and Prioritization / Build a Great Workplan and Team Processes)"
+        },
+        {
+          "file": "bulletproof_problem_solving_p080_fig1.png",
+          "caption": "Embedded figure from page 80",
+          "alt": "Book illustration on page 80"
+        },
+        {
+          "file": "bulletproof_problem_solving_p081_fig1.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "bulletproof_problem_solving_p081_fig2.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "bulletproof_problem_solving_p081_fig11.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "bulletproof_problem_solving_p081_fig12.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "bulletproof_problem_solving_p081_fig13.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "bulletproof_problem_solving_p081_fig14.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "bulletproof_problem_solving_p081_fig16.png",
+          "caption": "Embedded figure from page 81",
+          "alt": "Book illustration on page 81"
+        },
+        {
+          "file": "bulletproof_problem_solving_p108_fig1.png",
+          "caption": "Embedded figure from page 108",
+          "alt": "Book illustration on page 108"
+        },
+        {
+          "file": "bulletproof_problem_solving_p108_fig2.png",
+          "caption": "Embedded figure from page 108",
+          "alt": "Book illustration on page 108"
+        },
+        {
+          "file": "bulletproof_problem_solving_p108_fig4.png",
+          "caption": "Embedded figure from page 108",
+          "alt": "Book illustration on page 108"
+        },
+        {
+          "file": "bulletproof_problem_solving_p108_fig5.png",
+          "caption": "Embedded figure from page 108",
+          "alt": "Book illustration on page 108"
+        },
+        {
+          "file": "bulletproof_problem_solving_p112_fig1.png",
+          "caption": "Embedded figure from page 112",
+          "alt": "Book illustration on page 112"
+        },
+        {
+          "file": "bulletproof_problem_solving_p113_fig1.png",
+          "caption": "Embedded figure from page 113",
+          "alt": "Book illustration on page 113"
+        },
+        {
+          "file": "bulletproof_problem_solving_p119_fig1.png",
+          "caption": "Embedded figure from page 119",
+          "alt": "Book illustration on page 119"
+        },
+        {
+          "file": "bulletproof_problem_solving_p137_fig4.png",
+          "caption": "Embedded figure from page 137",
+          "alt": "Book illustration on page 137"
+        },
+        {
+          "file": "bulletproof_problem_solving_p138_fig1.png",
+          "caption": "Embedded figure from page 138",
+          "alt": "Book illustration on page 138"
+        },
+        {
+          "file": "bulletproof_problem_solving_p138_fig2.png",
+          "caption": "Embedded figure from page 138",
+          "alt": "Book illustration on page 138"
+        },
+        {
+          "file": "bulletproof_problem_solving_p138_fig4.png",
+          "caption": "Embedded figure from page 138",
+          "alt": "Book illustration on page 138"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\bulletproof-problem-solving\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_140_207.pdf",
+      "title": "Conduct Analyses / Big Guns of Analysis",
+      "startPage": 140,
+      "endPage": 207,
+      "charCount": 106705,
+      "wordCount": 17115,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Conduct Analyses"
+        },
+        {
+          "level": "h2",
+          "title": "Heuristics and Rules of Thumb"
+        },
+        {
+          "level": "h2",
+          "title": "Question-Based Problem Solving"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 5 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        },
+        {
+          "level": "h1",
+          "title": "Big Guns of Analysis"
+        },
+        {
+          "level": "h2",
+          "title": "Firepower Availability"
+        },
+        {
+          "level": "h2",
+          "title": "Sequence Your Thinking"
+        },
+        {
+          "level": "h2",
+          "title": "Which Big Gun to Choose?"
+        },
+        {
+          "level": "h2",
+          "title": "Case Studies for Employing the Big Guns"
+        },
+        {
+          "level": "h3",
+          "title": "Summary of Case Studies"
+        },
+        {
+          "level": "h3",
+          "title": "Data Visualization: Clusters and Hotspots—London Air Quality Example"
+        },
+        {
+          "level": "h3",
+          "title": "Regression Models to Understand Obesity"
+        },
+        {
+          "level": "h3",
+          "title": "Bayesian Statistics and the Space Shuttle Challenger Disaster"
+        },
+        {
+          "level": "h3",
+          "title": "Constructed Experiments: RCTs and A|B Testing"
+        },
+        {
+          "level": "h3",
+          "title": "Natural Experiments: Voter Prejudice"
+        },
+        {
+          "level": "h3",
+          "title": "Simulations: Climate Change Example"
+        },
+        {
+          "level": "h3",
+          "title": "Machine Learning Solutions"
+        },
+        {
+          "level": "h3",
+          "title": "Crowdsourcing Algorithms"
+        },
+        {
+          "level": "h2",
+          "title": "Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bulletproof_problem_solving_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Conduct Analyses / Big Guns of Analysis (Page 140)",
+          "alt": "Chapter 3 opening page (Conduct Analyses / Big Guns of Analysis)"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig1.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig2.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig3.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig5.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig6.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig7.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig8.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig9.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p146_fig10.png",
+          "caption": "Embedded figure from page 146",
+          "alt": "Book illustration on page 146"
+        },
+        {
+          "file": "bulletproof_problem_solving_p154_fig1.png",
+          "caption": "Embedded figure from page 154",
+          "alt": "Book illustration on page 154"
+        },
+        {
+          "file": "bulletproof_problem_solving_p154_fig2.png",
+          "caption": "Embedded figure from page 154",
+          "alt": "Book illustration on page 154"
+        },
+        {
+          "file": "bulletproof_problem_solving_p154_fig3.png",
+          "caption": "Embedded figure from page 154",
+          "alt": "Book illustration on page 154"
+        },
+        {
+          "file": "bulletproof_problem_solving_p157_fig2.png",
+          "caption": "Embedded figure from page 157",
+          "alt": "Book illustration on page 157"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig1.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig2.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig5.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig6.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig7.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig8.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig9.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig10.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p171_fig11.png",
+          "caption": "Embedded figure from page 171",
+          "alt": "Book illustration on page 171"
+        },
+        {
+          "file": "bulletproof_problem_solving_p181_fig34.png",
+          "caption": "Embedded figure from page 181",
+          "alt": "Book illustration on page 181"
+        },
+        {
+          "file": "bulletproof_problem_solving_p187_fig1.png",
+          "caption": "Embedded figure from page 187",
+          "alt": "Book illustration on page 187"
+        },
+        {
+          "file": "bulletproof_problem_solving_p192_fig1.png",
+          "caption": "Embedded figure from page 192",
+          "alt": "Book illustration on page 192"
+        },
+        {
+          "file": "bulletproof_problem_solving_p192_fig2.png",
+          "caption": "Embedded figure from page 192",
+          "alt": "Book illustration on page 192"
+        },
+        {
+          "file": "bulletproof_problem_solving_p202_fig1.png",
+          "caption": "Embedded figure from page 202",
+          "alt": "Book illustration on page 202"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\bulletproof-problem-solving\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_208_263.pdf",
+      "title": "Synthesize Results and Tell a Great Story / Problem Solving with Long Time Frames and High Uncertainty",
+      "startPage": 208,
+      "endPage": 263,
+      "charCount": 73588,
+      "wordCount": 11780,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Synthesize Results and Tell a Great Story"
+        },
+        {
+          "level": "h2",
+          "title": "Introduction"
+        },
+        {
+          "level": "h2",
+          "title": "Synthesis of Findings"
+        },
+        {
+          "level": "h2",
+          "title": "From One-Day Answers to Pyramid Structure"
+        },
+        {
+          "level": "h2",
+          "title": "Telling Compelling Stories"
+        },
+        {
+          "level": "h3",
+          "title": "How to Deal with Difficult Audiences"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 7 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        },
+        {
+          "level": "h1",
+          "title": "Problem Solving with Long Time Frames and High Uncertainty"
+        },
+        {
+          "level": "h2",
+          "title": "Levels of Uncertainty"
+        },
+        {
+          "level": "h2",
+          "title": "Logic Trees to Deal with Uncertainty"
+        },
+        {
+          "level": "h2",
+          "title": "Case Examples of Long Time Frames and Uncertainty"
+        },
+        {
+          "level": "h2",
+          "title": "Case Study: How Should I Choose My Career?"
+        },
+        {
+          "level": "h2",
+          "title": "Case Study: Will My Retirement Savings Last?"
+        },
+        {
+          "level": "h3",
+          "title": "Sketch Out Your Longevity Runway"
+        },
+        {
+          "level": "h3",
+          "title": "Consider Your Risk Tolerance"
+        },
+        {
+          "level": "h3",
+          "title": "Decide What Actions to Take"
+        },
+        {
+          "level": "h2",
+          "title": "Case Study: How to Make Really Long-Term Investments"
+        },
+        {
+          "level": "h3",
+          "title": "Value Including Development Options"
+        },
+        {
+          "level": "h3",
+          "title": "Scenarios for Major Uncertainties"
+        },
+        {
+          "level": "h2",
+          "title": "Case Study: Building New Businesses with Strategic Staircases"
+        },
+        {
+          "level": "h3",
+          "title": "Staircase Architecture"
+        },
+        {
+          "level": "h3",
+          "title": "Staircase Under Construction: Ripper Group Example"
+        },
+        {
+          "level": "h2",
+          "title": "Case Study: Managing a Long-Term Strategy Portfolio, Pacific Salmon Example"
+        },
+        {
+          "level": "h3",
+          "title": "Theory of Change Map"
+        },
+        {
+          "level": "h3",
+          "title": "Portfolio of Strategies Map"
+        },
+        {
+          "level": "h3",
+          "title": "Managing Regional and Topical Strategies"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 8 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bulletproof_problem_solving_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Synthesize Results and Tell a Great Story / Problem Solving with Long Time Frames and High Uncertainty (Page 208)",
+          "alt": "Chapter 4 opening page (Synthesize Results and Tell a Great Story / Problem Solving with Long Time Frames and High Uncertainty)"
+        },
+        {
+          "file": "bulletproof_problem_solving_p224_fig8.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "bulletproof_problem_solving_p224_fig9.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "bulletproof_problem_solving_p224_fig11.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "bulletproof_problem_solving_p224_fig12.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "bulletproof_problem_solving_p224_fig13.png",
+          "caption": "Embedded figure from page 224",
+          "alt": "Book illustration on page 224"
+        },
+        {
+          "file": "bulletproof_problem_solving_p248_fig1.png",
+          "caption": "Embedded figure from page 248",
+          "alt": "Book illustration on page 248"
+        },
+        {
+          "file": "bulletproof_problem_solving_p248_fig2.png",
+          "caption": "Embedded figure from page 248",
+          "alt": "Book illustration on page 248"
+        },
+        {
+          "file": "bulletproof_problem_solving_p248_fig11.png",
+          "caption": "Embedded figure from page 248",
+          "alt": "Book illustration on page 248"
+        },
+        {
+          "file": "bulletproof_problem_solving_p248_fig12.png",
+          "caption": "Embedded figure from page 248",
+          "alt": "Book illustration on page 248"
+        },
+        {
+          "file": "bulletproof_problem_solving_p248_fig13.png",
+          "caption": "Embedded figure from page 248",
+          "alt": "Book illustration on page 248"
+        },
+        {
+          "file": "bulletproof_problem_solving_p248_fig14.png",
+          "caption": "Embedded figure from page 248",
+          "alt": "Book illustration on page 248"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\bulletproof-problem-solving\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "pages_264_287.pdf",
+      "title": "Wicked Problems / Becoming a Great Problem Solver",
+      "startPage": 264,
+      "endPage": 287,
+      "charCount": 39730,
+      "wordCount": 6310,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Wicked Problems"
+        },
+        {
+          "level": "h2",
+          "title": "Obesity as a Wicked Problem"
+        },
+        {
+          "level": "h3",
+          "title": "Problem Definition"
+        },
+        {
+          "level": "h3",
+          "title": "Cleaving the Problem"
+        },
+        {
+          "level": "h3",
+          "title": "Analysis"
+        },
+        {
+          "level": "h3",
+          "title": "Synthesis and Call to Action"
+        },
+        {
+          "level": "h2",
+          "title": "Overfishing: The Quintessential Wicked Problem"
+        },
+        {
+          "level": "h3",
+          "title": "Problem Definition"
+        },
+        {
+          "level": "h3",
+          "title": "Conventional Solutions"
+        },
+        {
+          "level": "h3",
+          "title": "New Approach to Restructuring"
+        },
+        {
+          "level": "h3",
+          "title": "Morro Bay Case Study"
+        },
+        {
+          "level": "h2",
+          "title": "Conclusion"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 9 Takeaways"
+        },
+        {
+          "level": "h2",
+          "title": "Problems to Try on Your Own"
+        },
+        {
+          "level": "h1",
+          "title": "Becoming a Great Problem Solver"
+        }
+      ],
+      "figures": [
+        {
+          "file": "bulletproof_problem_solving_ch05_plate.png",
+          "caption": "Chapter 5 Opening Blueprint: Wicked Problems / Becoming a Great Problem Solver (Page 264)",
+          "alt": "Chapter 5 opening page (Wicked Problems / Becoming a Great Problem Solver)"
+        },
+        {
+          "file": "bulletproof_problem_solving_p264_fig1.png",
+          "caption": "Embedded figure from page 264",
+          "alt": "Book illustration on page 264"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\bulletproof-problem-solving\\ch05.txt"
+    }
+  ]
+}

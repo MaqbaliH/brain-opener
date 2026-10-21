@@ -1,0 +1,204 @@
+{
+  "bookSlug": "rewire",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Rewire.epub",
+  "totalChapters": 5,
+  "totalFigures": 6,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "text/part0005.html",
+      "title": "CHAPTER 1 / CHAPTER 2 / CHAPTER 3",
+      "charCount": 143987,
+      "wordCount": 24134,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "CHAPTER 1"
+        },
+        {
+          "level": "h2",
+          "title": "Two Brains, Not Working Together"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 2"
+        },
+        {
+          "level": "h2",
+          "title": "The Autodestruct Mechanism"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 3"
+        },
+        {
+          "level": "h2",
+          "title": "Fear Incognito"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00004.jpeg",
+          "caption": "111495.jpg",
+          "alt": "111495.jpg"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\rewire\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "text/part0008.html",
+      "title": "CHAPTER 4 / CHAPTER 5 / CHAPTER 6",
+      "charCount": 113008,
+      "wordCount": 19259,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "CHAPTER 4"
+        },
+        {
+          "level": "h2",
+          "title": "Rebels Without Causes"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 5"
+        },
+        {
+          "level": "h2",
+          "title": "Because You’re Special"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 6"
+        },
+        {
+          "level": "h2",
+          "title": "Waving the Red Flag"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\rewire\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "text/part0011.html",
+      "title": "CHAPTER 7 / CHAPTER 8 / CHAPTER 9",
+      "charCount": 109068,
+      "wordCount": 18184,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "CHAPTER 7"
+        },
+        {
+          "level": "h2",
+          "title": "The Enemy Is Us"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 8"
+        },
+        {
+          "level": "h2",
+          "title": "Trauma and Self-Destructive Behavior"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 9"
+        },
+        {
+          "level": "h2",
+          "title": "Watching the Parade Go By"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\rewire\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "text/part0014.html",
+      "title": "CHAPTER 10 / CHAPTER 11 / CHAPTER 12",
+      "charCount": 91631,
+      "wordCount": 15376,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "CHAPTER 10"
+        },
+        {
+          "level": "h2",
+          "title": "Brainwashed and Burnt Out"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 11"
+        },
+        {
+          "level": "h2",
+          "title": "You’re Hooked: Addictions"
+        },
+        {
+          "level": "h2",
+          "title": "CHAPTER 12"
+        },
+        {
+          "level": "h2",
+          "title": "Gloom and Dread"
+        }
+      ],
+      "figures": [
+        {
+          "file": "00005.jpeg",
+          "caption": "150237.jpg",
+          "alt": "150237.jpg"
+        },
+        {
+          "file": "00005.jpeg",
+          "caption": "150237.jpg",
+          "alt": "150237.jpg"
+        },
+        {
+          "file": "00005.jpeg",
+          "caption": "150237.jpg",
+          "alt": "150237.jpg"
+        },
+        {
+          "file": "00005.jpeg",
+          "caption": "150237.jpg",
+          "alt": "150237.jpg"
+        },
+        {
+          "file": "00005.jpeg",
+          "caption": "150237.jpg",
+          "alt": "150237.jpg"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\rewire\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "text/part0017.html",
+      "title": "CHAPTER 13",
+      "charCount": 45227,
+      "wordCount": 7770,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "CHAPTER 13"
+        },
+        {
+          "level": "h2",
+          "title": "Facing the Undertow"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\rewire\\ch05.txt"
+    }
+  ]
+}

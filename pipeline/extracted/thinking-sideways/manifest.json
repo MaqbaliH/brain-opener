@@ -1,0 +1,232 @@
+{
+  "bookSlug": "thinking-sideways",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\Thinking Sideways.epub",
+  "totalChapters": 4,
+  "totalFigures": 0,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "e9798897100736/xhtml/ch01.xhtml",
+      "title": "1 Decision Trees / 2 Time Management",
+      "charCount": 91893,
+      "wordCount": 16269,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "1 Decision Trees"
+        },
+        {
+          "level": "h2",
+          "title": "Growing Decision Trees"
+        },
+        {
+          "level": "h2",
+          "title": "Laying Out All the Options"
+        },
+        {
+          "level": "h2",
+          "title": "False Binaries"
+        },
+        {
+          "level": "h2",
+          "title": "Seeing the Wood for the Trees"
+        },
+        {
+          "level": "h2",
+          "title": "Thinking One Move Ahead"
+        },
+        {
+          "level": "h2",
+          "title": "The Intermezzo Move"
+        },
+        {
+          "level": "h2",
+          "title": "Making the Decision"
+        },
+        {
+          "level": "h2",
+          "title": "After the Decision Has Been Made"
+        },
+        {
+          "level": "h1",
+          "title": "2 Time Management"
+        },
+        {
+          "level": "h2",
+          "title": "The Opening"
+        },
+        {
+          "level": "h2",
+          "title": "Middlegame"
+        },
+        {
+          "level": "h2",
+          "title": "The Art of Time"
+        },
+        {
+          "level": "h2",
+          "title": "The Flow of the Game"
+        },
+        {
+          "level": "h2",
+          "title": "Endgame"
+        },
+        {
+          "level": "h2",
+          "title": "Your Next Birthday Cake"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\thinking-sideways\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "e9798897100736/xhtml/ch03.xhtml",
+      "title": "3 Memory / 4 Pattern Recognition",
+      "charCount": 95566,
+      "wordCount": 16644,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "3 Memory"
+        },
+        {
+          "level": "h2",
+          "title": "Sleep"
+        },
+        {
+          "level": "h2",
+          "title": "Organise"
+        },
+        {
+          "level": "h2",
+          "title": "Focus"
+        },
+        {
+          "level": "h2",
+          "title": "Activate"
+        },
+        {
+          "level": "h1",
+          "title": "4 Pattern Recognition"
+        },
+        {
+          "level": "h2",
+          "title": "Lesson 1: A Random Pattern"
+        },
+        {
+          "level": "h2",
+          "title": "Lesson 2: Measuring the Mistake"
+        },
+        {
+          "level": "h2",
+          "title": "Lesson 3: Common Patterns"
+        },
+        {
+          "level": "h2",
+          "title": "Lesson 4: The Meta Pattern"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\thinking-sideways\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "e9798897100736/xhtml/ch05.xhtml",
+      "title": "5 Ambition / 6 Know Your Strengths",
+      "charCount": 85272,
+      "wordCount": 14708,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "5 Ambition"
+        },
+        {
+          "level": "h2",
+          "title": "The Chess Boom"
+        },
+        {
+          "level": "h2",
+          "title": "The Growth Mindset"
+        },
+        {
+          "level": "h2",
+          "title": "Toxic Ambition"
+        },
+        {
+          "level": "h2",
+          "title": "MTR"
+        },
+        {
+          "level": "h2",
+          "title": "Happiness"
+        },
+        {
+          "level": "h1",
+          "title": "6 Know Your Strengths"
+        },
+        {
+          "level": "h2",
+          "title": "The Principle of Chessboxing"
+        },
+        {
+          "level": "h2",
+          "title": "Finding Strength in Each Piece"
+        },
+        {
+          "level": "h2",
+          "title": "Confidence"
+        },
+        {
+          "level": "h2",
+          "title": "What’s Your Chessboxing?"
+        },
+        {
+          "level": "h2",
+          "title": "Competing Against Yourself"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\thinking-sideways\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "e9798897100736/xhtml/ch07.xhtml",
+      "title": "7 Taking Risks",
+      "charCount": 34253,
+      "wordCount": 6153,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "7 Taking Risks"
+        },
+        {
+          "level": "h2",
+          "title": "Playing the Numbers"
+        },
+        {
+          "level": "h2",
+          "title": "Fail Sideways"
+        },
+        {
+          "level": "h2",
+          "title": "Ride the Wave"
+        },
+        {
+          "level": "h2",
+          "title": "Hot or Not"
+        },
+        {
+          "level": "h2",
+          "title": "The Monte Carlo Method"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\thinking-sideways\\ch04.txt"
+    }
+  ]
+}

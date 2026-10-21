@@ -1,0 +1,790 @@
+{
+  "bookSlug": "the-anxious-generation",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\The Anxious Generation.epub",
+  "totalChapters": 4,
+  "totalFigures": 46,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/xhtml/09_Chapter_1_The_Surge_o.xhtml",
+      "title": "Chapter 1 / Chapter 2 / Chapter 3",
+      "charCount": 131205,
+      "wordCount": 21373,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "Chapter 1"
+        },
+        {
+          "level": "h2",
+          "title": "The Surge of Suffering"
+        },
+        {
+          "level": "h3",
+          "title": "The Wave Begins"
+        },
+        {
+          "level": "h3",
+          "title": "The Nature of the Surge"
+        },
+        {
+          "level": "h3",
+          "title": "What Is Anxiety?"
+        },
+        {
+          "level": "h3",
+          "title": "It’s Not Real, Is It?"
+        },
+        {
+          "level": "h3",
+          "title": "Smartphones and the CREATION of Gen Z"
+        },
+        {
+          "level": "h3",
+          "title": "Aren’t They Right to Be Anxious and Depressed?"
+        },
+        {
+          "level": "h3",
+          "title": "All Over the Anglosphere"
+        },
+        {
+          "level": "h3",
+          "title": "The Rest of the World"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 2"
+        },
+        {
+          "level": "h2",
+          "title": "What Children Need to Do in Childhood"
+        },
+        {
+          "level": "h3",
+          "title": "Slow-Growth Childhood"
+        },
+        {
+          "level": "h3",
+          "title": "Free Play"
+        },
+        {
+          "level": "h3",
+          "title": "Attunement"
+        },
+        {
+          "level": "h3",
+          "title": "Social Learning"
+        },
+        {
+          "level": "h3",
+          "title": "Expectant Brains and Sensitive Periods"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 3"
+        },
+        {
+          "level": "h2",
+          "title": "Discover Mode and the Need for Risky Play"
+        },
+        {
+          "level": "h3",
+          "title": "Discover Mode Versus Defend Mode"
+        },
+        {
+          "level": "h3",
+          "title": "Students on the Defensive"
+        },
+        {
+          "level": "h3",
+          "title": "Kids Are Antifragile"
+        },
+        {
+          "level": "h3",
+          "title": "Antifragile Kids Need Risky Play to Stay in Discover Mode"
+        },
+        {
+          "level": "h3",
+          "title": "The Beginning of the End of Play-Based Childhood"
+        },
+        {
+          "level": "h3",
+          "title": "Fearful Parenting in the Anglosphere"
+        },
+        {
+          "level": "h3",
+          "title": "Safetyism and Concept Creep"
+        },
+        {
+          "level": "h3",
+          "title": "Antifragility and the Attachment System"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        }
+      ],
+      "figures": [
+        {
+          "file": "page_24.jpg",
+          "caption": "Figure 1.1. Percent of U.S. teens (ages 12–17) who had at least one major depressive episode in the past year, by self-report based on a symptom checklist. This was figure 7.1 in The Coddling of the American Mind, now updated with data beyond 2016. (Source: U.S. National Survey on Drug Use and Health.)[3]",
+          "alt": ""
+        },
+        {
+          "file": "page_26.jpg",
+          "caption": "Figure 1.2. Percent of U.S. undergraduates with each of several mental illnesses. Rates of diagnosis of various mental illnesses increased in the 2010s among college students, especially for anxiety and depression. (Source: American College Health Association.)[9]",
+          "alt": ""
+        },
+        {
+          "file": "page_27.jpg",
+          "caption": "Figure 1.3. Percent of U.S. adults reporting high levels of anxiety by age group. (Source: U.S. National Survey on Drug Use and Health.)[11]",
+          "alt": ""
+        },
+        {
+          "file": "page_31.jpg",
+          "caption": "Figure 1.4. The rate per 100,000 in the U.S. population at which adolescents (ages 10–14) are treated in hospital emergency rooms for nonfatal self-injury. (Source: U.S. Centers for Disease Control, National Center for Injury Prevention and Control.)[20]",
+          "alt": ""
+        },
+        {
+          "file": "page_32.jpg",
+          "caption": "Figure 1.5. Suicide rates for U.S. adolescents, ages 10–14. (Source: U.S. Centers for Disease Control, National Center for Injury Prevention and Control.)[22]",
+          "alt": ""
+        },
+        {
+          "file": "page_34.jpg",
+          "caption": "Figure 1.6. The share of U.S. households using specific technologies. The smartphone was adopted faster than any other communication technology in history. (Source: Our World in Data.)[25]",
+          "alt": ""
+        },
+        {
+          "file": "page_38.jpg",
+          "caption": "Figure 1.7. The U.S. unemployment rate (percent of adults in the labor market who are unemployed) fell continuously as the adolescent mental health crisis got worse. (Sources: U.S. Bureau of Labor Statistics and the U.S. National Survey Drug Use and Health.)[40]",
+          "alt": ""
+        },
+        {
+          "file": "page_41.jpg",
+          "caption": "Figure 1.8. Percent of girls and women in Ontario, Canada, who reported that their mental health was either “excellent” or “very good.” (Source: D. Garriguet [2021], Portrait of youth in Canada: Data report.)[47]",
+          "alt": ""
+        },
+        {
+          "file": "page_42_2.jpg",
+          "caption": "Figure 1.9. U.K. teens’ (ages 13–16) self-harm episodes. (Source: Cybulski et al., 2021, drawing from two databases of anonymized British medical records.)[51]",
+          "alt": ""
+        },
+        {
+          "file": "page_42.jpg",
+          "caption": "Figure 1.10. Rate at which Australian teens (ages 12–24) were kept in hospitals overnight for mental health reasons. (Source: Australia’s Health 2022 Data Insights.)[53]",
+          "alt": ""
+        },
+        {
+          "file": "page_44_2.jpg",
+          "caption": "Figure 1.11. Percent of Nordic teens with high psychological distress (ages 11–15). (Source: Data from the Health Behavior in School Age Children Survey.)[56]",
+          "alt": ""
+        },
+        {
+          "file": "page_44.jpg",
+          "caption": "Figure 1.12. Worldwide school alienation scores over time (age 15). Note that the increase in school loneliness occurs in all regions other than Asia, mostly between 2012 and 2015. (These questions were not asked in the 2006 and 2009 surveys.) Scores range from 1 (low alienation) to 4 (high alienation). (Source: Twenge, Haidt et al. [2021]. Data from PISA.)[59]",
+          "alt": ""
+        },
+        {
+          "file": "page_57.jpg",
+          "caption": "Figure 2.1. Percentage of U.S. students (8th, 10th, and 12th grade) who say that they meet up with their friends “almost every day” outside school.[12] (Source: Monitoring the Future. I explain how I use this important dataset in the endnotes.)[13]",
+          "alt": ""
+        },
+        {
+          "file": "14_Lorenz_r1.jpg",
+          "caption": "Figure 2.2. Baby geese who had imprinted on Konrad Lorenz’s boots.[29]",
+          "alt": ""
+        },
+        {
+          "file": "page_74.jpg",
+          "caption": "Figure 3.2. Percentage of U.S. college freshmen reporting various kinds of disabilities and disorders. (Source: Annual Freshman Survey, by UCLA’s Higher Education Research Institute.)[8]",
+          "alt": ""
+        },
+        {
+          "file": "17_Wilma_r1.jpg",
+          "caption": "Figure 3.3. Wilma, age 7 months, executing a hairpin turn as her sprint toward a German shepherd sharply angled into a sprint away, which was followed by play position and more sprinting toward the larger dog. You can see the video of this interaction in the online supplement.",
+          "alt": ""
+        },
+        {
+          "file": "18_DallasPlayground_r1.jpg",
+          "caption": "Figure 3.4. An overly dangerous playground in Dallas, Texas, year unknown.[18]",
+          "alt": ""
+        },
+        {
+          "file": "19_PlaygroundSpinner_r1.jpg",
+          "caption": "Figure 3.5. A playground spinner (or merry-go-round), a staple of 1970s playgrounds.[21]",
+          "alt": ""
+        },
+        {
+          "file": "20_SafePlayground_r1.jpg",
+          "caption": "Figure 3.6. An overly safe playground, offering little opportunity for antifragile kids to learn how to not get hurt.[23]",
+          "alt": ""
+        },
+        {
+          "file": "21_ConeyIsland_r1.jpg",
+          "caption": "Figure 3.7. Coney Island, New York City, offers a wide range of dosages of thrills.[24]",
+          "alt": ""
+        },
+        {
+          "file": "page_86.jpg",
+          "caption": "Figure 3.8. Time spent parenting by U.S. mothers. Parenting time suddenly increased in the mid-1990s—the beginning of Gen Z. (Source: Ramey & Ramey, 2000.)[31]",
+          "alt": ""
+        },
+        {
+          "file": "23_SafeClassroom.jpg",
+          "caption": "“We’ve created a safe, nonjudgmental environment that will leave your child ill-prepared for real life.”",
+          "alt": ""
+        },
+        {
+          "file": "24_TagRules_r1.jpg",
+          "caption": "Figure 3.10. Restrictions on free play, at an elementary school in Berkeley, California.[53]",
+          "alt": ""
+        },
+        {
+          "file": "25_Figure3-11_Attachment_3P.jpg",
+          "caption": "Figure 3.11. The mammalian attachment system.[55]",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-anxious-generation\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/xhtml/13_Chapter_4_Puberty_and.xhtml",
+      "title": "Chapter 4 / Chapter 5 / Chapter 6",
+      "charCount": 145429,
+      "wordCount": 23719,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "Chapter 4"
+        },
+        {
+          "level": "h2",
+          "title": "Puberty and the Blocked Transition to Adulthood"
+        },
+        {
+          "level": "h3",
+          "title": "Puberty, Plasticity, and Vulnerability"
+        },
+        {
+          "level": "h3",
+          "title": "Experience Blockers: Safetyism and Smartphones"
+        },
+        {
+          "level": "h3",
+          "title": "Rites of Passage"
+        },
+        {
+          "level": "h3",
+          "title": "Why Do We Block the Transition to Adulthood?"
+        },
+        {
+          "level": "h3",
+          "title": "Building a Ladder from Childhood to Adulthood"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 5"
+        },
+        {
+          "level": "h2",
+          "title": "The Four Foundational Harms: Social Deprivation, Sleep Deprivation, Attention Fragmentation, and Addiction"
+        },
+        {
+          "level": "h3",
+          "title": "The Arrival of the Phone-Based Childhood"
+        },
+        {
+          "level": "h3",
+          "title": "Social Media and Its Transformations"
+        },
+        {
+          "level": "h3",
+          "title": "The Opportunity Cost of a Phone-Based Childhood"
+        },
+        {
+          "level": "h3",
+          "title": "Harm #1: Social Deprivation"
+        },
+        {
+          "level": "h3",
+          "title": "Harm #2: Sleep Deprivation"
+        },
+        {
+          "level": "h3",
+          "title": "Harm #3: Attention Fragmentation"
+        },
+        {
+          "level": "h3",
+          "title": "Harm #4: Addiction"
+        },
+        {
+          "level": "h3",
+          "title": "On the Benefits of Social Media for Adolescents"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 6"
+        },
+        {
+          "level": "h2",
+          "title": "Why Social Media Harms Girls More Than Boys"
+        },
+        {
+          "level": "h3",
+          "title": "The Evidence That Social Media Harms Girls"
+        },
+        {
+          "level": "h4",
+          "title": "Is Social Media a Cause or Just a Correlate?"
+        },
+        {
+          "level": "h4",
+          "title": "Does Social Media Affect Groups as Well as Individuals?"
+        },
+        {
+          "level": "h3",
+          "title": "Girls Use Social Media More Than Boys"
+        },
+        {
+          "level": "h3",
+          "title": "Agency and Communion"
+        },
+        {
+          "level": "h3",
+          "title": "Four Reasons Why Girls Are Particularly Vulnerable"
+        },
+        {
+          "level": "h4",
+          "title": "Reason #1: Girls Are More Affected by Visual Social Comparison and Perfectionism"
+        },
+        {
+          "level": "h4",
+          "title": "Reason #2: Girls’ Aggression Is More Relational"
+        },
+        {
+          "level": "h4",
+          "title": "Reason #3: Girls More Easily Share Emotions and Disorders"
+        },
+        {
+          "level": "h4",
+          "title": "Reason #4: Girls Are More Subject to Predation and Harassment"
+        },
+        {
+          "level": "h3",
+          "title": "Quantity over Quality"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        }
+      ],
+      "figures": [
+        {
+          "file": "page_107.jpg",
+          "caption": "Figure 4.1. The percentage of U.S. high school seniors who have engaged in four adult activities has been declining since the 1990s or early 2000s, prior to the Great Rewiring of 2010 to 2015. (Source: Monitoring the Future and CDC Youth Risk Behavior Survey.)[17]",
+          "alt": ""
+        },
+        {
+          "file": "page_125.jpg",
+          "caption": "Figure 5.1. Daily average time spent with friends in minutes. Only the youngest age group shows a sharp drop before the 2020 data collection, which was performed after COVID restrictions had begun. (Source: American Time Use Study.)[19]",
+          "alt": ""
+        },
+        {
+          "file": "page_128.jpg",
+          "caption": "Figure 5.2. Percent of U.S. students (8th, 10th, and 12th grade) who get less than seven hours of sleep on most nights. (Source: Monitoring the Future.)[33]",
+          "alt": ""
+        },
+        {
+          "file": "29_HookModel.jpg",
+          "caption": "Figure 5.3. The Hooked model. From Nir Eyal’s 2014 book, Hooked: How to Build Habit-Forming Products. In the book, Eyal warned about the ethical implications of misusing the model in a section titled “The Morality of Manipulation.”[55]",
+          "alt": ""
+        },
+        {
+          "file": "30_FacebookFiles_r1.jpg",
+          "caption": "Figure 5.4. Screenshot of an internal Facebook presentation, brought out by Frances Haugen. The caption says, “Teens’ decisions and behavior are mainly driven by emotion, the intrigue of novelty and reward. While these all seem positive, they make teens very vulnerable at the elevated levels they operate on. Especially in the absence of a mature frontal cortex to help impose limits on the indulgence in these.” (Source: The Facebook Files, section 42/15, p. 53.)[56]",
+          "alt": ""
+        },
+        {
+          "file": "31_AlexisSpence.jpg",
+          "caption": "Figure 6.1. Drawing made by Alexis Spence in April 2015, age 12. The words on her laptop are “worthless, die, ugly, stupid, kill yourself.” The words on her phone are “stupid, ugly, fat.” Copied from the court filing in Spence v. Meta.[1]",
+          "alt": ""
+        },
+        {
+          "file": "page_152.jpg",
+          "caption": "Figure 6.2. Percent of U.K. teens depressed as a function of hours per weekday on social media. Teens who are heavy users of social media are more depressed than light users and nonusers, and this is especially true for girls. (Source: Millennium Cohort Study.)[11]",
+          "alt": ""
+        },
+        {
+          "file": "page_157.jpg",
+          "caption": "Figure 6.3. Percent of U.S. students (8th, 10th, and 12th grade) who reported spending 40 or more hours a week on social media. (Source: Monitoring the Future.)[28]",
+          "alt": ""
+        },
+        {
+          "file": "34_JosephineFilters_r1.jpg",
+          "caption": "Figure 6.4. Beauty filters can make you as perfect as you want to be, which then increases the pressure on other girls to improve their beauty. (Source: Josephine Livin, @josephinelivin, on Instagram.)[37]",
+          "alt": ""
+        },
+        {
+          "file": "page_160.jpg",
+          "caption": "Figure 6.5. The sociometer plunge of 2012. Percent of U.S. students (8th, 10th, and 12th grade) who said they were satisfied with themselves. (Source: Monitoring the Future.)",
+          "alt": ""
+        },
+        {
+          "file": "page_173.jpg",
+          "caption": "Figure 6.6. The percentage of U.S. high school seniors who agreed or mostly agreed with the statement “I usually have a few friends around that I can get together with.” Rates dropped slowly before 2012, and more quickly afterward. (Source: Monitoring the Future.)[83]",
+          "alt": ""
+        },
+        {
+          "file": "page_174.jpg",
+          "caption": "Figure 6.7. Percent of U.S. students (8th, 10th, and 12th grade) who agreed or mostly agreed with the statement “A lot of times I feel lonely.” (Source: Monitoring the Future.)",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-anxious-generation\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/xhtml/17_Chapter_7_What_Is_Hap.xhtml",
+      "title": "Chapter 7 / Chapter 8 / Chapter 9",
+      "charCount": 97486,
+      "wordCount": 16130,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "Chapter 7"
+        },
+        {
+          "level": "h2",
+          "title": "What Is Happening to Boys?"
+        },
+        {
+          "level": "h3",
+          "title": "The Long Decline of Males"
+        },
+        {
+          "level": "h3",
+          "title": "Boys Who Fail to Launch"
+        },
+        {
+          "level": "h3",
+          "title": "Boyhood Without Real-World Risk"
+        },
+        {
+          "level": "h3",
+          "title": "The Virtual World Welcomes Boys"
+        },
+        {
+          "level": "h3",
+          "title": "The Virtual World Consumes Boys"
+        },
+        {
+          "level": "h3",
+          "title": "Pornography"
+        },
+        {
+          "level": "h3",
+          "title": "Video Games"
+        },
+        {
+          "level": "h3",
+          "title": "All Screens and No (Real-World) Play"
+        },
+        {
+          "level": "h3",
+          "title": "Technology, Freedom, and Meaninglessness"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 8"
+        },
+        {
+          "level": "h2",
+          "title": "Spiritual Elevation and Degradation"
+        },
+        {
+          "level": "h3",
+          "title": "Spiritual Practices"
+        },
+        {
+          "level": "h4",
+          "title": "1. Shared Sacredness"
+        },
+        {
+          "level": "h4",
+          "title": "2. Embodiment"
+        },
+        {
+          "level": "h4",
+          "title": "3. Stillness, Silence, and Focus"
+        },
+        {
+          "level": "h4",
+          "title": "4. Transcending the Self"
+        },
+        {
+          "level": "h4",
+          "title": "5. Be Slow to Anger, Quick to Forgive"
+        },
+        {
+          "level": "h4",
+          "title": "6. Find Awe in Nature"
+        },
+        {
+          "level": "h3",
+          "title": "The God-Shaped Hole"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 9"
+        },
+        {
+          "level": "h2",
+          "title": "Preparing for Collective Action"
+        },
+        {
+          "level": "h3",
+          "title": "Collective Action Problems"
+        },
+        {
+          "level": "h3",
+          "title": "A Few Caveats"
+        }
+      ],
+      "figures": [
+        {
+          "file": "page_179.jpg",
+          "caption": "Figure 7.1. Percent of U.S. high school seniors who agreed or mostly agreed with the statement “People like me don’t have much of a chance at a successful life.” (Source: Monitoring the Future.)[2]",
+          "alt": ""
+        },
+        {
+          "file": "39_Figure7-2_ExtInt.jpg",
+          "caption": "Figure 7.2. Internalizing and externalizing symptoms of U.S. high school seniors. In the 2010s, externalizing scores dropped for both sexes while internalizing scores rose. (Source: Askari et al. [2022], with data from Monitoring the Future.)[25]",
+          "alt": ""
+        },
+        {
+          "file": "page_185.jpg",
+          "caption": "Figure 7.3. Percent of U.S. students (8th, 10th, and 12th grade) who agreed with the statement “I like to test myself every now and then by doing something a little bit risky.” Enjoyment of risk-taking declined more rapidly for boys than for girls in the 2010s. (Source: Monitoring the Future.)[26]",
+          "alt": ""
+        },
+        {
+          "file": "page_186.jpg",
+          "caption": "Figure 7.4. On the left: Annual rate at which U.S. males are admitted to hospitals for unintentional injuries, by age group. On the right: Same, for U.S. females. Black line is ages 10–19, the age group that used to have the highest rates of injury and now has among the lowest. (Source: Centers for Disease Control.)[28]",
+          "alt": ""
+        },
+        {
+          "file": "page_191.jpg",
+          "caption": "Figure 7.5. Percent of Swedish 12th graders who watch pornography “more or less daily.” (Source: Donevan et al., 2022.)[36]",
+          "alt": ""
+        },
+        {
+          "file": "page_199.jpg",
+          "caption": "Figure 7.6. Percent of U.S. high school seniors who agreed or mostly agreed with the statement “Life often feels meaningless.” (Source: Monitoring the Future.)",
+          "alt": ""
+        },
+        {
+          "file": "44_ThreeDimSpace_V2.jpg",
+          "caption": "Figure 8.1. Three dimensions of social space.",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-anxious-generation\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/xhtml/21_Chapter_10_What_Gover.xhtml",
+      "title": "Chapter 10 / Chapter 11 / Chapter 12",
+      "charCount": 117150,
+      "wordCount": 19496,
+      "headings": [
+        {
+          "level": "h2",
+          "title": "Chapter 10"
+        },
+        {
+          "level": "h2",
+          "title": "What Governments and Tech Companies Can Do Now"
+        },
+        {
+          "level": "h3",
+          "title": "The Race to the Bottom of the Brain Stem"
+        },
+        {
+          "level": "h3",
+          "title": "What Governments and Tech Companies Can Do to End the Race to the Bottom of the Brainstem"
+        },
+        {
+          "level": "h4",
+          "title": "1. Assert a Duty of Care"
+        },
+        {
+          "level": "h4",
+          "title": "2. Raise the Age of Internet Adulthood to 16"
+        },
+        {
+          "level": "h4",
+          "title": "3. Facilitate Age Verification"
+        },
+        {
+          "level": "h4",
+          "title": "4. Encourage Phone-Free Schools"
+        },
+        {
+          "level": "h3",
+          "title": "What Governments Can Do to Incentivize More (and Better) Real-World Experience"
+        },
+        {
+          "level": "h4",
+          "title": "1. Stop Punishing Parents for Giving Children Real-World Freedom"
+        },
+        {
+          "level": "h4",
+          "title": "2. Encourage More Play in Schools"
+        },
+        {
+          "level": "h4",
+          "title": "3. Design and Zone Public Space with Children in Mind"
+        },
+        {
+          "level": "h4",
+          "title": "4. More Vocational Education, Apprenticeships, and Youth Development Programs"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 11"
+        },
+        {
+          "level": "h2",
+          "title": "What Schools Can Do Now"
+        },
+        {
+          "level": "h3",
+          "title": "Phone-Free Schools"
+        },
+        {
+          "level": "h3",
+          "title": "Play-Full Schools"
+        },
+        {
+          "level": "h3",
+          "title": "The Let Grow Project"
+        },
+        {
+          "level": "h3",
+          "title": "Better Recess and Playgrounds"
+        },
+        {
+          "level": "h3",
+          "title": "Re-engage Boys"
+        },
+        {
+          "level": "h3",
+          "title": "The Education Experiment We Most Need"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        },
+        {
+          "level": "h2",
+          "title": "Chapter 12"
+        },
+        {
+          "level": "h2",
+          "title": "What Parents Can Do Now"
+        },
+        {
+          "level": "h3",
+          "title": "For Parents of Young Children (Ages 0 to 5)"
+        },
+        {
+          "level": "h4",
+          "title": "More (and Better) Experience in the Real World"
+        },
+        {
+          "level": "h4",
+          "title": "Less (and Better) Experience on Screens"
+        },
+        {
+          "level": "h3",
+          "title": "For Parents of Children Ages 6–13 (Elementary and Middle School)"
+        },
+        {
+          "level": "h4",
+          "title": "More (and Better) Experience in the Real World"
+        },
+        {
+          "level": "h4",
+          "title": "Less (and Better) Experience on Screens"
+        },
+        {
+          "level": "h3",
+          "title": "For Parents of Teens Ages 13–18 (High School)"
+        },
+        {
+          "level": "h4",
+          "title": "More (and Better) Experience in the Real World"
+        },
+        {
+          "level": "h4",
+          "title": "Less (and Better) Experience on Screens"
+        },
+        {
+          "level": "h3",
+          "title": "In Sum"
+        }
+      ],
+      "figures": [
+        {
+          "file": "45_JunkyardPlayground_r1.jpg",
+          "caption": "Figure 11.1. The junkyard playground on Governors Island, New York City, designed and run by play:groundNYC.[29]",
+          "alt": ""
+        },
+        {
+          "file": "46_NaturePlayground_r1.jpg",
+          "caption": "Figure 11.2. A state-of-the-art nature playground just before its opening in 2023 at Colene Hoose Elementary School in Normal, Illinois.[30]",
+          "alt": ""
+        },
+        {
+          "file": "47_FirstDeviceCartoon.jpg",
+          "caption": "“It’s been so nice getting to interact with you for these past six years. Here’s your first device.”",
+          "alt": ""
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-anxious-generation\\ch04.txt"
+    }
+  ]
+}

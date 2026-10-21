@@ -1,0 +1,271 @@
+{
+  "bookSlug": "the-comfort-crisis",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\The Comfort Crisis.epub",
+  "totalChapters": 5,
+  "totalFigures": 22,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/xhtml/East_9780593138779_epub3_c001_r1.xhtml",
+      "title": "33 DAYS / 35, 55, OR 75 / 0.004 PERCENT (+2 more)",
+      "charCount": 48860,
+      "wordCount": 8465,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "33 DAYS"
+        },
+        {
+          "level": "h1",
+          "title": "35, 55, OR 75"
+        },
+        {
+          "level": "h1",
+          "title": "0.004 PERCENT"
+        },
+        {
+          "level": "h1",
+          "title": "800 FACES"
+        },
+        {
+          "level": "h1",
+          "title": "20 YARDS"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c01.jpg",
+          "caption": "1",
+          "alt": "1"
+        },
+        {
+          "file": "c02.jpg",
+          "caption": "2",
+          "alt": "2"
+        },
+        {
+          "file": "c03.jpg",
+          "caption": "3",
+          "alt": "3"
+        },
+        {
+          "file": "c04.jpg",
+          "caption": "4",
+          "alt": "4"
+        },
+        {
+          "file": "c05.jpg",
+          "caption": "5",
+          "alt": "5"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-comfort-crisis\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/xhtml/East_9780593138779_epub3_c006_r1.xhtml",
+      "title": "50/50 / 50. 70. OR 90. / 150 PEOPLE (+2 more)",
+      "charCount": 104082,
+      "wordCount": 17984,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "50/50"
+        },
+        {
+          "level": "h1",
+          "title": "50. 70. OR 90."
+        },
+        {
+          "level": "h1",
+          "title": "150 PEOPLE"
+        },
+        {
+          "level": "h1",
+          "title": "101 MILES"
+        },
+        {
+          "level": "h1",
+          "title": "<70 MILES AN HOUR"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c06.jpg",
+          "caption": "6",
+          "alt": "6"
+        },
+        {
+          "file": "c07.jpg",
+          "caption": "7",
+          "alt": "7"
+        },
+        {
+          "file": "c08.jpg",
+          "caption": "8",
+          "alt": "8"
+        },
+        {
+          "file": "c09.jpg",
+          "caption": "9",
+          "alt": "9"
+        },
+        {
+          "file": "c10.jpg",
+          "caption": "10",
+          "alt": "10"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-comfort-crisis\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/xhtml/East_9780593138779_epub3_c011_r1.xhtml",
+      "title": "11 HOURS, 6 MINUTES / 20 MINUTES, 5 HOURS, 3 DAYS / 12 PLACES (+2 more)",
+      "charCount": 157901,
+      "wordCount": 27124,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "11 HOURS, 6 MINUTES"
+        },
+        {
+          "level": "h1",
+          "title": "20 MINUTES, 5 HOURS, 3 DAYS"
+        },
+        {
+          "level": "h1",
+          "title": "12 PLACES"
+        },
+        {
+          "level": "h1",
+          "title": "-4,000 CALORIES"
+        },
+        {
+          "level": "h1",
+          "title": "12 TO 16 HOURS"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c11.jpg",
+          "caption": "11",
+          "alt": "11"
+        },
+        {
+          "file": "c12.jpg",
+          "caption": "12",
+          "alt": "12"
+        },
+        {
+          "file": "c13.jpg",
+          "caption": "13",
+          "alt": "13"
+        },
+        {
+          "file": "c14.jpg",
+          "caption": "14",
+          "alt": "14"
+        },
+        {
+          "file": "c15.jpg",
+          "caption": "15",
+          "alt": "15"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-comfort-crisis\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/xhtml/East_9780593138779_epub3_c016_r1.xhtml",
+      "title": "3 GOOD LEGS / 12/31, 11:59:33 P.M. / 20 MINUTES, 11 SECONDS (+2 more)",
+      "charCount": 145785,
+      "wordCount": 24980,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "3 GOOD LEGS"
+        },
+        {
+          "level": "h1",
+          "title": "12/31, 11:59:33 P.M."
+        },
+        {
+          "level": "h1",
+          "title": "20 MINUTES, 11 SECONDS"
+        },
+        {
+          "level": "h1",
+          "title": "100+ POUNDS"
+        },
+        {
+          "level": "h1",
+          "title": "≤50 POUNDS"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c16.jpg",
+          "caption": "16",
+          "alt": "16"
+        },
+        {
+          "file": "c17.jpg",
+          "caption": "17",
+          "alt": "17"
+        },
+        {
+          "file": "c18.jpg",
+          "caption": "18",
+          "alt": "18"
+        },
+        {
+          "file": "c19.jpg",
+          "caption": "19",
+          "alt": "19"
+        },
+        {
+          "file": "c20.jpg",
+          "caption": "20",
+          "alt": "20"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-comfort-crisis\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/xhtml/East_9780593138779_epub3_c021_r1.xhtml",
+      "title": "80 PERCENT / 81.2 YEARS",
+      "charCount": 57949,
+      "wordCount": 9769,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "80 PERCENT"
+        },
+        {
+          "level": "h1",
+          "title": "81.2 YEARS"
+        }
+      ],
+      "figures": [
+        {
+          "file": "c21.jpg",
+          "caption": "21",
+          "alt": "21"
+        },
+        {
+          "file": "epilogue.jpg",
+          "caption": "Epilogue",
+          "alt": "Epilogue"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-comfort-crisis\\ch05.txt"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "bookSlug": "the-courage-to-be-disliked",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\The Courage To Be Disliked.epub",
+  "totalChapters": 5,
+  "totalFigures": 0,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "text/part0008.html",
+      "title": "Chapter 1 / Chapter 2 / Chapter 3 (+6 more)",
+      "charCount": 59037,
+      "wordCount": 10390,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-disliked\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "text/part0027.html",
+      "title": "Chapter 10 / Chapter 11 / Chapter 12 (+6 more)",
+      "charCount": 56990,
+      "wordCount": 9861,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-disliked\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "text/part0039.html",
+      "title": "Chapter 19 / Chapter 20 / Chapter 21 (+6 more)",
+      "charCount": 56384,
+      "wordCount": 9937,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-disliked\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "text/part0052.html",
+      "title": "Chapter 28 / Chapter 29 / Chapter 30 (+6 more)",
+      "charCount": 61522,
+      "wordCount": 10766,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-disliked\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "text/part0064.html",
+      "title": "Chapter 37 / Chapter 38 / Chapter 39 (+6 more)",
+      "charCount": 60318,
+      "wordCount": 10708,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-disliked\\ch05.txt"
+    }
+  ]
+}

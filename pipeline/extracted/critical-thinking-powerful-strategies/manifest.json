@@ -1,0 +1,88 @@
+{
+  "bookSlug": "critical-thinking-powerful-strategies",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\20 oct 26\\Critical Thinking Powerful Strategies That Will Make You Improve Decisions And Think Smarter (Critical Thinking - Think… (Harvey Segler Critical Thinking) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+  "totalChapters": 4,
+  "totalFigures": 0,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "text/part0004.html",
+      "title": "Chapter 1 – What Is Critical Thinking? / Chapter 2 – The Three Steps To Independent Thinking",
+      "charCount": 11872,
+      "wordCount": 2237,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 1 – What Is Critical Thinking?"
+        },
+        {
+          "level": "h1",
+          "title": "Chapter 2 – The Three Steps To Independent Thinking"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\critical-thinking-powerful-strategies\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "text/part0006.html",
+      "title": "Chapter 3 – The Benefits of Problem Solving Skills / Chapter 4 – Analyzing Critical Thinking",
+      "charCount": 8976,
+      "wordCount": 1704,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 3 – The Benefits of Problem Solving Skills"
+        },
+        {
+          "level": "h1",
+          "title": "Chapter 4 – Analyzing Critical Thinking"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\critical-thinking-powerful-strategies\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "text/part0008.html",
+      "title": "Chapter 5 – Don’t Be Afraid to Ask Questions / Chapter 6 – How to Avoid Being a Target Audience",
+      "charCount": 14619,
+      "wordCount": 2812,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 5 – Don’t Be Afraid to Ask Questions"
+        },
+        {
+          "level": "h1",
+          "title": "Chapter 6 – How to Avoid Being a Target Audience"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\critical-thinking-powerful-strategies\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "text/part0010.html",
+      "title": "Chapter 7 – Breaking the Cycle: Becoming Your Own Person / Chapter 8 – Practical Ways to Implement Critical Thinking in Your Own Life",
+      "charCount": 9420,
+      "wordCount": 1836,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Chapter 7 – Breaking the Cycle: Becoming Your Own Person"
+        },
+        {
+          "level": "h1",
+          "title": "Chapter 8 – Practical Ways to Implement Critical Thinking in Your Own Life"
+        }
+      ],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\critical-thinking-powerful-strategies\\ch04.txt"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "bookSlug": "the-mckinsey-mind",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\20 oct 26\\The McKinsey Mind Understanding and Implementing the Problem-Solving Tools and Management Techniques of the Worlds Top… (Ethan Rasiel, Paul Friga) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "totalChapters": 4,
+  "totalFigures": 4,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "pages_19_67.pdf",
+      "title": "Framing the Problem & Designing the Analysis (MECE Issue Trees, Initial Hypotheses & Analytical Diagnostics)",
+      "startPage": 19,
+      "endPage": 67,
+      "charCount": 79251,
+      "wordCount": 13485,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Framing the Problem & Designing the Analysis"
+        }
+      ],
+      "figures": [
+        {
+          "file": "the_mckinsey_mind_ch01_plate.png",
+          "caption": "Chapter 1 Opening Blueprint: Framing the Problem & Designing the Analysis (MECE Issue Trees, Initial Hypotheses & Analytical Diagnostics) (Page 19)",
+          "alt": "Chapter 1 opening page (Framing the Problem & Designing the Analysis (MECE Issue Trees, Initial Hypotheses & Analytical Diagnostics))"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-mckinsey-mind\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "pages_68_120.pdf",
+      "title": "Gathering the Data & Interpreting Results (Fact-Based Research, Interviewing, 80/20 Rule & Actionable Synthesis)",
+      "startPage": 68,
+      "endPage": 120,
+      "charCount": 87669,
+      "wordCount": 14490,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Gathering the Data & Interpreting Results"
+        }
+      ],
+      "figures": [
+        {
+          "file": "the_mckinsey_mind_ch02_plate.png",
+          "caption": "Chapter 2 Opening Blueprint: Gathering the Data & Interpreting Results (Fact-Based Research, Interviewing, 80/20 Rule & Actionable Synthesis) (Page 68)",
+          "alt": "Chapter 2 opening page (Gathering the Data & Interpreting Results (Fact-Based Research, Interviewing, 80/20 Rule & Actionable Synthesis))"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-mckinsey-mind\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "pages_121_176.pdf",
+      "title": "Presenting Your Ideas & Managing Your Team (Structured Buy-In, Prewiring, Team Bonding & Direction)",
+      "startPage": 121,
+      "endPage": 176,
+      "charCount": 91730,
+      "wordCount": 15294,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Presenting Your Ideas & Managing Your Team"
+        }
+      ],
+      "figures": [
+        {
+          "file": "the_mckinsey_mind_ch03_plate.png",
+          "caption": "Chapter 3 Opening Blueprint: Presenting Your Ideas & Managing Your Team (Structured Buy-In, Prewiring, Team Bonding & Direction) (Page 121)",
+          "alt": "Chapter 3 opening page (Presenting Your Ideas & Managing Your Team (Structured Buy-In, Prewiring, Team Bonding & Direction))"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-mckinsey-mind\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "pages_177_222.pdf",
+      "title": "Managing Your Client & Managing Yourself (Client Engagement, Implementation Rigor & Sustainable Pace)",
+      "startPage": 177,
+      "endPage": 222,
+      "charCount": 71124,
+      "wordCount": 11661,
+      "headings": [
+        {
+          "level": "h1",
+          "title": "Managing Your Client & Managing Yourself"
+        }
+      ],
+      "figures": [
+        {
+          "file": "the_mckinsey_mind_ch04_plate.png",
+          "caption": "Chapter 4 Opening Blueprint: Managing Your Client & Managing Yourself (Client Engagement, Implementation Rigor & Sustainable Pace) (Page 177)",
+          "alt": "Chapter 4 opening page (Managing Your Client & Managing Yourself (Client Engagement, Implementation Rigor & Sustainable Pace))"
+        }
+      ],
+      "textFile": "pipeline\\extracted\\the-mckinsey-mind\\ch04.txt"
+    }
+  ]
+}

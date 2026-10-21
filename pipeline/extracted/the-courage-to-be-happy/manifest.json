@@ -1,0 +1,63 @@
+{
+  "bookSlug": "the-courage-to-be-happy",
+  "sourcePath": "C:\\Users\\hassa\\Local Sites\\Brain Opener\\Books\\The Courage to Be Happy.epub",
+  "totalChapters": 5,
+  "totalFigures": 0,
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterId": "ch01",
+      "sourceFile": "OEBPS/Text/chapter01.xhtml",
+      "title": "Chapter 1 / Chapter 2 / Chapter 3 (+7 more)",
+      "charCount": 64605,
+      "wordCount": 11223,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-happy\\ch01.txt"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterId": "ch02",
+      "sourceFile": "OEBPS/Text/chapter11.xhtml",
+      "title": "Chapter 11 / Chapter 12 / Chapter 13 (+7 more)",
+      "charCount": 68103,
+      "wordCount": 11766,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-happy\\ch02.txt"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterId": "ch03",
+      "sourceFile": "OEBPS/Text/chapter21.xhtml",
+      "title": "Chapter 21 / Chapter 22 / Chapter 23 (+7 more)",
+      "charCount": 65042,
+      "wordCount": 11163,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-happy\\ch03.txt"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterId": "ch04",
+      "sourceFile": "OEBPS/Text/chapter31.xhtml",
+      "title": "Chapter 31 / Chapter 32 / Chapter 33 (+7 more)",
+      "charCount": 51041,
+      "wordCount": 9021,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-happy\\ch04.txt"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterId": "ch05",
+      "sourceFile": "OEBPS/Text/chapter41.xhtml",
+      "title": "Chapter 41 / Chapter 42 / Chapter 43 (+6 more)",
+      "charCount": 49100,
+      "wordCount": 8670,
+      "headings": [],
+      "figures": [],
+      "textFile": "pipeline\\extracted\\the-courage-to-be-happy\\ch05.txt"
+    }
+  ]
+}
